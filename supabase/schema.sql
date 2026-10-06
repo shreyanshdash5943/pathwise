@@ -92,3 +92,45 @@ create policy "own tasks" on public.tasks
       where r.id = roadmap_id and r.user_id = (select auth.jwt() ->> 'sub')
     )
   );
+
+-- ── Hardening ────────────────────────────────────────────────────────────────
+-- The anon key is public, so a signed-in user can call the database directly with
+-- their own token and skip the API's validation. RLS keeps them inside their own rows;
+-- these limits keep what they can put there sane. Safe to re-run.
+
+alter table public.profiles drop constraint if exists profiles_sizes;
+alter table public.profiles add constraint profiles_sizes check (
+  length(answers::text) <= 4000 and length(role_id) <= 64 and length(role_title) <= 120
+  and length(field) <= 32 and length(timezone) <= 64
+);
+
+alter table public.roadmaps drop constraint if exists roadmaps_sizes;
+alter table public.roadmaps add constraint roadmaps_sizes check (
+  length(title) <= 200 and length(summary) <= 1000 and length(outline::text) <= 40000
+);
+
+alter table public.tasks drop constraint if exists tasks_sizes;
+alter table public.tasks add constraint tasks_sizes check (
+  length(title) <= 200 and length(description) <= 1000
+  and seq between 0 and 999 and phase_index between 0 and 9 and milestone_index between 0 and 9
+);
+
+-- At most 10 roadmaps per user (the app keeps one, plus one briefly while making a new plan).
+create or replace function public.limit_roadmaps() returns trigger
+language plpgsql as $$
+begin
+  if (select count(*) from public.roadmaps where user_id = new.user_id) >= 10 then
+    raise exception 'roadmap limit reached' using errcode = 'check_violation';
+  end if;
+  return new;
+end $$;
+
+drop trigger if exists roadmaps_limit on public.roadmaps;
+create trigger roadmaps_limit before insert on public.roadmaps
+for each row execute function public.limit_roadmaps();
+
+-- Only let users change the columns the app actually updates.
+revoke update on public.roadmaps from authenticated, anon;
+grant update (is_active) on public.roadmaps to authenticated;
+revoke update on public.tasks from authenticated, anon;
+grant update (scheduled_for, completed_on) on public.tasks to authenticated;

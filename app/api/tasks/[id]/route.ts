@@ -11,7 +11,7 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
     if (!UUID.test(id)) return jsonError("That task doesn't exist.", 404);
     let body: { completed?: unknown };
     try {
-      body = await req.json();
+      body = (await req.json()) ?? {};
     } catch {
       return jsonError("The request body wasn't valid JSON.", 400);
     }

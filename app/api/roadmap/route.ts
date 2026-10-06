@@ -10,6 +10,8 @@ import { handleRouteError, jsonError } from "@/lib/http";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
+const COOLDOWN_MS = 15_000;
+
 export async function POST(req: Request) {
   try {
     const { supabase, userId } = await getSupabase();
@@ -28,6 +30,13 @@ export async function POST(req: Request) {
     if (!role || role.field !== answers.field[0]) return jsonError("Pick one of the suggested paths.", 400);
     const tz = isValidTimeZone(timezone) ? timezone : "UTC";
     const dailyMinutes = Number(answers.time[0]) || 60;
+
+    // Cooldown: one new plan per user per COOLDOWN_MS. Protects the AI quota from repeat clicks and scripts.
+    const latest = await supabase.from("roadmaps").select("created_at").order("created_at", { ascending: false }).limit(1).maybeSingle();
+    if (latest.error) throw latest.error;
+    if (latest.data && Date.now() - new Date(latest.data.created_at as string).getTime() < COOLDOWN_MS) {
+      return jsonError("You just made a plan. Wait a few seconds before making another.", 429);
+    }
 
     const { roadmap, source } = await generateRoadmap(role, answers);
 
@@ -57,17 +66,25 @@ export async function POST(req: Request) {
         }))
       )
     );
-    const inserted = await supabase.from("tasks").insert(rows);
-    if (inserted.error) {
+    // 3. Swap the active roadmap. If anything fails, drop the new roadmap so it doesn't linger.
+    try {
+      const inserted = await supabase.from("tasks").insert(rows);
+      if (inserted.error) throw inserted.error;
+      const off = await supabase.from("roadmaps").update({ is_active: false }).eq("is_active", true);
+      if (off.error) throw off.error;
+      const on = await supabase.from("roadmaps").update({ is_active: true }).eq("id", roadmapId);
+      if (on.error) throw on.error;
+    } catch (err) {
       await supabase.from("roadmaps").delete().eq("id", roadmapId);
-      throw inserted.error;
+      // 23505/23503: a parallel request for the same user won the race.
+      const code = (err as { code?: string }).code;
+      if (code === "23505" || code === "23503") return jsonError("Your plan is already being created.", 409);
+      throw err;
     }
 
-    // 3. Swap the active roadmap and save the profile.
-    const off = await supabase.from("roadmaps").update({ is_active: false }).eq("is_active", true);
-    if (off.error) throw off.error;
-    const on = await supabase.from("roadmaps").update({ is_active: true }).eq("id", roadmapId);
-    if (on.error) throw on.error;
+    // 4. Remove old roadmaps (their tasks cascade) and save the profile.
+    const old = await supabase.from("roadmaps").delete().eq("is_active", false).neq("id", roadmapId);
+    if (old.error) throw old.error;
 
     const profile = await supabase.from("profiles").upsert(
       {

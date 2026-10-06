@@ -8,7 +8,7 @@ export async function PATCH(req: Request) {
   try {
     let body: { daily_minutes?: unknown };
     try {
-      body = await req.json();
+      body = (await req.json()) ?? {};
     } catch {
       return jsonError("The request body wasn't valid JSON.", 400);
     }
