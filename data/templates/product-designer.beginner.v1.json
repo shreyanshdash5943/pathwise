@@ -1,0 +1,431 @@
+{
+  "title": "Product Designer Learning Roadmap",
+  "summary": "A step‑by‑step guide to become a product designer from scratch, covering research, design, and delivery. Follow the phases to build fundamentals, core skills, portfolio pieces, and job readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid understanding of design thinking and the product development process.",
+      "milestones": [
+        {
+          "title": "Design Mindset & Process",
+          "outcome": "Can explain the stages of product design and apply a basic design thinking framework.",
+          "skill": "Product thinking",
+          "tasks": [
+            {
+              "title": "Read Design Thinking Overview",
+              "description": "Study the Design Thinking model on the IDEO website and note each phase.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize Product Lifecycle",
+              "description": "Write a one‑page summary of how ideas move from concept to shipped product.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Map a Simple Product Flow",
+              "description": "Sketch a flowchart for a common app (e.g., to‑do list) using pen and paper.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Discuss with Peer",
+              "description": "Share your flowchart in a community forum (e.g., Designer Hangout) and get feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Basics of Visual Communication",
+          "outcome": "Can identify basic visual hierarchy, color, and typography principles.",
+          "skill": "Interaction design",
+          "tasks": [
+            {
+              "title": "Watch Visual Design Basics",
+              "description": "View the freeCodeCamp video on visual hierarchy and take notes.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Create a Style Sheet",
+              "description": "Define a simple style sheet with font sizes, colors, and spacing for a mock app.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Apply Style to Wireframe",
+              "description": "Redraw a low‑fidelity wireframe using the style sheet in pen and paper.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on Choices",
+              "description": "Write a short reflection on why you chose each visual element.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop hands‑on abilities in research, design tools, and metrics.",
+      "milestones": [
+        {
+          "title": "User Research Foundations",
+          "outcome": "Can plan and conduct a basic user interview and synthesize findings.",
+          "skill": "User research",
+          "tasks": [
+            {
+              "title": "Read Nielsen Norman Interview Guide",
+              "description": "Study the NN/g guide on user interviews and note key steps.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Draft Interview Script",
+              "description": "Write a 5‑question script for a target user group of a budgeting app.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Conduct Mock Interview",
+              "description": "Pair with a friend and run the interview, recording observations.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Create Affinity Map",
+              "description": "Organize interview notes into themes on a virtual whiteboard (Miro free tier).",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Share Findings",
+              "description": "Post a summary in a design community and solicit feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Figma Proficiency",
+          "outcome": "Can design, prototype, and hand off screens using Figma.",
+          "skill": "Figma",
+          "tasks": [
+            {
+              "title": "Complete Figma Basics Course",
+              "description": "Follow the free Figma introductory tutorial on the Figma website.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Recreate a Mobile Screen",
+              "description": "Build a login screen from a screenshot using Figma components.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Add Interactive Prototype",
+              "description": "Link the login screen to a home screen with simple transitions.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Export Design Specs",
+              "description": "Generate CSS and iOS specs for the prototype and review them.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Join Figma Community",
+              "description": "Share your file in the Figma Community and ask for critique.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Metrics & Impact",
+          "outcome": "Can define success metrics and interpret basic analytics for design decisions.",
+          "skill": "Metrics",
+          "tasks": [
+            {
+              "title": "Read Intro to Product Metrics",
+              "description": "Study the free article on product metrics from Mixpanel blog.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Define Success Metrics",
+              "description": "Choose three measurable goals for the budgeting app prototype (e.g., conversion, retention).",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Mock Data Analysis",
+              "description": "Create a simple spreadsheet with sample usage data and calculate the metrics.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write Metric‑Driven Recommendations",
+              "description": "Draft a brief report linking design tweaks to metric improvements.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Discuss with Engineer",
+              "description": "Explain your metrics to a peer engineer in a short chat to ensure feasibility.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio pieces that demonstrate end‑to‑end design capability.",
+      "milestones": [
+        {
+          "title": "End‑to‑End Case Study",
+          "outcome": "A complete product case study ready for a portfolio.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select Real Problem",
+              "description": "Identify a common pain point (e.g., grocery list sharing) to solve.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Conduct 2 User Interviews",
+              "description": "Run two short interviews using the script from Phase 2 and record insights.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Sketch Solutions",
+              "description": "Produce three low‑fidelity concepts on paper.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Design High‑Fidelity Mockups",
+              "description": "Use Figma to create polished screens for the chosen concept.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Write Case Study Narrative",
+              "description": "Document problem, research, design decisions, and outcomes in a 1500‑word story.",
+              "type": "learn",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "title": "Feature Spec & Designs",
+          "outcome": "A detailed spec document with annotated designs for a single feature.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define Feature Scope",
+              "description": "Write a one‑page spec outlining goals, users, and constraints for a new feature (e.g., dark mode).",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Create User Flow Diagram",
+              "description": "Map the end‑to‑end flow for the feature using Figma FigJam.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Design UI Screens",
+              "description": "Produce three annotated screens in Figma showing the feature in use.",
+              "type": "build",
+              "minutes": 100
+            },
+            {
+              "title": "Add Interaction Prototype",
+              "description": "Link screens to demonstrate the feature’s interaction.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Publish to Portfolio Site",
+              "description": "Upload the spec and designs to a free portfolio platform (e.g., Behance).",
+              "type": "connect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Design Sprint Write‑up",
+          "outcome": "A concise report of a 5‑day design sprint process and outcomes.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan Sprint Schedule",
+              "description": "Outline a 5‑day sprint agenda for a chosen problem.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Facilitate Day‑1 Mapping",
+              "description": "Run a mapping session with a small group (or simulate) and capture notes.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Sketch Solutions Day‑2",
+              "description": "Generate multiple sketches and vote on the best approach.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Prototype Day‑3",
+              "description": "Build a clickable prototype in Figma covering the core flow.",
+              "type": "build",
+              "minutes": 110
+            },
+            {
+              "title": "Test & Document Day‑4/5",
+              "description": "Conduct quick usability tests, record feedback, and write a sprint summary.",
+              "type": "learn",
+              "minutes": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced abilities, network, and prepare for job or freelance opportunities.",
+      "milestones": [
+        {
+          "title": "Advanced Interaction Design",
+          "outcome": "Can design complex interactions and micro‑animations.",
+          "skill": "Interaction design",
+          "tasks": [
+            {
+              "title": "Study Micro‑animation Principles",
+              "description": "Read the free article on micro‑interactions from Smashing Magazine.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Prototype Animated Button",
+              "description": "Create a button with hover and click animations using Figma’s Smart Animate.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Test Animation with Users",
+              "description": "Show the animated prototype to two users and note reactions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document Interaction Specs",
+              "description": "Write a concise interaction spec for the animated component.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Share on Design Community",
+              "description": "Post the animation case on Dribbble and request feedback.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Collaboration with Engineers",
+          "outcome": "Can communicate design intent clearly and iterate with engineering teams.",
+          "skill": "Working with engineers",
+          "tasks": [
+            {
+              "title": "Read Design‑Engineering Handbook",
+              "description": "Study the free “Design + Engineering Collaboration” guide from Google Design.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create Design Handoff Docs",
+              "description": "Prepare a Figma handoff file with specs, assets, and notes for a feature.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Run a Design Review Meeting",
+              "description": "Simulate a review with a peer acting as engineer, discuss constraints.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Iterate Based on Feedback",
+              "description": "Update the design according to the mock engineer’s comments.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Reflect on Collaboration",
+              "description": "Write a brief reflection on what worked and what to improve in future handoffs.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job & Freelance Readiness",
+          "outcome": "Prepared resume, portfolio, and interview strategy for product design roles.",
+          "skill": "Product thinking",
+          "tasks": [
+            {
+              "title": "Craft Design Resume",
+              "description": "Write a one‑page resume highlighting projects, tools, and impact metrics.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Polish Portfolio Narrative",
+              "description": "Refine each case study to focus on problem, process, and results.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Mock Interview Practice",
+              "description": "Do a 30‑minute product design interview with a peer using common questions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Research Target Companies",
+              "description": "Create a spreadsheet of 10 companies, noting their design culture and product focus.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Apply to Jobs or Gigs",
+              "description": "Submit applications to at least three roles or freelance listings today.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "product-designer.beginner",
+  "roleId": "product-designer",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:19:47.231Z",
+  "model": "openai/gpt-oss-120b"
+}

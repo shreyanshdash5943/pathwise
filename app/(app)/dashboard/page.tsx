@@ -1,9 +1,10 @@
 import { currentUser } from "@clerk/nextjs/server";
 import { requirePlan } from "@/lib/session";
-import { getStats, profileToday, scheduleDay } from "@/lib/data";
+import { computeStats, profileToday, scheduleDay } from "@/lib/data";
 import { getNews } from "@/lib/news";
 import { longDate } from "@/lib/dates";
 import { Dashboard } from "@/components/dashboard";
+import { proofsByTask } from "@/lib/proofs";
 
 export const metadata = { title: "Today" };
 
@@ -19,24 +20,25 @@ function greeting(timeZone: string) {
 }
 
 export default async function DashboardPage() {
-  const { supabase, profile, roadmap } = await requirePlan();
+  const { supabase, profile, plan } = await requirePlan();
   const today = profileToday(profile);
-  const [tasks, user, news] = await Promise.all([
-    scheduleDay(supabase, roadmap.id, today, profile.daily_minutes),
+  const [day, user, news, proofs] = await Promise.all([
+    scheduleDay(supabase, plan, today, profile.daily_minutes),
     currentUser(),
     getNews("for-you", profile.field).catch(() => []),
+    proofsByTask(supabase, plan.id),
   ]);
-  const stats = await getStats(supabase, roadmap.id, today);
 
   return (
     <Dashboard
       greeting={`${greeting(profile.timezone)}${user?.firstName ? `, ${user.firstName}` : ""}`}
       dateLabel={longDate(today)}
-      initialTasks={tasks}
-      initialStats={stats}
-      outline={roadmap.outline}
+      initialTasks={day.today}
+      initialStats={computeStats(day.all, today)}
+      outline={plan.outline}
       dailyMinutes={profile.daily_minutes}
       news={news.slice(0, 4)}
+      proofs={proofs}
     />
   );
 }

@@ -1,0 +1,38 @@
+import { currentUser } from "@clerk/nextjs/server";
+import { requirePlan } from "@/lib/session";
+import { getDetails } from "@/lib/details";
+import { listProofs } from "@/lib/proofs";
+import { ProfileView } from "@/components/profile-view";
+
+export const metadata = { title: "Profile" };
+
+export default async function ProfilePage() {
+  const { supabase, plan, profile } = await requirePlan();
+  const [details, user, proofs] = await Promise.all([getDetails(supabase), currentUser(), listProofs(supabase)]);
+  const name = [user?.firstName, user?.lastName].filter(Boolean).join(" ");
+  const suggested = (user?.username || name || user?.primaryEmailAddress?.emailAddress?.split("@")[0] || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, "-")
+    .replace(/^[-_]+|[-_]+$/g, "")
+    .slice(0, 30);
+
+  return (
+    <ProfileView
+      identity={{ name: name || null, email: user?.primaryEmailAddress?.emailAddress ?? null, imageUrl: user?.imageUrl ?? null }}
+      roleTitle={profile.role_title}
+      roleSkills={plan.role.skills}
+      initial={{
+        headline: details?.headline ?? "",
+        links: details?.links ?? {},
+        skills: details?.skills ?? [],
+        knownSkills: (details?.known_skills ?? []).filter((s) => plan.role.skills.includes(s)),
+        resume: details?.resume_hash
+          ? { name: details.resume_name ?? "resume.pdf", size: details.resume_size ?? 0, uploadedAt: details.resume_uploaded_at, skills: details.resume_skills }
+          : null,
+        username: details?.username ?? (suggested.length >= 3 ? suggested : ""),
+        isPublic: details?.is_public ?? false,
+        proofs,
+      }}
+    />
+  );
+}

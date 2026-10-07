@@ -1,0 +1,468 @@
+{
+  "title": "UI & Visual Designer Growth Roadmap",
+  "summary": "A step‑by‑step plan to solidify design fundamentals, master core tools, build a showcase portfolio, and launch into professional work. Each phase balances learning, hands‑on practice, and reflection.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Lay the visual and conceptual groundwork for effective UI design.",
+      "milestones": [
+        {
+          "title": "Typography Essentials",
+          "outcome": "Can choose and apply typefaces that enhance readability and hierarchy.",
+          "skill": "Typography",
+          "tasks": [
+            {
+              "title": "Read typographic anatomy",
+              "description": "Study font families, weight, leading, and tracking on MDN’s Typography guide.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Analyze three apps’ type systems",
+              "description": "Pick three popular apps, note their font choices, sizes, and hierarchy, and record observations in a spreadsheet.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create a typographic scale",
+              "description": "Design a 8‑step type scale in Figma using modular ratios and document usage rules.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on legibility",
+              "description": "Write a short note on how your scale improves readability across devices.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Colour & Layout Fundamentals",
+          "outcome": "Can construct balanced layouts and harmonious colour palettes for UI screens.",
+          "skill": "Colour and layout",
+          "tasks": [
+            {
+              "title": "Study colour theory basics",
+              "description": "Read the colour theory section on the Interaction Design Foundation site.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Build a 5‑color palette",
+              "description": "Use Adobe Color (free) to create a primary, secondary, accent, neutral, and error palette and export swatches.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Sketch three layout grids",
+              "description": "On paper, draft 12‑column, 8‑column, and responsive fluid grids for mobile, tablet, and desktop.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Apply palette to a mock screen",
+              "description": "Design a simple login screen in Figma using your palette and grid, focusing on contrast and spacing.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Get feedback on contrast",
+              "description": "Post the mock screen in a design community (e.g., Designer News) and note suggestions.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Design Thinking Refresh",
+          "outcome": "Can run a rapid user‑centered design process from research to concept.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read double‑diamond overview",
+              "description": "Review the double‑diamond model on the Nielsen Norman Group site.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Map a user journey",
+              "description": "Choose a common task (e.g., ordering food) and sketch a journey map with pain points.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create 3 problem statements",
+              "description": "Write concise problem statements based on the journey map insights.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on assumptions",
+              "description": "List assumptions you made and how you could test them.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Become proficient with industry‑standard tools and systematic design methods.",
+      "milestones": [
+        {
+          "title": "Figma Mastery",
+          "outcome": "Can prototype, componentize, and collaborate efficiently in Figma.",
+          "skill": "Figma",
+          "tasks": [
+            {
+              "title": "Complete Figma basics tutorial",
+              "description": "Follow the free Figma Getting Started videos on the official site.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a component library",
+              "description": "Create buttons, inputs, and cards as reusable components with variants.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Prototype a simple flow",
+              "description": "Link three screens in Figma to simulate a login‑to‑dashboard journey.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Share and gather comments",
+              "description": "Invite a peer to comment on your prototype and incorporate feedback.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on component usage",
+              "description": "Write a brief note on how variants simplify design updates.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Design Systems Foundations",
+          "outcome": "Can define and maintain a coherent design system for UI projects.",
+          "skill": "Design systems",
+          "tasks": [
+            {
+              "title": "Read design system case study",
+              "description": "Study the Atlassian Design System overview on their public site.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Document style tokens",
+              "description": "Create a Figma file listing colour, spacing, and typography tokens with usage guidelines.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create a component variant set",
+              "description": "Develop a button component with size, state, and intent variants.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Write contribution guidelines",
+              "description": "Draft a short README explaining how teammates add or modify components.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with a system maintainer",
+              "description": "Join a free design system community (e.g., Design Systems Slack) and ask a question.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Prototyping & Motion Basics",
+          "outcome": "Can add micro‑interactions and motion to enhance UI feedback.",
+          "skill": "Prototyping and motion",
+          "tasks": [
+            {
+              "title": "Watch motion design primer",
+              "description": "View the free Motion Design Basics playlist on YouTube (by DesignCourse).",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create a hover animation",
+              "description": "In Figma, add a smart animate transition for a button hover state.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Prototype a loading indicator",
+              "description": "Design a simple loading spinner using vector shapes and animate it in Figma prototype mode.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Test motion on device",
+              "description": "Export the prototype to the Figma mobile app and note performance.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on motion purpose",
+              "description": "Write a short paragraph on when motion adds value versus when it distracts.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build a concise portfolio that demonstrates your visual and systematic design abilities.",
+      "milestones": [
+        {
+          "title": "Design System Mini‑Project",
+          "outcome": "A documented, reusable design system ready for showcase.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define scope and components",
+              "description": "Select 5 core UI elements (button, input, card, nav, toast) for the system.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Design component library",
+              "description": "Create high‑fidelity versions of the 5 components with variants in Figma.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Write usage guide",
+              "description": "Add a one‑page PDF explaining token usage, accessibility, and responsive behavior.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Record a walkthrough video",
+              "description": "Film a 2‑minute screen capture walking through the system and upload to YouTube (unlisted).",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Publish on portfolio site",
+              "description": "Add the system page to your personal website (use GitHub Pages or a free site builder).",
+              "type": "connect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Three Polished App Screens",
+          "outcome": "Three end‑to‑end UI screens that showcase visual polish and consistency.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose an app concept",
+              "description": "Select a simple app idea (e.g., habit tracker) and outline its core flows.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Sketch wireframes",
+              "description": "Create low‑fidelity sketches for onboarding, main view, and settings screens.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Apply design system",
+              "description": "Use your mini‑design system to style the three screens in Figma.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Add micro‑interactions",
+              "description": "Add hover and transition animations to key elements using Figma’s prototype features.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Export mockups for portfolio",
+              "description": "Generate high‑resolution PNGs and a short case‑study write‑up.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Motion Prototype Interaction",
+          "outcome": "A short motion prototype that demonstrates interaction design fluency.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select interaction to animate",
+              "description": "Pick a common UI pattern (e.g., accordion expand) to showcase motion.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Design states in Figma",
+              "description": "Create collapsed and expanded frames with consistent layout.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Add smart animate transitions",
+              "description": "Configure Figma prototype to animate between states with easing and duration.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Test on mobile device",
+              "description": "Open the prototype on a phone, observe performance, and note any tweaks.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Document design rationale",
+              "description": "Write a brief note on why the chosen motion improves usability.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced skills, prepare for handoff, and launch your job or freelance search.",
+      "milestones": [
+        {
+          "title": "Handoff to Engineers",
+          "outcome": "Can deliver design specs that developers can implement without ambiguity.",
+          "skill": "Handoff to engineers",
+          "tasks": [
+            {
+              "title": "Read handoff best practices",
+              "description": "Study the handoff guide on the Figma Help Center.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a dev‑ready spec page",
+              "description": "For one screen, add measurements, colour codes, and component references using Figma’s Inspect panel.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Export assets in required formats",
+              "description": "Export icons as SVG and images as WebP, naming them per developer conventions.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Write a brief design rationale",
+              "description": "Summarize interaction decisions in a one‑page document for developers.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Share with a developer friend",
+              "description": "Get feedback on clarity and completeness, then iterate.",
+              "type": "connect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Advanced Motion & Prototyping",
+          "outcome": "Can create complex, timed animations and interactive prototypes for stakeholder demos.",
+          "skill": "Prototyping and motion",
+          "tasks": [
+            {
+              "title": "Explore advanced Figma plugins",
+              "description": "Install and test the Figmotion plugin for keyframe animation.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build a multi‑step onboarding flow",
+              "description": "Design 4 screens with progressive disclosure and animated transitions.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add timed auto‑play animation",
+              "description": "Use Figmotion to create a 3‑second intro animation that loops once.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Record a demo video",
+              "description": "Capture the prototype interaction with screen recording and add captions.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on performance trade‑offs",
+              "description": "Write a note on file size, load time, and when to simplify motion.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job & Client Readiness",
+          "outcome": "A polished portfolio, résumé, and interview strategy tailored to UI design roles.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Update résumé with design metrics",
+              "description": "Add quantifiable outcomes (e.g., improved conversion by 12%) for each project.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Craft portfolio case studies",
+              "description": "Write a 300‑word narrative for each portfolio project, focusing problem, process, and result.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice common interview questions",
+              "description": "Do a mock interview with a peer, focusing on design decisions and handoff experience.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Network on LinkedIn and Dribbble",
+              "description": "Share a project highlight, comment on 3 posts, and request feedback.",
+              "type": "connect",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on personal brand",
+              "description": "Write a short statement of your design philosophy and how it guides your work.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ui-designer.basics",
+  "roleId": "ui-designer",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:18:38.728Z",
+  "model": "openai/gpt-oss-120b"
+}

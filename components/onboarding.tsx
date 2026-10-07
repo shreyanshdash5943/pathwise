@@ -114,7 +114,7 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
     setStage("building");
     setError(null);
     setBuildStep(0);
-    const ticker = setInterval(() => setBuildStep((s) => Math.min(s + 1, BUILD_STEPS.length - 1)), 1600);
+    const ticker = setInterval(() => setBuildStep((s) => Math.min(s + 1, BUILD_STEPS.length - 1)), 500);
     try {
       const res = await fetch("/api/roadmap", {
         method: "POST",
@@ -353,7 +353,7 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
                       </motion.p>
                     </AnimatePresence>
                   </div>
-                  <p className="mt-10 text-[13.5px] text-faint">This usually takes 10 to 20 seconds.</p>
+                  <p className="mt-10 text-[13.5px] text-faint">This only takes a moment.</p>
                 </>
               )}
             </motion.section>

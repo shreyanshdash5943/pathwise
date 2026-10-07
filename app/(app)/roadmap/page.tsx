@@ -1,11 +1,12 @@
 import { requirePlan } from "@/lib/session";
-import { getAllTasks } from "@/lib/data";
+import { getTasks } from "@/lib/data";
 import { RoadmapView } from "@/components/roadmap-view";
+import { proofsByTask } from "@/lib/proofs";
 
 export const metadata = { title: "Roadmap" };
 
 export default async function RoadmapPage() {
-  const { supabase, roadmap, profile } = await requirePlan();
-  const tasks = await getAllTasks(supabase, roadmap.id);
-  return <RoadmapView outline={roadmap.outline} initialTasks={tasks} roleTitle={profile.role_title} />;
+  const { supabase, plan, profile } = await requirePlan();
+  const [tasks, proofs] = await Promise.all([getTasks(supabase, plan), proofsByTask(supabase, plan.id)]);
+  return <RoadmapView outline={plan.outline} initialTasks={tasks} roleTitle={profile.role_title} proofs={proofs} />;
 }

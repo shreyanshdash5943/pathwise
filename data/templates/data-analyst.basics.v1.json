@@ -1,0 +1,437 @@
+{
+  "title": "Data Analyst Career Roadmap",
+  "summary": "A practical pathway from solid fundamentals to a job‑ready portfolio, focusing on the essential tools and storytelling skills. Follow the phases to build confidence, create showcase projects, and land your first analyst role.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build core quantitative and spreadsheet competence.",
+      "milestones": [
+        {
+          "title": "Master Spreadsheet Functions",
+          "outcome": "You can clean, transform, and analyze data using advanced Excel/Google Sheets features.",
+          "skill": "Spreadsheets",
+          "tasks": [
+            {
+              "title": "Review key formulas",
+              "description": "Study VLOOKUP, INDEX/MATCH, SUMIFS, and array formulas on Microsoft support pages.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a data cleaning sheet",
+              "description": "Import a messy CSV and use text‑to‑columns, TRIM, and conditional formatting to tidy it.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Build a pivot table report",
+              "description": "Summarize sales data by region and product, adding slicers for interactivity.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on errors",
+              "description": "Note three common mistakes you made and how you fixed them.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Fundamentals of Statistics",
+          "outcome": "You can describe data distributions, test hypotheses, and interpret confidence intervals.",
+          "skill": "Statistics",
+          "tasks": [
+            {
+              "title": "Read descriptive stats chapter",
+              "description": "Use Khan Academy’s statistics section to review mean, median, variance, and standard deviation.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Calculate summary stats in Sheets",
+              "description": "Apply built‑in functions to a sample dataset and verify results manually.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Perform a t‑test in Sheets",
+              "description": "Use the =TTEST function on two sample groups and interpret the p‑value.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize findings",
+              "description": "Write a one‑page interpretation of the test outcome for a non‑technical audience.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Join a stats forum",
+              "description": "Introduce yourself on Cross‑Validated and ask a question about a concept you find tricky.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain proficiency in SQL, Python, and visualisation tools.",
+      "milestones": [
+        {
+          "title": "SQL Querying Basics",
+          "outcome": "You can extract, filter, and aggregate data from relational databases.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Complete SELECT tutorial",
+              "description": "Follow the freeCodeCamp SQL basics lesson and run queries on the provided SQLite database.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Write a join query",
+              "description": "Combine two tables (orders and customers) to list orders with customer names.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Create a summary view",
+              "description": "Use GROUP BY and HAVING to produce monthly sales totals and filter low‑volume months.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Explain query plan",
+              "description": "Describe in one paragraph how the database processes your join query.",
+              "type": "reflect",
+              "minutes": 15
+            },
+            {
+              "title": "Share query on forum",
+              "description": "Post your query and results on Stack Overflow for feedback.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Python & pandas for Analysis",
+          "outcome": "You can load, clean, and manipulate datasets programmatically.",
+          "skill": "Python with pandas",
+          "tasks": [
+            {
+              "title": "Watch pandas intro video",
+              "description": "Use the official pandas documentation tutorial videos to understand DataFrames.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Load a CSV with pandas",
+              "description": "Write a script that reads a public dataset and prints the first five rows.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Clean missing values",
+              "description": "Implement .fillna() and .dropna() strategies on the dataset and justify choices.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Group and aggregate data",
+              "description": "Calculate average sales per category using .groupby() and .agg().",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Document code",
+              "description": "Add comments and a README explaining your data pipeline steps.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Data Visualisation Essentials",
+          "outcome": "You can create clear charts and dashboards that highlight insights.",
+          "skill": "Data visualisation",
+          "tasks": [
+            {
+              "title": "Read chart‑type guide",
+              "description": "Study the Data Visualization section on MDN for best‑practice chart selections.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build a bar chart in Sheets",
+              "description": "Visualise monthly revenue using a stacked bar chart with labels.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Create a line plot with matplotlib",
+              "description": "Plot time‑series data in Python, adding titles and axis labels.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Design a simple dashboard",
+              "description": "Combine three charts in a Google Data Studio report linked to your spreadsheet.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Get feedback on visuals",
+              "description": "Share your dashboard on a data‑analysis community and note two improvement suggestions.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Develop portfolio projects that demonstrate end‑to‑end analysis.",
+      "milestones": [
+        {
+          "title": "Sales Dashboard Project",
+          "outcome": "You can turn raw sales data into an interactive dashboard with key KPIs.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select public sales dataset",
+              "description": "Download a CSV from Kaggle’s open datasets that includes date, product, and revenue fields.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Clean data in pandas",
+              "description": "Handle missing dates, correct data types, and create a ‘month’ column.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create visualisations",
+              "description": "Produce a bar chart of revenue by product and a line chart of monthly trends using matplotlib or Sheets.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Assemble dashboard",
+              "description": "Combine the charts in Google Data Studio, adding filters for region and product.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Write project summary",
+              "description": "Draft a one‑page write‑up describing the problem, approach, and insights for a hiring manager.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "A/B Test Analysis Write‑up",
+          "outcome": "You can design, analyze, and communicate results of controlled experiments.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Find A/B test dataset",
+              "description": "Use a public experiment dataset from Kaggle (e.g., website conversion data).",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Formulate hypotheses",
+              "description": "State null and alternative hypotheses for the key metric.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Run statistical test in Sheets",
+              "description": "Apply a chi‑square or t‑test using built‑in functions and record the p‑value.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Visualise results",
+              "description": "Create a side‑by‑side bar chart comparing control and variant performance.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Compose executive summary",
+              "description": "Write a concise report (max 500 words) for stakeholders, focusing on impact and next steps.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Cohort Retention Report",
+          "outcome": "You can track user cohorts over time and present retention insights.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Obtain user activity data",
+              "description": "Download a sample user‑event CSV from a public data repository.",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Define cohorts in pandas",
+              "description": "Group users by signup month and calculate weekly retention percentages.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Plot retention curves",
+              "description": "Use seaborn to draw line charts for each cohort on the same axes.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Add narrative insights",
+              "description": "Identify the strongest and weakest cohorts and suggest possible reasons.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Publish on GitHub",
+              "description": "Push the notebook and README to a public repo and add a project description.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish storytelling, advanced topics, and job‑search readiness.",
+      "milestones": [
+        {
+          "title": "Storytelling with Data",
+          "outcome": "You can craft compelling narratives that guide decision‑makers.",
+          "skill": "Storytelling with data",
+          "tasks": [
+            {
+              "title": "Read storytelling guide",
+              "description": "Study the free “Storytelling with Data” PDF chapters on visual hierarchy and audience focus.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Rewrite project conclusions",
+              "description": "Take one portfolio project and rewrite its findings as a 3‑minute slide deck narrative.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Create a data‑story video",
+              "description": "Record a short screen‑capture walkthrough of your dashboard, adding voice‑over explanations.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Gather peer feedback",
+              "description": "Share the deck with a colleague or online community and note two improvement points.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on storytelling gaps",
+              "description": "Write a brief note on what storytelling elements you still need to strengthen.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Advanced Analytics Basics",
+          "outcome": "You gain exposure to predictive modeling and automation.",
+          "skill": "Python with pandas",
+          "tasks": [
+            {
+              "title": "Complete intro to regression tutorial",
+              "description": "Follow the free Kaggle micro‑course on linear regression using scikit‑learn.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a simple model",
+              "description": "Predict sales using two features and evaluate RMSE on a hold‑out set.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Automate report generation",
+              "description": "Write a Python script that updates your dashboard CSV and emails a PDF snapshot daily.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Document model assumptions",
+              "description": "Add a markdown cell in your notebook explaining data limits and model risks.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Discuss with a mentor",
+              "description": "Schedule a 30‑minute chat with a data‑science mentor on LinkedIn about next steps.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Job‑Search Preparation",
+          "outcome": "You are ready to apply, interview, and secure a data analyst role.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Polish resume with metrics",
+              "description": "Update your CV to include quantifiable results from each portfolio project.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Optimize LinkedIn profile",
+              "description": "Add a headline, summary, and project links highlighting your analytical impact.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Mock SQL interview",
+              "description": "Use LeetCode’s database problems to practice writing queries under time pressure.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Prepare STAR stories",
+              "description": "Write three Situation‑Task‑Action‑Result narratives about data challenges you solved.",
+              "type": "reflect",
+              "minutes": 35
+            },
+            {
+              "title": "Apply to 5 jobs",
+              "description": "Submit tailored applications to analyst openings, tracking responses in a spreadsheet.",
+              "type": "build",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "data-analyst.basics",
+  "roleId": "data-analyst",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:11:24.523Z",
+  "model": "openai/gpt-oss-120b"
+}

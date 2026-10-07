@@ -1,0 +1,284 @@
+{
+  "title": "Senior Backend Engineer Mastery",
+  "summary": "This roadmap elevates your backend engineering skills by focusing on advanced system design, robust API patterns, and production-grade reliability. It prepares you for senior-level interviews and client-facing roles through polished portfolio projects and leadership-focused technical depth.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Solidify your core language and database expertise to ensure a rock-solid base for advanced architectural decisions.",
+      "milestones": [
+        {
+          "title": "Language Proficiency",
+          "outcome": "You can write idiomatic, high-performance code in your chosen backend language and explain memory management trade-offs.",
+          "skill": "Python or Go",
+          "tasks": [
+            {
+              "title": "Refactor legacy code for performance",
+              "description": "Take a slow function from a previous project and optimize it using profiling tools like cProfile or pprof. Document the before-and-after metrics.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Implement concurrent worker pool",
+              "description": "Build a simple task runner in Python or Go that processes items concurrently using threads or goroutines. Handle error propagation correctly.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Study official style guides",
+              "description": "Read the PEP 8 or Go Code Review Comments and apply one specific rule to a small codebase snippet. Explain why the rule matters for maintainability.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Debug a memory leak scenario",
+              "description": "Introduce a deliberate memory leak in a test script and use a debugger or profiler to identify the source. Write a brief post-mortem on the detection process.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Data Modeling Depth",
+          "outcome": "You can design normalized schemas that handle complex relationships and write optimized queries for large datasets.",
+          "skill": "SQL and data modelling",
+          "tasks": [
+            {
+              "title": "Design a many-to-many schema",
+              "description": "Create a database schema for a blog system with posts, tags, and authors. Include junction tables and appropriate foreign key constraints.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Optimize a slow query",
+              "description": "Take a complex JOIN query with poor performance and add indexes to improve execution time. Use EXPLAIN ANALYZE to verify the improvement.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Implement database migrations",
+              "description": "Write a migration script that adds a new column to an existing table without downtime. Test it on a local PostgreSQL instance.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Analyze index fragmentation",
+              "description": "Research how B-tree indexes work and write a short summary on when to use partial indexes versus full indexes. Apply this to a sample dataset.",
+              "type": "learn",
+              "minutes": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Master the patterns and security practices that define professional backend services, focusing on API design and state management.",
+      "milestones": [
+        {
+          "title": "API Architecture",
+          "outcome": "You can design RESTful endpoints with proper versioning, error handling, and pagination that scale to high traffic.",
+          "skill": "REST API design",
+          "tasks": [
+            {
+              "title": "Implement cursor-based pagination",
+              "description": "Build an API endpoint that returns paginated results using cursor-based logic instead of offset. Ensure the cursor is opaque and secure.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Standardize error responses",
+              "description": "Create a middleware that catches exceptions and formats them into a consistent JSON error structure with appropriate HTTP status codes.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Design API versioning strategy",
+              "description": "Write a technical design document outlining how to version your API using URI paths or headers. Include migration strategies for clients.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Add request validation layer",
+              "description": "Implement a validation layer that checks incoming JSON payloads against a schema before processing. Return detailed validation errors.",
+              "type": "build",
+              "minutes": 50
+            }
+          ]
+        },
+        {
+          "title": "Security Implementation",
+          "outcome": "You can implement secure authentication flows and protect endpoints against common web vulnerabilities.",
+          "skill": "Authentication",
+          "tasks": [
+            {
+              "title": "Implement JWT refresh flow",
+              "description": "Build an authentication system that issues short-lived access tokens and long-lived refresh tokens. Handle token rotation securely.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add rate limiting middleware",
+              "description": "Implement a rate limiter that tracks requests per user IP or token. Return 429 status codes when limits are exceeded.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Audit dependency security",
+              "description": "Run a security scanner on your project dependencies and address any high-severity vulnerabilities. Document the remediation steps.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Implement CSRF protection",
+              "description": "Add CSRF tokens to state-changing endpoints in a web application context. Test that requests without valid tokens are rejected.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build production-quality projects that demonstrate your ability to handle concurrency, data integrity, and complex business logic.",
+      "milestones": [
+        {
+          "title": "Secure API Project",
+          "outcome": "You have a deployed REST API with full authentication, comprehensive tests, and clear documentation that demonstrates senior-level engineering.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Build user management API",
+              "description": "Create endpoints for user registration, login, and profile updates. Ensure all sensitive data is hashed and encrypted at rest.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write integration test suite",
+              "description": "Write end-to-end tests that cover the main user flows, including error cases. Use a test database to ensure isolation.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Document API with OpenAPI",
+              "description": "Generate an OpenAPI specification for your API and host it using a free service like Swagger UI. Ensure all endpoints are documented.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Deploy to cloud platform",
+              "description": "Deploy your API to a free tier cloud provider like Heroku or Render. Configure environment variables and health checks.",
+              "type": "build",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "Background Job System",
+          "outcome": "You have a reliable background job processor that handles asynchronous tasks with retries and monitoring.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Implement job queue worker",
+              "description": "Build a worker that consumes jobs from a queue like Redis or RabbitMQ. Handle job failures with exponential backoff.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add job monitoring dashboard",
+              "description": "Create a simple endpoint that returns the status of recent jobs, including success/failure counts and average processing time.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Test job idempotency",
+              "description": "Write tests that verify jobs can be retried safely without side effects. Simulate duplicate job submissions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Optimize job batching",
+              "description": "Modify the worker to process jobs in batches to reduce database overhead. Measure the performance improvement.",
+              "type": "build",
+              "minutes": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish your portfolio with advanced scalability patterns and prepare for senior-level interviews by mastering system design and testing strategies.",
+      "milestones": [
+        {
+          "title": "Scalability Patterns",
+          "outcome": "You can implement caching and queuing strategies to handle high load and explain the trade-offs of each approach.",
+          "skill": "Caching and queues",
+          "tasks": [
+            {
+              "title": "Implement cache-aside pattern",
+              "description": "Add a Redis cache layer to your API for frequently accessed data. Implement invalidation logic when data changes.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Design event-driven architecture",
+              "description": "Refactor a part of your application to use events for communication between services. Use a message broker like Kafka or RabbitMQ.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Analyze cache stampede risk",
+              "description": "Write a technical note on how to prevent cache stampedes using techniques like request coalescing or probabilistic early expiration.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Implement dead letter queue",
+              "description": "Add a dead letter queue to your job processor to capture failed jobs that exceed retry limits. Build a tool to inspect these jobs.",
+              "type": "build",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Interview Readiness",
+          "outcome": "You can demonstrate robust testing practices and articulate your technical decisions clearly in a senior-level interview context.",
+          "skill": "Testing",
+          "tasks": [
+            {
+              "title": "Implement property-based testing",
+              "description": "Use a library like Hypothesis or Go's testing framework to write property-based tests for a complex business logic function.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create load testing script",
+              "description": "Write a load test using a tool like Locust or k6 to simulate 100 concurrent users. Analyze the results for bottlenecks.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Prepare system design answers",
+              "description": "Practice explaining the design of a URL shortener or chat system, focusing on scalability, consistency, and failure modes.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Conduct peer code review",
+              "description": "Review a colleague's or open-source PR, providing constructive feedback on code quality, security, and maintainability. Document your feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "backend.advanced",
+  "roleId": "backend",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:03:33.174Z",
+  "model": "qwen/qwen3.8-27b"
+}

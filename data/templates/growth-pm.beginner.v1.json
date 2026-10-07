@@ -1,0 +1,462 @@
+{
+  "title": "Growth Product Manager Learning Roadmap",
+  "summary": "A step‑by‑step guide to build the fundamentals, core product growth skills, a showcase portfolio, and job‑ready expertise. Follow each phase to move from zero experience to a confident growth PM.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Learn the basics of product growth, data, and communication.",
+      "milestones": [
+        {
+          "title": "Growth Mindset & Basics",
+          "outcome": "Can explain the growth loop and key metrics for SaaS products.",
+          "skill": "Funnels and metrics",
+          "tasks": [
+            {
+              "title": "Read growth loop overview",
+              "description": "Study the growth loop article on the GrowthHackers blog and note each stage.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Watch funnel basics video",
+              "description": "View the freeCodeCamp YouTube video on conversion funnels and write a one‑page summary.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Sketch a product funnel",
+              "description": "Create a simple funnel diagram for a familiar app on paper or a digital tool.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on funnel gaps",
+              "description": "Identify two points in your sketch where users might drop off and suggest a hypothesis.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Data Literacy & SQL Intro",
+          "outcome": "Can write basic SELECT queries to retrieve user data.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Complete SQL basics module",
+              "description": "Finish the introductory SQL lessons on Khan Academy, focusing on SELECT, FROM, WHERE.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Set up a free DB sandbox",
+              "description": "Create a free PostgreSQL instance on ElephantSQL and connect with a client tool.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Query sample user table",
+              "description": "Write three queries: list users, filter active users, count sign‑ups per day.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Explain query results",
+              "description": "Summarize what each query tells you about user behavior in a short paragraph.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Analytics Tools Overview",
+          "outcome": "Can navigate a free analytics dashboard and locate key reports.",
+          "skill": "Analytics tools",
+          "tasks": [
+            {
+              "title": "Explore Google Analytics demo",
+              "description": "Use the Google Analytics Demo Account to locate audience, acquisition, and behavior reports.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a custom segment",
+              "description": "Define a segment for new users in the demo and view its funnel conversion.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Read Mixpanel basics guide",
+              "description": "Read Mixpanel’s free getting‑started guide and note differences from GA.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Connect with a community",
+              "description": "Join the Product Growth Slack channel and introduce yourself, asking a question about metrics.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop experiment design, copy, onboarding, and prioritisation abilities.",
+      "milestones": [
+        {
+          "title": "Experiment Design Fundamentals",
+          "outcome": "Can craft a hypothesis, define metrics, and outline an A/B test plan.",
+          "skill": "Experiment design",
+          "tasks": [
+            {
+              "title": "Read experiment design article",
+              "description": "Study the Optimizely guide on hypothesis formation and success metrics.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write three hypotheses",
+              "description": "Generate three growth hypotheses for a hypothetical app, each with a clear metric.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Draft an A/B test plan",
+              "description": "Outline sample size, duration, and variant details for one hypothesis.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Get feedback from peers",
+              "description": "Post your test plan in the Growth Slack channel and incorporate one suggestion.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on learnings",
+              "description": "Write a brief note on what makes a good experiment versus a vanity metric.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Copy & Onboarding Tactics",
+          "outcome": "Can audit onboarding flow and write persuasive copy for a signup page.",
+          "skill": "Copy and onboarding",
+          "tasks": [
+            {
+              "title": "Watch onboarding teardown video",
+              "description": "View the Product School video on onboarding audits and list key checkpoints.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Audit a public signup page",
+              "description": "Choose a free SaaS product, record each step, and note friction points.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Rewrite headline copy",
+              "description": "Create three alternative headlines for the signup page focusing on benefit language.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Test copy with a friend",
+              "description": "Show the three headlines to a peer and record which is most compelling.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Summarize onboarding insights",
+              "description": "Write a one‑page summary of the audit and copy improvements.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Prioritisation Frameworks",
+          "outcome": "Can apply RICE or ICE to rank growth ideas objectively.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read RICE framework article",
+              "description": "Study the Intercom article on RICE scoring and note each component.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Score five growth ideas",
+              "description": "Take five sample ideas and calculate RICE scores in a spreadsheet.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Create a prioritisation board",
+              "description": "Set up a Trello board with columns for scores and move ideas accordingly.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Discuss scores with a mentor",
+              "description": "Share your board in a mentorship chat and ask for critique.",
+              "type": "connect",
+              "minutes": 25
+            },
+            {
+              "title": "Reflect on trade‑offs",
+              "description": "Write a short note on how reach vs. effort influenced your rankings.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build portfolio projects that demonstrate your growth expertise.",
+      "milestones": [
+        {
+          "title": "Funnel Analysis Project",
+          "outcome": "Can present a data‑driven funnel report with actionable insights.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a public product",
+              "description": "Choose a well‑known SaaS (e.g., Notion) and locate its public usage data or case study.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Gather funnel data",
+              "description": "Use Google Analytics Demo or SimilarWeb to extract sign‑up, activation, and retention numbers.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create analysis deck",
+              "description": "Build a 5‑slide PowerPoint deck showing the funnel, drop‑off points, and recommendations.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Record a walkthrough video",
+              "description": "Film a 3‑minute video narrating the deck and upload to YouTube as unlisted.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Share for feedback",
+              "description": "Post the deck link in the Product Growth community and incorporate one suggestion.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Experiment Backlog Project",
+          "outcome": "Can showcase a prioritized backlog with sizing and test plans.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "List 10 growth ideas",
+              "description": "Brainstorm ten ideas for improving sign‑ups for a chosen app and write one‑sentence descriptions.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Apply RICE scoring",
+              "description": "Score each idea using the RICE framework in a Google Sheet.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Write test outlines",
+              "description": "For the top three ideas, draft brief A/B test outlines with hypothesis and metric.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Design a backlog board",
+              "description": "Create a Notion page displaying the ranked ideas, scores, and test outlines.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Publish and solicit input",
+              "description": "Share the Notion link on LinkedIn with a short post asking for feedback.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Onboarding Teardown Project",
+          "outcome": "Can deliver a detailed critique of an onboarding flow with copy suggestions.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose an onboarding flow",
+              "description": "Select a free app’s first‑time user experience and document each screen.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Map user steps",
+              "description": "Create a flowchart in Lucidchart showing the onboarding sequence.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Identify friction points",
+              "description": "Mark at least three steps where users may drop off and note why.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Propose copy revisions",
+              "description": "Write revised copy for each friction point focusing on clarity and value.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Compile a case study",
+              "description": "Assemble screenshots, findings, and revised copy into a PDF case study.",
+              "type": "build",
+              "minutes": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance your toolkit and prepare for interviews or client pitches.",
+      "milestones": [
+        {
+          "title": "Advanced Analytics & Cohort Analysis",
+          "outcome": "Can run cohort queries and interpret retention curves.",
+          "skill": "Analytics tools",
+          "tasks": [
+            {
+              "title": "Read cohort analysis guide",
+              "description": "Study the Mixpanel free guide on cohort analysis and retention metrics.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write a cohort SQL query",
+              "description": "Using your sandbox DB, query user cohorts by signup week and calculate 30‑day retention.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Visualize retention chart",
+              "description": "Plot the results in Google Sheets and add trend lines.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Explain insights to a peer",
+              "description": "Present the chart in a 5‑minute call and discuss key takeaways.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on analysis limits",
+              "description": "Write a short note on what data is missing for deeper insights.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Interview Prep & Storytelling",
+          "outcome": "Can answer growth PM interview questions with concrete examples.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Study common growth PM questions",
+              "description": "Read the Product Management interview guide on Glassdoor focusing on growth scenarios.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Craft STAR stories",
+              "description": "Write three STAR (Situation, Task, Action, Result) stories using your portfolio projects.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Mock interview with a friend",
+              "description": "Run a 30‑minute mock interview covering metrics, experiments, and prioritisation.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Record answers on video",
+              "description": "Film yourself answering two questions and review for clarity and impact.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Update LinkedIn profile",
+              "description": "Add the three portfolio projects and a headline highlighting growth expertise.",
+              "type": "build",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Negotiation & Client Pitching",
+          "outcome": "Can pitch growth initiatives and negotiate scope with stakeholders.",
+          "skill": "Copy and onboarding",
+          "tasks": [
+            {
+              "title": "Read pitch deck basics",
+              "description": "Study the free Pitch Deck template from Slidebean and note structure tips.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a growth pitch deck",
+              "description": "Build a 7‑slide deck proposing an experiment backlog for a target company.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice pitch delivery",
+              "description": "Rehearse the deck aloud for 10 minutes, focusing on concise copy and value proposition.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Get feedback from a mentor",
+              "description": "Share the deck with a senior PM via email and incorporate one improvement.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on negotiation points",
+              "description": "Write a brief list of possible objections and prepared responses.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "growth-pm.beginner",
+  "roleId": "growth-pm",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:25:18.172Z",
+  "model": "openai/gpt-oss-120b"
+}

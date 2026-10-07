@@ -1,0 +1,474 @@
+{
+  "title": "Applied AI Engineer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step plan to master LLM integration, retrieval‑augmented generation, and production‑grade web deployment. By the end you’ll have polished portfolio projects and the habits needed for professional AI engineering.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid base in programming, web fundamentals, and AI concepts.",
+      "milestones": [
+        {
+          "title": "Python (or TypeScript) Fundamentals",
+          "outcome": "You can write clean, modular code and debug scripts confidently.",
+          "skill": "Python or TypeScript",
+          "tasks": [
+            {
+              "title": "Complete Python basics on freeCodeCamp",
+              "description": "Finish the introductory Python curriculum, focusing on data structures and functions.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Write a CLI calculator in Python",
+              "description": "Implement addition, subtraction, multiplication, and division with argument parsing.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Refactor the calculator using type hints",
+              "description": "Add type annotations and run mypy to ensure static checking.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Review Python style guide (PEP 8)",
+              "description": "Read the relevant sections on naming and formatting, then lint your code with flake8.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Web Basics for AI Apps",
+          "outcome": "You can create a simple front‑end and serve it with a back‑end API.",
+          "skill": "Shipping web apps",
+          "tasks": [
+            {
+              "title": "Follow MDN’s “Learn HTTP” tutorial",
+              "description": "Understand request methods, status codes, and JSON payloads.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a static HTML page with a form",
+              "description": "Collect user text input and display it on the same page using vanilla JavaScript.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Create an Express server that returns JSON",
+              "description": "Set up a Node.js project, define a GET endpoint, and test with curl.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Connect the form to the Express API",
+              "description": "Submit the form via fetch, handle the response, and show results in the UI.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Document the API with OpenAPI spec",
+              "description": "Write a minimal OpenAPI YAML file and generate docs with Swagger UI.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Intro to Large Language Models",
+          "outcome": "You understand how LLM APIs work and can send basic prompts.",
+          "skill": "LLM APIs",
+          "tasks": [
+            {
+              "title": "Read OpenAI API quickstart guide",
+              "description": "Focus on authentication, request format, and response handling.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write a script that calls ChatCompletion",
+              "description": "Send a simple prompt and print the model’s reply.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Handle rate‑limit errors gracefully",
+              "description": "Add retry logic with exponential backoff to your script.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Compare responses from two models",
+              "description": "Call both gpt‑3.5‑turbo and gpt‑4, log differences, and note cost implications.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize key API parameters in a cheat sheet",
+              "description": "Create a markdown file listing temperature, top_p, max_tokens, etc.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Deepen expertise in prompting, retrieval, and evaluation.",
+      "milestones": [
+        {
+          "title": "Advanced Prompt Design",
+          "outcome": "You can craft reliable, reusable prompts for varied tasks.",
+          "skill": "Prompt design",
+          "tasks": [
+            {
+              "title": "Study the Prompt Engineering guide on OpenAI docs",
+              "description": "Read sections on few‑shot prompting and system messages.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create a prompt template library in JSON",
+              "description": "Define placeholders for input, instructions, and examples.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Test each template with 5 sample inputs",
+              "description": "Run the templates via the API and record success rates.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Iterate on a failing template using chain‑of‑thought",
+              "description": "Add step‑by‑step reasoning prompts and measure improvement.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Write a short reflection on prompt failures",
+              "description": "Identify common pitfalls and note mitigation strategies.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Retrieval‑Augmented Generation (RAG)",
+          "outcome": "You can integrate vector stores and retrieve relevant context for LLMs.",
+          "skill": "Retrieval (RAG)",
+          "tasks": [
+            {
+              "title": "Watch the free LangChain tutorial on YouTube",
+              "description": "Focus on document loaders, embeddings, and vector stores.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Set up a local ChromaDB instance",
+              "description": "Install Chroma, load a small PDF collection, and verify indexing.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Write a query function that returns top‑k chunks",
+              "description": "Embed a user query, search the vector store, and return results.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Combine retrieved chunks with a prompt template",
+              "description": "Pass context to the LLM and generate an answer with citations.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document the RAG pipeline in a diagram",
+              "description": "Use draw.io to illustrate data flow from ingestion to response.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Systematic Evaluation",
+          "outcome": "You can measure prompt quality and model performance with metrics.",
+          "skill": "Evaluation",
+          "tasks": [
+            {
+              "title": "Read the Evaluation section of the LLM Eval Guide on GitHub",
+              "description": "Learn about accuracy, relevance, and hallucination metrics.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Implement a BLEU‑style scorer for generated answers",
+              "description": "Compare model output against a reference set and compute scores.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Run the scorer on 20 sample prompts",
+              "description": "Collect scores, calculate average, and note outliers.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create a dashboard in Streamlit to visualize results",
+              "description": "Plot score distributions and filter by prompt version.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on evaluation limitations in a journal entry",
+              "description": "Write a brief note on what the metrics miss and next steps.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Apply the core skills to three portfolio‑grade projects.",
+      "milestones": [
+        {
+          "title": "Document Q&A App with Citations",
+          "outcome": "You can deliver a web app that answers user questions using RAG and shows source references.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define project scope and UI mockup",
+              "description": "Sketch the main page, input box, and results area with citations.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Ingest a public PDF corpus into ChromaDB",
+              "description": "Write a script that loads, splits, and indexes the documents.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Connect front‑end form to LLM via FastAPI",
+              "description": "Create an endpoint that runs the RAG pipeline and returns JSON.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add citation links that open source snippets",
+              "description": "Render each answer with clickable footnotes pointing to original text.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Deploy the app on Render free tier",
+              "description": "Configure Dockerfile, environment variables, and verify live URL.",
+              "type": "practice",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "title": "Tool‑Using AI Agent",
+          "outcome": "You can build an autonomous agent that calls external APIs or executes code.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Outline agent capabilities and required tools",
+              "description": "Decide which APIs (e.g., weather, calculator) the agent will access.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Implement tool‑calling logic with LangChain’s StructuredOutputParser",
+              "description": "Parse LLM responses to trigger function calls.",
+              "type": "build",
+              "minutes": 85
+            },
+            {
+              "title": "Create mock endpoints for each tool",
+              "description": "Set up simple Flask routes that return deterministic data.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Run end‑to‑end scenarios and log success rate",
+              "description": "Execute 10 diverse user requests and record how often the agent uses the correct tool.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a short case study for your portfolio",
+              "description": "Explain the problem, architecture, and key challenges solved.",
+              "type": "reflect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Prompt Evaluation Harness",
+          "outcome": "You can systematically benchmark prompts across models and datasets.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design a JSON schema for test cases",
+              "description": "Include fields for prompt, expected answer, and metadata.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Code a runner that executes prompts on multiple models",
+              "description": "Loop through test cases, call each model, and store raw outputs.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Integrate the BLEU scorer from Phase 2",
+              "description": "Automatically compute scores for each model‑prompt pair.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Generate a comparative report in Markdown",
+              "description": "Summarize findings, highlight best‑performing prompts, and note failures.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Publish the harness on GitHub with a README",
+              "description": "Add installation steps, usage examples, and a license.",
+              "type": "practice",
+              "minutes": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced practices, professional habits, and job‑search readiness.",
+      "milestones": [
+        {
+          "title": "Production‑Ready Shipping",
+          "outcome": "You can ship, monitor, and maintain AI web services at scale.",
+          "skill": "Shipping web apps",
+          "tasks": [
+            {
+              "title": "Read the Twelve‑Factor App guide on Heroku blog",
+              "description": "Focus on config, logs, and stateless processes.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Add structured logging with Python’s logging module",
+              "description": "Emit JSON logs and test log rotation locally.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Set up health‑check endpoint in FastAPI",
+              "description": "Return 200 OK when dependencies are reachable.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Configure CI/CD with GitHub Actions for tests and deployment",
+              "description": "Write a workflow that lints, runs unit tests, and pushes to Render.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Write a post‑mortem for a simulated outage",
+              "description": "Describe root cause, mitigation, and future safeguards.",
+              "type": "reflect",
+              "minutes": 35
+            }
+          ]
+        },
+        {
+          "title": "Advanced Retrieval Techniques",
+          "outcome": "You can apply hybrid search and fine‑tuned embeddings for better relevance.",
+          "skill": "Retrieval (RAG)",
+          "tasks": [
+            {
+              "title": "Study hybrid search article on Pinecone blog (free)",
+              "description": "Learn how to combine keyword and vector similarity.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Fine‑tune a small sentence‑transformer on domain data",
+              "description": "Use Hugging Face’s Trainer API on a labeled dataset.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Replace base embeddings in your RAG app with the fine‑tuned model",
+              "description": "Re‑index documents and compare relevance scores.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Benchmark latency and cost before/after change",
+              "description": "Record average query time and token usage for 100 queries.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Document lessons learned in a technical blog post",
+              "description": "Explain why fine‑tuning helped and trade‑offs involved.",
+              "type": "reflect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Career Launch",
+          "outcome": "You are prepared to interview and present your AI engineering portfolio.",
+          "skill": "Python or TypeScript",
+          "tasks": [
+            {
+              "title": "Update LinkedIn with project screenshots and descriptions",
+              "description": "Write concise bullet points highlighting impact and tech stack.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Create a 5‑minute demo video for each portfolio project",
+              "description": "Record screen, narrate architecture, and upload to YouTube (unlisted).",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice system‑design interview questions on Pramp (free)",
+              "description": "Focus on scaling LLM services and data pipelines.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Write STAR stories for three key achievements",
+              "description": "Structure each story with Situation, Task, Action, Result.",
+              "type": "reflect",
+              "minutes": 35
+            },
+            {
+              "title": "Send personalized outreach emails to 5 target companies",
+              "description": "Reference a relevant project and ask for a brief chat.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ai-engineer.intermediate",
+  "roleId": "ai-engineer",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:15:41.799Z",
+  "model": "openai/gpt-oss-120b"
+}

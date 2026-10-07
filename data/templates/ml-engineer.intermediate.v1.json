@@ -1,0 +1,413 @@
+{
+  "title": "Machine Learning Engineer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step plan to deepen your ML expertise, build production‑grade projects, and prepare for senior roles. Focuses on best practices, scalability, and professional habits.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Refresh core math and Python fundamentals for reliable ML work.",
+      "milestones": [
+        {
+          "title": "Python for ML",
+          "outcome": "Write clean, efficient Python scripts for data processing and modeling.",
+          "skill": "Python",
+          "tasks": [
+            {
+              "title": "Review Python data structures",
+              "description": "Read the official Python docs on lists, dicts, sets and practice creating each with sample data.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Implement a CSV loader",
+              "description": "Write a function that reads a CSV file into a list of dictionaries without using pandas.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice list comprehensions",
+              "description": "Solve 5 small problems from freeCodeCamp's Python section using list comprehensions.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on code style",
+              "description": "Compare your code to PEP 8 guidelines and note three improvements.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Linear Algebra & Probability",
+          "outcome": "Apply vector, matrix, and probability concepts to ML algorithms.",
+          "skill": "Linear algebra and probability",
+          "tasks": [
+            {
+              "title": "Watch Khan Academy linear algebra videos",
+              "description": "Watch the 3‑video series on vectors, matrices, and eigenvalues (≈45 min total).",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Derive gradient of a quadratic loss",
+              "description": "Write out the gradient step‑by‑step on paper and verify with a small numeric example.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Simulate a Bernoulli trial",
+              "description": "Use Python's random module to run 1,000 trials and compute empirical probability.",
+              "type": "build",
+              "minutes": 25
+            },
+            {
+              "title": "Connect with a math forum",
+              "description": "Post a question about eigenvalue intuition on StackExchange and read two answers.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Master essential ML libraries, evaluation, and MLOps basics.",
+      "milestones": [
+        {
+          "title": "scikit‑learn Mastery",
+          "outcome": "Build, tune, and evaluate classic models using scikit‑learn pipelines.",
+          "skill": "scikit-learn",
+          "tasks": [
+            {
+              "title": "Read scikit-learn pipeline guide",
+              "description": "Study the official scikit-learn documentation on Pipelines and FeatureUnion.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a preprocessing pipeline",
+              "description": "Implement a pipeline that imputes missing values and scales numeric features for a sample dataset.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Tune hyperparameters with GridSearchCV",
+              "description": "Run a grid search on a RandomForest model and record the best parameters.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on model bias",
+              "description": "Write a short note on how preprocessing choices affect bias in your model.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Deep Learning with PyTorch",
+          "outcome": "Design, train, and debug neural networks using PyTorch.",
+          "skill": "PyTorch",
+          "tasks": [
+            {
+              "title": "Watch PyTorch fundamentals tutorial",
+              "description": "Follow the official PyTorch 60‑minute introductory video on tensors and autograd.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Implement a two‑layer MLP",
+              "description": "Code a multilayer perceptron for the MNIST dataset without using high‑level APIs.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Debug a vanishing gradient case",
+              "description": "Introduce a deep network, observe gradients, and apply ReLU to fix the issue.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Connect on PyTorch forums",
+              "description": "Introduce yourself on the PyTorch Discuss forum and comment on a recent post.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Model Evaluation Techniques",
+          "outcome": "Select and compute appropriate metrics for classification and regression tasks.",
+          "skill": "Model evaluation",
+          "tasks": [
+            {
+              "title": "Read evaluation metrics chapter on MDN",
+              "description": "Study MDN's guide to precision, recall, ROC‑AUC, and RMSE.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Calculate confusion matrix manually",
+              "description": "Write Python code that computes TP, FP, FN, TN from raw predictions.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Practice cross‑validation",
+              "description": "Implement k‑fold cross‑validation for a logistic regression model and log variance of scores.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on metric trade‑offs",
+              "description": "Summarize when to prioritize precision vs. recall in a short paragraph.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that showcase end‑to‑end ML pipelines.",
+      "milestones": [
+        {
+          "title": "Churn Prediction Model",
+          "outcome": "Publish a complete churn prediction notebook with analysis and write‑up.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Gather a public churn dataset",
+              "description": "Download the Telco Customer Churn dataset from Kaggle and store it locally.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Build data cleaning pipeline",
+              "description": "Use scikit-learn transformers to handle missing values and encode categoricals.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Train and evaluate models",
+              "description": "Compare Logistic Regression, XGBoost, and a simple neural net, recording metrics.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Write a project report",
+              "description": "Draft a 2‑page markdown report describing methodology, results, and next steps.",
+              "type": "reflect",
+              "minutes": 45
+            },
+            {
+              "title": "Publish on GitHub",
+              "description": "Create a repository, push code, and add a README with a link to the report.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Image Classifier API",
+          "outcome": "Deploy a trained image classifier as a REST API reachable from any client.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a small image dataset",
+              "description": "Download the CIFAR‑10 subset from the official site for quick iteration.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Train a CNN in PyTorch",
+              "description": "Implement a convolutional network, train for 10 epochs, and achieve >70% accuracy.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Containerize with Docker",
+              "description": "Write a Dockerfile that serves the model via FastAPI and test locally.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Deploy to a free cloud service",
+              "description": "Push the Docker image to Render or Railway and obtain a public endpoint.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Document API usage",
+              "description": "Create a Swagger/OpenAPI spec and a short usage guide in the repo.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Model Monitoring Dashboard",
+          "outcome": "Set up a dashboard that tracks model drift and performance in real time.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read MLOps monitoring guide",
+              "description": "Study the free MLOps basics section on the Google Cloud AI blog.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Simulate prediction stream",
+              "description": "Write a script that generates synthetic predictions and true labels every minute.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Create Grafana panels",
+              "description": "Configure Grafana to display latency, accuracy, and drift metrics from the stream.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Set up alert thresholds",
+              "description": "Define alerts for sudden drops in accuracy and test them with injected drift.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Share dashboard publicly",
+              "description": "Publish a read‑only link and write a brief explanation for portfolio viewers.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance to production‑grade practices and prepare for job or client interviews.",
+      "milestones": [
+        {
+          "title": "MLOps Foundations",
+          "outcome": "Implement CI/CD for model training and deployment using open‑source tools.",
+          "skill": "MLOps basics",
+          "tasks": [
+            {
+              "title": "Watch CI/CD for ML tutorial",
+              "description": "View the free Coursera Community tutorial on GitHub Actions for ML pipelines (≈45 min).",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create a GitHub Actions workflow",
+              "description": "Automate data validation, model training, and artifact upload on push events.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice model versioning",
+              "description": "Use DVC to track dataset and model versions in a sample project.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Reflect on reproducibility",
+              "description": "Write three bullet points on how your workflow improves reproducibility.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with MLOps community",
+              "description": "Join the MLOps Community Slack and introduce yourself.",
+              "type": "connect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Advanced PyTorch & Scaling",
+          "outcome": "Train large models efficiently with GPUs and distributed strategies.",
+          "skill": "PyTorch",
+          "tasks": [
+            {
+              "title": "Read PyTorch Distributed Data Parallel docs",
+              "description": "Study the official guide on DDP and note key configuration steps.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Run a multi‑GPU training job",
+              "description": "Modify the earlier CNN to use DDP on two GPUs (or simulated with CPU threads).",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Profile memory usage",
+              "description": "Use torch.profiler to identify bottlenecks and reduce peak memory.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on scaling trade‑offs",
+              "description": "Summarize advantages and challenges of distributed training in a short note.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect on PyTorch Lightning forum",
+              "description": "Ask a question about DDP best practices and read two replies.",
+              "type": "connect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Interview & Portfolio Polish",
+          "outcome": "Confidently discuss projects, solve white‑board problems, and present a professional portfolio.",
+          "skill": "Model evaluation",
+          "tasks": [
+            {
+              "title": "Review common ML interview questions",
+              "description": "Read the freeCodeCamp article on top ML interview questions and note key concepts.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Practice a white‑board case study",
+              "description": "Spend 45 minutes solving a churn prediction scenario on paper, focusing on feature engineering and evaluation.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Update portfolio README",
+              "description": "Add concise project summaries, tech stack badges, and a contact link to each repo.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Record a project walkthrough video",
+              "description": "Create a 5‑minute screen‑recorded demo of one project and upload to YouTube.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Seek feedback from peers",
+              "description": "Share your portfolio with two experienced engineers and incorporate their suggestions.",
+              "type": "connect",
+              "minutes": 40
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ml-engineer.intermediate",
+  "roleId": "ml-engineer",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:13:43.534Z",
+  "model": "openai/gpt-oss-120b"
+}

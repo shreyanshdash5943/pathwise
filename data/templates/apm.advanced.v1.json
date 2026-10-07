@@ -1,0 +1,443 @@
+{
+  "title": "Associate Product Manager Advancement Roadmap",
+  "summary": "A step‑by‑step plan to deepen product expertise, build a showcase portfolio, and prepare for senior‑level interviews. Focuses on advanced tactics, leadership, and polished communication.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Refresh core product fundamentals and communication basics.",
+      "milestones": [
+        {
+          "title": "Customer discovery fundamentals",
+          "outcome": "Can conduct structured user interviews and synthesize insights.",
+          "skill": "Customer discovery",
+          "tasks": [
+            {
+              "title": "Read product discovery guide on Mind the Product",
+              "description": "Study the article’s framework for hypothesis‑driven interviews.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch interview techniques video on YouTube",
+              "description": "Observe real interview examples and note key questioning patterns.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create interview script for a target persona",
+              "description": "Draft 5 open‑ended questions aligned with a hypothesis.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Conduct a 30‑minute mock interview with a peer",
+              "description": "Practice asking questions and recording responses.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize findings in a one‑page insight sheet",
+              "description": "Highlight top pain points and opportunity statements.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Writing clear specifications",
+          "outcome": "Can produce concise product requirement documents (PRDs).",
+          "skill": "Writing specs",
+          "tasks": [
+            {
+              "title": "Read PRD template on Aha! blog",
+              "description": "Understand sections, tone, and level of detail expected.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Study a public PRD on GitHub",
+              "description": "Identify how problem, goals, and acceptance criteria are expressed.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Draft a PRD for a simple feature (e.g., dark mode)",
+              "description": "Include problem statement, user flow, and success metrics.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Peer‑review the draft with a colleague",
+              "description": "Gather feedback on clarity and completeness.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Revise PRD based on feedback",
+              "description": "Incorporate suggestions and polish language.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop prioritisation, metrics, and roadmapping capabilities.",
+      "milestones": [
+        {
+          "title": "Prioritisation frameworks",
+          "outcome": "Can apply RICE or Kano to rank feature ideas objectively.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read RICE scoring article on Intercom",
+              "description": "Learn inputs, calculation, and interpretation.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Watch Kano model tutorial on Coursera (audit mode)",
+              "description": "Understand how to map satisfaction vs. functionality.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Score three feature ideas using RICE",
+              "description": "Create a spreadsheet with inputs and total scores.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Facilitate a mock prioritisation workshop with a friend",
+              "description": "Present scores and discuss trade‑offs.",
+              "type": "practice",
+              "minutes": 75
+            },
+            {
+              "title": "Write a brief justification for the top‑ranked idea",
+              "description": "Explain why it wins based on data and strategy.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Metrics and analytics basics",
+          "outcome": "Can define, track, and interpret key product metrics.",
+          "skill": "Metrics and analytics",
+          "tasks": [
+            {
+              "title": "Read Google Analytics for product on Analytics Academy",
+              "description": "Focus on event tracking and goal funnels.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Study Amplitude’s guide to North Star metrics",
+              "description": "Identify how to choose a guiding metric.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a metrics plan for a feature launch",
+              "description": "List activation, retention, and revenue KPIs with targets.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Set up a dummy dashboard in Google Data Studio",
+              "description": "Visualize sample data for the chosen KPIs.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on metric alignment with business goals",
+              "description": "Write a short note linking each KPI to strategic outcomes.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Roadmapping and stakeholder communication",
+          "outcome": "Can design a product roadmap and convey it to cross‑functional teams.",
+          "skill": "Roadmapping",
+          "tasks": [
+            {
+              "title": "Read product roadmap guide on ProductPlan blog",
+              "description": "Learn timeline structures and level of detail.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch stakeholder communication video on LinkedIn Learning (free trial)",
+              "description": "Observe techniques for aligning expectations.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Sketch a 6‑month roadmap for a hypothetical product line",
+              "description": "Include themes, epics, and release windows.",
+              "type": "build",
+              "minutes": 85
+            },
+            {
+              "title": "Present the roadmap to a peer and gather feedback",
+              "description": "Practice clear storytelling and answering questions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Update roadmap based on feedback and write a communication email",
+              "description": "Summarize changes and next steps for stakeholders.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio pieces that demonstrate product thinking.",
+      "milestones": [
+        {
+          "title": "Product teardown project",
+          "outcome": "Can analyze an existing product and present strengths, weaknesses, and improvement ideas.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a popular app and download its latest version",
+              "description": "Choose something you use regularly for relevance.",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Read teardown framework on Medium (free article)",
+              "description": "Understand criteria such as onboarding, value proposition, and monetization.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write a 2‑page teardown report",
+              "description": "Cover user flow, pain points, and three concrete improvement suggestions.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Create a slide deck summarizing the teardown",
+              "description": "Design 5 slides with visuals and key takeaways.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Share the deck on LinkedIn and collect comments",
+              "description": "Engage the community for feedback and visibility.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "PRD for a new feature",
+          "outcome": "Can produce a full product requirement document ready for engineering handoff.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Identify a gap in your current product’s experience",
+              "description": "Observe usage data or user complaints to pick a feature.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Research similar features in competitor apps",
+              "description": "Note functionality, UX, and metrics used.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Draft a complete PRD using the template from Phase 1",
+              "description": "Include problem, goals, user stories, and acceptance criteria.",
+              "type": "build",
+              "minutes": 110
+            },
+            {
+              "title": "Run a mock review session with a teammate",
+              "description": "Present the PRD and answer clarification questions.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Incorporate feedback and finalize the PRD",
+              "description": "Polish language, add diagrams, and ensure completeness.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Metrics plan for a launch",
+          "outcome": "Can design a data‑driven measurement plan for a product release.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a recent product launch case study (e.g., Slack Connect)",
+              "description": "Read the launch overview on the company blog.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Extract the key success metrics used in the case study",
+              "description": "List activation, retention, and revenue indicators.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Build a metrics plan template in Google Sheets",
+              "description": "Define metric, source, target, and owner columns.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Populate the template for your own feature idea",
+              "description": "Set realistic targets and measurement cadence.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Write a short executive summary of the plan",
+              "description": "Explain why each metric matters for the launch.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish leadership abilities, interview readiness, and stakeholder influence.",
+      "milestones": [
+        {
+          "title": "Stakeholder communication mastery",
+          "outcome": "Can influence cross‑functional partners and handle difficult conversations.",
+          "skill": "Stakeholder communication",
+          "tasks": [
+            {
+              "title": "Read “Influence Without Authority” article on Harvard Business Review",
+              "description": "Learn techniques for persuasive dialogue.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch negotiation role‑play on YouTube (product manager scenario)",
+              "description": "Observe tactics for win‑win outcomes.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Draft a stakeholder briefing for a high‑impact decision",
+              "description": "Include context, options, and recommendation.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Role‑play the briefing with a friend acting as a skeptical stakeholder",
+              "description": "Practice answering objections and staying calm.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on what communication style worked best",
+              "description": "Write a brief note on adjustments for future talks.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Leadership and decision‑making",
+          "outcome": "Can lead product discussions and make data‑informed trade‑offs.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read “The Lean Product Playbook” chapter on decision making (free summary)",
+              "description": "Understand the iterative decision loop.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Watch a senior PM panel on product strategy (Google I/O archive)",
+              "description": "Note how leaders frame choices and justify them.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Facilitate a mock sprint planning session with peers",
+              "description": "Lead backlog grooming, estimation, and commitment.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Document the decisions made and rationale in a one‑page log",
+              "description": "Capture data sources, assumptions, and outcomes.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on decision quality after the sprint",
+              "description": "Identify any biases or missing data.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Senior‑level interview prep",
+          "outcome": "Can confidently answer product case studies and behavioral questions.",
+          "skill": "Customer discovery",
+          "tasks": [
+            {
+              "title": "Read product interview guide on Exponent (free preview)",
+              "description": "Familiarize with common frameworks and expectations.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Watch product case study walkthrough on YouTube (FAANG PM)",
+              "description": "Analyze structure and storytelling techniques.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Practice a full case interview with a peer using a random prompt",
+              "description": "Time yourself to 30 minutes and record the session.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Write a post‑mortem of your performance",
+              "description": "Highlight strengths, gaps, and action items.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with a senior PM on LinkedIn for a 15‑minute coffee chat",
+              "description": "Ask for feedback on your approach and portfolio.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "apm.advanced",
+  "roleId": "apm",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:22:44.244Z",
+  "model": "openai/gpt-oss-120b"
+}

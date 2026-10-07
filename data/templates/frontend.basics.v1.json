@@ -1,0 +1,475 @@
+{
+  "title": "Frontend Engineer Learning Roadmap",
+  "summary": "A focused pathway that solidifies core web fundamentals, builds modern JavaScript and React expertise, creates showcase projects, and prepares you for job-ready performance. Each phase combines learning, hands‑on building, and reflection to accelerate real‑world readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Reinforce core web markup, styling, and browser behavior.",
+      "milestones": [
+        {
+          "title": "HTML Semantics & Layout",
+          "outcome": "You can structure pages with correct semantic tags and create responsive layouts using Flexbox and Grid.",
+          "skill": "HTML and CSS",
+          "tasks": [
+            {
+              "title": "Read HTML5 Semantic Guide",
+              "description": "Study the MDN HTML5 guide focusing on sectioning elements and form markup.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a Multi‑Section Page",
+              "description": "Create a static page with header, nav, main, article, aside, and footer using semantic tags.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice Flexbox Layouts",
+              "description": "Implement three common UI patterns (navbar, card grid, footer) using Flexbox.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on Accessibility Tags",
+              "description": "Write a short note on why each semantic element improves accessibility and SEO.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "CSS Foundations & Responsiveness",
+          "outcome": "You can style components consistently and make designs adapt to any screen size.",
+          "skill": "HTML and CSS",
+          "tasks": [
+            {
+              "title": "Study CSS Cascade & Specificity",
+              "description": "Read the MDN article on cascade, inheritance, and specificity rules.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Build a Mobile‑First Layout",
+              "description": "Create a simple landing page using mobile‑first media queries and CSS Grid.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice CSS Variables",
+              "description": "Refactor the page to use custom properties for colors and spacing.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with CSS Community",
+              "description": "Join the freeCodeCamp CSS forum and share your layout for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Browser DevTools Mastery",
+          "outcome": "You can debug HTML/CSS issues, inspect network activity, and profile performance.",
+          "skill": "Web performance",
+          "tasks": [
+            {
+              "title": "Watch DevTools Overview Video",
+              "description": "View the official Chrome DevTools tutorial on YouTube (search ‘Chrome DevTools Basics’).",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Debug a Broken Layout",
+              "description": "Use Elements panel to fix a deliberately broken CSS grid on a sample page.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Analyze Network Requests",
+              "description": "Open the Network tab for a page and identify resource sizes and load order.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on Findings",
+              "description": "Write a brief summary of three performance insights you discovered.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop deep JavaScript, TypeScript, and React capabilities.",
+      "milestones": [
+        {
+          "title": "Modern JavaScript",
+          "outcome": "You can write clean ES6+ code, manipulate the DOM, and handle asynchronous operations.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Read ES6 Features Guide",
+              "description": "Study the MDN ES6+ reference covering let/const, arrow functions, spread, and modules.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a To‑Do App (Vanilla)",
+              "description": "Create a small to‑do list using DOM methods, event listeners, and localStorage.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice Async/Await",
+              "description": "Fetch data from a public API (e.g., JSONPlaceholder) using async/await and display results.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on Code Style",
+              "description": "List three ES6 patterns you will adopt in future projects.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "TypeScript Fundamentals",
+          "outcome": "You can add static typing to JavaScript projects, catching errors early.",
+          "skill": "TypeScript",
+          "tasks": [
+            {
+              "title": "Read TypeScript Handbook Intro",
+              "description": "Go through the official TypeScript Handbook sections on basic types and interfaces.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Convert To‑Do App to TS",
+              "description": "Add a tsconfig, rename files, and type‑annotate variables and functions in the previous app.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice Generics",
+              "description": "Create a reusable typed utility function (e.g., a filter) using generics.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with TS Community",
+              "description": "Post your converted project on the TypeScript subreddit for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "React & Component Architecture",
+          "outcome": "You can build interactive UIs with functional components, hooks, and proper state management.",
+          "skill": "React",
+          "tasks": [
+            {
+              "title": "Watch React Official Tutorial",
+              "description": "Follow the React docs tutorial to create a simple counter app.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a Weather Widget",
+              "description": "Use create‑vite, fetch a weather API, and display data with useState and useEffect.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Practice Custom Hook",
+              "description": "Extract the data‑fetching logic into a reusable custom hook.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on Component Design",
+              "description": "Write a short note on how you decided component boundaries and props.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Accessibility Essentials",
+          "outcome": "You can create UI components that are usable by all users, including screen‑reader and keyboard navigation.",
+          "skill": "Accessibility",
+          "tasks": [
+            {
+              "title": "Read WCAG 2.1 Overview",
+              "description": "Study the W3C summary of WCAG 2.1 principles on the official site.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Audit React Component with Axe",
+              "description": "Install axe‑core, run an accessibility audit on your Weather Widget, and note violations.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Build Keyboard‑Navigable Modal",
+              "description": "Create a modal component that traps focus and can be closed with Esc.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Connect with a11y Slack",
+              "description": "Join the #a11y channel on the Frontend Developers Slack and share your modal for review.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio‑grade projects that demonstrate the full stack of skills.",
+      "milestones": [
+        {
+          "title": "Responsive Portfolio Site",
+          "outcome": "You have a personal site showcasing your bio, projects, and contact form.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan Site Structure",
+              "description": "Sketch a sitemap and wireframes for Home, Projects, About, and Contact pages.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Build Layout with Grid",
+              "description": "Implement the site using CSS Grid for the main layout and Flexbox for components.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add Dark Mode Toggle",
+              "description": "Use CSS custom properties and a React context to switch themes.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Deploy to GitHub Pages",
+              "description": "Push the repo and enable GitHub Pages for public hosting.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on Portfolio Impact",
+              "description": "Write a brief paragraph on how the site reflects your brand and skills.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "API Dashboard Project",
+          "outcome": "You can fetch, display, and filter data from a public API in an interactive dashboard.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select Public API",
+              "description": "Choose a free API (e.g., OpenWeather, GitHub) and read its documentation on the provider site.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Build Data Grid Component",
+              "description": "Create a reusable table component with sorting and pagination using React and TypeScript.",
+              "type": "build",
+              "minutes": 100
+            },
+            {
+              "title": "Implement Error Handling",
+              "description": "Add UI feedback for loading states, network errors, and empty results.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write Project README",
+              "description": "Document setup, features, and usage instructions in a clear README file.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with Mentor",
+              "description": "Share the repo with a senior developer for a code review via LinkedIn or email.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Component Library with Docs",
+          "outcome": "You have a reusable UI component library and a documentation site.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design Component API",
+              "description": "Define props, default values, and TypeScript interfaces for a Button and Card component.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build Library with Vite",
+              "description": "Set up a Vite library project, implement components, and export them.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Create Storybook Docs",
+              "description": "Add Storybook, write stories for each component, and document usage guidelines.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice Publishing to npm (dry run)",
+              "description": "Run npm pack and review the generated package without publishing.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on Reusability",
+              "description": "Note three improvements to make components more accessible and customizable.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish performance, interview skills, and job‑search readiness.",
+      "milestones": [
+        {
+          "title": "Web Performance Optimization",
+          "outcome": "You can audit sites and apply techniques to improve load time and responsiveness.",
+          "skill": "Web performance",
+          "tasks": [
+            {
+              "title": "Read Lighthouse Guide",
+              "description": "Study the official Lighthouse documentation on performance metrics.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Audit Portfolio with Lighthouse",
+              "description": "Run a Lighthouse report on your portfolio site and record scores.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Implement Code Splitting",
+              "description": "Add dynamic imports to lazy‑load heavy components in your React apps.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice Image Optimization",
+              "description": "Convert images to WebP, use srcset, and verify size reduction.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on Improvements",
+              "description": "Write a short summary of performance gains and next steps.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Interview Prep & System Design",
+          "outcome": "You can solve typical frontend interview problems and discuss architecture choices.",
+          "skill": "React",
+          "tasks": [
+            {
+              "title": "Solve 5 LeetCode Easy JS Problems",
+              "description": "Pick easy JavaScript challenges on LeetCode and write solutions with comments.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Mock Whiteboard Component Design",
+              "description": "Sketch a reusable modal system on paper or a digital board, explaining props and state flow.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Review Common React Questions",
+              "description": "Read the Frontend Masters interview guide covering hooks, context, and performance.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Connect with Peer Interviewer",
+              "description": "Pair‑program a mock interview with a fellow learner via Zoom.",
+              "type": "connect",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on Feedback",
+              "description": "Summarize strengths and areas to improve from the mock session.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job Search & Personal Branding",
+          "outcome": "You have a polished resume, LinkedIn profile, and outreach plan.",
+          "skill": "Accessibility",
+          "tasks": [
+            {
+              "title": "Update Resume with Metrics",
+              "description": "Add quantified achievements (e.g., reduced load time by 30%).",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Refresh LinkedIn Summary",
+              "description": "Write a concise headline and summary highlighting key skills and projects.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Create Blog Post on Accessibility",
+              "description": "Write a 800‑word article about implementing ARIA in React components and publish on Medium.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Connect with Recruiters",
+              "description": "Send personalized messages to 5 frontend recruiter contacts on LinkedIn.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on Job Strategy",
+              "description": "Outline a weekly plan for applications, networking, and skill upkeep.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "frontend.basics",
+  "roleId": "frontend",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:07:10.529Z",
+  "model": "openai/gpt-oss-120b"
+}

@@ -1,0 +1,369 @@
+{
+  "title": "Full-Stack Engineer Advancement Roadmap",
+  "summary": "A step‑by‑step plan to deepen core expertise, build showcase projects, and prepare for senior roles. Focuses on modern JavaScript/TypeScript, React/Next.js, Node/Django, SQL, deployment, and system design fundamentals.",
+  "phases": [
+    {
+      "title": "Foundations Refresh",
+      "summary": "Re‑establish core language and framework fundamentals.",
+      "milestones": [
+        {
+          "title": "JavaScript & TypeScript Mastery",
+          "outcome": "Write clean, type‑safe code across the stack.",
+          "skill": "JavaScript and TypeScript",
+          "tasks": [
+            {
+              "title": "Read TypeScript Handbook sections 1‑4",
+              "description": "Study basic types, interfaces, and enums on the official TypeScript docs.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Complete freeCodeCamp ES6 & TypeScript challenges",
+              "description": "Finish the interactive exercises to solidify syntax and typing concepts.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Refactor a small Node script to TypeScript",
+              "description": "Take an existing JavaScript utility, add a tsconfig, and fix type errors.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Write unit tests with Jest for the refactored script",
+              "description": "Create at least three test cases to verify functionality and type safety.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on type‑related bugs you encountered",
+              "description": "Write a short note on how static typing prevented or could have prevented errors.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SQL Core Concepts",
+          "outcome": "Design, query, and optimise relational databases confidently.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Read PostgreSQL tutorial on SELECT basics (official docs)",
+              "description": "Cover SELECT, WHERE, ORDER BY, and LIMIT clauses.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Complete SQLBolt exercises 1‑6",
+              "description": "Practice filtering, joining, and aggregating data in an interactive environment.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Model a simple e‑commerce schema on paper",
+              "description": "Sketch tables for users, products, orders, and relationships.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Implement the schema in a local PostgreSQL instance",
+              "description": "Create tables, constraints, and sample data using psql commands.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Explain one indexing strategy you used",
+              "description": "Write a brief explanation of why you chose a particular index.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills Deep Dive",
+      "summary": "Advance full‑stack capabilities with modern frameworks and deployment pipelines.",
+      "milestones": [
+        {
+          "title": "React & Next.js Proficiency",
+          "outcome": "Build performant, SEO‑friendly front‑ends with server‑side rendering.",
+          "skill": "React or Next.js",
+          "tasks": [
+            {
+              "title": "Read Next.js 13 docs on routing and data fetching",
+              "description": "Focus on the App Router, server components, and fetch API.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Complete a freeCodeCamp Next.js project tutorial",
+              "description": "Follow the step‑by‑step guide to create a multi‑page site.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Add TypeScript to the tutorial project",
+              "description": "Convert pages and components to .tsx, fixing any type errors.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Implement client‑side caching with SWR",
+              "description": "Integrate SWR hooks to cache API responses and improve UX.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Connect with a Next.js community on Discord",
+              "description": "Introduce yourself and ask a question about server components.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Node.js & Django Backend Expertise",
+          "outcome": "Design robust APIs and services using either Node or Django.",
+          "skill": "Node or Django",
+          "tasks": [
+            {
+              "title": "Read official Node.js docs on streams and async patterns",
+              "description": "Cover readable/writable streams and async/await best practices.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Follow Django tutorial on building a blog (official docs)",
+              "description": "Create models, views, and templates for a simple blog app.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Build a RESTful API with Express and TypeScript",
+              "description": "Create CRUD endpoints for a resource, include validation middleware.",
+              "type": "build",
+              "minutes": 75
+            },
+            {
+              "title": "Add JWT authentication to the Express API",
+              "description": "Implement login, token issuance, and protected routes.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on trade‑offs between Node and Django",
+              "description": "Write a brief comparison of scalability, ecosystem, and developer experience.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work (Portfolio Projects)",
+      "summary": "Create real‑world applications that showcase end‑to‑end skills.",
+      "milestones": [
+        {
+          "title": "SaaS Billing App",
+          "outcome": "Demonstrate full‑stack feature delivery from DB to UI.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define product requirements and user stories",
+              "description": "Write at least five core features and acceptance criteria.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Design relational schema for subscriptions and payments",
+              "description": "Create ER diagram and SQL scripts for tables and relationships.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Implement backend API with Next.js API routes or Express",
+              "description": "Provide endpoints for plans, invoices, and webhook handling.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Create React UI for plan selection and checkout",
+              "description": "Use React components, form validation, and Stripe integration.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Deploy the app to Vercel and Railway",
+              "description": "Set up CI/CD, environment variables, and monitor logs.",
+              "type": "practice",
+              "minutes": 70
+            }
+          ]
+        },
+        {
+          "title": "Real‑Time Chat Application",
+          "outcome": "Show ability to handle websockets and live updates.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Sketch feature list and data flow diagram",
+              "description": "Outline user authentication, rooms, and message storage.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Set up a PostgreSQL schema for messages and rooms",
+              "description": "Create tables with appropriate indexes for fast retrieval.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Implement WebSocket server with Node and Socket.io",
+              "description": "Handle connection, room join, and broadcast messages.",
+              "type": "build",
+              "minutes": 85
+            },
+            {
+              "title": "Build React front‑end with real‑time message list",
+              "description": "Use hooks to connect to Socket.io client and update UI instantly.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Write a short post on dev.to about challenges faced",
+              "description": "Summarize technical hurdles and solutions for peer feedback.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish portfolio, master system design basics, and prepare for senior interviews.",
+      "milestones": [
+        {
+          "title": "System Design Basics",
+          "outcome": "Explain and diagram common web architectures.",
+          "skill": "System design basics",
+          "tasks": [
+            {
+              "title": "Read System Design Primer chapter on scalability",
+              "description": "Focus on load balancing, caching, and database sharding concepts.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Sketch a high‑level design for a video‑streaming service",
+              "description": "Include CDN, microservices, and data storage layers.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Discuss the design with a peer on LinkedIn",
+              "description": "Share the diagram and ask for feedback on trade‑offs.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Practice answering a system design interview question",
+              "description": "Time yourself delivering a 10‑minute solution for an e‑commerce checkout flow.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on gaps in your knowledge",
+              "description": "Write three topics you need to study further and plan next steps.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Portfolio Polish & Personal Brand",
+          "outcome": "Present a professional, interview‑ready portfolio and résumé.",
+          "skill": "Deployment",
+          "tasks": [
+            {
+              "title": "Write case studies for each portfolio project",
+              "description": "Describe problem, approach, tech stack, and impact in 300‑400 words each.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create a responsive portfolio site with Next.js",
+              "description": "Showcase projects, include GitHub links, and add a contact form.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Deploy the portfolio site to Vercel with a custom domain",
+              "description": "Configure DNS, environment variables, and analytics.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Add CI/CD badge and test coverage badge to GitHub repos",
+              "description": "Use GitHub Actions to run tests and display status on README.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Network with senior engineers on Twitter and share your work",
+              "description": "Post a thread linking to your case studies and ask for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Senior‑Level Interview Prep",
+          "outcome": "Confidently tackle coding, design, and leadership interview rounds.",
+          "skill": "JavaScript and TypeScript",
+          "tasks": [
+            {
+              "title": "Solve 5 hard LeetCode problems in JavaScript",
+              "description": "Choose problems tagged Hard, focus on optimal time/space solutions.",
+              "type": "practice",
+              "minutes": 120
+            },
+            {
+              "title": "Review behavioral STAR stories for leadership examples",
+              "description": "Write concise narratives for conflict resolution, mentorship, and impact.",
+              "type": "reflect",
+              "minutes": 40
+            },
+            {
+              "title": "Mock system design interview with a peer",
+              "description": "Run a 45‑minute session, receive feedback, and iterate on the design.",
+              "type": "connect",
+              "minutes": 60
+            },
+            {
+              "title": "Read Cracking the Coding Interview chapter on JavaScript nuances",
+              "description": "Refresh language‑specific pitfalls and best practices for interviews.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Update résumé with quantified achievements",
+              "description": "Add metrics such as performance improvements or feature delivery speed.",
+              "type": "build",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "fullstack.advanced",
+  "roleId": "fullstack",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:10:33.755Z",
+  "model": "openai/gpt-oss-120b"
+}

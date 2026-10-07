@@ -1,0 +1,377 @@
+{
+  "title": "Machine Learning Engineer Advanced Roadmap",
+  "summary": "A step‑by‑step plan to deepen expertise, build a senior‑level portfolio, and prepare for leadership roles and interviews. Focuses on advanced ML concepts, MLOps, and polished project delivery.",
+  "phases": [
+    {
+      "title": "Foundations Refresh",
+      "summary": "Strengthen core mathematical and programming fundamentals essential for ML work.",
+      "milestones": [
+        {
+          "title": "Python mastery for ML",
+          "outcome": "Write clean, efficient Python code for data pipelines and model training.",
+          "skill": "Python",
+          "tasks": [
+            {
+              "title": "Complete Python functions refresher",
+              "description": "Work through the freeCodeCamp Python Functions module, writing each exercise solution.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Implement a data loader script",
+              "description": "Write a script that reads CSV files, handles missing values, and outputs a cleaned DataFrame using pandas.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice list comprehensions",
+              "description": "Solve 10 list‑comprehension challenges from Real Python to improve concise coding.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on code style",
+              "description": "Review your script against PEP8 guidelines and note three improvements.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Math fundamentals for ML",
+          "outcome": "Apply linear algebra and probability concepts to model design and analysis.",
+          "skill": "Linear algebra and probability",
+          "tasks": [
+            {
+              "title": "Watch Khan Academy linear algebra series",
+              "description": "Watch videos covering vectors, matrices, and eigenvalues; take brief notes after each.",
+              "type": "learn",
+              "minutes": 70
+            },
+            {
+              "title": "Solve matrix multiplication exercises",
+              "description": "Complete 10 matrix multiplication problems on MIT OpenCourseWare worksheets.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Implement probability functions",
+              "description": "Code functions for PDF, CDF, and sampling of normal and binomial distributions using NumPy.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Connect with a math peer",
+              "description": "Join a Reddit r/learnmath thread and discuss a tricky concept you encountered.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills Deep Dive",
+      "summary": "Gain expertise in key ML libraries, evaluation techniques, and production basics.",
+      "milestones": [
+        {
+          "title": "Advanced scikit-learn pipelines",
+          "outcome": "Create robust preprocessing and modeling pipelines for tabular data.",
+          "skill": "scikit-learn",
+          "tasks": [
+            {
+              "title": "Read scikit-learn pipeline docs",
+              "description": "Study the official scikit-learn Pipeline and ColumnTransformer documentation on scikit-learn.org.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a preprocessing pipeline",
+              "description": "Implement a pipeline that handles scaling, encoding, and imputation for a Kaggle dataset.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice cross‑validation",
+              "description": "Run 5‑fold cross‑validation on the pipeline and record performance metrics.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on pipeline errors",
+              "description": "Identify two common pipeline pitfalls and write how to avoid them.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "PyTorch for production models",
+          "outcome": "Develop, train, and export deep learning models using PyTorch.",
+          "skill": "PyTorch",
+          "tasks": [
+            {
+              "title": "Watch PyTorch fundamentals tutorial",
+              "description": "Follow the official PyTorch 60‑minute intro video on pytorch.org and take notes.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Implement a CNN on CIFAR‑10",
+              "description": "Code a convolutional neural network, train it for 10 epochs, and achieve >60% accuracy.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Export model with TorchScript",
+              "description": "Convert the trained model to TorchScript and save the scripted file.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Connect with PyTorch community",
+              "description": "Post a question about model export on the PyTorch Discuss forum and engage with replies.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Model evaluation and monitoring",
+          "outcome": "Select appropriate metrics, perform error analysis, and set up basic monitoring.",
+          "skill": "Model evaluation",
+          "tasks": [
+            {
+              "title": "Read model evaluation guide",
+              "description": "Study the Model Evaluation section of the scikit-learn documentation.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create a confusion‑matrix dashboard",
+              "description": "Use seaborn to plot confusion matrices for binary and multi‑class models.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice calibration curves",
+              "description": "Generate reliability diagrams for a probabilistic classifier and interpret results.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on metric trade‑offs",
+              "description": "Write a short note comparing precision‑recall vs ROC‑AUC for your use case.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work (Portfolio)",
+      "summary": "Produce polished, deployable projects that showcase senior‑level competence.",
+      "milestones": [
+        {
+          "title": "Churn prediction with write‑up",
+          "outcome": "A complete end‑to‑end churn model with documentation ready for a portfolio.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a churn dataset",
+              "description": "Download a public churn dataset from Kaggle and explore its features.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a scikit-learn model",
+              "description": "Create a pipeline, train a GradientBoosting model, and achieve >80% ROC‑AUC.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write a technical blog post",
+              "description": "Draft a 1500‑word post describing data prep, modeling choices, and results, including code snippets.",
+              "type": "practice",
+              "minutes": 120
+            },
+            {
+              "title": "Add model versioning",
+              "description": "Integrate DVC to track data and model files, committing them to a Git repo.",
+              "type": "build",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "Image classifier API deployment",
+          "outcome": "A containerized image classification service accessible via REST.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Train an image classifier",
+              "description": "Fine‑tune a ResNet18 model on a small custom image set using PyTorch.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Write FastAPI wrapper",
+              "description": "Create a FastAPI endpoint that loads the model and returns predictions for uploaded images.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Dockerize the service",
+              "description": "Write a Dockerfile, build the image, and test the container locally.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Document deployment steps",
+              "description": "Prepare a README with clear instructions to run the API on any machine.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Monitoring dashboard prototype",
+          "outcome": "A live dashboard visualizing model drift and performance metrics.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Set up Prometheus exporter",
+              "description": "Instrument the FastAPI service to expose latency and error metrics.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Create Grafana dashboard",
+              "description": "Design panels showing request count, error rate, and prediction distribution.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Simulate drift data",
+              "description": "Generate synthetic data that gradually shifts distribution and feed it to the model.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on alert thresholds",
+              "description": "Write three criteria for triggering alerts based on metric trends.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Master advanced topics, leadership practices, and senior‑level interview preparation.",
+      "milestones": [
+        {
+          "title": "MLOps fundamentals",
+          "outcome": "Implement CI/CD pipelines and model registry basics for production workflows.",
+          "skill": "MLOps basics",
+          "tasks": [
+            {
+              "title": "Read MLOps overview article",
+              "description": "Study the free MLOps guide on MLflow.org to understand experiment tracking and model registry.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Set up GitHub Actions CI",
+              "description": "Create a workflow that runs unit tests and linting on every push for a ML repo.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Register model with MLflow",
+              "description": "Log the churn model to an MLflow tracking server and transition it to ‘Production’ stage.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Connect with MLOps community",
+              "description": "Join the MLOps Community Slack and share your pipeline for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Leadership & communication",
+          "outcome": "Demonstrate ability to lead projects, mentor peers, and convey technical ideas clearly.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read effective tech communication guide",
+              "description": "Read the free “Communicating Data Science” article on Towards Data Science.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Prepare a project pitch deck",
+              "description": "Create a 10‑slide deck summarizing one portfolio project for non‑technical stakeholders.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Mentor a junior on a task",
+              "description": "Guide a peer through building a simple preprocessing script, providing feedback.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on leadership style",
+              "description": "Write a short paragraph identifying strengths and areas for growth as a technical lead.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Senior interview prep",
+          "outcome": "Confidently tackle system design, coding, and ML case interviews at senior level.",
+          "skill": "Python",
+          "tasks": [
+            {
+              "title": "Solve senior‑level coding problems",
+              "description": "Complete 5 hard algorithm challenges on LeetCode focusing on Python implementations.",
+              "type": "practice",
+              "minutes": 120
+            },
+            {
+              "title": "Study ML system design patterns",
+              "description": "Read the “Designing Machine Learning Systems” free ebook chapter on model serving.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Mock a design interview",
+              "description": "Pair with a colleague to role‑play a system design interview for a recommendation engine.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Review past interview feedback",
+              "description": "Analyze previous interview notes and list three actionable improvements.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ml-engineer.advanced",
+  "roleId": "ml-engineer",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:14:06.401Z",
+  "model": "openai/gpt-oss-120b"
+}

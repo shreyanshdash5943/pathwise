@@ -7,13 +7,24 @@ import type { Task } from "@/lib/data";
 import type { RoadmapOutline } from "@/lib/roadmap-schema";
 import { TaskRow } from "./task-row";
 import { Toast, useToast } from "./toast";
+import { useProofEditor, type ProofLite } from "./proof-dialog";
 
 type MState = "done" | "current" | "upcoming";
 
-export function RoadmapView({ outline, initialTasks }: { outline: RoadmapOutline; initialTasks: Task[]; roleTitle?: string }) {
+export function RoadmapView({
+  outline,
+  initialTasks,
+  proofs: initialProofs,
+}: {
+  outline: RoadmapOutline;
+  initialTasks: Task[];
+  roleTitle?: string;
+  proofs: Record<string, ProofLite>;
+}) {
   const [tasks, setTasks] = useState(initialTasks);
   const [busy, setBusy] = useState<Set<string>>(new Set());
   const { toast, show } = useToast();
+  const proofEditor = useProofEditor(initialProofs, show);
 
   const firstOpen = tasks.find((t) => !t.completed_on);
   const currentKey = firstOpen ? `${firstOpen.phase_index}-${firstOpen.milestone_index}` : null;
@@ -53,7 +64,7 @@ export function RoadmapView({ outline, initialTasks }: { outline: RoadmapOutline
     const next = !task.completed_on;
     const prev = task.completed_on;
     setBusy((b) => new Set(b).add(task.id));
-    setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: next ? "pending" : null } : t)));
+    setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: next ? "pending" : null, skipped: false } : t)));
     try {
       const res = await fetch(`/api/tasks/${task.id}`, {
         method: "PATCH",
@@ -62,7 +73,8 @@ export function RoadmapView({ outline, initialTasks }: { outline: RoadmapOutline
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Couldn't save that change.");
-      setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: data.task.completed_on } : t)));
+      setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: data.task.completed_on, skipped: false } : t)));
+      if (next && task.type === "build" && !proofEditor.proofs[task.id]) proofEditor.open(task.id, task.title, true);
     } catch (e) {
       setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: prev } : t)));
       show(e instanceof Error ? e.message : "Couldn't save that change.");
@@ -144,7 +156,15 @@ export function RoadmapView({ outline, initialTasks }: { outline: RoadmapOutline
                         >
                           <div className="px-2 pb-3 sm:pl-10 sm:pr-3">
                             {list.map((t) => (
-                              <TaskRow key={t.id} {...t} checked={!!t.completed_on} busy={busy.has(t.id)} onToggle={() => toggleTask(t)} />
+                              <TaskRow
+                                key={t.id}
+                                {...t}
+                                checked={!!t.completed_on}
+                                busy={busy.has(t.id)}
+                                onToggle={() => toggleTask(t)}
+                                proofUrl={proofEditor.proofs[t.id]?.url}
+                                onProof={t.type === "build" || t.type === "connect" ? () => proofEditor.open(t.id, t.title) : undefined}
+                              />
                             ))}
                           </div>
                         </motion.div>
@@ -157,6 +177,7 @@ export function RoadmapView({ outline, initialTasks }: { outline: RoadmapOutline
           </li>
         ))}
       </ol>
+      {proofEditor.dialog}
       <Toast message={toast} />
     </>
   );

@@ -1,0 +1,172 @@
+{
+  "title": "Machine Learning Engineer Roadmap",
+  "summary": "A step‑by‑step guide to go from zero to a job‑ready ML engineer. It builds solid foundations, core ML skills, a showcase portfolio, and job‑ready readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build the programming and math base needed for ML.",
+      "milestones": [
+        {
+          "title": "Version control basics",
+          "outcome": "Track code changes and collaborate using Git.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read Git Handbook on Git‑SCM.com",
+              "description": "Learn core concepts like commit, branch, and merge.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a branch and merge a feature",
+              "description": "Practice branching workflow in your GitHub repo.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Resolve a merge conflict scenario",
+              "description": "Simulate a conflict and use tools to resolve it.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Document workflow in README.md",
+              "description": "Write clear instructions for future collaborators.",
+              "type": "build",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Learn essential ML libraries and evaluation methods.",
+      "milestones": [
+        {
+          "title": "Model evaluation techniques",
+          "outcome": "Select appropriate metrics and validate models robustly.",
+          "skill": "Model evaluation",
+          "tasks": [
+            {
+              "title": "Read Model Evaluation chapter on Coursera ML course",
+              "description": "Focus on precision, recall, ROC, and confusion matrix.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Compute classification metrics on a Kaggle dataset",
+              "description": "Use scikit‑learn functions to generate reports.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create a visual ROC curve plot with Matplotlib",
+              "description": "Display trade‑offs and annotate AUC.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Write a short blog post summarizing findings",
+              "description": "Explain why chosen metrics matter for the problem.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build portfolio projects that showcase end‑to‑end ML pipelines.",
+      "milestones": [
+        {
+          "title": "Model monitoring dashboard",
+          "outcome": "Track model performance over time in a visual UI.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Create synthetic data stream script in Python",
+              "description": "Generate predictions and true labels continuously.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Set up Prometheus metrics exporter for model latency",
+              "description": "Expose latency as a metric endpoint.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Build a Grafana dashboard visualizing metrics",
+              "description": "Plot latency, error rate, and data drift indicators.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Simulate a drift scenario and observe dashboard alerts",
+              "description": "Change input distribution and note metric changes.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a short reflection on monitoring importance",
+              "description": "Summarize lessons learned for future projects.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance your expertise, master MLOps, and prepare for job search.",
+      "milestones": [
+        {
+          "title": "Job and client readiness",
+          "outcome": "Craft compelling applications and interview confidently.",
+          "skill": "Python",
+          "tasks": [
+            {
+              "title": "Update LinkedIn profile with ML projects",
+              "description": "Add project titles, descriptions, and links.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Prepare a 5‑minute elevator pitch for each portfolio project",
+              "description": "Focus on problem, solution, impact, and metrics.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Mock technical interview on LeetCode Medium problems",
+              "description": "Time yourself and review solutions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Attend a virtual ML meetup and network",
+              "description": "Introduce yourself and exchange contacts.",
+              "type": "connect",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on feedback and adjust résumé",
+              "description": "Incorporate suggestions to improve clarity.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ml-engineer.beginner",
+  "roleId": "ml-engineer",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T15:56:14.121Z",
+  "model": "openai/gpt-oss-120b"
+}

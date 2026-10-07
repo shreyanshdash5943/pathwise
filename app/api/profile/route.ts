@@ -23,10 +23,15 @@ export async function PATCH(req: Request) {
   }
 }
 
-/** Starts over: removes the plan, its tasks and the onboarding answers. */
+/**
+ * Starts over: removes the plan, its progress and the onboarding answers.
+ * Profile details and the resume are kept; they have their own delete controls.
+ */
 export async function DELETE() {
   try {
     const { supabase } = await getSupabase();
+    const plan = await supabase.from("plans").delete().not("id", "is", null);
+    if (plan.error) throw plan.error;
     const r = await supabase.from("roadmaps").delete().not("id", "is", null);
     if (r.error) throw r.error;
     const p = await supabase.from("profiles").delete().not("user_id", "is", null);

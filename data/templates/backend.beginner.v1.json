@@ -1,0 +1,468 @@
+{
+  "title": "Backend Engineer Learning Roadmap",
+  "summary": "A step‑by‑step guide to become a competent backend engineer from scratch. It covers fundamentals, core backend skills, portfolio projects, and job‑ready preparation.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid base in programming, data, and web basics.",
+      "milestones": [
+        {
+          "title": "Learn Python basics",
+          "outcome": "Write simple Python scripts and understand core language constructs.",
+          "skill": "Python or Go",
+          "tasks": [
+            {
+              "title": "Read Python intro on freeCodeCamp",
+              "description": "Study the freeCodeCamp Python basics module and take the end‑of‑section quiz.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Write a calculator script",
+              "description": "Implement a command‑line calculator handling +, -, *, / and error cases.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice list comprehensions",
+              "description": "Create three list‑comprehension examples that filter and transform data.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on common errors",
+              "description": "Note down the most frequent syntax and runtime errors you encountered and how you fixed them.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Understand relational databases",
+          "outcome": "Design simple tables and run basic SQL queries.",
+          "skill": "SQL and data modelling",
+          "tasks": [
+            {
+              "title": "Read SQL tutorial on MDN",
+              "description": "Follow MDN’s SQL basics guide and complete the interactive examples.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Create a SQLite database",
+              "description": "Install SQLite, define a contacts table, and insert sample rows using the CLI.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Practice SELECT queries",
+              "description": "Write SELECT statements with WHERE, ORDER BY, and GROUP BY on your contacts table.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with a Python script",
+              "description": "Use Python’s sqlite3 module to fetch and display contacts data.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on normalization",
+              "description": "Summarize first, second, and third normal forms in your own words.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Web fundamentals",
+          "outcome": "Explain how the web works and make a basic HTTP request.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Watch HTTP overview on Khan Academy",
+              "description": "Learn about request/response cycles, status codes, and headers.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Use curl to fetch a page",
+              "description": "Run curl to retrieve https://example.com and view the raw response headers.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Read MDN’s HTTP methods article",
+              "description": "Understand GET, POST, PUT, DELETE and when to use each.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write a simple Flask app",
+              "description": "Create a Flask route that returns ‘Hello World’ and run it locally.",
+              "type": "build",
+              "minutes": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain expertise in API design, authentication, caching, and testing.",
+      "milestones": [
+        {
+          "title": "Design RESTful APIs",
+          "outcome": "Define resources, endpoints, and proper HTTP semantics for a service.",
+          "skill": "REST API design",
+          "tasks": [
+            {
+              "title": "Read REST design guide on freeCodeCamp",
+              "description": "Study the principles of resource naming, status codes, and versioning.",
+              "type": "learn",
+              "minutes": 55
+            },
+            {
+              "title": "Sketch API spec for a todo app",
+              "description": "Write endpoint definitions (GET/POST/PUT/DELETE) and request/response schemas on paper or a doc.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Implement todo endpoints in Flask",
+              "description": "Code the CRUD routes using Flask and SQLite, returning JSON responses.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Test endpoints with Postman",
+              "description": "Send requests to each route, verify status codes and payloads.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on idempotence",
+              "description": "Explain why PUT and DELETE should be idempotent in your own words.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Add authentication and security",
+          "outcome": "Secure APIs with token‑based authentication and basic best practices.",
+          "skill": "Authentication",
+          "tasks": [
+            {
+              "title": "Read JWT intro on Auth0 blog",
+              "description": "Understand how JSON Web Tokens are structured and verified.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Generate JWTs in Python",
+              "description": "Write a script that creates and decodes JWTs using PyJWT.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Protect Flask routes with JWT",
+              "description": "Add a decorator that checks the Authorization header before allowing access.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice password hashing",
+              "description": "Use bcrypt to hash and verify passwords in a signup/login flow.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on common attacks",
+              "description": "List three OWASP API security risks and how your implementation mitigates them.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Implement caching and background jobs",
+          "outcome": "Use a cache store and a queue system to improve performance and handle async work.",
+          "skill": "Caching and queues",
+          "tasks": [
+            {
+              "title": "Read Redis quick start on Redis.io",
+              "description": "Follow the official guide to install Redis locally and run basic commands.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Add Redis cache to Flask endpoint",
+              "description": "Cache the result of a heavy computation for 5 minutes using redis-py.",
+              "type": "build",
+              "minutes": 65
+            },
+            {
+              "title": "Set up a Celery worker",
+              "description": "Configure Celery with Redis broker and write a simple background task that sleeps then logs.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice retry logic",
+              "description": "Modify the Celery task to retry on simulated failure up to three times.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on when to cache",
+              "description": "Write a brief note describing scenarios where caching is beneficial versus harmful.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that showcase the core backend capabilities.",
+      "milestones": [
+        {
+          "title": "REST API with auth and tests",
+          "outcome": "Demonstrate a production‑grade API with JWT auth, unit and integration tests.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan project structure on paper",
+              "description": "Outline folders, models, routes, and test layout for the API.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Code API endpoints",
+              "description": "Implement at least three resources with full CRUD using Flask and SQLite.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Add JWT protection",
+              "description": "Secure all routes except login/register with token verification.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Write pytest suite",
+              "description": "Create unit tests for models and integration tests for each endpoint.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Document API with OpenAPI",
+              "description": "Generate a Swagger spec and host it via Flask‑Swagger UI.",
+              "type": "build",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "URL shortener with analytics",
+          "outcome": "Show ability to design data models, handle redirects, and record usage metrics.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design schema for URLs and clicks",
+              "description": "Create tables for short codes, original URLs, and click timestamps.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Implement shorten endpoint",
+              "description": "Generate a unique short code and store mapping in the database.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Create redirect handler",
+              "description": "Lookup short code, record click, and issue 301 redirect to original URL.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add analytics endpoint",
+              "description": "Return total clicks and recent click timestamps for a given short code.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write basic tests",
+              "description": "Verify shortening, redirection, and analytics responses with pytest.",
+              "type": "practice",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "Background job worker",
+          "outcome": "Demonstrate asynchronous processing of tasks such as email sending or image resizing.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define job payload schema",
+              "description": "Specify JSON fields needed for the example job (e.g., image URL).",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create Celery task for image resize",
+              "description": "Download image, resize with Pillow, and store result locally.",
+              "type": "build",
+              "minutes": 100
+            },
+            {
+              "title": "Build API to enqueue jobs",
+              "description": "Expose a POST endpoint that validates payload and queues the Celery task.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Monitor worker logs",
+              "description": "Run the Celery worker and observe task execution and retries.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on scaling options",
+              "description": "Write a short note on how to scale workers and broker in production.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, build a professional presence, and prepare for interviews or client work.",
+      "milestones": [
+        {
+          "title": "Advanced testing strategies",
+          "outcome": "Apply property‑based, load, and security testing to your services.",
+          "skill": "Testing",
+          "tasks": [
+            {
+              "title": "Read hypothesis intro on Hypothesis.readthedocs.io",
+              "description": "Learn property‑based testing concepts and install the library.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Add hypothesis tests for API inputs",
+              "description": "Write tests that generate random valid and invalid request payloads.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Run load test with Locust",
+              "description": "Create a simple Locust script to simulate 100 concurrent users on your API.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Perform security scan with OWASP ZAP",
+              "description": "Run ZAP against your API and note any reported vulnerabilities.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on test coverage gaps",
+              "description": "Identify areas lacking tests and plan improvements.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Deploy and monitor services",
+          "outcome": "Launch a backend service to the cloud and set up basic observability.",
+          "skill": "Caching and queues",
+          "tasks": [
+            {
+              "title": "Read Heroku deployment guide",
+              "description": "Follow Heroku’s free tier tutorial to deploy a Flask app with a PostgreSQL add‑on.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Configure Redis add‑on on Heroku",
+              "description": "Enable Heroku Redis and update your app to use it for caching.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Set up health check endpoint",
+              "description": "Add /health route that returns 200 when DB and Redis are reachable.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Add simple logging to CloudWatch",
+              "description": "Stream Flask logs to AWS CloudWatch using the built‑in handler.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on deployment challenges",
+              "description": "Write a brief summary of any issues faced and how you resolved them.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job‑search readiness",
+          "outcome": "Present a polished portfolio, résumé, and interview preparation plan.",
+          "skill": "Python or Go",
+          "tasks": [
+            {
+              "title": "Create a personal portfolio site",
+              "description": "Build a static site on GitHub Pages that showcases your three projects with links to code and demos.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write a concise technical résumé",
+              "description": "Draft a one‑page résumé highlighting skills, projects, and measurable outcomes.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Prepare STAR stories",
+              "description": "Write three Situation‑Task‑Action‑Result narratives for challenges you solved in projects.",
+              "type": "reflect",
+              "minutes": 45
+            },
+            {
+              "title": "Mock system design interview",
+              "description": "Pair with a peer or use an online platform to practice designing a scalable backend service.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Connect with backend communities",
+              "description": "Join two relevant Slack/Discord groups or attend a virtual meetup and introduce yourself.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "backend.beginner",
+  "roleId": "backend",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:08:24.464Z",
+  "model": "openai/gpt-oss-120b"
+}

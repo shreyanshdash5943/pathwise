@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Link2 } from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 import type { TaskType } from "@/lib/roadmap-schema";
@@ -60,6 +60,9 @@ export function TaskRow({
   checked,
   onToggle,
   busy,
+  skipped,
+  proofUrl,
+  onProof,
 }: {
   title: string;
   description: string;
@@ -68,9 +71,14 @@ export function TaskRow({
   checked: boolean;
   onToggle: () => void;
   busy?: boolean;
+  skipped?: boolean;
+  /** Link to the proof of work for this task, if there is one. */
+  proofUrl?: string | null;
+  /** Shown for tasks that can carry proof of work (build and connect). Opens the editor. */
+  onProof?: () => void;
 }) {
   const [open, setOpen] = useState(false);
-  const hasDetails = description.trim().length > 0;
+  const hasDetails = description.trim().length > 0 || !!onProof;
 
   return (
     <div className="group rounded-xl px-3 transition-colors duration-200 hover:bg-surface sm:px-4">
@@ -93,7 +101,16 @@ export function TaskRow({
             >
               {title}
             </span>
-            <span className="mt-1 block text-[13px] text-faint">{TYPE_LABEL[type]}</span>
+            <span className="mt-1 block text-[13px] text-faint">
+              {TYPE_LABEL[type]}
+              {skipped && checked && " · Skipped, you already know this"}
+              {proofUrl && (
+                <span className="text-accent">
+                  {" · "}
+                  <Link2 className="inline h-3.5 w-3.5 -translate-y-px" aria-hidden="true" /> Proof added
+                </span>
+              )}
+            </span>
           </span>
           <span className="tabular mt-[2px] shrink-0 text-[13px] text-faint">{minutes} min</span>
           {hasDetails && (
@@ -115,7 +132,21 @@ export function TaskRow({
             transition={{ duration: 0.28, ease: [0.2, 0, 0, 1] }}
             className="overflow-hidden"
           >
-            <p className="pb-4 pl-[36px] pr-2 text-[14.5px] leading-relaxed text-muted">{description}</p>
+            <div className="pb-4 pl-[36px] pr-2">
+              {description.trim() && <p className="text-[14.5px] leading-relaxed text-muted">{description}</p>}
+              {onProof && (
+                <div className={clsx("flex flex-wrap items-center gap-x-4 gap-y-1 text-[14px]", description.trim() && "mt-2.5")}>
+                  {proofUrl && (
+                    <a href={proofUrl} target="_blank" rel="noopener noreferrer nofollow" className="font-medium text-accent hover:underline">
+                      View proof
+                    </a>
+                  )}
+                  <button type="button" onClick={onProof} className="font-medium text-accent hover:underline">
+                    {proofUrl ? "Edit proof" : "Add proof of work"}
+                  </button>
+                </div>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

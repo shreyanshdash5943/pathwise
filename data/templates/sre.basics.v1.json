@@ -1,0 +1,184 @@
+{
+  "title": "Site Reliability Engineer Learning Roadmap",
+  "summary": "A focused path to solidify core SRE fundamentals, build practical skills, create a showcase portfolio, and prepare for job readiness. Each phase balances theory, hands‑on practice, and professional networking.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish a strong base in Linux, networking, and programming concepts essential for SRE work.",
+      "milestones": [
+        {
+          "title": "Programming Basics for Automation",
+          "outcome": "Can write scripts to automate routine system tasks.",
+          "skill": "Programming",
+          "tasks": [
+            {
+              "title": "Complete Python Basics on freeCodeCamp",
+              "description": "Finish the first 3 sections covering variables, control flow, and functions.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Write a Log Rotation Script",
+              "description": "Create a Bash script that archives logs older than 7 days and compresses them.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Parse JSON with Python",
+              "description": "Write a short Python program that reads a JSON file and prints selected fields.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Automate Service Restart",
+              "description": "Develop a script that checks a service status and restarts it if down.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on Code Quality",
+              "description": "List three improvements you could make to your scripts for readability.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop observability, incident response, and reliability engineering practices.",
+      "milestones": [
+        {
+          "title": "Service Level Objectives (SLOs)",
+          "outcome": "Can define, measure, and report SLOs for a service.",
+          "skill": "SLOs",
+          "tasks": [
+            {
+              "title": "Read SLO Chapter from Google SRE Book",
+              "description": "Focus on error budget concepts and how to choose metrics.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Define Service Error Budget",
+              "description": "Pick a latency metric and calculate a 99.9% SLO for a demo app.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Implement Alerting for SLO Breach",
+              "description": "Create a Prometheus alert rule that fires when error budget exceeds 5%.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Visualize SLO Burn Rate",
+              "description": "Add a Grafana panel showing remaining error budget over time.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on SLO Trade‑offs",
+              "description": "Write a brief analysis of how tighter SLOs affect reliability costs.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create tangible SRE projects that demonstrate monitoring, capacity planning, and post‑mortem skills.",
+      "milestones": [
+        {
+          "title": "Simulated Outage Postmortem",
+          "outcome": "Can produce a clear, data‑driven postmortem document.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Trigger Service Failure",
+              "description": "Kill the demo service and observe alerts from the monitoring stack.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Collect Timeline Data",
+              "description": "Gather logs, metrics, and alert timestamps during the outage.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write Detailed Postmortem",
+              "description": "Follow the SRE postmortem template to explain cause and remediation.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create Root‑Cause Diagram",
+              "description": "Draw a simple fishbone diagram illustrating contributing factors.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Share Postmortem for Feedback",
+              "description": "Post the document in an SRE forum and request critique.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance expertise, polish the portfolio, and position yourself for SRE roles.",
+      "milestones": [
+        {
+          "title": "SLO & Reliability Strategy Review",
+          "outcome": "Can design and communicate reliability strategies aligned with business goals.",
+          "skill": "SLOs",
+          "tasks": [
+            {
+              "title": "Read Reliability Engineering Blog Posts",
+              "description": "Select two recent posts from the Reliability Engineering blog and note key takeaways.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Draft Service Reliability Plan",
+              "description": "Outline monitoring, SLOs, and incident response for a hypothetical e‑commerce service.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Present Plan to Peer",
+              "description": "Give a 10‑minute presentation and gather critique on clarity and feasibility.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Incorporate Feedback",
+              "description": "Revise the reliability plan based on peer suggestions.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on Learning Journey",
+              "description": "Summarize how your understanding of SLOs evolved throughout the roadmap.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "sre.basics",
+  "roleId": "sre",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:11:37.116Z",
+  "model": "openai/gpt-oss-120b"
+}

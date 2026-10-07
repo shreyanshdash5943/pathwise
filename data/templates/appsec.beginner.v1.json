@@ -1,0 +1,444 @@
+{
+  "title": "Application Security Engineer Roadmap",
+  "summary": "A step‑by‑step guide to become an Application Security Engineer from zero knowledge. It builds foundational security concepts, core engineering skills, a portfolio, and job‑ready readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Learn core security concepts and basic communication for developers.",
+      "milestones": [
+        {
+          "title": "Learn security fundamentals",
+          "outcome": "Can explain basic confidentiality, integrity, and availability concepts.",
+          "skill": "Auth and crypto basics",
+          "tasks": [
+            {
+              "title": "Read OWASP Top 10 overview",
+              "description": "Study the OWASP Top 10 page on the official site to understand common web risks.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch freeCodeCamp security basics video",
+              "description": "Complete the 30‑minute introductory video on application security.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Summarize key risks in a one‑page doc",
+              "description": "Write a concise summary of the most critical risks you learned.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Create flashcards for each risk",
+              "description": "Use a free tool like Anki to make cards for quick recall.",
+              "type": "practice",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Secure coding principles",
+          "outcome": "Can write code that avoids common vulnerabilities.",
+          "skill": "Secure coding",
+          "tasks": [
+            {
+              "title": "Read Secure Coding Guidelines on OWASP",
+              "description": "Read the official OWASP Secure Coding Practices document.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Complete secure‑coding exercises on Codecademy",
+              "description": "Finish the 3‑exercise module that covers input validation and output encoding.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Refactor a sample script for safety",
+              "description": "Take a vulnerable code snippet and apply OWASP guidelines to fix it.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Peer‑review your refactor with a friend",
+              "description": "Explain the changes you made and get feedback on clarity.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Developer communication basics",
+          "outcome": "Can discuss security findings clearly with engineering teams.",
+          "skill": "Developer communication",
+          "tasks": [
+            {
+              "title": "Read \"Communicating Security\" article on SANS",
+              "description": "Read the free SANS article on effective security communication.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Write a mock security advisory",
+              "description": "Draft a short advisory about a simulated vulnerability for a dev team.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Record a 2‑minute explanation video",
+              "description": "Explain the advisory verbally and record it to practice tone and clarity.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Share video with a peer for feedback",
+              "description": "Get constructive feedback on how understandable your message is.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop practical abilities in threat modelling, code review, CI security, and team interaction.",
+      "milestones": [
+        {
+          "title": "Threat modelling techniques",
+          "outcome": "Can create a STRIDE threat model for a simple app.",
+          "skill": "Threat modelling",
+          "tasks": [
+            {
+              "title": "Read Microsoft Threat Modeling Guide",
+              "description": "Study the free Microsoft guide to learn the STRIDE methodology.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Map threats for a sample todo app",
+              "description": "Apply STRIDE to a basic todo list application and list threats.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Prioritize threats using risk matrix",
+              "description": "Assign likelihood and impact scores to each threat you identified.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Discuss model with a colleague",
+              "description": "Explain your threat model and get input on missing items.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Security‑focused code review",
+          "outcome": "Can perform a code review that identifies security flaws.",
+          "skill": "Code review",
+          "tasks": [
+            {
+              "title": "Read OWASP Code Review Checklist",
+              "description": "Study the official checklist to know what to look for during reviews.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Review a GitHub pull request for XSS",
+              "description": "Find a real open‑source PR and identify any cross‑site scripting issues.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Document findings in review comments",
+              "description": "Write clear, actionable comments for each security issue you spot.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Attend a virtual code‑review meetup",
+              "description": "Join a free community session to observe experienced reviewers.",
+              "type": "connect",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "CI security tooling basics",
+          "outcome": "Can integrate static analysis and dependency checks into a CI pipeline.",
+          "skill": "CI security tooling",
+          "tasks": [
+            {
+              "title": "Watch GitHub Actions security intro on YouTube",
+              "description": "Learn the basics of adding security actions to workflows.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Add Dependabot to a sample repo",
+              "description": "Enable Dependabot alerts and auto‑updates for dependencies.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Configure CodeQL analysis step",
+              "description": "Add a CodeQL action to the CI file and run a scan.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Interpret CodeQL report and fix one issue",
+              "description": "Read the generated report, locate the issue, and patch the code.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Share pipeline config on a forum for feedback",
+              "description": "Post your CI YAML on a security forum and ask for improvements.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that demonstrate your new security capabilities.",
+      "milestones": [
+        {
+          "title": "Threat model of an open‑source app",
+          "outcome": "Portfolio includes a documented STRIDE model with mitigations.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a popular open‑source repo",
+              "description": "Choose a well‑known project on GitHub with moderate complexity.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Apply STRIDE and write a report",
+              "description": "Create a structured threat‑model document using the guide you studied.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add mitigation recommendations",
+              "description": "Propose concrete security controls for each high‑risk threat.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Publish the report on GitHub Pages",
+              "description": "Host the threat model as a static site for easy sharing.",
+              "type": "build",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "CI pipeline with security checks",
+          "outcome": "Portfolio showcases a CI workflow that runs static analysis and dependency scans.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Fork a sample application repo",
+              "description": "Create your own copy of a small web app to modify.",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Add Dependabot and CodeQL actions",
+              "description": "Integrate both security actions into the GitHub Actions workflow.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Run the pipeline and capture results",
+              "description": "Trigger a CI run, then screenshot the security findings.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write a README explaining the setup",
+              "description": "Document how the pipeline works and why each step matters.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Share the repo link in your portfolio",
+              "description": "Add the repository URL to your personal portfolio site.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Secure‑coding guide for developers",
+          "outcome": "Portfolio contains a concise guide that teaches secure coding best practices.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Outline guide sections using OWASP list",
+              "description": "Create a skeleton covering input validation, auth, and error handling.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Write examples for each section",
+              "description": "Provide code snippets that illustrate good and bad practices.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Design a one‑page cheat sheet",
+              "description": "Summarize key rules in a printable PDF format.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Gather peer feedback on clarity",
+              "description": "Send the guide to a developer friend and ask for improvements.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Publish the guide on your portfolio site",
+              "description": "Add the guide as a downloadable resource for visitors.",
+              "type": "build",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance your expertise and prepare for job or client engagements.",
+      "milestones": [
+        {
+          "title": "Advanced secure coding patterns",
+          "outcome": "Can implement defense‑in‑depth techniques in production code.",
+          "skill": "Secure coding",
+          "tasks": [
+            {
+              "title": "Read \"Secure Coding in C++\" free e‑book chapter",
+              "description": "Study the chapter on memory safety and bounds checking.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Implement input sanitization library",
+              "description": "Write a reusable module that safely encodes user input for web output.",
+              "type": "build",
+              "minutes": 85
+            },
+            {
+              "title": "Add unit tests for security edge cases",
+              "description": "Create tests that verify the library blocks malicious payloads.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Benchmark performance impact",
+              "description": "Measure latency before and after adding the sanitization layer.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Document trade‑offs in a short blog post",
+              "description": "Explain why you chose certain patterns over others.",
+              "type": "reflect",
+              "minutes": 35
+            }
+          ]
+        },
+        {
+          "title": "Deep dive into auth and crypto",
+          "outcome": "Can design basic authentication flows and choose appropriate cryptographic primitives.",
+          "skill": "Auth and crypto basics",
+          "tasks": [
+            {
+              "title": "Study RFC 6749 OAuth 2.0 spec summary on MDN",
+              "description": "Read the concise MDN overview of OAuth 2.0 flows.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Implement JWT issuance in a demo app",
+              "description": "Write code that creates and verifies JSON Web Tokens securely.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Compare symmetric vs asymmetric encryption",
+              "description": "Create a table summarizing use‑cases, strengths, and weaknesses.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Run OWASP ZAP scan on the demo app",
+              "description": "Use the free ZAP tool to find auth‑related vulnerabilities.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Explain findings to a non‑technical friend",
+              "description": "Practice translating technical results into plain language.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job and client readiness",
+          "outcome": "Can interview confidently and communicate security value to stakeholders.",
+          "skill": "Developer communication",
+          "tasks": [
+            {
+              "title": "Read \"Tell Me About Yourself\" guide on The Muse",
+              "description": "Study the free article on framing your security background for interviews.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Craft a 5‑minute security pitch",
+              "description": "Prepare a concise presentation of your portfolio and impact.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Mock interview with a peer",
+              "description": "Role‑play an interview focusing on security scenario questions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Update LinkedIn with security keywords",
+              "description": "Add the six key skills to your profile and describe projects.",
+              "type": "reflect",
+              "minutes": 15
+            },
+            {
+              "title": "Join a security community Slack channel",
+              "description": "Participate in discussions to expand your network and learn current trends.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "appsec.beginner",
+  "roleId": "appsec",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:00:12.947Z",
+  "model": "openai/gpt-oss-120b"
+}

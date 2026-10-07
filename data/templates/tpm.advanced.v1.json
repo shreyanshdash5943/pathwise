@@ -1,0 +1,492 @@
+{
+  "title": "Technical Product Manager Advancement Roadmap",
+  "summary": "A step‑by‑step plan to deepen technical product expertise, build a compelling portfolio, and prepare for senior roles. Focuses on core product skills, real‑world deliverables, and interview readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build the technical base needed to communicate effectively with engineering teams.",
+      "milestones": [
+        {
+          "title": "API Fundamentals",
+          "outcome": "Can explain API architectures, authentication, and versioning to stakeholders.",
+          "skill": "APIs and system basics",
+          "tasks": [
+            {
+              "title": "Read API design guide",
+              "description": "Study the RESTful API design guide on MDN to understand resources, methods, and status codes.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create a sample endpoint",
+              "description": "Use Node.js and Express to build a simple GET endpoint that returns JSON data.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Test with Postman",
+              "description": "Send requests to the endpoint, verify responses, and document findings.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Summarize key concepts",
+              "description": "Write a one‑page summary of API versioning strategies and error handling.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Technical Specification Basics",
+          "outcome": "Can draft clear, concise technical specs for product features.",
+          "skill": "Technical specs",
+          "tasks": [
+            {
+              "title": "Study spec template",
+              "description": "Review the Google API design guide spec template on GitHub.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write spec for a login flow",
+              "description": "Draft a technical spec covering request/response, validation, and error cases.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Peer review draft",
+              "description": "Exchange specs with a colleague and incorporate feedback.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create checklist",
+              "description": "Develop a reusable checklist for future specs to ensure completeness.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on clarity",
+              "description": "Assess how understandable the spec is to a non‑engineer audience.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SQL Essentials",
+          "outcome": "Can query databases to extract product usage metrics.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Complete SQL basics on freeCodeCamp",
+              "description": "Finish the introductory SQL module covering SELECT, WHERE, and JOIN.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Write usage query",
+              "description": "Craft a query that returns daily active users per feature from a sample schema.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Visualize results",
+              "description": "Export query results to CSV and create a simple chart in Google Sheets.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Document query logic",
+              "description": "Write brief comments explaining each part of the query for future reference.",
+              "type": "build",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on data gaps",
+              "description": "Identify missing data points that would improve product decisions.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop product management capabilities that drive delivery and stakeholder alignment.",
+      "milestones": [
+        {
+          "title": "Prioritisation Frameworks",
+          "outcome": "Can apply systematic methods to rank features and initiatives.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read RICE scoring article",
+              "description": "Study the RICE framework article on Intercom to understand scoring components.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Score three backlog items",
+              "description": "Apply RICE to three real items, calculate scores, and rank them.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Facilitate prioritisation workshop",
+              "description": "Run a 30‑minute session with a cross‑functional team using the scores.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Gather feedback",
+              "description": "Collect participant input on the process and note improvements.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with senior PM",
+              "description": "Schedule a 15‑minute chat to discuss prioritisation challenges.",
+              "type": "connect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Delivery Planning",
+          "outcome": "Can create realistic roadmaps and release plans aligned with engineering capacity.",
+          "skill": "Delivery planning",
+          "tasks": [
+            {
+              "title": "Study agile roadmap guide",
+              "description": "Read the Atlassian roadmap best practices article.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Map a quarterly roadmap",
+              "description": "Draft a roadmap for a hypothetical platform using a Gantt view.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Estimate effort with story points",
+              "description": "Break roadmap items into user stories and assign points with a team mock‑session.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Identify dependencies",
+              "description": "Create a dependency matrix for the roadmap items.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on feasibility",
+              "description": "Assess whether the timeline matches typical velocity data.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Developer Empathy",
+          "outcome": "Can anticipate engineering concerns and foster collaborative relationships.",
+          "skill": "Developer empathy",
+          "tasks": [
+            {
+              "title": "Read developer experience article",
+              "description": "Read the Stripe blog post on engineering empathy.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Interview a developer",
+              "description": "Conduct a 20‑minute interview to learn pain points in spec hand‑off.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Create empathy map",
+              "description": "Summarize findings in an empathy map highlighting needs and frustrations.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Adjust spec template",
+              "description": "Incorporate developer feedback into the technical spec checklist.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on communication",
+              "description": "Write a brief note on how empathy improved spec clarity.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Assemble portfolio pieces that demonstrate end‑to‑end product thinking.",
+      "milestones": [
+        {
+          "title": "API Product Spec Project",
+          "outcome": "A polished API spec ready for stakeholder review.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select an API idea",
+              "description": "Choose a realistic API product relevant to your industry.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Research market needs",
+              "description": "Gather three competitor examples and note gaps.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write full spec",
+              "description": "Produce a comprehensive spec covering endpoints, auth, rate limits, and error codes.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Create visual diagram",
+              "description": "Draw an architecture diagram using draw.io to accompany the spec.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Collect peer feedback",
+              "description": "Share the spec with two engineers and iterate based on comments.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Publish on portfolio site",
+              "description": "Upload the final spec and diagram to your personal website.",
+              "type": "build",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Technical Roadmap Project",
+          "outcome": "A strategic roadmap showing phased platform evolution.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define platform vision",
+              "description": "Write a concise vision statement for the platform’s future.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Identify milestones",
+              "description": "Outline three major releases with key capabilities.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Estimate timelines",
+              "description": "Assign rough dates and resources to each milestone.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Add risk assessment",
+              "description": "List top three risks per milestone and mitigation plans.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Prepare presentation deck",
+              "description": "Create slides summarizing the roadmap for executives.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Rehearse stakeholder pitch",
+              "description": "Practice delivering the deck to a colleague and refine.",
+              "type": "practice",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Data‑Backed Feature Proposal",
+          "outcome": "A proposal that uses analytics to justify a new feature.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a feature idea",
+              "description": "Pick a feature that could improve user retention.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Gather usage data",
+              "description": "Query a sample dataset (Kaggle) to extract relevant metrics.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Analyze impact",
+              "description": "Use simple statistical tests to estimate potential uplift.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write proposal document",
+              "description": "Combine data insights with user stories into a formal proposal.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Create supporting charts",
+              "description": "Design three clear charts in Google Sheets to illustrate findings.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Seek stakeholder review",
+              "description": "Present the proposal to a mock product council and note feedback.",
+              "type": "practice",
+              "minutes": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish expertise, showcase leadership, and prepare for senior‑level interviews.",
+      "milestones": [
+        {
+          "title": "Advanced API Strategies",
+          "outcome": "Can design versioning, throttling, and monetization models for large APIs.",
+          "skill": "APIs and system basics",
+          "tasks": [
+            {
+              "title": "Study GraphQL vs REST article",
+              "description": "Read the GraphQL vs REST comparison on the official GraphQL site.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Design versioning plan",
+              "description": "Create a versioning strategy document for your API project.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Prototype throttling logic",
+              "description": "Implement a simple rate‑limit middleware in Node.js.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Connect with API product lead",
+              "description": "Arrange a 20‑minute conversation to discuss scaling challenges.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on trade‑offs",
+              "description": "Write a short note comparing the pros and cons of each approach.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Leadership & Influence",
+          "outcome": "Can lead cross‑functional initiatives and mentor junior PMs.",
+          "skill": "Developer empathy",
+          "tasks": [
+            {
+              "title": "Read servant leadership article",
+              "description": "Read the Harvard Business Review piece on servant leadership.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Facilitate a cross‑team sync",
+              "description": "Run a 45‑minute alignment meeting for a mock feature launch.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Mentor a junior PM",
+              "description": "Provide feedback on a junior’s spec draft and prioritisation exercise.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Gather 360 feedback",
+              "description": "Ask peers for feedback on your facilitation style.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with senior PM community",
+              "description": "Join a free online product manager meetup and introduce yourself.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Senior Interview Prep",
+          "outcome": "Ready to articulate experience and solve case studies in senior TPM interviews.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Review common interview questions",
+              "description": "Read the list of senior product manager interview questions on Glassdoor.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Craft STAR stories",
+              "description": "Write three STAR stories highlighting prioritisation challenges you solved.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice case study",
+              "description": "Do a timed product case on API monetization and record your answer.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Get mock interview feedback",
+              "description": "Schedule a 45‑minute mock interview with a peer and note suggestions.",
+              "type": "connect",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on gaps",
+              "description": "Identify two areas to improve before real interviews and plan actions.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "tpm.advanced",
+  "roleId": "tpm",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:24:28.884Z",
+  "model": "openai/gpt-oss-120b"
+}

@@ -1,0 +1,443 @@
+{
+  "title": "DevOps Engineer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step guide to master professional DevOps practices, from core Linux fundamentals to production‑grade pipelines and infrastructure. Each phase builds concrete skills and portfolio pieces you can showcase to employers.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish solid Linux and version‑control basics needed for any DevOps work.",
+      "milestones": [
+        {
+          "title": "Linux command line fluency",
+          "outcome": "Navigate, edit, and automate tasks on a Linux server confidently.",
+          "skill": "Linux",
+          "tasks": [
+            {
+              "title": "Read Linux filesystem hierarchy",
+              "description": "Study the Linux Filesystem Hierarchy Standard on the official Linux Documentation Project.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Practice file permissions",
+              "description": "Create files, change owners and permissions, and verify access using chmod, chown, and ls -l.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write a Bash script to monitor disk usage",
+              "description": "Script checks /var/log and emails when usage exceeds 80%, then test it on a VM.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on common pitfalls",
+              "description": "Write a short note on why sudo misuse can cause security issues.",
+              "type": "reflect",
+              "minutes": 15
+            },
+            {
+              "title": "Join Linux subreddit thread",
+              "description": "Read recent discussions on /r/linux and comment with a question about system logs.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Git fundamentals and CI concepts",
+          "outcome": "Use Git confidently and design simple CI workflows.",
+          "skill": "Git and CI/CD",
+          "tasks": [
+            {
+              "title": "Complete freeCodeCamp Git basics",
+              "description": "Finish the Git & GitHub module, focusing on branching and rebasing.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Create a repo with feature branches",
+              "description": "Initialize a repo, add two feature branches, merge with pull requests, and resolve a conflict.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Set up a GitHub Actions CI for a Hello World app",
+              "description": "Write a workflow that runs on push, installs dependencies, and runs unit tests.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Document CI pipeline steps",
+              "description": "Write a markdown file explaining each job, trigger, and artifact in your workflow.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with a DevOps meetup online",
+              "description": "Attend a virtual meetup and ask about CI best practices.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain hands‑on expertise with containers, orchestration, and IaC.",
+      "milestones": [
+        {
+          "title": "Docker containerization",
+          "outcome": "Build, tag, and run multi‑layer Docker images for any application.",
+          "skill": "Docker",
+          "tasks": [
+            {
+              "title": "Read Docker Engine overview on docs.docker.com",
+              "description": "Understand image layers, storage drivers, and networking basics.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Dockerize a Node.js app",
+              "description": "Write a Dockerfile, build the image, and run it with port mapping.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice multi‑stage builds",
+              "description": "Refactor the Dockerfile to use a builder stage and a minimal runtime stage.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Push image to Docker Hub",
+              "description": "Create a Docker Hub account, tag the image, and push it publicly.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on image size reduction",
+              "description": "Note how multi‑stage builds cut size and why that matters in CI.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Kubernetes orchestration",
+          "outcome": "Deploy and manage container workloads on a Kubernetes cluster.",
+          "skill": "Kubernetes",
+          "tasks": [
+            {
+              "title": "Study Kubernetes concepts on Kubernetes.io",
+              "description": "Read the concepts page covering Pods, Deployments, Services, and ConfigMaps.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Install Kind locally",
+              "description": "Set up a local Kubernetes cluster with Kind and verify node status.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Deploy the Dockerized app to Kind",
+              "description": "Create Deployment and Service YAML files, apply them, and test access via port‑forward.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Scale the deployment to 3 replicas",
+              "description": "Update the replica count, observe rollout status, and verify load balancing.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Join a Kubernetes Slack channel",
+              "description": "Introduce yourself and ask a question about service discovery.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Infrastructure as Code with Terraform",
+          "outcome": "Provision cloud resources reproducibly using Terraform scripts.",
+          "skill": "Infrastructure as code",
+          "tasks": [
+            {
+              "title": "Read Terraform Getting Started guide on terraform.io",
+              "description": "Focus on providers, resources, and state management.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Write Terraform to create an AWS S3 bucket",
+              "description": "Define provider, resource block, and run terraform init/apply.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice state back‑ends with local file",
+              "description": "Configure a local backend, make a change, and observe state file updates.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Add a lifecycle rule to the bucket",
+              "description": "Use a lifecycle block to transition objects to Glacier after 30 days.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on drift detection",
+              "description": "Write a brief note on why running terraform plan regularly matters.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that demonstrate end‑to‑end DevOps pipelines.",
+      "milestones": [
+        {
+          "title": "CI/CD pipeline for a web app",
+          "outcome": "Show a fully automated build, test, and deploy pipeline in a public repo.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a sample web app on GitHub",
+              "description": "Fork a simple Flask or React starter project to your account.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Design pipeline stages on paper",
+              "description": "Outline steps: lint, unit test, Docker build, push, and deploy to Kind.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Implement GitHub Actions workflow",
+              "description": "Create .github/workflows/main.yml with jobs for each stage.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add automated tests with pytest or Jest",
+              "description": "Write at least three tests and ensure the pipeline fails on breakage.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document the pipeline in README",
+              "description": "Explain each job, required secrets, and how to trigger a manual run.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Containerised multi‑service app",
+          "outcome": "Deploy a multi‑container application using Docker Compose and Kubernetes.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a two‑service demo (e.g., API + DB)",
+              "description": "Clone a repo that includes a backend and a PostgreSQL database.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write Docker Compose file for local dev",
+              "description": "Define services, networks, and volumes; bring them up with docker compose up.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Convert Compose to Kubernetes manifests",
+              "description": "Create Deployment and Service YAMLs for each component.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Deploy to Kind and verify inter‑service communication",
+              "description": "Use kubectl exec to query the API from the DB pod.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Share the repo and ask for feedback",
+              "description": "Post the project link in a DevOps forum and note suggestions.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Terraform‑defined infrastructure",
+          "outcome": "Provision a full stack (VPC, compute, DB) on a cloud provider using Terraform.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a free‑tier cloud (AWS or GCP)",
+              "description": "Create an account and enable the free tier for compute resources.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write Terraform modules for VPC and EC2",
+              "description": "Separate reusable modules and reference them from a root configuration.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add a PostgreSQL instance via Terraform",
+              "description": "Define the RDS/CloudSQL resource with proper security groups.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Run terraform plan/apply and verify resources",
+              "description": "Check the console and cloud console that resources are created.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document architecture diagram in README",
+              "description": "Create a simple diagram showing network layout and resource relationships.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced practices, monitoring, and job‑search readiness.",
+      "milestones": [
+        {
+          "title": "Production‑grade monitoring",
+          "outcome": "Set up observability for services using open‑source tools.",
+          "skill": "Monitoring",
+          "tasks": [
+            {
+              "title": "Read Prometheus fundamentals on prometheus.io",
+              "description": "Focus on metrics model, exporters, and alerting rules.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Deploy Prometheus and Grafana on Kind",
+              "description": "Use Helm charts to install both and configure a scrape target for the app.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Create a dashboard for request latency",
+              "description": "Add a Grafana panel visualizing HTTP latency metrics from the app.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Set up an alert for high error rate",
+              "description": "Write an alert rule that fires when 5xx responses exceed 2% for 5 minutes.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on alert fatigue mitigation",
+              "description": "Write a short note on tuning thresholds and using on‑call rotations.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Advanced GitOps and security",
+          "outcome": "Apply GitOps principles and secure pipelines for enterprise environments.",
+          "skill": "Git and CI/CD",
+          "tasks": [
+            {
+              "title": "Read Argo CD overview on argoproj.github.io",
+              "description": "Understand declarative deployments from Git repositories.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Configure Argo CD to sync the Kubernetes app repo",
+              "description": "Install Argo CD on Kind, add the repo, and enable auto‑sync.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Add secret management with SOPS",
+              "description": "Encrypt a Kubernetes secret file and configure decryption in the pipeline.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Document GitOps workflow in a wiki page",
+              "description": "Explain how code changes flow to production via pull request and Argo CD.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Connect with a senior DevOps engineer on LinkedIn",
+              "description": "Send a concise message asking for a quick chat about GitOps adoption.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job and client readiness",
+          "outcome": "Prepare interview materials, resume, and professional habits for hiring.",
+          "skill": "Linux",
+          "tasks": [
+            {
+              "title": "Update resume with quantified DevOps achievements",
+              "description": "Add bullet points showing pipeline speed improvements and cost savings.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Create a 5‑minute portfolio demo video",
+              "description": "Record screen walkthrough of the CI/CD pipeline and Terraform infra.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice common DevOps interview questions",
+              "description": "Answer at least ten questions aloud, focusing on troubleshooting and design trade‑offs.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Set up a personal blog on GitHub Pages",
+              "description": "Write a post describing one of your portfolio projects and lessons learned.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Join a local DevOps job board or community",
+              "description": "Subscribe to a mailing list and attend one virtual hiring event.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "devops.intermediate",
+  "roleId": "devops",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:02:53.005Z",
+  "model": "openai/gpt-oss-120b"
+}

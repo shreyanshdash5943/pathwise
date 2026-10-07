@@ -1,0 +1,393 @@
+{
+  "title": "Backend Engineer Mastery Roadmap",
+  "summary": "A step‑by‑step guide to deepen your backend expertise, build professional‑grade projects, and prepare for senior roles. Focuses on best practices, scalability, and job‑ready habits.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish core language and database fundamentals.",
+      "milestones": [
+        {
+          "title": "Python or Go Core",
+          "outcome": "Write clean, idiomatic Python or Go code for backend services.",
+          "skill": "Python or Go",
+          "tasks": [
+            {
+              "title": "Read language syntax overview",
+              "description": "Study the official Python or Go language reference to refresh syntax and core concepts.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Complete basic exercises",
+              "description": "Solve 5 coding challenges on freeCodeCamp's Python or Go sections to solidify basics.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Set up development environment",
+              "description": "Install VS Code, configure linters (flake8 or golint) and a debugger for the chosen language.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Write a simple CLI tool",
+              "description": "Create a command‑line program that reads input and prints formatted output, committing to Git.",
+              "type": "build",
+              "minutes": 50
+            }
+          ]
+        },
+        {
+          "title": "SQL and Data Modelling",
+          "outcome": "Design relational schemas and write efficient queries.",
+          "skill": "SQL and data modelling",
+          "tasks": [
+            {
+              "title": "Read relational theory chapter",
+              "description": "Review the normalization chapter on Khan Academy to understand 1NF‑3NF.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Practice SELECT queries",
+              "description": "Use the public PostgreSQL sample database on db‑fiddle.com to write 10 varied SELECT statements.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Model a simple e‑commerce schema",
+              "description": "Draw an ER diagram for products, orders, and users, then create the tables in a local PostgreSQL instance.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Benchmark query performance",
+              "description": "Run EXPLAIN ANALYZE on two queries and note index usage.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on schema choices",
+              "description": "Write a short note on why you chose primary keys and relationships.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Apply best‑practice patterns for APIs, security, and scalability.",
+      "milestones": [
+        {
+          "title": "REST API Design",
+          "outcome": "Design and document robust RESTful endpoints.",
+          "skill": "REST API design",
+          "tasks": [
+            {
+              "title": "Read REST design guide",
+              "description": "Study the RESTful API Design guide on MDN for conventions and status codes.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Sketch endpoint map",
+              "description": "Create a diagram of resources, verbs, and URL structures for a blog service.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Write OpenAPI spec",
+              "description": "Use Swagger Editor to draft a YAML spec for the blog API.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Implement a GET endpoint",
+              "description": "Code a Flask (or Gin) route that returns JSON for a single blog post.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Peer‑review spec",
+              "description": "Share the OpenAPI file with a colleague and incorporate feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Authentication",
+          "outcome": "Secure APIs with token‑based authentication.",
+          "skill": "Authentication",
+          "tasks": [
+            {
+              "title": "Read JWT basics",
+              "description": "Read the JSON Web Token introduction on jwt.io to understand token flow.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Generate a JWT in code",
+              "description": "Write a small script that creates and verifies a JWT using a secret key.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Add auth middleware",
+              "description": "Integrate JWT verification middleware into the blog API routes.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Write auth unit tests",
+              "description": "Create tests that ensure protected endpoints reject invalid tokens.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Discuss auth trade‑offs",
+              "description": "Join an online forum thread about session vs token auth and summarize key points.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build portfolio projects that showcase end‑to‑end backend capabilities.",
+      "milestones": [
+        {
+          "title": "REST API with Auth and Tests",
+          "outcome": "Deliver a production‑ready API featuring authentication and full test coverage.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan project scope",
+              "description": "Define resources, endpoints, and data models for a task‑management API.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Set up repo and CI",
+              "description": "Create a GitHub repo, add a GitHub Actions workflow that runs lint and tests on push.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Implement CRUD endpoints",
+              "description": "Code create, read, update, delete routes with proper validation.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Add JWT auth",
+              "description": "Secure the endpoints with token middleware and role checks.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Write integration tests",
+              "description": "Use pytest (or Go’s testing package) to test full request‑response cycles.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document API with Swagger",
+              "description": "Generate OpenAPI docs and host them via Swagger UI.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "URL Shortener with Analytics",
+          "outcome": "Create a service that shortens URLs and tracks click metrics.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design data model",
+              "description": "Model tables for URLs, short codes, and click logs in PostgreSQL.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Implement shortening endpoint",
+              "description": "Write an API that generates a unique short code and stores the mapping.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Add redirect worker",
+              "description": "Build a background handler that logs clicks and redirects to the original URL.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Introduce caching layer",
+              "description": "Cache recent short‑code lookups using Redis to reduce DB hits.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Create analytics endpoint",
+              "description": "Expose an API that returns click counts per short code.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write end‑to‑end tests",
+              "description": "Automate tests that create a short URL, simulate clicks, and verify analytics.",
+              "type": "practice",
+              "minutes": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance with performance patterns and prepare for job or client interviews.",
+      "milestones": [
+        {
+          "title": "Caching and Queues",
+          "outcome": "Integrate Redis caching and a message queue for asynchronous processing.",
+          "skill": "Caching and queues",
+          "tasks": [
+            {
+              "title": "Read Redis intro",
+              "description": "Review the Redis Quick Start guide on redis.io for basic commands.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Cache API responses",
+              "description": "Add Redis caching to the URL shortener’s redirect endpoint with TTL.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Set up RabbitMQ locally",
+              "description": "Install RabbitMQ via Docker and explore the management UI.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a job worker",
+              "description": "Write a worker that consumes messages to send email notifications.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Benchmark cache impact",
+              "description": "Measure response times with and without Redis cache and note improvements.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on async design",
+              "description": "Write a brief note on when to use queues versus direct processing.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Testing Mastery",
+          "outcome": "Apply comprehensive testing strategies across unit, integration, and load tests.",
+          "skill": "Testing",
+          "tasks": [
+            {
+              "title": "Read testing pyramid article",
+              "description": "Study the testing pyramid on Martin Fowler’s website to understand test layers.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Add property‑based tests",
+              "description": "Use hypothesis (Python) or gopter (Go) to generate random inputs for a core function.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Implement load testing script",
+              "description": "Create a Locust (or k6) script that simulates 100 concurrent users on the API.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Integrate coverage reporting",
+              "description": "Configure CI to upload coverage reports to Codecov.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Conduct a test review session",
+              "description": "Pair with a peer to review failing tests and improve assertions.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Document testing strategy",
+              "description": "Write a one‑page guide summarizing your testing approach for future projects.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job/Client Readiness",
+          "outcome": "Present your work confidently and navigate technical interviews.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Update portfolio site",
+              "description": "Add project descriptions, tech stack, and links to live demos on your personal website.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Craft STAR stories",
+              "description": "Write three STAR (Situation, Task, Action, Result) narratives for each milestone achievement.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Mock system design interview",
+              "description": "Participate in a 45‑minute mock design interview with a colleague using a whiteboard tool.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Review common backend questions",
+              "description": "Study top backend interview questions on LeetCode Discuss and note key concepts.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Network with peers",
+              "description": "Join a backend engineering Slack community and share a recent project for feedback.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on growth gaps",
+              "description": "Write a short reflection on areas needing improvement before applying for senior roles.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "backend.intermediate",
+  "roleId": "backend",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:08:48.840Z",
+  "model": "openai/gpt-oss-120b"
+}

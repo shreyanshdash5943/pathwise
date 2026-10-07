@@ -1,0 +1,480 @@
+{
+  "title": "Site Reliability Engineer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step plan to master SRE fundamentals, core engineering practices, showcase real‑world projects, and prepare for senior‑level roles. Focuses on depth, best‑practice tooling, and professional habits.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid base in Linux, networking, and core programming concepts.",
+      "milestones": [
+        {
+          "title": "Linux system fundamentals",
+          "outcome": "Can navigate, configure, and troubleshoot a Linux server confidently.",
+          "skill": "Linux and networking",
+          "tasks": [
+            {
+              "title": "Read Linux Filesystem Hierarchy",
+              "description": "Study the FHS page on the Linux Documentation Project and note key directories.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Set up a VM with Ubuntu Server",
+              "description": "Create a virtual machine, install Ubuntu Server, and enable SSH access.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice basic commands",
+              "description": "Run ls, cat, grep, systemctl, and journalctl to explore system state.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Configure static IP",
+              "description": "Edit /etc/netplan to assign a static address and verify connectivity.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Reflect on command shortcuts",
+              "description": "Write a short note on which commands saved you time and why.",
+              "type": "reflect",
+              "minutes": 10
+            }
+          ]
+        },
+        {
+          "title": "Networking basics for reliability",
+          "outcome": "Can diagnose common network issues and understand TCP/IP fundamentals.",
+          "skill": "Linux and networking",
+          "tasks": [
+            {
+              "title": "Watch TCP/IP overview on YouTube",
+              "description": "Select a reputable channel (e.g., Computerphile) and watch the 15‑minute TCP/IP video.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Read TCP/IP chapter on MDN",
+              "description": "Read the MDN article on IP addressing and subnetting, taking notes on CIDR notation.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Configure iptables firewall",
+              "description": "Create a simple allow‑only‑SSH rule and test connection from another VM.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Use ping and traceroute",
+              "description": "Run ping and traceroute to a public host, record latency and hops.",
+              "type": "practice",
+              "minutes": 15
+            },
+            {
+              "title": "Connect with a networking forum",
+              "description": "Post a question about a subtle routing issue on Stack Overflow or Server Fault and engage with answers.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Programming fundamentals for automation",
+          "outcome": "Can write scripts to automate routine SRE tasks.",
+          "skill": "Programming",
+          "tasks": [
+            {
+              "title": "Complete Python basics on freeCodeCamp",
+              "description": "Finish the first 3 sections (variables, control flow, functions) and run the exercises.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Write a log‑parsing script",
+              "description": "Create a Python script that reads syslog, filters error lines, and outputs a summary.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice exception handling",
+              "description": "Add try/except blocks to handle missing files and malformed lines.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Review code style with Pylint",
+              "description": "Run pylint on your script and fix at least three warnings.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Reflect on automation impact",
+              "description": "Write a brief note on how scripting reduces manual toil.",
+              "type": "reflect",
+              "minutes": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop observability, incident response, and reliability engineering practices.",
+      "milestones": [
+        {
+          "title": "Observability stack basics",
+          "outcome": "Can deploy and query metrics, logs, and traces using open‑source tools.",
+          "skill": "Observability",
+          "tasks": [
+            {
+              "title": "Read Prometheus architecture on docs",
+              "description": "Study the official Prometheus documentation overview page.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Install Prometheus on Docker",
+              "description": "Run a Docker container with Prometheus, configure a node exporter, and verify metrics appear.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Create a Grafana dashboard",
+              "description": "Add Grafana, connect to Prometheus, and build a simple CPU/Memory dashboard.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Practice alert rule creation",
+              "description": "Define a rule that fires when CPU > 80% for 2 minutes and test it.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with Grafana community",
+              "description": "Join the Grafana Slack channel and ask a question about alert routing.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Incident management workflow",
+          "outcome": "Can lead an incident from detection through resolution and post‑mortem.",
+          "skill": "Incident management",
+          "tasks": [
+            {
+              "title": "Read Google SRE incident guide",
+              "description": "Study the incident response chapter on the SRE book website.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Set up a mock incident page",
+              "description": "Create a Confluence‑style page template for incident tracking.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Practice run a simulated outage",
+              "description": "Trigger a service stop, follow the runbook, and record timestamps for each step.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a short post‑mortem draft",
+              "description": "Summarize cause, impact, and remediation in 300 words.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on communication style",
+              "description": "Note three improvements for future incident briefings.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Designing and measuring SLOs",
+          "outcome": "Can define, monitor, and evaluate Service Level Objectives for a service.",
+          "skill": "SLOs",
+          "tasks": [
+            {
+              "title": "Read SLO chapter from Google SRE book",
+              "description": "Focus on error budget concepts and read the relevant section online.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Identify key service metrics",
+              "description": "List latency, availability, and error rate metrics for a sample web service.",
+              "type": "practice",
+              "minutes": 20
+            },
+            {
+              "title": "Calculate an error budget",
+              "description": "Using a 99.9% availability target, compute the allowable downtime per month.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Configure SLO alerts in Prometheus",
+              "description": "Create a recording rule for error budget burn rate and an alert for >80% consumption.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Connect with SRE meetup group",
+              "description": "Attend a virtual meetup and discuss real‑world SLO challenges.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that demonstrate end‑to‑end reliability engineering.",
+      "milestones": [
+        {
+          "title": "Monitoring stack with alerts",
+          "outcome": "Can showcase a full monitoring pipeline from data collection to alerting.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan stack architecture",
+              "description": "Sketch components (node exporter, Prometheus, Alertmanager, Grafana) on paper or a diagram tool.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Deploy stack on cloud VM",
+              "description": "Use Terraform (free) to provision a VM and install all components via scripts.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create three meaningful alerts",
+              "description": "Define alerts for CPU, disk space, and HTTP error rate, and test each.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Document setup in README",
+              "description": "Write clear instructions, diagrams, and screenshots for future viewers.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Share project on GitHub",
+              "description": "Push the repo, add a descriptive tag, and post a short summary on LinkedIn.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Load test and capacity report",
+          "outcome": "Can perform load testing, analyze results, and recommend scaling actions.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read k6 getting‑started guide",
+              "description": "Follow the official k6 docs to install and run a basic script.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Write a load test script",
+              "description": "Target a sample REST endpoint, simulate 1000 virtual users, and capture latency.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Run test and collect metrics",
+              "description": "Execute the script, export results to CSV, and note peak RPS and errors.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Draft a capacity report",
+              "description": "Summarize findings, plot graphs, and suggest CPU/instance scaling thresholds.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Get feedback from a peer",
+              "description": "Post the report in a dev community and ask for critique.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Simulated outage post‑mortem",
+          "outcome": "Can produce a professional post‑mortem that highlights root cause and improvements.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design a failure scenario",
+              "description": "Choose a service (e.g., database) and outline steps to cause a controlled outage.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Execute the scenario in a sandbox",
+              "description": "Trigger the failure, capture logs, and note detection time.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Write a detailed post‑mortem",
+              "description": "Follow the SRE post‑mortem template, include timeline, analysis, and action items.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create an improvement backlog",
+              "description": "List at least three concrete changes to prevent recurrence.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Present the post‑mortem to a mentor",
+              "description": "Schedule a short video call and walk through the document, noting feedback.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance to distributed systems, polish professional habits, and prepare for job or client interviews.",
+      "milestones": [
+        {
+          "title": "Distributed systems concepts",
+          "outcome": "Can explain consistency, replication, and fault tolerance in modern services.",
+          "skill": "Distributed systems",
+          "tasks": [
+            {
+              "title": "Read CAP theorem article on Wikipedia",
+              "description": "Summarize the three guarantees and real‑world trade‑offs in 150 words.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Watch Consul service mesh intro",
+              "description": "View the HashiCorp video and note how service discovery works.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Deploy a simple Raft demo",
+              "description": "Run the etcd Docker image, add a second node, and observe leader election.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a comparison table",
+              "description": "Contrast at‑least three data stores (e.g., MySQL, Cassandra, Redis) on consistency models.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on reliability implications",
+              "description": "Note how each model affects SLO design and incident response.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Professional SRE habits",
+          "outcome": "Can maintain documentation, runbooks, and continuous improvement cycles.",
+          "skill": "Incident management",
+          "tasks": [
+            {
+              "title": "Create a runbook template",
+              "description": "Design a markdown template covering purpose, steps, rollback, and contacts.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Automate runbook generation",
+              "description": "Write a small script that fills the template from a JSON incident payload.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Set up a weekly blameless review",
+              "description": "Schedule a recurring calendar event and draft an agenda outline.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Document a knowledge‑base article",
+              "description": "Pick a recurring issue (e.g., disk full) and write a concise KB article.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Connect with a senior SRE mentor",
+              "description": "Reach out on LinkedIn, request a 30‑minute coffee chat about career growth.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Interview and job readiness",
+          "outcome": "Can confidently discuss SRE topics and demonstrate portfolio work in interviews.",
+          "skill": "Programming",
+          "tasks": [
+            {
+              "title": "Practice whiteboard coding",
+              "description": "Solve two algorithm problems (e.g., binary search, string reversal) on a virtual whiteboard.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Prepare STAR stories",
+              "description": "Write three Situation‑Task‑Action‑Result narratives about incidents you handled.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Polish GitHub portfolio README",
+              "description": "Add a summary, tech stack badges, and links to each project.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Mock interview with a peer",
+              "description": "Conduct a 60‑minute mock SRE interview and record feedback.",
+              "type": "connect",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on feedback and iterate",
+              "description": "Update answers and documentation based on the mock interview insights.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "sre.intermediate",
+  "roleId": "sre",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:07:03.409Z",
+  "model": "openai/gpt-oss-120b"
+}

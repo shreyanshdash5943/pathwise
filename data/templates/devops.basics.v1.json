@@ -1,0 +1,377 @@
+{
+  "title": "DevOps Engineer Roadmap",
+  "summary": "A practical path to solidify core DevOps fundamentals and build a portfolio that showcases automation, containerization, and infrastructure-as-code. By the end you’ll be ready to land a role or win freelance contracts.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Strengthen the operating‑system and version‑control base needed for any automation work.",
+      "milestones": [
+        {
+          "title": "Linux command mastery",
+          "outcome": "You can navigate the shell, manage files, processes and services confidently.",
+          "skill": "Linux",
+          "tasks": [
+            {
+              "title": "Read Linux Filesystem Overview",
+              "description": "Study the directory hierarchy and common file locations on the official Linux Documentation Project.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Practice file permissions",
+              "description": "Create files, change owners and permissions, and verify results with ls -l.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Set up a Bash alias script",
+              "description": "Write a .bashrc snippet that adds useful shortcuts for git and docker commands.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on shell shortcuts",
+              "description": "Write a short note on which shortcuts saved you time and why.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Git workflow and CI basics",
+          "outcome": "You can manage branches, resolve conflicts, and configure a simple CI pipeline.",
+          "skill": "Git and CI/CD",
+          "tasks": [
+            {
+              "title": "Complete Git branching tutorial on freeCodeCamp",
+              "description": "Follow the interactive lessons and create a feature branch, merge, and rebase.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Set up GitHub Actions for a hello‑world repo",
+              "description": "Create a workflow file that runs lint and unit tests on push.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice resolving a merge conflict",
+              "description": "Intentionally create conflicting changes and resolve them using the command line.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with a DevOps community",
+              "description": "Join the r/devops subreddit and introduce yourself, asking for CI best‑practice tips.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Learn containerization, orchestration, and infrastructure‑as‑code tools.",
+      "milestones": [
+        {
+          "title": "Docker fundamentals",
+          "outcome": "You can containerize an application, write Dockerfiles, and manage images.",
+          "skill": "Docker",
+          "tasks": [
+            {
+              "title": "Read Docker Engine docs on Docker.com",
+              "description": "Focus on image layers, Dockerfile syntax, and best practices.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build a multi‑stage Dockerfile for a Node app",
+              "description": "Create a Dockerfile that compiles and runs the app in a minimal image.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Practice container networking",
+              "description": "Run two containers and connect them with a user‑defined bridge network.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on image size reductions",
+              "description": "Compare sizes before and after multi‑stage builds and note optimizations.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Kubernetes basics",
+          "outcome": "You can deploy workloads, expose services, and perform basic troubleshooting on a cluster.",
+          "skill": "Kubernetes",
+          "tasks": [
+            {
+              "title": "Follow the Kubernetes Basics tutorial on Kubernetes.io",
+              "description": "Complete the interactive labs that cover pods, deployments, and services.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Deploy a sample app with a Deployment and Service",
+              "description": "Use kubectl to apply YAML manifests for a hello‑world container.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice scaling and rolling update",
+              "description": "Scale the deployment to 3 replicas and perform a rolling update to a new image version.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with a local K8s meetup group",
+              "description": "Find a virtual meetup on Meetup.com and attend the next session.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Infrastructure as Code with Terraform",
+          "outcome": "You can provision cloud resources declaratively and manage state safely.",
+          "skill": "Infrastructure as code",
+          "tasks": [
+            {
+              "title": "Read Terraform Getting Started guide on HashiCorp Docs",
+              "description": "Understand providers, resources, and state files.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write Terraform config for an AWS EC2 instance",
+              "description": "Create main.tf, variables.tf and apply the plan using the CLI.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice using remote state backend",
+              "description": "Configure an S3 bucket with DynamoDB locking for state storage.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on idempotence benefits",
+              "description": "Write a brief note on how Terraform ensures consistent environments.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that demonstrate end‑to‑end DevOps pipelines.",
+      "milestones": [
+        {
+          "title": "CI/CD pipeline for a web app",
+          "outcome": "You can automatically build, test and deploy a sample web service on each commit.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a simple Flask app from GitHub",
+              "description": "Fork a minimal Flask repository to your own account.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Create GitHub Actions workflow with Docker build",
+              "description": "Define jobs that lint, test, build a Docker image and push to Docker Hub.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice deploying to a free Kubernetes sandbox",
+              "description": "Use a free K8s playground (e.g., Play with Kubernetes) to apply the image via a Deployment.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on pipeline failures and fixes",
+              "description": "Document any errors encountered and how you resolved them.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Containerised multi‑service app",
+          "outcome": "You can orchestrate several containers with Docker Compose and Kubernetes.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design a three‑service app (frontend, API, DB)",
+              "description": "Sketch the service responsibilities and communication flow.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write Docker Compose file for local dev",
+              "description": "Define services, networks, and volumes to run the stack on a laptop.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Translate Compose to Kubernetes manifests",
+              "description": "Create Deployment and Service YAMLs for each component and apply them to a cluster.",
+              "type": "practice",
+              "minutes": 65
+            },
+            {
+              "title": "Connect with a peer for code review",
+              "description": "Share your repo on dev.to and request feedback on architecture.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Terraform‑defined infrastructure",
+          "outcome": "You can provision a full environment (VPC, subnets, compute) using IaC.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan a Terraform project for a VPC and EC2",
+              "description": "Define resources for networking and a web server instance.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build the Terraform configuration and apply",
+              "description": "Run terraform init, plan, and apply to create the resources on AWS free tier.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice destroying and recreating safely",
+              "description": "Use terraform destroy and then re‑apply, noting state handling.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on cost‑optimization measures",
+              "description": "Write notes on how to keep the free‑tier resources inexpensive.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Add advanced topics, polish your portfolio, and prepare for interviews or client pitches.",
+      "milestones": [
+        {
+          "title": "Monitoring and alerting basics",
+          "outcome": "You can instrument services with Prometheus and set up Grafana dashboards.",
+          "skill": "Monitoring",
+          "tasks": [
+            {
+              "title": "Read Prometheus fundamentals on Prometheus.io",
+              "description": "Focus on metrics exposition and scrape configs.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Install Prometheus and Node Exporter via Docker",
+              "description": "Run containers locally and verify metrics collection.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Create a Grafana dashboard for CPU and memory",
+              "description": "Add panels that query Prometheus for host metrics.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on alert thresholds",
+              "description": "Write a short plan for alerts that would indicate service degradation.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Advanced CI/CD with GitOps",
+          "outcome": "You can manage deployments declaratively using Argo CD or Flux.",
+          "skill": "Git and CI/CD",
+          "tasks": [
+            {
+              "title": "Watch Argo CD introduction on YouTube (official channel)",
+              "description": "Understand the GitOps workflow and UI basics.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Install Argo CD on a local Kind cluster",
+              "description": "Follow the official quick‑start guide to deploy Argo CD via Helm.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice syncing a sample app repo",
+              "description": "Create a Git repo with Kubernetes manifests and let Argo CD deploy it automatically.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Connect with a GitOps community Slack",
+              "description": "Join the Argo CD Slack workspace and ask a question about best practices.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Interview and client readiness",
+          "outcome": "You can articulate your projects, answer scenario questions, and negotiate contracts.",
+          "skill": "Linux",
+          "tasks": [
+            {
+              "title": "Write concise project summaries for each portfolio item",
+              "description": "Create a one‑page description highlighting problem, solution, tools, and results.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Practice answering common DevOps interview questions",
+              "description": "Use the LeetCode Discuss DevOps thread to rehearse answers aloud.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Build a personal website to showcase projects",
+              "description": "Deploy a static site on GitHub Pages linking to your repos and demos.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on salary and rate expectations",
+              "description": "Research market rates on Glassdoor and note your target compensation.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "devops.basics",
+  "roleId": "devops",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:02:29.689Z",
+  "model": "openai/gpt-oss-120b"
+}

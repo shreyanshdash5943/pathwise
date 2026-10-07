@@ -1,0 +1,492 @@
+{
+  "title": "Product Designer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step plan to sharpen product thinking, research, interaction design, and delivery skills, then showcase them in portfolio projects and prepare for professional roles. Each phase builds concrete abilities and habits for end‑to‑end product ownership.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish core product mindset and research fundamentals.",
+      "milestones": [
+        {
+          "title": "Product Thinking Basics",
+          "outcome": "Can articulate problem statements, user needs, and success metrics for a product idea.",
+          "skill": "Product thinking",
+          "tasks": [
+            {
+              "title": "Read “Product Thinking” article on Mind the Product",
+              "description": "Study the article and note three key principles of product thinking.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Write a one‑page problem statement for a chosen app",
+              "description": "Define the problem, target users, and business goal in clear language.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Map success metrics on a whiteboard",
+              "description": "Identify at least three quantitative metrics that would indicate product success.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on how metrics tie to user value",
+              "description": "Write a short paragraph linking each metric to user outcomes.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "User Research Foundations",
+          "outcome": "Can plan and conduct a basic user interview and synthesize findings.",
+          "skill": "User research",
+          "tasks": [
+            {
+              "title": "Watch Nielsen Norman Group interview basics video",
+              "description": "Take notes on interview framing and question types.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a 5‑question interview guide",
+              "description": "Focus on goals, pain points, and workflow of target users.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Conduct a 15‑minute interview with a peer",
+              "description": "Record the conversation and observe body language.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize findings in an affinity map",
+              "description": "Group insights into themes and write one insight per theme.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on interview biases",
+              "description": "Identify any assumptions you made and how they affected the results.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Design Tool Fundamentals",
+          "outcome": "Can navigate Figma, create frames, components, and basic prototypes.",
+          "skill": "Figma",
+          "tasks": [
+            {
+              "title": "Complete Figma Basics tutorial on freeCodeCamp",
+              "description": "Follow the step‑by‑step guide and finish the starter file.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Recreate a login screen from an existing app",
+              "description": "Use frames, auto‑layout, and components to match the design.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Add interactive links to prototype flow",
+              "description": "Create at least three clickable interactions between screens.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Share prototype and request feedback",
+              "description": "Send the link to a colleague and note two improvement suggestions.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on component organization",
+              "description": "Write a brief note on how you structured layers and naming conventions.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Deepen interaction design, metrics thinking, and collaboration with engineers.",
+      "milestones": [
+        {
+          "title": "Interaction Design Patterns",
+          "outcome": "Can apply common UI patterns to solve specific user tasks.",
+          "skill": "Interaction design",
+          "tasks": [
+            {
+              "title": "Read Interaction Design Foundation pattern guide",
+              "description": "Identify five patterns relevant to mobile apps.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Sketch wireframes for a task flow using two patterns",
+              "description": "Create low‑fidelity sketches on paper or digital tool.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Translate sketches into high‑fidelity Figma screens",
+              "description": "Implement the chosen patterns with proper spacing and hierarchy.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Create a micro‑interaction prototype",
+              "description": "Add hover and tap animations to demonstrate feedback.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on pattern trade‑offs",
+              "description": "Write a short note comparing usability of the two patterns used.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Metrics‑Driven Design",
+          "outcome": "Can define, track, and iterate on design decisions using quantitative data.",
+          "skill": "Metrics",
+          "tasks": [
+            {
+              "title": "Read Google Analytics for Designers article on MDN",
+              "description": "Focus on event tracking and conversion funnels.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Define three A/B test hypotheses for a redesign",
+              "description": "State the metric, variation, and expected impact.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Set up a mock dashboard in Google Data Studio",
+              "description": "Visualize sample data for the defined metrics.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Present test plan to a peer for critique",
+              "description": "Explain hypotheses and gather feedback on feasibility.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on how metrics inform design choices",
+              "description": "Write a paragraph linking a metric to a specific UI decision.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Collaboration with Engineers",
+          "outcome": "Can communicate design intent clearly and understand technical constraints.",
+          "skill": "Working with engineers",
+          "tasks": [
+            {
+              "title": "Watch “Design Handoff” video on Material Design Docs",
+              "description": "Note key handoff artifacts and terminology.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Create a design spec document for a feature",
+              "description": "Include layout, spacing, colors, and interaction notes.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Conduct a mock handoff meeting with a developer friend",
+              "description": "Explain the spec and answer technical questions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Document any feasibility concerns and alternatives",
+              "description": "Write a brief list of trade‑offs discussed.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with a local dev community on Discord",
+              "description": "Introduce yourself and ask for design‑dev collaboration tips.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Apply skills to create portfolio‑ready case studies and deliverables.",
+      "milestones": [
+        {
+          "title": "End‑to‑End Product Case Study",
+          "outcome": "Can present a full product redesign from research to final UI.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a real product with known pain points",
+              "description": "Choose an app or website you use regularly and note three issues.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Conduct 2 user interviews using your guide",
+              "description": "Record insights and synthesize into personas.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Define problem statement and success metrics",
+              "description": "Write a concise brief that will drive the case study narrative.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Design low‑fidelity wireflows for the solution",
+              "description": "Map the new user journey across key screens.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create high‑fidelity prototype in Figma",
+              "description": "Apply interaction patterns and visual design standards.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write a case‑study article (1500‑2000 words)",
+              "description": "Explain research, design decisions, metrics, and outcomes.",
+              "type": "practice",
+              "minutes": 120
+            }
+          ]
+        },
+        {
+          "title": "Feature Spec with Designs",
+          "outcome": "Can deliver a detailed spec document paired with polished UI assets.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a missing feature for the product from phase 3",
+              "description": "Identify a gap that adds measurable value.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Write a feature brief outlining goals and constraints",
+              "description": "Include user stories, acceptance criteria, and metrics.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Design UI screens for the feature in Figma",
+              "description": "Create components, states, and responsive layouts.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add interaction flows and prototype links",
+              "description": "Ensure the prototype demonstrates the full feature journey.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Prepare a handoff package for engineers",
+              "description": "Export assets, write specs, and include design rationale.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Get feedback from a senior designer friend",
+              "description": "Incorporate two improvement suggestions into the spec.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Design Sprint Write‑up",
+          "outcome": "Can document a rapid design sprint process and outcomes.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read Google Design Sprint Kit overview on Google Docs",
+              "description": "Summarize the five‑day structure in your own words.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Plan a 3‑day mini‑sprint for a small problem",
+              "description": "Define challenge, sketch solutions, and decide on a prototype.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Run day‑1: Understand & map (with a peer)",
+              "description": "Facilitate a mapping session and capture insights.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Run day‑2: Sketch & decide",
+              "description": "Create multiple solution sketches and vote on the best.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Run day‑3: Prototype and test",
+              "description": "Build a quick prototype and conduct 3 user tests.",
+              "type": "practice",
+              "minutes": 120
+            },
+            {
+              "title": "Write a sprint retrospective report",
+              "description": "Highlight learnings, metrics, and next steps.",
+              "type": "reflect",
+              "minutes": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Refine advanced practices, build professional habits, and prepare for job or client opportunities.",
+      "milestones": [
+        {
+          "title": "Advanced Product Thinking",
+          "outcome": "Can lead product strategy sessions and align stakeholders around vision.",
+          "skill": "Product thinking",
+          "tasks": [
+            {
+              "title": "Read “Strategic Product Design” chapter on Coursera free audit",
+              "description": "Take notes on vision, roadmap, and stakeholder mapping.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create a product vision board for a new idea",
+              "description": "Visualize target market, value proposition, and long‑term goals.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Facilitate a stakeholder alignment workshop (role‑play)",
+              "description": "Present the vision and capture feedback from peers.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Document a 6‑month roadmap with milestones",
+              "description": "Link each milestone to measurable outcomes.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Reflect on alignment challenges and solutions",
+              "description": "Write a brief analysis of any conflicts and resolutions.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Metrics Mastery",
+          "outcome": "Can design experiments, analyze results, and iterate designs based on data.",
+          "skill": "Metrics",
+          "tasks": [
+            {
+              "title": "Complete Kaggle “Intro to Data Visualization” notebook (free)",
+              "description": "Generate charts for sample product data.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Design an experiment plan for a UI change",
+              "description": "Specify hypothesis, sample size, and success metric.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Analyze mock results in Google Sheets",
+              "description": "Calculate lift, confidence interval, and draw conclusions.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Write a brief iteration proposal based on data",
+              "description": "Outline design adjustments and expected impact.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with a data‑focused designer on LinkedIn",
+              "description": "Ask about their workflow for metric‑driven design.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Job & Client Readiness",
+          "outcome": "Can present portfolio, negotiate offers, and work effectively in cross‑functional teams.",
+          "skill": "Working with engineers",
+          "tasks": [
+            {
+              "title": "Update LinkedIn profile with new case studies",
+              "description": "Add project descriptions, skills, and links to prototypes.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Record a 5‑minute portfolio walk‑through video",
+              "description": "Narrate your design process and outcomes clearly.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Mock interview with a peer using product design questions",
+              "description": "Answer questions on research, design decisions, and metrics.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Prepare a negotiation checklist for salary and scope",
+              "description": "List key points to discuss and desired outcomes.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on feedback from mock interview",
+              "description": "Identify two areas to improve before real interviews.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "product-designer.intermediate",
+  "roleId": "product-designer",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:20:32.919Z",
+  "model": "openai/gpt-oss-120b"
+}

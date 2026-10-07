@@ -1,0 +1,462 @@
+{
+  "title": "Security Analyst Learning Roadmap",
+  "summary": "A step‑by‑step plan to move from zero knowledge to a job‑ready security analyst. It covers fundamentals, core security skills, portfolio projects, and job preparation.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build the essential networking and Linux base needed for security work.",
+      "milestones": [
+        {
+          "title": "Networking Basics",
+          "outcome": "Explain how data moves across networks and identify common protocols.",
+          "skill": "Networking fundamentals",
+          "tasks": [
+            {
+              "title": "Read TCP/IP overview",
+              "description": "Study the TCP/IP model and key protocols on MDN’s Networking guide.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch networking video series",
+              "description": "Complete the freeCodeCamp ‘Networking Basics’ playlist (first 3 videos).",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Configure a home router",
+              "description": "Log into your router, note IP scheme, and enable DHCP logging.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Summarize protocol roles",
+              "description": "Write a one‑page summary of HTTP, DNS, and DHCP functions.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Linux Fundamentals",
+          "outcome": "Navigate the command line, manage files, and install packages on a Linux distro.",
+          "skill": "Linux",
+          "tasks": [
+            {
+              "title": "Install Ubuntu VM",
+              "description": "Download Ubuntu Desktop ISO and set up a virtual machine in VirtualBox.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Complete Linux Basics tutorial",
+              "description": "Follow the freeCodeCamp ‘Linux Command Line’ module, completing all exercises.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Create and edit files",
+              "description": "Use nano/vi to create a log file, write sample entries, and view with cat/less.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Set up sudo and user groups",
+              "description": "Add a new user, grant sudo rights, and verify with su command.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on command usage",
+              "description": "Write a short note on three commands you found most useful and why.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop practical security abilities in log analysis, SIEM, incident response, and threat intel.",
+      "milestones": [
+        {
+          "title": "Log Analysis Foundations",
+          "outcome": "Parse common log formats and extract useful security events.",
+          "skill": "Log analysis",
+          "tasks": [
+            {
+              "title": "Read syslog RFC",
+              "description": "Study RFC 5424 on MDN to understand syslog structure.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Parse sample logs with grep",
+              "description": "Use grep and awk on Linux to filter failed SSH attempts from a provided log file.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Create a log parsing script",
+              "description": "Write a Bash script that extracts IPs from auth.log and saves to a CSV.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Document findings",
+              "description": "Write a brief report describing what the script uncovered.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SIEM Tool Basics",
+          "outcome": "Ingest logs into a free SIEM and build simple queries.",
+          "skill": "SIEM tools",
+          "tasks": [
+            {
+              "title": "Deploy Elastic Stack Docker",
+              "description": "Pull Elasticsearch, Logstash, Kibana images and start containers.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Ingest sample logs",
+              "description": "Configure Filebeat to ship the auth.log used earlier into Elasticsearch.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create a Kibana dashboard",
+              "description": "Build a visual dashboard showing login failures over time.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Write a basic query",
+              "description": "Use Kibana Discover to query for 'authentication failure' events.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on SIEM limits",
+              "description": "Note two limitations you observed in the free version.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Incident Response Essentials",
+          "outcome": "Follow a structured process to triage and contain a simulated incident.",
+          "skill": "Incident response",
+          "tasks": [
+            {
+              "title": "Read NIST IR Playbook",
+              "description": "Study the NIST 800‑61 Rev.2 incident response lifecycle on NIST.gov.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create an IR checklist",
+              "description": "Draft a one‑page checklist covering identification, containment, eradication, recovery.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Simulate a breach",
+              "description": "Generate a fake malicious process on your VM and capture its artifacts.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Apply the checklist",
+              "description": "Run through each checklist step to respond to the simulated breach.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a post‑mortem",
+              "description": "Summarize actions taken, lessons learned, and next steps in a report.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Threat Intelligence Basics",
+          "outcome": "Gather, analyze, and apply open‑source threat data to detections.",
+          "skill": "Threat intelligence",
+          "tasks": [
+            {
+              "title": "Explore MITRE ATT&CK",
+              "description": "Navigate the MITRE ATT&CK matrix and note three techniques relevant to Windows.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Subscribe to a free feed",
+              "description": "Add the AbuseIPDB API to your Logstash pipeline to enrich IP addresses.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Correlate intel with logs",
+              "description": "Write a Kibana query that flags events matching ATT&CK technique IDs.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize intel sources",
+              "description": "Create a one‑page cheat sheet of top free intel feeds and their use cases.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that demonstrate the skills you’ve acquired.",
+      "milestones": [
+        {
+          "title": "Home Lab Logging Setup",
+          "outcome": "Deploy a fully functional logging pipeline and document its architecture.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design lab diagram",
+              "description": "Draw a network diagram showing VM, Logstash, Elasticsearch, Kibana, and data flow.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Implement the pipeline",
+              "description": "Follow the Elastic Stack guide to ingest syslog from your Linux VM.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write 5 detection rules",
+              "description": "Create Kibana alerts for brute‑force SSH, privilege escalation, and suspicious ports.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document the project",
+              "description": "Write a README with setup steps, screenshots, and rule explanations.",
+              "type": "reflect",
+              "minutes": 45
+            },
+            {
+              "title": "Publish on GitHub",
+              "description": "Create a public repo, add license, and include a short project overview.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "CTF Incident Report",
+          "outcome": "Produce a professional incident report based on a capture‑the‑flag challenge.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a relevant CTF",
+              "description": "Choose a recent free CTF (e.g., Hack The Box Academy) with a detection scenario.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Collect evidence",
+              "description": "Gather logs, screenshots, and command output during the challenge.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Write the report",
+              "description": "Structure the report with executive summary, timeline, analysis, and remediation steps.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Peer review",
+              "description": "Share the report in a security forum and incorporate feedback.",
+              "type": "connect",
+              "minutes": 45
+            },
+            {
+              "title": "Add to portfolio site",
+              "description": "Create a simple web page showcasing the report with key findings.",
+              "type": "build",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Detection Rule Set",
+          "outcome": "Develop a reusable set of SIEM detection rules for common attacks.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Identify top 10 attack techniques",
+              "description": "Use MITRE ATT&CK to pick ten high‑impact techniques for a SOC.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Write Sigma rules",
+              "description": "Author Sigma rule files for each technique using the official schema.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Test rules in lab",
+              "description": "Run the rules against your Elastic Stack logs and verify alerts fire.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Create documentation",
+              "description": "Write a markdown guide explaining each rule, data sources, and tuning tips.",
+              "type": "reflect",
+              "minutes": 40
+            },
+            {
+              "title": "Share on GitHub",
+              "description": "Publish the rule set repository and add a concise README.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, interview prep, and job‑search strategy.",
+      "milestones": [
+        {
+          "title": "Advanced Threat Hunting",
+          "outcome": "Conduct a hypothesis‑driven hunt using your SIEM and threat intel.",
+          "skill": "Threat intelligence",
+          "tasks": [
+            {
+              "title": "Read threat hunting guide",
+              "description": "Study the Elastic Threat Hunting guide (free) for methodology.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Define a hunt hypothesis",
+              "description": "Pick a technique (e.g., credential dumping) and outline expected log artifacts.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Execute hunt queries",
+              "description": "Write and run Kibana queries to search for the hypothesis across logs.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document findings",
+              "description": "Create a short report summarizing evidence and confidence level.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Discuss in community",
+              "description": "Post your hunt results on a security subreddit for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Interview & Resume Prep",
+          "outcome": "Present yourself confidently and land a security analyst role.",
+          "skill": "Incident response",
+          "tasks": [
+            {
+              "title": "Craft a security resume",
+              "description": "Use a free template to highlight projects, skills, and certifications.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Prepare STAR stories",
+              "description": "Write three STAR (Situation, Task, Action, Result) examples from your portfolio work.",
+              "type": "reflect",
+              "minutes": 40
+            },
+            {
+              "title": "Study common interview questions",
+              "description": "Review the OWASP and SANS interview question lists and note key answers.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Mock interview with peer",
+              "description": "Schedule a 30‑minute practice interview and receive feedback.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Review salary data",
+              "description": "Check Glassdoor and Payscale for security analyst salary ranges in your region.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Certifications & Continuous Learning",
+          "outcome": "Plan next credentials and a habit for staying current.",
+          "skill": "Networking fundamentals",
+          "tasks": [
+            {
+              "title": "Research entry‑level certs",
+              "description": "Compare CompTIA Security+, Cisco CCNA Security, and Splunk Fundamentals 1 on their official sites.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create study schedule",
+              "description": "Map out weekly study blocks for the chosen certification over the next 12 weeks.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Subscribe to a threat feed newsletter",
+              "description": "Sign up for the SANS NewsBites daily digest to receive current alerts.",
+              "type": "connect",
+              "minutes": 15
+            },
+            {
+              "title": "Set up weekly blog post",
+              "description": "Write a short post each week summarizing a new security concept you learned.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on progress quarterly",
+              "description": "Review your roadmap quarterly and adjust goals as needed.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "soc-analyst.beginner",
+  "roleId": "soc-analyst",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:27:20.691Z",
+  "model": "openai/gpt-oss-120b"
+}

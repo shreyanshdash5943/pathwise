@@ -1,0 +1,172 @@
+{
+  "title": "Product Designer Career Roadmap",
+  "summary": "A focused plan to solidify core design fundamentals, build a compelling portfolio, and prepare you for product design roles. Follow the phases to gain practical skills, showcase real work, and land your next opportunity.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish a strong base in product thinking and research fundamentals.",
+      "milestones": [
+        {
+          "title": "User Research Foundations",
+          "outcome": "Can plan and conduct basic user research and synthesize findings.",
+          "skill": "User research",
+          "tasks": [
+            {
+              "title": "Watch Nielsen Norman research video",
+              "description": "View the free NNGroup video on qualitative research methods.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a research plan template",
+              "description": "Design a one-page research plan template in Google Docs covering goals, methods, and participants.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Conduct 3 quick interviews",
+              "description": "Interview three friends about a daily task, record notes, and identify patterns.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Summarize insights",
+              "description": "Write a 200-word insight summary highlighting key user needs.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop interaction design, visual design, and collaboration abilities.",
+      "milestones": [
+        {
+          "title": "Metrics for Designers",
+          "outcome": "Can define, track, and interpret design metrics to inform decisions.",
+          "skill": "Metrics",
+          "tasks": [
+            {
+              "title": "Read metric basics article",
+              "description": "Read the free article on design metrics from Smashing Magazine.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Identify KPI set",
+              "description": "Choose three relevant KPIs for a hypothetical e‑commerce checkout flow.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Create a metric dashboard mockup",
+              "description": "Design a simple dashboard in Figma showing the chosen KPIs over time.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Explain metric impact",
+              "description": "Write a brief explanation of how each KPI would guide design iterations.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Apply your skills to create portfolio‑ready case studies.",
+      "milestones": [
+        {
+          "title": "Design Sprint Write‑up",
+          "outcome": "A documented design sprint process showcasing rapid problem solving.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan a 5‑day sprint schedule",
+              "description": "Outline activities for each day, aligning with the Google Sprint framework.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Facilitate sketching session",
+              "description": "Run a quick sketching workshop with peers and collect 20 ideas.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Prototype top idea",
+              "description": "Build a high‑fidelity prototype of the chosen concept in Figma.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "User test prototype",
+              "description": "Conduct 3 rapid usability tests and note key feedback.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Summarize sprint outcomes",
+              "description": "Write a 500‑word sprint recap highlighting decisions and next steps.",
+              "type": "reflect",
+              "minutes": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced collaboration skills and prepare for job or freelance opportunities.",
+      "milestones": [
+        {
+          "title": "Portfolio Presentation & Job Prep",
+          "outcome": "Ready to showcase work confidently and navigate the hiring process.",
+          "skill": "Metrics",
+          "tasks": [
+            {
+              "title": "Build a portfolio site",
+              "description": "Use a free website builder (e.g., Webflow) to create a clean portfolio layout.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Create case study pages",
+              "description": "Add the three case studies with images, process steps, and outcomes.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice interview storytelling",
+              "description": "Write and rehearse answers for three common product design interview questions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Network with designers",
+              "description": "Reach out to five designers on LinkedIn for informational chats.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Gather feedback on portfolio",
+              "description": "Ask a senior designer to review your site and note improvement areas.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "product-designer.basics",
+  "roleId": "product-designer",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:20:11.732Z",
+  "model": "openai/gpt-oss-120b"
+}

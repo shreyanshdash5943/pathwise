@@ -1,0 +1,389 @@
+{
+  "title": "Technical Product Manager Learning Roadmap",
+  "summary": "A concise, hands‑on plan to solidify core technical foundations, master TPM core skills, build a showcase portfolio, and prepare for hiring or client work. Each phase blends learning, practice, and networking to accelerate competence.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish the technical baseline needed to converse fluently with engineers.",
+      "milestones": [
+        {
+          "title": "API and System Basics",
+          "outcome": "Can explain REST principles, authentication flows, and system components to engineers.",
+          "skill": "APIs and system basics",
+          "tasks": [
+            {
+              "title": "Read API fundamentals on MDN",
+              "description": "Study the MDN guide on HTTP methods, status codes, and REST conventions.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Sketch a simple API diagram",
+              "description": "Draw a diagram of request‑response flow for a CRUD endpoint using pen and paper.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Watch a freeCodeCamp video on authentication",
+              "description": "Focus on token‑based auth (JWT) and how it fits into API design.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write a one‑page API glossary",
+              "description": "Define key terms (endpoint, payload, rate limit, etc.) for future reference.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SQL Fundamentals",
+          "outcome": "Can query a relational database to retrieve, filter, and aggregate data for product decisions.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Complete SQL basics on Khan Academy",
+              "description": "Finish the introductory lessons covering SELECT, WHERE, and ORDER BY.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Run sample queries in SQLiteStudio",
+              "description": "Load the public Chinook database and practice retrieving top‑selling tracks.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a summary of aggregation functions",
+              "description": "Explain GROUP BY, COUNT, SUM, and AVG with example outputs.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Discuss query results with a developer friend",
+              "description": "Explain what you learned and ask for feedback on query efficiency.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop the product‑focused competencies that TPMs use daily.",
+      "milestones": [
+        {
+          "title": "Technical Specs Writing",
+          "outcome": "Can produce clear, actionable technical specifications for engineering teams.",
+          "skill": "Technical specs",
+          "tasks": [
+            {
+              "title": "Read Atlassian guide on spec docs",
+              "description": "Focus on structure, acceptance criteria, and diagrams.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create a spec for a login API",
+              "description": "Include endpoint, request/response schemas, error handling, and mock data.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Peer‑review spec with a developer",
+              "description": "Gather concrete feedback on clarity and completeness.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Iterate spec based on feedback",
+              "description": "Update the document to address all reviewer comments.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Prioritisation Frameworks",
+          "outcome": "Can apply data‑driven methods to rank features and technical debt.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Study RICE scoring on ProductPlan blog",
+              "description": "Understand Reach, Impact, Confidence, and Effort components.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Score three hypothetical features using RICE",
+              "description": "Calculate numeric scores and justify rankings.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Write a short rationale for top‑ranked feature",
+              "description": "Explain why it wins and how it aligns with business goals.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Share the scoring sheet with a product community",
+              "description": "Post in a relevant forum and solicit critique.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Delivery Planning",
+          "outcome": "Can construct realistic release plans and track progress across squads.",
+          "skill": "Delivery planning",
+          "tasks": [
+            {
+              "title": "Read Scrum guide section on sprint planning",
+              "description": "Focus on backlog grooming, capacity planning, and definition of done.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Map a two‑month roadmap for a mock platform",
+              "description": "Identify milestones, dependencies, and release dates in a simple Gantt view.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Create a sprint backlog for the first month",
+              "description": "Select user stories, estimate effort, and assign owners.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on risks and mitigation strategies",
+              "description": "Write a brief risk register for the roadmap.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Apply learned skills to tangible portfolio pieces that showcase TPM competence.",
+      "milestones": [
+        {
+          "title": "API Product Specification",
+          "outcome": "Portfolio includes a polished spec that demonstrates end‑to‑end thinking.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a public API to improve",
+              "description": "Choose an existing open API (e.g., OpenWeather) and identify a missing feature.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Draft a full spec document",
+              "description": "Include purpose, endpoint design, data model, error handling, and mock responses.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add a visual flow diagram",
+              "description": "Use draw.io to illustrate request‑response sequences.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Publish the spec on GitHub Pages",
+              "description": "Create a repo, push the doc, and enable a simple site for reviewers.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Technical Roadmap for a Platform",
+          "outcome": "Shows ability to align technical initiatives with business objectives over time.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define platform vision and goals",
+              "description": "Write a one‑page vision statement with measurable outcomes.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Identify three major epics and dependencies",
+              "description": "Break down high‑level work into epics, noting cross‑team impacts.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Create a quarterly roadmap visual",
+              "description": "Use a free tool like Google Slides to plot epics across quarters.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Write a brief executive summary",
+              "description": "Explain why the roadmap supports the product strategy.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Share roadmap with a mentor for feedback",
+              "description": "Ask a senior TPM to critique clarity and feasibility.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Data‑Backed Feature Proposal",
+          "outcome": "Demonstrates analytical rigor and persuasive communication for feature decisions.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a feature idea and gather data",
+              "description": "Use public datasets on Kaggle or Google Trends to support need analysis.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Run SQL queries to extract key metrics",
+              "description": "Calculate usage frequency, conversion impact, and revenue potential.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Write a proposal deck (5 slides)",
+              "description": "Include problem, data insights, solution, impact, and implementation plan.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Record a 2‑minute pitch video",
+              "description": "Present the proposal as if to stakeholders and upload to YouTube (unlisted).",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Gather feedback from a product community",
+              "description": "Post the deck link and ask for critique on clarity and data use.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Fine‑tune advanced TPM capabilities and prepare for interviews or client engagements.",
+      "milestones": [
+        {
+          "title": "Developer Empathy & Collaboration",
+          "outcome": "Can effectively bridge business and engineering perspectives in meetings.",
+          "skill": "Developer empathy",
+          "tasks": [
+            {
+              "title": "Read \"The Manager's Path\" chapter on empathy",
+              "description": "Focus on techniques for active listening and technical translation.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Shadow a sprint demo meeting (recorded)",
+              "description": "Observe how engineers discuss trade‑offs and note language cues.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a debrief summarizing engineers' concerns",
+              "description": "Translate technical jargon into business impact statements.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Pair‑program with a junior engineer for 30 min",
+              "description": "Collaborate on a small bug fix to experience their workflow.",
+              "type": "connect",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "Advanced Delivery & Risk Management",
+          "outcome": "Can design robust release strategies and anticipate technical risks.",
+          "skill": "Delivery planning",
+          "tasks": [
+            {
+              "title": "Study post‑mortem analysis guide on Atlassian",
+              "description": "Learn structure for documenting failures and learnings.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a risk matrix for your platform roadmap",
+              "description": "Rate likelihood and impact for each identified risk.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Draft a mitigation plan for top three risks",
+              "description": "Specify actions, owners, and timelines to address each risk.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Present the risk plan to a peer group",
+              "description": "Explain rationale and gather critique on completeness.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Interview & Client Readiness",
+          "outcome": "Will confidently articulate experience and solve case studies in TPM interviews.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read Cracking the PM Interview chapter on case studies",
+              "description": "Focus on structuring answers for product and technical scenarios.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Practice a mock prioritisation case (30 min timer)",
+              "description": "Rank five feature ideas using RICE and write a concise justification.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Record yourself answering the case and review",
+              "description": "Identify gaps in clarity, structure, and technical depth.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Schedule a mock interview with a senior TPM",
+              "description": "Get live feedback on communication and problem‑solving approach.",
+              "type": "connect",
+              "minutes": 60
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "tpm.basics",
+  "roleId": "tpm",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:23:49.130Z",
+  "model": "openai/gpt-oss-120b"
+}

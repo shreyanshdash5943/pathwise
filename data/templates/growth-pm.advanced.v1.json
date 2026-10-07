@@ -1,0 +1,308 @@
+{
+  "title": "Growth Product Manager Advancement Roadmap",
+  "summary": "A step‑by‑step plan to deepen product growth expertise, build a senior‑level portfolio, and prepare for leadership interviews. Focuses on metrics, experimentation, SQL, copy, prioritisation, and analytics tools.",
+  "phases": [
+    {
+      "title": "Foundations Refresh",
+      "summary": "Reinforce core growth concepts and data foundations.",
+      "milestones": [
+        {
+          "title": "Growth Funnel Fundamentals",
+          "outcome": "Can map end‑to‑end user funnels and identify key drop‑off points.",
+          "skill": "Funnels and metrics",
+          "tasks": [
+            {
+              "title": "Read funnel basics article",
+              "description": "Study the funnel section in the Growth Handbook (free PDF) to understand stages and metrics.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Sketch a funnel for a known app",
+              "description": "Create a hand‑drawn funnel diagram for a popular app, labeling each stage and metric.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Watch funnel metrics video",
+              "description": "Watch the freeCodeCamp YouTube video on funnel analysis and take notes.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on funnel gaps",
+              "description": "Write a short paragraph on where the chosen app loses users and why.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "SQL Refresher for Product Data",
+          "outcome": "Can write queries to extract funnel and cohort data from a relational database.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Complete SQL basics module",
+              "description": "Finish the freeCodeCamp SQL certification lessons covering SELECT, WHERE, GROUP BY.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Query sample dataset",
+              "description": "Use the public Kaggle “eCommerce” dataset to pull daily sign‑up counts per source.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Build a cohort query",
+              "description": "Write a SQL query that returns 7‑day retention cohorts for new users.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Explain query results",
+              "description": "Summarize findings in a one‑page report highlighting retention trends.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Growth Skills",
+      "summary": "Develop advanced experimentation, copy, and prioritisation capabilities.",
+      "milestones": [
+        {
+          "title": "Design Robust Experiments",
+          "outcome": "Can create testable hypotheses, define metrics, and size experiments.",
+          "skill": "Experiment design",
+          "tasks": [
+            {
+              "title": "Read experiment design guide",
+              "description": "Study the Optimizely free guide on hypothesis framing and sample size calculation.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Draft three experiment proposals",
+              "description": "Write concise experiment briefs for a signup flow, onboarding email, and pricing page.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Calculate sample sizes",
+              "description": "Use an online calculator to determine required traffic for each proposal.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Get feedback from a peer",
+              "description": "Share the briefs with a colleague and incorporate their suggestions.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Copy and Onboarding Optimization",
+          "outcome": "Can craft persuasive copy and redesign onboarding steps to boost activation.",
+          "skill": "Copy and onboarding",
+          "tasks": [
+            {
+              "title": "Study onboarding case studies",
+              "description": "Read the Mixpanel blog post on onboarding best practices and note key tactics.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Rewrite signup copy",
+              "description": "Create three headline variations for a signup page, focusing on value and clarity.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Map current onboarding flow",
+              "description": "Diagram the existing onboarding steps of a SaaS product using Lucidchart (free tier).",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Propose flow improvements",
+              "description": "Suggest two changes to reduce friction, backed by copy principles.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Share revisions on a forum",
+              "description": "Post the revised copy on the GrowthHackers community for critique.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Projects",
+      "summary": "Create tangible work samples that demonstrate senior‑level growth impact.",
+      "milestones": [
+        {
+          "title": "Public Funnel Analysis Project",
+          "outcome": "Portfolio includes a detailed funnel analysis with actionable insights.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a public product",
+              "description": "Choose a well‑known app (e.g., Spotify) and gather publicly available usage data.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Analyze funnel stages",
+              "description": "Use Excel or Google Sheets to calculate conversion rates between stages.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write analysis report",
+              "description": "Draft a 2‑page report with charts, findings, and three recommendations.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Create visual deck",
+              "description": "Design a slide deck (Google Slides) summarizing the analysis for stakeholders.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Publish on portfolio site",
+              "description": "Upload the report and deck to your personal website or Notion portfolio.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Experiment Backlog & Sizing",
+          "outcome": "Shows ability to prioritize and size a growth experiment pipeline.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Gather past experiment ideas",
+              "description": "Collect at least 10 experiment concepts from previous work or brainstorming sessions.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Score each idea",
+              "description": "Apply the RICE framework to assign a priority score to each experiment.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Estimate effort and impact",
+              "description": "Create a spreadsheet estimating development time and expected lift for each experiment.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Visualize backlog roadmap",
+              "description": "Use a free roadmap tool (e.g., Trello) to map experiments over a quarter.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Get mentor review",
+              "description": "Share the backlog with a senior PM for feedback on feasibility and prioritisation.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready for Senior Roles",
+      "summary": "Polish leadership presence, advanced analytics, and interview readiness.",
+      "milestones": [
+        {
+          "title": "Advanced Analytics Tools Mastery",
+          "outcome": "Can extract insights using Amplitude or Mixpanel and present dashboards.",
+          "skill": "Analytics tools",
+          "tasks": [
+            {
+              "title": "Complete Amplitude free tutorial",
+              "description": "Follow Amplitude’s official tutorial to set up events and create a funnel report.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Build a retention dashboard",
+              "description": "Design a Mixpanel dashboard showing weekly active users and churn trends.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Interpret dashboard metrics",
+              "description": "Write a brief analysis of what the dashboard reveals about product health.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Share dashboard with peers",
+              "description": "Present the dashboard in a Slack channel and gather feedback.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Leadership & Interview Prep",
+          "outcome": "Ready to articulate growth strategy and lead cross‑functional teams in senior interviews.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read senior PM interview guide",
+              "description": "Study the “Product Management Interview” chapter on growth strategy from the free guide by Exponent.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Craft STAR stories",
+              "description": "Write three STAR‑formatted stories highlighting funnel improvements, experiments, and prioritisation decisions.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Mock interview with peer",
+              "description": "Conduct a 45‑minute mock interview focusing on growth questions and receive feedback.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on feedback",
+              "description": "Summarize key takeaways and action items from the mock interview.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Update portfolio with leadership lens",
+              "description": "Add a section to each project describing team impact and decision‑making role.",
+              "type": "build",
+              "minutes": 35
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "growth-pm.advanced",
+  "roleId": "growth-pm",
+  "level": "advanced",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:26:36.477Z",
+  "model": "openai/gpt-oss-120b"
+}

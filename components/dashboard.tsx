@@ -10,6 +10,9 @@ import type { NewsItem } from "@/lib/news";
 import { timeAgo, weekdayShort } from "@/lib/dates";
 import { TaskRow } from "./task-row";
 import { Toast, useToast } from "./toast";
+import { useProofEditor, type ProofLite } from "./proof-dialog";
+
+const canProve = (t: Task) => t.type === "build" || t.type === "connect";
 
 type Props = {
   greeting: string;
@@ -19,11 +22,12 @@ type Props = {
   outline: RoadmapOutline;
   dailyMinutes: number;
   news: NewsItem[];
+  proofs: Record<string, ProofLite>;
 };
 
 const SETTLE_MS = 650;
 
-export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, outline, dailyMinutes, news }: Props) {
+export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, outline, dailyMinutes, news, proofs: initialProofs }: Props) {
   const [tasks, setTasks] = useState(initialTasks);
   const [stats, setStats] = useState(initialStats);
   const [settling, setSettling] = useState<Set<string>>(new Set());
@@ -32,6 +36,7 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
   const [adding, setAdding] = useState(false);
   const timers = useRef(new Map<string, ReturnType<typeof setTimeout>>());
   const { toast, show } = useToast();
+  const proofEditor = useProofEditor(initialProofs, show);
 
   useEffect(() => {
     const map = timers.current;
@@ -49,7 +54,7 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
     if (busy.has(task.id)) return;
     const next = !task.completed_on;
     const previous = task.completed_on;
-    setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: next ? "pending" : null } : t)));
+    setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: next ? "pending" : null, skipped: false } : t)));
     setBusy((b) => new Set(b).add(task.id));
 
     if (next) {
@@ -80,8 +85,10 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Couldn't save that change.");
-      setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: data.task.completed_on } : t)));
+      setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: data.task.completed_on, skipped: false } : t)));
       setStats(data.stats);
+      // Finishing a build task is the moment people have something to show.
+      if (next && task.type === "build" && !proofEditor.proofs[task.id]) proofEditor.open(task.id, task.title, true);
     } catch (e) {
       setTasks((ts) => ts.map((t) => (t.id === task.id ? { ...t, completed_on: previous } : t)));
       setSettling((s) => {
@@ -191,7 +198,14 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ type: "spring", stiffness: 420, damping: 38 }}
                     >
-                      <TaskRow {...t} checked={!!t.completed_on} busy={busy.has(t.id)} onToggle={() => toggle(t)} />
+                      <TaskRow
+                        {...t}
+                        checked={!!t.completed_on}
+                        busy={busy.has(t.id)}
+                        onToggle={() => toggle(t)}
+                        proofUrl={proofEditor.proofs[t.id]?.url}
+                        onProof={canProve(t) ? () => proofEditor.open(t.id, t.title) : undefined}
+                      />
                     </motion.div>
                   ))
                 )}
@@ -228,7 +242,14 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
                       >
                         {done.map((t) => (
                           <motion.div key={t.id} layoutId={`task-${t.id}`} transition={{ type: "spring", stiffness: 420, damping: 38 }}>
-                            <TaskRow {...t} checked busy={busy.has(t.id)} onToggle={() => toggle(t)} />
+                            <TaskRow
+                              {...t}
+                              checked
+                              busy={busy.has(t.id)}
+                              onToggle={() => toggle(t)}
+                              proofUrl={proofEditor.proofs[t.id]?.url}
+                              onProof={canProve(t) ? () => proofEditor.open(t.id, t.title) : undefined}
+                            />
                           </motion.div>
                         ))}
                       </motion.div>
@@ -305,6 +326,7 @@ export function Dashboard({ greeting, dateLabel, initialTasks, initialStats, out
         </section>
       )}
 
+      {proofEditor.dialog}
       <Toast message={toast} />
     </>
   );

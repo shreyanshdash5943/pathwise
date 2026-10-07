@@ -1,0 +1,184 @@
+{
+  "title": "Frontend Engineer Mastery Roadmap",
+  "summary": "Deepen core front‑end expertise, build professional‑grade projects, and prepare for hiring. Follow the four phases to move from solid fundamentals to a polished portfolio and job readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Solidify the building blocks of web markup, styling, and scripting.",
+      "milestones": [
+        {
+          "title": "JavaScript Essentials",
+          "outcome": "Can write modern ES6+ code for DOM manipulation and data handling.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Read ES6 features guide",
+              "description": "Study the ES6 overview on MDN covering let/const, arrow functions, and modules.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Manipulate DOM elements",
+              "description": "Write a script that adds, removes, and updates list items on a page.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Fetch data from API",
+              "description": "Use fetch to retrieve JSON from a public API and display results.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Debug with console",
+              "description": "Practice using console.log and breakpoints to troubleshoot the script.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Summarize learning",
+              "description": "Record a short summary of key JavaScript concepts learned.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain expertise in typed JavaScript, React, accessibility, and performance.",
+      "milestones": [
+        {
+          "title": "Performance Optimization",
+          "outcome": "Can measure, analyze, and improve page load and runtime performance.",
+          "skill": "Web performance",
+          "tasks": [
+            {
+              "title": "Read Web Vitals guide",
+              "description": "Study the Web Vitals documentation on web.dev to learn key metrics.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Profile page with Lighthouse",
+              "description": "Run Lighthouse audit on a sample page and record scores.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Implement lazy loading",
+              "description": "Add lazy loading to images and code-split a React route.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Optimize CSS delivery",
+              "description": "Inline critical CSS and defer non‑essential styles.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Reflect on impact",
+              "description": "Write a short note on how the changes affected performance scores.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create real‑world portfolio pieces that showcase depth and best practices.",
+      "milestones": [
+        {
+          "title": "Component Library",
+          "outcome": "Can design reusable, documented UI components with testing.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define component list",
+              "description": "List 5 core UI components (button, modal, card, tooltip, input).",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Build Button component",
+              "description": "Create a customizable Button in React+TS with variants and docs.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Write Storybook stories",
+              "description": "Set up Storybook and add stories for each component.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add unit tests with Jest",
+              "description": "Write tests covering props, events, and accessibility for Button.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Publish to npm (private)",
+              "description": "Configure package.json and publish the library to a private npm registry.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Refine advanced skills, adopt professional habits, and launch the job search.",
+      "milestones": [
+        {
+          "title": "Accessibility & Performance Audits",
+          "outcome": "Can evaluate any site for WCAG compliance and performance bottlenecks.",
+          "skill": "Accessibility",
+          "tasks": [
+            {
+              "title": "Run axe audit on portfolio",
+              "description": "Execute axe on each portfolio project and fix remaining issues.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Benchmark with WebPageTest",
+              "description": "Measure load times and identify slow resources for each site.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Write audit report",
+              "description": "Create a short PDF summarizing accessibility and performance findings.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Share report with mentor",
+              "description": "Send the audit report to a senior engineer for feedback.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on improvements",
+              "description": "Note how the fixes changed user experience and metrics.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "frontend.intermediate",
+  "roleId": "frontend",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:08:07.512Z",
+  "model": "openai/gpt-oss-120b"
+}

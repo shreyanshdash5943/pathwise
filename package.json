@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "templates:generate": "node --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-templates.mts",
+    "templates:check": "node --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-templates.mts --check"
   },
   "dependencies": {
     "@clerk/nextjs": "6.39.7",
@@ -20,6 +22,7 @@
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "server-only": "^0.0.1",
+    "unpdf": "1.8.1",
     "zod": "3.25.76"
   },
   "devDependencies": {

@@ -1,0 +1,443 @@
+{
+  "title": "Site Reliability Engineer Learning Roadmap",
+  "summary": "A step‑by‑step guide to become a competent SRE from scratch, covering Linux fundamentals to advanced reliability practices. Follow the phases to build skills, create portfolio projects, and prepare for job readiness.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build core system knowledge and basic programming ability.",
+      "milestones": [
+        {
+          "title": "Linux and Networking Basics",
+          "outcome": "You can navigate the Linux command line, manage services, and troubleshoot basic network issues.",
+          "skill": "Linux and networking",
+          "tasks": [
+            {
+              "title": "Read Linux command line tutorial",
+              "description": "Study the introductory sections of the Linux Documentation Project to learn file navigation, permissions, and process management.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Install a virtual Linux VM",
+              "description": "Set up a Ubuntu virtual machine using VirtualBox and explore the terminal.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Configure static IP and test ping",
+              "description": "Edit network settings to assign a static IP and verify connectivity with ping and traceroute.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on common networking commands",
+              "description": "Write a short note on when to use ifconfig, netstat, and ss.",
+              "type": "reflect",
+              "minutes": 15
+            },
+            {
+              "title": "Join a Linux beginners forum",
+              "description": "Create an account on LinuxQuestions.org and introduce yourself to the community.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Introductory Programming",
+          "outcome": "You can write simple scripts to automate system tasks.",
+          "skill": "Programming",
+          "tasks": [
+            {
+              "title": "Complete Python basics on freeCodeCamp",
+              "description": "Finish the first three sections covering variables, control flow, and functions.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Write a script to monitor disk usage",
+              "description": "Create a Python script that logs disk space every minute to a file.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Run the script with cron",
+              "description": "Schedule the script using crontab to execute automatically.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Debug a failing script",
+              "description": "Introduce a deliberate error, then use traceback to locate and fix it.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Share your script on GitHub",
+              "description": "Create a repository, commit the code, and write a README explaining its purpose.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop observability, incident handling, and reliability concepts.",
+      "milestones": [
+        {
+          "title": "Observability Foundations",
+          "outcome": "You can instrument services with metrics, logs, and traces using open‑source tools.",
+          "skill": "Observability",
+          "tasks": [
+            {
+              "title": "Read Prometheus official docs (Getting Started)",
+              "description": "Understand the architecture, data model, and basic configuration.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Install Prometheus on Docker",
+              "description": "Run a Prometheus container, add a node exporter, and verify metrics collection.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create a Grafana dashboard",
+              "description": "Connect Grafana to Prometheus and visualize CPU and memory usage.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Log a sample application to Loki",
+              "description": "Deploy Loki, configure the app to send logs, and query them in Grafana.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize key observability pillars",
+              "description": "Write a one‑page summary of metrics, logs, and traces and their trade‑offs.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Incident Management & SLOs",
+          "outcome": "You can define service level objectives and run a structured incident response.",
+          "skill": "Incident management",
+          "tasks": [
+            {
+              "title": "Read Google SRE book chapter on SLOs (free excerpt)",
+              "description": "Identify how to choose error budgets and set targets.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Define an SLO for a demo web service",
+              "description": "Choose a latency target, calculate error budget, and document it in a markdown file.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Simulate an outage and run a runbook",
+              "description": "Stop the demo service, follow a simple runbook, and restore it while noting steps.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Write a post‑mortem draft",
+              "description": "Structure a post‑mortem with timeline, root cause, and remediation actions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Discuss the post‑mortem with a peer",
+              "description": "Share the draft in a community Slack channel and gather feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Distributed Systems Basics",
+          "outcome": "You understand key concepts like replication, consensus, and fault tolerance.",
+          "skill": "Distributed systems",
+          "tasks": [
+            {
+              "title": "Watch MIT 6.824 lecture 1 (free on YouTube)",
+              "description": "Get an overview of distributed system challenges and terminology.",
+              "type": "learn",
+              "minutes": 55
+            },
+            {
+              "title": "Deploy a single‑node Redis cluster",
+              "description": "Install Redis, enable persistence, and test basic read/write operations.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Experiment with Redis replication",
+              "description": "Add a replica, trigger a failover, and observe data consistency.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Explain CAP theorem in your own words",
+              "description": "Write a brief explanation and give a real‑world example.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Join a distributed‑systems meetup group online",
+              "description": "Introduce yourself and ask a question about replication strategies.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that showcase SRE capabilities.",
+      "milestones": [
+        {
+          "title": "Monitoring Stack with Alerts",
+          "outcome": "You can deploy a full monitoring solution and configure alerting rules.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design architecture diagram",
+              "description": "Sketch components: Prometheus, Grafana, Alertmanager, exporters.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Deploy stack using Docker Compose",
+              "description": "Write a compose file that brings up all services on a single host.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Create alert for high CPU usage",
+              "description": "Add a rule in Alertmanager to fire when CPU > 80% for 5 minutes.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Document setup in a README",
+              "description": "Explain each component, how to start it, and how alerts are routed.",
+              "type": "practice",
+              "minutes": 25
+            },
+            {
+              "title": "Publish project on GitHub",
+              "description": "Push the repository, enable GitHub Pages for the diagram, and add a demo video link.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Load Test and Capacity Report",
+          "outcome": "You can perform load testing, analyze results, and recommend capacity changes.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read k6 quickstart guide (official docs)",
+              "description": "Learn how to write a basic load script and run it locally.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write a k6 script for a sample API",
+              "description": "Simulate 100 concurrent users for 5 minutes and record latency.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Run the script and capture metrics",
+              "description": "Execute the load test, export results to CSV, and view graphs in Grafana.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Draft a capacity report",
+              "description": "Summarize findings, identify bottlenecks, and suggest scaling options.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Share report with a mentor for feedback",
+              "description": "Post the document in a professional forum and request critique.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Simulated Outage Post‑mortem",
+          "outcome": "You can produce a professional post‑mortem that demonstrates root‑cause analysis.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Create a scripted outage scenario",
+              "description": "Write a bash script that stops a service and logs timestamps.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Execute the scenario and record timeline",
+              "description": "Run the script, capture logs, and note detection and recovery times.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Write a detailed post‑mortem",
+              "description": "Include timeline, impact, root cause, and remediation plan.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Format post‑mortem using SRE template",
+              "description": "Apply the Google SRE post‑mortem template for consistency.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Publish post‑mortem on personal blog",
+              "description": "Create a blog post, embed logs, and share the link on LinkedIn.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance expertise, polish the portfolio, and prepare for interviews or client work.",
+      "milestones": [
+        {
+          "title": "Advanced SLO & Reliability Design",
+          "outcome": "You can design multi‑metric SLOs and evaluate reliability trade‑offs.",
+          "skill": "SLOs",
+          "tasks": [
+            {
+              "title": "Read advanced SLO chapter from Google SRE book",
+              "description": "Focus on multi‑dimensional error budgets and budgeting across services.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create composite SLO for two services",
+              "description": "Combine latency and error rate metrics into a single error budget.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Simulate budget consumption and alert",
+              "description": "Generate synthetic data to trigger the composite SLO breach and observe alerts.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Write a short case study",
+              "description": "Explain why the composite SLO improves reliability for the scenario.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Discuss case study with a senior SRE on Reddit",
+              "description": "Post the study in r/devops and ask for feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Production‑grade Incident Management",
+          "outcome": "You can lead an incident using runbooks, communication channels, and post‑mortem processes.",
+          "skill": "Incident management",
+          "tasks": [
+            {
+              "title": "Study PagerDuty incident workflow (free docs)",
+              "description": "Learn how incidents are created, escalated, and resolved.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create a mock runbook for database outage",
+              "description": "Write step‑by‑step actions, communication templates, and rollback plan.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Role‑play an incident with a peer",
+              "description": "Simulate detection, escalation, and resolution while timing each step.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Evaluate the runbook effectiveness",
+              "description": "Write notes on gaps, missing info, and improvements.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Add the runbook to your portfolio repo",
+              "description": "Include it in the GitHub repository with clear documentation.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Interview & Job Readiness",
+          "outcome": "You can confidently discuss SRE concepts and showcase your projects in interviews.",
+          "skill": "Programming",
+          "tasks": [
+            {
+              "title": "Review common SRE interview questions (Glassdoor)",
+              "description": "Read and note answers for topics like error budgets, load testing, and alert fatigue.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Prepare an elevator pitch for your portfolio",
+              "description": "Craft a 60‑second summary highlighting the monitoring stack, load test, and post‑mortem projects.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Mock interview with a peer",
+              "description": "Conduct a 30‑minute technical interview focusing on Linux, networking, and reliability scenarios.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Update résumé with SRE keywords",
+              "description": "Add sections for Linux, Observability, Incident Management, and Distributed Systems.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Apply to three entry‑level SRE roles",
+              "description": "Submit tailored applications and track responses in a spreadsheet.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "sre.beginner",
+  "roleId": "sre",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:05:52.657Z",
+  "model": "openai/gpt-oss-120b"
+}

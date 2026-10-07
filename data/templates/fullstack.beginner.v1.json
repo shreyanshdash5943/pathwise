@@ -1,0 +1,486 @@
+{
+  "title": "Full-Stack Engineer Roadmap",
+  "summary": "A step‑by‑step plan to go from zero to building complete web features and landing a job. You’ll master core languages, frameworks, databases, and deployment, then showcase real projects.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build the basic programming and web concepts needed for any full‑stack role.",
+      "milestones": [
+        {
+          "title": "JavaScript & TypeScript Basics",
+          "outcome": "Write simple scripts and type‑annotated functions in the browser console.",
+          "skill": "JavaScript and TypeScript",
+          "tasks": [
+            {
+              "title": "Read JavaScript fundamentals",
+              "description": "Study the “JavaScript Basics” section on MDN, focusing on variables, control flow, and functions.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Complete freeCodeCamp ES6 challenges",
+              "description": "Solve the first 5 ES6 challenges to practice let/const, arrow functions, and modules.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a typed function in TypeScript Playground",
+              "description": "Open the TypeScript Playground and implement a function with explicit types, then run it.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on type errors",
+              "description": "Note three situations where TypeScript prevented a bug you’d have made in plain JavaScript.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Web Fundamentals",
+          "outcome": "Create static pages with HTML, CSS, and basic client‑side interactivity.",
+          "skill": "JavaScript and TypeScript",
+          "tasks": [
+            {
+              "title": "Study HTML5 structure on MDN",
+              "description": "Read the MDN guide on semantic HTML and build a simple page skeleton.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Style the page with CSS Grid",
+              "description": "Follow a freeCodeCamp tutorial to layout the page using CSS Grid.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Add interactive DOM script",
+              "description": "Write a small JavaScript file that toggles a class on button click.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with a mentor on Discord",
+              "description": "Join a #beginners channel, introduce yourself, and ask a question about layout.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Version Control Basics",
+          "outcome": "Track code changes and collaborate using Git and GitHub.",
+          "skill": "Deployment",
+          "tasks": [
+            {
+              "title": "Read Git basics on Git SCM",
+              "description": "Learn about init, add, commit, and push commands from the official docs.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Initialize a repo for a demo project",
+              "description": "Create a local Git repo, make two commits, and push to a new GitHub repository.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Practice branching workflow",
+              "description": "Create a feature branch, modify a file, merge back, and resolve a simple conflict.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on commit messages",
+              "description": "Write three guidelines for clear commit messages based on your experience.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Deepen expertise in front‑end, back‑end, data, and deployment technologies.",
+      "milestones": [
+        {
+          "title": "React (or Next.js) Fundamentals",
+          "outcome": "Build a single‑page app with components, state, and routing.",
+          "skill": "React or Next.js",
+          "tasks": [
+            {
+              "title": "Watch Next.js tutorial on YouTube",
+              "description": "Follow a free introductory video that creates a pages directory and dynamic routes.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Create a React component library",
+              "description": "Build three reusable components (Button, Card, Modal) using functional components and hooks.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Implement client‑side routing",
+              "description": "Add React Router (or Next.js pages) to navigate between Home, About, and Contact views.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Connect with a React community",
+              "description": "Join the r/reactjs subreddit, read a recent discussion, and comment with a question.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on component design",
+              "description": "Write a short note on when to use props vs. context in your components.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Node (or Django) Backend Basics",
+          "outcome": "Create RESTful APIs that handle CRUD operations and authentication.",
+          "skill": "Node or Django",
+          "tasks": [
+            {
+              "title": "Read Express.js guide on MDN",
+              "description": "Study the basics of setting up an Express server, routes, and middleware.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Build a simple CRUD API",
+              "description": "Implement endpoints for creating, reading, updating, and deleting a “tasks” resource, storing data in memory.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add JWT authentication",
+              "description": "Integrate jsonwebtoken to protect a route and issue tokens on login.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Watch Django tutorial on DjangoProject.com",
+              "description": "Follow the official “Getting started” video to create a basic Django app.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on framework differences",
+              "description": "List three pros and cons you observed between Express and Django.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SQL & Data Persistence",
+          "outcome": "Design relational schemas and query data using SQL.",
+          "skill": "SQL",
+          "tasks": [
+            {
+              "title": "Study SQL basics on Khan Academy",
+              "description": "Complete the introductory module covering SELECT, WHERE, and JOIN.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Design a relational schema for a blog",
+              "description": "Sketch tables for Users, Posts, Comments with primary/foreign keys.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Create tables in PostgreSQL locally",
+              "description": "Use psql to create the schema and insert sample rows.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Write complex queries",
+              "description": "Craft a query that returns the latest 5 comments per post with author names.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Reflect on normalization",
+              "description": "Explain why you chose third normal form for your schema.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Apply what you’ve learned to real‑world portfolio projects.",
+      "milestones": [
+        {
+          "title": "SaaS Billing App (Project)",
+          "outcome": "Demonstrate end‑to‑end feature delivery from database to UI with payment flow.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan feature list in a markdown file",
+              "description": "Outline user registration, subscription tiers, and admin dashboard.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Set up repo and CI pipeline",
+              "description": "Initialize GitHub repo, add GitHub Actions for linting and tests.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Implement backend API with Node",
+              "description": "Create routes for users, plans, and Stripe webhook handling.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Build React front‑end for subscription flow",
+              "description": "Develop pages for plan selection, checkout, and account management.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Deploy to Render (free tier)",
+              "description": "Configure a Render service to host both front‑end and back‑end, enable HTTPS.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on full‑stack integration",
+              "description": "Write a brief post‑mortem on challenges linking payment API with DB.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Real‑Time Chat App (Project)",
+          "outcome": "Show ability to handle websockets, persistence, and responsive UI.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design data model for messages",
+              "description": "Create tables for Users, Rooms, and Messages with timestamps.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Set up a Django Channels server",
+              "description": "Configure routing and a consumer that broadcasts messages to a room.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Create React chat UI",
+              "description": "Build components for message list, input box, and online users panel.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Integrate WebSocket client",
+              "description": "Connect the React app to the Django Channels endpoint and handle events.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Deploy to Railway (free)",
+              "description": "Push both back‑end and front‑end to Railway, set environment variables for secret keys.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on latency handling",
+              "description": "Document three techniques you used to keep UI responsive under load.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Product Clone (Project)",
+          "outcome": "Reproduce a popular SaaS UI and core functionality to demonstrate design fidelity.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a product and map core features",
+              "description": "Choose a well‑known tool (e.g., Trello) and list its main boards, cards, and drag‑drop behavior.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Create component library matching UI",
+              "description": "Implement reusable UI components that mimic the chosen product’s look and feel.",
+              "type": "build",
+              "minutes": 85
+            },
+            {
+              "title": "Build REST API for board data",
+              "description": "Use Node or Django to expose endpoints for creating, reading, updating, and deleting boards and cards.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Add drag‑and‑drop with React DnD",
+              "description": "Integrate a library to allow moving cards between columns and persist changes via API.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write unit tests for critical paths",
+              "description": "Add Jest (or pytest) tests covering board creation and card movement.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on UI/UX decisions",
+              "description": "Summarize what you kept, altered, or omitted compared to the original product.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, system design basics, and prepare for job or client interviews.",
+      "milestones": [
+        {
+          "title": "System Design Basics",
+          "outcome": "Explain common architectures and trade‑offs for scalable web applications.",
+          "skill": "System design basics",
+          "tasks": [
+            {
+              "title": "Read System Design Primer on GitHub",
+              "description": "Study the overview of load balancers, caching, databases, and microservices.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Sketch a design for a URL shortener",
+              "description": "Create a diagram showing components, data flow, and scaling points.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Discuss design with a peer",
+              "description": "Share your diagram in a dev community forum and request feedback.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Write a short design doc",
+              "description": "Summarize your choices, bottlenecks, and mitigation strategies in 300 words.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Reflect on trade‑offs",
+              "description": "Identify three potential failure points and propose safeguards.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Advanced TypeScript & Testing",
+          "outcome": "Write robust, typed code and ensure quality with automated tests.",
+          "skill": "JavaScript and TypeScript",
+          "tasks": [
+            {
+              "title": "Study advanced TypeScript types on TypeScript Docs",
+              "description": "Learn about generics, conditional types, and utility types.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Refactor a component with generics",
+              "description": "Take one of your earlier React components and add generic props for flexibility.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Add unit tests with Jest",
+              "description": "Write test cases for the component’s rendering and interaction logic.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Set up CI linting and testing",
+              "description": "Configure GitHub Actions to run ESLint and Jest on each push.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on test coverage",
+              "description": "Record the percentage of code covered and note gaps to improve.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Deployment & DevOps Essentials",
+          "outcome": "Deploy applications reliably and monitor them in production.",
+          "skill": "Deployment",
+          "tasks": [
+            {
+              "title": "Read Docker basics on Docker Docs",
+              "description": "Understand images, containers, and Dockerfiles through the official tutorial.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Containerize a Node app",
+              "description": "Write a Dockerfile, build an image, and run the container locally.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Deploy container to Fly.io (free tier)",
+              "description": "Create a Fly.io app, push the image, and verify the live site.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Set up basic monitoring with UptimeRobot",
+              "description": "Add a free monitor for your deployed URL and configure alerts.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with a senior engineer",
+              "description": "Request a short coffee chat to discuss deployment best practices.",
+              "type": "connect",
+              "minutes": 25
+            },
+            {
+              "title": "Reflect on deployment workflow",
+              "description": "Write three improvements you’d make to automate future releases.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "fullstack.beginner",
+  "roleId": "fullstack",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:09:22.388Z",
+  "model": "openai/gpt-oss-120b"
+}

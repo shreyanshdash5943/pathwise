@@ -1,0 +1,443 @@
+{
+  "title": "Associate Product Manager Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step plan to sharpen product discovery, specification, prioritisation, analytics and stakeholder skills, then showcase them in a portfolio and land a role. Each phase builds concrete abilities and deliverables you can add to your résumé.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid grounding in product thinking and core communication tools.",
+      "milestones": [
+        {
+          "title": "Product Management Basics",
+          "outcome": "Can explain the product lifecycle and key responsibilities of an APM.",
+          "skill": "Customer discovery",
+          "tasks": [
+            {
+              "title": "Read product management intro on Coursera",
+              "description": "Complete the first two weeks of the free “Product Management Foundations” course to learn the product lifecycle and role expectations.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Watch “How to Conduct Customer Interviews” on YouTube",
+              "description": "Take notes on interview techniques and question framing from a reputable product leader video.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a 5‑minute interview script",
+              "description": "Draft a concise script for a hypothetical user interview, focusing on problem discovery.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice interview with a peer",
+              "description": "Run the script with a friend, record the session, and note areas for improvement.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on interview insights",
+              "description": "Write a short paragraph on what you learned about uncovering user needs.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Writing Clear Specs",
+          "outcome": "Can produce a concise product requirement document (PRD) outline.",
+          "skill": "Writing specs",
+          "tasks": [
+            {
+              "title": "Read PRD guide on AIPMM site",
+              "description": "Study the free PRD template and guidelines to understand required sections.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Analyse a public PRD example",
+              "description": "Download a sample PRD from a tech blog and identify its structure.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Draft a PRD outline for a simple feature",
+              "description": "Write headings and bullet points for a feature like “bookmark articles”.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Get feedback from a product forum",
+              "description": "Post the outline on a product management subreddit and note suggestions.",
+              "type": "connect",
+              "minutes": 45
+            },
+            {
+              "title": "Revise PRD outline",
+              "description": "Incorporate feedback and produce a cleaned‑up version ready for expansion.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop decision‑making tools for prioritisation, roadmapping and metrics.",
+      "milestones": [
+        {
+          "title": "Prioritisation Frameworks",
+          "outcome": "Can apply at least two frameworks to rank feature ideas.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read “RICE Scoring” article on Intercom blog",
+              "description": "Understand the components of Reach, Impact, Confidence, Effort and how to calculate scores.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Study “MoSCoW” method on MindTools",
+              "description": "Learn how to categorize features into Must, Should, Could, Won’t.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Score three hypothetical features with RICE",
+              "description": "Create a spreadsheet, assign values, and compute RICE scores for each feature.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Prioritise same features with MoSCoW",
+              "description": "Label each feature using MoSCoW categories and compare outcomes with RICE.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write a short justification memo",
+              "description": "Explain why you chose the final priority order, referencing both frameworks.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Roadmapping Essentials",
+          "outcome": "Can design a visual product roadmap for a quarter.",
+          "skill": "Roadmapping",
+          "tasks": [
+            {
+              "title": "Read product roadmap guide on Aha! blog",
+              "description": "Learn best practices for timeline, themes, and granularity.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Explore free roadmap template on Google Slides",
+              "description": "Open the template and understand each placeholder.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Create a 3‑month roadmap for a news app",
+              "description": "Populate the template with epics, features, and milestones.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Share roadmap with a mentor on LinkedIn",
+              "description": "Request feedback on clarity and feasibility, note suggestions.",
+              "type": "connect",
+              "minutes": 45
+            },
+            {
+              "title": "Iterate roadmap based on feedback",
+              "description": "Update the visual and add brief success metrics for each item.",
+              "type": "practice",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Metrics and Analytics Foundations",
+          "outcome": "Can define success metrics and set up a basic analytics dashboard.",
+          "skill": "Metrics and analytics",
+          "tasks": [
+            {
+              "title": "Read “North Star Metric” article on Amplitude blog",
+              "description": "Understand how to choose a guiding metric for product health.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Watch Google Analytics free course on Skillshop",
+              "description": "Complete the introductory module on event tracking.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Define three KPI for a feature launch",
+              "description": "Write clear, measurable objectives (e.g., activation rate, retention week‑1).",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Build a simple dashboard in Google Data Studio",
+              "description": "Connect a sample CSV and visualise the KPIs you defined.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on metric relevance",
+              "description": "Write a brief note on why each KPI matters for product decisions.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio pieces that demonstrate your product thinking end‑to‑end.",
+      "milestones": [
+        {
+          "title": "Product Teardown",
+          "outcome": "Can present a critical analysis of an existing product’s strengths and gaps.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a popular app to dissect",
+              "description": "Choose a widely used mobile app and install the latest version.",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Document user flows",
+              "description": "Map the primary onboarding and core usage flows with screenshots.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Identify pain points and opportunities",
+              "description": "Write a list of three usability issues and three improvement ideas.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Create a 10‑slide teardown deck",
+              "description": "Combine visuals and notes into a concise presentation.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Publish teardown on Medium",
+              "description": "Write a short article linking to the deck and share on social media.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Feature PRD",
+          "outcome": "Can deliver a complete product requirement document ready for engineering.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a feature to design",
+              "description": "Pick a realistic feature such as “offline reading mode” for a news app.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Conduct quick user survey on Twitter poll",
+              "description": "Gather 20+ responses about interest in the feature.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write full PRD using the template",
+              "description": "Fill all sections: problem, goals, user stories, UX mockups, success metrics.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Create low‑fidelity wireframes in Figma",
+              "description": "Design basic screens to illustrate the feature flow.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Share PRD with a product community for feedback",
+              "description": "Post the document on a product forum and note constructive comments.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Metrics Plan for Launch",
+          "outcome": "Can outline a data‑driven launch plan with tracking and analysis steps.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read launch metrics guide on Mixpanel blog",
+              "description": "Learn which metrics matter pre‑launch, during, and post‑launch.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Define launch hypothesis and success criteria",
+              "description": "Write a concise hypothesis and three measurable outcomes.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Design event tracking schema in a spreadsheet",
+              "description": "List events, parameters, and expected values for the new feature.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Mock‑up a launch dashboard in Google Data Studio",
+              "description": "Create charts for activation, retention, and revenue impact.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on data‑driven decision making",
+              "description": "Summarise how the metrics will inform future product iterations.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced habits, network, and prepare for interviews or freelance gigs.",
+      "milestones": [
+        {
+          "title": "Advanced Stakeholder Communication",
+          "outcome": "Can run effective cross‑functional meetings and align stakeholders.",
+          "skill": "Stakeholder communication",
+          "tasks": [
+            {
+              "title": "Read “Effective Product Meetings” on ProductTalk",
+              "description": "Identify structures for agenda, decision logs, and follow‑ups.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Create a meeting agenda template",
+              "description": "Design a reusable agenda with time blocks, objectives, and owners.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Facilitate a mock stakeholder meeting",
+              "description": "Invite two peers, run a 30‑minute session using the agenda, and record minutes.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Gather feedback on facilitation style",
+              "description": "Ask participants to rate clarity and alignment on a short survey.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Refine agenda based on feedback",
+              "description": "Update the template to address noted gaps.",
+              "type": "practice",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Interview & Case Prep",
+          "outcome": "Can confidently answer product interview questions and solve case studies.",
+          "skill": "Prioritisation",
+          "tasks": [
+            {
+              "title": "Read “Product Interview Questions” on Glassdoor Blog",
+              "description": "Familiarise yourself with common APM questions and expected answers.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Practice answering a prioritisation case",
+              "description": "Write a structured response to a sample case using RICE, within 15 minutes.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Do a mock interview with a mentor",
+              "description": "Schedule a 45‑minute video call and receive real‑time feedback.",
+              "type": "connect",
+              "minutes": 60
+            },
+            {
+              "title": "Record and review your answers",
+              "description": "Watch the interview recording, note strengths and improvement areas.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Update a one‑page interview cheat sheet",
+              "description": "Summarise frameworks, metrics, and storytelling tips for quick reference.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Portfolio & Personal Brand",
+          "outcome": "Can present a polished portfolio and LinkedIn profile that attract recruiters.",
+          "skill": "Writing specs",
+          "tasks": [
+            {
+              "title": "Design a portfolio website on Carrd",
+              "description": "Create a one‑page site showcasing the three projects with brief descriptions and links.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Write project case studies",
+              "description": "Draft 150‑word narratives for each portfolio piece, highlighting problem, solution, and impact.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Update LinkedIn headline and summary",
+              "description": "Craft a concise headline stating “Associate Product Manager – Customer‑focused, data‑driven” and a summary that mirrors the roadmap achievements.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Share portfolio with a senior PM on LinkedIn",
+              "description": "Request a short endorsement or feedback on relevance to hiring managers.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on personal growth journey",
+              "description": "Write a brief blog post summarising what you’ve learned and next career steps.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "apm.intermediate",
+  "roleId": "apm",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T15:57:11.824Z",
+  "model": "openai/gpt-oss-120b"
+}

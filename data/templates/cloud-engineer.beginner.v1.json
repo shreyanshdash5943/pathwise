@@ -1,0 +1,474 @@
+{
+  "title": "Cloud Engineer Learning Roadmap",
+  "summary": "A step‑by‑step guide to move from zero experience to a job‑ready cloud engineer. You’ll master core concepts, build real projects, and prepare for certifications.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Build a solid base in cloud concepts, networking, and security fundamentals.",
+      "milestones": [
+        {
+          "title": "Understand Cloud Computing Basics",
+          "outcome": "Explain core cloud models and services to non‑technical stakeholders.",
+          "skill": "Cloud fundamentals",
+          "tasks": [
+            {
+              "title": "Read Cloud Service Models Overview",
+              "description": "Study the IaaS, PaaS, and SaaS sections on the AWS and Azure documentation.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch Intro to Cloud Video",
+              "description": "Complete the freeCodeCamp \"Introduction to Cloud Computing\" video series (first two modules).",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Summarize Key Concepts",
+              "description": "Write a one‑page summary comparing AWS, Azure, and GCP offerings.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Create a Glossary Sheet",
+              "description": "List 20 common cloud terms with definitions using MDN and official docs as references.",
+              "type": "build",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Fundamentals of Networking",
+          "outcome": "Design simple network topologies and explain traffic flow in a cloud environment.",
+          "skill": "Networking",
+          "tasks": [
+            {
+              "title": "Read VPC Basics on AWS Docs",
+              "description": "Focus on subnets, route tables, and internet gateways.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Complete FreeCodeCamp Networking Module",
+              "description": "Finish the “Networking Fundamentals” lessons and quizzes.",
+              "type": "learn",
+              "minutes": 70
+            },
+            {
+              "title": "Draw a Sample VPC Diagram",
+              "description": "Sketch a 2‑subnet VPC with a public web tier and private DB tier using pen and paper.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Configure a Test VPC in Free Tier",
+              "description": "Use the AWS console to create a VPC, two subnets, and a security group.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Reflect on Security Implications",
+              "description": "Write a short note on why subnet isolation matters for security.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "IAM and Security Foundations",
+          "outcome": "Implement basic identity and access controls in a cloud account.",
+          "skill": "IAM and security",
+          "tasks": [
+            {
+              "title": "Read IAM Overview on Azure Docs",
+              "description": "Cover users, groups, roles, and RBAC concepts.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch IAM Security Best Practices Video",
+              "description": "Use the official AWS YouTube playlist (first 15 minutes).",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Create IAM Users and Groups",
+              "description": "In the free tier console, add two users, assign them to a group with limited permissions.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Write an Access Policy Document",
+              "description": "Draft a JSON policy granting read‑only S3 access for a specific bucket.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Discuss Principle of Least Privilege",
+              "description": "Post a brief explanation in a community forum (e.g., Reddit r/cloud) and respond to comments.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain hands‑on experience with compute, storage, and cost management services.",
+      "milestones": [
+        {
+          "title": "Deploy Compute Resources",
+          "outcome": "Launch and manage virtual machines or containers on a cloud platform.",
+          "skill": "Compute and storage",
+          "tasks": [
+            {
+              "title": "Follow EC2 Launch Guide",
+              "description": "Use the AWS free tier tutorial to start a t2.micro instance with a web server.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Install Docker on the Instance",
+              "description": "SSH into the EC2 box and install Docker CE following the official docs.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Run a Sample Container",
+              "description": "Pull and run the official nginx container, verify it serves a page.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Document Deployment Steps",
+              "description": "Write a markdown file describing each step for future reference.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Share Experience on LinkedIn",
+              "description": "Post a short update with screenshots and ask for feedback.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Manage Cloud Storage Services",
+          "outcome": "Create, secure, and retrieve data using cloud storage options.",
+          "skill": "Compute and storage",
+          "tasks": [
+            {
+              "title": "Read S3 Fundamentals on AWS Docs",
+              "description": "Focus on buckets, objects, versioning, and lifecycle rules.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create an S3 Bucket with Versioning",
+              "description": "Set up a bucket in the free tier, enable versioning, and upload test files.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Configure Bucket Policy for Public Access",
+              "description": "Write a policy that allows read‑only access to a specific folder.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Explore Azure Blob Storage Quickstart",
+              "description": "Follow the Microsoft tutorial to upload and download a blob via portal.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Compare Costs of Storage Classes",
+              "description": "Use the pricing calculators to note differences between Standard, Infrequent Access, and Glacier.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Cost Management Basics",
+          "outcome": "Monitor and optimize cloud spending using native tools.",
+          "skill": "Cost management",
+          "tasks": [
+            {
+              "title": "Watch AWS Cost Explorer Intro Video",
+              "description": "View the first 20 minutes of the official AWS Cost Explorer tutorial.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Set Up a Billing Alarm",
+              "description": "Create a CloudWatch alarm that notifies when monthly spend exceeds $5.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Generate a Monthly Cost Report",
+              "description": "Export the cost and usage report for the last month as CSV.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Identify Savings Opportunities",
+              "description": "Analyze the report and list three ways to reduce costs (e.g., right‑size instances).",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Discuss Findings with a Peer",
+              "description": "Join a free cloud community chat and share your cost‑saving ideas.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio projects that showcase end‑to‑end cloud solutions.",
+      "milestones": [
+        {
+          "title": "3‑Tier Web Application",
+          "outcome": "Demonstrate ability to design, deploy, and secure a multi‑tier app on a cloud provider.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan Architecture Diagram",
+              "description": "Sketch a diagram with a public load balancer, web servers, and private database tier.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Deploy VPC and Subnets",
+              "description": "Use Terraform (free) to provision the network layout in AWS.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Launch EC2 Web Tier",
+              "description": "Create an autoscaling group with a simple Node.js app behind an ALB.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Set Up RDS Instance",
+              "description": "Provision a free‑tier PostgreSQL database in a private subnet.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Document Project on GitHub",
+              "description": "Write a README, include architecture diagram, and add deployment instructions.",
+              "type": "build",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "title": "Cost‑Optimised Architecture Write‑up",
+          "outcome": "Showcase analytical skills in reducing cloud spend while maintaining performance.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a Sample Workload",
+              "description": "Choose a common scenario such as a data‑processing pipeline.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Analyze Current Cost Profile",
+              "description": "Use the pricing calculator to estimate baseline expenses.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Propose Optimization Strategies",
+              "description": "Write three concrete changes (e.g., reserved instances, storage class shift).",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Create a Cost‑Benefit Table",
+              "description": "Tabulate projected savings versus implementation effort.",
+              "type": "build",
+              "minutes": 35
+            },
+            {
+              "title": "Publish Write‑up on Medium",
+              "description": "Post the article, include diagrams, and invite comments.",
+              "type": "connect",
+              "minutes": 40
+            }
+          ]
+        },
+        {
+          "title": "Associate‑Level Certification Prep",
+          "outcome": "Pass an entry‑level cloud certification exam (e.g., AWS Solutions Architect Associate).",
+          "skill": "Certifications",
+          "tasks": [
+            {
+              "title": "Review Exam Guide",
+              "description": "Read the official AWS Solutions Architect Associate exam guide PDF.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Complete FreeCodeCamp Cloud Cert Course",
+              "description": "Finish the relevant modules and quizzes covering exam topics.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Take Practice Exam",
+              "description": "Attempt a free practice test from AWS Training and note weak areas.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Revise Weak Topics",
+              "description": "Watch targeted YouTube videos on identified gaps (e.g., VPC peering).",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Schedule Real Exam",
+              "description": "Book the exam slot and set a study deadline.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, professional presence, and job‑search tactics.",
+      "milestones": [
+        {
+          "title": "Advanced Security and Governance",
+          "outcome": "Implement role‑based access, encryption, and compliance checks.",
+          "skill": "IAM and security",
+          "tasks": [
+            {
+              "title": "Enable AWS Config Rules",
+              "description": "Activate three managed rules to monitor security best practices.",
+              "type": "practice",
+              "minutes": 55
+            },
+            {
+              "title": "Set Up KMS Encryption",
+              "description": "Create a customer‑managed key and encrypt an S3 bucket with it.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Apply Azure Policy Initiative",
+              "description": "Assign a built‑in policy that enforces tag compliance on resources.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Write a Security Checklist",
+              "description": "Draft a concise checklist for future deployments.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Discuss Checklist in Forum",
+              "description": "Share the checklist on a cloud security forum and gather feedback.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Performance and Automation",
+          "outcome": "Automate infrastructure provisioning and monitor performance metrics.",
+          "skill": "Compute and storage",
+          "tasks": [
+            {
+              "title": "Write Terraform Module for VPC",
+              "description": "Create a reusable module that defines subnets, route tables, and IGW.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Configure CloudWatch Dashboards",
+              "description": "Set up widgets to monitor CPU, network, and latency for the web tier.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Implement CI/CD Pipeline",
+              "description": "Use GitHub Actions (free) to deploy the 3‑tier app on push.",
+              "type": "practice",
+              "minutes": 85
+            },
+            {
+              "title": "Benchmark Application Latency",
+              "description": "Run a load test with k6 and record response times.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on Automation Benefits",
+              "description": "Write a brief note on time saved and error reduction.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job‑Search and Professional Branding",
+          "outcome": "Present yourself as a qualified cloud engineer and secure interviews.",
+          "skill": "Certifications",
+          "tasks": [
+            {
+              "title": "Update LinkedIn Profile",
+              "description": "Add new skills, certifications, and link to GitHub projects.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Craft a Targeted Resume",
+              "description": "Tailor the resume for cloud engineer roles, highlighting projects and cost‑saving write‑up.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice System Design Interview",
+              "description": "Do a mock interview with a peer focusing on designing a scalable service.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Apply to 5 Jobs",
+              "description": "Submit applications to positions that require the associate‑level certification you earned.",
+              "type": "connect",
+              "minutes": 30
+            },
+            {
+              "title": "Seek Feedback on Portfolio",
+              "description": "Ask a mentor or community member to review your GitHub repos and give improvement tips.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "cloud-engineer.beginner",
+  "roleId": "cloud-engineer",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:03:40.453Z",
+  "model": "openai/gpt-oss-120b"
+}

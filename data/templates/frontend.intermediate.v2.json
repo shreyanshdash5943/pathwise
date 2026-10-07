@@ -1,0 +1,444 @@
+{
+  "title": "Frontend Engineer Mastery Roadmap",
+  "summary": "Deepen your expertise in modern frontend development, from solid fundamentals to professional‑grade projects and job readiness. Follow the four phases to build best‑practice skills, a showcase portfolio, and a confident transition into the industry.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Establish rock‑solid core web fundamentals and tooling.",
+      "milestones": [
+        {
+          "title": "HTML & CSS Fundamentals",
+          "outcome": "Create semantic, responsive pages that work across browsers.",
+          "skill": "HTML and CSS",
+          "tasks": [
+            {
+              "title": "Read HTML5 spec overview",
+              "description": "Skim the MDN HTML5 guide focusing on document structure and semantics.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Build a static landing page",
+              "description": "Implement a multi‑section page using Flexbox and Grid, ensuring mobile responsiveness.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice accessibility basics",
+              "description": "Add proper heading hierarchy, alt text, and ARIA landmarks to the landing page.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on markup choices",
+              "description": "Write a short note on why each semantic element was chosen and how it aids accessibility.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "JavaScript Core Concepts",
+          "outcome": "Write clean, functional JavaScript for interactive web features.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Watch ES6+ fundamentals video",
+              "description": "View the freeCodeCamp ES6 tutorial covering let/const, arrow functions, and modules.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Implement a todo widget",
+              "description": "Create a vanilla JS todo list with add, toggle, and delete actions, storing state in localStorage.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice debugging with DevTools",
+              "description": "Set breakpoints, step through code, and inspect variables in Chrome DevTools.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Connect with a JS community thread",
+              "description": "Post a question or answer on Stack Overflow about a subtle scope issue you encountered.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Version Control Basics",
+          "outcome": "Manage code history and collaborate using Git.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Read Git basics on Git‑SCM site",
+              "description": "Study the official Git documentation on init, commit, branch, and merge.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Initialize a repo for previous project",
+              "description": "Create a Git repository, commit the landing page and todo widget, and push to GitHub.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Practice branching workflow",
+              "description": "Create a feature branch, make a change, and merge back using a pull request.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on commit messages",
+              "description": "Write guidelines for clear, conventional commit messages for future projects.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Gain proficiency in TypeScript, React, and performance‑focused development.",
+      "milestones": [
+        {
+          "title": "TypeScript Foundations",
+          "outcome": "Add static typing to JavaScript projects for safer code.",
+          "skill": "TypeScript",
+          "tasks": [
+            {
+              "title": "Read TypeScript handbook intro",
+              "description": "Study the official TypeScript handbook sections on types, interfaces, and enums.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Migrate todo widget to TS",
+              "description": "Convert the previous vanilla JS todo app to TypeScript, fixing type errors.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Practice strict compiler settings",
+              "description": "Enable strict mode, noImplicitAny, and run tsc to catch potential bugs.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on type benefits",
+              "description": "Write a brief note on how types prevented a runtime error in the migration.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "React Essentials",
+          "outcome": "Build component‑based UIs with modern React patterns.",
+          "skill": "React",
+          "tasks": [
+            {
+              "title": "Watch React official tutorial",
+              "description": "Follow the React docs tutorial to create a simple counter app using hooks.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a reusable card component",
+              "description": "Create a Card component with props for title, image, and actions, using TypeScript.",
+              "type": "build",
+              "minutes": 65
+            },
+            {
+              "title": "Practice state management with useReducer",
+              "description": "Refactor the card list to use useReducer for adding/removing cards.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Connect with React Discord",
+              "description": "Join the Reactiflux Discord and introduce yourself, asking about best practices.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Accessibility & Performance",
+          "outcome": "Deliver fast, inclusive experiences meeting WCAG and Core Web Vitals.",
+          "skill": "Accessibility",
+          "tasks": [
+            {
+              "title": "Read WCAG 2.1 summary on W3C",
+              "description": "Study the key success criteria for perceivable, operable, and understandable content.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Audit the landing page with Lighthouse",
+              "description": "Run Chrome Lighthouse, note scores, and list three improvements.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Build focus-visible styles",
+              "description": "Add CSS to ensure keyboard users see clear focus outlines on all interactive elements.",
+              "type": "build",
+              "minutes": 25
+            },
+            {
+              "title": "Reflect on performance fixes",
+              "description": "Document how lazy‑loading images and reducing CSS size improved LCP.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio‑ready projects that showcase depth and best practices.",
+      "milestones": [
+        {
+          "title": "Responsive Portfolio Site",
+          "outcome": "A personal site demonstrating layout, animation, and SEO best practices.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan site structure on paper",
+              "description": "Sketch pages, navigation, and content hierarchy for the portfolio.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Build site with React & TS",
+              "description": "Develop the portfolio using React, TypeScript, and CSS Modules, ensuring mobile responsiveness.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Implement SEO meta tags",
+              "description": "Add appropriate title, description, Open Graph, and schema markup.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Deploy to GitHub Pages",
+              "description": "Configure the repository for static site hosting and verify live URL.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on project workflow",
+              "description": "Write a short post‑mortem covering challenges, tools, and next steps.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "API Dashboard Project",
+          "outcome": "A data‑driven dashboard that consumes a public API with robust error handling.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a public API and read docs",
+              "description": "Choose an open API (e.g., OpenWeather) and note authentication and rate limits.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Create data fetching layer with React Query",
+              "description": "Set up React Query to fetch, cache, and refetch data efficiently.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Practice error UI states",
+              "description": "Design and implement loading spinners, error messages, and empty states.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Add chart components with Recharts",
+              "description": "Visualize fetched data using responsive charts from the Recharts library.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Connect with a mentor on CodeMentor",
+              "description": "Schedule a short review session to get feedback on code quality and UI.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Component Library",
+          "outcome": "A reusable UI component set with documentation and storybook.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define component API design",
+              "description": "Write prop specifications for Button, Modal, and Tooltip components.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Build components with Storybook",
+              "description": "Implement each component in React/TS and create interactive Storybook stories.",
+              "type": "build",
+              "minutes": 110
+            },
+            {
+              "title": "Practice unit testing with Jest",
+              "description": "Write tests for component behavior, props validation, and accessibility attributes.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Document usage guidelines",
+              "description": "Create a markdown guide covering installation, theming, and best practices.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on library publishing",
+              "description": "Note steps needed to publish to npm and versioning considerations.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, interview prep, and professional positioning.",
+      "milestones": [
+        {
+          "title": "Advanced Web Performance",
+          "outcome": "Optimize apps to meet Core Web Vitals consistently.",
+          "skill": "Web performance",
+          "tasks": [
+            {
+              "title": "Read Web.dev performance guide",
+              "description": "Study the free Web.dev article on optimizing render‑blocking resources.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Implement code‑splitting with React.lazy",
+              "description": "Refactor the dashboard to lazy‑load heavy components and routes.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Practice measuring with Web Vitals library",
+              "description": "Add the web-vitals npm package and log LCP, FID, CLS metrics in production builds.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Connect with a performance expert on Twitter",
+              "description": "Tweet a question about third‑party script impact and note the response.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on performance trade‑offs",
+              "description": "Write a brief comparison of bundle size vs. runtime speed after optimizations.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        },
+        {
+          "title": "Interview & Job Search Skills",
+          "outcome": "Confidently tackle technical interviews and present your portfolio.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Read Cracking the Coding Interview front‑end chapter",
+              "description": "Study the recommended patterns for DOM manipulation and algorithm questions.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Practice whiteboard coding of a sorting algorithm",
+              "description": "Write and explain quicksort on paper, focusing on time/space complexity.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Build a mock interview with a peer",
+              "description": "Conduct a 45‑minute pair‑programming session covering React hooks and state.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Update LinkedIn with project links",
+              "description": "Add the portfolio, dashboard, and component library URLs with concise descriptions.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on interview feedback",
+              "description": "Summarize strengths and improvement areas after each mock interview.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Professional Habits & Continuous Learning",
+          "outcome": "Adopt workflows and resources for ongoing growth as a frontend engineer.",
+          "skill": "TypeScript",
+          "tasks": [
+            {
+              "title": "Read article on TypeScript monorepos",
+              "description": "Explore a free blog post about scaling TS across multiple packages.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Set up ESLint & Prettier config",
+              "description": "Configure linting and formatting for consistent code style across projects.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice writing technical blog post",
+              "description": "Draft a 800‑word post on a recent performance optimization you implemented.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Connect with a senior frontend engineer on LinkedIn",
+              "description": "Send a personalized message requesting a brief coffee chat about career paths.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Reflect on learning pipeline",
+              "description": "Create a checklist for weekly learning, project work, and community engagement.",
+              "type": "reflect",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "frontend.intermediate",
+  "roleId": "frontend",
+  "level": "intermediate",
+  "version": 2,
+  "generatedAt": "2026-10-07T16:13:39.821Z",
+  "model": "openai/gpt-oss-120b"
+}

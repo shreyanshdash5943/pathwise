@@ -2,16 +2,18 @@ import { NextResponse } from "next/server";
 import { getSupabase } from "@/lib/supabase";
 import { sanitizeAnswers } from "@/lib/questions";
 import { getRole } from "@/lib/roles";
-import { generateRoadmap } from "@/lib/ai";
-import { toOutline } from "@/lib/roadmap-schema";
-import { isValidTimeZone } from "@/lib/dates";
+import { createPlan } from "@/lib/plans";
+import { getDetails } from "@/lib/details";
+import { isValidTimeZone, todayIn } from "@/lib/dates";
 import { handleRouteError, jsonError } from "@/lib/http";
 
-export const runtime = "nodejs";
-export const maxDuration = 60;
+const COOLDOWN_MS = 5_000;
 
-const COOLDOWN_MS = 15_000;
-
+/**
+ * Builds a plan from the shared template for the chosen role and level. There is no AI
+ * call here: plans are assembled from pre-written templates in memory, so this is fast
+ * and costs the same for one user or a million.
+ */
 export async function POST(req: Request) {
   try {
     const { supabase, userId } = await getSupabase();
@@ -31,60 +33,15 @@ export async function POST(req: Request) {
     const tz = isValidTimeZone(timezone) ? timezone : "UTC";
     const dailyMinutes = Number(answers.time[0]) || 60;
 
-    // Cooldown: one new plan per user per COOLDOWN_MS. Protects the AI quota from repeat clicks and scripts.
-    const latest = await supabase.from("roadmaps").select("created_at").order("created_at", { ascending: false }).limit(1).maybeSingle();
+    // Cooldown: protects the database from repeat clicks and scripts.
+    const latest = await supabase.from("plans").select("created_at").maybeSingle();
     if (latest.error) throw latest.error;
     if (latest.data && Date.now() - new Date(latest.data.created_at as string).getTime() < COOLDOWN_MS) {
       return jsonError("You just made a plan. Wait a few seconds before making another.", 429);
     }
 
-    const { roadmap, source } = await generateRoadmap(role, answers);
-
-    // 1. Insert the new roadmap as inactive so the user keeps their old one if anything fails.
-    const created = await supabase
-      .from("roadmaps")
-      .insert({ user_id: userId, title: roadmap.title, summary: roadmap.summary, outline: toOutline(roadmap), source, is_active: false })
-      .select("id")
-      .single();
-    if (created.error) throw created.error;
-    const roadmapId = created.data.id as string;
-
-    // 2. Insert every task in order.
-    let seq = 0;
-    const rows = roadmap.phases.flatMap((phase, pi) =>
-      phase.milestones.flatMap((m, mi) =>
-        m.tasks.map((t) => ({
-          user_id: userId,
-          roadmap_id: roadmapId,
-          seq: seq++,
-          phase_index: pi,
-          milestone_index: mi,
-          title: t.title,
-          description: t.description,
-          type: t.type,
-          minutes: t.minutes,
-        }))
-      )
-    );
-    // 3. Swap the active roadmap. If anything fails, drop the new roadmap so it doesn't linger.
-    try {
-      const inserted = await supabase.from("tasks").insert(rows);
-      if (inserted.error) throw inserted.error;
-      const off = await supabase.from("roadmaps").update({ is_active: false }).eq("is_active", true);
-      if (off.error) throw off.error;
-      const on = await supabase.from("roadmaps").update({ is_active: true }).eq("id", roadmapId);
-      if (on.error) throw on.error;
-    } catch (err) {
-      await supabase.from("roadmaps").delete().eq("id", roadmapId);
-      // 23505/23503: a parallel request for the same user won the race.
-      const code = (err as { code?: string }).code;
-      if (code === "23505" || code === "23503") return jsonError("Your plan is already being created.", 409);
-      throw err;
-    }
-
-    // 4. Remove old roadmaps (their tasks cascade) and save the profile.
-    const old = await supabase.from("roadmaps").delete().eq("is_active", false).neq("id", roadmapId);
-    if (old.error) throw old.error;
+    const details = await getDetails(supabase);
+    const planId = await createPlan(supabase, role, answers, details?.known_skills ?? [], todayIn(tz));
 
     const profile = await supabase.from("profiles").upsert(
       {
@@ -100,7 +57,11 @@ export async function POST(req: Request) {
     );
     if (profile.error) throw profile.error;
 
-    return NextResponse.json({ ok: true, roadmapId, source });
+    // Old-style roadmaps are no longer read; clear them out (their tasks cascade).
+    const legacy = await supabase.from("roadmaps").delete().not("id", "is", null);
+    if (legacy.error) throw legacy.error;
+
+    return NextResponse.json({ ok: true, planId });
   } catch (err) {
     return handleRouteError(err);
   }

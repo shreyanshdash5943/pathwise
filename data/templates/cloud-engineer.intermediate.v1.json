@@ -1,0 +1,425 @@
+{
+  "title": "Cloud Engineer Deep‑Dive Roadmap",
+  "summary": "A step‑by‑step guide to master advanced cloud engineering on AWS, GCP, or Azure, focusing on best practices, large‑scale projects, and professional readiness. Follow the phases to build depth, showcase work, and land a senior role.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Solidify core cloud concepts and essential services.",
+      "milestones": [
+        {
+          "title": "Cloud fundamentals",
+          "outcome": "Explain core cloud models, services, and provider differences.",
+          "skill": "Cloud fundamentals",
+          "tasks": [
+            {
+              "title": "Read AWS Overview whitepaper",
+              "description": "Study the official AWS Overview of Amazon Web Services document to grasp global infrastructure and service categories.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch GCP fundamentals video series",
+              "description": "Complete the first three videos of Google Cloud Fundamentals on YouTube to compare compute, storage, and networking models.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Summarize key differences in a table",
+              "description": "Create a side‑by‑side table of AWS, GCP, and Azure core services for compute, storage, and networking.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Set up free tier accounts",
+              "description": "Create free tier accounts on AWS, GCP, and Azure and verify access to the console.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "IAM and security basics",
+          "outcome": "Configure secure identity and access controls across providers.",
+          "skill": "IAM and security",
+          "tasks": [
+            {
+              "title": "Read IAM best‑practice guide",
+              "description": "Study the AWS IAM Best Practices whitepaper (or equivalent docs for GCP/Azure).",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Create a least‑privilege user group",
+              "description": "In each cloud console, create a user group with read‑only permissions and attach it to a test user.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Enable MFA for root account",
+              "description": "Activate multi‑factor authentication on the root account and document the steps.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write a short policy review note",
+              "description": "Explain why the created policies follow the principle of least privilege.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop networking, compute, storage, and cost‑management expertise.",
+      "milestones": [
+        {
+          "title": "Networking design",
+          "outcome": "Design VPC/VNet architectures with subnets, routing, and security groups.",
+          "skill": "Networking",
+          "tasks": [
+            {
+              "title": "Read VPC design guide",
+              "description": "Study the AWS VPC Design Guide (or GCP VPC documentation) focusing on subnets and route tables.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create a multi‑AZ VPC",
+              "description": "Build a VPC with public and private subnets across two availability zones and attach a NAT gateway.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Configure security groups",
+              "description": "Set inbound/outbound rules for a web server and a database tier following least‑privilege principles.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Diagram the network",
+              "description": "Use draw.io to produce a clear network diagram and label CIDR blocks.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Compute & storage mastery",
+          "outcome": "Provision and manage scalable compute and storage resources.",
+          "skill": "Compute and storage",
+          "tasks": [
+            {
+              "title": "Read EC2 and S3 deep‑dive docs",
+              "description": "Study the official AWS EC2 and S3 documentation sections on performance and durability.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Launch an auto‑scaling group",
+              "description": "Create an Auto Scaling group with launch template, scaling policies, and health checks.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Set up encrypted bucket lifecycle",
+              "description": "Create an S3 bucket with default encryption, versioning, and a lifecycle rule to transition to Glacier.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Benchmark instance types",
+              "description": "Run a simple CPU and I/O benchmark on two instance types and record results.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a short lessons‑learned note",
+              "description": "Summarize which compute/storage combos performed best for the benchmark scenario.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Cost management fundamentals",
+          "outcome": "Monitor, analyze, and optimize cloud spend.",
+          "skill": "Cost management",
+          "tasks": [
+            {
+              "title": "Read AWS Cost Explorer tutorial",
+              "description": "Follow the official Cost Explorer walkthrough on the AWS website.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Tag resources for cost allocation",
+              "description": "Apply consistent cost‑allocation tags to all resources created in previous tasks.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Create a budget alarm",
+              "description": "Set up a budget with a notification alarm when spend exceeds 70% of the monthly limit.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Analyze last‑month bill sample",
+              "description": "Download a sample billing report and identify top three cost drivers.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Propose one optimization",
+              "description": "Write a brief recommendation to reduce cost based on the analysis.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build portfolio projects that demonstrate end‑to‑end cloud solutions.",
+      "milestones": [
+        {
+          "title": "3‑tier web app deployment",
+          "outcome": "Deploy a scalable web app with front‑end, API, and database layers on a cloud provider.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan architecture on paper",
+              "description": "Sketch the three‑tier design, noting VPC, subnets, load balancer, and database choices.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Provision infrastructure with IaC",
+              "description": "Use Terraform (free) to create VPC, ALB, EC2 instances, and RDS according to the plan.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Deploy sample app code",
+              "description": "Clone a simple Node.js app from GitHub and deploy it to the EC2 instances via user data script.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Set up monitoring and alerts",
+              "description": "Configure CloudWatch (or equivalent) dashboards for CPU, latency, and error rates with alarms.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Document deployment steps",
+              "description": "Write a concise README with architecture diagram and IaC commands.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Cost‑optimised architecture write‑up",
+          "outcome": "Produce a detailed report showing how to reduce spend for a given workload.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select a reference workload",
+              "description": "Choose a common workload (e.g., data processing pipeline) from a case study.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Identify cost‑heavy components",
+              "description": "Map the workload to services and estimate monthly cost using the pricing calculator.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Research reserved/spot options",
+              "description": "Find applicable Savings Plans, Reserved Instances, or Spot pricing for each component.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Write optimisation recommendations",
+              "description": "Create a 2‑page report with concrete changes, expected savings, and implementation steps.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Peer‑review with a colleague",
+              "description": "Share the report with a peer and incorporate feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Associate‑level certification prep",
+          "outcome": "Pass an AWS, GCP, or Azure associate certification exam.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose certification exam",
+              "description": "Select AWS Solutions Architect Associate, GCP Associate Cloud Engineer, or Azure Administrator Associate.",
+              "type": "learn",
+              "minutes": 15
+            },
+            {
+              "title": "Follow free exam guide",
+              "description": "Study the official exam guide and free practice questions on the provider’s site.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Take a timed practice test",
+              "description": "Complete a full‑length practice exam under timed conditions.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Review incorrect answers",
+              "description": "Analyze each wrong answer, noting the knowledge gap and referencing docs.",
+              "type": "reflect",
+              "minutes": 45
+            },
+            {
+              "title": "Schedule the real exam",
+              "description": "Book the exam slot and prepare required identification and payment.",
+              "type": "connect",
+              "minutes": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced topics, professional habits, and job‑search readiness.",
+      "milestones": [
+        {
+          "title": "Advanced security & compliance",
+          "outcome": "Implement encryption, logging, and compliance controls for production workloads.",
+          "skill": "IAM and security",
+          "tasks": [
+            {
+              "title": "Read CIS benchmark for AWS",
+              "description": "Study the free CIS AWS Foundations Benchmark to understand required controls.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Enable CloudTrail multi‑region",
+              "description": "Turn on CloudTrail across all regions and send logs to a secure S3 bucket.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Configure KMS‑encrypted volumes",
+              "description": "Create a KMS key and attach it to EBS volumes for at‑rest encryption.",
+              "type": "practice",
+              "minutes": 35
+            },
+            {
+              "title": "Run a compliance scan",
+              "description": "Use AWS Config (or equivalent) to evaluate resources against the benchmark rules.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Summarize compliance posture",
+              "description": "Write a brief compliance summary highlighting any gaps and remediation steps.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Professional DevOps habits",
+          "outcome": "Adopt CI/CD, monitoring, and documentation practices used in cloud teams.",
+          "skill": "Compute and storage",
+          "tasks": [
+            {
+              "title": "Set up GitHub Actions pipeline",
+              "description": "Create a workflow that lints, tests, and deploys infrastructure code on push.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Integrate automated tests",
+              "description": "Write a simple integration test that validates an endpoint after deployment.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Configure centralized logging",
+              "description": "Route application logs to CloudWatch Logs (or Stackdriver) and set retention policies.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Write run‑book for incidents",
+              "description": "Document step‑by‑step procedures for common failure scenarios.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Share run‑book with a mentor",
+              "description": "Discuss the run‑book with an experienced engineer and gather feedback.",
+              "type": "connect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Job & client readiness",
+          "outcome": "Present a polished portfolio and demonstrate interview readiness.",
+          "skill": "Certifications",
+          "tasks": [
+            {
+              "title": "Create an online portfolio site",
+              "description": "Build a simple static site (GitHub Pages) showcasing projects, write‑ups, and certifications.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Prepare STAR stories",
+              "description": "Write three STAR (Situation, Task, Action, Result) examples highlighting cloud problem‑solving.",
+              "type": "reflect",
+              "minutes": 45
+            },
+            {
+              "title": "Mock technical interview",
+              "description": "Pair with a peer to run a mock interview focusing on design and cost‑optimization questions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Update LinkedIn with badges",
+              "description": "Add earned certifications and a link to the portfolio site on your LinkedIn profile.",
+              "type": "connect",
+              "minutes": 20
+            },
+            {
+              "title": "Apply to three senior roles",
+              "description": "Tailor your resume for each role and submit applications, tracking responses.",
+              "type": "practice",
+              "minutes": 50
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "cloud-engineer.intermediate",
+  "roleId": "cloud-engineer",
+  "level": "intermediate",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:04:45.159Z",
+  "model": "openai/gpt-oss-120b"
+}

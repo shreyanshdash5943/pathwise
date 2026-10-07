@@ -1,0 +1,480 @@
+{
+  "title": "UX Designer Career Roadmap",
+  "summary": "A step‑by‑step guide to solidify core UX fundamentals, build a showcase portfolio, and launch into professional work. Focuses on practical tasks, real‑world projects, and job‑ready preparation.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Lay the essential theoretical base and tool fluency.",
+      "milestones": [
+        {
+          "title": "User Research Foundations",
+          "outcome": "Can plan and conduct basic qualitative research studies.",
+          "skill": "User research",
+          "tasks": [
+            {
+              "title": "Read Nielsen Norman Group articles on user research",
+              "description": "Study the key concepts of interviews, surveys, and contextual inquiry on NN/g’s free articles.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Watch freeCodeCamp UX research video series",
+              "description": "Follow the playlist to understand research methods and when to apply them.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Create a research plan template",
+              "description": "Draft a one‑page plan outlining objectives, participants, methods, and timeline.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Conduct a 5‑minute hallway interview",
+              "description": "Practice asking open‑ended questions with a friend and record notes.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Reflect on interview findings",
+              "description": "Write a brief summary of insights and how they shape design decisions.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Information Architecture Basics",
+          "outcome": "Can organize content into clear structures and navigation schemes.",
+          "skill": "Information architecture",
+          "tasks": [
+            {
+              "title": "Read MDN guide on site structure and navigation",
+              "description": "Focus on hierarchy, labeling, and breadcrumb concepts.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Sketch a sitemap for a favorite website",
+              "description": "Map out main sections and subpages on paper or digital tool.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Create a card‑sorting test using OptimalSort free trial",
+              "description": "Set up a simple open card sort with 10 items and run it with two participants.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Analyze card‑sort results",
+              "description": "Identify patterns and propose a revised navigation hierarchy.",
+              "type": "reflect",
+              "minutes": 30
+            },
+            {
+              "title": "Share IA draft for critique on a design forum",
+              "description": "Post the sitemap and ask for feedback, noting suggestions.",
+              "type": "connect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Figma Tool Mastery",
+          "outcome": "Can efficiently prototype UI elements and create design specs.",
+          "skill": "Figma",
+          "tasks": [
+            {
+              "title": "Complete Figma free community onboarding tutorial",
+              "description": "Follow the official tutorial to learn frames, components, and auto‑layout.",
+              "type": "learn",
+              "minutes": 50
+            },
+            {
+              "title": "Recreate a login screen from an app",
+              "description": "Build the UI using components and constraints to match the original design.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Set up a shared design system file",
+              "description": "Create color styles, text styles, and component library for reuse.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice prototyping a simple flow",
+              "description": "Link screens with interactions to simulate a user journey.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Give yourself a quick design critique",
+              "description": "Evaluate the prototype against usability heuristics and note improvements.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Develop deeper design capabilities and testing proficiency.",
+      "milestones": [
+        {
+          "title": "Wireframing Techniques",
+          "outcome": "Can produce low‑fidelity wireframes that communicate layout and flow.",
+          "skill": "Wireframing",
+          "tasks": [
+            {
+              "title": "Read UXPin guide on low‑fidelity wireframes",
+              "description": "Understand when to use paper vs digital wireframes and common conventions.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Wireframe a checkout flow in Figma",
+              "description": "Create 3‑4 screens using basic shapes and placeholders.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Iterate wireframe based on peer feedback",
+              "description": "Share on a design community, collect comments, and refine the layout.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Compare paper vs digital wireframes",
+              "description": "Sketch the same flow on paper, then replicate digitally; note pros and cons.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Connect with a senior UX mentor on LinkedIn",
+              "description": "Ask for a quick review of your wireframes and request one tip.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Usability Testing Basics",
+          "outcome": "Can plan, run, and synthesize simple usability tests.",
+          "skill": "Usability testing",
+          "tasks": [
+            {
+              "title": "Watch Nielsen Norman Group video on usability testing",
+              "description": "Focus on test planning, moderation, and analysis steps.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Write a test script for a login task",
+              "description": "Define clear tasks, success criteria, and prompts for participants.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Recruit 3 friends for a remote test",
+              "description": "Schedule 30‑minute sessions using a free video tool and record screen.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Analyze recordings and extract pain points",
+              "description": "Create a list of issues with severity ratings.",
+              "type": "reflect",
+              "minutes": 35
+            },
+            {
+              "title": "Present findings in a one‑page report",
+              "description": "Summarize insights, recommendations, and next steps for stakeholders.",
+              "type": "build",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Design Critique Skills",
+          "outcome": "Can give and receive constructive feedback effectively.",
+          "skill": "Design critique",
+          "tasks": [
+            {
+              "title": "Read Google Design guide on critique culture",
+              "description": "Learn the framework for framing feedback positively.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Join a free online design critique group",
+              "description": "Participate in a live session, offering feedback on two peers’ work.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a critique of a popular app’s onboarding",
+              "description": "Apply the framework to identify strengths and improvement areas.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on feedback received",
+              "description": "Note how critiques changed your perspective and future approach.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Connect with a local UX meetup",
+              "description": "Attend a virtual meetup and share a short case study for group critique.",
+              "type": "connect",
+              "minutes": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Create portfolio‑ready case studies demonstrating end‑to‑end UX process.",
+      "milestones": [
+        {
+          "title": "App Redesign Case Study",
+          "outcome": "A polished case study ready for portfolio inclusion.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Select an app you use daily",
+              "description": "Choose one with clear usability issues to redesign.",
+              "type": "learn",
+              "minutes": 20
+            },
+            {
+              "title": "Conduct 5‑minute user interviews",
+              "description": "Gather pain points from two friends about the current app experience.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Create IA and wireframes in Figma",
+              "description": "Map out new navigation and low‑fidelity screens.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Build a high‑fidelity prototype",
+              "description": "Apply visual design, components, and interactions to showcase the redesign.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write the case study narrative",
+              "description": "Explain problem, research, design decisions, and outcomes in 800‑word format.",
+              "type": "build",
+              "minutes": 70
+            }
+          ]
+        },
+        {
+          "title": "Usability Study Project",
+          "outcome": "Demonstrates ability to run a full usability evaluation and iterate.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define study goals and hypotheses",
+              "description": "State what you aim to learn and expected outcomes.",
+              "type": "learn",
+              "minutes": 25
+            },
+            {
+              "title": "Recruit 5 participants via social media",
+              "description": "Use a short screener to ensure relevant user background.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Run remote moderated tests",
+              "description": "Facilitate 30‑minute sessions, recording screen and audio.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Synthesize findings into affinity map",
+              "description": "Group observations, identify themes, and prioritize issues.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Iterate design based on results",
+              "description": "Update wireframes or prototype to address top pain points.",
+              "type": "build",
+              "minutes": 80
+            }
+          ]
+        },
+        {
+          "title": "Onboarding Flow Prototype",
+          "outcome": "Shows skill in crafting engaging first‑time user experiences.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Research onboarding best practices",
+              "description": "Read articles from Smashing Magazine and UX Collective on effective onboarding.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Sketch user journey for first‑time use",
+              "description": "Map steps from sign‑up to core value delivery.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Create low‑fidelity wireframes",
+              "description": "Design each onboarding screen with placeholders.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Prototype interactive flow in Figma",
+              "description": "Add transitions, micro‑interactions, and overlay explanations.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Conduct a quick 5‑person test",
+              "description": "Observe users completing onboarding and note drop‑off points.",
+              "type": "practice",
+              "minutes": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Polish advanced expertise, job search tactics, and professional presence.",
+      "milestones": [
+        {
+          "title": "Advanced Interaction Design",
+          "outcome": "Can design nuanced micro‑interactions and motion that enhance usability.",
+          "skill": "Figma",
+          "tasks": [
+            {
+              "title": "Explore Figma Community motion plugins",
+              "description": "Install and experiment with a free motion library to add subtle animations.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Add micro‑interactions to onboarding prototype",
+              "description": "Implement hover, tap, and transition effects using auto‑layout and prototyping tools.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Test interaction flow with a peer",
+              "description": "Gather feedback on clarity and delight of the added motions.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Reflect on motion impact",
+              "description": "Write a short note on how micro‑interactions affect user perception.",
+              "type": "reflect",
+              "minutes": 20
+            },
+            {
+              "title": "Share motion prototype on Dribbble",
+              "description": "Post the interactive prototype and ask for community feedback.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Portfolio & Personal Brand",
+          "outcome": "A compelling online presence that attracts recruiters or clients.",
+          "skill": "Design critique",
+          "tasks": [
+            {
+              "title": "Create a personal website using Wix free plan",
+              "description": "Build a simple site showcasing case studies, resume, and contact info.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Write an About Me page with design philosophy",
+              "description": "Articulate your approach, values, and unique strengths in 300 words.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Gather feedback on portfolio from a senior designer",
+              "description": "Send a link and request a detailed critique focusing on storytelling.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Update portfolio based on critique",
+              "description": "Refine visuals, narratives, and navigation per feedback.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Reflect on personal brand positioning",
+              "description": "Summarize key messages you want employers to remember.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        },
+        {
+          "title": "Job Search & Interview Prep",
+          "outcome": "Ready to apply for UX Designer roles and succeed in interviews.",
+          "skill": "User research",
+          "tasks": [
+            {
+              "title": "Tailor resume for UX roles using a free template",
+              "description": "Highlight key skills, projects, and measurable outcomes.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Apply to 5 targeted UX positions",
+              "description": "Use job boards like Indeed and LinkedIn, customizing each cover letter.",
+              "type": "practice",
+              "minutes": 80
+            },
+            {
+              "title": "Prepare answers to common UX interview questions",
+              "description": "Write concise responses for research, design process, and critique scenarios.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Conduct a mock interview with a peer",
+              "description": "Role‑play interview, receive feedback on communication and storytelling.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Connect with recruiters on LinkedIn",
+              "description": "Send personalized messages referencing shared interests or projects.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "ux-designer.basics",
+  "roleId": "ux-designer",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T16:10:11.653Z",
+  "model": "openai/gpt-oss-120b"
+}

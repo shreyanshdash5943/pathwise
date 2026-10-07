@@ -1,0 +1,481 @@
+{
+  "title": "Frontend Engineering Roadmap: Zero to Job-Ready",
+  "summary": "This roadmap guides you from absolute beginner to a hireable frontend engineer. It focuses on building a strong foundation in web standards, modern JavaScript, and React while creating a portfolio that proves your skills.",
+  "phases": [
+    {
+      "title": "Web Foundations",
+      "summary": "Master the core building blocks of the web: semantic HTML, CSS layout, and basic JavaScript logic.",
+      "milestones": [
+        {
+          "title": "Semantic HTML Structure",
+          "outcome": "You can write valid, semantic HTML for any page structure.",
+          "skill": "HTML and CSS",
+          "tasks": [
+            {
+              "title": "Read MDN HTML basics",
+              "description": "Study the MDN Web Docs guide on HTML elements and document structure. Focus on the difference between block and inline elements.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a static resume page",
+              "description": "Create a single HTML file for your resume using semantic tags like header, main, section, and footer. Ensure it is valid using the W3C validator.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Practice form creation",
+              "description": "Add a contact form to your resume page using input, label, and button elements. Ensure each input has a corresponding label for accessibility.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Review HTML validation errors",
+              "description": "Run your resume page through the W3C Nu Validator. Fix all reported errors and warnings to ensure clean code.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "CSS Layout Mastery",
+          "outcome": "You can create responsive layouts using Flexbox and Grid.",
+          "skill": "HTML and CSS",
+          "tasks": [
+            {
+              "title": "Learn Flexbox basics",
+              "description": "Complete the Flexbox Froggy game to understand justify-content, align-items, and flex-direction. Take notes on common use cases.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Build a responsive navbar",
+              "description": "Create a navigation bar that stacks vertically on mobile and horizontally on desktop using CSS Flexbox. Use media queries for responsiveness.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Study CSS Grid",
+              "description": "Read the MDN guide on CSS Grid. Understand the difference between grid-template-columns and grid-template-areas.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build a photo gallery",
+              "description": "Create a grid-based photo gallery that adjusts the number of columns based on screen width. Use auto-fit and minmax for flexibility.",
+              "type": "build",
+              "minutes": 75
+            }
+          ]
+        },
+        {
+          "title": "JavaScript Fundamentals",
+          "outcome": "You can write basic scripts to manipulate the DOM and handle events.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Complete JS basics course",
+              "description": "Finish the freeCodeCamp JavaScript Basics course. Focus on variables, functions, loops, and conditionals.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Build a to-do list",
+              "description": "Create a simple to-do list app that allows users to add and delete items. Use document.querySelector to interact with the DOM.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Practice event handling",
+              "description": "Add a 'clear all' button to your to-do list that removes all items when clicked. Use addEventListener for the button.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Debug console errors",
+              "description": "Intentionally introduce a bug in your to-do list. Use browser developer tools to find and fix the error in the console.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Engineering Skills",
+      "summary": "Deepen your JavaScript knowledge, introduce TypeScript, and learn professional development workflows.",
+      "milestones": [
+        {
+          "title": "Advanced JavaScript",
+          "outcome": "You can use modern JS features like ES6+, async/await, and array methods.",
+          "skill": "JavaScript",
+          "tasks": [
+            {
+              "title": "Learn ES6+ features",
+              "description": "Read the MDN guide on ES6 features. Focus on arrow functions, destructuring, and template literals.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Build a quote generator",
+              "description": "Create an app that fetches random quotes from a public API. Use async/await to handle the promise and display the quote.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Practice array methods",
+              "description": "Refactor your quote generator to use map, filter, and reduce for data manipulation. Add a feature to filter quotes by length.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Study closures and scope",
+              "description": "Read an article on JavaScript closures and scope. Write three small examples to demonstrate how closures work.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Code review your work",
+              "description": "Review your quote generator code for readability. Add comments explaining complex logic and rename variables for clarity.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "TypeScript Introduction",
+          "outcome": "You can add static typing to JavaScript projects to catch errors early.",
+          "skill": "TypeScript",
+          "tasks": [
+            {
+              "title": "Install TypeScript",
+              "description": "Set up a new project with TypeScript using npm. Create a tsconfig.json file and compile a simple script.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Type your quote generator",
+              "description": "Convert your quote generator JavaScript code to TypeScript. Define interfaces for the quote data and function parameters.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Practice type annotations",
+              "description": "Add type annotations to all variables and functions in your project. Use the compiler to catch any type mismatches.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Read TypeScript docs",
+              "description": "Study the official TypeScript handbook on types and interfaces. Understand the difference between interface and type alias.",
+              "type": "learn",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Development Workflow",
+          "outcome": "You can use Git for version control and npm for package management.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Learn Git basics",
+              "description": "Complete a Git tutorial covering init, add, commit, and push. Create a GitHub account and push your quote generator.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Set up npm scripts",
+              "description": "Add npm scripts to your project for development and build processes. Use a bundler like Vite to optimize your workflow.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice branching",
+              "description": "Create a new branch to add a dark mode feature to your quote generator. Merge it back into main after testing.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Write a README",
+              "description": "Create a README.md file for your project. Include setup instructions, features, and a screenshot of the app.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Projects",
+      "summary": "Build three substantial projects that demonstrate your ability to create responsive, interactive, and accessible web applications.",
+      "milestones": [
+        {
+          "title": "Responsive Portfolio Site",
+          "outcome": "You have a professional portfolio site that showcases your skills and projects.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design portfolio layout",
+              "description": "Sketch a wireframe for your portfolio site. Include sections for hero, about, projects, and contact. Ensure it is mobile-first.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build portfolio HTML",
+              "description": "Create the HTML structure for your portfolio. Use semantic tags and ensure all images have alt text.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Style with CSS",
+              "description": "Apply CSS to your portfolio using Flexbox and Grid. Add hover effects and transitions for interactivity.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add JavaScript interactivity",
+              "description": "Add a mobile menu toggle and smooth scrolling to your portfolio. Use event listeners to handle user interactions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Deploy portfolio",
+              "description": "Deploy your portfolio to GitHub Pages or Netlify. Test the live site on multiple devices and browsers.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "API Dashboard",
+          "outcome": "You have a dashboard that fetches and displays data from a public API.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Choose a public API",
+              "description": "Select a public API such as OpenWeather or CoinGecko. Read the documentation to understand the endpoints and response format.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build dashboard layout",
+              "description": "Create a dashboard layout with a sidebar and main content area. Use CSS Grid for the overall structure.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Fetch and display data",
+              "description": "Use fetch to retrieve data from your chosen API. Display the data in cards or a table within the dashboard.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add search functionality",
+              "description": "Implement a search bar that filters the displayed data. Use input events to trigger the search in real-time.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Handle loading states",
+              "description": "Add a loading spinner and error message to your dashboard. Ensure the UI remains usable while data is fetching.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Component Library",
+          "outcome": "You have a reusable component library with documentation.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Plan component structure",
+              "description": "List five components you want to build, such as Button, Card, and Modal. Define the props each component will accept.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Build base components",
+              "description": "Create the HTML and CSS for your Button and Card components. Ensure they are flexible and reusable.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Add JavaScript behavior",
+              "description": "Add JavaScript to your Modal component to handle opening and closing. Use event delegation for efficiency.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Write documentation",
+              "description": "Create a documentation page for your component library. Include usage examples and prop descriptions for each component.",
+              "type": "reflect",
+              "minutes": 60
+            },
+            {
+              "title": "Test components",
+              "description": "Test your components in a demo page. Ensure they work correctly with different props and content.",
+              "type": "practice",
+              "minutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Job Readiness",
+      "summary": "Master React, accessibility, and performance while preparing for interviews and client work.",
+      "milestones": [
+        {
+          "title": "React Fundamentals",
+          "outcome": "You can build interactive UIs with React components and state management.",
+          "skill": "React",
+          "tasks": [
+            {
+              "title": "Learn React basics",
+              "description": "Complete the React section of freeCodeCamp. Understand components, props, and state.",
+              "type": "learn",
+              "minutes": 90
+            },
+            {
+              "title": "Build a React to-do list",
+              "description": "Rebuild your to-do list using React. Use useState for managing the list of items.",
+              "type": "build",
+              "minutes": 90
+            },
+            {
+              "title": "Practice component composition",
+              "description": "Break your to-do list into smaller components such as Item and Input. Pass props between them.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Study React hooks",
+              "description": "Read the React docs on useEffect and useContext. Understand when to use each hook.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Refactor with hooks",
+              "description": "Refactor your to-do list to use useEffect for side effects. Ensure the component re-renders correctly.",
+              "type": "reflect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "Accessibility and Performance",
+          "outcome": "You can build accessible and performant web applications.",
+          "skill": "Accessibility",
+          "tasks": [
+            {
+              "title": "Learn accessibility basics",
+              "description": "Read the MDN guide on web accessibility. Understand ARIA roles and keyboard navigation.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Audit your portfolio",
+              "description": "Use the WAVE tool to audit your portfolio site for accessibility issues. Fix all critical errors.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Add ARIA attributes",
+              "description": "Add ARIA labels to your interactive elements. Ensure your modal is accessible with keyboard navigation.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Optimize images",
+              "description": "Compress images in your portfolio and use the loading=\"lazy\" attribute. Measure the impact on load time.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Performance Optimization",
+          "outcome": "You can identify and fix performance bottlenecks in web applications.",
+          "skill": "Web performance",
+          "tasks": [
+            {
+              "title": "Learn performance metrics",
+              "description": "Read the Google Web Performance guide. Understand Core Web Vitals such as LCP and FID.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Profile your dashboard",
+              "description": "Use Lighthouse to profile your API dashboard. Identify the top three performance issues.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Optimize JavaScript",
+              "description": "Code-split your React app using React.lazy. Ensure only necessary code loads initially.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Minify assets",
+              "description": "Configure your build tool to minify JavaScript and CSS. Verify the reduction in file size.",
+              "type": "build",
+              "minutes": 30
+            },
+            {
+              "title": "Review performance report",
+              "description": "Re-run Lighthouse after optimizations. Document the improvements in your project README.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Interview Preparation",
+          "outcome": "You are ready to apply for jobs and handle technical interviews.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Review core concepts",
+              "description": "Create a cheat sheet of key JavaScript, CSS, and React concepts. Practice explaining them out loud.",
+              "type": "reflect",
+              "minutes": 60
+            },
+            {
+              "title": "Solve coding challenges",
+              "description": "Complete five medium-difficulty problems on LeetCode or HackerRank. Focus on arrays and strings.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Mock interview",
+              "description": "Record yourself answering common frontend interview questions. Review the recording for clarity and confidence.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Update resume and LinkedIn",
+              "description": "Tailor your resume to highlight your projects and skills. Update your LinkedIn profile with your latest work.",
+              "type": "connect",
+              "minutes": 45
+            },
+            {
+              "title": "Apply to jobs",
+              "description": "Apply to five frontend positions. Customize your cover letter for each application.",
+              "type": "connect",
+              "minutes": 60
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "frontend.beginner",
+  "roleId": "frontend",
+  "level": "beginner",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:04:17.767Z",
+  "model": "qwen/qwen3.8-27b"
+}

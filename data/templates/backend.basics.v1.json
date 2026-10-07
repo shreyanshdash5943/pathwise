@@ -1,0 +1,419 @@
+{
+  "title": "Backend Engineer Learning Roadmap",
+  "summary": "A focused pathway to solidify fundamentals, master core backend skills, build a showcase portfolio, and prepare for job success. Each phase blends learning, hands‑on practice, and reflection.",
+  "phases": [
+    {
+      "title": "Foundations",
+      "summary": "Strengthen core programming and data fundamentals.",
+      "milestones": [
+        {
+          "title": "Deepen Python (or Go) fundamentals",
+          "outcome": "Write clean, idiomatic code and debug confidently.",
+          "skill": "Python or Go",
+          "tasks": [
+            {
+              "title": "Read Python data structures chapter",
+              "description": "Study lists, dicts, sets, and tuples in the official Python tutorial.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Implement a CLI todo app",
+              "description": "Create a command‑line tool that adds, lists, and removes tasks, using functions and modules.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Debug the todo app with pdb",
+              "description": "Set breakpoints, inspect variables, and step through code to fix a deliberate bug.",
+              "type": "practice",
+              "minutes": 30
+            },
+            {
+              "title": "Write a summary of key language idioms",
+              "description": "Reflect on three Python idioms you’ll use in future projects.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "SQL and Data Modelling Basics",
+          "outcome": "Design relational schemas and run queries against a database.",
+          "skill": "SQL and data modelling",
+          "tasks": [
+            {
+              "title": "Complete SQL basics on freeCodeCamp",
+              "description": "Follow the interactive lessons covering SELECT, WHERE, JOIN, and GROUP BY.",
+              "type": "learn",
+              "minutes": 60
+            },
+            {
+              "title": "Model a blog database on paper",
+              "description": "Sketch tables for users, posts, comments, and relationships, noting primary/foreign keys.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Create the schema in PostgreSQL",
+              "description": "Write CREATE TABLE statements and populate with sample data using psql.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Run analytical queries",
+              "description": "Write queries to count posts per user and find most commented articles.",
+              "type": "practice",
+              "minutes": 40
+            },
+            {
+              "title": "Document lessons learned",
+              "description": "Summarize three modeling pitfalls you avoided.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Skills",
+      "summary": "Learn essential backend patterns and tools.",
+      "milestones": [
+        {
+          "title": "REST API Design",
+          "outcome": "Design and document clean, versioned APIs.",
+          "skill": "REST API design",
+          "tasks": [
+            {
+              "title": "Read RESTful API design guide on MDN",
+              "description": "Focus on resources, verbs, status codes, and pagination.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Sketch API spec for a URL shortener",
+              "description": "Define endpoints, request/response schemas, and error handling on paper.",
+              "type": "build",
+              "minutes": 40
+            },
+            {
+              "title": "Create OpenAPI spec with Swagger Editor",
+              "description": "Translate the sketch into a YAML file and validate it online.",
+              "type": "practice",
+              "minutes": 50
+            },
+            {
+              "title": "Review a public API spec",
+              "description": "Pick GitHub's API, note good practices and areas for improvement.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Authentication & Authorization",
+          "outcome": "Implement secure token‑based auth in services.",
+          "skill": "Authentication",
+          "tasks": [
+            {
+              "title": "Watch OAuth 2.0 overview on YouTube (free channel)",
+              "description": "Understand grant types, scopes, and token flow.",
+              "type": "learn",
+              "minutes": 30
+            },
+            {
+              "title": "Add JWT login to the todo CLI",
+              "description": "Generate a token on login and require it for protected commands.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Write unit tests for auth middleware",
+              "description": "Assert that valid tokens pass and invalid ones are rejected.",
+              "type": "practice",
+              "minutes": 45
+            },
+            {
+              "title": "Summarize security best practices",
+              "description": "Reflect on password storage, token expiration, and revocation.",
+              "type": "reflect",
+              "minutes": 20
+            }
+          ]
+        },
+        {
+          "title": "Caching and Queues",
+          "outcome": "Integrate Redis caching and a background queue into services.",
+          "skill": "Caching and queues",
+          "tasks": [
+            {
+              "title": "Read Redis quick start on redis.io",
+              "description": "Learn basic commands and data types.",
+              "type": "learn",
+              "minutes": 35
+            },
+            {
+              "title": "Cache recent blog posts in Redis",
+              "description": "Add get/set logic around the posts endpoint using a Python Redis client.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Set up a simple Celery worker",
+              "description": "Create a task that sends an email reminder and run it asynchronously.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Document trade‑offs of caching",
+              "description": "Reflect on consistency, expiration, and cache‑aside patterns.",
+              "type": "reflect",
+              "minutes": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proof of Work",
+      "summary": "Build portfolio projects that showcase the skills.",
+      "milestones": [
+        {
+          "title": "REST API with Auth and Tests",
+          "outcome": "A production‑ready API demonstrating authentication, CRUD, and test coverage.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Define API spec in OpenAPI",
+              "description": "Create endpoints for users, items, and auth using Swagger Editor.",
+              "type": "build",
+              "minutes": 60
+            },
+            {
+              "title": "Implement API with FastAPI (Python)",
+              "description": "Code routes, models, and JWT auth following the spec.",
+              "type": "build",
+              "minutes": 120
+            },
+            {
+              "title": "Write pytest suite covering all routes",
+              "description": "Include success and failure cases for each endpoint.",
+              "type": "practice",
+              "minutes": 90
+            },
+            {
+              "title": "Add Dockerfile and docker‑compose",
+              "description": "Containerize the app with PostgreSQL and Redis services.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Publish repo on GitHub with README",
+              "description": "Document setup steps, design decisions, and how to run tests.",
+              "type": "connect",
+              "minutes": 45
+            }
+          ]
+        },
+        {
+          "title": "URL Shortener with Analytics",
+          "outcome": "A service that creates short links, tracks clicks, and exposes analytics via API.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Model short URL and click tables",
+              "description": "Design schema for URLs, owners, and click events.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Implement shortening endpoint",
+              "description": "Generate unique keys, store mapping, and return short URL.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Add click tracking middleware",
+              "description": "Record each redirect in the analytics table.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Expose analytics endpoint with pagination",
+              "description": "Return total clicks and per‑day breakdown for a given short URL.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Write integration tests using HTTPX",
+              "description": "Validate end‑to‑end flow from creation to analytics retrieval.",
+              "type": "practice",
+              "minutes": 70
+            }
+          ]
+        },
+        {
+          "title": "Background Job Worker",
+          "outcome": "A reliable worker processing queued tasks such as email sending or image resizing.",
+          "skill": null,
+          "tasks": [
+            {
+              "title": "Design job schema and queue interface",
+              "description": "Use PostgreSQL LISTEN/NOTIFY or Redis list for pending jobs.",
+              "type": "build",
+              "minutes": 50
+            },
+            {
+              "title": "Implement worker loop with graceful shutdown",
+              "description": "Consume jobs, execute dummy work, and log results.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Add retry and dead‑letter handling",
+              "description": "Track attempts and move failed jobs after max retries.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Create CLI to enqueue sample jobs",
+              "description": "Allow users to submit jobs with parameters via command line.",
+              "type": "build",
+              "minutes": 55
+            },
+            {
+              "title": "Document architecture diagram",
+              "description": "Explain how producer, queue, and worker interact.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Ready",
+      "summary": "Advance topics and prepare for job or freelance opportunities.",
+      "milestones": [
+        {
+          "title": "Performance Tuning and Monitoring",
+          "outcome": "Identify bottlenecks and set up observability for services.",
+          "skill": "Testing",
+          "tasks": [
+            {
+              "title": "Read profiling guide on Python Docs",
+              "description": "Learn cProfile and line‑profiler usage.",
+              "type": "learn",
+              "minutes": 40
+            },
+            {
+              "title": "Profile the URL shortener API",
+              "description": "Measure request latency and pinpoint slow database queries.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Add Prometheus metrics endpoint",
+              "description": "Expose request counts, durations, and error rates.",
+              "type": "build",
+              "minutes": 70
+            },
+            {
+              "title": "Set up Grafana dashboard (free tier)",
+              "description": "Visualize metrics and create alerts for high latency.",
+              "type": "connect",
+              "minutes": 80
+            },
+            {
+              "title": "Write a brief post‑mortem of a simulated outage",
+              "description": "Reflect on root cause, mitigation, and future safeguards.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Advanced Testing Strategies",
+          "outcome": "Apply property‑based, contract, and load testing to ensure reliability.",
+          "skill": "Testing",
+          "tasks": [
+            {
+              "title": "Explore hypothesis library tutorial",
+              "description": "Write property‑based tests for input validation functions.",
+              "type": "learn",
+              "minutes": 45
+            },
+            {
+              "title": "Create contract tests with Pact",
+              "description": "Define consumer expectations and verify provider compliance.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Run load test with k6 (free)",
+              "description": "Simulate 1000 concurrent users against the auth endpoint and record results.",
+              "type": "practice",
+              "minutes": 70
+            },
+            {
+              "title": "Document test coverage report",
+              "description": "Generate an HTML report with coverage.py and summarize gaps.",
+              "type": "reflect",
+              "minutes": 25
+            },
+            {
+              "title": "Share test strategy on LinkedIn",
+              "description": "Connect with peers and get feedback on your approach.",
+              "type": "connect",
+              "minutes": 30
+            }
+          ]
+        },
+        {
+          "title": "Job/Client Readiness",
+          "outcome": "Present a polished portfolio and interview confidently.",
+          "skill": "REST API design",
+          "tasks": [
+            {
+              "title": "Craft a one‑page technical summary",
+              "description": "Highlight key projects, tech stack, and measurable impact.",
+              "type": "build",
+              "minutes": 45
+            },
+            {
+              "title": "Practice system design interview questions",
+              "description": "Use free resources like Grokking the System Design Interview to outline solutions.",
+              "type": "practice",
+              "minutes": 60
+            },
+            {
+              "title": "Mock a behavioral interview with a peer",
+              "description": "Answer common questions and receive constructive feedback.",
+              "type": "connect",
+              "minutes": 50
+            },
+            {
+              "title": "Set up a personal domain and deploy a project",
+              "description": "Host one portfolio API on Render or Fly.io with HTTPS.",
+              "type": "build",
+              "minutes": 80
+            },
+            {
+              "title": "Write a reflection on next learning steps",
+              "description": "Identify gaps and plan continued growth after landing a role.",
+              "type": "reflect",
+              "minutes": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "backend.basics",
+  "roleId": "backend",
+  "level": "basics",
+  "version": 1,
+  "generatedAt": "2026-10-07T04:08:44.108Z",
+  "model": "openai/gpt-oss-120b"
+}
