@@ -1,6 +1,7 @@
 import "server-only";
 import { revalidateTag, unstable_cache } from "next/cache";
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { getAnonSupabase } from "./supabase";
 import { loadTemplate } from "./templates";
 import { assemblePlan, parseInputs } from "./templates/personalize";
 
@@ -72,10 +73,7 @@ type Row = {
 };
 
 async function fetchProfile(username: string): Promise<PublicProfile | null> {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !anon) throw new Error("Supabase environment variables are missing.");
-  const supabase = createClient(url, anon, { auth: { persistSession: false, autoRefreshToken: false } });
+  const supabase = getAnonSupabase();
 
   const { data, error } = await supabase.rpc("get_public_profile", { p_username: username });
   if (error) throw error;

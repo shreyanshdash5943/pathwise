@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
@@ -57,8 +57,16 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
   const q = QUESTIONS[index];
   const selected = answers[q.id] ?? [];
   const matches = useMemo(() => (stage === "paths" ? matchRoles(answers) : []), [stage, answers]);
+  // Furthest question someone can jump to: every question before it is answered.
+  const reachable = useMemo(() => {
+    const firstOpen = QUESTIONS.findIndex((x) => !(answers[x.id]?.length));
+    return firstOpen === -1 ? QUESTIONS.length - 1 : firstOpen;
+  }, [answers]);
+  const answered = selected.length > 0;
+  const isLast = index === QUESTIONS.length - 1;
 
   const goNext = useCallback(() => {
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
     setDirection(1);
     if (index < QUESTIONS.length - 1) setIndex((i) => i + 1);
     else {
@@ -73,6 +81,16 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
     if (stage === "paths") setStage("questions");
     else if (index > 0) setIndex((i) => i - 1);
   }, [index, stage]);
+
+  const goTo = useCallback(
+    (i: number) => {
+      if (i === index || i < 0 || i > reachable) return;
+      if (advanceTimer.current) clearTimeout(advanceTimer.current);
+      setDirection(i > index ? 1 : -1);
+      setIndex(i);
+    },
+    [index, reachable]
+  );
 
   const choose = useCallback(
     (optionId: string) => {
@@ -100,14 +118,18 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
       if (Number.isInteger(n) && n >= 1 && n <= q.options.length) {
         e.preventDefault();
         choose(q.options[n - 1].id);
-      } else if (e.key === "Enter" && q.multi && selected.length > 0) {
+      } else if ((e.key === "Enter" && q.multi) || e.key === "ArrowRight") {
+        if (selected.length === 0) return;
         e.preventDefault();
         goNext();
+      } else if (e.key === "ArrowLeft" && index > 0) {
+        e.preventDefault();
+        goBack();
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [stage, q, selected.length, choose, goNext]);
+  }, [stage, q, index, selected.length, choose, goNext, goBack]);
 
   async function build() {
     if (!roleId) return;
@@ -222,15 +244,46 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
                 })}
               </div>
 
-              <div className="mt-10 flex items-center justify-between">
+              <div className="mt-10 flex items-center justify-between gap-3">
                 <button type="button" onClick={goBack} disabled={index === 0} className="btn-quiet -ml-3 px-3 disabled:invisible">
                   <ArrowLeft className="h-4 w-4" /> Back
                 </button>
-                {q.multi && (
-                  <button type="button" onClick={goNext} disabled={selected.length === 0} className="btn-primary">
-                    Continue
-                  </button>
-                )}
+
+                <nav aria-label="Questions" className="flex items-center gap-1.5">
+                  {QUESTIONS.map((x, i) => {
+                    const done = (answers[x.id]?.length ?? 0) > 0;
+                    const current = i === index;
+                    return (
+                      <button
+                        key={x.id}
+                        type="button"
+                        onClick={() => goTo(i)}
+                        disabled={i > reachable}
+                        aria-current={current ? "step" : undefined}
+                        aria-label={`Question ${i + 1}${done ? ", answered" : ""}`}
+                        className="grid h-6 w-4 place-items-center disabled:cursor-not-allowed"
+                      >
+                        <span
+                          className={clsx(
+                            "block h-1.5 rounded-full transition-all duration-200",
+                            current ? "w-4 bg-accent" : done ? "w-1.5 bg-ink-soft" : "w-1.5 bg-line-strong"
+                          )}
+                        />
+                      </button>
+                    );
+                  })}
+                </nav>
+
+                <button
+                  type="button"
+                  onClick={goNext}
+                  disabled={!answered}
+                  title={answered ? undefined : "Pick an answer first"}
+                  className="btn-primary"
+                >
+                  {isLast ? "See my routes" : "Next"}
+                  {!isLast && <ArrowRight className="h-4 w-4" />}
+                </button>
               </div>
             </motion.section>
           )}

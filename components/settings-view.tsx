@@ -6,11 +6,22 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import { PageHeader } from "./page-header";
 import { Toast, useToast } from "./toast";
+import { RemindersPanel } from "./reminders-panel";
 
 const OPTIONS = [30, 60, 90, 120, 180];
 const label = (m: number) => (m < 60 ? `${m} min` : `${m / 60} hr`);
 
-export function SettingsView({ dailyMinutes, roleTitle, summary }: { dailyMinutes: number; roleTitle: string; summary: { question: string; answer: string }[] }) {
+export function SettingsView({
+  dailyMinutes,
+  roleTitle,
+  summary,
+  reminders,
+}: {
+  dailyMinutes: number;
+  roleTitle: string;
+  summary: { question: string; answer: string }[];
+  reminders: { daily_enabled: boolean; daily_hour: number; weekly_enabled: boolean } | null;
+}) {
   const router = useRouter();
   const [minutes, setMinutes] = useState(dailyMinutes);
   const [saving, setSaving] = useState(false);
@@ -81,6 +92,8 @@ export function SettingsView({ dailyMinutes, roleTitle, summary }: { dailyMinute
             })}
           </div>
         </section>
+
+        <RemindersPanel initial={reminders} show={show} />
 
         <section className="panel p-5 sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

@@ -22,6 +22,17 @@ export async function getSupabase(): Promise<{ supabase: SupabaseClient; userId:
   return { supabase, userId };
 }
 
+/**
+ * Supabase client with no user. It can only call functions granted to anon, such as
+ * get_public_profile() and the secret-checked reminder job functions.
+ */
+export function getAnonSupabase(): SupabaseClient {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !anon) throw new Error("Supabase environment variables are missing.");
+  return createClient(url, anon, { auth: { persistSession: false, autoRefreshToken: false } });
+}
+
 export class UnauthorizedError extends Error {
   constructor() {
     super("Not signed in");

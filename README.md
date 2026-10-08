@@ -82,6 +82,7 @@ npm run typecheck  # TypeScript only
 | Optional resume AI tagger | `lib/ai.ts` |
 | Proof of work | `lib/proofs.ts`, `app/api/proofs/`, `components/proof-dialog.tsx` |
 | Public profiles (`/u/<username>`) | `lib/public-profile.ts`, `app/u/[username]/` |
+| Reminders (web push) | `lib/push.ts`, `lib/reminders.ts`, `app/api/cron/reminders/`, `public/sw.js`, `components/reminders-panel.tsx` |
 | News sources (DEV + Hacker News, no keys) | `lib/news.ts` |
 | Database schema and RLS | `supabase/schema.sql` |
 
@@ -90,6 +91,8 @@ npm run typecheck  # TypeScript only
 **Profile.** Name, email and photo come from Clerk. `user_details` holds the headline, links, skills, and which of the role's skills the user already knows; ticking those skips their learn and practice tasks. Resumes go straight from the browser to a private Storage bucket via a signed URL. Only the matched skill names and a file hash are stored, not the text.
 
 **Proof of work and public profiles.** Finishing a build task prompts for a link to what was made; proofs belong to the person, so they survive starting a new plan. Making a profile public gives it a page at `/u/<username>`. Visitors read it through `get_public_profile()`, which returns only safe fields (never email, resume or answers), and the page is cached for 5 minutes and refreshed straight away when its owner edits anything.
+
+**Reminders.** Web push only, so it's free at any scale. People turn it on per device in Settings and pick an hour (in their time zone); they get a daily nudge only on days they haven't started, and a Sunday summary instead of the nudge that day. An hourly job (`.github/workflows/reminders.yml`, or Vercel Cron) calls `/api/cron/reminders`, which claims due rows through an index, so each run's cost tracks how many are due, not total users. The job authenticates to the database with `CRON_SECRET` (its hash is stored in `private.app_config`), so the service-role key is still never used. Dead browser subscriptions are removed automatically. On iPhone, notifications need Pathwise added to the Home Screen first.
 
 **Daily checklist logic.** Each day, unfinished tasks from earlier days roll forward, then the list is topped up with the next roadmap tasks until it fills the user's daily time. Every step is idempotent, so double requests don't double-schedule. "Today" is computed in the user's own time zone, captured at onboarding.
 
@@ -101,6 +104,6 @@ Add entries to `ROLES` in `lib/roles.ts` (each needs 6 skills and 3 projects). T
 
 ## Not included yet
 
-- Push or email reminders (Firebase Cloud Messaging or a cron + email service would fit here)
+- Email reminders (web push covers it for free; email would add cost at scale)
 - Weekly AI check-ins that re-plan the roadmap
 - Payments
