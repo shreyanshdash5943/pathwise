@@ -1,24 +1,24 @@
 {
-  "title": "UX Designer Learning Roadmap",
-  "summary": "A step‑by‑step guide to move from zero experience to a portfolio‑ready UX designer. Focuses on research, design fundamentals, and job‑ready skills.",
+  "title": "UX Designer learning roadmap",
+  "summary": "A step-by-step guide to move from zero experience to a portfolio-ready UX designer. Focuses on research, design fundamentals, and job-ready skills.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build a solid understanding of design thinking and basic UX concepts.",
       "milestones": [
         {
-          "title": "Design Thinking Basics",
+          "title": "Design thinking basics",
           "outcome": "Can explain the five stages of design thinking and apply them to simple problems.",
           "skill": "User research",
           "tasks": [
             {
-              "title": "Read Design Thinking overview",
+              "title": "Read Design thinking overview",
               "description": "Study the introductory article on the Interaction Design Foundation site.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Watch Design Thinking video",
+              "title": "Watch Design thinking video",
               "description": "Watch the freeCodeCamp video on design thinking fundamentals.",
               "type": "learn",
               "minutes": 45
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Human‑Centered Design Principles",
+          "title": "Human-Centered Design principles",
           "outcome": "Can identify core usability principles and evaluate simple interfaces.",
           "skill": "Information architecture",
           "tasks": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Intro to Visual Design",
+          "title": "Intro to visual Design",
           "outcome": "Can apply basic color, typography, and spacing rules in mockups.",
           "skill": "Wireframing",
           "tasks": [
@@ -86,7 +86,7 @@
               "minutes": 45
             },
             {
-              "title": "Create low‑fidelity wireframe",
+              "title": "Create low-fidelity wireframe",
               "description": "Use pen and grid paper to sketch a login screen layout.",
               "type": "build",
               "minutes": 60
@@ -102,11 +102,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop research, prototyping, and design critique abilities.",
       "milestones": [
         {
-          "title": "User Research Methods",
+          "title": "User research methods",
           "outcome": "Can plan and conduct a basic interview or survey with users.",
           "skill": "User research",
           "tasks": [
@@ -118,7 +118,7 @@
             },
             {
               "title": "Draft interview script",
-              "description": "Write a 5‑question script for a target user group.",
+              "description": "Write a 5-question script for a target user group.",
               "type": "build",
               "minutes": 45
             },
@@ -130,21 +130,21 @@
             },
             {
               "title": "Conduct first interview",
-              "description": "Run a 20‑minute interview and record key insights.",
+              "description": "Run a 20-minute interview and record key insights.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Summarize findings",
-              "description": "Create a one‑page affinity diagram of the interview data.",
+              "description": "Create a one-page affinity diagram of the interview data.",
               "type": "reflect",
               "minutes": 45
             }
           ]
         },
         {
-          "title": "Information Architecture & Flow",
-          "outcome": "Can create user flows and sitemaps for moderate‑complex apps.",
+          "title": "Information architecture & flow",
+          "outcome": "Can create user flows and sitemaps for moderate-complex apps.",
           "skill": "Information architecture",
           "tasks": [
             {
@@ -155,7 +155,7 @@
             },
             {
               "title": "Perform quick card sort",
-              "description": "Use an online free card‑sorting tool with 5 friends to group app features.",
+              "description": "Use an online free card-sorting tool with 5 friends to group app features.",
               "type": "practice",
               "minutes": 45
             },
@@ -175,7 +175,7 @@
         },
         {
           "title": "Prototyping in Figma",
-          "outcome": "Can build interactive low‑fidelity prototypes and share them for feedback.",
+          "outcome": "Can build interactive low-fidelity prototypes and share them for feedback.",
           "skill": "Figma",
           "tasks": [
             {
@@ -213,11 +213,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready case studies demonstrating end‑to‑end UX process.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready case studies demonstrating end-to-end UX process.",
       "milestones": [
         {
-          "title": "App Redesign Case Study",
+          "title": "App redesign case study",
           "outcome": "A documented redesign project that showcases research, IA, wireframes, and prototype.",
           "skill": null,
           "tasks": [
@@ -228,7 +228,7 @@
               "minutes": 20
             },
             {
-              "title": "Conduct 5‑minute heuristic review",
+              "title": "Conduct 5-minute heuristic review",
               "description": "Evaluate the current app using Nielsen’s heuristics and note pain points.",
               "type": "practice",
               "minutes": 45
@@ -241,7 +241,7 @@
             },
             {
               "title": "Create new IA and wireframes",
-              "description": "Design a new site map and low‑fidelity wireframes in Figma.",
+              "description": "Design a new site map and low-fidelity wireframes in Figma.",
               "type": "build",
               "minutes": 90
             },
@@ -253,14 +253,14 @@
             },
             {
               "title": "Write case study narrative",
-              "description": "Draft a 800‑word case study describing problem, process, and outcome.",
+              "description": "Draft a 800-word case study describing problem, process, and outcome.",
               "type": "reflect",
               "minutes": 60
             }
           ]
         },
         {
-          "title": "Usability Study Project",
+          "title": "Usability study project",
           "outcome": "A documented usability test with findings and design recommendations.",
           "skill": null,
           "tasks": [
@@ -272,19 +272,19 @@
             },
             {
               "title": "Recruit 5 participants",
-              "description": "Use a free participant‑recruiting sheet to enlist five testers.",
+              "description": "Use a free participant-recruiting sheet to enlist five testers.",
               "type": "connect",
               "minutes": 45
             },
             {
               "title": "Create test script",
-              "description": "Write a step‑by‑step script for participants to follow.",
+              "description": "Write a step-by-step script for participants to follow.",
               "type": "build",
               "minutes": 40
             },
             {
               "title": "Conduct remote test sessions",
-              "description": "Run three 30‑minute remote sessions and record observations.",
+              "description": "Run three 30-minute remote sessions and record observations.",
               "type": "practice",
               "minutes": 120
             },
@@ -303,8 +303,8 @@
           ]
         },
         {
-          "title": "Onboarding Flow Prototype",
-          "outcome": "An interactive prototype that demonstrates a smooth first‑time user experience.",
+          "title": "Onboarding flow prototype",
+          "outcome": "An interactive prototype that demonstrates a smooth first-time user experience.",
           "skill": null,
           "tasks": [
             {
@@ -314,14 +314,14 @@
               "minutes": 30
             },
             {
-              "title": "Sketch low‑fidelity screens",
+              "title": "Sketch low-fidelity screens",
               "description": "Draw paper sketches for each onboarding screen.",
               "type": "build",
               "minutes": 60
             },
             {
               "title": "Prototype in Figma",
-              "description": "Create a high‑fidelity interactive prototype of the onboarding flow.",
+              "description": "Create a high-fidelity interactive prototype of the onboarding flow.",
               "type": "build",
               "minutes": 90
             },
@@ -348,11 +348,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance expertise, build professional presence, and prepare for job or freelance opportunities.",
       "milestones": [
         {
-          "title": "Design Critique & Feedback Loop",
+          "title": "Design Critique & feedback loop",
           "outcome": "Can give and receive constructive design critiques confidently.",
           "skill": "Design critique",
           "tasks": [
@@ -389,7 +389,7 @@
           ]
         },
         {
-          "title": "Advanced Prototyping & Microinteractions",
+          "title": "Advanced prototyping & microinteractions",
           "outcome": "Can design and prototype subtle interactions that enhance usability.",
           "skill": "Figma",
           "tasks": [
@@ -426,7 +426,7 @@
           ]
         },
         {
-          "title": "Job & Freelance Readiness",
+          "title": "Job & freelance readiness",
           "outcome": "Can market yourself, interview effectively, and secure UX work.",
           "skill": "Usability testing",
           "tasks": [
@@ -437,8 +437,8 @@
               "minutes": 45
             },
             {
-              "title": "Create a one‑page resume",
-              "description": "Use a free template to craft a concise UX‑focused resume.",
+              "title": "Create a one-page resume",
+              "description": "Use a free template to craft a concise UX-focused resume.",
               "type": "build",
               "minutes": 30
             },

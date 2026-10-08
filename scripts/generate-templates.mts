@@ -14,6 +14,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ROLES, type Role } from "../lib/roles.ts";
+import { STYLE_RULES, lintTemplate, normalizeText } from "./template-style.mts";
 import { LEVELS, TemplateBodySchema, TemplateFileSchema, templateId, type Level, type TemplateBody } from "../lib/templates/schema.ts";
 
 const ROOT = join(import.meta.dirname, "..");
@@ -77,7 +78,8 @@ Rules:
 - Name well-known free resources where helpful (official docs, freeCodeCamp, MDN, Kaggle, etc.) but never invent URLs.
 - Mix task types. Every milestone has at least one build or practice task.
 - This roadmap is shared by many people, so do not assume a learning style, schedule, or personal details.
-- Plain, friendly language. No emojis.`;
+- Plain, friendly language. No emojis.
+${STYLE_RULES}`;
 
 function userPrompt(role: Role, level: Level) {
   return `Target role: ${role.title}
@@ -160,12 +162,14 @@ Check AI_API_KEY and AI_MODEL in .env.local.`);
       const json = (await res.json()) as { choices?: { message?: { content?: string } }[] };
       const content = (json.choices?.[0]?.message?.content ?? "").replace(/<think>[\s\S]*?<\/think>/g, "").replace(/```json|```/g, "").trim();
       const raw = JSON.parse(content);
-      const parsed = TemplateBodySchema.parse(raw);
+      const parsed = TemplateBodySchema.parse(normalizeText(raw));
       for (const p of parsed.phases) for (const m of p.milestones) if (m.skill && !role.skills.includes(m.skill)) m.skill = null;
       // Skills without a milestone can't be skipped from the profile page, so retry if too many are missing.
       const tagged = new Set(parsed.phases.flatMap((p) => p.milestones.map((m) => m.skill)));
       const untagged = role.skills.filter((s) => !tagged.has(s));
       if (untagged.length > 1) throw new Error(`no milestone for ${untagged.length} skills: ${untagged.join(", ")}`);
+      const style = lintTemplate(parsed, role);
+      if (style.length > 2) throw new Error(`${style.length} style issues, e.g. ${style[0]}`);
       return parsed;
     } catch (err) {
       if (err instanceof FatalError) throw err;

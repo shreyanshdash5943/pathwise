@@ -1,13 +1,13 @@
 {
-  "title": "Site Reliability Engineer Learning Roadmap",
-  "summary": "A step‑by‑step guide to become a competent SRE from scratch, covering Linux fundamentals to advanced reliability practices. Follow the phases to build skills, create portfolio projects, and prepare for job readiness.",
+  "title": "Site Reliability Engineer learning roadmap",
+  "summary": "A step-by-step guide to become a competent SRE from scratch, covering Linux fundamentals to advanced reliability practices. Follow the phases to build skills, create portfolio projects, and prepare for job readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build core system knowledge and basic programming ability.",
       "milestones": [
         {
-          "title": "Linux and Networking Basics",
+          "title": "Linux and networking basics",
           "outcome": "You can navigate the Linux command line, manage services, and troubleshoot basic network issues.",
           "skill": "Linux and networking",
           "tasks": [
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "Introductory Programming",
+          "title": "Introductory programming",
           "outcome": "You can write simple scripts to automate system tasks.",
           "skill": "Programming",
           "tasks": [
@@ -83,16 +83,16 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop observability, incident handling, and reliability concepts.",
       "milestones": [
         {
-          "title": "Observability Foundations",
-          "outcome": "You can instrument services with metrics, logs, and traces using open‑source tools.",
+          "title": "Observability foundations",
+          "outcome": "You can instrument services with metrics, logs, and traces using open-source tools.",
           "skill": "Observability",
           "tasks": [
             {
-              "title": "Read Prometheus official docs (Getting Started)",
+              "title": "Read Prometheus official docs (getting started)",
               "description": "Understand the architecture, data model, and basic configuration.",
               "type": "learn",
               "minutes": 45
@@ -117,7 +117,7 @@
             },
             {
               "title": "Summarize key observability pillars",
-              "description": "Write a one‑page summary of metrics, logs, and traces and their trade‑offs.",
+              "description": "Write a one-page summary of metrics, logs, and traces and their trade-offs.",
               "type": "reflect",
               "minutes": 20
             }
@@ -147,13 +147,13 @@
               "minutes": 50
             },
             {
-              "title": "Write a post‑mortem draft",
-              "description": "Structure a post‑mortem with timeline, root cause, and remediation actions.",
+              "title": "Write a post-mortem draft",
+              "description": "Structure a post-mortem with timeline, root cause, and remediation actions.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Discuss the post‑mortem with a peer",
+              "title": "Discuss the post-mortem with a peer",
               "description": "Share the draft in a community Slack channel and gather feedback.",
               "type": "connect",
               "minutes": 30
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "title": "Distributed Systems Basics",
+          "title": "Distributed Systems basics",
           "outcome": "You understand key concepts like replication, consensus, and fault tolerance.",
           "skill": "Distributed systems",
           "tasks": [
@@ -172,7 +172,7 @@
               "minutes": 55
             },
             {
-              "title": "Deploy a single‑node Redis cluster",
+              "title": "Deploy a single-node Redis cluster",
               "description": "Install Redis, enable persistence, and test basic read/write operations.",
               "type": "build",
               "minutes": 45
@@ -185,12 +185,12 @@
             },
             {
               "title": "Explain CAP theorem in your own words",
-              "description": "Write a brief explanation and give a real‑world example.",
+              "description": "Write a brief explanation and give a real-world example.",
               "type": "reflect",
               "minutes": 20
             },
             {
-              "title": "Join a distributed‑systems meetup group online",
+              "title": "Join a distributed-systems meetup group online",
               "description": "Introduce yourself and ask a question about replication strategies.",
               "type": "connect",
               "minutes": 25
@@ -200,11 +200,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio projects that showcase SRE capabilities.",
       "milestones": [
         {
-          "title": "Monitoring Stack with Alerts",
+          "title": "Monitoring stack with alerts",
           "outcome": "You can deploy a full monitoring solution and configure alerting rules.",
           "skill": null,
           "tasks": [
@@ -241,7 +241,7 @@
           ]
         },
         {
-          "title": "Load Test and Capacity Report",
+          "title": "Load test and capacity report",
           "outcome": "You can perform load testing, analyze results, and recommend capacity changes.",
           "skill": null,
           "tasks": [
@@ -278,8 +278,8 @@
           ]
         },
         {
-          "title": "Simulated Outage Post‑mortem",
-          "outcome": "You can produce a professional post‑mortem that demonstrates root‑cause analysis.",
+          "title": "Simulated outage post-mortem",
+          "outcome": "You can produce a professional post-mortem that demonstrates root-cause analysis.",
           "skill": null,
           "tasks": [
             {
@@ -295,19 +295,19 @@
               "minutes": 40
             },
             {
-              "title": "Write a detailed post‑mortem",
+              "title": "Write a detailed post-mortem",
               "description": "Include timeline, impact, root cause, and remediation plan.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Format post‑mortem using SRE template",
-              "description": "Apply the Google SRE post‑mortem template for consistency.",
+              "title": "Format post-mortem using SRE template",
+              "description": "Apply the Google SRE post-mortem template for consistency.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Publish post‑mortem on personal blog",
+              "title": "Publish post-mortem on personal blog",
               "description": "Create a blog post, embed logs, and share the link on LinkedIn.",
               "type": "connect",
               "minutes": 45
@@ -317,17 +317,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance expertise, polish the portfolio, and prepare for interviews or client work.",
       "milestones": [
         {
-          "title": "Advanced SLO & Reliability Design",
-          "outcome": "You can design multi‑metric SLOs and evaluate reliability trade‑offs.",
+          "title": "Advanced SLO & Reliability design",
+          "outcome": "You can design multi-metric SLOs and evaluate reliability trade-offs.",
           "skill": "SLOs",
           "tasks": [
             {
               "title": "Read advanced SLO chapter from Google SRE book",
-              "description": "Focus on multi‑dimensional error budgets and budgeting across services.",
+              "description": "Focus on multi-dimensional error budgets and budgeting across services.",
               "type": "learn",
               "minutes": 45
             },
@@ -358,8 +358,8 @@
           ]
         },
         {
-          "title": "Production‑grade Incident Management",
-          "outcome": "You can lead an incident using runbooks, communication channels, and post‑mortem processes.",
+          "title": "Production-grade Incident Management",
+          "outcome": "You can lead an incident using runbooks, communication channels, and post-mortem processes.",
           "skill": "Incident management",
           "tasks": [
             {
@@ -370,12 +370,12 @@
             },
             {
               "title": "Create a mock runbook for database outage",
-              "description": "Write step‑by‑step actions, communication templates, and rollback plan.",
+              "description": "Write step-by-step actions, communication templates, and rollback plan.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Role‑play an incident with a peer",
+              "title": "Role-play an incident with a peer",
               "description": "Simulate detection, escalation, and resolution while timing each step.",
               "type": "practice",
               "minutes": 50
@@ -395,7 +395,7 @@
           ]
         },
         {
-          "title": "Interview & Job Readiness",
+          "title": "Interview & job readiness",
           "outcome": "You can confidently discuss SRE concepts and showcase your projects in interviews.",
           "skill": "Programming",
           "tasks": [
@@ -406,14 +406,14 @@
               "minutes": 40
             },
             {
-              "title": "Prepare an elevator pitch for your portfolio",
-              "description": "Craft a 60‑second summary highlighting the monitoring stack, load test, and post‑mortem projects.",
+              "title": "Portfolio pitch",
+              "description": "Craft a 60-second summary highlighting the monitoring stack, load test, and post-mortem projects.",
               "type": "practice",
               "minutes": 30
             },
             {
               "title": "Mock interview with a peer",
-              "description": "Conduct a 30‑minute technical interview focusing on Linux, networking, and reliability scenarios.",
+              "description": "Conduct a 30-minute technical interview focusing on Linux, networking, and reliability scenarios.",
               "type": "practice",
               "minutes": 45
             },
@@ -424,7 +424,7 @@
               "minutes": 35
             },
             {
-              "title": "Apply to three entry‑level SRE roles",
+              "title": "Apply to three entry-level SRE roles",
               "description": "Submit tailored applications and track responses in a spreadsheet.",
               "type": "connect",
               "minutes": 30

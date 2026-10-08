@@ -1,6 +1,6 @@
 {
-  "title": "Associate Product Manager Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen product expertise, build a showcase portfolio, and prepare for senior‑level interviews. Focuses on advanced tactics, leadership, and polished communication.",
+  "title": "Associate Product Manager Advancement roadmap",
+  "summary": "A step-by-step plan to deepen product expertise, build a showcase portfolio, and prepare for senior-level interviews. Focuses on advanced tactics, leadership, and polished communication.",
   "phases": [
     {
       "title": "Foundations",
@@ -13,7 +13,7 @@
           "tasks": [
             {
               "title": "Read product discovery guide on Mind the Product",
-              "description": "Study the article’s framework for hypothesis‑driven interviews.",
+              "description": "Study the article’s framework for hypothesis-driven interviews.",
               "type": "learn",
               "minutes": 45
             },
@@ -25,18 +25,18 @@
             },
             {
               "title": "Create interview script for a target persona",
-              "description": "Draft 5 open‑ended questions aligned with a hypothesis.",
+              "description": "Draft 5 open-ended questions aligned with a hypothesis.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Conduct a 30‑minute mock interview with a peer",
+              "title": "Conduct a 30-minute mock interview with a peer",
               "description": "Practice asking questions and recording responses.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Summarize findings in a one‑page insight sheet",
+              "title": "Summarize findings in a one-page insight sheet",
               "description": "Highlight top pain points and opportunity statements.",
               "type": "reflect",
               "minutes": 30
@@ -67,7 +67,7 @@
               "minutes": 90
             },
             {
-              "title": "Peer‑review the draft with a colleague",
+              "title": "Peer-review the draft with a colleague",
               "description": "Gather feedback on clarity and completeness.",
               "type": "practice",
               "minutes": 45
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop prioritisation, metrics, and roadmapping capabilities.",
       "milestones": [
         {
@@ -111,12 +111,12 @@
             },
             {
               "title": "Facilitate a mock prioritisation workshop with a friend",
-              "description": "Present scores and discuss trade‑offs.",
+              "description": "Present scores and discuss trade-offs.",
               "type": "practice",
               "minutes": 75
             },
             {
-              "title": "Write a brief justification for the top‑ranked idea",
+              "title": "Write a brief justification for the top-ranked idea",
               "description": "Explain why it wins based on data and strategy.",
               "type": "reflect",
               "minutes": 30
@@ -129,7 +129,7 @@
           "skill": "Metrics and analytics",
           "tasks": [
             {
-              "title": "Read Google Analytics for product on Analytics Academy",
+              "title": "Read Google Analytics for product on analytics Academy",
               "description": "Focus on event tracking and goal funnels.",
               "type": "learn",
               "minutes": 50
@@ -147,7 +147,7 @@
               "minutes": 80
             },
             {
-              "title": "Set up a dummy dashboard in Google Data Studio",
+              "title": "Set up a dummy dashboard in Google data Studio",
               "description": "Visualize sample data for the chosen KPIs.",
               "type": "practice",
               "minutes": 70
@@ -162,7 +162,7 @@
         },
         {
           "title": "Roadmapping and stakeholder communication",
-          "outcome": "Can design a product roadmap and convey it to cross‑functional teams.",
+          "outcome": "Can design a product roadmap and convey it to cross-functional teams.",
           "skill": "Roadmapping",
           "tasks": [
             {
@@ -172,13 +172,13 @@
               "minutes": 45
             },
             {
-              "title": "Watch stakeholder communication video on LinkedIn Learning (free trial)",
+              "title": "Watch stakeholder communication video on LinkedIn learning (free trial)",
               "description": "Observe techniques for aligning expectations.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Sketch a 6‑month roadmap for a hypothetical product line",
+              "title": "Sketch a 6-month roadmap for a hypothetical product line",
               "description": "Include themes, epics, and release windows.",
               "type": "build",
               "minutes": 85
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio pieces that demonstrate product thinking.",
       "milestones": [
         {
@@ -221,7 +221,7 @@
               "minutes": 30
             },
             {
-              "title": "Write a 2‑page teardown report",
+              "title": "Write a 2-page teardown report",
               "description": "Cover user flow, pain points, and three concrete improvement suggestions.",
               "type": "build",
               "minutes": 120
@@ -258,7 +258,7 @@
               "minutes": 35
             },
             {
-              "title": "Draft a complete PRD using the template from Phase 1",
+              "title": "Draft a complete PRD using the template from phase 1",
               "description": "Include problem, goals, user stories, and acceptance criteria.",
               "type": "build",
               "minutes": 110
@@ -279,11 +279,11 @@
         },
         {
           "title": "Metrics plan for a launch",
-          "outcome": "Can design a data‑driven measurement plan for a product release.",
+          "outcome": "Can design a data-driven measurement plan for a product release.",
           "skill": null,
           "tasks": [
             {
-              "title": "Choose a recent product launch case study (e.g., Slack Connect)",
+              "title": "Choose a recent product launch case study (e.g., Slack connect)",
               "description": "Read the launch overview on the company blog.",
               "type": "learn",
               "minutes": 30
@@ -317,34 +317,34 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish leadership abilities, interview readiness, and stakeholder influence.",
       "milestones": [
         {
-          "title": "Stakeholder communication mastery",
-          "outcome": "Can influence cross‑functional partners and handle difficult conversations.",
+          "title": "Improve stakeholder communication",
+          "outcome": "Can influence cross-functional partners and handle difficult conversations.",
           "skill": "Stakeholder communication",
           "tasks": [
             {
-              "title": "Read “Influence Without Authority” article on Harvard Business Review",
+              "title": "Read “influence without Authority” article on Harvard business review",
               "description": "Learn techniques for persuasive dialogue.",
               "type": "learn",
               "minutes": 45
             },
             {
-              "title": "Watch negotiation role‑play on YouTube (product manager scenario)",
-              "description": "Observe tactics for win‑win outcomes.",
+              "title": "Watch negotiation role-play on YouTube (product manager scenario)",
+              "description": "Observe tactics for win-win outcomes.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Draft a stakeholder briefing for a high‑impact decision",
+              "title": "Draft a stakeholder briefing for a high-impact decision",
               "description": "Include context, options, and recommendation.",
               "type": "build",
               "minutes": 80
             },
             {
-              "title": "Role‑play the briefing with a friend acting as a skeptical stakeholder",
+              "title": "Role-play the briefing with a friend acting as a skeptical stakeholder",
               "description": "Practice answering objections and staying calm.",
               "type": "practice",
               "minutes": 70
@@ -358,8 +358,8 @@
           ]
         },
         {
-          "title": "Leadership and decision‑making",
-          "outcome": "Can lead product discussions and make data‑informed trade‑offs.",
+          "title": "Leadership and decision-making",
+          "outcome": "Can lead product discussions and make data-informed trade-offs.",
           "skill": "Prioritisation",
           "tasks": [
             {
@@ -381,7 +381,7 @@
               "minutes": 90
             },
             {
-              "title": "Document the decisions made and rationale in a one‑page log",
+              "title": "Document the decisions made and rationale in a one-page log",
               "description": "Capture data sources, assumptions, and outcomes.",
               "type": "build",
               "minutes": 60
@@ -395,7 +395,7 @@
           ]
         },
         {
-          "title": "Senior‑level interview prep",
+          "title": "Senior-level interview prep",
           "outcome": "Can confidently answer product case studies and behavioral questions.",
           "skill": "Customer discovery",
           "tasks": [
@@ -418,13 +418,13 @@
               "minutes": 90
             },
             {
-              "title": "Write a post‑mortem of your performance",
+              "title": "Write a post-mortem of your performance",
               "description": "Highlight strengths, gaps, and action items.",
               "type": "reflect",
               "minutes": 30
             },
             {
-              "title": "Connect with a senior PM on LinkedIn for a 15‑minute coffee chat",
+              "title": "Connect with a senior PM on LinkedIn for a 15-minute coffee chat",
               "description": "Ask for feedback on your approach and portfolio.",
               "type": "connect",
               "minutes": 20

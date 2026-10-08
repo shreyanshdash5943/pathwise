@@ -1,14 +1,14 @@
 {
-  "title": "Full-Stack Engineer Roadmap",
-  "summary": "A step‑by‑step plan to go from zero to building complete web features and landing a job. You’ll master core languages, frameworks, databases, and deployment, then showcase real projects.",
+  "title": "Full-Stack Engineer roadmap",
+  "summary": "A step-by-step plan to Go from zero to building complete web features and landing a job. You’ll learn core languages, frameworks, databases, and deployment, then showcase real projects.",
   "phases": [
     {
       "title": "Foundations",
-      "summary": "Build the basic programming and web concepts needed for any full‑stack role.",
+      "summary": "Build the basic programming and web concepts needed for any full-stack role.",
       "milestones": [
         {
           "title": "JavaScript & TypeScript Basics",
-          "outcome": "Write simple scripts and type‑annotated functions in the browser console.",
+          "outcome": "Write simple scripts and type-annotated functions in the browser console.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
             {
@@ -38,8 +38,8 @@
           ]
         },
         {
-          "title": "Web Fundamentals",
-          "outcome": "Create static pages with HTML, CSS, and basic client‑side interactivity.",
+          "title": "Web fundamentals",
+          "outcome": "Create static pages with HTML, CSS, and basic client-side interactivity.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
             {
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Version Control Basics",
+          "title": "Version control Basics",
           "outcome": "Track code changes and collaborate using Git and GitHub.",
           "skill": "Deployment",
           "tasks": [
@@ -102,12 +102,12 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Deepen expertise in front‑end, back‑end, data, and deployment technologies.",
+      "title": "Core skills",
+      "summary": "Deepen expertise in front-end, back-end, data, and deployment technologies.",
       "milestones": [
         {
-          "title": "React (or Next.js) Fundamentals",
-          "outcome": "Build a single‑page app with components, state, and routing.",
+          "title": "React (or Next.js) fundamentals",
+          "outcome": "Build a single-page app with components, state, and routing.",
           "skill": "React or Next.js",
           "tasks": [
             {
@@ -123,7 +123,7 @@
               "minutes": 70
             },
             {
-              "title": "Implement client‑side routing",
+              "title": "Implement client-side routing",
               "description": "Add React Router (or Next.js pages) to navigate between Home, About, and Contact views.",
               "type": "practice",
               "minutes": 60
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "title": "Node (or Django) Backend Basics",
+          "title": "Node (or Django) backend Basics",
           "outcome": "Create RESTful APIs that handle CRUD operations and authentication.",
           "skill": "Node or Django",
           "tasks": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "title": "SQL & Data Persistence",
+          "title": "SQL & data persistence",
           "outcome": "Design relational schemas and query data using SQL.",
           "skill": "SQL",
           "tasks": [
@@ -219,12 +219,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply what you’ve learned to real‑world portfolio projects.",
+      "title": "Proof of work",
+      "summary": "Apply what you’ve learned to real-world portfolio projects.",
       "milestones": [
         {
-          "title": "SaaS Billing App (Project)",
-          "outcome": "Demonstrate end‑to‑end feature delivery from database to UI with payment flow.",
+          "title": "SaaS billing app (project)",
+          "outcome": "Demonstrate end-to-end feature delivery from database to UI with payment flow.",
           "skill": null,
           "tasks": [
             {
@@ -246,27 +246,27 @@
               "minutes": 90
             },
             {
-              "title": "Build React front‑end for subscription flow",
+              "title": "Build React front-end for subscription flow",
               "description": "Develop pages for plan selection, checkout, and account management.",
               "type": "build",
               "minutes": 90
             },
             {
               "title": "Deploy to Render (free tier)",
-              "description": "Configure a Render service to host both front‑end and back‑end, enable HTTPS.",
+              "description": "Configure a Render service to host both front-end and back-end, enable HTTPS.",
               "type": "practice",
               "minutes": 70
             },
             {
-              "title": "Reflect on full‑stack integration",
-              "description": "Write a brief post‑mortem on challenges linking payment API with DB.",
+              "title": "Reflect on full-stack integration",
+              "description": "Write a brief post-mortem on challenges linking payment API with DB.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Real‑Time Chat App (Project)",
+          "title": "Real-time chat app (project)",
           "outcome": "Show ability to handle websockets, persistence, and responsive UI.",
           "skill": null,
           "tasks": [
@@ -296,7 +296,7 @@
             },
             {
               "title": "Deploy to Railway (free)",
-              "description": "Push both back‑end and front‑end to Railway, set environment variables for secret keys.",
+              "description": "Push both back-end and front-end to Railway, set environment variables for secret keys.",
               "type": "practice",
               "minutes": 60
             },
@@ -309,13 +309,13 @@
           ]
         },
         {
-          "title": "Product Clone (Project)",
+          "title": "Product Clone (project)",
           "outcome": "Reproduce a popular SaaS UI and core functionality to demonstrate design fidelity.",
           "skill": null,
           "tasks": [
             {
               "title": "Select a product and map core features",
-              "description": "Choose a well‑known tool (e.g., Trello) and list its main boards, cards, and drag‑drop behavior.",
+              "description": "Choose a well-known tool (e.g., Trello) and list its main boards, cards, and drag-drop behavior.",
               "type": "learn",
               "minutes": 35
             },
@@ -332,7 +332,7 @@
               "minutes": 80
             },
             {
-              "title": "Add drag‑and‑drop with React DnD",
+              "title": "Add drag-and-drop with React DnD",
               "description": "Integrate a library to allow moving cards between columns and persist changes via API.",
               "type": "build",
               "minutes": 90
@@ -354,16 +354,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced topics, system design basics, and prepare for job or client interviews.",
       "milestones": [
         {
-          "title": "System Design Basics",
-          "outcome": "Explain common architectures and trade‑offs for scalable web applications.",
+          "title": "System design Basics",
+          "outcome": "Explain common architectures and trade-offs for scalable web applications.",
           "skill": "System design basics",
           "tasks": [
             {
-              "title": "Read System Design Primer on GitHub",
+              "title": "Read system design primer on GitHub",
               "description": "Study the overview of load balancers, caching, databases, and microservices.",
               "type": "learn",
               "minutes": 45
@@ -387,7 +387,7 @@
               "minutes": 50
             },
             {
-              "title": "Reflect on trade‑offs",
+              "title": "Reflect on trade-offs",
               "description": "Identify three potential failure points and propose safeguards.",
               "type": "reflect",
               "minutes": 20
@@ -395,12 +395,12 @@
           ]
         },
         {
-          "title": "Advanced TypeScript & Testing",
-          "outcome": "Write robust, typed code and ensure quality with automated tests.",
+          "title": "Advanced TypeScript & testing",
+          "outcome": "Write typed code and ensure quality with automated tests.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
             {
-              "title": "Study advanced TypeScript types on TypeScript Docs",
+              "title": "Study advanced TypeScript types on TypeScript docs",
               "description": "Learn about generics, conditional types, and utility types.",
               "type": "learn",
               "minutes": 50
@@ -437,7 +437,7 @@
           "skill": "Deployment",
           "tasks": [
             {
-              "title": "Read Docker basics on Docker Docs",
+              "title": "Read Docker basics on Docker docs",
               "description": "Understand images, containers, and Dockerfiles through the official tutorial.",
               "type": "learn",
               "minutes": 40

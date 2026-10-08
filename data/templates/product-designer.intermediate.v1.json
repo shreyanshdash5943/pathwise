@@ -1,24 +1,24 @@
 {
-  "title": "Product Designer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to sharpen product thinking, research, interaction design, and delivery skills, then showcase them in portfolio projects and prepare for professional roles. Each phase builds concrete abilities and habits for end‑to‑end product ownership.",
+  "title": "Product Designer roadmap",
+  "summary": "A step-by-step plan to sharpen product thinking, research, interaction design, and delivery skills, then showcase them in portfolio projects and prepare for professional roles. Each phase builds concrete abilities and habits for end-to-end product ownership.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish core product mindset and research fundamentals.",
       "milestones": [
         {
-          "title": "Product Thinking Basics",
+          "title": "Product thinking basics",
           "outcome": "Can articulate problem statements, user needs, and success metrics for a product idea.",
           "skill": "Product thinking",
           "tasks": [
             {
-              "title": "Read “Product Thinking” article on Mind the Product",
+              "title": "Read “product thinking” article on Mind the product",
               "description": "Study the article and note three key principles of product thinking.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Write a one‑page problem statement for a chosen app",
+              "title": "Write a one-page problem statement for a chosen app",
               "description": "Define the problem, target users, and business goal in clear language.",
               "type": "practice",
               "minutes": 45
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "User Research Foundations",
+          "title": "User research foundations",
           "outcome": "Can plan and conduct a basic user interview and synthesize findings.",
           "skill": "User research",
           "tasks": [
@@ -49,13 +49,13 @@
               "minutes": 30
             },
             {
-              "title": "Create a 5‑question interview guide",
+              "title": "Create a 5-question interview guide",
               "description": "Focus on goals, pain points, and workflow of target users.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Conduct a 15‑minute interview with a peer",
+              "title": "Conduct a 15-minute interview with a peer",
               "description": "Record the conversation and observe body language.",
               "type": "practice",
               "minutes": 45
@@ -75,19 +75,19 @@
           ]
         },
         {
-          "title": "Design Tool Fundamentals",
+          "title": "Design tool fundamentals",
           "outcome": "Can navigate Figma, create frames, components, and basic prototypes.",
           "skill": "Figma",
           "tasks": [
             {
-              "title": "Complete Figma Basics tutorial on freeCodeCamp",
-              "description": "Follow the step‑by‑step guide and finish the starter file.",
+              "title": "Complete Figma basics tutorial on freeCodeCamp",
+              "description": "Follow the step-by-step guide and finish the starter file.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Recreate a login screen from an existing app",
-              "description": "Use frames, auto‑layout, and components to match the design.",
+              "description": "Use frames, auto-layout, and components to match the design.",
               "type": "build",
               "minutes": 60
             },
@@ -114,40 +114,40 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Deepen interaction design, metrics thinking, and collaboration with engineers.",
       "milestones": [
         {
-          "title": "Interaction Design Patterns",
+          "title": "Interaction design patterns",
           "outcome": "Can apply common UI patterns to solve specific user tasks.",
           "skill": "Interaction design",
           "tasks": [
             {
-              "title": "Read Interaction Design Foundation pattern guide",
+              "title": "Read interaction design foundation pattern guide",
               "description": "Identify five patterns relevant to mobile apps.",
               "type": "learn",
               "minutes": 35
             },
             {
               "title": "Sketch wireframes for a task flow using two patterns",
-              "description": "Create low‑fidelity sketches on paper or digital tool.",
+              "description": "Create low-fidelity sketches on paper or digital tool.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Translate sketches into high‑fidelity Figma screens",
+              "title": "Translate sketches into high-fidelity Figma screens",
               "description": "Implement the chosen patterns with proper spacing and hierarchy.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Create a micro‑interaction prototype",
+              "title": "Create a micro-interaction prototype",
               "description": "Add hover and tap animations to demonstrate feedback.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Reflect on pattern trade‑offs",
+              "title": "Reflect on pattern trade-offs",
               "description": "Write a short note comparing usability of the two patterns used.",
               "type": "reflect",
               "minutes": 20
@@ -155,12 +155,12 @@
           ]
         },
         {
-          "title": "Metrics‑Driven Design",
+          "title": "Metrics-driven design",
           "outcome": "Can define, track, and iterate on design decisions using quantitative data.",
           "skill": "Metrics",
           "tasks": [
             {
-              "title": "Read Google Analytics for Designers article on MDN",
+              "title": "Read Google Analytics for designers article on MDN",
               "description": "Focus on event tracking and conversion funnels.",
               "type": "learn",
               "minutes": 30
@@ -172,7 +172,7 @@
               "minutes": 40
             },
             {
-              "title": "Set up a mock dashboard in Google Data Studio",
+              "title": "Set up a mock dashboard in Google data Studio",
               "description": "Visualize sample data for the defined metrics.",
               "type": "practice",
               "minutes": 55
@@ -192,12 +192,12 @@
           ]
         },
         {
-          "title": "Collaboration with Engineers",
+          "title": "Collaboration with engineers",
           "outcome": "Can communicate design intent clearly and understand technical constraints.",
           "skill": "Working with engineers",
           "tasks": [
             {
-              "title": "Watch “Design Handoff” video on Material Design Docs",
+              "title": "Watch “design handoff” video on Material Design docs",
               "description": "Note key handoff artifacts and terminology.",
               "type": "learn",
               "minutes": 25
@@ -216,13 +216,13 @@
             },
             {
               "title": "Document any feasibility concerns and alternatives",
-              "description": "Write a brief list of trade‑offs discussed.",
+              "description": "Write a brief list of trade-offs discussed.",
               "type": "reflect",
               "minutes": 20
             },
             {
               "title": "Connect with a local dev community on Discord",
-              "description": "Introduce yourself and ask for design‑dev collaboration tips.",
+              "description": "Introduce yourself and ask for design-dev collaboration tips.",
               "type": "connect",
               "minutes": 30
             }
@@ -231,11 +231,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply skills to create portfolio‑ready case studies and deliverables.",
+      "title": "Proof of work",
+      "summary": "Apply skills to create portfolio-ready case studies and deliverables.",
       "milestones": [
         {
-          "title": "End‑to‑End Product Case Study",
+          "title": "End-to-end product case study",
           "outcome": "Can present a full product redesign from research to final UI.",
           "skill": null,
           "tasks": [
@@ -258,19 +258,19 @@
               "minutes": 45
             },
             {
-              "title": "Design low‑fidelity wireflows for the solution",
+              "title": "Design low-fidelity wireflows for the solution",
               "description": "Map the new user journey across key screens.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Create high‑fidelity prototype in Figma",
+              "title": "Create high-fidelity prototype in Figma",
               "description": "Apply interaction patterns and visual design standards.",
               "type": "build",
               "minutes": 90
             },
             {
-              "title": "Write a case‑study article (1500‑2000 words)",
+              "title": "Write a case-study article (1500-2000 words)",
               "description": "Explain research, design decisions, metrics, and outcomes.",
               "type": "practice",
               "minutes": 120
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "title": "Feature Spec with Designs",
+          "title": "Feature spec with designs",
           "outcome": "Can deliver a detailed spec document paired with polished UI assets.",
           "skill": null,
           "tasks": [
@@ -302,7 +302,7 @@
             },
             {
               "title": "Add interaction flows and prototype links",
-              "description": "Ensure the prototype demonstrates the full feature journey.",
+              "description": "Ensure The prototype demonstrates The full feature journey.",
               "type": "practice",
               "minutes": 45
             },
@@ -321,36 +321,36 @@
           ]
         },
         {
-          "title": "Design Sprint Write‑up",
+          "title": "Design sprint write-up",
           "outcome": "Can document a rapid design sprint process and outcomes.",
           "skill": null,
           "tasks": [
             {
-              "title": "Read Google Design Sprint Kit overview on Google Docs",
-              "description": "Summarize the five‑day structure in your own words.",
+              "title": "Read Google design sprint kit overview on Google docs",
+              "description": "Summarize the five-day structure in your own words.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Plan a 3‑day mini‑sprint for a small problem",
+              "title": "Plan a 3-day mini-sprint for a small problem",
               "description": "Define challenge, sketch solutions, and decide on a prototype.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Run day‑1: Understand & map (with a peer)",
+              "title": "Run day-1: Understand & map (with a peer)",
               "description": "Facilitate a mapping session and capture insights.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Run day‑2: Sketch & decide",
+              "title": "Run day-2: Sketch & decide",
               "description": "Create multiple solution sketches and vote on the best.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Run day‑3: Prototype and test",
+              "title": "Run day-3: Prototype and test",
               "description": "Build a quick prototype and conduct 3 user tests.",
               "type": "practice",
               "minutes": 120
@@ -366,34 +366,34 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Refine advanced practices, build professional habits, and prepare for job or client opportunities.",
       "milestones": [
         {
-          "title": "Advanced Product Thinking",
+          "title": "Advanced product thinking",
           "outcome": "Can lead product strategy sessions and align stakeholders around vision.",
           "skill": "Product thinking",
           "tasks": [
             {
-              "title": "Read “Strategic Product Design” chapter on Coursera free audit",
+              "title": "Read “strategic product design” chapter on Coursera free audit",
               "description": "Take notes on vision, roadmap, and stakeholder mapping.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Create a product vision board for a new idea",
-              "description": "Visualize target market, value proposition, and long‑term goals.",
+              "description": "Visualize target market, value proposition, and long-term goals.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Facilitate a stakeholder alignment workshop (role‑play)",
+              "title": "Facilitate a stakeholder alignment workshop (role-play)",
               "description": "Present the vision and capture feedback from peers.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Document a 6‑month roadmap with milestones",
+              "title": "Document a 6-month roadmap with milestones",
               "description": "Link each milestone to measurable outcomes.",
               "type": "build",
               "minutes": 55
@@ -407,12 +407,12 @@
           ]
         },
         {
-          "title": "Metrics Mastery",
+          "title": "Metrics",
           "outcome": "Can design experiments, analyze results, and iterate designs based on data.",
           "skill": "Metrics",
           "tasks": [
             {
-              "title": "Complete Kaggle “Intro to Data Visualization” notebook (free)",
+              "title": "Complete Kaggle “intro to data visualization” notebook (free)",
               "description": "Generate charts for sample product data.",
               "type": "learn",
               "minutes": 60
@@ -436,16 +436,16 @@
               "minutes": 35
             },
             {
-              "title": "Connect with a data‑focused designer on LinkedIn",
-              "description": "Ask about their workflow for metric‑driven design.",
+              "title": "Connect with a data-focused designer on LinkedIn",
+              "description": "Ask about their workflow for metric-driven design.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Job & Client Readiness",
-          "outcome": "Can present portfolio, negotiate offers, and work effectively in cross‑functional teams.",
+          "title": "Job & client readiness",
+          "outcome": "Can present portfolio, negotiate offers, and work effectively in cross-functional teams.",
           "skill": "Working with engineers",
           "tasks": [
             {
@@ -455,7 +455,7 @@
               "minutes": 40
             },
             {
-              "title": "Record a 5‑minute portfolio walk‑through video",
+              "title": "Record a 5-minute portfolio walk-through video",
               "description": "Narrate your design process and outcomes clearly.",
               "type": "practice",
               "minutes": 45

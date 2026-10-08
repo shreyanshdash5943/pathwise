@@ -1,13 +1,13 @@
 {
-  "title": "Technical Product Manager Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen technical product expertise, build a compelling portfolio, and prepare for senior roles. Focuses on core product skills, real‑world deliverables, and interview readiness.",
+  "title": "Technical Product Manager Advancement roadmap",
+  "summary": "A step-by-step plan to deepen technical product expertise, build a compelling portfolio, and prepare for senior roles. Focuses on core product skills, real-world deliverables, and interview readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build the technical base needed to communicate effectively with engineering teams.",
       "milestones": [
         {
-          "title": "API Fundamentals",
+          "title": "API fundamentals",
           "outcome": "Can explain API architectures, authentication, and versioning to stakeholders.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -31,14 +31,14 @@
             },
             {
               "title": "Summarize key concepts",
-              "description": "Write a one‑page summary of API versioning strategies and error handling.",
+              "description": "Write a one-page summary of API versioning strategies and error handling.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Technical Specification Basics",
+          "title": "Technical specification basics",
           "outcome": "Can draft clear, concise technical specs for product features.",
           "skill": "Technical specs",
           "tasks": [
@@ -68,7 +68,7 @@
             },
             {
               "title": "Reflect on clarity",
-              "description": "Assess how understandable the spec is to a non‑engineer audience.",
+              "description": "Assess how understandable the spec is to a non-engineer audience.",
               "type": "reflect",
               "minutes": 20
             }
@@ -114,11 +114,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop product management capabilities that drive delivery and stakeholder alignment.",
       "milestones": [
         {
-          "title": "Prioritisation Frameworks",
+          "title": "Prioritisation frameworks",
           "outcome": "Can apply systematic methods to rank features and initiatives.",
           "skill": "Prioritisation",
           "tasks": [
@@ -136,7 +136,7 @@
             },
             {
               "title": "Facilitate prioritisation workshop",
-              "description": "Run a 30‑minute session with a cross‑functional team using the scores.",
+              "description": "Run a 30-minute session with a cross-functional team using the scores.",
               "type": "build",
               "minutes": 60
             },
@@ -148,14 +148,14 @@
             },
             {
               "title": "Connect with senior PM",
-              "description": "Schedule a 15‑minute chat to discuss prioritisation challenges.",
+              "description": "Schedule a 15-minute chat to discuss prioritisation challenges.",
               "type": "connect",
               "minutes": 15
             }
           ]
         },
         {
-          "title": "Delivery Planning",
+          "title": "Delivery planning",
           "outcome": "Can create realistic roadmaps and release plans aligned with engineering capacity.",
           "skill": "Delivery planning",
           "tasks": [
@@ -173,7 +173,7 @@
             },
             {
               "title": "Estimate effort with story points",
-              "description": "Break roadmap items into user stories and assign points with a team mock‑session.",
+              "description": "Break roadmap items into user stories and assign points with a team mock-session.",
               "type": "practice",
               "minutes": 50
             },
@@ -192,7 +192,7 @@
           ]
         },
         {
-          "title": "Developer Empathy",
+          "title": "Developer empathy",
           "outcome": "Can anticipate engineering concerns and foster collaborative relationships.",
           "skill": "Developer empathy",
           "tasks": [
@@ -204,7 +204,7 @@
             },
             {
               "title": "Interview a developer",
-              "description": "Conduct a 20‑minute interview to learn pain points in spec hand‑off.",
+              "description": "Conduct a 20-minute interview to learn pain points in spec hand-off.",
               "type": "connect",
               "minutes": 30
             },
@@ -231,11 +231,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Assemble portfolio pieces that demonstrate end‑to‑end product thinking.",
+      "title": "Proof of work",
+      "summary": "Assemble portfolio pieces that demonstrate end-to-end product thinking.",
       "milestones": [
         {
-          "title": "API Product Spec Project",
+          "title": "API Product spec project",
           "outcome": "A polished API spec ready for stakeholder review.",
           "skill": null,
           "tasks": [
@@ -253,7 +253,7 @@
             },
             {
               "title": "Write full spec",
-              "description": "Produce a comprehensive spec covering endpoints, auth, rate limits, and error codes.",
+              "description": "Produce a complete spec covering endpoints, auth, rate limits, and error codes.",
               "type": "build",
               "minutes": 120
             },
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "title": "Technical Roadmap Project",
+          "title": "Technical roadmap project",
           "outcome": "A strategic roadmap showing phased platform evolution.",
           "skill": null,
           "tasks": [
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "title": "Data‑Backed Feature Proposal",
+          "title": "Data-backed feature proposal",
           "outcome": "A proposal that uses analytics to justify a new feature.",
           "skill": null,
           "tasks": [
@@ -366,11 +366,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish expertise, showcase leadership, and prepare for senior‑level interviews.",
+      "title": "Getting ready",
+      "summary": "Polish expertise, showcase leadership, and prepare for senior-level interviews.",
       "milestones": [
         {
-          "title": "Advanced API Strategies",
+          "title": "Advanced API strategies",
           "outcome": "Can design versioning, throttling, and monetization models for large APIs.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -388,18 +388,18 @@
             },
             {
               "title": "Prototype throttling logic",
-              "description": "Implement a simple rate‑limit middleware in Node.js.",
+              "description": "Implement a simple rate-limit middleware in Node.js.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Connect with API product lead",
-              "description": "Arrange a 20‑minute conversation to discuss scaling challenges.",
+              "description": "Arrange a 20-minute conversation to discuss scaling challenges.",
               "type": "connect",
               "minutes": 20
             },
             {
-              "title": "Reflect on trade‑offs",
+              "title": "Reflect on trade-offs",
               "description": "Write a short note comparing the pros and cons of each approach.",
               "type": "reflect",
               "minutes": 15
@@ -407,8 +407,8 @@
           ]
         },
         {
-          "title": "Leadership & Influence",
-          "outcome": "Can lead cross‑functional initiatives and mentor junior PMs.",
+          "title": "Leadership & influence",
+          "outcome": "Can lead cross-functional initiatives and mentor junior PMs.",
           "skill": "Developer empathy",
           "tasks": [
             {
@@ -418,8 +418,8 @@
               "minutes": 35
             },
             {
-              "title": "Facilitate a cross‑team sync",
-              "description": "Run a 45‑minute alignment meeting for a mock feature launch.",
+              "title": "Facilitate a cross-team sync",
+              "description": "Run a 45-minute alignment meeting for a mock feature launch.",
               "type": "build",
               "minutes": 60
             },
@@ -444,7 +444,7 @@
           ]
         },
         {
-          "title": "Senior Interview Prep",
+          "title": "Senior interview prep",
           "outcome": "Ready to articulate experience and solve case studies in senior TPM interviews.",
           "skill": "Prioritisation",
           "tasks": [
@@ -468,7 +468,7 @@
             },
             {
               "title": "Get mock interview feedback",
-              "description": "Schedule a 45‑minute mock interview with a peer and note suggestions.",
+              "description": "Schedule a 45-minute mock interview with a peer and note suggestions.",
               "type": "connect",
               "minutes": 45
             },

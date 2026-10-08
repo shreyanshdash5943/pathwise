@@ -1,6 +1,6 @@
 {
-  "title": "Backend Engineer Learning Roadmap",
-  "summary": "A step‑by‑step guide to become a competent backend engineer from scratch. It covers fundamentals, core backend skills, portfolio projects, and job‑ready preparation.",
+  "title": "Backend Engineer learning roadmap",
+  "summary": "A step-by-step guide to become a competent backend engineer from scratch. It covers fundamentals, core backend skills, portfolio projects, and job-ready preparation.",
   "phases": [
     {
       "title": "Foundations",
@@ -13,19 +13,19 @@
           "tasks": [
             {
               "title": "Read Python intro on freeCodeCamp",
-              "description": "Study the freeCodeCamp Python basics module and take the end‑of‑section quiz.",
+              "description": "Study the freeCodeCamp Python basics module and take the end-of-section quiz.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Write a calculator script",
-              "description": "Implement a command‑line calculator handling +, -, *, / and error cases.",
+              "description": "Implement a command-line calculator handling +, -, *, / and error cases.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Practice list comprehensions",
-              "description": "Create three list‑comprehension examples that filter and transform data.",
+              "description": "Create three list-comprehension examples that filter and transform data.",
               "type": "practice",
               "minutes": 30
             },
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Gain expertise in API design, authentication, caching, and testing.",
       "milestones": [
         {
@@ -150,7 +150,7 @@
         },
         {
           "title": "Add authentication and security",
-          "outcome": "Secure APIs with token‑based authentication and basic best practices.",
+          "outcome": "Secure APIs with token-based authentication and basic best practices.",
           "skill": "Authentication",
           "tasks": [
             {
@@ -225,12 +225,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio projects that showcase the core backend capabilities.",
       "milestones": [
         {
           "title": "REST API with auth and tests",
-          "outcome": "Demonstrate a production‑grade API with JWT auth, unit and integration tests.",
+          "outcome": "Demonstrate a production-grade API with JWT auth, unit and integration tests.",
           "skill": null,
           "tasks": [
             {
@@ -259,7 +259,7 @@
             },
             {
               "title": "Document API with OpenAPI",
-              "description": "Generate a Swagger spec and host it via Flask‑Swagger UI.",
+              "description": "Generate a Swagger spec and host it via Flask-Swagger UI.",
               "type": "build",
               "minutes": 45
             }
@@ -342,17 +342,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced topics, build a professional presence, and prepare for interviews or client work.",
       "milestones": [
         {
           "title": "Advanced testing strategies",
-          "outcome": "Apply property‑based, load, and security testing to your services.",
+          "outcome": "Apply property-based, load, and security testing to your services.",
           "skill": "Testing",
           "tasks": [
             {
               "title": "Read hypothesis intro on Hypothesis.readthedocs.io",
-              "description": "Learn property‑based testing concepts and install the library.",
+              "description": "Learn property-based testing concepts and install the library.",
               "type": "learn",
               "minutes": 45
             },
@@ -389,12 +389,12 @@
           "tasks": [
             {
               "title": "Read Heroku deployment guide",
-              "description": "Follow Heroku’s free tier tutorial to deploy a Flask app with a PostgreSQL add‑on.",
+              "description": "Follow Heroku’s free tier tutorial to deploy a Flask app with a PostgreSQL add-on.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Configure Redis add‑on on Heroku",
+              "title": "Configure Redis add-on on Heroku",
               "description": "Enable Heroku Redis and update your app to use it for caching.",
               "type": "build",
               "minutes": 55
@@ -407,7 +407,7 @@
             },
             {
               "title": "Add simple logging to CloudWatch",
-              "description": "Stream Flask logs to AWS CloudWatch using the built‑in handler.",
+              "description": "Stream Flask logs to AWS CloudWatch using the built-in handler.",
               "type": "practice",
               "minutes": 45
             },
@@ -420,7 +420,7 @@
           ]
         },
         {
-          "title": "Job‑search readiness",
+          "title": "Job-search readiness",
           "outcome": "Present a polished portfolio, résumé, and interview preparation plan.",
           "skill": "Python or Go",
           "tasks": [
@@ -432,13 +432,13 @@
             },
             {
               "title": "Write a concise technical résumé",
-              "description": "Draft a one‑page résumé highlighting skills, projects, and measurable outcomes.",
+              "description": "Draft a one-page résumé highlighting skills, projects, and measurable outcomes.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Prepare STAR stories",
-              "description": "Write three Situation‑Task‑Action‑Result narratives for challenges you solved in projects.",
+              "description": "Write three Situation-Task-Action-Result narratives for challenges you solved in projects.",
               "type": "reflect",
               "minutes": 45
             },

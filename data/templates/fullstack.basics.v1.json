@@ -1,18 +1,18 @@
 {
-  "title": "Full-Stack Engineer Roadmap",
-  "summary": "A step‑by‑step plan to solidify core fundamentals, master full‑stack technologies, build a showcase portfolio, and prepare for job or freelance success. Each phase blends learning, hands‑on building, and reflection to accelerate real‑world readiness.",
+  "title": "Full-Stack Engineer roadmap",
+  "summary": "A plan to solidify core fundamentals, learn Full-Stack technologies, build a showcase portfolio, and prepare for job or freelance success. Each phase blends learning, hands-on building, and reflection to speed real-world readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Reinforce core programming concepts and essential web fundamentals.",
       "milestones": [
         {
-          "title": "JavaScript & TypeScript Fundamentals",
-          "outcome": "Write clean, type‑safe JavaScript/TypeScript code for front‑end and back‑end tasks.",
+          "title": "JavaScript & TypeScript fundamentals",
+          "outcome": "Write clean, type-safe JavaScript/TypeScript code for front-end and back-end tasks.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
             {
-              "title": "Read TypeScript Handbook basics",
+              "title": "Read TypeScript handbook basics",
               "description": "Study the official TypeScript handbook sections on types, interfaces, and generics.",
               "type": "learn",
               "minutes": 45
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "SQL Basics & Data Modeling",
+          "title": "SQL basics & data modeling",
           "outcome": "Design simple relational schemas and run queries against a SQL database.",
           "skill": "SQL",
           "tasks": [
@@ -71,12 +71,12 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Gain proficiency in a modern front‑end framework and a back‑end runtime.",
+      "title": "Core skills",
+      "summary": "Gain proficiency in a modern front-end framework and a back-end runtime.",
       "milestones": [
         {
-          "title": "React (or Next.js) Mastery",
-          "outcome": "Build interactive UI components and handle client‑side routing.",
+          "title": "Learn React or Next.js",
+          "outcome": "Build interactive UI components and handle client-side routing.",
           "skill": "React or Next.js",
           "tasks": [
             {
@@ -92,7 +92,7 @@
               "minutes": 50
             },
             {
-              "title": "Implement client‑side data fetching",
+              "title": "Implement client-side data fetching",
               "description": "Use getStaticProps or useEffect to fetch data from a mock API and display it.",
               "type": "practice",
               "minutes": 55
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "title": "Node (or Django) Backend Development",
+          "title": "Node (or Django) backend development",
           "outcome": "Create RESTful APIs, handle authentication, and interact with a database.",
           "skill": "Node or Django",
           "tasks": [
@@ -142,7 +142,7 @@
             },
             {
               "title": "Reflect on API design choices",
-              "description": "Summarize why you chose REST over GraphQL for this project and note any trade‑offs.",
+              "description": "Summarize why you chose REST over GraphQL for this project and note any trade-offs.",
               "type": "reflect",
               "minutes": 20
             }
@@ -151,11 +151,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready full‑stack projects that showcase end‑to‑end feature delivery.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready full-stack projects that showcase end-to-end feature delivery.",
       "milestones": [
         {
-          "title": "SaaS Billing App Prototype",
+          "title": "SaaS billing app prototype",
           "outcome": "Demonstrate ability to integrate payments, user accounts, and a dashboard.",
           "skill": null,
           "tasks": [
@@ -166,7 +166,7 @@
               "minutes": 30
             },
             {
-              "title": "Set up Next.js front‑end with Stripe Checkout",
+              "title": "Set up Next.js front-end with Stripe Checkout",
               "description": "Integrate Stripe’s Checkout component to handle subscription payments.",
               "type": "build",
               "minutes": 80
@@ -179,7 +179,7 @@
             },
             {
               "title": "Deploy to Vercel and Render",
-              "description": "Push the front‑end to Vercel and the back‑end to Render, configuring environment variables.",
+              "description": "Push the front-end to Vercel and the back-end to Render, configuring environment variables.",
               "type": "practice",
               "minutes": 60
             },
@@ -192,8 +192,8 @@
           ]
         },
         {
-          "title": "Real‑Time Chat Application",
-          "outcome": "Show competence with websockets, real‑time UI updates, and scaling basics.",
+          "title": "Real-time chat application",
+          "outcome": "Show competence with websockets, real-time UI updates, and scaling basics.",
           "skill": null,
           "tasks": [
             {
@@ -215,7 +215,7 @@
               "minutes": 65
             },
             {
-              "title": "Test real‑time flow locally",
+              "title": "Test real-time flow locally",
               "description": "Run both client and server, send messages, and verify updates appear instantly.",
               "type": "practice",
               "minutes": 45
@@ -231,16 +231,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced topics, system design basics, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish advanced topics, system design basics, and job-search readiness.",
       "milestones": [
         {
-          "title": "System Design Basics",
-          "outcome": "Explain core design concepts and evaluate trade‑offs for simple services.",
+          "title": "System design basics",
+          "outcome": "Explain core design concepts and evaluate trade-offs for simple services.",
           "skill": "System design basics",
           "tasks": [
             {
-              "title": "Read System Design Primer on GitHub",
+              "title": "Read system design primer on GitHub",
               "description": "Study the sections on scalability, load balancing, and caching.",
               "type": "learn",
               "minutes": 50
@@ -266,8 +266,8 @@
           ]
         },
         {
-          "title": "Deployment & DevOps Fundamentals",
-          "outcome": "Deploy full‑stack apps reliably and monitor them in production.",
+          "title": "Deployment & DevOps fundamentals",
+          "outcome": "Deploy full-stack apps reliably and monitor them in production.",
           "skill": "Deployment",
           "tasks": [
             {
@@ -297,7 +297,7 @@
           ]
         },
         {
-          "title": "Job/Client Readiness",
+          "title": "Job/client readiness",
           "outcome": "Present a compelling portfolio and ace technical interviews.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
@@ -309,19 +309,19 @@
             },
             {
               "title": "Prepare STAR stories for each project",
-              "description": "Write concise Situation‑Task‑Action‑Result narratives for interview talking points.",
+              "description": "Write concise Situation-Task-Action-Result narratives for interview talking points.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Solve 5 algorithm problems on LeetCode (JS)",
-              "description": "Pick medium‑difficulty array or string challenges and solve them using TypeScript.",
+              "description": "Pick medium-difficulty array or string challenges and solve them using TypeScript.",
               "type": "practice",
               "minutes": 90
             },
             {
               "title": "Mock technical interview with a friend",
-              "description": "Run a 45‑minute pair‑programming session covering system design and coding.",
+              "description": "Run a 45-minute pair-programming session covering system design and coding.",
               "type": "connect",
               "minutes": 60
             },

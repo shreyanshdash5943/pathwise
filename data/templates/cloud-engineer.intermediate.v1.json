@@ -1,6 +1,6 @@
 {
-  "title": "Cloud Engineer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step guide to master advanced cloud engineering on AWS, GCP, or Azure, focusing on best practices, large‑scale projects, and professional readiness. Follow the phases to build depth, showcase work, and land a senior role.",
+  "title": "Cloud Engineer roadmap",
+  "summary": "A step-by-step Guide to learn advanced Cloud engineering on AWS, GCP, or Azure, focusing on Best Practices, large-scale projects, and professional readiness. Follow The phases to gain depth, showcase work, and land a senior role.",
   "phases": [
     {
       "title": "Foundations",
@@ -25,7 +25,7 @@
             },
             {
               "title": "Summarize key differences in a table",
-              "description": "Create a side‑by‑side table of AWS, GCP, and Azure core services for compute, storage, and networking.",
+              "description": "Create a side-by-side table of AWS, GCP, and Azure core services for compute, storage, and networking.",
               "type": "reflect",
               "minutes": 30
             },
@@ -43,20 +43,20 @@
           "skill": "IAM and security",
           "tasks": [
             {
-              "title": "Read IAM best‑practice guide",
+              "title": "Read IAM best-practice guide",
               "description": "Study the AWS IAM Best Practices whitepaper (or equivalent docs for GCP/Azure).",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Create a least‑privilege user group",
-              "description": "In each cloud console, create a user group with read‑only permissions and attach it to a test user.",
+              "title": "Create a least-privilege user group",
+              "description": "In each cloud console, create a user group with read-only permissions and attach it to a test user.",
               "type": "build",
               "minutes": 50
             },
             {
               "title": "Enable MFA for root account",
-              "description": "Activate multi‑factor authentication on the root account and document the steps.",
+              "description": "Activate multi-factor authentication on the root account and document the steps.",
               "type": "practice",
               "minutes": 30
             },
@@ -71,8 +71,8 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Develop networking, compute, storage, and cost‑management expertise.",
+      "title": "Core skills",
+      "summary": "Develop networking, compute, storage, and cost-management expertise.",
       "milestones": [
         {
           "title": "Networking design",
@@ -86,14 +86,14 @@
               "minutes": 45
             },
             {
-              "title": "Create a multi‑AZ VPC",
+              "title": "Create a multi-AZ VPC",
               "description": "Build a VPC with public and private subnets across two availability zones and attach a NAT gateway.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Configure security groups",
-              "description": "Set inbound/outbound rules for a web server and a database tier following least‑privilege principles.",
+              "description": "Set inbound/outbound rules for a web server and a database tier following least-privilege principles.",
               "type": "practice",
               "minutes": 40
             },
@@ -106,18 +106,18 @@
           ]
         },
         {
-          "title": "Compute & storage mastery",
+          "title": "Compute & storage Fundamentals",
           "outcome": "Provision and manage scalable compute and storage resources.",
           "skill": "Compute and storage",
           "tasks": [
             {
-              "title": "Read EC2 and S3 deep‑dive docs",
+              "title": "Read EC2 and S3 docs",
               "description": "Study the official AWS EC2 and S3 documentation sections on performance and durability.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Launch an auto‑scaling group",
+              "title": "Launch an auto-scaling group",
               "description": "Create an Auto Scaling group with launch template, scaling policies, and health checks.",
               "type": "build",
               "minutes": 80
@@ -135,7 +135,7 @@
               "minutes": 60
             },
             {
-              "title": "Write a short lessons‑learned note",
+              "title": "Write a short lessons-learned note",
               "description": "Summarize which compute/storage combos performed best for the benchmark scenario.",
               "type": "reflect",
               "minutes": 25
@@ -155,7 +155,7 @@
             },
             {
               "title": "Tag resources for cost allocation",
-              "description": "Apply consistent cost‑allocation tags to all resources created in previous tasks.",
+              "description": "Apply consistent cost-allocation tags to all resources created in previous tasks.",
               "type": "practice",
               "minutes": 30
             },
@@ -166,7 +166,7 @@
               "minutes": 40
             },
             {
-              "title": "Analyze last‑month bill sample",
+              "title": "Analyze last-month bill sample",
               "description": "Download a sample billing report and identify top three cost drivers.",
               "type": "practice",
               "minutes": 45
@@ -182,17 +182,17 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Build portfolio projects that demonstrate end‑to‑end cloud solutions.",
+      "title": "Proof of work",
+      "summary": "Build portfolio projects that demonstrate end-to-end cloud solutions.",
       "milestones": [
         {
-          "title": "3‑tier web app deployment",
-          "outcome": "Deploy a scalable web app with front‑end, API, and database layers on a cloud provider.",
+          "title": "3-tier web app deployment",
+          "outcome": "Deploy a scalable web app with front-end, API, and database layers on a cloud provider.",
           "skill": null,
           "tasks": [
             {
               "title": "Plan architecture on paper",
-              "description": "Sketch the three‑tier design, noting VPC, subnets, load balancer, and database choices.",
+              "description": "Sketch the three-tier design, noting VPC, subnets, load balancer, and database choices.",
               "type": "learn",
               "minutes": 30
             },
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "title": "Cost‑optimised architecture write‑up",
+          "title": "Cost-optimised architecture write-up",
           "outcome": "Produce a detailed report showing how to reduce spend for a given workload.",
           "skill": null,
           "tasks": [
@@ -234,7 +234,7 @@
               "minutes": 20
             },
             {
-              "title": "Identify cost‑heavy components",
+              "title": "Identify cost-heavy components",
               "description": "Map the workload to services and estimate monthly cost using the pricing calculator.",
               "type": "practice",
               "minutes": 50
@@ -247,12 +247,12 @@
             },
             {
               "title": "Write optimisation recommendations",
-              "description": "Create a 2‑page report with concrete changes, expected savings, and implementation steps.",
+              "description": "Create a 2-page report with concrete changes, expected savings, and implementation steps.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Peer‑review with a colleague",
+              "title": "Peer-review with a colleague",
               "description": "Share the report with a peer and incorporate feedback.",
               "type": "connect",
               "minutes": 30
@@ -260,7 +260,7 @@
           ]
         },
         {
-          "title": "Associate‑level certification prep",
+          "title": "Associate-level certification prep",
           "outcome": "Pass an AWS, GCP, or Azure associate certification exam.",
           "skill": null,
           "tasks": [
@@ -278,7 +278,7 @@
             },
             {
               "title": "Take a timed practice test",
-              "description": "Complete a full‑length practice exam under timed conditions.",
+              "description": "Complete a full-length practice exam under timed conditions.",
               "type": "practice",
               "minutes": 90
             },
@@ -299,8 +299,8 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced topics, professional habits, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish advanced topics, professional habits, and job-search readiness.",
       "milestones": [
         {
           "title": "Advanced security & compliance",
@@ -314,14 +314,14 @@
               "minutes": 45
             },
             {
-              "title": "Enable CloudTrail multi‑region",
+              "title": "Enable CloudTrail multi-region",
               "description": "Turn on CloudTrail across all regions and send logs to a secure S3 bucket.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Configure KMS‑encrypted volumes",
-              "description": "Create a KMS key and attach it to EBS volumes for at‑rest encryption.",
+              "title": "Configure KMS-encrypted volumes",
+              "description": "Create a KMS key and attach it to EBS volumes for at-rest encryption.",
               "type": "practice",
               "minutes": 35
             },
@@ -363,14 +363,14 @@
               "minutes": 40
             },
             {
-              "title": "Write run‑book for incidents",
-              "description": "Document step‑by‑step procedures for common failure scenarios.",
+              "title": "Write run-book for incidents",
+              "description": "Document step-by-step procedures for common failure scenarios.",
               "type": "reflect",
               "minutes": 30
             },
             {
-              "title": "Share run‑book with a mentor",
-              "description": "Discuss the run‑book with an experienced engineer and gather feedback.",
+              "title": "Share run-book with a mentor",
+              "description": "Discuss the run-book with an experienced engineer and gather feedback.",
               "type": "connect",
               "minutes": 20
             }
@@ -383,19 +383,19 @@
           "tasks": [
             {
               "title": "Create an online portfolio site",
-              "description": "Build a simple static site (GitHub Pages) showcasing projects, write‑ups, and certifications.",
+              "description": "Build a simple static site (GitHub Pages) showcasing projects, write-ups, and certifications.",
               "type": "build",
               "minutes": 80
             },
             {
               "title": "Prepare STAR stories",
-              "description": "Write three STAR (Situation, Task, Action, Result) examples highlighting cloud problem‑solving.",
+              "description": "Write three STAR (Situation, Task, Action, Result) examples highlighting cloud problem-solving.",
               "type": "reflect",
               "minutes": 45
             },
             {
               "title": "Mock technical interview",
-              "description": "Pair with a peer to run a mock interview focusing on design and cost‑optimization questions.",
+              "description": "Pair with a peer to run a mock interview focusing on design and cost-optimization questions.",
               "type": "practice",
               "minutes": 60
             },

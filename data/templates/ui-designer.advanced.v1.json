@@ -1,19 +1,19 @@
 {
-  "title": "UI & Visual Designer Senior Path",
-  "summary": "A step‑by‑step roadmap to deepen design expertise, build a standout portfolio, and prepare for senior‑level roles. Focuses on advanced techniques, leadership, and interview readiness.",
+  "title": "UI & Visual Designer senior path",
+  "summary": "A step-by-step roadmap to deepen design expertise, build a standout portfolio, and prepare for senior-level roles. Focuses on advanced techniques, leadership, and interview readiness.",
   "phases": [
     {
-      "title": "Foundations Refresh",
-      "summary": "Reinforce core visual principles and tool mastery.",
+      "title": "Foundations refresh",
+      "summary": "Strengthen core Visual principles and tool skills.",
       "milestones": [
         {
-          "title": "Typography Mastery",
+          "title": "Typography fundamentals",
           "outcome": "Select and apply type systems confidently across interfaces.",
           "skill": "Typography",
           "tasks": [
             {
-              "title": "Read Typography basics on MDN",
-              "description": "Study MDN’s typography guide to understand font families, weights, and line‑height.",
+              "title": "Read typography basics on MDN",
+              "description": "Study MDN’s typography guide to understand font families, weights, and line-height.",
               "type": "learn",
               "minutes": 45
             },
@@ -25,7 +25,7 @@
             },
             {
               "title": "Compare three brand type systems",
-              "description": "Analyze typography choices in three well‑known brands and note hierarchy patterns.",
+              "description": "Analyze typography choices in three well-known brands and note hierarchy patterns.",
               "type": "practice",
               "minutes": 30
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Colour & Layout Fundamentals",
+          "title": "Colour & layout fundamentals",
           "outcome": "Design balanced layouts with effective colour palettes.",
           "skill": "Colour and layout",
           "tasks": [
@@ -49,8 +49,8 @@
               "minutes": 60
             },
             {
-              "title": "Build a 8‑point grid system in Figma",
-              "description": "Set up an 8‑pixel grid and apply it to a simple dashboard mockup.",
+              "title": "Build a 8-point grid system in Figma",
+              "description": "Set up an 8-pixel grid and apply it to a simple dashboard mockup.",
               "type": "build",
               "minutes": 70
             },
@@ -71,23 +71,23 @@
       ]
     },
     {
-      "title": "Core Skills Expansion",
+      "title": "Core skills expansion",
       "summary": "Deepen system thinking, prototyping, and handoff expertise.",
       "milestones": [
         {
-          "title": "Design Systems Architecture",
+          "title": "Design systems architecture",
           "outcome": "Create reusable components and documentation for a cohesive UI library.",
           "skill": "Design systems",
           "tasks": [
             {
-              "title": "Read Design Systems Handbook (Google)",
-              "description": "Skim the open‑source handbook to grasp token, component, and documentation strategy.",
+              "title": "Read design systems handbook (Google)",
+              "description": "Skim the open-source handbook to grasp token, component, and documentation strategy.",
               "type": "learn",
               "minutes": 50
             },
             {
               "title": "Build a component library in Figma",
-              "description": "Design 5 core components (button, input, card, nav, toast) with variants and auto‑layout.",
+              "description": "Design 5 core components (button, input, card, nav, toast) with variants and auto-layout.",
               "type": "build",
               "minutes": 80
             },
@@ -106,18 +106,18 @@
           ]
         },
         {
-          "title": "Advanced Prototyping & Motion",
+          "title": "Advanced prototyping & motion",
           "outcome": "Produce interactive, animated prototypes that communicate intent.",
           "skill": "Prototyping and motion",
           "tasks": [
             {
               "title": "Watch Figma prototyping tutorials on YouTube",
-              "description": "Watch two tutorials covering micro‑interactions and overlay flows.",
+              "description": "Watch two tutorials covering micro-interactions and overlay flows.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Create a multi‑screen prototype",
+              "title": "Create a multi-screen prototype",
               "description": "Link three app screens with transitions, overlays, and scrollable areas.",
               "type": "build",
               "minutes": 70
@@ -137,12 +137,12 @@
           ]
         },
         {
-          "title": "Efficient Handoff Practices",
-          "outcome": "Deliver developer‑ready specs and assets with minimal friction.",
+          "title": "Efficient handoff practices",
+          "outcome": "Deliver developer-ready specs and assets with minimal friction.",
           "skill": "Handoff to engineers",
           "tasks": [
             {
-              "title": "Read Figma handoff guide on Figma Help Center",
+              "title": "Read Figma handoff guide on Figma help Center",
               "description": "Understand how to use inspect mode, export settings, and design tokens.",
               "type": "learn",
               "minutes": 35
@@ -170,11 +170,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio pieces that showcase senior‑level design thinking.",
+      "title": "Proof of work",
+      "summary": "Create portfolio pieces that showcase senior-level design thinking.",
       "milestones": [
         {
-          "title": "Small Design System Project",
+          "title": "Small design system project",
           "outcome": "A polished, documented design system ready for portfolio display.",
           "skill": null,
           "tasks": [
@@ -198,7 +198,7 @@
             },
             {
               "title": "Record a walkthrough video",
-              "description": "Film a 2‑minute walkthrough explaining the system’s structure and decisions.",
+              "description": "Film a 2-minute walkthrough explaining the system’s structure and decisions.",
               "type": "build",
               "minutes": 45
             },
@@ -211,30 +211,30 @@
           ]
         },
         {
-          "title": "Three Polished App Screens",
-          "outcome": "High‑fidelity screens that demonstrate visual hierarchy and interaction flow.",
+          "title": "Three polished app screens",
+          "outcome": "High-fidelity screens that demonstrate visual hierarchy and interaction flow.",
           "skill": null,
           "tasks": [
             {
-              "title": "Select a real‑world app problem",
+              "title": "Select a real-world app problem",
               "description": "Identify a pain point in an existing app and define the redesign goal.",
               "type": "learn",
               "minutes": 35
             },
             {
               "title": "Sketch wireframes on paper",
-              "description": "Create low‑fidelity sketches for three screens covering onboarding, main view, and settings.",
+              "description": "Create low-fidelity sketches for three screens covering onboarding, main view, and settings.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Design high‑fidelity screens in Figma",
+              "title": "Design high-fidelity screens in Figma",
               "description": "Apply the design system, typography, and colour palette to produce polished screens.",
               "type": "build",
               "minutes": 120
             },
             {
-              "title": "Add micro‑interactions prototype",
+              "title": "Add micro-interactions prototype",
               "description": "Link screens and add subtle motion to buttons and transitions.",
               "type": "practice",
               "minutes": 60
@@ -248,13 +248,13 @@
           ]
         },
         {
-          "title": "Motion Prototype of Interaction",
+          "title": "Motion prototype of interaction",
           "outcome": "A dynamic prototype that illustrates complex motion and user feedback.",
           "skill": null,
           "tasks": [
             {
               "title": "Choose an interaction to animate",
-              "description": "Select a complex UI pattern such as drag‑to‑reorder or loading skeleton.",
+              "description": "Select a complex UI pattern such as drag-to-reorder or loading skeleton.",
               "type": "learn",
               "minutes": 30
             },
@@ -287,23 +287,23 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Advance leadership, interview prep, and senior‑level positioning.",
+      "title": "Getting ready",
+      "summary": "Advance leadership, interview prep, and senior-level positioning.",
       "milestones": [
         {
-          "title": "Design Leadership & Mentoring",
+          "title": "Design leadership & mentoring",
           "outcome": "Lead design reviews and mentor junior designers effectively.",
           "skill": "Design systems",
           "tasks": [
             {
-              "title": "Read “Design Leadership Handbook” summary on Medium",
-              "description": "Absorb key practices for critique, vision setting, and team empowerment.",
+              "title": "Read “design leadership handbook” summary on Medium",
+              "description": "Learn key practices for critique, vision setting, and team collaboration.",
               "type": "learn",
               "minutes": 40
             },
             {
               "title": "Facilitate a mock design critique",
-              "description": "Run a 30‑minute critique session with peers on one of your portfolio pieces.",
+              "description": "Run a 30-minute critique session with peers on one of your portfolio pieces.",
               "type": "practice",
               "minutes": 60
             },
@@ -315,7 +315,7 @@
             },
             {
               "title": "Reflect on leadership style strengths",
-              "description": "Write a short self‑assessment highlighting communication and decision‑making strengths.",
+              "description": "Write a short self-assessment highlighting communication and decision-making strengths.",
               "type": "reflect",
               "minutes": 20
             },
@@ -328,7 +328,7 @@
           ]
         },
         {
-          "title": "Senior Interview Preparation",
+          "title": "Senior interview preparation",
           "outcome": "Confidently articulate design process, impact, and system thinking in interviews.",
           "skill": "Prototyping and motion",
           "tasks": [
@@ -340,7 +340,7 @@
             },
             {
               "title": "Craft STAR stories for each portfolio project",
-              "description": "Write concise Situation‑Task‑Action‑Result narratives for your three projects.",
+              "description": "Write concise Situation-Task-Action-Result narratives for your three projects.",
               "type": "practice",
               "minutes": 60
             },
@@ -357,7 +357,7 @@
               "minutes": 30
             },
             {
-              "title": "Update portfolio with interview‑ready case studies",
+              "title": "Update portfolio with interview-ready case studies",
               "description": "Polish each case study to highlight problem, process, and measurable outcomes.",
               "type": "build",
               "minutes": 70
@@ -365,19 +365,19 @@
           ]
         },
         {
-          "title": "Advanced Motion & Interaction Trends",
-          "outcome": "Apply cutting‑edge motion principles to differentiate senior work.",
+          "title": "Advanced motion & interaction trends",
+          "outcome": "Apply motion principles to senior projects.",
           "skill": "Colour and layout",
           "tasks": [
             {
-              "title": "Explore Motion Design resources on Motion Design School",
-              "description": "Watch two free lessons on fluid dynamics and UI micro‑interactions.",
+              "title": "Explore motion design resources on motion design School",
+              "description": "Watch two free lessons on fluid dynamics and UI micro-interactions.",
               "type": "learn",
               "minutes": 50
             },
             {
               "title": "Experiment with fluid animation in Figma",
-              "description": "Create a prototype using spring easing and physics‑based motion for a card stack.",
+              "description": "Create a prototype using spring easing and physics-based motion for a card stack.",
               "type": "practice",
               "minutes": 70
             },

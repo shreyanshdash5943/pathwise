@@ -1,14 +1,14 @@
 {
-  "title": "Applied AI Engineer Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen LLM expertise, build showcase projects, and prepare for senior‑level roles. Focuses on advanced techniques, leadership habits, and interview readiness.",
+  "title": "Applied AI Engineer Advancement roadmap",
+  "summary": "A step-by-step plan to deepen LLM expertise, build showcase projects, and prepare for senior-level roles. Focuses on advanced techniques, leadership habits, and interview readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Refresh core programming and AI fundamentals.",
       "milestones": [
         {
-          "title": "Python or TypeScript fluency",
-          "outcome": "Write clean, production‑ready code in Python or TypeScript.",
+          "title": "Choose Python or TypeScript",
+          "outcome": "Write clean, production-ready code in Python or TypeScript.",
           "skill": "Python or TypeScript",
           "tasks": [
             {
@@ -19,7 +19,7 @@
             },
             {
               "title": "Build a CLI utility for file stats",
-              "description": "Create a command‑line tool that reports size, line count, and word frequency of a text file.",
+              "description": "Create a command-line tool that reports size, line count, and word frequency of a text file.",
               "type": "build",
               "minutes": 80
             },
@@ -55,14 +55,14 @@
               "minutes": 30
             },
             {
-              "title": "Build a simple text‑completion script",
+              "title": "Build a simple text-completion script",
               "description": "Write a Python script that sends a prompt to the OpenAI Completion endpoint and prints the result.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Practice error handling for rate limits",
-              "description": "Add retry logic and exponential back‑off to your script for HTTP 429 responses.",
+              "description": "Add retry logic and exponential back-off to your script for HTTP 429 responses.",
               "type": "practice",
               "minutes": 45
             },
@@ -83,17 +83,17 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop prompt engineering, retrieval, and evaluation capabilities.",
       "milestones": [
         {
-          "title": "Prompt design mastery",
+          "title": "Learn prompt design",
           "outcome": "Craft effective prompts that reliably guide LLM behavior.",
           "skill": "Prompt design",
           "tasks": [
             {
-              "title": "Study Prompt Design guide on OpenAI docs",
-              "description": "Read the official guide, focusing on system messages, few‑shot examples, and temperature control.",
+              "title": "Study prompt design guide on OpenAI docs",
+              "description": "Read the official guide, focusing on system messages, few-shot examples, and temperature control.",
               "type": "learn",
               "minutes": 40
             },
@@ -110,7 +110,7 @@
               "minutes": 60
             },
             {
-              "title": "Connect with prompt‑engineering community",
+              "title": "Connect with prompt-engineering community",
               "description": "Attend a free webinar or Discord AMA on prompt design and ask a question about your template library.",
               "type": "connect",
               "minutes": 30
@@ -124,19 +124,19 @@
           ]
         },
         {
-          "title": "Retrieval‑Augmented Generation (RAG)",
+          "title": "Retrieval-augmented generation (RAG)",
           "outcome": "Integrate external knowledge sources into LLM responses.",
           "skill": "Retrieval (RAG)",
           "tasks": [
             {
               "title": "Read LangChain RAG tutorial on docs.langchain.com",
-              "description": "Follow the step‑by‑step example that builds a vector store and queries it.",
+              "description": "Follow the step-by-step example that builds a vector store and queries it.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Build a simple vector store with FAISS",
-              "description": "Index a small set of PDFs and write a query function that returns top‑k chunks.",
+              "description": "Index a small set of PDFs and write a query function that returns top-k chunks.",
               "type": "build",
               "minutes": 90
             },
@@ -148,13 +148,13 @@
             },
             {
               "title": "Explore Pinecone free tier docs",
-              "description": "Read Pinecone’s getting‑started guide and note API differences from FAISS.",
+              "description": "Read Pinecone’s getting-started guide and note API differences from FAISS.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Reflect on latency trade‑offs",
-              "description": "Write a brief analysis of in‑memory vs. hosted vector stores for production use.",
+              "title": "Reflect on latency trade-offs",
+              "description": "Write a brief analysis of in-memory vs. hosted vector stores for production use.",
               "type": "reflect",
               "minutes": 20
             }
@@ -166,8 +166,8 @@
           "skill": "Evaluation",
           "tasks": [
             {
-              "title": "Read Evaluation section of the LLM Evaluation Handbook",
-              "description": "Focus on human‑in‑the‑loop and automated metrics like BLEU, ROUGE, and LLM‑based scoring.",
+              "title": "Read evaluation section of the LLM evaluation handbook",
+              "description": "Focus on human-in-the-loop and automated metrics like BLEU, ROUGE, and LLM-based scoring.",
               "type": "learn",
               "minutes": 35
             },
@@ -200,8 +200,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that showcase end‑to‑end AI products.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that showcase end-to-end AI products.",
       "milestones": [
         {
           "title": "Document Q&A app with citations",
@@ -227,7 +227,7 @@
               "minutes": 85
             },
             {
-              "title": "Practice end‑to‑end testing",
+              "title": "Practice end-to-end testing",
               "description": "Write integration tests that simulate a user query and verify citation format.",
               "type": "practice",
               "minutes": 45
@@ -241,18 +241,18 @@
           ]
         },
         {
-          "title": "Tool‑using AI agent",
+          "title": "Tool-using AI agent",
           "outcome": "Deliver an autonomous agent that can call external APIs (e.g., weather, calendar) to accomplish tasks.",
           "skill": null,
           "tasks": [
             {
               "title": "Study LangChain agents guide",
-              "description": "Read the official LangChain documentation on tool‑using agents and their configuration.",
+              "description": "Read the official LangChain documentation on tool-using agents and their configuration.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Build a weather‑lookup tool wrapper",
+              "title": "Build a weather-lookup tool wrapper",
               "description": "Create a Python function that calls a free weather API and returns structured data.",
               "type": "build",
               "minutes": 60
@@ -264,13 +264,13 @@
               "minutes": 75
             },
             {
-              "title": "Practice multi‑step planning",
+              "title": "Practice multi-step planning",
               "description": "Test the agent on a scenario requiring scheduling and weather info, refining prompts as needed.",
               "type": "practice",
               "minutes": 70
             },
             {
-              "title": "Connect with AI‑agent community on Reddit",
+              "title": "Connect with AI-agent community on Reddit",
               "description": "Post a demo video and ask for feedback on tool integration.",
               "type": "connect",
               "minutes": 30
@@ -289,7 +289,7 @@
               "minutes": 35
             },
             {
-              "title": "Implement multi‑provider runner",
+              "title": "Implement multi-provider runner",
               "description": "Write code that sends each prompt to OpenAI, Anthropic, and Cohere, collecting responses.",
               "type": "build",
               "minutes": 80
@@ -301,7 +301,7 @@
               "minutes": 55
             },
             {
-              "title": "Reflect on cross‑provider consistency",
+              "title": "Reflect on cross-provider consistency",
               "description": "Write a brief analysis of where models diverge and why.",
               "type": "reflect",
               "minutes": 25
@@ -317,8 +317,8 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish leadership, advanced topics, and senior‑level interview preparation.",
+      "title": "Getting ready",
+      "summary": "Polish leadership, advanced topics, and senior-level interview preparation.",
       "milestones": [
         {
           "title": "Advanced system design for AI products",
@@ -326,7 +326,7 @@
           "skill": "Shipping web apps",
           "tasks": [
             {
-              "title": "Read Google Cloud Architecture Center on AI pipelines",
+              "title": "Read Google Cloud architecture Center on AI pipelines",
               "description": "Focus on sections about model serving, autoscaling, and monitoring.",
               "type": "learn",
               "minutes": 45
@@ -338,14 +338,14 @@
               "minutes": 70
             },
             {
-              "title": "Practice cost‑estimation calculations",
+              "title": "Practice cost-estimation calculations",
               "description": "Use pricing calculators to estimate monthly spend for compute and storage.",
               "type": "practice",
               "minutes": 40
             },
             {
               "title": "Connect with a senior AI engineer for mentorship",
-              "description": "Schedule a 30‑minute informational chat to discuss design trade‑offs.",
+              "description": "Schedule a 30-minute informational chat to discuss design trade-offs.",
               "type": "connect",
               "minutes": 30
             },
@@ -363,7 +363,7 @@
           "skill": "Shipping web apps",
           "tasks": [
             {
-              "title": "Read “The Manager’s Path” chapter on technical leadership",
+              "title": "Read “The manager’s path” chapter on technical leadership",
               "description": "Summarize key habits for guiding engineers and managing AI initiatives.",
               "type": "learn",
               "minutes": 50
@@ -375,14 +375,14 @@
               "minutes": 60
             },
             {
-              "title": "Practice presenting a demo to non‑technical audience",
-              "description": "Record a 5‑minute video explaining your document Q&A app without jargon.",
+              "title": "Practice presenting a demo to non-technical audience",
+              "description": "Record a 5-minute video explaining your document Q&A app without jargon.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Connect with product managers on a community forum",
-              "description": "Join a product‑focused Slack channel and discuss AI feature prioritization.",
+              "description": "Join a product-focused Slack channel and discuss AI feature prioritization.",
               "type": "connect",
               "minutes": 30
             },
@@ -396,18 +396,18 @@
         },
         {
           "title": "Senior interview preparation",
-          "outcome": "Confidently tackle system design, coding, and AI‑focused interview questions.",
+          "outcome": "Confidently tackle system design, coding, and AI-focused interview questions.",
           "skill": "Evaluation",
           "tasks": [
             {
-              "title": "Study System Design Primer on GitHub (free repo)",
+              "title": "Study system design primer on GitHub (free repo)",
               "description": "Read the sections on data pipelines and ML model serving.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Build a mock system design presentation",
-              "description": "Create slides for a scalable RAG service and rehearse answering follow‑up questions.",
+              "description": "Create slides for a scalable RAG service and rehearse answering follow-up questions.",
               "type": "build",
               "minutes": 80
             },
@@ -425,7 +425,7 @@
             },
             {
               "title": "Reflect on interview performance",
-              "description": "Write a post‑mortem noting strengths, gaps, and next steps for improvement.",
+              "description": "Write a post-mortem noting strengths, gaps, and next steps for improvement.",
               "type": "reflect",
               "minutes": 25
             }

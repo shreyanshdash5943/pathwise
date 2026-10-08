@@ -1,14 +1,14 @@
 {
-  "title": "Data Analyst Advanced Roadmap",
-  "summary": "A focused plan to deepen analytical expertise, build a standout portfolio, and prepare for senior‑level roles. Combines advanced techniques, leadership skills, and interview readiness.",
+  "title": "Data Analyst advanced roadmap",
+  "summary": "A focused plan to deepen analytical expertise, build a standout portfolio, and prepare for senior-level roles. Combines advanced techniques, leadership skills, and interview readiness.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core tools and concepts to ensure a solid base for advanced work.",
       "milestones": [
         {
-          "title": "Advanced Spreadsheet Modeling",
-          "outcome": "Create dynamic, error‑checked models using array formulas and data validation.",
+          "title": "Advanced spreadsheet modeling",
+          "outcome": "Create dynamic, error-checked models using array formulas and data validation.",
           "skill": "Spreadsheets",
           "tasks": [
             {
@@ -19,7 +19,7 @@
             },
             {
               "title": "Build a financial model template",
-              "description": "Design a multi‑sheet budgeting model with drop‑down selectors and conditional formatting.",
+              "description": "Design a multi-sheet budgeting model with drop-down selectors and conditional formatting.",
               "type": "build",
               "minutes": 60
             },
@@ -38,8 +38,8 @@
           ]
         },
         {
-          "title": "SQL Query Mastery",
-          "outcome": "Write efficient, window‑function queries on large relational datasets.",
+          "title": "SQL query skills",
+          "outcome": "Write efficient, window-function queries on large relational datasets.",
           "skill": "SQL",
           "tasks": [
             {
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Statistical Foundations Review",
+          "title": "Statistical foundations Review",
           "outcome": "Explain hypothesis testing concepts and calculate confidence intervals manually.",
           "skill": "Statistics",
           "tasks": [
@@ -80,8 +80,8 @@
               "minutes": 35
             },
             {
-              "title": "Calculate p‑values in Excel",
-              "description": "Use built‑in functions to compute p‑values for a two‑sample t‑test on sample data.",
+              "title": "Calculate p-values in Excel",
+              "description": "Use built-in functions to compute p-values for a two-sample t-test on sample data.",
               "type": "practice",
               "minutes": 45
             },
@@ -102,12 +102,12 @@
       ]
     },
     {
-      "title": "Core Skills Deepening",
-      "summary": "Develop expert‑level abilities in Python, visualization, and storytelling.",
+      "title": "Core skills Deepening",
+      "summary": "Develop expert-level abilities in Python, visualization, and storytelling.",
       "milestones": [
         {
-          "title": "Python + pandas for Complex Transformations",
-          "outcome": "Manipulate nested JSON, perform time‑series resampling, and create reusable pipelines.",
+          "title": "Python + pandas for complex Transformations",
+          "outcome": "Manipulate nested JSON, perform time-series resampling, and create reusable pipelines.",
           "skill": "Python with pandas",
           "tasks": [
             {
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "title": "Interactive Data Visualisation",
+          "title": "Interactive Data visualisation",
           "outcome": "Create interactive dashboards that let stakeholders explore data on their own.",
           "skill": "Data visualisation",
           "tasks": [
@@ -154,7 +154,7 @@
               "minutes": 90
             },
             {
-              "title": "Practice chart‑type selection",
+              "title": "Practice chart-type selection",
               "description": "Swap chart types in the dashboard and evaluate readability for each stakeholder persona.",
               "type": "practice",
               "minutes": 40
@@ -180,13 +180,13 @@
             },
             {
               "title": "Create a slide deck narrative",
-              "description": "Turn the interactive dashboard into a 10‑slide deck that tells a clear story.",
+              "description": "Turn the interactive dashboard into a 10-slide deck that tells a clear story.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Practice presenting to peers",
-              "description": "Record a 5‑minute presentation and get feedback from a colleague via Slack.",
+              "description": "Record a 5-minute presentation and get feedback from a colleague via Slack.",
               "type": "practice",
               "minutes": 45
             },
@@ -201,11 +201,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Assemble portfolio projects that showcase end‑to‑end analytical expertise.",
+      "title": "Proof of work",
+      "summary": "Assemble portfolio projects that showcase end-to-end analytical expertise.",
       "milestones": [
         {
-          "title": "Sales Dashboard Project",
+          "title": "Sales dashboard project",
           "outcome": "Deliver a polished, interactive dashboard from a public dataset.",
           "skill": null,
           "tasks": [
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "title": "A/B Test Analysis Write‑up",
+          "title": "A/B test analysis write-up",
           "outcome": "Produce a rigorous statistical report with clear business recommendations.",
           "skill": null,
           "tasks": [
@@ -254,19 +254,19 @@
             },
             {
               "title": "Perform hypothesis testing in Python",
-              "description": "Write a script that calculates lift, confidence intervals, and p‑values.",
+              "description": "Write a script that calculates lift, confidence intervals, and p-values.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Visualise results with Plotly",
-              "description": "Create side‑by‑side bar charts showing control vs variant metrics.",
+              "description": "Create side-by-side bar charts showing control vs variant metrics.",
               "type": "practice",
               "minutes": 40
             },
             {
               "title": "Draft executive summary",
-              "description": "Summarize findings in a 1‑page memo aimed at senior leadership.",
+              "description": "Summarize findings in a 1-page memo aimed at senior leadership.",
               "type": "practice",
               "minutes": 35
             },
@@ -279,7 +279,7 @@
           ]
         },
         {
-          "title": "Cohort Retention Report",
+          "title": "Cohort retention report",
           "outcome": "Deliver a cohort analysis that uncovers retention drivers and visual trends.",
           "skill": null,
           "tasks": [
@@ -291,7 +291,7 @@
             },
             {
               "title": "Calculate retention curves",
-              "description": "Write pandas code to compute month‑over‑month retention percentages.",
+              "description": "Write pandas code to compute month-over-month retention percentages.",
               "type": "build",
               "minutes": 60
             },
@@ -318,29 +318,29 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish leadership abilities, master senior‑level interview topics, and finalize the portfolio.",
+      "title": "Getting ready",
+      "summary": "Refine leadership, study senior interview topics, and finish portfolio.",
       "milestones": [
         {
-          "title": "Leadership & Impact",
+          "title": "Leadership & impact",
           "outcome": "Demonstrate ability to lead analytics initiatives and mentor junior analysts.",
           "skill": "Storytelling with data",
           "tasks": [
             {
               "title": "Read leadership case studies",
-              "description": "Read two Harvard Business Review articles on data‑driven decision making (free versions).",
+              "description": "Read two Harvard Business Review articles on data-driven decision making (free versions).",
               "type": "learn",
               "minutes": 40
             },
             {
               "title": "Design a mentorship plan",
-              "description": "Outline a 3‑month coaching schedule for a junior analyst, including weekly topics.",
+              "description": "Outline a 3-month coaching schedule for a junior analyst, including weekly topics.",
               "type": "build",
               "minutes": 50
             },
             {
               "title": "Practice stakeholder briefing",
-              "description": "Simulate a 10‑minute briefing to a mock executive panel (record yourself).",
+              "description": "Simulate a 10-minute briefing to a mock executive panel (record yourself).",
               "type": "practice",
               "minutes": 45
             },
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "title": "Senior Analyst Interview Prep",
+          "title": "Senior Analyst interview prep",
           "outcome": "Confidently answer technical, case, and behavioral questions for senior roles.",
           "skill": "Statistics",
           "tasks": [
@@ -365,7 +365,7 @@
             },
             {
               "title": "Mock technical interview",
-              "description": "Schedule a 60‑minute live coding interview on SQL and pandas with a peer.",
+              "description": "Schedule a 60-minute live coding interview on SQL and pandas with a peer.",
               "type": "practice",
               "minutes": 70
             },
@@ -384,7 +384,7 @@
           ]
         },
         {
-          "title": "Portfolio Polish & Job Search",
+          "title": "Portfolio polish & job search",
           "outcome": "Launch a professional portfolio site and execute a targeted job search strategy.",
           "skill": "Data visualisation",
           "tasks": [
@@ -408,13 +408,13 @@
             },
             {
               "title": "Connect with recruiters",
-              "description": "Send personalized messages to 10 data‑analytics recruiters on LinkedIn.",
+              "description": "Send personalized messages to 10 data-analytics recruiters on LinkedIn.",
               "type": "connect",
               "minutes": 30
             },
             {
               "title": "Reflect on job search plan",
-              "description": "Create a weekly tracking sheet for applications, interviews, and follow‑ups.",
+              "description": "Create a weekly tracking sheet for applications, interviews, and follow-ups.",
               "type": "reflect",
               "minutes": 20
             }

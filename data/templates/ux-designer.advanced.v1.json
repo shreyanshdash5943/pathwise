@@ -1,14 +1,14 @@
 {
-  "title": "Advanced UX Designer Career Roadmap",
-  "summary": "A focused pathway to deepen senior‑level UX expertise, sharpen leadership, and build a standout portfolio. Complete practical milestones, refine critique skills, and prepare for senior interviews.",
+  "title": "Advanced UX Designer career roadmap",
+  "summary": "A focused pathway to deepen senior-level UX expertise, sharpen leadership, and build a standout portfolio. Complete practical milestones, refine critique skills, and prepare for senior interviews.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core UX concepts and tools to ensure a solid baseline.",
       "milestones": [
         {
-          "title": "Deepen User Research Foundations",
-          "outcome": "Conduct comprehensive research plans and synthesize insights independently.",
+          "title": "Deepen user research foundations",
+          "outcome": "Conduct research plans and synthesize insights yourself.",
           "skill": "User research",
           "tasks": [
             {
@@ -25,7 +25,7 @@
             },
             {
               "title": "Interview two peers about a product",
-              "description": "Run short 30‑minute interviews to practice question framing and note‑taking.",
+              "description": "Run short 30-minute interviews to practice question framing and note-taking.",
               "type": "practice",
               "minutes": 60
             },
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "Refresh Information Architecture",
+          "title": "Refresh information architecture",
           "outcome": "Structure content and navigation for any digital product with confidence.",
           "skill": "Information architecture",
           "tasks": [
@@ -56,19 +56,19 @@
             },
             {
               "title": "Sketch a sitemap for a favorite app",
-              "description": "Create a hand‑drawn sitemap that captures main sections and sub‑pages.",
+              "description": "Create a hand-drawn sitemap that captures main sections and sub-pages.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Create a card‑sorting test on OptimalSort free trial",
-              "description": "Set up a 5‑item card sort and run it with friends.",
+              "title": "Create a card-sorting test on OptimalSort free trial",
+              "description": "Set up a 5-item card sort and run it with friends.",
               "type": "practice",
               "minutes": 70
             },
             {
               "title": "Analyze results and adjust sitemap",
-              "description": "Iterate the sitemap based on card‑sorting feedback.",
+              "description": "Iterate the sitemap based on card-sorting feedback.",
               "type": "practice",
               "minutes": 45
             },
@@ -83,29 +83,29 @@
       ]
     },
     {
-      "title": "Core Skills Mastery",
-      "summary": "Elevate design execution, testing, and critique to senior standards.",
+      "title": "Core Design skills",
+      "summary": "Achieve senior Design standards",
       "milestones": [
         {
-          "title": "Advanced Wireframing in Figma",
-          "outcome": "Produce high‑fidelity wireframes ready for handoff.",
+          "title": "Advanced wireframing in Figma",
+          "outcome": "Produce high-fidelity wireframes ready for handoff.",
           "skill": "Wireframing",
           "tasks": [
             {
               "title": "Complete Figma free course on wireframes",
-              "description": "Follow the official Figma community tutorial series on low‑fi to hi‑fi wireframes.",
+              "description": "Follow the official Figma community tutorial series on low-fi to hi-fi wireframes.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Recreate a complex dashboard in Figma",
-              "description": "Build a functional wireframe of a data dashboard using components and auto‑layout.",
+              "description": "Build a functional wireframe of a data dashboard using components and auto-layout.",
               "type": "build",
               "minutes": 90
             },
             {
               "title": "Apply design system components",
-              "description": "Integrate an open‑source design system (e.g., Material) into your wireframe.",
+              "description": "Integrate an open-source design system (e.g., Material) into your wireframe.",
               "type": "practice",
               "minutes": 70
             },
@@ -117,14 +117,14 @@
             },
             {
               "title": "Reflect on iteration speed improvements",
-              "description": "Write a short note on how auto‑layout accelerated your workflow.",
+              "description": "Write a short note on how auto-layout accelerated your workflow.",
               "type": "reflect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Usability Testing Excellence",
+          "title": "Usability testing Excellence",
           "outcome": "Plan, run, and analyze remote usability tests with actionable recommendations.",
           "skill": "Usability testing",
           "tasks": [
@@ -136,7 +136,7 @@
             },
             {
               "title": "Set up a test script for a new feature",
-              "description": "Write a 5‑minute task script focusing on core user goals.",
+              "description": "Write a 5-minute task script focusing on core user goals.",
               "type": "build",
               "minutes": 45
             },
@@ -154,25 +154,25 @@
             },
             {
               "title": "Synthesize findings into a report template",
-              "description": "Fill a pre‑made report with severity ratings and design recommendations.",
+              "description": "Fill a pre-made report with severity ratings and design recommendations.",
               "type": "build",
               "minutes": 70
             }
           ]
         },
         {
-          "title": "Design Critique & Leadership",
+          "title": "Design critique & leadership",
           "outcome": "Lead constructive design critiques and mentor junior designers.",
           "skill": "Design critique",
           "tasks": [
             {
-              "title": "Read “Design Critique” article on Smashing Magazine",
+              "title": "Read “Design critique” article on Smashing Magazine",
               "description": "Absorb guidelines for framing feedback and fostering dialogue.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Facilitate a 30‑minute critique session",
+              "title": "Facilitate a 30-minute critique session",
               "description": "Organize a virtual critique with 3 peers on a recent project.",
               "type": "practice",
               "minutes": 60
@@ -191,7 +191,7 @@
             },
             {
               "title": "Reflect on your facilitation style",
-              "description": "Write a brief self‑assessment of what worked and what to improve.",
+              "description": "Write a brief self-assessment of what worked and what to improve.",
               "type": "reflect",
               "minutes": 30
             }
@@ -200,11 +200,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready case studies that showcase senior‑level impact.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready case studies that showcase senior-level impact.",
       "milestones": [
         {
-          "title": "Redesign App Case Study",
+          "title": "Redesign app case study",
           "outcome": "Publish a detailed redesign narrative with before/after flows.",
           "skill": null,
           "tasks": [
@@ -228,7 +228,7 @@
             },
             {
               "title": "Write the case study narrative",
-              "description": "Structure the write‑up with problem, process, solution, and impact sections.",
+              "description": "Structure the write-up with problem, process, solution, and impact sections.",
               "type": "build",
               "minutes": 90
             },
@@ -241,8 +241,8 @@
           ]
         },
         {
-          "title": "Usability Study with Participants",
-          "outcome": "Demonstrate end‑to‑end testing methodology and data‑driven recommendations.",
+          "title": "Usability study with participants",
+          "outcome": "Demonstrate end-to-end testing methodology and data-driven recommendations.",
           "skill": null,
           "tasks": [
             {
@@ -278,18 +278,18 @@
           ]
         },
         {
-          "title": "Onboarding Flow Prototype",
-          "outcome": "Showcase a complete interactive prototype that improves first‑time user experience.",
+          "title": "Onboarding flow prototype",
+          "outcome": "Showcase a complete interactive prototype that improves first-time user experience.",
           "skill": null,
           "tasks": [
             {
               "title": "Map onboarding user journey",
-              "description": "Outline steps from sign‑up to first success metric.",
+              "description": "Outline steps from sign-up to first success metric.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Design low‑fi screens in Figma",
+              "title": "Design low-fi screens in Figma",
               "description": "Create a series of 5 screens covering each onboarding step.",
               "type": "build",
               "minutes": 80
@@ -301,7 +301,7 @@
               "minutes": 70
             },
             {
-              "title": "Conduct a quick 5‑person test",
+              "title": "Conduct a quick 5-person test",
               "description": "Observe participants completing the onboarding and note friction points.",
               "type": "practice",
               "minutes": 90
@@ -317,12 +317,12 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish leadership presence, advanced topics, and senior‑level interview readiness.",
+      "title": "Getting ready",
+      "summary": "Polish leadership presence, advanced topics, and senior-level interview readiness.",
       "milestones": [
         {
-          "title": "Advanced Design Systems",
-          "outcome": "Create and maintain a reusable design system for cross‑team use.",
+          "title": "Advanced Design systems",
+          "outcome": "Create and maintain a reusable design system for cross-team use.",
           "skill": "Figma",
           "tasks": [
             {
@@ -339,7 +339,7 @@
             },
             {
               "title": "Build a custom component library",
-              "description": "Create 10 core components with variants and auto‑layout.",
+              "description": "Create 10 core components with variants and auto-layout.",
               "type": "build",
               "minutes": 120
             },
@@ -351,26 +351,26 @@
             },
             {
               "title": "Present the system to a peer group",
-              "description": "Lead a 20‑minute walkthrough and gather feedback.",
+              "description": "Lead a 20-minute walkthrough and gather feedback.",
               "type": "connect",
               "minutes": 45
             }
           ]
         },
         {
-          "title": "Leadership & Strategy",
+          "title": "Leadership & strategy",
           "outcome": "Lead UX strategy sessions and mentor junior designers effectively.",
           "skill": "Design critique",
           "tasks": [
             {
-              "title": "Read “Strategic Design Leadership” article on A List Apart",
+              "title": "Read “strategic Design leadership” article on A list Apart",
               "description": "Absorb frameworks for aligning UX with business goals.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Facilitate a 1‑hour strategy workshop",
-              "description": "Guide a cross‑functional team through problem framing and solution mapping.",
+              "title": "Facilitate a 1-hour strategy workshop",
+              "description": "Guide a cross-functional team through problem framing and solution mapping.",
               "type": "practice",
               "minutes": 90
             },
@@ -382,7 +382,7 @@
             },
             {
               "title": "Mentor a junior on their first case study",
-              "description": "Provide step‑by‑step feedback and help them polish deliverables.",
+              "description": "Provide step-by-step feedback and help them polish deliverables.",
               "type": "connect",
               "minutes": 60
             },
@@ -395,7 +395,7 @@
           ]
         },
         {
-          "title": "Senior Interview Preparation",
+          "title": "Senior interview preparation",
           "outcome": "Confidently articulate experience, solve design challenges, and negotiate offers.",
           "skill": "User research",
           "tasks": [

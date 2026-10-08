@@ -1,6 +1,6 @@
 {
-  "title": "Machine Learning Engineer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to deepen your ML expertise, build production‑grade projects, and prepare for senior roles. Focuses on best practices, scalability, and professional habits.",
+  "title": "Machine Learning Engineer roadmap",
+  "summary": "A step-by-step plan to deepen your ML expertise, build production-grade projects, and prepare for senior roles. Focuses on best practices, scalability, and professional habits.",
   "phases": [
     {
       "title": "Foundations",
@@ -38,19 +38,19 @@
           ]
         },
         {
-          "title": "Linear Algebra & Probability",
+          "title": "Linear algebra & probability",
           "outcome": "Apply vector, matrix, and probability concepts to ML algorithms.",
           "skill": "Linear algebra and probability",
           "tasks": [
             {
               "title": "Watch Khan Academy linear algebra videos",
-              "description": "Watch the 3‑video series on vectors, matrices, and eigenvalues (≈45 min total).",
+              "description": "Watch the 3-video series on vectors, matrices, and eigenvalues (≈45 min total).",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Derive gradient of a quadratic loss",
-              "description": "Write out the gradient step‑by‑step on paper and verify with a small numeric example.",
+              "description": "Write out the gradient step-by-step on paper and verify with a small numeric example.",
               "type": "practice",
               "minutes": 30
             },
@@ -71,12 +71,12 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Master essential ML libraries, evaluation, and MLOps basics.",
+      "title": "Core skills",
+      "summary": "Learn essential ML libraries, evaluation, and MLOps basics",
       "milestones": [
         {
-          "title": "scikit‑learn Mastery",
-          "outcome": "Build, tune, and evaluate classic models using scikit‑learn pipelines.",
+          "title": "Scikit-learn",
+          "outcome": "Build, tune, and evaluate classic models using scikit-learn pipelines.",
           "skill": "scikit-learn",
           "tasks": [
             {
@@ -112,13 +112,13 @@
           "tasks": [
             {
               "title": "Watch PyTorch fundamentals tutorial",
-              "description": "Follow the official PyTorch 60‑minute introductory video on tensors and autograd.",
+              "description": "Follow the official PyTorch 60-minute introductory video on tensors and autograd.",
               "type": "learn",
               "minutes": 60
             },
             {
-              "title": "Implement a two‑layer MLP",
-              "description": "Code a multilayer perceptron for the MNIST dataset without using high‑level APIs.",
+              "title": "Implement a two-layer MLP",
+              "description": "Code a multilayer perceptron for the MNIST dataset without using high-level APIs.",
               "type": "build",
               "minutes": 70
             },
@@ -137,13 +137,13 @@
           ]
         },
         {
-          "title": "Model Evaluation Techniques",
+          "title": "Model evaluation techniques",
           "outcome": "Select and compute appropriate metrics for classification and regression tasks.",
           "skill": "Model evaluation",
           "tasks": [
             {
               "title": "Read evaluation metrics chapter on MDN",
-              "description": "Study MDN's guide to precision, recall, ROC‑AUC, and RMSE.",
+              "description": "Study MDN's guide to precision, recall, ROC-AUC, and RMSE.",
               "type": "learn",
               "minutes": 30
             },
@@ -154,13 +154,13 @@
               "minutes": 35
             },
             {
-              "title": "Practice cross‑validation",
-              "description": "Implement k‑fold cross‑validation for a logistic regression model and log variance of scores.",
+              "title": "Practice cross-validation",
+              "description": "Implement k-fold cross-validation for a logistic regression model and log variance of scores.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Reflect on metric trade‑offs",
+              "title": "Reflect on metric trade-offs",
               "description": "Summarize when to prioritize precision vs. recall in a short paragraph.",
               "type": "reflect",
               "minutes": 15
@@ -170,12 +170,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that showcase end‑to‑end ML pipelines.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that showcase end-to-end ML pipelines.",
       "milestones": [
         {
-          "title": "Churn Prediction Model",
-          "outcome": "Publish a complete churn prediction notebook with analysis and write‑up.",
+          "title": "Churn prediction model",
+          "outcome": "Publish a complete churn prediction notebook with analysis and write-up.",
           "skill": null,
           "tasks": [
             {
@@ -198,7 +198,7 @@
             },
             {
               "title": "Write a project report",
-              "description": "Draft a 2‑page markdown report describing methodology, results, and next steps.",
+              "description": "Draft a 2-page markdown report describing methodology, results, and next steps.",
               "type": "reflect",
               "minutes": 45
             },
@@ -211,13 +211,13 @@
           ]
         },
         {
-          "title": "Image Classifier API",
+          "title": "Image classifier API",
           "outcome": "Deploy a trained image classifier as a REST API reachable from any client.",
           "skill": null,
           "tasks": [
             {
               "title": "Select a small image dataset",
-              "description": "Download the CIFAR‑10 subset from the official site for quick iteration.",
+              "description": "Download the CIFAR-10 subset from the official site for quick iteration.",
               "type": "learn",
               "minutes": 25
             },
@@ -248,7 +248,7 @@
           ]
         },
         {
-          "title": "Model Monitoring Dashboard",
+          "title": "Model monitoring dashboard",
           "outcome": "Set up a dashboard that tracks model drift and performance in real time.",
           "skill": null,
           "tasks": [
@@ -278,7 +278,7 @@
             },
             {
               "title": "Share dashboard publicly",
-              "description": "Publish a read‑only link and write a brief explanation for portfolio viewers.",
+              "description": "Publish a read-only link and write a brief explanation for portfolio viewers.",
               "type": "connect",
               "minutes": 30
             }
@@ -287,12 +287,12 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Advance to production‑grade practices and prepare for job or client interviews.",
+      "title": "Getting ready",
+      "summary": "Advance to production-grade practices and prepare for job or client interviews.",
       "milestones": [
         {
-          "title": "MLOps Foundations",
-          "outcome": "Implement CI/CD for model training and deployment using open‑source tools.",
+          "title": "MLOps foundations",
+          "outcome": "Implement CI/CD for model training and deployment using open-source tools.",
           "skill": "MLOps basics",
           "tasks": [
             {
@@ -328,18 +328,18 @@
           ]
         },
         {
-          "title": "Advanced PyTorch & Scaling",
+          "title": "Advanced PyTorch & scaling",
           "outcome": "Train large models efficiently with GPUs and distributed strategies.",
           "skill": "PyTorch",
           "tasks": [
             {
-              "title": "Read PyTorch Distributed Data Parallel docs",
+              "title": "Read PyTorch distributed data Parallel docs",
               "description": "Study the official guide on DDP and note key configuration steps.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Run a multi‑GPU training job",
+              "title": "Run a multi-GPU training job",
               "description": "Modify the earlier CNN to use DDP on two GPUs (or simulated with CPU threads).",
               "type": "build",
               "minutes": 80
@@ -351,7 +351,7 @@
               "minutes": 45
             },
             {
-              "title": "Reflect on scaling trade‑offs",
+              "title": "Reflect on scaling trade-offs",
               "description": "Summarize advantages and challenges of distributed training in a short note.",
               "type": "reflect",
               "minutes": 20
@@ -365,8 +365,8 @@
           ]
         },
         {
-          "title": "Interview & Portfolio Polish",
-          "outcome": "Confidently discuss projects, solve white‑board problems, and present a professional portfolio.",
+          "title": "Interview & portfolio polish",
+          "outcome": "Confidently discuss projects, solve white-board problems, and present a professional portfolio.",
           "skill": "Model evaluation",
           "tasks": [
             {
@@ -376,7 +376,7 @@
               "minutes": 30
             },
             {
-              "title": "Practice a white‑board case study",
+              "title": "Practice a white-board case study",
               "description": "Spend 45 minutes solving a churn prediction scenario on paper, focusing on feature engineering and evaluation.",
               "type": "practice",
               "minutes": 45
@@ -389,7 +389,7 @@
             },
             {
               "title": "Record a project walkthrough video",
-              "description": "Create a 5‑minute screen‑recorded demo of one project and upload to YouTube.",
+              "description": "Create a 5-minute screen-recorded demo of one project and upload to YouTube.",
               "type": "practice",
               "minutes": 60
             },

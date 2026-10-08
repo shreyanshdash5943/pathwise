@@ -1,67 +1,67 @@
 {
-  "title": "Cloud Engineer Learning Roadmap",
-  "summary": "A concise, hands‑on plan to solidify cloud fundamentals, master core services, build a showcase portfolio, and prepare for certification and job search. Follow each phase to gain practical skills and credible evidence of ability.",
+  "title": "Cloud Engineer learning roadmap",
+  "summary": "A concise, hands-on plan to solidify Cloud fundamentals, learn core services, build a showcase portfolio, and prepare for certification and job search. Follow each phase to gain practical skills and credible evidence of ability.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish a solid base in cloud concepts, security, and cost awareness.",
       "milestones": [
         {
-          "title": "Cloud Fundamentals Overview",
+          "title": "Cloud fundamentals Overview",
           "outcome": "Explain core cloud models, services, and provider differences.",
           "skill": "Cloud fundamentals",
           "tasks": [
             {
-              "title": "Read AWS Overview Docs",
+              "title": "Read AWS Overview docs",
               "description": "Study the AWS Cloud Overview page on the official AWS documentation to grasp the shared responsibility model and service categories.",
               "type": "learn",
               "minutes": 45
             },
             {
-              "title": "Watch GCP Fundamentals Video",
+              "title": "Watch GCP fundamentals video",
               "description": "View the free introductory video on Google Cloud’s official YouTube channel covering IaaS, PaaS, and SaaS.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Compare Azure Pricing Page",
+              "title": "Compare Azure pricing page",
               "description": "Navigate Azure’s pricing calculator and note key cost components for compute and storage.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Summarize Key Differences",
-              "description": "Write a 200‑word comparison of AWS, GCP, and Azure core services.",
+              "title": "Summarize key differences",
+              "description": "Write a 200-word comparison of AWS, GCP, and Azure core services.",
               "type": "reflect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "IAM and Security Basics",
+          "title": "IAM and Security basics",
           "outcome": "Configure basic identity, access controls, and security best practices.",
           "skill": "IAM and security",
           "tasks": [
             {
-              "title": "Complete IAM Lab on AWS",
+              "title": "Complete IAM lab on AWS",
               "description": "Follow the free IAM tutorial in AWS docs to create users, groups, and policies.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Set Up GCP Service Account",
-              "description": "Create a service account with least‑privilege roles using the GCP console tutorial.",
+              "title": "Set up GCP service account",
+              "description": "Create a service account with least-privilege roles using the GCP console tutorial.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Review Azure RBAC Guide",
-              "description": "Read the Azure Role‑Based Access Control documentation and note role hierarchy.",
+              "title": "Review Azure RBAC guide",
+              "description": "Read the Azure Role-Based Access Control documentation and note role hierarchy.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Write Security Checklist",
+              "title": "Write Security checklist",
               "description": "Draft a checklist of top three security settings for each provider.",
               "type": "reflect",
               "minutes": 20
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Cost Management Foundations",
+          "title": "Cost Management foundations",
           "outcome": "Interpret cost reports and identify simple optimization levers.",
           "skill": "Cost management",
           "tasks": [
@@ -80,20 +80,20 @@
               "minutes": 40
             },
             {
-              "title": "Analyze GCP Billing Export",
+              "title": "Analyze GCP billing export",
               "description": "Enable billing export to BigQuery and run a sample query to find top spenders.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Read Azure Cost Management Docs",
+              "title": "Read Azure Cost Management docs",
               "description": "Study the Azure Cost Management documentation focusing on budgeting alerts.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Identify One Savings Opportunity",
-              "description": "Based on the reports, propose a single cost‑saving action for a hypothetical workload.",
+              "title": "Identify one savings opportunity",
+              "description": "Based on the reports, propose a single cost-saving action for a hypothetical workload.",
               "type": "reflect",
               "minutes": 25
             }
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Deepen expertise in networking, compute, storage, and advanced security.",
       "milestones": [
         {
@@ -123,19 +123,19 @@
               "minutes": 60
             },
             {
-              "title": "Configure Azure NSG Rules",
+              "title": "Configure Azure NSG rules",
               "description": "Set up a Network Security Group in Azure portal and attach it to a subnet.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Compare CIDR Planning Guides",
+              "title": "Compare CIDR planning guides",
               "description": "Read the CIDR planning sections in each provider’s networking docs and note differences.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Reflect on Network Isolation",
+              "title": "Reflect on Network isolation",
               "description": "Write a brief note on how you would isolate a database tier in each cloud.",
               "type": "reflect",
               "minutes": 20
@@ -143,36 +143,36 @@
           ]
         },
         {
-          "title": "Compute and Storage Mastery",
+          "title": "Compute and Storage fundamentals",
           "outcome": "Provision, scale, and manage compute instances and storage services.",
           "skill": "Compute and storage",
           "tasks": [
             {
-              "title": "Launch EC2 Instance",
+              "title": "Launch EC2 instance",
               "description": "Create an Amazon EC2 t3.micro instance, attach an EBS volume, and SSH in.",
               "type": "build",
               "minutes": 65
             },
             {
-              "title": "Deploy GCP Compute Engine VM",
+              "title": "Deploy GCP compute engine VM",
               "description": "Spin up a small VM, configure a startup script, and attach a persistent disk.",
               "type": "build",
               "minutes": 55
             },
             {
-              "title": "Create Azure Blob Container",
+              "title": "Create Azure Blob container",
               "description": "Set up a storage account and a Blob container via Azure portal, then upload a test file.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Set Up Auto‑Scaling Group",
-              "description": "Configure an auto‑scaling group for the EC2 instance using the AWS console tutorial.",
+              "title": "Set up auto-scaling Group",
+              "description": "Configure an auto-scaling group for the EC2 instance using the AWS console tutorial.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Read Provider Storage Docs",
+              "title": "Read provider Storage docs",
               "description": "Skim the official storage service documentation for each cloud to note durability guarantees.",
               "type": "learn",
               "minutes": 30
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "title": "Advanced Security Practices",
+          "title": "Advanced Security practices",
           "outcome": "Implement encryption, logging, and compliance controls.",
           "skill": "IAM and security",
           "tasks": [
@@ -191,25 +191,25 @@
               "minutes": 45
             },
             {
-              "title": "Configure GCP Cloud Audit Logs",
+              "title": "Configure GCP Cloud audit logs",
               "description": "Turn on audit logging for a project and view logs in Cloud Logging.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Set Up Azure Monitor Alerts",
+              "title": "Set up Azure Monitor alerts",
               "description": "Create an alert rule for a storage account metric using Azure Monitor.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Encrypt Data at Rest",
-              "description": "Enable server‑side encryption for an S3 bucket and a GCP Cloud Storage bucket.",
+              "title": "Encrypt data at Rest",
+              "description": "Enable server-side encryption for an S3 bucket and a GCP Cloud Storage bucket.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Reflect on Compliance Needs",
+              "title": "Reflect on compliance needs",
               "description": "Write a short paragraph on how GDPR influences your security setup.",
               "type": "reflect",
               "minutes": 25
@@ -219,40 +219,40 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate end‑to‑end cloud solutions.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate end-to-end cloud solutions.",
       "milestones": [
         {
-          "title": "3‑Tier Web Application",
-          "outcome": "Deploy a fully functional web app with front‑end, app, and database tiers on a cloud provider.",
+          "title": "3-Tier web application",
+          "outcome": "Deploy a fully functional web app with front-end, app, and database tiers on a cloud provider.",
           "skill": null,
           "tasks": [
             {
-              "title": "Design Architecture Diagram",
+              "title": "Design architecture diagram",
               "description": "Sketch a diagram showing load balancer, web servers, app servers, and database in your chosen cloud.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Provision Infrastructure with IaC",
+              "title": "Provision infrastructure with IaC",
               "description": "Use Terraform (free) to codify the VPC, subnets, and instances; apply the plan.",
               "type": "build",
               "minutes": 80
             },
             {
-              "title": "Deploy Sample App",
-              "description": "Push a simple Node.js app to the web tier and verify end‑to‑end connectivity.",
+              "title": "Deploy sample app",
+              "description": "Push a simple Node.js app to the web tier and verify end-to-end connectivity.",
               "type": "practice",
               "minutes": 70
             },
             {
-              "title": "Configure Monitoring",
+              "title": "Configure monitoring",
               "description": "Set up CloudWatch (or equivalent) dashboards for CPU and latency metrics.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Document Project on GitHub",
+              "title": "Document project on GitHub",
               "description": "Write a README that explains the architecture, steps to run, and lessons learned.",
               "type": "reflect",
               "minutes": 40
@@ -260,36 +260,36 @@
           ]
         },
         {
-          "title": "Cost‑Optimised Architecture Write‑up",
+          "title": "Cost-Optimised architecture write-up",
           "outcome": "Produce a detailed analysis showing how to reduce spend for a given workload.",
           "skill": null,
           "tasks": [
             {
-              "title": "Select a Sample Workload",
+              "title": "Select a sample workload",
               "description": "Choose a common scenario (e.g., data processing pipeline) and outline its resources.",
               "type": "learn",
               "minutes": 25
             },
             {
-              "title": "Identify Cost Drivers",
+              "title": "Identify Cost drivers",
               "description": "Use the provider’s pricing calculator to list the top three cost contributors.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Propose Optimization Strategies",
-              "description": "Write three concrete changes (e.g., reserved instances, right‑sizing) with expected savings.",
+              "title": "Propose optimization strategies",
+              "description": "Write three concrete changes (e.g., reserved instances, right-sizing) with expected savings.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Create Cost Comparison Sheet",
+              "title": "Create Cost comparison sheet",
               "description": "Build a spreadsheet comparing current vs. optimized monthly costs.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Publish Write‑up Blog Post",
+              "title": "Publish write-up blog post",
               "description": "Post the analysis on a personal blog or Medium with screenshots.",
               "type": "reflect",
               "minutes": 30
@@ -297,37 +297,37 @@
           ]
         },
         {
-          "title": "Associate‑Level Certification Prep",
+          "title": "Associate-level certification prep",
           "outcome": "Pass an AWS, GCP, or Azure associate certification exam.",
           "skill": null,
           "tasks": [
             {
-              "title": "Enroll in Free Exam Guide",
+              "title": "Enroll in free exam guide",
               "description": "Download the official associate exam guide from the provider’s certification site.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Complete Practice Quiz",
+              "title": "Complete practice quiz",
               "description": "Take a free practice test on the provider’s training portal and note weak areas.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Review Exam Domains",
+              "title": "Review exam Domains",
               "description": "Read the exam domain breakdown and map each to your existing knowledge gaps.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Do a Timed Mock Exam",
-              "description": "Simulate exam conditions with a 90‑minute practice exam from free resources.",
+              "title": "Do a timed mock exam",
+              "description": "Simulate exam conditions with a 90-minute practice exam from free resources.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Plan Final Study Schedule",
-              "description": "Create a 2‑week study plan focusing on remaining gaps before the exam date.",
+              "title": "Plan final study schedule",
+              "description": "Create a 2-week study plan focusing on remaining gaps before the exam date.",
               "type": "learn",
               "minutes": 25
             }
@@ -336,40 +336,40 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced topics, earn certifications, and launch your job search or freelance career.",
       "milestones": [
         {
-          "title": "Advanced Topics Deep Dive",
+          "title": "Advanced topics Overview",
           "outcome": "Apply serverless, container orchestration, and CI/CD pipelines in real scenarios.",
           "skill": "Certifications",
           "tasks": [
             {
-              "title": "Deploy a Serverless Function",
+              "title": "Deploy a serverless Function",
               "description": "Create a Lambda (or Cloud Function) that processes S3 events using the provider’s console tutorial.",
               "type": "build",
               "minutes": 55
             },
             {
-              "title": "Set Up Kubernetes Cluster",
+              "title": "Set up Kubernetes cluster",
               "description": "Provision an EKS (or GKE/AKS) cluster and deploy a sample nginx workload.",
               "type": "practice",
               "minutes": 80
             },
             {
-              "title": "Configure CI/CD Pipeline",
+              "title": "Configure CI/CD pipeline",
               "description": "Use GitHub Actions (free) to automatically build and deploy the sample app to the cloud.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Read Provider Advanced Docs",
+              "title": "Read provider advanced docs",
               "description": "Skim the official serverless and container sections for best practices.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Reflect on Trade‑offs",
+              "title": "Reflect on trade-offs",
               "description": "Write a brief note comparing serverless vs. containers for a given use case.",
               "type": "reflect",
               "minutes": 25
@@ -377,36 +377,36 @@
           ]
         },
         {
-          "title": "Certification Completion",
-          "outcome": "Earn an associate‑level cloud certification and add it to your profile.",
+          "title": "Certification completion",
+          "outcome": "Earn an associate-level cloud certification and add it to your profile.",
           "skill": "Certifications",
           "tasks": [
             {
-              "title": "Schedule Exam Slot",
+              "title": "Schedule exam slot",
               "description": "Book a testing appointment on the provider’s certification portal.",
               "type": "learn",
               "minutes": 15
             },
             {
-              "title": "Review Flashcards",
+              "title": "Review flashcards",
               "description": "Use free flashcard sets on Quizlet to reinforce key concepts for 30 minutes.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Take Final Exam",
+              "title": "Take final exam",
               "description": "Complete the official associate certification exam.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Update LinkedIn Badge",
+              "title": "Update LinkedIn badge",
               "description": "Add the new certification badge to your LinkedIn profile and resume.",
               "type": "connect",
               "minutes": 20
             },
             {
-              "title": "Share Achievement Post",
+              "title": "Share achievement post",
               "description": "Write a short post announcing your certification on professional networks.",
               "type": "connect",
               "minutes": 25
@@ -414,36 +414,36 @@
           ]
         },
         {
-          "title": "Job/Client Readiness",
+          "title": "Job/client readiness",
           "outcome": "Present your portfolio, network, and interview confidently for cloud engineering roles.",
           "skill": "Cloud fundamentals",
           "tasks": [
             {
-              "title": "Polish Portfolio Website",
+              "title": "Polish portfolio website",
               "description": "Create a simple static site showcasing the three projects with screenshots and links.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Craft Targeted Resume",
+              "title": "Craft targeted resume",
               "description": "Tailor your resume to highlight cloud skills, certifications, and project outcomes.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Practice System Design Interview",
+              "title": "Practice system design interview",
               "description": "Do a mock design of a scalable web service with a peer or using online resources.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Attend Cloud Meet‑up",
+              "title": "Attend Cloud meet-up",
               "description": "Join a local or virtual cloud engineering meetup and introduce yourself.",
               "type": "connect",
               "minutes": 90
             },
             {
-              "title": "Reflect on Interview Feedback",
+              "title": "Reflect on interview feedback",
               "description": "After each mock or real interview, note strengths and improvement areas.",
               "type": "reflect",
               "minutes": 30

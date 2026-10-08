@@ -23,6 +23,13 @@ export type PublicProfile = {
   skills: string[];
   knownSkills: string[];
   roleTitle: string | null;
+  /** Only present when the owner chose to show them. */
+  email: string | null;
+  phone: string | null;
+  hasResume: boolean;
+  /** Pro choices, already falling back to defaults if Pro has lapsed. */
+  hideBranding: boolean;
+  cardTheme: "classic" | "midnight" | "minimal";
   progress: {
     done: number;
     total: number;
@@ -68,6 +75,11 @@ type Row = {
   skills: string[] | null;
   known_skills: string[] | null;
   role_title: string | null;
+  email?: string | null;
+  phone?: string | null;
+  has_resume?: boolean;
+  hide_branding?: boolean;
+  card_theme?: string;
   plan: { template_id: string; template_version: number; inputs: unknown; created_at: string; done: string[] } | null;
   proofs: PublicProof[] | null;
 };
@@ -111,6 +123,11 @@ async function fetchProfile(username: string): Promise<PublicProfile | null> {
     skills: r.skills ?? [],
     knownSkills: r.known_skills ?? [],
     roleTitle: r.role_title,
+    email: typeof r.email === "string" && r.email.includes("@") ? r.email : null,
+    phone: typeof r.phone === "string" && r.phone ? r.phone : null,
+    hasResume: r.has_resume === true,
+    hideBranding: r.hide_branding === true,
+    cardTheme: r.card_theme === "midnight" || r.card_theme === "minimal" ? r.card_theme : "classic",
     progress,
     proofs: (r.proofs ?? []).filter((p) => typeof p.url === "string" && p.url.startsWith("https://")),
   };

@@ -1,13 +1,13 @@
 {
-  "title": "Data Analyst Career Roadmap",
-  "summary": "A practical pathway from solid fundamentals to a job‑ready portfolio, focusing on the essential tools and storytelling skills. Follow the phases to build confidence, create showcase projects, and land your first analyst role.",
+  "title": "Data Analyst career roadmap",
+  "summary": "A practical pathway from solid fundamentals to a job-ready portfolio, focusing on the essential tools and storytelling skills. Follow the phases to build confidence, create showcase projects, and land your first analyst role.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build core quantitative and spreadsheet competence.",
       "milestones": [
         {
-          "title": "Master Spreadsheet Functions",
+          "title": "Learn spreadsheet functions",
           "outcome": "You can clean, transform, and analyze data using advanced Excel/Google Sheets features.",
           "skill": "Spreadsheets",
           "tasks": [
@@ -19,7 +19,7 @@
             },
             {
               "title": "Create a data cleaning sheet",
-              "description": "Import a messy CSV and use text‑to‑columns, TRIM, and conditional formatting to tidy it.",
+              "description": "Import a messy CSV and use text-to-columns, TRIM, and conditional formatting to tidy it.",
               "type": "practice",
               "minutes": 45
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Fundamentals of Statistics",
+          "title": "Fundamentals of statistics",
           "outcome": "You can describe data distributions, test hypotheses, and interpret confidence intervals.",
           "skill": "Statistics",
           "tasks": [
@@ -50,25 +50,25 @@
             },
             {
               "title": "Calculate summary stats in Sheets",
-              "description": "Apply built‑in functions to a sample dataset and verify results manually.",
+              "description": "Apply built-in functions to a sample dataset and verify results manually.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Perform a t‑test in Sheets",
-              "description": "Use the =TTEST function on two sample groups and interpret the p‑value.",
+              "title": "Perform a t-test in Sheets",
+              "description": "Use the =TTEST function on two sample groups and interpret the p-value.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Summarize findings",
-              "description": "Write a one‑page interpretation of the test outcome for a non‑technical audience.",
+              "description": "Write a one-page interpretation of the test outcome for a non-technical audience.",
               "type": "reflect",
               "minutes": 20
             },
             {
               "title": "Join a stats forum",
-              "description": "Introduce yourself on Cross‑Validated and ask a question about a concept you find tricky.",
+              "description": "Introduce yourself on Cross-Validated and ask a question about a concept you find tricky.",
               "type": "connect",
               "minutes": 25
             }
@@ -77,11 +77,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Gain proficiency in SQL, Python, and visualisation tools.",
       "milestones": [
         {
-          "title": "SQL Querying Basics",
+          "title": "SQL querying basics",
           "outcome": "You can extract, filter, and aggregate data from relational databases.",
           "skill": "SQL",
           "tasks": [
@@ -99,7 +99,7 @@
             },
             {
               "title": "Create a summary view",
-              "description": "Use GROUP BY and HAVING to produce monthly sales totals and filter low‑volume months.",
+              "description": "Use GROUP BY and HAVING to produce monthly sales totals and filter low-volume months.",
               "type": "build",
               "minutes": 50
             },
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "title": "Python & pandas for Analysis",
+          "title": "Python & pandas for analysis",
           "outcome": "You can load, clean, and manipulate datasets programmatically.",
           "skill": "Python with pandas",
           "tasks": [
@@ -155,13 +155,13 @@
           ]
         },
         {
-          "title": "Data Visualisation Essentials",
+          "title": "Data visualisation Essentials",
           "outcome": "You can create clear charts and dashboards that highlight insights.",
           "skill": "Data visualisation",
           "tasks": [
             {
-              "title": "Read chart‑type guide",
-              "description": "Study the Data Visualization section on MDN for best‑practice chart selections.",
+              "title": "Read chart-type guide",
+              "description": "Study the Data Visualization section on MDN for best-practice chart selections.",
               "type": "learn",
               "minutes": 35
             },
@@ -173,7 +173,7 @@
             },
             {
               "title": "Create a line plot with matplotlib",
-              "description": "Plot time‑series data in Python, adding titles and axis labels.",
+              "description": "Plot time-series data in Python, adding titles and axis labels.",
               "type": "practice",
               "minutes": 45
             },
@@ -185,7 +185,7 @@
             },
             {
               "title": "Get feedback on visuals",
-              "description": "Share your dashboard on a data‑analysis community and note two improvement suggestions.",
+              "description": "Share your dashboard on a data-analysis community and note two improvement suggestions.",
               "type": "connect",
               "minutes": 25
             }
@@ -194,11 +194,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Develop portfolio projects that demonstrate end‑to‑end analysis.",
+      "title": "Proof of work",
+      "summary": "Develop portfolio projects that demonstrate end-to-end analysis.",
       "milestones": [
         {
-          "title": "Sales Dashboard Project",
+          "title": "Sales dashboard project",
           "outcome": "You can turn raw sales data into an interactive dashboard with key KPIs.",
           "skill": null,
           "tasks": [
@@ -228,14 +228,14 @@
             },
             {
               "title": "Write project summary",
-              "description": "Draft a one‑page write‑up describing the problem, approach, and insights for a hiring manager.",
+              "description": "Draft a one-page write-up describing the problem, approach, and insights for a hiring manager.",
               "type": "reflect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "A/B Test Analysis Write‑up",
+          "title": "A/B test analysis write-up",
           "outcome": "You can design, analyze, and communicate results of controlled experiments.",
           "skill": null,
           "tasks": [
@@ -253,13 +253,13 @@
             },
             {
               "title": "Run statistical test in Sheets",
-              "description": "Apply a chi‑square or t‑test using built‑in functions and record the p‑value.",
+              "description": "Apply a chi-square or t-test using built-in functions and record the p-value.",
               "type": "build",
               "minutes": 40
             },
             {
               "title": "Visualise results",
-              "description": "Create a side‑by‑side bar chart comparing control and variant performance.",
+              "description": "Create a side-by-side bar chart comparing control and variant performance.",
               "type": "practice",
               "minutes": 30
             },
@@ -272,13 +272,13 @@
           ]
         },
         {
-          "title": "Cohort Retention Report",
+          "title": "Cohort retention report",
           "outcome": "You can track user cohorts over time and present retention insights.",
           "skill": null,
           "tasks": [
             {
               "title": "Obtain user activity data",
-              "description": "Download a sample user‑event CSV from a public data repository.",
+              "description": "Download a sample user-event CSV from a public data repository.",
               "type": "learn",
               "minutes": 15
             },
@@ -311,12 +311,12 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish storytelling, advanced topics, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish storytelling, advanced topics, and job-search readiness.",
       "milestones": [
         {
           "title": "Storytelling with Data",
-          "outcome": "You can craft compelling narratives that guide decision‑makers.",
+          "outcome": "You can craft compelling narratives that guide decision-makers.",
           "skill": "Storytelling with data",
           "tasks": [
             {
@@ -327,13 +327,13 @@
             },
             {
               "title": "Rewrite project conclusions",
-              "description": "Take one portfolio project and rewrite its findings as a 3‑minute slide deck narrative.",
+              "description": "Take one portfolio project and rewrite its findings as a 3-minute slide deck narrative.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Create a data‑story video",
-              "description": "Record a short screen‑capture walkthrough of your dashboard, adding voice‑over explanations.",
+              "title": "Create a data-story video",
+              "description": "Record a short screen-capture walkthrough of your dashboard, adding voice-over explanations.",
               "type": "build",
               "minutes": 60
             },
@@ -352,19 +352,19 @@
           ]
         },
         {
-          "title": "Advanced Analytics Basics",
+          "title": "Advanced analytics basics",
           "outcome": "You gain exposure to predictive modeling and automation.",
           "skill": "Python with pandas",
           "tasks": [
             {
               "title": "Complete intro to regression tutorial",
-              "description": "Follow the free Kaggle micro‑course on linear regression using scikit‑learn.",
+              "description": "Follow the free Kaggle micro-course on linear regression using scikit-learn.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Build a simple model",
-              "description": "Predict sales using two features and evaluate RMSE on a hold‑out set.",
+              "description": "Predict sales using two features and evaluate RMSE on a hold-out set.",
               "type": "build",
               "minutes": 60
             },
@@ -382,14 +382,14 @@
             },
             {
               "title": "Discuss with a mentor",
-              "description": "Schedule a 30‑minute chat with a data‑science mentor on LinkedIn about next steps.",
+              "description": "Schedule a 30-minute chat with a data-science mentor on LinkedIn about next steps.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Job‑Search Preparation",
+          "title": "Job-search preparation",
           "outcome": "You are ready to apply, interview, and secure a data analyst role.",
           "skill": "SQL",
           "tasks": [
@@ -413,7 +413,7 @@
             },
             {
               "title": "Prepare STAR stories",
-              "description": "Write three Situation‑Task‑Action‑Result narratives about data challenges you solved.",
+              "description": "Write three Situation-Task-Action-Result narratives about data challenges you solved.",
               "type": "reflect",
               "minutes": 35
             },

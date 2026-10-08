@@ -1,14 +1,14 @@
 {
-  "title": "Applied AI Engineer Roadmap",
-  "summary": "A focused pathway to master LLM integration, prompt engineering, retrieval, and product shipping. By the end you’ll have a portfolio and be ready for AI‑focused roles.",
+  "title": "Applied AI Engineer roadmap",
+  "summary": "A focused pathway to LLM integration, prompt engineering, retrieval, and product shipping. By The end you’ll have A portfolio and be ready for AI-focused roles.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify core programming and API fundamentals.",
       "milestones": [
         {
-          "title": "Python or TypeScript fluency",
-          "outcome": "Write clean scripts and web‑service code without syntax errors.",
+          "title": "Choose Python or TypeScript",
+          "outcome": "Write clean scripts and web-service code without syntax errors.",
           "skill": "Python or TypeScript",
           "tasks": [
             {
@@ -55,7 +55,7 @@
               "minutes": 45
             },
             {
-              "title": "Handle rate‑limit errors",
+              "title": "Handle rate-limit errors",
               "description": "Add exponential backoff logic to the script and test with forced errors.",
               "type": "practice",
               "minutes": 40
@@ -71,17 +71,17 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Learn prompt design, retrieval, evaluation, and web‑app shipping.",
+      "title": "Core skills",
+      "summary": "Learn prompt design, retrieval, evaluation, and web-app shipping.",
       "milestones": [
         {
-          "title": "Prompt design mastery",
+          "title": "Create effective prompts",
           "outcome": "Craft effective prompts and iterate using systematic techniques.",
           "skill": "Prompt design",
           "tasks": [
             {
               "title": "Study OpenAI prompt design guide",
-              "description": "Read the official best‑practice article and note three key techniques.",
+              "description": "Read the official best-practice article and note three key techniques.",
               "type": "learn",
               "minutes": 30
             },
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "title": "Retrieval‑Augmented Generation (RAG)",
+          "title": "Retrieval-augmented generation (RAG)",
           "outcome": "Integrate vector stores and retrieve relevant documents for LLM prompting.",
           "skill": "Retrieval (RAG)",
           "tasks": [
@@ -124,7 +124,7 @@
             },
             {
               "title": "Implement a simple similarity search",
-              "description": "Given a user query, retrieve the top‑3 most similar chunks and prepend them to the prompt.",
+              "description": "Given a user query, retrieve the top-3 most similar chunks and prepend them to the prompt.",
               "type": "practice",
               "minutes": 55
             },
@@ -160,14 +160,14 @@
               "minutes": 50
             },
             {
-              "title": "Create a prompt‑performance dashboard",
+              "title": "Create a prompt-performance dashboard",
               "description": "Log metrics to a CSV and generate a simple Matplotlib chart.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Run the dashboard on 10 prompt variants",
-              "description": "Collect data and identify the best‑performing prompt.",
+              "description": "Collect data and identify the best-performing prompt.",
               "type": "practice",
               "minutes": 45
             },
@@ -181,11 +181,11 @@
         },
         {
           "title": "Shipping web apps",
-          "outcome": "Deploy a full‑stack AI‑powered web service.",
+          "outcome": "Deploy a full-stack AI-powered web service.",
           "skill": "Shipping web apps",
           "tasks": [
             {
-              "title": "Follow freeCodeCamp full‑stack project tutorial",
+              "title": "Follow freeCodeCamp full-stack project tutorial",
               "description": "Build a Node/Express backend with a React frontend.",
               "type": "learn",
               "minutes": 60
@@ -198,7 +198,7 @@
             },
             {
               "title": "Implement basic auth with JWT",
-              "description": "Secure the endpoint so only logged‑in users can call the model.",
+              "description": "Secure the endpoint so only logged-in users can call the model.",
               "type": "practice",
               "minutes": 50
             },
@@ -209,7 +209,7 @@
               "minutes": 65
             },
             {
-              "title": "Write a post‑mortem note",
+              "title": "Write a post-mortem note",
               "description": "Summarize deployment steps, challenges, and next improvements.",
               "type": "reflect",
               "minutes": 20
@@ -219,8 +219,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that showcase end‑to‑end AI solutions.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that showcase end-to-end AI solutions.",
       "milestones": [
         {
           "title": "Document Q&A app with citations",
@@ -246,7 +246,7 @@
               "minutes": 70
             },
             {
-              "title": "Write a 2‑minute demo video script",
+              "title": "Write a 2-minute demo video script",
               "description": "Explain problem, solution, and key technical choices concisely.",
               "type": "reflect",
               "minutes": 25
@@ -261,7 +261,7 @@
         },
         {
           "title": "AI agent with tool use",
-          "outcome": "Show ability to orchestrate multiple APIs through an LLM‑driven planner.",
+          "outcome": "Show ability to orchestrate multiple APIs through an LLM-driven planner.",
           "skill": null,
           "tasks": [
             {
@@ -271,7 +271,7 @@
               "minutes": 35
             },
             {
-              "title": "Code tool‑selection prompt",
+              "title": "Code tool-selection prompt",
               "description": "Create a prompt that decides which external API (e.g., weather, calculator) to invoke.",
               "type": "build",
               "minutes": 60
@@ -283,8 +283,8 @@
               "minutes": 75
             },
             {
-              "title": "Test agent on 5 real‑world scenarios",
-              "description": "Run end‑to‑end queries and note success/failure cases.",
+              "title": "Test agent on 5 real-world scenarios",
+              "description": "Run end-to-end queries and note success/failure cases.",
               "type": "practice",
               "minutes": 50
             },
@@ -336,12 +336,12 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance topics, interview prep, and professional positioning.",
       "milestones": [
         {
           "title": "Advanced LLM techniques",
-          "outcome": "Apply fine‑tuning, function calling, and multi‑modal inputs.",
+          "outcome": "Apply fine-tuning, function calling, and multi-modal inputs.",
           "skill": "LLM APIs",
           "tasks": [
             {
@@ -357,14 +357,14 @@
               "minutes": 70
             },
             {
-              "title": "Experiment with OpenAI fine‑tuning guide",
-              "description": "Create a small dataset and submit a fine‑tune job (free tier).",
+              "title": "Experiment with OpenAI fine-tuning guide",
+              "description": "Create a small dataset and submit a fine-tune job (free tier).",
               "type": "practice",
               "minutes": 80
             },
             {
-              "title": "Summarize trade‑offs in a one‑page note",
-              "description": "Compare zero‑shot, function calling, and fine‑tuned approaches.",
+              "title": "Summarize trade-offs in a one-page note",
+              "description": "Compare zero-shot, function calling, and fine-tuned approaches.",
               "type": "reflect",
               "minutes": 25
             }
@@ -383,12 +383,12 @@
             },
             {
               "title": "Practice system design interview on Pramp",
-              "description": "Run at least one mock session focusing on AI‑centric architectures.",
+              "description": "Run at least one mock session focusing on AI-centric architectures.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Create a one‑page technical resume",
+              "title": "Create a one-page technical resume",
               "description": "Highlight key skills, projects, and measurable impacts.",
               "type": "build",
               "minutes": 45
@@ -407,20 +407,20 @@
           "skill": "Evaluation",
           "tasks": [
             {
-              "title": "Subscribe to the LLM‑Ops newsletter",
+              "title": "Subscribe to the LLM-Ops newsletter",
               "description": "Set up weekly email digest of new papers and tools.",
               "type": "connect",
               "minutes": 10
             },
             {
-              "title": "Schedule monthly Kaggle micro‑challenge",
+              "title": "Schedule monthly Kaggle micro-challenge",
               "description": "Pick a small dataset, apply an LLM, and post results publicly.",
               "type": "practice",
               "minutes": 90
             },
             {
               "title": "Update evaluation harness with new metrics",
-              "description": "Add hallucination detection using a simple fact‑check API.",
+              "description": "Add hallucination detection using a simple fact-check API.",
               "type": "build",
               "minutes": 70
             },

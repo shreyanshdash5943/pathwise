@@ -1,13 +1,13 @@
 {
-  "title": "Backend Engineer Mastery Roadmap",
-  "summary": "A step‑by‑step guide to deepen your backend expertise, build professional‑grade projects, and prepare for senior roles. Focuses on best practices, scalability, and job‑ready habits.",
+  "title": "Backend Engineer roadmap",
+  "summary": "A step-by-step guide to deepen your backend expertise, build professional-grade projects, and prepare for senior roles. Focuses on best practices, scalability, and job-ready habits.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish core language and database fundamentals.",
       "milestones": [
         {
-          "title": "Python or Go Core",
+          "title": "Python or Go core",
           "outcome": "Write clean, idiomatic Python or Go code for backend services.",
           "skill": "Python or Go",
           "tasks": [
@@ -31,31 +31,31 @@
             },
             {
               "title": "Write a simple CLI tool",
-              "description": "Create a command‑line program that reads input and prints formatted output, committing to Git.",
+              "description": "Create a command-line program that reads input and prints formatted output, committing to Git.",
               "type": "build",
               "minutes": 50
             }
           ]
         },
         {
-          "title": "SQL and Data Modelling",
+          "title": "SQL and data modelling",
           "outcome": "Design relational schemas and write efficient queries.",
           "skill": "SQL and data modelling",
           "tasks": [
             {
               "title": "Read relational theory chapter",
-              "description": "Review the normalization chapter on Khan Academy to understand 1NF‑3NF.",
+              "description": "Review the normalization chapter on Khan Academy to understand 1NF-3NF.",
               "type": "learn",
               "minutes": 40
             },
             {
               "title": "Practice SELECT queries",
-              "description": "Use the public PostgreSQL sample database on db‑fiddle.com to write 10 varied SELECT statements.",
+              "description": "Use the public PostgreSQL sample database on db-fiddle.com to write 10 varied SELECT statements.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Model a simple e‑commerce schema",
+              "title": "Model a simple e-commerce schema",
               "description": "Draw an ER diagram for products, orders, and users, then create the tables in a local PostgreSQL instance.",
               "type": "build",
               "minutes": 60
@@ -77,12 +77,12 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Apply best‑practice patterns for APIs, security, and scalability.",
+      "title": "Core skills",
+      "summary": "Apply best-practice patterns for APIs, security, and scalability.",
       "milestones": [
         {
           "title": "REST API Design",
-          "outcome": "Design and document robust RESTful endpoints.",
+          "outcome": "Design and document RESTful endpoints.",
           "skill": "REST API design",
           "tasks": [
             {
@@ -110,7 +110,7 @@
               "minutes": 55
             },
             {
-              "title": "Peer‑review spec",
+              "title": "Peer-review spec",
               "description": "Share the OpenAPI file with a colleague and incorporate feedback.",
               "type": "connect",
               "minutes": 30
@@ -119,7 +119,7 @@
         },
         {
           "title": "Authentication",
-          "outcome": "Secure APIs with token‑based authentication.",
+          "outcome": "Secure APIs with token-based authentication.",
           "skill": "Authentication",
           "tasks": [
             {
@@ -147,7 +147,7 @@
               "minutes": 45
             },
             {
-              "title": "Discuss auth trade‑offs",
+              "title": "Discuss auth trade-offs",
               "description": "Join an online forum thread about session vs token auth and summarize key points.",
               "type": "connect",
               "minutes": 30
@@ -157,17 +157,17 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Build portfolio projects that showcase end‑to‑end backend capabilities.",
+      "title": "Proof of work",
+      "summary": "Build portfolio projects that showcase end-to-end backend capabilities.",
       "milestones": [
         {
-          "title": "REST API with Auth and Tests",
-          "outcome": "Deliver a production‑ready API featuring authentication and full test coverage.",
+          "title": "REST API with auth and tests",
+          "outcome": "Deliver a production-ready API featuring authentication and full test coverage.",
           "skill": null,
           "tasks": [
             {
               "title": "Plan project scope",
-              "description": "Define resources, endpoints, and data models for a task‑management API.",
+              "description": "Define resources, endpoints, and data models for a task-management API.",
               "type": "learn",
               "minutes": 30
             },
@@ -191,7 +191,7 @@
             },
             {
               "title": "Write integration tests",
-              "description": "Use pytest (or Go’s testing package) to test full request‑response cycles.",
+              "description": "Use pytest (or Go’s testing package) to test full request-response cycles.",
               "type": "practice",
               "minutes": 60
             },
@@ -204,7 +204,7 @@
           ]
         },
         {
-          "title": "URL Shortener with Analytics",
+          "title": "URL shortener with analytics",
           "outcome": "Create a service that shortens URLs and tracks click metrics.",
           "skill": null,
           "tasks": [
@@ -228,7 +228,7 @@
             },
             {
               "title": "Introduce caching layer",
-              "description": "Cache recent short‑code lookups using Redis to reduce DB hits.",
+              "description": "Cache recent short-code lookups using Redis to reduce DB hits.",
               "type": "practice",
               "minutes": 50
             },
@@ -239,7 +239,7 @@
               "minutes": 45
             },
             {
-              "title": "Write end‑to‑end tests",
+              "title": "Write end-to-end tests",
               "description": "Automate tests that create a short URL, simulate clicks, and verify analytics.",
               "type": "practice",
               "minutes": 65
@@ -249,11 +249,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance with performance patterns and prepare for job or client interviews.",
       "milestones": [
         {
-          "title": "Caching and Queues",
+          "title": "Caching and queues",
           "outcome": "Integrate Redis caching and a message queue for asynchronous processing.",
           "skill": "Caching and queues",
           "tasks": [
@@ -296,8 +296,8 @@
           ]
         },
         {
-          "title": "Testing Mastery",
-          "outcome": "Apply comprehensive testing strategies across unit, integration, and load tests.",
+          "title": "Testing",
+          "outcome": "Apply testing strategies across unit, integration, and load tests.",
           "skill": "Testing",
           "tasks": [
             {
@@ -307,7 +307,7 @@
               "minutes": 25
             },
             {
-              "title": "Add property‑based tests",
+              "title": "Add property-based tests",
               "description": "Use hypothesis (Python) or gopter (Go) to generate random inputs for a core function.",
               "type": "practice",
               "minutes": 55
@@ -332,14 +332,14 @@
             },
             {
               "title": "Document testing strategy",
-              "description": "Write a one‑page guide summarizing your testing approach for future projects.",
+              "description": "Write a one-page guide summarizing your testing approach for future projects.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Job/Client Readiness",
+          "title": "Job/client readiness",
           "outcome": "Present your work confidently and navigate technical interviews.",
           "skill": null,
           "tasks": [
@@ -357,7 +357,7 @@
             },
             {
               "title": "Mock system design interview",
-              "description": "Participate in a 45‑minute mock design interview with a colleague using a whiteboard tool.",
+              "description": "Participate in a 45-minute mock design interview with a colleague using a whiteboard tool.",
               "type": "practice",
               "minutes": 60
             },

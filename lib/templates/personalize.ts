@@ -52,13 +52,6 @@ export function parseInputs(raw: unknown): PlanInputs {
   return inputsFromAnswers({ style: list(r.style), blockers: list(r.blockers), goal: one(r.goal), setting: one(r.setting) });
 }
 
-const STYLE_HINT: Record<string, string> = {
-  video: "A well-reviewed video walkthrough is a good way in.",
-  courses: "If you're following a structured course, use its matching module.",
-  reading: "Start with the official docs or a respected written guide.",
-  projects: "Learn just enough to start building, then fill the gaps as you go.",
-};
-
 type Draft = Omit<PlanTask, "phase_index" | "milestone_index">;
 type DraftMilestone = { title: string; outcome: string; skill: string | null; tasks: Draft[] };
 
@@ -77,7 +70,6 @@ const SETTING_TASK: Record<string, Omit<Draft, "key" | "skill">> = {
 };
 
 function assembleUncached(body: TemplateBody, role: Role, inputs: PlanInputs): AssembledPlan {
-  const hint = inputs.style.length ? STYLE_HINT[inputs.style[0]] : undefined;
   const phases = body.phases.map((p, pi) => ({
     title: p.title,
     summary: p.summary,
@@ -89,7 +81,7 @@ function assembleUncached(body: TemplateBody, role: Role, inputs: PlanInputs): A
         tasks: m.tasks.map((t, ti) => ({
           key: `p${pi}.m${mi}.t${ti}`,
           title: t.title,
-          description: t.type === "learn" && hint ? `${t.description} ${hint}`.trim() : t.description,
+          description: t.description,
           type: t.type,
           minutes: t.minutes,
           skill: m.skill,

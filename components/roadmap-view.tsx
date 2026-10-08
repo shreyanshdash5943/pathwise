@@ -1,13 +1,17 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-import { useMemo, useState } from "react";
+import { ArrowDown, ArrowUp, ChevronDown, Pencil, Plus, Trash2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import clsx from "clsx";
 import type { Task } from "@/lib/data";
 import type { RoadmapOutline } from "@/lib/roadmap-schema";
 import { TaskRow } from "./task-row";
 import { Toast, useToast } from "./toast";
 import { useProofEditor, type ProofLite } from "./proof-dialog";
+import { TaskEditDialog, type TaskDraft } from "./task-edit-dialog";
+import { ProBadge } from "./pro-badge";
 
 type MState = "done" | "current" | "upcoming";
 
@@ -15,13 +19,26 @@ export function RoadmapView({
   outline,
   initialTasks,
   proofs: initialProofs,
+  pro,
+  hiddenCount,
+  edited,
 }: {
   outline: RoadmapOutline;
   initialTasks: Task[];
   roleTitle?: string;
   proofs: Record<string, ProofLite>;
+  pro: boolean;
+  hiddenCount: number;
+  edited: boolean;
 }) {
+  const router = useRouter();
   const [tasks, setTasks] = useState(initialTasks);
+  // After an edit the server sends the new task list; take it.
+  useEffect(() => setTasks(initialTasks), [initialTasks]);
+  const [editing, setEditing] = useState(false);
+  const [working, setWorking] = useState(false);
+  const [confirmRemove, setConfirmRemove] = useState<string | null>(null);
+  const [dialog, setDialog] = useState<{ phase: number; milestone: number; task: Task | null } | null>(null);
   const [busy, setBusy] = useState<Set<string>>(new Set());
   const { toast, show } = useToast();
   const proofEditor = useProofEditor(initialProofs, show);
@@ -87,6 +104,33 @@ export function RoadmapView({
     }
   }
 
+  async function call(url: string, init: RequestInit, done?: string) {
+    setWorking(true);
+    try {
+      const res = await fetch(url, { ...init, headers: { "Content-Type": "application/json" } });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || "Couldn't save that change.");
+      if (done) show(done);
+      router.refresh();
+      return null;
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : "Couldn't save that change.";
+      show(msg);
+      return msg;
+    } finally {
+      setWorking(false);
+    }
+  }
+
+  async function saveTask(draft: TaskDraft) {
+    if (!dialog) return null;
+    const err = dialog.task
+      ? await call(`/api/plan/tasks/${dialog.task.id}`, { method: "PATCH", body: JSON.stringify(draft) }, "Task updated.")
+      : await call("/api/plan/tasks", { method: "POST", body: JSON.stringify({ ...draft, phaseIndex: dialog.phase, milestoneIndex: dialog.milestone }) }, "Task added.");
+    if (!err) setDialog(null);
+    return err;
+  }
+
   return (
     <>
       <div className="mb-10">
@@ -105,6 +149,32 @@ export function RoadmapView({
             {completed} of {tasks.length} tasks
           </span>
         </div>
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          {pro ? (
+            <button type="button" className={editing ? "btn-primary h-9 px-4 text-[14px]" : "btn-outline h-9 px-4 text-[14px]"} onClick={() => setEditing((e) => !e)}>
+              <Pencil className="h-4 w-4" /> {editing ? "Done editing" : "Edit roadmap"}
+            </button>
+          ) : (
+            <Link href="/pro" className="btn-outline h-9 px-4 text-[14px]">
+              <Pencil className="h-4 w-4 text-muted" /> Edit roadmap <ProBadge className="pointer-events-none ml-1" />
+            </Link>
+          )}
+          {(editing || !pro) && hiddenCount > 0 && (
+            <button type="button" className="btn-quiet h-9 px-3 text-[14px]" disabled={working} onClick={() => call("/api/plan/reset", { method: "POST", body: JSON.stringify({ only: "removed" }) }, "Removed tasks are back.")}>
+              Restore {hiddenCount} removed {hiddenCount === 1 ? "task" : "tasks"}
+            </button>
+          )}
+          {(editing || !pro) && edited && (
+            <button type="button" className="btn-quiet h-9 px-3 text-[14px]" disabled={working} onClick={() => call("/api/plan/reset", { method: "POST", body: "{}" }, "Your plan is back to the original.")}>
+              Reset to the original plan
+            </button>
+          )}
+        </div>
+        {editing && (
+          <p className="mt-3 max-w-2xl rounded-xl bg-accent-soft/60 px-4 py-3 text-[14px] text-ink-soft">
+            Open a milestone to move, remove or add tasks. Changes save straight away, and today&apos;s checklist follows the new order.
+          </p>
+        )}
       </div>
 
       <ol className="space-y-10">
@@ -155,17 +225,61 @@ export function RoadmapView({
                           className="overflow-hidden"
                         >
                           <div className="px-2 pb-3 sm:pl-10 sm:pr-3">
-                            {list.map((t) => (
-                              <TaskRow
-                                key={t.id}
-                                {...t}
-                                checked={!!t.completed_on}
-                                busy={busy.has(t.id)}
-                                onToggle={() => toggleTask(t)}
-                                proofUrl={proofEditor.proofs[t.id]?.url}
-                                onProof={t.type === "build" || t.type === "connect" ? () => proofEditor.open(t.id, t.title) : undefined}
-                              />
+                            {list.map((t, ti) => (
+                              <div key={t.id} className="flex items-start gap-1">
+                                <div className="min-w-0 flex-1">
+                                  <TaskRow
+                                    {...t}
+                                    checked={!!t.completed_on}
+                                    busy={busy.has(t.id)}
+                                    onToggle={() => toggleTask(t)}
+                                    proofUrl={proofEditor.proofs[t.id]?.url}
+                                    onProof={t.type === "build" || t.type === "connect" ? () => proofEditor.open(t.id, t.title) : undefined}
+                                  />
+                                </div>
+                                {editing && (
+                                  <div className="flex shrink-0 items-center gap-0.5 pt-2.5">
+                                    <IconButton label="Move up" disabled={working || ti === 0} onClick={() => call(`/api/plan/tasks/${t.id}/move`, { method: "POST", body: JSON.stringify({ direction: "up" }) })}>
+                                      <ArrowUp className="h-4 w-4" />
+                                    </IconButton>
+                                    <IconButton label="Move down" disabled={working || ti === list.length - 1} onClick={() => call(`/api/plan/tasks/${t.id}/move`, { method: "POST", body: JSON.stringify({ direction: "down" }) })}>
+                                      <ArrowDown className="h-4 w-4" />
+                                    </IconButton>
+                                    {t.custom && (
+                                      <IconButton label="Edit task" disabled={working} onClick={() => setDialog({ phase: t.phase_index, milestone: t.milestone_index, task: t })}>
+                                        <Pencil className="h-4 w-4" />
+                                      </IconButton>
+                                    )}
+                                    {confirmRemove === t.id ? (
+                                      <button
+                                        type="button"
+                                        className="h-8 rounded-lg bg-red-600 px-2.5 text-[13px] font-medium text-white hover:bg-red-700"
+                                        disabled={working}
+                                        onClick={() => {
+                                          setConfirmRemove(null);
+                                          call(`/api/plan/tasks/${t.id}`, { method: "DELETE" }, t.custom ? "Task deleted." : "Task removed. You can restore it any time.");
+                                        }}
+                                      >
+                                        Remove
+                                      </button>
+                                    ) : (
+                                      <IconButton label="Remove task" disabled={working} onClick={() => setConfirmRemove(t.id)}>
+                                        <Trash2 className="h-4 w-4" />
+                                      </IconButton>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
                             ))}
+                            {editing && (
+                              <button
+                                type="button"
+                                onClick={() => setDialog({ phase: pi, milestone: mi, task: null })}
+                                className="mt-1 flex items-center gap-2 rounded-xl px-3 py-2.5 text-[14px] font-medium text-accent transition-colors hover:bg-accent-soft/60 sm:px-4"
+                              >
+                                <Plus className="h-4 w-4" /> Add a task here
+                              </button>
+                            )}
                           </div>
                         </motion.div>
                       )}
@@ -178,6 +292,14 @@ export function RoadmapView({
         ))}
       </ol>
       {proofEditor.dialog}
+      <TaskEditDialog
+        open={!!dialog}
+        heading={dialog?.task ? "Edit your task" : "Add a task"}
+        context={dialog ? outline.phases[dialog.phase]?.milestones[dialog.milestone]?.title : undefined}
+        initial={dialog?.task ? { title: dialog.task.title, description: dialog.task.description, type: dialog.task.type, minutes: dialog.task.minutes } : null}
+        onClose={() => setDialog(null)}
+        onSave={saveTask}
+      />
       <Toast message={toast} />
     </>
   );
@@ -203,5 +325,20 @@ function MilestoneNode({ state }: { state: MState }) {
         {state === "current" && <span className="h-1.5 w-1.5 rounded-full bg-white" />}
       </motion.span>
     </span>
+  );
+}
+
+function IconButton({ label, disabled, onClick, children }: { label: string; disabled?: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      title={label}
+      disabled={disabled}
+      onClick={onClick}
+      className="grid h-8 w-8 place-items-center rounded-lg text-muted transition-colors hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30"
+    >
+      {children}
+    </button>
   );
 }

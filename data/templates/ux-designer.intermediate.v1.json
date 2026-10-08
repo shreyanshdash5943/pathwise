@@ -1,13 +1,13 @@
 {
-  "title": "UX Designer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to master research, architecture, and visual design while building a professional portfolio. Focuses on best practices, larger projects, and job‑ready habits.",
+  "title": "UX Designer roadmap",
+  "summary": "A plan to Guide you through Research, architecture, and visual Design while you build a professional portfolio. It covers best practices, larger projects, and job-ready habits.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build a solid base in UX theory and essential tools.",
       "milestones": [
         {
-          "title": "Core UX Concepts",
+          "title": "Core UX concepts",
           "outcome": "Can explain the UX design process and its phases.",
           "skill": "User research",
           "tasks": [
@@ -18,19 +18,19 @@
               "minutes": 45
             },
             {
-              "title": "Watch Design Thinking Video",
-              "description": "View the 20‑minute Design Thinking overview on the Interaction Design Foundation YouTube channel.",
+              "title": "Watch Design Thinking video",
+              "description": "View the 20-minute Design Thinking overview on the Interaction Design Foundation YouTube channel.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Summarize Key Steps",
-              "description": "Write a one‑page summary of the UX process from discovery to delivery.",
+              "title": "Summarize key steps",
+              "description": "Write a one-page summary of the UX process from discovery to delivery.",
               "type": "reflect",
               "minutes": 30
             },
             {
-              "title": "Create Process Diagram",
+              "title": "Create process diagram",
               "description": "Sketch a flow diagram of the UX stages in Figma using basic shapes.",
               "type": "build",
               "minutes": 40
@@ -38,36 +38,36 @@
           ]
         },
         {
-          "title": "Figma Fundamentals",
+          "title": "Figma fundamentals",
           "outcome": "Can navigate Figma, create frames, and use components.",
           "skill": "Figma",
           "tasks": [
             {
-              "title": "Complete Figma Intro Course",
+              "title": "Complete Figma intro course",
               "description": "Finish the free Figma Basics tutorial on the official Figma Learn site.",
               "type": "learn",
               "minutes": 60
             },
             {
-              "title": "Set Up Design File",
+              "title": "Set up Design file",
               "description": "Create a new Figma file, add pages, and organize layers for a mock project.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Build Component Library",
+              "title": "Build component library",
               "description": "Design 5 reusable UI components (button, input, card, nav, icon) and turn them into components.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Practice Auto‑Layout",
-              "description": "Recreate a simple login form using Auto‑Layout to understand constraints.",
+              "title": "Practice Auto-Layout",
+              "description": "Recreate a simple login form using Auto-Layout to understand constraints.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Share for Feedback",
+              "title": "Share for feedback",
               "description": "Invite a peer to view the file and request a quick design critique.",
               "type": "connect",
               "minutes": 20
@@ -77,40 +77,40 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop research, architecture, and prototyping abilities.",
       "milestones": [
         {
-          "title": "User Research Methods",
+          "title": "User Research methods",
           "outcome": "Can plan and conduct a basic user interview and synthesize findings.",
           "skill": "User research",
           "tasks": [
             {
-              "title": "Read Interview Guide",
+              "title": "Read interview Guide",
               "description": "Study the free interview guide on the UX Research Collective blog.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Draft Interview Script",
-              "description": "Write a 5‑question script targeting a specific user problem.",
+              "title": "Draft interview script",
+              "description": "Write a 5-question script targeting a specific user problem.",
               "type": "build",
               "minutes": 25
             },
             {
-              "title": "Recruit 3 Participants",
-              "description": "Use social media or a university forum to recruit three participants for a 30‑minute interview.",
+              "title": "Recruit 3 participants",
+              "description": "Use social media or a university forum to recruit three participants for a 30-minute interview.",
               "type": "connect",
               "minutes": 40
             },
             {
-              "title": "Conduct Mock Interview",
-              "description": "Run a 30‑minute interview with a friend acting as a user, record notes.",
+              "title": "Conduct mock interview",
+              "description": "Run a 30-minute interview with a friend acting as a user, record notes.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Create Affinity Map",
+              "title": "Create affinity map",
               "description": "Group interview insights into themes on a Miro board (free version).",
               "type": "build",
               "minutes": 35
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "title": "Information Architecture",
+          "title": "Information architecture",
           "outcome": "Can organize content into clear navigation structures and site maps.",
           "skill": "Information architecture",
           "tasks": [
@@ -129,25 +129,25 @@
               "minutes": 30
             },
             {
-              "title": "Audit Existing App",
+              "title": "Audit existing app",
               "description": "Choose an app you use daily and map its current navigation hierarchy.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Create Card Sort",
-              "description": "Design a 20‑item open card‑sort using OptimalSort free trial.",
+              "title": "Create card sort",
+              "description": "Design a 20-item open card-sort using OptimalSort free trial.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Build Site Map",
-              "description": "Translate card‑sort results into a hierarchical site map in Figma.",
+              "title": "Build site map",
+              "description": "Translate card-sort results into a hierarchical site map in Figma.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Validate with Peer",
+              "title": "Validate with peer",
               "description": "Share the site map with a fellow designer for quick critique.",
               "type": "connect",
               "minutes": 20
@@ -157,77 +157,77 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply skills to real‑world portfolio projects.",
+      "title": "Proof of work",
+      "summary": "Apply skills to real-world portfolio projects.",
       "milestones": [
         {
-          "title": "App Redesign Case Study",
+          "title": "App redesign case study",
           "outcome": "Portfolio includes a full redesign narrative with research, IA, and UI.",
           "skill": null,
           "tasks": [
             {
-              "title": "Select Target App",
+              "title": "Select target app",
               "description": "Pick an app you use frequently that has usability issues.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Conduct 5‑Minute Survey",
+              "title": "Conduct 5-minute survey",
               "description": "Create a short Google Form and collect 10 responses about pain points.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Define Personas",
+              "title": "Define personas",
               "description": "Synthesize survey data into two primary user personas in Figma.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Sketch Wireflows",
-              "description": "Draw low‑fidelity wireflows for the main user journey.",
+              "title": "Sketch wireflows",
+              "description": "Draw low-fidelity wireflows for the main user journey.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Prototype Key Screens",
-              "description": "Create a high‑fidelity prototype of the onboarding flow in Figma.",
+              "title": "Prototype key screens",
+              "description": "Create a high-fidelity prototype of the onboarding flow in Figma.",
               "type": "build",
               "minutes": 70
             }
           ]
         },
         {
-          "title": "Usability Study Project",
+          "title": "Usability study project",
           "outcome": "Portfolio shows a documented usability test with findings and recommendations.",
           "skill": null,
           "tasks": [
             {
-              "title": "Recruit 5 Participants",
+              "title": "Recruit 5 participants",
               "description": "Post a brief recruitment request on Reddit’s r/UserTesting community.",
               "type": "connect",
               "minutes": 40
             },
             {
-              "title": "Prepare Test Script",
-              "description": "Write a 6‑step task script focusing on core app functions.",
+              "title": "Prepare test script",
+              "description": "Write a 6-step task script focusing on core app functions.",
               "type": "build",
               "minutes": 30
             },
             {
-              "title": "Run Remote Tests",
+              "title": "Run remote tests",
               "description": "Conduct 5 remote moderated tests using Zoom, record screen and audio.",
               "type": "practice",
               "minutes": 120
             },
             {
-              "title": "Analyze Results",
+              "title": "Analyze results",
               "description": "Identify usability issues and rate severity in a spreadsheet.",
               "type": "reflect",
               "minutes": 45
             },
             {
-              "title": "Write Study Report",
+              "title": "Write study report",
               "description": "Compose a concise report with screenshots, findings, and design recommendations.",
               "type": "build",
               "minutes": 60
@@ -237,16 +237,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Refine advanced practices, professional habits, and job search readiness.",
       "milestones": [
         {
-          "title": "Design Critique Mastery",
+          "title": "Design Critique",
           "outcome": "Can give and receive constructive feedback effectively.",
           "skill": "Design critique",
           "tasks": [
             {
-              "title": "Read Critique Guidelines",
+              "title": "Read Critique guidelines",
               "description": "Study the free ‘Design Critique’ article on Smashing Magazine.",
               "type": "learn",
               "minutes": 25
@@ -258,56 +258,56 @@
               "minutes": 60
             },
             {
-              "title": "Give Structured Feedback",
-              "description": "Provide a 5‑minute verbal critique for a peer’s portfolio piece using the “I like, I wish, What if” format.",
+              "title": "Give structured feedback",
+              "description": "Provide a 5-minute verbal critique for a peer’s portfolio piece using the “I like, I wish, What if” format.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Reflect on Feedback Received",
+              "title": "Reflect on feedback received",
               "description": "Write a short reflection on how the feedback will change your work.",
               "type": "reflect",
               "minutes": 20
             },
             {
-              "title": "Document Feedback Loop",
-              "description": "Add a feedback‑log section to your portfolio case studies.",
+              "title": "Document feedback loop",
+              "description": "Add a feedback-log section to your portfolio case studies.",
               "type": "build",
               "minutes": 35
             }
           ]
         },
         {
-          "title": "Advanced Wireframing & Prototyping",
+          "title": "Advanced wireframing & prototyping",
           "outcome": "Can create detailed, interactive wireframes that communicate design intent.",
           "skill": "Wireframing",
           "tasks": [
             {
-              "title": "Study Mid‑Fidelity Wireframes",
-              "description": "Read the free article on mid‑fidelity wireframing on UX Collective.",
+              "title": "Study mid-fidelity wireframes",
+              "description": "Read the free article on mid-fidelity wireframing on UX Collective.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Create Mid‑Fi Wireframe Set",
-              "description": "Design a set of 8 mid‑fidelity screens for a new feature in Figma.",
+              "title": "Create Mid-Fi wireframe set",
+              "description": "Design a set of 8 mid-fidelity screens for a new feature in Figma.",
               "type": "build",
               "minutes": 55
             },
             {
-              "title": "Add Interactive Components",
+              "title": "Add interactive components",
               "description": "Use Figma’s prototyping tools to link screens with transitions and overlays.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Test Prototype with Peer",
-              "description": "Conduct a 15‑minute usability walk‑through with a colleague and note observations.",
+              "title": "Test prototype with peer",
+              "description": "Conduct a 15-minute usability walk-through with a colleague and note observations.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Iterate Based on Feedback",
+              "title": "Iterate based on feedback",
               "description": "Refine the wireframes and interactions according to the peer notes.",
               "type": "build",
               "minutes": 40
@@ -315,36 +315,36 @@
           ]
         },
         {
-          "title": "Job‑Ready Portfolio & Interview Prep",
+          "title": "Job-ready portfolio & interview prep",
           "outcome": "Has a polished portfolio and can articulate design decisions in interviews.",
           "skill": "Usability testing",
           "tasks": [
             {
-              "title": "Curate Portfolio Pieces",
+              "title": "Curate portfolio pieces",
               "description": "Select three strongest projects, write case study narratives, and upload to a Behance or personal site.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Create One‑Pager Resume",
+              "title": "Create one-Pager resume",
               "description": "Design a concise UX resume in Figma highlighting key skills and metrics.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Practice STAR Stories",
-              "description": "Write three STAR‑formatted answers for common UX interview questions.",
+              "title": "Practice STAR stories",
+              "description": "Write three STAR-formatted answers for common UX interview questions.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Mock Interview Session",
-              "description": "Schedule a 45‑minute mock interview with a senior designer via LinkedIn.",
+              "title": "Mock interview session",
+              "description": "Schedule a 45-minute mock interview with a senior designer via LinkedIn.",
               "type": "connect",
               "minutes": 45
             },
             {
-              "title": "Reflect on Interview Feedback",
+              "title": "Reflect on interview feedback",
               "description": "Note strengths and improvement areas, then update portfolio accordingly.",
               "type": "reflect",
               "minutes": 25

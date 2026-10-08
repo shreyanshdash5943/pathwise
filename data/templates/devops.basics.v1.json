@@ -1,18 +1,18 @@
 {
-  "title": "DevOps Engineer Roadmap",
+  "title": "DevOps Engineer roadmap",
   "summary": "A practical path to solidify core DevOps fundamentals and build a portfolio that showcases automation, containerization, and infrastructure-as-code. By the end you’ll be ready to land a role or win freelance contracts.",
   "phases": [
     {
       "title": "Foundations",
-      "summary": "Strengthen the operating‑system and version‑control base needed for any automation work.",
+      "summary": "Strengthen the operating-system and version-control base needed for any automation work.",
       "milestones": [
         {
-          "title": "Linux command mastery",
+          "title": "Linux command fundamentals",
           "outcome": "You can navigate the shell, manage files, processes and services confidently.",
           "skill": "Linux",
           "tasks": [
             {
-              "title": "Read Linux Filesystem Overview",
+              "title": "Read Linux filesystem overview",
               "description": "Study the directory hierarchy and common file locations on the official Linux Documentation Project.",
               "type": "learn",
               "minutes": 30
@@ -24,7 +24,7 @@
               "minutes": 40
             },
             {
-              "title": "Set up a Bash alias script",
+              "title": "Set up a bash alias script",
               "description": "Write a .bashrc snippet that adds useful shortcuts for git and docker commands.",
               "type": "build",
               "minutes": 45
@@ -49,7 +49,7 @@
               "minutes": 45
             },
             {
-              "title": "Set up GitHub Actions for a hello‑world repo",
+              "title": "Set up GitHub Actions for a hello-world repo",
               "description": "Create a workflow file that runs lint and unit tests on push.",
               "type": "build",
               "minutes": 60
@@ -62,7 +62,7 @@
             },
             {
               "title": "Connect with a DevOps community",
-              "description": "Join the r/devops subreddit and introduce yourself, asking for CI best‑practice tips.",
+              "description": "Join the r/devops subreddit and introduce yourself, asking for CI best-practice tips.",
               "type": "connect",
               "minutes": 20
             }
@@ -71,8 +71,8 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Learn containerization, orchestration, and infrastructure‑as‑code tools.",
+      "title": "Core skills",
+      "summary": "Learn containerization, orchestration, and infrastructure-as-code tools.",
       "milestones": [
         {
           "title": "Docker fundamentals",
@@ -80,26 +80,26 @@
           "skill": "Docker",
           "tasks": [
             {
-              "title": "Read Docker Engine docs on Docker.com",
+              "title": "Read Docker engine docs on Docker.com",
               "description": "Focus on image layers, Dockerfile syntax, and best practices.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Build a multi‑stage Dockerfile for a Node app",
+              "title": "Build a multi-stage Dockerfile for a Node app",
               "description": "Create a Dockerfile that compiles and runs the app in a minimal image.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Practice container networking",
-              "description": "Run two containers and connect them with a user‑defined bridge network.",
+              "description": "Run two containers and connect them with a user-defined bridge network.",
               "type": "practice",
               "minutes": 40
             },
             {
               "title": "Reflect on image size reductions",
-              "description": "Compare sizes before and after multi‑stage builds and note optimizations.",
+              "description": "Compare sizes before and after multi-stage builds and note optimizations.",
               "type": "reflect",
               "minutes": 15
             }
@@ -111,14 +111,14 @@
           "skill": "Kubernetes",
           "tasks": [
             {
-              "title": "Follow the Kubernetes Basics tutorial on Kubernetes.io",
+              "title": "Follow the Kubernetes basics tutorial on Kubernetes.io",
               "description": "Complete the interactive labs that cover pods, deployments, and services.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Deploy a sample app with a Deployment and Service",
-              "description": "Use kubectl to apply YAML manifests for a hello‑world container.",
+              "description": "Use kubectl to apply YAML manifests for a hello-world container.",
               "type": "build",
               "minutes": 45
             },
@@ -137,12 +137,12 @@
           ]
         },
         {
-          "title": "Infrastructure as Code with Terraform",
+          "title": "Infrastructure as code with Terraform",
           "outcome": "You can provision cloud resources declaratively and manage state safely.",
           "skill": "Infrastructure as code",
           "tasks": [
             {
-              "title": "Read Terraform Getting Started guide on HashiCorp Docs",
+              "title": "Read Terraform getting started guide on HashiCorp docs",
               "description": "Understand providers, resources, and state files.",
               "type": "learn",
               "minutes": 40
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate end‑to‑end DevOps pipelines.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate end-to-end DevOps pipelines.",
       "milestones": [
         {
           "title": "CI/CD pipeline for a web app",
@@ -205,12 +205,12 @@
           ]
         },
         {
-          "title": "Containerised multi‑service app",
+          "title": "Containerised multi-service app",
           "outcome": "You can orchestrate several containers with Docker Compose and Kubernetes.",
           "skill": null,
           "tasks": [
             {
-              "title": "Design a three‑service app (frontend, API, DB)",
+              "title": "Design a three-service app (frontend, API, DB)",
               "description": "Sketch the service responsibilities and communication flow.",
               "type": "learn",
               "minutes": 30
@@ -236,7 +236,7 @@
           ]
         },
         {
-          "title": "Terraform‑defined infrastructure",
+          "title": "Terraform-defined infrastructure",
           "outcome": "You can provision a full environment (VPC, subnets, compute) using IaC.",
           "skill": null,
           "tasks": [
@@ -254,13 +254,13 @@
             },
             {
               "title": "Practice destroying and recreating safely",
-              "description": "Use terraform destroy and then re‑apply, noting state handling.",
+              "description": "Use terraform destroy and then re-apply, noting state handling.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Reflect on cost‑optimization measures",
-              "description": "Write notes on how to keep the free‑tier resources inexpensive.",
+              "title": "Reflect on cost-optimization measures",
+              "description": "Write notes on how to keep the free-tier resources inexpensive.",
               "type": "reflect",
               "minutes": 15
             }
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Add advanced topics, polish your portfolio, and prepare for interviews or client pitches.",
       "milestones": [
         {
@@ -284,7 +284,7 @@
               "minutes": 40
             },
             {
-              "title": "Install Prometheus and Node Exporter via Docker",
+              "title": "Install Prometheus and Node exporter via Docker",
               "description": "Run containers locally and verify metrics collection.",
               "type": "build",
               "minutes": 50
@@ -316,7 +316,7 @@
             },
             {
               "title": "Install Argo CD on a local Kind cluster",
-              "description": "Follow the official quick‑start guide to deploy Argo CD via Helm.",
+              "description": "Follow the official quick-start guide to deploy Argo CD via Helm.",
               "type": "build",
               "minutes": 60
             },
@@ -341,7 +341,7 @@
           "tasks": [
             {
               "title": "Write concise project summaries for each portfolio item",
-              "description": "Create a one‑page description highlighting problem, solution, tools, and results.",
+              "description": "Create a one-page description highlighting problem, solution, tools, and results.",
               "type": "learn",
               "minutes": 35
             },

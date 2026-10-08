@@ -1,14 +1,14 @@
 {
-  "title": "Frontend Engineer Senior Path",
-  "summary": "A step‑by‑step roadmap that builds deep technical foundations, sharpens core engineering skills, creates showcase projects, and prepares you for senior‑level roles. Follow each phase to gain confidence, a strong portfolio, and interview readiness.",
+  "title": "Frontend Engineer senior path",
+  "summary": "A step-by-step roadmap that builds deep technical foundations, sharpens core engineering skills, creates showcase projects, and prepares you for senior-level roles. Follow each phase to gain confidence, a strong portfolio, and interview readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify web basics and development workflow.",
       "milestones": [
         {
-          "title": "HTML & CSS Mastery",
-          "outcome": "Can build pixel‑perfect, responsive layouts from mockups.",
+          "title": "HTML & CSS fundamentals",
+          "outcome": "Can build pixel-perfect, responsive layouts from mockups.",
           "skill": "HTML and CSS",
           "tasks": [
             {
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "Version Control & Tooling",
+          "title": "Version control & tooling",
           "outcome": "Can manage codebases confidently with Git and modern dev tools.",
           "skill": null,
           "tasks": [
@@ -83,12 +83,12 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Deepen JavaScript, TypeScript, React, and performance expertise.",
       "milestones": [
         {
           "title": "Advanced JavaScript & TypeScript",
-          "outcome": "Can write type‑safe, modular code and debug complex issues.",
+          "outcome": "Can write type-safe, modular code and debug complex issues.",
           "skill": "JavaScript",
           "tasks": [
             {
@@ -116,7 +116,7 @@
               "minutes": 30
             },
             {
-              "title": "Reflect on type‑safety benefits",
+              "title": "Reflect on type-safety benefits",
               "description": "Write a brief note on how TypeScript prevented a bug in your refactor.",
               "type": "reflect",
               "minutes": 15
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "title": "React & State Management",
+          "title": "React & state management",
           "outcome": "Can build scalable UI with hooks, context, and performance patterns.",
           "skill": "React",
           "tasks": [
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "title": "Accessibility & Performance",
+          "title": "Accessibility & performance",
           "outcome": "Can audit and improve sites for users and speed.",
           "skill": "Accessibility",
           "tasks": [
@@ -190,7 +190,7 @@
               "minutes": 30
             },
             {
-              "title": "Reflect on trade‑offs made",
+              "title": "Reflect on trade-offs made",
               "description": "Write a short paragraph about balancing accessibility with design constraints.",
               "type": "reflect",
               "minutes": 15
@@ -200,12 +200,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate senior‑level competence.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate senior-level competence.",
       "milestones": [
         {
-          "title": "Responsive Portfolio Site",
-          "outcome": "Can showcase your skills with a polished, mobile‑first site.",
+          "title": "Responsive portfolio site",
+          "outcome": "Can showcase your skills with a polished, mobile-first site.",
           "skill": null,
           "tasks": [
             {
@@ -241,7 +241,7 @@
           ]
         },
         {
-          "title": "API Dashboard",
+          "title": "API dashboard",
           "outcome": "Can integrate external data, handle async flows, and visualize results.",
           "skill": null,
           "tasks": [
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "title": "Component Library",
+          "title": "Component library",
           "outcome": "Can produce reusable, documented UI components for teams.",
           "skill": null,
           "tasks": [
@@ -317,16 +317,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Advance leadership, performance mastery, and senior interview preparation.",
+      "title": "Getting ready",
+      "summary": "Advance leadership, improve performance, and prepare for senior interviews",
       "milestones": [
         {
-          "title": "Web Performance Mastery",
+          "title": "Web performance fundamentals",
           "outcome": "Can audit, optimize, and explain performance improvements to stakeholders.",
           "skill": "Web performance",
           "tasks": [
             {
-              "title": "Read Web Vitals guide on web.dev",
+              "title": "Read web Vitals guide on web.dev",
               "description": "Understand LCP, FID, CLS and how to measure them.",
               "type": "learn",
               "minutes": 30
@@ -338,7 +338,7 @@
               "minutes": 45
             },
             {
-              "title": "Add Service Worker for offline caching",
+              "title": "Add service worker for offline caching",
               "description": "Configure Workbox to cache static assets and API responses.",
               "type": "build",
               "minutes": 80
@@ -351,14 +351,14 @@
             },
             {
               "title": "Explain optimizations in a mock interview",
-              "description": "Record a 5‑minute explanation of your performance work for a peer audience.",
+              "description": "Record a 5-minute explanation of your performance work for a peer audience.",
               "type": "reflect",
               "minutes": 25
             }
           ]
         },
         {
-          "title": "Leadership & Collaboration",
+          "title": "Leadership & collaboration",
           "outcome": "Can mentor junior developers and lead technical discussions.",
           "skill": "TypeScript",
           "tasks": [
@@ -388,14 +388,14 @@
             },
             {
               "title": "Connect with a senior engineering manager",
-              "description": "Schedule a 30‑minute chat to discuss leadership expectations.",
+              "description": "Schedule a 30-minute chat to discuss leadership expectations.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Senior Interview Prep",
+          "title": "Senior interview prep",
           "outcome": "Can confidently tackle system design, coding, and behavioral interviews.",
           "skill": "React",
           "tasks": [
@@ -413,7 +413,7 @@
             },
             {
               "title": "Mock whiteboard design session",
-              "description": "Sketch a component architecture for a real‑time chat app with a peer.",
+              "description": "Sketch a component architecture for a real-time chat app with a peer.",
               "type": "practice",
               "minutes": 60
             },

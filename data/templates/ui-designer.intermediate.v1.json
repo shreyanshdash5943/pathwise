@@ -1,19 +1,19 @@
 {
-  "title": "UI & Visual Designer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step guide to master visual design fundamentals, advanced tooling, and professional workflow. Build a showcase portfolio and prepare for senior‑level roles.",
+  "title": "UI & Visual Designer roadmap",
+  "summary": "You will learn Visual Design fundamentals, advanced tooling, and a professional workflow. Build a showcase portfolio and prepare for senior roles.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify visual fundamentals and basic design thinking.",
       "milestones": [
         {
-          "title": "Typography Basics",
+          "title": "Typography basics",
           "outcome": "Select and pair typefaces confidently for any UI.",
           "skill": "Typography",
           "tasks": [
             {
               "title": "Read typography chapter",
-              "description": "Study the typography section on MDN to understand font families, weights, and line‑height.",
+              "description": "Study the typography section on MDN to understand font families, weights, and line-height.",
               "type": "learn",
               "minutes": 45
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Colour & Layout Principles",
+          "title": "Colour & layout principles",
           "outcome": "Develop balanced layouts and accessible colour palettes.",
           "skill": "Colour and layout",
           "tasks": [
@@ -50,13 +50,13 @@
             },
             {
               "title": "Build a colour palette",
-              "description": "Create a 5‑color palette in Figma that meets AA contrast for text.",
+              "description": "Create a 5-color palette in Figma that meets AA contrast for text.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Design a grid system",
-              "description": "Set up a 12‑column grid in a new Figma file and place sample cards.",
+              "description": "Set up a 12-column grid in a new Figma file and place sample cards.",
               "type": "build",
               "minutes": 60
             },
@@ -77,11 +77,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Become proficient with industry tools and systematic design.",
       "milestones": [
         {
-          "title": "Master Figma Basics",
+          "title": "Learn Figma basics",
           "outcome": "Navigate, prototype, and collaborate efficiently in Figma.",
           "skill": "Figma",
           "tasks": [
@@ -98,8 +98,8 @@
               "minutes": 80
             },
             {
-              "title": "Practice auto‑layout",
-              "description": "Re‑create a login form using auto‑layout to test responsiveness.",
+              "title": "Practice auto-layout",
+              "description": "Re-create a login form using auto-layout to test responsiveness.",
               "type": "practice",
               "minutes": 45
             },
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "title": "Design Systems Foundations",
+          "title": "Design systems foundations",
           "outcome": "Define and document a cohesive design system.",
           "skill": "Design systems",
           "tasks": [
@@ -155,7 +155,7 @@
           ]
         },
         {
-          "title": "Prototyping & Motion Basics",
+          "title": "Prototyping & motion basics",
           "outcome": "Create interactive and animated UI prototypes.",
           "skill": "Prototyping and motion",
           "tasks": [
@@ -194,11 +194,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Produce portfolio‑ready projects that showcase depth.",
+      "title": "Proof of work",
+      "summary": "Produce portfolio-ready projects that showcase depth.",
       "milestones": [
         {
-          "title": "Design System Project",
+          "title": "Design system project",
           "outcome": "A complete, documented design system ready for portfolio display.",
           "skill": null,
           "tasks": [
@@ -235,8 +235,8 @@
           ]
         },
         {
-          "title": "Polished App Screens",
-          "outcome": "Three high‑fidelity app screens demonstrating visual polish and consistency.",
+          "title": "Polished app screens",
+          "outcome": "Three high-fidelity app screens demonstrating visual polish and consistency.",
           "skill": null,
           "tasks": [
             {
@@ -246,13 +246,13 @@
               "minutes": 40
             },
             {
-              "title": "Design high‑fidelity screens",
+              "title": "Design high-fidelity screens",
               "description": "Create three screens in Figma using your design system components.",
               "type": "build",
               "minutes": 150
             },
             {
-              "title": "Add micro‑interactions",
+              "title": "Add micro-interactions",
               "description": "Apply hover and transition animations to key UI elements.",
               "type": "practice",
               "minutes": 50
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "title": "Motion Prototype",
+          "title": "Motion prototype",
           "outcome": "A short motion prototype illustrating an interactive UI transition.",
           "skill": null,
           "tasks": [
@@ -290,7 +290,7 @@
             },
             {
               "title": "Apply Smart Animate",
-              "description": "Link frames with Smart Animate and fine‑tune easing curves.",
+              "description": "Link frames with Smart Animate and fine-tune easing curves.",
               "type": "practice",
               "minutes": 45
             },
@@ -311,17 +311,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish professional habits, advanced topics, and job readiness.",
       "milestones": [
         {
-          "title": "Advanced Handoff Practices",
+          "title": "Advanced handoff practices",
           "outcome": "Deliver design specs that engineers can implement without ambiguity.",
           "skill": "Handoff to engineers",
           "tasks": [
             {
               "title": "Study handoff guidelines",
-              "description": "Read the free handoff best‑practice article on the Figma blog.",
+              "description": "Read the free handoff best-practice article on the Figma blog.",
               "type": "learn",
               "minutes": 35
             },
@@ -352,7 +352,7 @@
           ]
         },
         {
-          "title": "Professional Portfolio & Presence",
+          "title": "Professional portfolio & presence",
           "outcome": "A polished online portfolio and personal brand ready for recruiters.",
           "skill": "Design systems",
           "tasks": [
@@ -364,12 +364,12 @@
             },
             {
               "title": "Write case studies",
-              "description": "Draft concise write‑ups for each project, focusing on problem, process, and outcome.",
+              "description": "Draft concise write-ups for each project, focusing on problem, process, and outcome.",
               "type": "build",
               "minutes": 80
             },
             {
-              "title": "Add high‑quality visuals",
+              "title": "Add high-quality visuals",
               "description": "Export and upload images and motion GIFs from your projects.",
               "type": "build",
               "minutes": 45
@@ -382,14 +382,14 @@
             },
             {
               "title": "Reflect on personal narrative",
-              "description": "Summarize your design philosophy in 2‑3 sentences for the about page.",
+              "description": "Summarize your design philosophy in 2-3 sentences for the about page.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Interview & Freelance Prep",
+          "title": "Interview & freelance prep",
           "outcome": "Confidently discuss work, solve design challenges, and win contracts.",
           "skill": "Prototyping and motion",
           "tasks": [
@@ -401,7 +401,7 @@
             },
             {
               "title": "Practice a design challenge",
-              "description": "Complete a timed 1‑hour UI redesign exercise and record your process.",
+              "description": "Complete a timed 1-hour UI redesign exercise and record your process.",
               "type": "practice",
               "minutes": 70
             },
@@ -419,7 +419,7 @@
             },
             {
               "title": "Reflect on strengths and gaps",
-              "description": "Write a short self‑assessment to guide future learning.",
+              "description": "Write a short self-assessment to guide future learning.",
               "type": "reflect",
               "minutes": 20
             }

@@ -1,31 +1,31 @@
 {
-  "title": "Data Analyst Mastery Roadmap",
-  "summary": "Deepen your analytical expertise, build best‑practice workflows, and create professional‑grade portfolio pieces. By the end you’ll turn raw data into actionable insights and be ready for full‑time roles or client work.",
+  "title": "Data Analyst roadmap",
+  "summary": "Deepen your analytical expertise, build best-practice workflows, and create professional-grade portfolio pieces. By the end you’ll turn raw data into actionable insights and be ready for full-time roles or client work.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish core data handling and statistical thinking.",
       "milestones": [
         {
-          "title": "Spreadsheet fluency",
+          "title": "Work with spreadsheets",
           "outcome": "You can clean, transform, and visualize data efficiently in Excel or Google Sheets.",
           "skill": "Spreadsheets",
           "tasks": [
             {
-              "title": "Complete Excel data‑cleaning tutorial",
+              "title": "Complete Excel data-cleaning tutorial",
               "description": "Follow the freeCodeCamp Excel Basics course and practice cleaning a sample sales sheet.",
               "type": "learn",
               "minutes": 60
             },
             {
-              "title": "Build a pivot‑table report",
+              "title": "Build a pivot-table report",
               "description": "Create a pivot table summarizing monthly revenue by region using the sample dataset.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Practice conditional formatting",
-              "description": "Apply color scales to highlight top‑performing products in the sheet.",
+              "description": "Apply color scales to highlight top-performing products in the sheet.",
               "type": "practice",
               "minutes": 30
             },
@@ -86,7 +86,7 @@
               "minutes": 40
             },
             {
-              "title": "Build a data‑cleaning function",
+              "title": "Build a data-cleaning function",
               "description": "Create a reusable function that handles missing values and type conversion.",
               "type": "build",
               "minutes": 55
@@ -102,17 +102,17 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop analytical, statistical, and visualization capabilities.",
       "milestones": [
         {
           "title": "Statistical reasoning",
-          "outcome": "You can design experiments and interpret results with confidence intervals and p‑values.",
+          "outcome": "You can design experiments and interpret results with confidence intervals and p-values.",
           "skill": "Statistics",
           "tasks": [
             {
               "title": "Study hypothesis testing on Khan Academy",
-              "description": "Complete the module on t‑tests and chi‑square tests.",
+              "description": "Complete the module on t-tests and chi-square tests.",
               "type": "learn",
               "minutes": 60
             },
@@ -142,7 +142,7 @@
           "skill": "Data visualisation",
           "tasks": [
             {
-              "title": "Read Chart Design guide on DataVizCatalog",
+              "title": "Read chart design guide on DataVizCatalog",
               "description": "Understand best practices for choosing chart types.",
               "type": "learn",
               "minutes": 40
@@ -173,20 +173,20 @@
           "skill": "Storytelling with data",
           "tasks": [
             {
-              "title": "Study storytelling framework on Storytelling with Data book",
+              "title": "Study storytelling framework on storytelling with data book",
               "description": "Read the first two chapters (available summary online) and note key steps.",
               "type": "learn",
               "minutes": 50
             },
             {
               "title": "Draft a slide deck outline",
-              "description": "Create a 5‑slide outline for a sales performance story using a mock dataset.",
+              "description": "Create a 5-slide outline for a sales performance story using a mock dataset.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Practice concise captions",
-              "description": "Write one‑sentence captions for each chart you created earlier.",
+              "description": "Write one-sentence captions for each chart you created earlier.",
               "type": "practice",
               "minutes": 30
             },
@@ -201,8 +201,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply your skills to real‑world portfolio projects.",
+      "title": "Proof of work",
+      "summary": "Apply your skills to real-world portfolio projects.",
       "milestones": [
         {
           "title": "Sales dashboard project",
@@ -229,20 +229,20 @@
             },
             {
               "title": "Write a project summary",
-              "description": "Compose a one‑page write‑up describing objectives, methodology, and insights.",
+              "description": "Compose a one-page write-up describing objectives, methodology, and insights.",
               "type": "reflect",
               "minutes": 40
             },
             {
               "title": "Publish to portfolio site",
-              "description": "Upload the Power BI embed link and write‑up to your personal website or GitHub Pages.",
+              "description": "Upload the Power BI embed link and write-up to your personal website or GitHub Pages.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "A/B test analysis write‑up",
+          "title": "A/B test analysis write-up",
           "outcome": "You produce a professional report that explains experiment design and results.",
           "skill": null,
           "tasks": [
@@ -254,7 +254,7 @@
             },
             {
               "title": "Perform statistical analysis in Python",
-              "description": "Use pandas and scipy to calculate lift, confidence interval, and p‑value.",
+              "description": "Use pandas and scipy to calculate lift, confidence interval, and p-value.",
               "type": "practice",
               "minutes": 70
             },
@@ -285,7 +285,7 @@
           "tasks": [
             {
               "title": "Extract user event data",
-              "description": "Use SQL to pull sign‑up and activity timestamps from a sample database.",
+              "description": "Use SQL to pull sign-up and activity timestamps from a sample database.",
               "type": "practice",
               "minutes": 60
             },
@@ -318,8 +318,8 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced techniques, professional habits, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish advanced techniques, professional habits, and job-search readiness.",
       "milestones": [
         {
           "title": "Advanced SQL & performance",
@@ -396,7 +396,7 @@
           ]
         },
         {
-          "title": "Job/Client readiness",
+          "title": "Job/client readiness",
           "outcome": "You can present your portfolio, interview confidently, and negotiate offers.",
           "skill": "Storytelling with data",
           "tasks": [
@@ -408,13 +408,13 @@
             },
             {
               "title": "Prepare STAR interview stories",
-              "description": "Write three Situation‑Task‑Action‑Result narratives highlighting analytical impact.",
+              "description": "Write three Situation-Task-Action-Result narratives highlighting analytical impact.",
               "type": "practice",
               "minutes": 50
             },
             {
               "title": "Mock interview with a peer",
-              "description": "Conduct a 30‑minute technical interview focusing on case studies.",
+              "description": "Conduct a 30-minute technical interview focusing on case studies.",
               "type": "practice",
               "minutes": 60
             },

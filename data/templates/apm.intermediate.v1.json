@@ -1,13 +1,13 @@
 {
-  "title": "Associate Product Manager Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to sharpen product discovery, specification, prioritisation, analytics and stakeholder skills, then showcase them in a portfolio and land a role. Each phase builds concrete abilities and deliverables you can add to your résumé.",
+  "title": "Associate Product Manager roadmap",
+  "summary": "A step-by-step plan to sharpen product discovery, specification, prioritisation, analytics and stakeholder skills, then showcase them in a portfolio and land a role. Each phase builds concrete abilities and deliverables you can add to your résumé.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build a solid grounding in product thinking and core communication tools.",
       "milestones": [
         {
-          "title": "Product Management Basics",
+          "title": "Product Management basics",
           "outcome": "Can explain the product lifecycle and key responsibilities of an APM.",
           "skill": "Customer discovery",
           "tasks": [
@@ -18,13 +18,13 @@
               "minutes": 60
             },
             {
-              "title": "Watch “How to Conduct Customer Interviews” on YouTube",
+              "title": "Watch “how to conduct customer interviews” on YouTube",
               "description": "Take notes on interview techniques and question framing from a reputable product leader video.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Create a 5‑minute interview script",
+              "title": "Create a 5-minute interview script",
               "description": "Draft a concise script for a hypothetical user interview, focusing on problem discovery.",
               "type": "build",
               "minutes": 45
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "Writing Clear Specs",
+          "title": "Writing clear specs",
           "outcome": "Can produce a concise product requirement document (PRD) outline.",
           "skill": "Writing specs",
           "tasks": [
@@ -74,7 +74,7 @@
             },
             {
               "title": "Revise PRD outline",
-              "description": "Incorporate feedback and produce a cleaned‑up version ready for expansion.",
+              "description": "Incorporate feedback and produce a cleaned-up version ready for expansion.",
               "type": "practice",
               "minutes": 45
             }
@@ -83,16 +83,16 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Develop decision‑making tools for prioritisation, roadmapping and metrics.",
+      "title": "Core skills",
+      "summary": "Develop decision-making tools for prioritisation, roadmapping and metrics.",
       "milestones": [
         {
-          "title": "Prioritisation Frameworks",
+          "title": "Prioritisation frameworks",
           "outcome": "Can apply at least two frameworks to rank feature ideas.",
           "skill": "Prioritisation",
           "tasks": [
             {
-              "title": "Read “RICE Scoring” article on Intercom blog",
+              "title": "Read “RICE scoring” article on Intercom blog",
               "description": "Understand the components of Reach, Impact, Confidence, Effort and how to calculate scores.",
               "type": "learn",
               "minutes": 30
@@ -129,19 +129,19 @@
           "skill": "Roadmapping",
           "tasks": [
             {
-              "title": "Read product roadmap guide on Aha! blog",
+              "title": "Read Product roadmap guide on Aha! blog",
               "description": "Learn best practices for timeline, themes, and granularity.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Explore free roadmap template on Google Slides",
+              "title": "Explore free roadmap template on Google slides",
               "description": "Open the template and understand each placeholder.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Create a 3‑month roadmap for a news app",
+              "title": "Create a 3-month roadmap for a news app",
               "description": "Populate the template with epics, features, and milestones.",
               "type": "build",
               "minutes": 70
@@ -161,12 +161,12 @@
           ]
         },
         {
-          "title": "Metrics and Analytics Foundations",
+          "title": "Metrics and analytics Foundations",
           "outcome": "Can define success metrics and set up a basic analytics dashboard.",
           "skill": "Metrics and analytics",
           "tasks": [
             {
-              "title": "Read “North Star Metric” article on Amplitude blog",
+              "title": "Read “North Star metric” article on Amplitude blog",
               "description": "Understand how to choose a guiding metric for product health.",
               "type": "learn",
               "minutes": 30
@@ -179,12 +179,12 @@
             },
             {
               "title": "Define three KPI for a feature launch",
-              "description": "Write clear, measurable objectives (e.g., activation rate, retention week‑1).",
+              "description": "Write clear, measurable objectives (e.g., activation rate, retention week-1).",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Build a simple dashboard in Google Data Studio",
+              "title": "Build a simple dashboard in Google data Studio",
               "description": "Connect a sample CSV and visualise the KPIs you defined.",
               "type": "build",
               "minutes": 70
@@ -200,11 +200,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio pieces that demonstrate your product thinking end‑to‑end.",
+      "title": "Proof of work",
+      "summary": "Create portfolio pieces that demonstrate your product thinking end-to-end.",
       "milestones": [
         {
-          "title": "Product Teardown",
+          "title": "Product teardown",
           "outcome": "Can present a critical analysis of an existing product’s strengths and gaps.",
           "skill": null,
           "tasks": [
@@ -227,7 +227,7 @@
               "minutes": 45
             },
             {
-              "title": "Create a 10‑slide teardown deck",
+              "title": "Create a 10-slide teardown deck",
               "description": "Combine visuals and notes into a concise presentation.",
               "type": "build",
               "minutes": 70
@@ -264,7 +264,7 @@
               "minutes": 80
             },
             {
-              "title": "Create low‑fidelity wireframes in Figma",
+              "title": "Create low-fidelity wireframes in Figma",
               "description": "Design basic screens to illustrate the feature flow.",
               "type": "build",
               "minutes": 70
@@ -278,13 +278,13 @@
           ]
         },
         {
-          "title": "Metrics Plan for Launch",
-          "outcome": "Can outline a data‑driven launch plan with tracking and analysis steps.",
+          "title": "Metrics plan for launch",
+          "outcome": "Can outline a data-driven launch plan with tracking and analysis steps.",
           "skill": null,
           "tasks": [
             {
               "title": "Read launch metrics guide on Mixpanel blog",
-              "description": "Learn which metrics matter pre‑launch, during, and post‑launch.",
+              "description": "Learn which metrics matter pre-launch, during, and post-launch.",
               "type": "learn",
               "minutes": 30
             },
@@ -301,13 +301,13 @@
               "minutes": 50
             },
             {
-              "title": "Mock‑up a launch dashboard in Google Data Studio",
+              "title": "Mock-up a launch dashboard in Google data Studio",
               "description": "Create charts for activation, retention, and revenue impact.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Reflect on data‑driven decision making",
+              "title": "Reflect on data-driven decision making",
               "description": "Summarise how the metrics will inform future product iterations.",
               "type": "reflect",
               "minutes": 20
@@ -317,17 +317,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced habits, network, and prepare for interviews or freelance gigs.",
       "milestones": [
         {
-          "title": "Advanced Stakeholder Communication",
-          "outcome": "Can run effective cross‑functional meetings and align stakeholders.",
+          "title": "Advanced stakeholder communication",
+          "outcome": "Can run effective cross-functional meetings and align stakeholders.",
           "skill": "Stakeholder communication",
           "tasks": [
             {
-              "title": "Read “Effective Product Meetings” on ProductTalk",
-              "description": "Identify structures for agenda, decision logs, and follow‑ups.",
+              "title": "Read “effective Product meetings” on ProductTalk",
+              "description": "Identify structures for agenda, decision logs, and follow-ups.",
               "type": "learn",
               "minutes": 30
             },
@@ -339,7 +339,7 @@
             },
             {
               "title": "Facilitate a mock stakeholder meeting",
-              "description": "Invite two peers, run a 30‑minute session using the agenda, and record minutes.",
+              "description": "Invite two peers, run a 30-minute session using the agenda, and record minutes.",
               "type": "practice",
               "minutes": 60
             },
@@ -358,12 +358,12 @@
           ]
         },
         {
-          "title": "Interview & Case Prep",
+          "title": "Interview & case prep",
           "outcome": "Can confidently answer product interview questions and solve case studies.",
           "skill": "Prioritisation",
           "tasks": [
             {
-              "title": "Read “Product Interview Questions” on Glassdoor Blog",
+              "title": "Read “Product interview questions” on Glassdoor blog",
               "description": "Familiarise yourself with common APM questions and expected answers.",
               "type": "learn",
               "minutes": 30
@@ -376,7 +376,7 @@
             },
             {
               "title": "Do a mock interview with a mentor",
-              "description": "Schedule a 45‑minute video call and receive real‑time feedback.",
+              "description": "Schedule a 45-minute video call and receive real-time feedback.",
               "type": "connect",
               "minutes": 60
             },
@@ -387,7 +387,7 @@
               "minutes": 30
             },
             {
-              "title": "Update a one‑page interview cheat sheet",
+              "title": "Update a one-page interview cheat sheet",
               "description": "Summarise frameworks, metrics, and storytelling tips for quick reference.",
               "type": "build",
               "minutes": 40
@@ -395,25 +395,25 @@
           ]
         },
         {
-          "title": "Portfolio & Personal Brand",
+          "title": "Portfolio & personal brand",
           "outcome": "Can present a polished portfolio and LinkedIn profile that attract recruiters.",
           "skill": "Writing specs",
           "tasks": [
             {
               "title": "Design a portfolio website on Carrd",
-              "description": "Create a one‑page site showcasing the three projects with brief descriptions and links.",
+              "description": "Create a one-page site showcasing the three projects with brief descriptions and links.",
               "type": "build",
               "minutes": 80
             },
             {
               "title": "Write project case studies",
-              "description": "Draft 150‑word narratives for each portfolio piece, highlighting problem, solution, and impact.",
+              "description": "Draft 150-word narratives for each portfolio piece, highlighting problem, solution, and impact.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Update LinkedIn headline and summary",
-              "description": "Craft a concise headline stating “Associate Product Manager – Customer‑focused, data‑driven” and a summary that mirrors the roadmap achievements.",
+              "description": "Write a headline “Associate Product Manager – Customer-focused, data-driven” and summary",
               "type": "build",
               "minutes": 45
             },
@@ -424,7 +424,7 @@
               "minutes": 30
             },
             {
-              "title": "Reflect on personal growth journey",
+              "title": "Reflect on personal growth",
               "description": "Write a brief blog post summarising what you’ve learned and next career steps.",
               "type": "reflect",
               "minutes": 30

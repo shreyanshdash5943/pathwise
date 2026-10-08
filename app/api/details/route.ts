@@ -3,10 +3,11 @@ import { currentUser } from "@clerk/nextjs/server";
 import { getSupabase } from "@/lib/supabase";
 import { applyKnownSkills, profileToday } from "@/lib/data";
 import { loadProfileAndPlan } from "@/lib/plans";
-import { cleanLinks, cleanSkills, getDetails, saveDetails, type Details } from "@/lib/details";
+import { cleanEmail, cleanLinks, cleanPhone, cleanSkills, getDetails, saveDetails, type Details } from "@/lib/details";
 import { cleanUsername, revalidatePublicProfile } from "@/lib/public-profile";
 import { skippableKeys } from "@/lib/templates/personalize";
 import { handleRouteError, jsonError } from "@/lib/http";
+import { isProRequired } from "@/lib/pro";
 
 /**
  * Saves profile details. When knownSkills is sent, the plan is updated too: learn and
@@ -45,6 +46,25 @@ export async function PATCH(req: Request) {
       patch.username = u.value;
     }
     if (body.isPublic !== undefined && typeof body.isPublic !== "boolean") return jsonError("Send isPublic as true or false.", 400);
+    if (body.contactEmail !== undefined) {
+      const email = cleanEmail(body.contactEmail);
+      if (email === undefined) return jsonError("That email address doesn't look right.", 400);
+      patch.contact_email = email;
+    }
+    if (body.phone !== undefined) {
+      const phone = cleanPhone(body.phone);
+      if (phone === undefined) return jsonError("Use digits for the phone number, with an optional + and country code.", 400);
+      patch.phone = phone;
+    }
+    if (body.cardTheme !== undefined) {
+      if (body.cardTheme !== "classic" && body.cardTheme !== "midnight" && body.cardTheme !== "minimal") return jsonError("Pick one of the card designs.", 400);
+      patch.card_theme = body.cardTheme;
+    }
+    for (const [key, column] of [["showEmail", "show_email"], ["showPhone", "show_phone"], ["showResume", "show_resume"], ["hideBranding", "hide_branding"]] as const) {
+      if (body[key] === undefined) continue;
+      if (typeof body[key] !== "boolean") return jsonError(`Send ${key} as true or false.`, 400);
+      patch[column] = body[key] as boolean;
+    }
 
     const { supabase, userId } = await getSupabase();
     const before = await getDetails(supabase);
@@ -78,6 +98,13 @@ export async function PATCH(req: Request) {
     return NextResponse.json({ ok: true, skipped });
   } catch (err) {
     if ((err as { code?: string } | null)?.code === "23505") return jsonError("That username is taken. Try another.", 409);
+    if (isProRequired(err)) {
+      const msg = (err as { message?: string }).message ?? "";
+      if (/short username/.test(msg)) return jsonError("Usernames under 6 characters are part of Pro. Pick a longer one, or see Pro.", 403);
+      if (/card theme/.test(msg)) return jsonError("That card design is part of Pro.", 403);
+      if (/branding/.test(msg)) return jsonError("Hiding the Pathwise footer is part of Pro.", 403);
+      return jsonError("That's part of Pro.", 403);
+    }
     return handleRouteError(err);
   }
 }

@@ -5,7 +5,8 @@ import type { RoadmapOutline, TaskType } from "./roadmap-schema";
 import type { Role } from "./roles";
 import { addDays, todayIn } from "./dates";
 import { loadTemplate } from "./templates";
-import { assemblePlan, parseInputs, type PlanInputs, type PlanTask } from "./templates/personalize";
+import { assemblePlan, parseInputs, type PlanInputs } from "./templates/personalize";
+import { applyEdits, type CustomTask, type EditedTask, type Override } from "./plan-edits";
 
 export type Profile = {
   user_id: string;
@@ -27,7 +28,11 @@ export type Plan = {
   createdAt: string;
   role: Role;
   outline: RoadmapOutline;
-  defs: PlanTask[];
+  /** The task list after the person's own edits (Pro), in order. */
+  defs: EditedTask[];
+  /** How many template tasks the person removed. */
+  hiddenCount: number;
+  edited: boolean;
 };
 
 /** A task as the UI sees it. id is the task key, which is stable within a plan. */
@@ -43,6 +48,8 @@ export type Task = {
   scheduled_for: string | null;
   completed_on: string | null;
   skipped: boolean;
+  /** Added by the person rather than the template. */
+  custom: boolean;
 };
 
 export type Stats = {
@@ -64,17 +71,26 @@ export async function getProfile(supabase: SupabaseClient): Promise<Profile | nu
   return data as Profile | null;
 }
 
-/** Loads the plan row and rebuilds its tasks from the template. Costs one small query. */
+/**
+ * Loads the plan row and rebuilds its tasks from the template, then applies the
+ * person's own edits. Three small queries, run in parallel.
+ */
 export async function getPlan(supabase: SupabaseClient): Promise<Plan | null> {
-  const { data, error } = await supabase
-    .from("plans")
-    .select("id, template_id, template_version, inputs, created_at")
-    .maybeSingle();
+  const [planRes, customRes, overRes] = await Promise.all([
+    supabase.from("plans").select("id, template_id, template_version, inputs, created_at").maybeSingle(),
+    supabase.from("plan_custom_tasks").select("plan_id, task_key, phase_index, milestone_index, sort, title, description, type, minutes"),
+    supabase.from("plan_task_overrides").select("plan_id, task_key, hidden, sort"),
+  ]);
+  const { data, error } = planRes;
   if (error) throw error;
   if (!data) return null;
+  // Before migration 007 these tables don't exist; treat that as "no edits".
+  const custom = ((customRes.error ? [] : customRes.data) ?? []).filter((c) => c.plan_id === data.id) as CustomTask[];
+  const overrides = ((overRes.error ? [] : overRes.data) ?? []).filter((o) => o.plan_id === data.id) as Override[];
   const tpl = await loadTemplate(data.template_id as string, data.template_version as number);
   const inputs = parseInputs(data.inputs);
   const assembled = assemblePlan(`${tpl.id}@${tpl.version}`, tpl.body, tpl.role, inputs);
+  const edits = applyEdits(assembled.outline, assembled.tasks, custom, overrides);
   return {
     id: data.id as string,
     templateId: tpl.id,
@@ -83,7 +99,9 @@ export async function getPlan(supabase: SupabaseClient): Promise<Plan | null> {
     createdAt: data.created_at as string,
     role: tpl.role,
     outline: assembled.outline,
-    defs: assembled.tasks,
+    defs: edits.tasks,
+    hiddenCount: edits.hidden,
+    edited: custom.length > 0 || overrides.length > 0,
   };
 }
 
@@ -109,6 +127,7 @@ export async function getTasks(supabase: SupabaseClient, plan: Plan): Promise<Ta
       scheduled_for: r?.scheduled_for ?? null,
       completed_on: r?.completed_on ?? null,
       skipped: r?.skipped ?? false,
+      custom: d.custom,
     };
   });
 }

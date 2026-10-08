@@ -1,14 +1,14 @@
 {
-  "title": "Growth Product Manager Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen product growth expertise, build a senior‑level portfolio, and prepare for leadership interviews. Focuses on metrics, experimentation, SQL, copy, prioritisation, and analytics tools.",
+  "title": "Growth Product Manager Advancement roadmap",
+  "summary": "A step-by-step plan to deepen product growth expertise, build a senior-level portfolio, and prepare for leadership interviews. Focuses on metrics, experimentation, SQL, copy, prioritisation, and analytics tools.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core growth concepts and data foundations.",
       "milestones": [
         {
-          "title": "Growth Funnel Fundamentals",
-          "outcome": "Can map end‑to‑end user funnels and identify key drop‑off points.",
+          "title": "Growth funnel fundamentals",
+          "outcome": "Can map end-to-end user funnels and identify key drop-off points.",
           "skill": "Funnels and metrics",
           "tasks": [
             {
@@ -19,7 +19,7 @@
             },
             {
               "title": "Sketch a funnel for a known app",
-              "description": "Create a hand‑drawn funnel diagram for a popular app, labeling each stage and metric.",
+              "description": "Create a hand-drawn funnel diagram for a popular app, labeling each stage and metric.",
               "type": "practice",
               "minutes": 45
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "SQL Refresher for Product Data",
+          "title": "SQL refresher for Product data",
           "outcome": "Can write queries to extract funnel and cohort data from a relational database.",
           "skill": "SQL",
           "tasks": [
@@ -50,19 +50,19 @@
             },
             {
               "title": "Query sample dataset",
-              "description": "Use the public Kaggle “eCommerce” dataset to pull daily sign‑up counts per source.",
+              "description": "Use the public Kaggle “eCommerce” dataset to pull daily sign-up counts per source.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Build a cohort query",
-              "description": "Write a SQL query that returns 7‑day retention cohorts for new users.",
+              "description": "Write a SQL query that returns 7-day retention cohorts for new users.",
               "type": "build",
               "minutes": 50
             },
             {
               "title": "Explain query results",
-              "description": "Summarize findings in a one‑page report highlighting retention trends.",
+              "description": "Summarize findings in a one-page report highlighting retention trends.",
               "type": "reflect",
               "minutes": 20
             }
@@ -71,11 +71,11 @@
       ]
     },
     {
-      "title": "Core Growth Skills",
+      "title": "Core Growth skills",
       "summary": "Develop advanced experimentation, copy, and prioritisation capabilities.",
       "milestones": [
         {
-          "title": "Design Robust Experiments",
+          "title": "Design experiments",
           "outcome": "Can create testable hypotheses, define metrics, and size experiments.",
           "skill": "Experiment design",
           "tasks": [
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "title": "Copy and Onboarding Optimization",
+          "title": "Copy and onboarding optimization",
           "outcome": "Can craft persuasive copy and redesign onboarding steps to boost activation.",
           "skill": "Copy and onboarding",
           "tasks": [
@@ -145,17 +145,17 @@
       ]
     },
     {
-      "title": "Portfolio Projects",
-      "summary": "Create tangible work samples that demonstrate senior‑level growth impact.",
+      "title": "Portfolio projects",
+      "summary": "Create tangible work samples that demonstrate senior-level growth impact.",
       "milestones": [
         {
-          "title": "Public Funnel Analysis Project",
+          "title": "Public funnel analysis project",
           "outcome": "Portfolio includes a detailed funnel analysis with actionable insights.",
           "skill": null,
           "tasks": [
             {
               "title": "Select a public product",
-              "description": "Choose a well‑known app (e.g., Spotify) and gather publicly available usage data.",
+              "description": "Choose a well-known app (e.g., Spotify) and gather publicly available usage data.",
               "type": "learn",
               "minutes": 30
             },
@@ -167,7 +167,7 @@
             },
             {
               "title": "Write analysis report",
-              "description": "Draft a 2‑page report with charts, findings, and three recommendations.",
+              "description": "Draft a 2-page report with charts, findings, and three recommendations.",
               "type": "build",
               "minutes": 90
             },
@@ -186,7 +186,7 @@
           ]
         },
         {
-          "title": "Experiment Backlog & Sizing",
+          "title": "Experiment backlog & sizing",
           "outcome": "Shows ability to prioritize and size a growth experiment pipeline.",
           "skill": null,
           "tasks": [
@@ -225,11 +225,11 @@
       ]
     },
     {
-      "title": "Getting Ready for Senior Roles",
+      "title": "Getting ready for senior roles",
       "summary": "Polish leadership presence, advanced analytics, and interview readiness.",
       "milestones": [
         {
-          "title": "Advanced Analytics Tools Mastery",
+          "title": "Use advanced analytics tools",
           "outcome": "Can extract insights using Amplitude or Mixpanel and present dashboards.",
           "skill": "Analytics tools",
           "tasks": [
@@ -260,8 +260,8 @@
           ]
         },
         {
-          "title": "Leadership & Interview Prep",
-          "outcome": "Ready to articulate growth strategy and lead cross‑functional teams in senior interviews.",
+          "title": "Leadership & Interview prep",
+          "outcome": "Ready to articulate growth strategy and lead cross-functional teams in senior interviews.",
           "skill": "Prioritisation",
           "tasks": [
             {
@@ -272,13 +272,13 @@
             },
             {
               "title": "Craft STAR stories",
-              "description": "Write three STAR‑formatted stories highlighting funnel improvements, experiments, and prioritisation decisions.",
+              "description": "Write three STAR-formatted stories highlighting funnel improvements, experiments, and prioritisation decisions.",
               "type": "build",
               "minutes": 50
             },
             {
               "title": "Mock interview with peer",
-              "description": "Conduct a 45‑minute mock interview focusing on growth questions and receive feedback.",
+              "description": "Conduct a 45-minute mock interview focusing on growth questions and receive feedback.",
               "type": "practice",
               "minutes": 45
             },
@@ -290,7 +290,7 @@
             },
             {
               "title": "Update portfolio with leadership lens",
-              "description": "Add a section to each project describing team impact and decision‑making role.",
+              "description": "Add a section to each project describing team impact and decision-making role.",
               "type": "build",
               "minutes": 35
             }

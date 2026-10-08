@@ -1,18 +1,18 @@
 {
-  "title": "Full-Stack Engineer Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen core expertise, build showcase projects, and prepare for senior roles. Focuses on modern JavaScript/TypeScript, React/Next.js, Node/Django, SQL, deployment, and system design fundamentals.",
+  "title": "Full-Stack Engineer Advancement roadmap",
+  "summary": "A step-by-step plan to deepen core expertise, build showcase projects, and prepare for senior roles. Focuses on modern JavaScript/TypeScript, React/Next.js, Node/Django, SQL, deployment, and system design fundamentals.",
   "phases": [
     {
-      "title": "Foundations Refresh",
-      "summary": "Re‑establish core language and framework fundamentals.",
+      "title": "Foundations refresh",
+      "summary": "Re-establish core language and framework fundamentals.",
       "milestones": [
         {
-          "title": "JavaScript & TypeScript Mastery",
-          "outcome": "Write clean, type‑safe code across the stack.",
+          "title": "JavaScript and TypeScript fundamentals",
+          "outcome": "Write clean, type-safe code across the stack.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
             {
-              "title": "Read TypeScript Handbook sections 1‑4",
+              "title": "Read TypeScript handbook sections 1-4",
               "description": "Study basic types, interfaces, and enums on the official TypeScript docs.",
               "type": "learn",
               "minutes": 45
@@ -36,7 +36,7 @@
               "minutes": 50
             },
             {
-              "title": "Reflect on type‑related bugs you encountered",
+              "title": "Reflect on type-related bugs you encountered",
               "description": "Write a short note on how static typing prevented or could have prevented errors.",
               "type": "reflect",
               "minutes": 20
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "SQL Core Concepts",
+          "title": "SQL core concepts",
           "outcome": "Design, query, and optimise relational databases confidently.",
           "skill": "SQL",
           "tasks": [
@@ -55,13 +55,13 @@
               "minutes": 40
             },
             {
-              "title": "Complete SQLBolt exercises 1‑6",
+              "title": "Complete SQLBolt exercises 1-6",
               "description": "Practice filtering, joining, and aggregating data in an interactive environment.",
               "type": "practice",
               "minutes": 55
             },
             {
-              "title": "Model a simple e‑commerce schema on paper",
+              "title": "Model a simple e-commerce schema on paper",
               "description": "Sketch tables for users, products, orders, and relationships.",
               "type": "build",
               "minutes": 45
@@ -83,12 +83,12 @@
       ]
     },
     {
-      "title": "Core Skills Deep Dive",
-      "summary": "Advance full‑stack capabilities with modern frameworks and deployment pipelines.",
+      "title": "Core skills overview",
+      "summary": "Advance full-stack capabilities with modern frameworks and deployment pipelines.",
       "milestones": [
         {
-          "title": "React & Next.js Proficiency",
-          "outcome": "Build performant, SEO‑friendly front‑ends with server‑side rendering.",
+          "title": "React & Next.js proficiency",
+          "outcome": "Build performant, SEO-friendly front-ends with server-side rendering.",
           "skill": "React or Next.js",
           "tasks": [
             {
@@ -99,7 +99,7 @@
             },
             {
               "title": "Complete a freeCodeCamp Next.js project tutorial",
-              "description": "Follow the step‑by‑step guide to create a multi‑page site.",
+              "description": "Follow the step-by-step guide to create a multi-page site.",
               "type": "practice",
               "minutes": 70
             },
@@ -110,7 +110,7 @@
               "minutes": 60
             },
             {
-              "title": "Implement client‑side caching with SWR",
+              "title": "Implement client-side caching with SWR",
               "description": "Integrate SWR hooks to cache API responses and improve UX.",
               "type": "practice",
               "minutes": 50
@@ -124,8 +124,8 @@
           ]
         },
         {
-          "title": "Node.js & Django Backend Expertise",
-          "outcome": "Design robust APIs and services using either Node or Django.",
+          "title": "Node.js & Django backend expertise",
+          "outcome": "Design APIs and services with Node or Django.",
           "skill": "Node or Django",
           "tasks": [
             {
@@ -153,7 +153,7 @@
               "minutes": 60
             },
             {
-              "title": "Reflect on trade‑offs between Node and Django",
+              "title": "Reflect on trade-offs between Node and Django",
               "description": "Write a brief comparison of scalability, ecosystem, and developer experience.",
               "type": "reflect",
               "minutes": 20
@@ -163,12 +163,12 @@
       ]
     },
     {
-      "title": "Proof of Work (Portfolio Projects)",
-      "summary": "Create real‑world applications that showcase end‑to‑end skills.",
+      "title": "Proof of work (portfolio projects)",
+      "summary": "Create real-world applications that showcase end-to-end skills.",
       "milestones": [
         {
-          "title": "SaaS Billing App",
-          "outcome": "Demonstrate full‑stack feature delivery from DB to UI.",
+          "title": "SaaS billing App",
+          "outcome": "Demonstrate full-stack feature delivery from DB to UI.",
           "skill": null,
           "tasks": [
             {
@@ -204,7 +204,7 @@
           ]
         },
         {
-          "title": "Real‑Time Chat Application",
+          "title": "Real-time chat application",
           "outcome": "Show ability to handle websockets and live updates.",
           "skill": null,
           "tasks": [
@@ -227,7 +227,7 @@
               "minutes": 85
             },
             {
-              "title": "Build React front‑end with real‑time message list",
+              "title": "Build React front-end with real-time message list",
               "description": "Use hooks to connect to Socket.io client and update UI instantly.",
               "type": "practice",
               "minutes": 80
@@ -243,35 +243,35 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish portfolio, master system design basics, and prepare for senior interviews.",
+      "title": "Getting ready",
+      "summary": "Polish portfolio, learn system design basics, and prepare for senior interviews.",
       "milestones": [
         {
-          "title": "System Design Basics",
+          "title": "System design basics",
           "outcome": "Explain and diagram common web architectures.",
           "skill": "System design basics",
           "tasks": [
             {
-              "title": "Read System Design Primer chapter on scalability",
+              "title": "Read system design primer chapter on scalability",
               "description": "Focus on load balancing, caching, and database sharding concepts.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Sketch a high‑level design for a video‑streaming service",
+              "title": "Sketch a high-level design for a video-streaming service",
               "description": "Include CDN, microservices, and data storage layers.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Discuss the design with a peer on LinkedIn",
-              "description": "Share the diagram and ask for feedback on trade‑offs.",
+              "description": "Share the diagram and ask for feedback on trade-offs.",
               "type": "connect",
               "minutes": 30
             },
             {
               "title": "Practice answering a system design interview question",
-              "description": "Time yourself delivering a 10‑minute solution for an e‑commerce checkout flow.",
+              "description": "Time yourself delivering a 10-minute solution for an e-commerce checkout flow.",
               "type": "practice",
               "minutes": 60
             },
@@ -284,13 +284,13 @@
           ]
         },
         {
-          "title": "Portfolio Polish & Personal Brand",
-          "outcome": "Present a professional, interview‑ready portfolio and résumé.",
+          "title": "Portfolio polish & personal brand",
+          "outcome": "Present a professional, interview-ready portfolio and résumé.",
           "skill": "Deployment",
           "tasks": [
             {
               "title": "Write case studies for each portfolio project",
-              "description": "Describe problem, approach, tech stack, and impact in 300‑400 words each.",
+              "description": "Describe problem, approach, tech stack, and impact in 300-400 words each.",
               "type": "learn",
               "minutes": 45
             },
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "title": "Senior‑Level Interview Prep",
+          "title": "Senior-level interview prep",
           "outcome": "Confidently tackle coding, design, and leadership interview rounds.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
@@ -339,13 +339,13 @@
             },
             {
               "title": "Mock system design interview with a peer",
-              "description": "Run a 45‑minute session, receive feedback, and iterate on the design.",
+              "description": "Run a 45-minute session, receive feedback, and iterate on the design.",
               "type": "connect",
               "minutes": 60
             },
             {
-              "title": "Read Cracking the Coding Interview chapter on JavaScript nuances",
-              "description": "Refresh language‑specific pitfalls and best practices for interviews.",
+              "title": "Read Cracking the coding interview chapter on JavaScript nuances",
+              "description": "Refresh language-specific pitfalls and best practices for interviews.",
               "type": "learn",
               "minutes": 45
             },

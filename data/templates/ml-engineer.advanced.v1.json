@@ -1,13 +1,13 @@
 {
-  "title": "Machine Learning Engineer Advanced Roadmap",
-  "summary": "A step‑by‑step plan to deepen expertise, build a senior‑level portfolio, and prepare for leadership roles and interviews. Focuses on advanced ML concepts, MLOps, and polished project delivery.",
+  "title": "Machine Learning Engineer advanced roadmap",
+  "summary": "A step-by-step plan to deepen expertise, build a senior-level portfolio, and prepare for leadership roles and interviews. Focuses on advanced ML concepts, MLOps, and polished project delivery.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Strengthen core mathematical and programming fundamentals essential for ML work.",
       "milestones": [
         {
-          "title": "Python mastery for ML",
+          "title": "Python for Machine Learning",
           "outcome": "Write clean, efficient Python code for data pipelines and model training.",
           "skill": "Python",
           "tasks": [
@@ -25,7 +25,7 @@
             },
             {
               "title": "Practice list comprehensions",
-              "description": "Solve 10 list‑comprehension challenges from Real Python to improve concise coding.",
+              "description": "Solve 10 list-comprehension challenges from Real Python to improve concise coding.",
               "type": "practice",
               "minutes": 40
             },
@@ -71,12 +71,12 @@
       ]
     },
     {
-      "title": "Core Skills Deep Dive",
+      "title": "Core skills",
       "summary": "Gain expertise in key ML libraries, evaluation techniques, and production basics.",
       "milestones": [
         {
           "title": "Advanced scikit-learn pipelines",
-          "outcome": "Create robust preprocessing and modeling pipelines for tabular data.",
+          "outcome": "Create preprocessing and modeling pipelines for tabular Data.",
           "skill": "scikit-learn",
           "tasks": [
             {
@@ -92,8 +92,8 @@
               "minutes": 80
             },
             {
-              "title": "Practice cross‑validation",
-              "description": "Run 5‑fold cross‑validation on the pipeline and record performance metrics.",
+              "title": "Practice cross-validation",
+              "description": "Run 5-fold cross-validation on the pipeline and record performance metrics.",
               "type": "practice",
               "minutes": 60
             },
@@ -112,12 +112,12 @@
           "tasks": [
             {
               "title": "Watch PyTorch fundamentals tutorial",
-              "description": "Follow the official PyTorch 60‑minute intro video on pytorch.org and take notes.",
+              "description": "Follow the official PyTorch 60-minute intro video on pytorch.org and take notes.",
               "type": "learn",
               "minutes": 60
             },
             {
-              "title": "Implement a CNN on CIFAR‑10",
+              "title": "Implement a CNN on CIFAR-10",
               "description": "Code a convolutional neural network, train it for 10 epochs, and achieve >60% accuracy.",
               "type": "build",
               "minutes": 120
@@ -148,8 +148,8 @@
               "minutes": 40
             },
             {
-              "title": "Create a confusion‑matrix dashboard",
-              "description": "Use seaborn to plot confusion matrices for binary and multi‑class models.",
+              "title": "Create a confusion-matrix dashboard",
+              "description": "Use seaborn to plot confusion matrices for binary and multi-class models.",
               "type": "build",
               "minutes": 70
             },
@@ -160,8 +160,8 @@
               "minutes": 50
             },
             {
-              "title": "Reflect on metric trade‑offs",
-              "description": "Write a short note comparing precision‑recall vs ROC‑AUC for your use case.",
+              "title": "Reflect on metric trade-offs",
+              "description": "Write a short note comparing precision-recall vs ROC-AUC for your use case.",
               "type": "reflect",
               "minutes": 30
             }
@@ -170,12 +170,12 @@
       ]
     },
     {
-      "title": "Proof of Work (Portfolio)",
-      "summary": "Produce polished, deployable projects that showcase senior‑level competence.",
+      "title": "Proof of work (portfolio)",
+      "summary": "Produce polished, deployable projects that showcase senior-level competence.",
       "milestones": [
         {
-          "title": "Churn prediction with write‑up",
-          "outcome": "A complete end‑to‑end churn model with documentation ready for a portfolio.",
+          "title": "Churn prediction with write-up",
+          "outcome": "A complete end-to-end churn model with documentation ready for a portfolio.",
           "skill": null,
           "tasks": [
             {
@@ -186,13 +186,13 @@
             },
             {
               "title": "Build a scikit-learn model",
-              "description": "Create a pipeline, train a GradientBoosting model, and achieve >80% ROC‑AUC.",
+              "description": "Create a pipeline, train a GradientBoosting model, and achieve >80% ROC-AUC.",
               "type": "build",
               "minutes": 90
             },
             {
               "title": "Write a technical blog post",
-              "description": "Draft a 1500‑word post describing data prep, modeling choices, and results, including code snippets.",
+              "description": "Draft a 1500-word post describing data prep, modeling choices, and results, including code snippets.",
               "type": "practice",
               "minutes": 120
             },
@@ -211,7 +211,7 @@
           "tasks": [
             {
               "title": "Train an image classifier",
-              "description": "Fine‑tune a ResNet18 model on a small custom image set using PyTorch.",
+              "description": "Fine-tune a ResNet18 model on a small custom image set using PyTorch.",
               "type": "build",
               "minutes": 120
             },
@@ -269,8 +269,8 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Master advanced topics, leadership practices, and senior‑level interview preparation.",
+      "title": "Getting ready",
+      "summary": "Study key topics, practice leadership, and prepare for senior interviews.",
       "milestones": [
         {
           "title": "MLOps fundamentals",
@@ -316,7 +316,7 @@
             },
             {
               "title": "Prepare a project pitch deck",
-              "description": "Create a 10‑slide deck summarizing one portfolio project for non‑technical stakeholders.",
+              "description": "Create a 10-slide deck summarizing one portfolio project for non-technical stakeholders.",
               "type": "build",
               "minutes": 90
             },
@@ -340,7 +340,7 @@
           "skill": "Python",
           "tasks": [
             {
-              "title": "Solve senior‑level coding problems",
+              "title": "Solve senior-level coding problems",
               "description": "Complete 5 hard algorithm challenges on LeetCode focusing on Python implementations.",
               "type": "practice",
               "minutes": 120
@@ -353,7 +353,7 @@
             },
             {
               "title": "Mock a design interview",
-              "description": "Pair with a colleague to role‑play a system design interview for a recommendation engine.",
+              "description": "Pair with a colleague to role-play a system design interview for a recommendation engine.",
               "type": "practice",
               "minutes": 90
             },

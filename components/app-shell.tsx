@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import { motion } from "framer-motion";
-import { CalendarCheck2, Map, Newspaper, Settings2, UserRound } from "lucide-react";
+import { CalendarCheck2, Map, Newspaper, Settings2, Sparkles, UserRound } from "lucide-react";
 import clsx from "clsx";
 import { Logo } from "./logo";
 
@@ -54,7 +54,16 @@ export function AppShell({ children, roleTitle }: { children: React.ReactNode; r
             );
           })}
         </nav>
-        <div className="mt-auto flex items-center gap-3 px-2">
+        <Link
+          href="/pro"
+          className={clsx(
+            "mt-auto mb-4 flex items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-[14px] font-medium transition-colors",
+            isActive("/pro") ? "bg-accent-soft text-accent" : "text-ink-soft hover:bg-surface"
+          )}
+        >
+          <Sparkles className="h-[18px] w-[18px] text-accent" /> Pathwise Pro
+        </Link>
+        <div className="flex items-center gap-3 px-2">
           <UserButton appearance={{ elements: { avatarBox: { width: 32, height: 32 } } }} />
           <span className="text-[13.5px] text-muted">Account</span>
         </div>

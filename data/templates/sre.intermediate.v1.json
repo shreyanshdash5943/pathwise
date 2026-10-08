@@ -1,6 +1,6 @@
 {
-  "title": "Site Reliability Engineer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to master SRE fundamentals, core engineering practices, showcase real‑world projects, and prepare for senior‑level roles. Focuses on depth, best‑practice tooling, and professional habits.",
+  "title": "SRE roadmap",
+  "summary": "A step-by-step plan to learn SRE fundamentals, core engineering practices, showcase real-world projects, and prepare for senior roles. Focuses on standard tooling and good habits.",
   "phases": [
     {
       "title": "Foundations",
@@ -12,7 +12,7 @@
           "skill": "Linux and networking",
           "tasks": [
             {
-              "title": "Read Linux Filesystem Hierarchy",
+              "title": "Read Linux filesystem hierarchy",
               "description": "Study the FHS page on the Linux Documentation Project and note key directories.",
               "type": "learn",
               "minutes": 30
@@ -50,7 +50,7 @@
           "tasks": [
             {
               "title": "Watch TCP/IP overview on YouTube",
-              "description": "Select a reputable channel (e.g., Computerphile) and watch the 15‑minute TCP/IP video.",
+              "description": "Select a reputable channel (e.g., Computerphile) and watch the 15-minute TCP/IP video.",
               "type": "learn",
               "minutes": 20
             },
@@ -62,7 +62,7 @@
             },
             {
               "title": "Configure iptables firewall",
-              "description": "Create a simple allow‑only‑SSH rule and test connection from another VM.",
+              "description": "Create a simple allow-only-SSH rule and test connection from another VM.",
               "type": "build",
               "minutes": 40
             },
@@ -92,7 +92,7 @@
               "minutes": 60
             },
             {
-              "title": "Write a log‑parsing script",
+              "title": "Write a log-parsing script",
               "description": "Create a Python script that reads syslog, filters error lines, and outputs a summary.",
               "type": "build",
               "minutes": 45
@@ -104,7 +104,7 @@
               "minutes": 20
             },
             {
-              "title": "Review code style with Pylint",
+              "title": "Review code style with pylint",
               "description": "Run pylint on your script and fix at least three warnings.",
               "type": "practice",
               "minutes": 25
@@ -120,12 +120,12 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop observability, incident response, and reliability engineering practices.",
       "milestones": [
         {
           "title": "Observability stack basics",
-          "outcome": "Can deploy and query metrics, logs, and traces using open‑source tools.",
+          "outcome": "Can deploy and query metrics, logs, and traces using open-source tools.",
           "skill": "Observability",
           "tasks": [
             {
@@ -162,7 +162,7 @@
         },
         {
           "title": "Incident management workflow",
-          "outcome": "Can lead an incident from detection through resolution and post‑mortem.",
+          "outcome": "Can lead an incident from detection through resolution and post-mortem.",
           "skill": "Incident management",
           "tasks": [
             {
@@ -173,7 +173,7 @@
             },
             {
               "title": "Set up a mock incident page",
-              "description": "Create a Confluence‑style page template for incident tracking.",
+              "description": "Create a Confluence-style page template for incident tracking.",
               "type": "build",
               "minutes": 30
             },
@@ -184,7 +184,7 @@
               "minutes": 45
             },
             {
-              "title": "Write a short post‑mortem draft",
+              "title": "Write a short post-mortem draft",
               "description": "Summarize cause, impact, and remediation in 300 words.",
               "type": "practice",
               "minutes": 30
@@ -228,7 +228,7 @@
             },
             {
               "title": "Connect with SRE meetup group",
-              "description": "Attend a virtual meetup and discuss real‑world SLO challenges.",
+              "description": "Attend a virtual meetup and discuss real-world SLO challenges.",
               "type": "connect",
               "minutes": 30
             }
@@ -237,8 +237,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate end‑to‑end reliability engineering.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate end-to-end reliability engineering.",
       "milestones": [
         {
           "title": "Monitoring stack with alerts",
@@ -283,7 +283,7 @@
           "skill": null,
           "tasks": [
             {
-              "title": "Read k6 getting‑started guide",
+              "title": "Read k6 getting-started guide",
               "description": "Follow the official k6 docs to install and run a basic script.",
               "type": "learn",
               "minutes": 35
@@ -315,8 +315,8 @@
           ]
         },
         {
-          "title": "Simulated outage post‑mortem",
-          "outcome": "Can produce a professional post‑mortem that highlights root cause and improvements.",
+          "title": "Simulated outage post-mortem",
+          "outcome": "Can produce a professional post-mortem that highlights root cause and improvements.",
           "skill": null,
           "tasks": [
             {
@@ -332,8 +332,8 @@
               "minutes": 40
             },
             {
-              "title": "Write a detailed post‑mortem",
-              "description": "Follow the SRE post‑mortem template, include timeline, analysis, and action items.",
+              "title": "Write a detailed post-mortem",
+              "description": "Follow the SRE post-mortem template, include timeline, analysis, and action items.",
               "type": "build",
               "minutes": 60
             },
@@ -344,7 +344,7 @@
               "minutes": 30
             },
             {
-              "title": "Present the post‑mortem to a mentor",
+              "title": "Present the post-mortem to a mentor",
               "description": "Schedule a short video call and walk through the document, noting feedback.",
               "type": "connect",
               "minutes": 45
@@ -354,7 +354,7 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance to distributed systems, polish professional habits, and prepare for job or client interviews.",
       "milestones": [
         {
@@ -364,7 +364,7 @@
           "tasks": [
             {
               "title": "Read CAP theorem article on Wikipedia",
-              "description": "Summarize the three guarantees and real‑world trade‑offs in 150 words.",
+              "description": "Summarize the three guarantees and real-world trade-offs in 150 words.",
               "type": "learn",
               "minutes": 30
             },
@@ -382,7 +382,7 @@
             },
             {
               "title": "Write a comparison table",
-              "description": "Contrast at‑least three data stores (e.g., MySQL, Cassandra, Redis) on consistency models.",
+              "description": "Contrast at-least three data stores (e.g., MySQL, Cassandra, Redis) on consistency models.",
               "type": "build",
               "minutes": 35
             },
@@ -418,14 +418,14 @@
               "minutes": 20
             },
             {
-              "title": "Document a knowledge‑base article",
+              "title": "Document a knowledge-base article",
               "description": "Pick a recurring issue (e.g., disk full) and write a concise KB article.",
               "type": "build",
               "minutes": 40
             },
             {
               "title": "Connect with a senior SRE mentor",
-              "description": "Reach out on LinkedIn, request a 30‑minute coffee chat about career growth.",
+              "description": "Reach out on LinkedIn, request a 30-minute coffee chat about career growth.",
               "type": "connect",
               "minutes": 30
             }
@@ -444,7 +444,7 @@
             },
             {
               "title": "Prepare STAR stories",
-              "description": "Write three Situation‑Task‑Action‑Result narratives about incidents you handled.",
+              "description": "Write three Situation-Task-Action-Result narratives about incidents you handled.",
               "type": "learn",
               "minutes": 35
             },
@@ -456,7 +456,7 @@
             },
             {
               "title": "Mock interview with a peer",
-              "description": "Conduct a 60‑minute mock SRE interview and record feedback.",
+              "description": "Conduct a 60-minute mock SRE interview and record feedback.",
               "type": "connect",
               "minutes": 70
             },

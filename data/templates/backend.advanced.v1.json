@@ -1,13 +1,13 @@
 {
-  "title": "Senior Backend Engineer Mastery",
-  "summary": "This roadmap elevates your backend engineering skills by focusing on advanced system design, robust API patterns, and production-grade reliability. It prepares you for senior-level interviews and client-facing roles through polished portfolio projects and leadership-focused technical depth.",
+  "title": "Senior backend Engineer",
+  "summary": "This roadmap improves your backend engineering skills by covering system design, API patterns, and production reliability. It prepares you for senior interviews and client-facing roles through portfolio projects and technical depth.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify your core language and database expertise to ensure a rock-solid base for advanced architectural decisions.",
       "milestones": [
         {
-          "title": "Language Proficiency",
+          "title": "Language proficiency",
           "outcome": "You can write idiomatic, high-performance code in your chosen backend language and explain memory management trade-offs.",
           "skill": "Python or Go",
           "tasks": [
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Data Modeling Depth",
+          "title": "Data modeling depth",
           "outcome": "You can design normalized schemas that handle complex relationships and write optimized queries for large datasets.",
           "skill": "SQL and data modelling",
           "tasks": [
@@ -71,11 +71,11 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Master the patterns and security practices that define professional backend services, focusing on API design and state management.",
+      "title": "Core skills",
+      "summary": "Learn patterns and security practices for API design and state management",
       "milestones": [
         {
-          "title": "API Architecture",
+          "title": "API architecture",
           "outcome": "You can design RESTful endpoints with proper versioning, error handling, and pagination that scale to high traffic.",
           "skill": "REST API design",
           "tasks": [
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "title": "Security Implementation",
+          "title": "Security implementation",
           "outcome": "You can implement secure authentication flows and protect endpoints against common web vulnerabilities.",
           "skill": "Authentication",
           "tasks": [
@@ -139,12 +139,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Build production-quality projects that demonstrate your ability to handle concurrency, data integrity, and complex business logic.",
       "milestones": [
         {
-          "title": "Secure API Project",
-          "outcome": "You have a deployed REST API with full authentication, comprehensive tests, and clear documentation that demonstrates senior-level engineering.",
+          "title": "Secure API project",
+          "outcome": "You have secure, documented REST API",
           "skill": null,
           "tasks": [
             {
@@ -174,7 +174,7 @@
           ]
         },
         {
-          "title": "Background Job System",
+          "title": "Background job system",
           "outcome": "You have a reliable background job processor that handles asynchronous tasks with retries and monitoring.",
           "skill": null,
           "tasks": [
@@ -207,11 +207,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish your portfolio with advanced scalability patterns and prepare for senior-level interviews by mastering system design and testing strategies.",
+      "title": "Getting ready",
+      "summary": "Improve your portfolio with scalability patterns and prepare for senior interviews",
       "milestones": [
         {
-          "title": "Scalability Patterns",
+          "title": "Scalability patterns",
           "outcome": "You can implement caching and queuing strategies to handle high load and explain the trade-offs of each approach.",
           "skill": "Caching and queues",
           "tasks": [
@@ -242,8 +242,8 @@
           ]
         },
         {
-          "title": "Interview Readiness",
-          "outcome": "You can demonstrate robust testing practices and articulate your technical decisions clearly in a senior-level interview context.",
+          "title": "Interview readiness",
+          "outcome": "Show effective testing and clear decisions",
           "skill": "Testing",
           "tasks": [
             {

@@ -1,6 +1,6 @@
 {
-  "title": "Application Security Engineer Roadmap",
-  "summary": "A step‑by‑step guide to become an Application Security Engineer from zero knowledge. It builds foundational security concepts, core engineering skills, a portfolio, and job‑ready readiness.",
+  "title": "Application Security Engineer roadmap",
+  "summary": "A step-by-step guide to become an Application Security Engineer from zero knowledge. It builds foundational security concepts, core engineering skills, a portfolio, and job-ready readiness.",
   "phases": [
     {
       "title": "Foundations",
@@ -19,12 +19,12 @@
             },
             {
               "title": "Watch freeCodeCamp security basics video",
-              "description": "Complete the 30‑minute introductory video on application security.",
+              "description": "Complete the 30-minute introductory video on application security.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Summarize key risks in a one‑page doc",
+              "title": "Summarize key risks in a one-page doc",
               "description": "Write a concise summary of the most critical risks you learned.",
               "type": "reflect",
               "minutes": 20
@@ -43,14 +43,14 @@
           "skill": "Secure coding",
           "tasks": [
             {
-              "title": "Read Secure Coding Guidelines on OWASP",
+              "title": "Read Secure Coding guidelines on OWASP",
               "description": "Read the official OWASP Secure Coding Practices document.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Complete secure‑coding exercises on Codecademy",
-              "description": "Finish the 3‑exercise module that covers input validation and output encoding.",
+              "title": "Complete secure-coding exercises on Codecademy",
+              "description": "Finish the 3-exercise module that covers input validation and output encoding.",
               "type": "practice",
               "minutes": 45
             },
@@ -61,7 +61,7 @@
               "minutes": 50
             },
             {
-              "title": "Peer‑review your refactor with a friend",
+              "title": "Peer-review your refactor with a friend",
               "description": "Explain the changes you made and get feedback on clarity.",
               "type": "connect",
               "minutes": 30
@@ -86,7 +86,7 @@
               "minutes": 30
             },
             {
-              "title": "Record a 2‑minute explanation video",
+              "title": "Record a 2-minute explanation video",
               "description": "Explain the advisory verbally and record it to practice tone and clarity.",
               "type": "practice",
               "minutes": 25
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop practical abilities in threat modelling, code review, CI security, and team interaction.",
       "milestones": [
         {
@@ -111,7 +111,7 @@
           "skill": "Threat modelling",
           "tasks": [
             {
-              "title": "Read Microsoft Threat Modeling Guide",
+              "title": "Read Microsoft threat modeling guide",
               "description": "Study the free Microsoft guide to learn the STRIDE methodology.",
               "type": "learn",
               "minutes": 45
@@ -137,19 +137,19 @@
           ]
         },
         {
-          "title": "Security‑focused code review",
+          "title": "Security-focused code review",
           "outcome": "Can perform a code review that identifies security flaws.",
           "skill": "Code review",
           "tasks": [
             {
-              "title": "Read OWASP Code Review Checklist",
+              "title": "Read OWASP code review checklist",
               "description": "Study the official checklist to know what to look for during reviews.",
               "type": "learn",
               "minutes": 30
             },
             {
               "title": "Review a GitHub pull request for XSS",
-              "description": "Find a real open‑source PR and identify any cross‑site scripting issues.",
+              "description": "Find a real open-source PR and identify any cross-site scripting issues.",
               "type": "practice",
               "minutes": 50
             },
@@ -160,7 +160,7 @@
               "minutes": 35
             },
             {
-              "title": "Attend a virtual code‑review meetup",
+              "title": "Attend a virtual code-review meetup",
               "description": "Join a free community session to observe experienced reviewers.",
               "type": "connect",
               "minutes": 60
@@ -180,7 +180,7 @@
             },
             {
               "title": "Add Dependabot to a sample repo",
-              "description": "Enable Dependabot alerts and auto‑updates for dependencies.",
+              "description": "Enable Dependabot alerts and auto-updates for dependencies.",
               "type": "build",
               "minutes": 40
             },
@@ -207,29 +207,29 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio projects that demonstrate your new security capabilities.",
       "milestones": [
         {
-          "title": "Threat model of an open‑source app",
+          "title": "Threat model of an open-source app",
           "outcome": "Portfolio includes a documented STRIDE model with mitigations.",
           "skill": null,
           "tasks": [
             {
-              "title": "Select a popular open‑source repo",
-              "description": "Choose a well‑known project on GitHub with moderate complexity.",
+              "title": "Select a popular open-source repo",
+              "description": "Choose a well-known project on GitHub with moderate complexity.",
               "type": "learn",
               "minutes": 20
             },
             {
               "title": "Apply STRIDE and write a report",
-              "description": "Create a structured threat‑model document using the guide you studied.",
+              "description": "Create a structured threat-model document using the guide you studied.",
               "type": "build",
               "minutes": 90
             },
             {
               "title": "Add mitigation recommendations",
-              "description": "Propose concrete security controls for each high‑risk threat.",
+              "description": "Propose concrete security controls for each high-risk threat.",
               "type": "practice",
               "minutes": 45
             },
@@ -279,7 +279,7 @@
           ]
         },
         {
-          "title": "Secure‑coding guide for developers",
+          "title": "Secure-coding guide for developers",
           "outcome": "Portfolio contains a concise guide that teaches secure coding best practices.",
           "skill": null,
           "tasks": [
@@ -296,7 +296,7 @@
               "minutes": 80
             },
             {
-              "title": "Design a one‑page cheat sheet",
+              "title": "Design a one-page cheat sheet",
               "description": "Summarize key rules in a printable PDF format.",
               "type": "build",
               "minutes": 45
@@ -318,16 +318,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance your expertise and prepare for job or client engagements.",
       "milestones": [
         {
           "title": "Advanced secure coding patterns",
-          "outcome": "Can implement defense‑in‑depth techniques in production code.",
+          "outcome": "Can implement defense-in-depth techniques in production code.",
           "skill": "Secure coding",
           "tasks": [
             {
-              "title": "Read \"Secure Coding in C++\" free e‑book chapter",
+              "title": "Read \"Secure Coding in C++\" free e-book chapter",
               "description": "Study the chapter on memory safety and bounds checking.",
               "type": "learn",
               "minutes": 40
@@ -351,7 +351,7 @@
               "minutes": 30
             },
             {
-              "title": "Document trade‑offs in a short blog post",
+              "title": "Document trade-offs in a short blog post",
               "description": "Explain why you chose certain patterns over others.",
               "type": "reflect",
               "minutes": 35
@@ -359,7 +359,7 @@
           ]
         },
         {
-          "title": "Deep dive into auth and crypto",
+          "title": "Auth and crypto",
           "outcome": "Can design basic authentication flows and choose appropriate cryptographic primitives.",
           "skill": "Auth and crypto basics",
           "tasks": [
@@ -377,18 +377,18 @@
             },
             {
               "title": "Compare symmetric vs asymmetric encryption",
-              "description": "Create a table summarizing use‑cases, strengths, and weaknesses.",
+              "description": "Create a table summarizing use-cases, strengths, and weaknesses.",
               "type": "practice",
               "minutes": 25
             },
             {
               "title": "Run OWASP ZAP scan on the demo app",
-              "description": "Use the free ZAP tool to find auth‑related vulnerabilities.",
+              "description": "Use the free ZAP tool to find auth-related vulnerabilities.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Explain findings to a non‑technical friend",
+              "title": "Explain findings to a non-technical friend",
               "description": "Practice translating technical results into plain language.",
               "type": "connect",
               "minutes": 20
@@ -401,20 +401,20 @@
           "skill": "Developer communication",
           "tasks": [
             {
-              "title": "Read \"Tell Me About Yourself\" guide on The Muse",
+              "title": "Read \"Tell Me about yourself\" guide on The Muse",
               "description": "Study the free article on framing your security background for interviews.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Craft a 5‑minute security pitch",
+              "title": "Craft a 5-minute security pitch",
               "description": "Prepare a concise presentation of your portfolio and impact.",
               "type": "build",
               "minutes": 35
             },
             {
               "title": "Mock interview with a peer",
-              "description": "Role‑play an interview focusing on security scenario questions.",
+              "description": "Role-play an interview focusing on security scenario questions.",
               "type": "practice",
               "minutes": 45
             },

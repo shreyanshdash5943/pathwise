@@ -1,61 +1,61 @@
 {
-  "title": "Senior Product Designer Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen product thinking, sharpen design execution, build showcase projects, and prepare for senior‑level roles. Focuses on leadership, metrics, and interview readiness.",
+  "title": "Senior Product Designer Advancement roadmap",
+  "summary": "A step-by-step plan to deepen product thinking, sharpen design execution, build showcase projects, and prepare for senior-level roles. Focuses on leadership, metrics, and interview readiness.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Refresh core design mindsets and collaboration fundamentals.",
       "milestones": [
         {
-          "title": "Product Thinking Refresh",
+          "title": "Product Thinking refresh",
           "outcome": "Can articulate product vision, strategy, and success metrics for any initiative.",
           "skill": "Product thinking",
           "tasks": [
             {
               "title": "Read the product thinking guide on Medium",
-              "description": "Skim the “Product Thinking” series on Medium to capture the 5‑step framework.",
+              "description": "Skim the “Product Thinking” series on Medium to capture the 5-step framework.",
               "type": "learn",
               "minutes": 30
             },
             {
               "title": "Map a product canvas for a familiar app",
-              "description": "Create a one‑page canvas (problem, users, solution, metrics) in Google Docs.",
+              "description": "Create a one-page canvas (problem, users, solution, metrics) in Google Docs.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Write a 200‑word value proposition",
+              "title": "Write a 200-word value proposition",
               "description": "Summarize the core value of the chosen app for its primary user segment.",
               "type": "reflect",
               "minutes": 20
             },
             {
               "title": "Discuss the canvas with a peer",
-              "description": "Schedule a 30‑minute call to get feedback on assumptions and gaps.",
+              "description": "Schedule a 30-minute call to get feedback on assumptions and gaps.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "User Research Foundations",
+          "title": "User research foundations",
           "outcome": "Can plan and conduct a basic qualitative study and synthesize findings.",
           "skill": "User research",
           "tasks": [
             {
               "title": "Watch Nielsen Norman Group research basics video",
-              "description": "View the 20‑minute overview on research methods on NN/g’s free site.",
+              "description": "View the 20-minute overview on research methods on NN/g’s free site.",
               "type": "learn",
               "minutes": 20
             },
             {
               "title": "Create a research plan template",
-              "description": "Draft a one‑page plan (goals, participants, methods, timeline) in Notion.",
+              "description": "Draft a one-page plan (goals, participants, methods, timeline) in Notion.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Recruit 3 participants for a 15‑minute interview",
+              "title": "Recruit 3 participants for a 15-minute interview",
               "description": "Use LinkedIn or a community to schedule short user interviews.",
               "type": "practice",
               "minutes": 45
@@ -75,12 +75,12 @@
           ]
         },
         {
-          "title": "Collaboration with Engineers",
+          "title": "Collaboration with engineers",
           "outcome": "Can translate design decisions into clear technical specifications.",
           "skill": "Working with engineers",
           "tasks": [
             {
-              "title": "Read the Figma‑to‑Dev handoff guide on Figma Help Center",
+              "title": "Read the Figma-to-dev handoff guide on Figma help Center",
               "description": "Study the official handoff documentation (15 min).",
               "type": "learn",
               "minutes": 15
@@ -92,13 +92,13 @@
               "minutes": 40
             },
             {
-              "title": "Host a 20‑minute design review with an engineer",
+              "title": "Host a 20-minute design review with an engineer",
               "description": "Walk through the spec, collect feasibility feedback, and note action items.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Write a concise API‑design checklist",
+              "title": "Write a concise API-design checklist",
               "description": "List five items to verify before handing off any UI component.",
               "type": "build",
               "minutes": 25
@@ -108,28 +108,28 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Deepen interaction design, tooling, and data‑driven decision making.",
+      "title": "Core skills",
+      "summary": "Deepen interaction design, tooling, and data-driven decision making.",
       "milestones": [
         {
-          "title": "Advanced Interaction Design",
-          "outcome": "Can prototype complex flows with micro‑interactions and accessibility considerations.",
+          "title": "Advanced interaction design",
+          "outcome": "Can prototype complex flows with micro-interactions and accessibility considerations.",
           "skill": "Interaction design",
           "tasks": [
             {
-              "title": "Complete the freeCodeCamp UI design course module on micro‑interactions",
-              "description": "Finish the 2‑hour video and exercises on interaction details.",
+              "title": "Complete the freeCodeCamp UI design course module on micro-interactions",
+              "description": "Finish the 2-hour video and exercises on interaction details.",
               "type": "learn",
               "minutes": 120
             },
             {
-              "title": "Prototype a multi‑step checkout flow in Figma",
+              "title": "Prototype a multi-step checkout flow in Figma",
               "description": "Build frames, add overlays, and define transition timings.",
               "type": "build",
               "minutes": 90
             },
             {
-              "title": "Test the prototype with 2 users for 5‑minute tasks",
+              "title": "Test the prototype with 2 users for 5-minute tasks",
               "description": "Observe task completion and note friction points.",
               "type": "practice",
               "minutes": 45
@@ -142,19 +142,19 @@
             },
             {
               "title": "Document interaction guidelines for the flow",
-              "description": "Create a one‑page style guide covering timing, easing, and feedback.",
+              "description": "Create a one-page style guide covering timing, easing, and feedback.",
               "type": "build",
               "minutes": 35
             }
           ]
         },
         {
-          "title": "Mastering Figma for Teams",
+          "title": "Figma for teams",
           "outcome": "Can run design systems, libraries, and collaborative sessions efficiently.",
           "skill": "Figma",
           "tasks": [
             {
-              "title": "Read Figma’s Design System documentation",
+              "title": "Read Figma’s design system documentation",
               "description": "Skim the official guide on libraries and tokens (20 min).",
               "type": "learn",
               "minutes": 20
@@ -166,19 +166,19 @@
               "minutes": 80
             },
             {
-              "title": "Run a 30‑minute design critique live in Figma",
+              "title": "Run a 30-minute design critique live in Figma",
               "description": "Invite a peer, use comment mode, and iterate on feedback.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Set up auto‑layout for responsive cards",
+              "title": "Set up auto-layout for responsive cards",
               "description": "Apply constraints and test resizing across breakpoints.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Write a quick‑start guide for new designers",
+              "title": "Write a quick-start guide for new designers",
               "description": "Summarize library usage, naming conventions, and versioning in a Confluence page.",
               "type": "build",
               "minutes": 30
@@ -186,12 +186,12 @@
           ]
         },
         {
-          "title": "Metrics‑Driven Design",
+          "title": "Metrics-driven design",
           "outcome": "Can define, track, and iterate on key product metrics linked to design decisions.",
           "skill": "Metrics",
           "tasks": [
             {
-              "title": "Read the Amplitude “Product Metrics” guide",
+              "title": "Read the Amplitude “Product metrics” guide",
               "description": "Read the free introductory PDF (15 min).",
               "type": "learn",
               "minutes": 15
@@ -203,7 +203,7 @@
               "minutes": 30
             },
             {
-              "title": "Set up a mock dashboard in Google Data Studio",
+              "title": "Set up a mock dashboard in Google data Studio",
               "description": "Connect sample CSV data and visualize the metrics.",
               "type": "build",
               "minutes": 60
@@ -216,7 +216,7 @@
             },
             {
               "title": "Reflect on metric selection biases",
-              "description": "Note any over‑reliance on vanity metrics and propose alternatives.",
+              "description": "Note any over-reliance on vanity metrics and propose alternatives.",
               "type": "reflect",
               "minutes": 20
             }
@@ -225,28 +225,28 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready case studies that demonstrate end‑to‑end ownership.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready case studies that demonstrate end-to-end ownership.",
       "milestones": [
         {
-          "title": "End‑to‑End Product Case Study",
+          "title": "End-to-end Product case study",
           "outcome": "A publishable case study showing research, design, handoff, and outcomes.",
           "skill": null,
           "tasks": [
             {
               "title": "Select a real problem you solved at work",
-              "description": "Write a one‑sentence problem statement and impact goal.",
+              "description": "Write a one-sentence problem statement and impact goal.",
               "type": "learn",
               "minutes": 20
             },
             {
               "title": "Document research findings in a narrative format",
-              "description": "Create a 2‑page PDF using the research template from Phase 1.",
+              "description": "Create a 2-page PDF using the research template from Phase 1.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Show high‑fidelity screens with interaction specs",
+              "title": "Show high-fidelity screens with interaction specs",
               "description": "Export annotated frames from Figma and embed them in the case study.",
               "type": "build",
               "minutes": 70
@@ -259,20 +259,20 @@
             },
             {
               "title": "Publish the case study on your portfolio site",
-              "description": "Add SEO‑friendly titles and a short intro on your personal website.",
+              "description": "Add SEO-friendly titles and a short intro on your personal website.",
               "type": "practice",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Feature Spec with Designs",
+          "title": "Feature spec with designs",
           "outcome": "A detailed spec document paired with UI mockups ready for engineering handoff.",
           "skill": null,
           "tasks": [
             {
               "title": "Choose a feature to redesign or build from scratch",
-              "description": "Define scope and success criteria in a one‑page brief.",
+              "description": "Define scope and success criteria in a one-page brief.",
               "type": "learn",
               "minutes": 25
             },
@@ -283,7 +283,7 @@
               "minutes": 80
             },
             {
-              "title": "Create corresponding high‑fidelity mockups in Figma",
+              "title": "Create corresponding high-fidelity mockups in Figma",
               "description": "Design all screens, states, and interactions for the feature.",
               "type": "build",
               "minutes": 90
@@ -296,32 +296,32 @@
             },
             {
               "title": "Share the spec with an engineer for feedback",
-              "description": "Schedule a 30‑minute sync and record action items.",
+              "description": "Schedule a 30-minute sync and record action items.",
               "type": "practice",
               "minutes": 45
             }
           ]
         },
         {
-          "title": "Design Sprint Write‑up",
+          "title": "Design sprint write-up",
           "outcome": "A concise sprint report that showcases rapid problem solving and decision rationale.",
           "skill": null,
           "tasks": [
             {
-              "title": "Plan a 5‑day sprint on a low‑risk problem",
+              "title": "Plan a 5-day sprint on a low-risk problem",
               "description": "Outline goals, schedule, and participants in a Google Doc.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Facilitate day‑1 problem framing session",
-              "description": "Lead a 60‑minute workshop and capture insights on Miro.",
+              "title": "Facilitate day-1 problem framing session",
+              "description": "Lead a 60-minute workshop and capture insights on Miro.",
               "type": "practice",
               "minutes": 70
             },
             {
               "title": "Sketch solutions and vote on the best idea",
-              "description": "Produce 3‑5 quick sketches and run a dot‑vote with teammates.",
+              "description": "Produce 3-5 quick sketches and run a dot-vote with teammates.",
               "type": "practice",
               "minutes": 45
             },
@@ -333,7 +333,7 @@
             },
             {
               "title": "Write a sprint retrospective report",
-              "description": "Summarize outcomes, learnings, and next steps in 1‑page PDF.",
+              "description": "Summarize outcomes, learnings, and next steps in 1-page PDF.",
               "type": "reflect",
               "minutes": 35
             }
@@ -342,22 +342,22 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish leadership presence, senior interview skills, and advanced design strategy.",
       "milestones": [
         {
-          "title": "Design Leadership & Mentoring",
-          "outcome": "Can coach junior designers and lead cross‑functional design initiatives.",
+          "title": "Design leadership & mentoring",
+          "outcome": "Can coach junior designers and lead cross-functional design initiatives.",
           "skill": "Product thinking",
           "tasks": [
             {
-              "title": "Read the “Design Leadership” article on Harvard Business Review",
-              "description": "Absorb key principles in a 20‑minute read.",
+              "title": "Read the “design leadership” article on Harvard business review",
+              "description": "Absorb key principles in a 20-minute read.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Create a 30‑minute mentorship session outline",
+              "title": "Create a 30-minute mentorship session outline",
               "description": "Plan topics, activities, and feedback loops for a junior designer.",
               "type": "build",
               "minutes": 35
@@ -369,8 +369,8 @@
               "minutes": 45
             },
             {
-              "title": "Write a one‑page design vision for your product area",
-              "description": "Articulate long‑term goals, user impact, and success metrics.",
+              "title": "Write a one-page design vision for your product area",
+              "description": "Articulate long-term goals, user impact, and success metrics.",
               "type": "reflect",
               "minutes": 30
             },
@@ -383,30 +383,30 @@
           ]
         },
         {
-          "title": "Senior Interview Preparation",
+          "title": "Senior interview preparation",
           "outcome": "Can confidently answer product, design, and behavioral interview questions.",
           "skill": "Working with engineers",
           "tasks": [
             {
-              "title": "Read the “Design Interview Handbook” on GitHub",
+              "title": "Read the “design interview handbook” on GitHub",
               "description": "Study the free handbook sections on case studies and system design (30 min).",
               "type": "learn",
               "minutes": 30
             },
             {
               "title": "Write answers to 5 common senior design questions",
-              "description": "Draft concise STAR‑format responses in a Google Doc.",
+              "description": "Draft concise STAR-format responses in a Google Doc.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Do a mock interview with a senior peer",
-              "description": "Record a 45‑minute session and request detailed feedback.",
+              "description": "Record a 45-minute session and request detailed feedback.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Create a one‑page cheat sheet of key metrics and trade‑offs",
+              "title": "Create a one-page cheat sheet of key metrics and trade-offs",
               "description": "Summarize how you measure impact for quick reference.",
               "type": "build",
               "minutes": 25
@@ -420,12 +420,12 @@
           ]
         },
         {
-          "title": "Advanced Systems & Accessibility",
+          "title": "Advanced systems & accessibility",
           "outcome": "Can design scalable systems and ensure inclusive experiences.",
           "skill": "Interaction design",
           "tasks": [
             {
-              "title": "Read the WCAG 2.1 Overview on W3C site",
+              "title": "Read the WCAG 2.1 overview on W3C site",
               "description": "Skim the summary and key success criteria (20 min).",
               "type": "learn",
               "minutes": 20
@@ -450,7 +450,7 @@
             },
             {
               "title": "Present the system to engineers and gather feedback",
-              "description": "Run a 30‑minute walkthrough and note integration concerns.",
+              "description": "Run a 30-minute walkthrough and note integration concerns.",
               "type": "practice",
               "minutes": 40
             }

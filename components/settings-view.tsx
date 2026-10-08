@@ -95,6 +95,14 @@ export function SettingsView({
 
         <RemindersPanel initial={reminders} show={show} />
 
+        <Link href="/pro" className="panel flex items-center justify-between gap-4 p-5 transition-colors hover:border-accent-line sm:p-6">
+          <span>
+            <span className="block text-[17px] font-semibold">Pathwise Pro</span>
+            <span className="mt-1 block text-[14.5px] text-muted">Profile analytics, roadmap editing, streak freezes and a premium profile.</span>
+          </span>
+          <span className="shrink-0 text-[14px] font-medium text-accent">See Pro</span>
+        </Link>
+
         <section className="panel p-5 sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>

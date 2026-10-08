@@ -17,6 +17,13 @@ export type Details = {
   is_public: boolean;
   display_name: string | null;
   avatar_url: string | null;
+  contact_email: string | null;
+  phone: string | null;
+  show_email: boolean;
+  show_phone: boolean;
+  show_resume: boolean;
+  hide_branding: boolean;
+  card_theme: "classic" | "midnight" | "minimal";
 };
 
 export const LINK_KINDS = ["github", "linkedin", "portfolio"] as const;
@@ -26,7 +33,7 @@ export const RESUME_BUCKET = "resumes";
 export const RESUME_MAX_BYTES = 5 * 1024 * 1024;
 export const resumePath = (userId: string) => `${userId}/resume.pdf`;
 
-const COLUMNS = "headline, links, skills, known_skills, resume_name, resume_size, resume_hash, resume_skills, resume_ai_hash, resume_uploaded_at, username, is_public, display_name, avatar_url";
+const COLUMNS = "headline, links, skills, known_skills, resume_name, resume_size, resume_hash, resume_skills, resume_ai_hash, resume_uploaded_at, username, is_public, display_name, avatar_url, contact_email, phone, show_email, show_phone, show_resume, hide_branding, card_theme";
 
 export async function getDetails(supabase: SupabaseClient): Promise<Details | null> {
   const { data, error } = await supabase.from("user_details").select(COLUMNS).maybeSingle();
@@ -79,4 +86,20 @@ export function cleanSkills(input: unknown): string[] | null {
     out.push(s);
   }
   return out.length <= 30 ? out : null;
+}
+
+/** A plausible email address, or null. Empty string clears it. */
+export function cleanEmail(input: unknown): string | null | undefined {
+  if (input === "" || input === null) return null;
+  if (typeof input !== "string") return undefined;
+  const s = input.trim();
+  return s.length <= 254 && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s) ? s : undefined;
+}
+
+/** Digits with optional +, spaces, dashes and brackets, or null. Empty string clears it. */
+export function cleanPhone(input: unknown): string | null | undefined {
+  if (input === "" || input === null) return null;
+  if (typeof input !== "string") return undefined;
+  const s = input.replace(/\s+/g, " ").trim();
+  return /^\+?[0-9][0-9 ()-]{5,22}$/.test(s) && (s.match(/\d/g) ?? []).length >= 6 ? s : undefined;
 }

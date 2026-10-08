@@ -1,18 +1,18 @@
 {
-  "title": "UI & Visual Designer Roadmap",
-  "summary": "A step‑by‑step guide to move from zero to a job‑ready portfolio, covering visual fundamentals, core tools, real projects, and professional readiness. Each phase builds concrete skills and tangible outputs you can showcase.",
+  "title": "UI & Visual Designer roadmap",
+  "summary": "A step-by-step guide to move from zero to a job-ready portfolio, covering visual fundamentals, core tools, real projects, and professional readiness. Each phase builds concrete skills and tangible outputs you can showcase.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Learn the visual language and basic design principles.",
       "milestones": [
         {
-          "title": "Typography Fundamentals",
+          "title": "Typography fundamentals",
           "outcome": "Can choose appropriate typefaces, set hierarchy, and apply spacing consistently.",
           "skill": "Typography",
           "tasks": [
             {
-              "title": "Read MDN Typography guide",
+              "title": "Read MDN typography guide",
               "description": "Study the basics of type anatomy, classification, and web font loading on MDN.",
               "type": "learn",
               "minutes": 30
@@ -25,7 +25,7 @@
             },
             {
               "title": "Create a typographic scale in Figma",
-              "description": "Build a 5‑step scale using a chosen font and document size, line‑height, and weight choices.",
+              "description": "Build a 5-step scale using a chosen font and document size, line-height, and weight choices.",
               "type": "build",
               "minutes": 60
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Colour & Layout Basics",
+          "title": "Colour & layout basics",
           "outcome": "Can construct balanced layouts and apply effective colour palettes.",
           "skill": "Colour and layout",
           "tasks": [
@@ -55,8 +55,8 @@
               "minutes": 45
             },
             {
-              "title": "Design a 8‑grid layout in Figma",
-              "description": "Set up an 8‑column grid and place placeholder elements to practice spacing.",
+              "title": "Design a 8-grid layout in Figma",
+              "description": "Set up an 8-column grid and place placeholder elements to practice spacing.",
               "type": "build",
               "minutes": 60
             },
@@ -77,16 +77,16 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Master industry‑standard tools and systematic design approaches.",
+      "title": "Core skills",
+      "summary": "Learn industry-standard tools and systematic Design approaches.",
       "milestones": [
         {
-          "title": "Figma Mastery",
+          "title": "Figma",
           "outcome": "Can prototype screens, use components, and collaborate in Figma.",
           "skill": "Figma",
           "tasks": [
             {
-              "title": "Complete Figma Basics on YouTube",
+              "title": "Complete Figma basics on YouTube",
               "description": "Watch the official Figma tutorial covering frames, layers, and components.",
               "type": "learn",
               "minutes": 45
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "title": "Design Systems Essentials",
+          "title": "Design systems Essentials",
           "outcome": "Can define and document a cohesive design system.",
           "skill": "Design systems",
           "tasks": [
@@ -155,18 +155,18 @@
           ]
         },
         {
-          "title": "Prototyping & Motion",
+          "title": "Prototyping & motion",
           "outcome": "Can create interactive prototypes with basic motion effects.",
           "skill": "Prototyping and motion",
           "tasks": [
             {
-              "title": "Watch Figma Motion tutorial",
+              "title": "Watch Figma motion tutorial",
               "description": "Follow the official Figma motion tutorial covering smart animate and easing.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Add micro‑interactions to a button",
+              "title": "Add micro-interactions to a button",
               "description": "Create hover and press states with subtle scaling and colour shifts.",
               "type": "build",
               "minutes": 55
@@ -194,11 +194,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply learned skills to create portfolio‑ready projects.",
+      "title": "Proof of work",
+      "summary": "Apply learned skills to create portfolio-ready projects.",
       "milestones": [
         {
-          "title": "Design System Project",
+          "title": "Design system project",
           "outcome": "A complete, documented design system you can showcase.",
           "skill": null,
           "tasks": [
@@ -235,8 +235,8 @@
           ]
         },
         {
-          "title": "Polished App Screens",
-          "outcome": "Three high‑fidelity app screens demonstrating visual and interaction design.",
+          "title": "Polished app screens",
+          "outcome": "Three high-fidelity app screens demonstrating visual and interaction design.",
           "skill": null,
           "tasks": [
             {
@@ -247,13 +247,13 @@
             },
             {
               "title": "Design screens in Figma",
-              "description": "Create high‑fidelity versions using your typography and colour system.",
+              "description": "Create high-fidelity versions using your typography and colour system.",
               "type": "build",
               "minutes": 120
             },
             {
               "title": "Add interactive prototypes",
-              "description": "Link screens with transitions and micro‑interactions.",
+              "description": "Link screens with transitions and micro-interactions.",
               "type": "practice",
               "minutes": 60
             },
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "title": "Motion Prototype",
+          "title": "Motion prototype",
           "outcome": "A short motion prototype showcasing an interaction with fluid animation.",
           "skill": null,
           "tasks": [
@@ -311,11 +311,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish your portfolio, master handoff, and prepare for job or client interviews.",
+      "title": "Getting ready",
+      "summary": "Polish your portfolio, refine handoff, and prepare for job or client interviews.",
       "milestones": [
         {
-          "title": "Handoff to Engineers",
+          "title": "Handoff to engineers",
           "outcome": "Can deliver design specs and assets that developers can implement directly.",
           "skill": "Handoff to engineers",
           "tasks": [
@@ -345,14 +345,14 @@
             },
             {
               "title": "Reflect on handoff clarity",
-              "description": "Note three improvements to make specs more developer‑friendly.",
+              "description": "Note three improvements to make specs more developer-friendly.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Portfolio & Personal Brand",
+          "title": "Portfolio & personal brand",
           "outcome": "A polished online portfolio and clear personal narrative ready for recruiters.",
           "skill": "Design systems",
           "tasks": [
@@ -364,19 +364,19 @@
             },
             {
               "title": "Write case studies for each project",
-              "description": "Describe problem, process, role, and outcome in 200‑300 words per project.",
+              "description": "Describe problem, process, role, and outcome in 200-300 words per project.",
               "type": "learn",
               "minutes": 80
             },
             {
-              "title": "Add high‑quality visuals",
+              "title": "Add high-quality visuals",
               "description": "Export screens and motion clips at 2x resolution and embed them.",
               "type": "build",
               "minutes": 60
             },
             {
               "title": "Create a concise designer bio",
-              "description": "Write a 3‑sentence bio highlighting strengths and tools.",
+              "description": "Write a 3-sentence bio highlighting strengths and tools.",
               "type": "learn",
               "minutes": 30
             },
@@ -389,7 +389,7 @@
           ]
         },
         {
-          "title": "Interview Preparation",
+          "title": "Interview preparation",
           "outcome": "Confidently discuss design decisions and showcase work in interviews.",
           "skill": "Typography",
           "tasks": [

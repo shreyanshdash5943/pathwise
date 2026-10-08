@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, ExternalLink } from "lucide-react";
+import { Check, Download, ExternalLink, FileText, Mail, Phone } from "lucide-react";
 import clsx from "clsx";
 import { Logo } from "@/components/logo";
 import { cleanUsername, getPublicProfile } from "@/lib/public-profile";
+import { recordProfileEvent } from "@/lib/analytics";
 
 type Params = { params: Promise<{ username: string }> };
 
@@ -44,6 +45,7 @@ export default async function PublicProfilePage({ params }: Params) {
   const { username } = await params;
   const p = await load(username);
   if (!p) notFound();
+  await recordProfileEvent(p.username, "view");
 
   const name = p.displayName ?? `@${p.username}`;
   const pct = p.progress && p.progress.total ? Math.round((p.progress.done / p.progress.total) * 100) : 0;
@@ -82,15 +84,31 @@ export default async function PublicProfilePage({ params }: Params) {
               )}
             </div>
           </div>
-          {links.length > 0 && (
-            <div className="mt-6 flex flex-wrap gap-2">
-              {links.map((k) => (
-                <a key={k} href={p.links[k]} target="_blank" rel="noopener noreferrer nofollow ugc" className="btn-outline h-9 px-4 text-[14px]">
-                  {LINK_LABEL[k]} <ExternalLink className="h-3.5 w-3.5 text-faint" />
-                </a>
-              ))}
-            </div>
-          )}
+          <div className="mt-6 flex flex-wrap gap-2">
+            {p.email && (
+              <a href={`mailto:${p.email}`} className="btn-primary h-9 px-4 text-[14px]">
+                <Mail className="h-4 w-4" /> {p.email}
+              </a>
+            )}
+            {p.phone && (
+              <a href={`tel:${p.phone.replace(/[^\d+]/g, "")}`} className="btn-outline h-9 px-4 text-[14px]">
+                <Phone className="h-4 w-4 text-muted" /> {p.phone}
+              </a>
+            )}
+            {links.map((k) => (
+              <a key={k} href={`/u/${p.username}/go?to=${k}`} target="_blank" rel="noopener noreferrer nofollow ugc" className="btn-outline h-9 px-4 text-[14px]">
+                {LINK_LABEL[k]} <ExternalLink className="h-3.5 w-3.5 text-faint" />
+              </a>
+            ))}
+            {p.hasResume && (
+              <a href={`/u/${p.username}/resume`} className="btn-outline h-9 px-4 text-[14px]" rel="nofollow">
+                <FileText className="h-4 w-4 text-muted" /> Resume
+              </a>
+            )}
+            <a href={`/u/${p.username}/card`} className="btn-outline h-9 px-4 text-[14px]" rel="nofollow" download>
+              <Download className="h-4 w-4 text-muted" /> Download PDF
+            </a>
+          </div>
         </section>
 
         {p.progress && (
@@ -140,7 +158,7 @@ export default async function PublicProfilePage({ params }: Params) {
               {p.proofs.map((pr) => (
                 <li key={pr.id}>
                   <a
-                    href={pr.url}
+                    href={`/u/${p.username}/go?to=proof-${pr.id}`}
                     target="_blank"
                     rel="noopener noreferrer nofollow ugc"
                     className="flex h-full flex-col rounded-xl border border-line p-4 transition-colors hover:border-accent-line hover:bg-accent-soft/40"
@@ -170,13 +188,15 @@ export default async function PublicProfilePage({ params }: Params) {
           </section>
         )}
 
-        <p className="pt-4 text-center text-[13.5px] text-faint">
-          Built with{" "}
-          <Link href="/" className="font-medium text-muted hover:text-accent">
-            Pathwise
-          </Link>
-          , a daily plan for your next career step.
-        </p>
+        {!p.hideBranding && (
+          <p className="pt-4 text-center text-[13.5px] text-faint">
+            Built with{" "}
+            <Link href="/" className="font-medium text-muted hover:text-accent">
+              Pathwise
+            </Link>
+            , a daily plan for your next career step.
+          </p>
+        )}
       </main>
     </div>
   );

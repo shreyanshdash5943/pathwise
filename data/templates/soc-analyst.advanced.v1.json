@@ -1,19 +1,19 @@
 {
-  "title": "Security Analyst Advancement Roadmap",
-  "summary": "A step‑by‑step plan to deepen technical expertise, build a polished portfolio, and prepare for senior‑level roles. Focuses on advanced topics, leadership, and interview readiness.",
+  "title": "Security Analyst Advancement roadmap",
+  "summary": "A step-by-step plan to deepen technical expertise, build a polished portfolio, and prepare for senior-level roles. Focuses on advanced topics, leadership, and interview readiness.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core concepts to ensure a solid base for advanced work.",
       "milestones": [
         {
-          "title": "Networking Fundamentals Review",
+          "title": "Networking fundamentals review",
           "outcome": "Can design and troubleshoot enterprise network segments and explain traffic flows.",
           "skill": "Networking fundamentals",
           "tasks": [
             {
               "title": "Read TCP/IP model chapter",
-              "description": "Study the OSI/TCP‑IP layers on the official Cisco Networking Basics guide.",
+              "description": "Study the OSI/TCP-IP layers on the official Cisco Networking Basics guide.",
               "type": "learn",
               "minutes": 45
             },
@@ -31,14 +31,14 @@
             },
             {
               "title": "Summarize key protocols",
-              "description": "Write a one‑page summary of DNS, DHCP, and ARP functions.",
+              "description": "Write a one-page summary of DNS, DHCP, and ARP functions.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Linux Command Mastery",
+          "title": "Linux command skills",
           "outcome": "Can navigate, script, and secure Linux systems used in security operations.",
           "skill": "Linux",
           "tasks": [
@@ -77,16 +77,16 @@
       ]
     },
     {
-      "title": "Core Skills Expansion",
+      "title": "Core skills expansion",
       "summary": "Develop deeper abilities in analysis, tooling, and response.",
       "milestones": [
         {
-          "title": "Log Analysis Proficiency",
+          "title": "Log analysis proficiency",
           "outcome": "Can parse, correlate, and extract actionable insights from diverse log sources.",
           "skill": "Log analysis",
           "tasks": [
             {
-              "title": "Read Log Management chapter on MDN",
+              "title": "Read log management chapter on MDN",
               "description": "Study the concepts of log formats, timestamps, and normalization.",
               "type": "learn",
               "minutes": 40
@@ -118,18 +118,18 @@
           ]
         },
         {
-          "title": "SIEM Tool Expertise",
-          "outcome": "Can configure, query, and tune a SIEM platform for real‑time detection.",
+          "title": "SIEM tool expertise",
+          "outcome": "Can configure, query, and tune a SIEM platform for real-time detection.",
           "skill": "SIEM tools",
           "tasks": [
             {
-              "title": "Watch Splunk Fundamentals on YouTube",
+              "title": "Watch Splunk fundamentals on YouTube",
               "description": "Complete the first two videos covering data onboarding and search basics.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Ingest CSV data into Splunk Free",
+              "title": "Ingest CSV data into Splunk free",
               "description": "Upload a sample CSV of firewall logs and verify field extraction.",
               "type": "build",
               "minutes": 45
@@ -142,12 +142,12 @@
             },
             {
               "title": "Tune a detection rule to reduce noise",
-              "description": "Adjust threshold values on a built‑in rule and document the impact.",
+              "description": "Adjust threshold values on a built-in rule and document the impact.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Connect with Splunk Community forum",
+              "title": "Connect with Splunk community forum",
               "description": "Post a question about rule tuning and read two replies for best practices.",
               "type": "connect",
               "minutes": 25
@@ -155,19 +155,19 @@
           ]
         },
         {
-          "title": "Incident Response Process",
-          "outcome": "Can lead an end‑to‑end response, from triage to remediation and lessons learned.",
+          "title": "Incident response process",
+          "outcome": "Can lead an end-to-end response, from triage to remediation and lessons learned.",
           "skill": "Incident response",
           "tasks": [
             {
-              "title": "Read NIST IR 800‑61r2 executive summary",
+              "title": "Read NIST IR 800-61r2 executive summary",
               "description": "Summarize the four phases of the incident response lifecycle.",
               "type": "learn",
               "minutes": 30
             },
             {
               "title": "Create a triage checklist template",
-              "description": "Draft a one‑page checklist covering evidence collection, containment, and communication.",
+              "description": "Draft a one-page checklist covering evidence collection, containment, and communication.",
               "type": "build",
               "minutes": 40
             },
@@ -178,7 +178,7 @@
               "minutes": 45
             },
             {
-              "title": "Conduct a post‑mortem write‑up",
+              "title": "Conduct a post-mortem write-up",
               "description": "Write a concise report describing root cause, impact, and remediation steps for the simulated incident.",
               "type": "practice",
               "minutes": 50
@@ -194,11 +194,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio pieces that demonstrate real‑world capability.",
+      "title": "Proof of work",
+      "summary": "Create portfolio pieces that demonstrate real-world capability.",
       "milestones": [
         {
-          "title": "Home Lab Logging Setup",
+          "title": "Home lab logging setup",
           "outcome": "Can showcase a fully instrumented lab with centralized log collection and alerts.",
           "skill": null,
           "tasks": [
@@ -229,12 +229,12 @@
           ]
         },
         {
-          "title": "CTF Incident Report",
-          "outcome": "Can produce a professional incident analysis report from a capture‑the‑flag exercise.",
+          "title": "CTF incident report",
+          "outcome": "Can produce a professional incident analysis report from a capture-the-flag exercise.",
           "skill": null,
           "tasks": [
             {
-              "title": "Complete a medium‑level CTF challenge on Hack The Box",
+              "title": "Complete a medium-level CTF challenge on Hack The Box",
               "description": "Solve a challenge that involves privilege escalation and log tampering.",
               "type": "practice",
               "minutes": 120
@@ -252,7 +252,7 @@
               "minutes": 80
             },
             {
-              "title": "Peer‑review the report with a colleague",
+              "title": "Peer-review the report with a colleague",
               "description": "Exchange reports with another analyst and provide constructive feedback.",
               "type": "connect",
               "minutes": 45
@@ -260,7 +260,7 @@
           ]
         },
         {
-          "title": "Detection Rule Set Portfolio",
+          "title": "Detection rule set portfolio",
           "outcome": "Can demonstrate a curated collection of effective detection rules across multiple platforms.",
           "skill": null,
           "tasks": [
@@ -293,11 +293,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance leadership, threat intel, and prepare for senior interviews.",
       "milestones": [
         {
-          "title": "Threat Intelligence Integration",
+          "title": "Threat intelligence integration",
           "outcome": "Can enrich alerts with external intel and produce actionable threat briefs.",
           "skill": "Threat intelligence",
           "tasks": [
@@ -320,7 +320,7 @@
               "minutes": 45
             },
             {
-              "title": "Write a 2‑page threat brief",
+              "title": "Write a 2-page threat brief",
               "description": "Summarize the enriched alert, impact, and recommended mitigations.",
               "type": "practice",
               "minutes": 50
@@ -334,8 +334,8 @@
           ]
         },
         {
-          "title": "Leadership & Communication",
-          "outcome": "Can lead security initiatives and convey technical findings to non‑technical audiences.",
+          "title": "Leadership & communication",
+          "outcome": "Can lead security initiatives and convey technical findings to non-technical audiences.",
           "skill": "Incident response",
           "tasks": [
             {
@@ -346,7 +346,7 @@
             },
             {
               "title": "Facilitate a mock tabletop exercise",
-              "description": "Run a 30‑minute tabletop with peers, assigning roles and debriefing afterward.",
+              "description": "Run a 30-minute tabletop with peers, assigning roles and debriefing afterward.",
               "type": "practice",
               "minutes": 70
             },
@@ -371,7 +371,7 @@
           ]
         },
         {
-          "title": "Senior Interview Preparation",
+          "title": "Senior interview preparation",
           "outcome": "Can confidently answer technical, scenario, and behavioral questions for senior analyst roles.",
           "skill": "Networking fundamentals",
           "tasks": [
@@ -401,7 +401,7 @@
             },
             {
               "title": "Reflect on gaps and set next goals",
-              "description": "Identify any remaining skill gaps and outline a 3‑month action plan.",
+              "description": "Identify any remaining skill gaps and outline a 3-month action plan.",
               "type": "reflect",
               "minutes": 20
             }

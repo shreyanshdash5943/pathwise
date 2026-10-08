@@ -1,13 +1,13 @@
 {
-  "title": "Technical Product Manager Learning Roadmap",
-  "summary": "A concise, hands‑on plan to solidify core technical foundations, master TPM core skills, build a showcase portfolio, and prepare for hiring or client work. Each phase blends learning, practice, and networking to accelerate competence.",
+  "title": "Technical Product Manager learning roadmap",
+  "summary": "TPM foundation, portfolio, and hiring prep",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish the technical baseline needed to converse fluently with engineers.",
       "milestones": [
         {
-          "title": "API and System Basics",
+          "title": "API and system basics",
           "outcome": "Can explain REST principles, authentication flows, and system components to engineers.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -19,18 +19,18 @@
             },
             {
               "title": "Sketch a simple API diagram",
-              "description": "Draw a diagram of request‑response flow for a CRUD endpoint using pen and paper.",
+              "description": "Draw a diagram of request-response flow for a CRUD endpoint using pen and paper.",
               "type": "practice",
               "minutes": 30
             },
             {
               "title": "Watch a freeCodeCamp video on authentication",
-              "description": "Focus on token‑based auth (JWT) and how it fits into API design.",
+              "description": "Focus on token-based auth (JWT) and how it fits into API design.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Write a one‑page API glossary",
+              "title": "Write a one-page API glossary",
               "description": "Define key terms (endpoint, payload, rate limit, etc.) for future reference.",
               "type": "reflect",
               "minutes": 20
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "SQL Fundamentals",
+          "title": "SQL fundamentals",
           "outcome": "Can query a relational database to retrieve, filter, and aggregate data for product decisions.",
           "skill": "SQL",
           "tasks": [
@@ -50,7 +50,7 @@
             },
             {
               "title": "Run sample queries in SQLiteStudio",
-              "description": "Load the public Chinook database and practice retrieving top‑selling tracks.",
+              "description": "Load the public Chinook database and practice retrieving top-selling tracks.",
               "type": "practice",
               "minutes": 45
             },
@@ -71,11 +71,11 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Develop the product‑focused competencies that TPMs use daily.",
+      "title": "Core skills",
+      "summary": "Develop the product-focused competencies that TPMs use daily.",
       "milestones": [
         {
-          "title": "Technical Specs Writing",
+          "title": "Technical specs writing",
           "outcome": "Can produce clear, actionable technical specifications for engineering teams.",
           "skill": "Technical specs",
           "tasks": [
@@ -92,7 +92,7 @@
               "minutes": 70
             },
             {
-              "title": "Peer‑review spec with a developer",
+              "title": "Peer-review spec with a developer",
               "description": "Gather concrete feedback on clarity and completeness.",
               "type": "connect",
               "minutes": 30
@@ -106,8 +106,8 @@
           ]
         },
         {
-          "title": "Prioritisation Frameworks",
-          "outcome": "Can apply data‑driven methods to rank features and technical debt.",
+          "title": "Prioritisation frameworks",
+          "outcome": "Can apply data-driven methods to rank features and technical debt.",
           "skill": "Prioritisation",
           "tasks": [
             {
@@ -123,7 +123,7 @@
               "minutes": 40
             },
             {
-              "title": "Write a short rationale for top‑ranked feature",
+              "title": "Write a short rationale for top-ranked feature",
               "description": "Explain why it wins and how it aligns with business goals.",
               "type": "reflect",
               "minutes": 20
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "title": "Delivery Planning",
+          "title": "Delivery planning",
           "outcome": "Can construct realistic release plans and track progress across squads.",
           "skill": "Delivery planning",
           "tasks": [
@@ -148,7 +148,7 @@
               "minutes": 30
             },
             {
-              "title": "Map a two‑month roadmap for a mock platform",
+              "title": "Map a two-month roadmap for a mock platform",
               "description": "Identify milestones, dependencies, and release dates in a simple Gantt view.",
               "type": "build",
               "minutes": 70
@@ -170,12 +170,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Apply learned skills to tangible portfolio pieces that showcase TPM competence.",
       "milestones": [
         {
-          "title": "API Product Specification",
-          "outcome": "Portfolio includes a polished spec that demonstrates end‑to‑end thinking.",
+          "title": "API Product specification",
+          "outcome": "Portfolio includes a polished spec that demonstrates end-to-end thinking.",
           "skill": null,
           "tasks": [
             {
@@ -192,7 +192,7 @@
             },
             {
               "title": "Add a visual flow diagram",
-              "description": "Use draw.io to illustrate request‑response sequences.",
+              "description": "Use draw.io to illustrate request-response sequences.",
               "type": "build",
               "minutes": 40
             },
@@ -205,19 +205,19 @@
           ]
         },
         {
-          "title": "Technical Roadmap for a Platform",
+          "title": "Technical roadmap for a platform",
           "outcome": "Shows ability to align technical initiatives with business objectives over time.",
           "skill": null,
           "tasks": [
             {
               "title": "Define platform vision and goals",
-              "description": "Write a one‑page vision statement with measurable outcomes.",
+              "description": "Write a one-page vision statement with measurable outcomes.",
               "type": "learn",
               "minutes": 35
             },
             {
               "title": "Identify three major epics and dependencies",
-              "description": "Break down high‑level work into epics, noting cross‑team impacts.",
+              "description": "Break down high-level work into epics, noting cross-team impacts.",
               "type": "practice",
               "minutes": 50
             },
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "title": "Data‑Backed Feature Proposal",
+          "title": "Data-backed feature proposal",
           "outcome": "Demonstrates analytical rigor and persuasive communication for feature decisions.",
           "skill": null,
           "tasks": [
@@ -265,7 +265,7 @@
               "minutes": 70
             },
             {
-              "title": "Record a 2‑minute pitch video",
+              "title": "Record a 2-minute pitch video",
               "description": "Present the proposal as if to stakeholders and upload to YouTube (unlisted).",
               "type": "practice",
               "minutes": 30
@@ -281,23 +281,23 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Fine‑tune advanced TPM capabilities and prepare for interviews or client engagements.",
+      "title": "Getting ready",
+      "summary": "Fine-tune advanced TPM capabilities and prepare for interviews or client engagements.",
       "milestones": [
         {
-          "title": "Developer Empathy & Collaboration",
+          "title": "Developer empathy & collaboration",
           "outcome": "Can effectively bridge business and engineering perspectives in meetings.",
           "skill": "Developer empathy",
           "tasks": [
             {
-              "title": "Read \"The Manager's Path\" chapter on empathy",
+              "title": "Read \"The Manager's path\" chapter on empathy",
               "description": "Focus on techniques for active listening and technical translation.",
               "type": "learn",
               "minutes": 40
             },
             {
               "title": "Shadow a sprint demo meeting (recorded)",
-              "description": "Observe how engineers discuss trade‑offs and note language cues.",
+              "description": "Observe how engineers discuss trade-offs and note language cues.",
               "type": "practice",
               "minutes": 45
             },
@@ -308,7 +308,7 @@
               "minutes": 25
             },
             {
-              "title": "Pair‑program with a junior engineer for 30 min",
+              "title": "Pair-program with a junior engineer for 30 min",
               "description": "Collaborate on a small bug fix to experience their workflow.",
               "type": "connect",
               "minutes": 60
@@ -316,12 +316,12 @@
           ]
         },
         {
-          "title": "Advanced Delivery & Risk Management",
-          "outcome": "Can design robust release strategies and anticipate technical risks.",
+          "title": "Advanced delivery & risk management",
+          "outcome": "Design effective release strategies and anticipate technical risks",
           "skill": "Delivery planning",
           "tasks": [
             {
-              "title": "Study post‑mortem analysis guide on Atlassian",
+              "title": "Study post-mortem analysis guide on Atlassian",
               "description": "Learn structure for documenting failures and learnings.",
               "type": "learn",
               "minutes": 35
@@ -347,12 +347,12 @@
           ]
         },
         {
-          "title": "Interview & Client Readiness",
+          "title": "Interview & client readiness",
           "outcome": "Will confidently articulate experience and solve case studies in TPM interviews.",
           "skill": "Prioritisation",
           "tasks": [
             {
-              "title": "Read Cracking the PM Interview chapter on case studies",
+              "title": "Read Cracking the PM interview chapter on case studies",
               "description": "Focus on structuring answers for product and technical scenarios.",
               "type": "learn",
               "minutes": 40
@@ -371,7 +371,7 @@
             },
             {
               "title": "Schedule a mock interview with a senior TPM",
-              "description": "Get live feedback on communication and problem‑solving approach.",
+              "description": "Get live feedback on communication and problem-solving approach.",
               "type": "connect",
               "minutes": 60
             }

@@ -1,13 +1,13 @@
 {
-  "title": "Associate Product Manager Learning Roadmap",
-  "summary": "A focused path to sharpen product discovery, specification, and delivery skills, then build a showcase portfolio. Finish with advanced tactics and job‑ready preparation.",
+  "title": "Associate Product Manager learning Roadmap",
+  "summary": "A focused path to sharpen product discovery, specification, and delivery skills, then build a showcase portfolio. Finish with advanced tactics and job-ready preparation.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify core product thinking and communication basics.",
       "milestones": [
         {
-          "title": "Customer Discovery Basics",
+          "title": "Customer Discovery basics",
           "outcome": "Can conduct structured user interviews and synthesize insights.",
           "skill": "Customer discovery",
           "tasks": [
@@ -25,7 +25,7 @@
             },
             {
               "title": "Create interview script",
-              "description": "Draft a 5‑question script for a target user segment using a template from Product School.",
+              "description": "Draft a 5-question script for a target user segment using a template from Product School.",
               "type": "build",
               "minutes": 60
             },
@@ -37,7 +37,7 @@
             },
             {
               "title": "Summarize findings",
-              "description": "Write a one‑page insight summary and share with a mentor for feedback.",
+              "description": "Write a one-page insight summary and share with a mentor for feedback.",
               "type": "reflect",
               "minutes": 45
             }
@@ -50,7 +50,7 @@
           "tasks": [
             {
               "title": "Read PRD template",
-              "description": "Review the free PRD template on Aha! blog and note key sections.",
+              "description": "Review The free PRD template on Aha! blog and note key sections.",
               "type": "learn",
               "minutes": 30
             },
@@ -68,7 +68,7 @@
             },
             {
               "title": "Write full spec draft",
-              "description": "Fill in the outline with user problem, solution, acceptance criteria, and UI mock‑ups.",
+              "description": "Fill in the outline with user problem, solution, acceptance criteria, and UI mock-ups.",
               "type": "practice",
               "minutes": 90
             },
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "title": "Prioritisation Foundations",
+          "title": "Prioritisation foundations",
           "outcome": "Can apply a structured framework to rank feature ideas.",
           "skill": "Prioritisation",
           "tasks": [
@@ -105,13 +105,13 @@
             },
             {
               "title": "Create prioritisation cheat sheet",
-              "description": "Summarize the steps and formulas on a one‑page reference sheet.",
+              "description": "Summarize the steps and formulas on a one-page reference sheet.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Reflect on trade‑offs",
-              "description": "Write a short note on why the top‑ranked idea wins over others.",
+              "title": "Reflect on trade-offs",
+              "description": "Write a short note on why the top-ranked idea wins over others.",
               "type": "reflect",
               "minutes": 30
             }
@@ -120,11 +120,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Deepen analytical, roadmap, and stakeholder abilities.",
       "milestones": [
         {
-          "title": "Metrics and Analytics Basics",
+          "title": "Metrics and Analytics basics",
           "outcome": "Can define success metrics and set up simple dashboards.",
           "skill": "Metrics and analytics",
           "tasks": [
@@ -161,13 +161,13 @@
           ]
         },
         {
-          "title": "Roadmapping Techniques",
+          "title": "Roadmapping techniques",
           "outcome": "Can construct a visual product roadmap aligned with strategy.",
           "skill": "Roadmapping",
           "tasks": [
             {
               "title": "Read roadmapping article",
-              "description": "Study the “How to Build a Product Roadmap” article on Aha! blog.",
+              "description": "Study The “How to Build a Product Roadmap” article on Aha! blog.",
               "type": "learn",
               "minutes": 40
             },
@@ -179,7 +179,7 @@
             },
             {
               "title": "Sketch quarterly roadmap",
-              "description": "Using Miro’s free board, plot a 4‑quarter roadmap for the bookmark feature series.",
+              "description": "Using Miro’s free board, plot a 4-quarter roadmap for the bookmark feature series.",
               "type": "practice",
               "minutes": 80
             },
@@ -199,7 +199,7 @@
         },
         {
           "title": "Stakeholder Communication",
-          "outcome": "Can convey product decisions clearly to cross‑functional teams.",
+          "outcome": "Can convey product decisions clearly to cross-functional teams.",
           "skill": "Stakeholder communication",
           "tasks": [
             {
@@ -222,7 +222,7 @@
             },
             {
               "title": "Record a presentation",
-              "description": "Create a 5‑minute recorded pitch of the feature using Loom.",
+              "description": "Create a 5-minute recorded pitch of the feature using Loom.",
               "type": "build",
               "minutes": 60
             },
@@ -237,11 +237,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Apply learned skills to tangible portfolio pieces.",
       "milestones": [
         {
-          "title": "Product Teardown",
+          "title": "Product teardown",
           "outcome": "Showcase ability to critique an existing product’s strengths and gaps.",
           "skill": null,
           "tasks": [
@@ -265,7 +265,7 @@
             },
             {
               "title": "Write teardown report",
-              "description": "Compose a 2‑page report with findings, metrics, and improvement suggestions.",
+              "description": "Compose a 2-page report with findings, metrics, and improvement suggestions.",
               "type": "build",
               "minutes": 80
             },
@@ -278,25 +278,25 @@
           ]
         },
         {
-          "title": "Feature PRD Project",
-          "outcome": "Demonstrates end‑to‑end specification skills for a realistic feature.",
+          "title": "Feature PRD project",
+          "outcome": "Demonstrates end-to-end specification skills for a realistic feature.",
           "skill": null,
           "tasks": [
             {
               "title": "Define feature scope",
-              "description": "Choose a concrete feature (e.g., “in‑app search”) and outline its boundaries.",
+              "description": "Choose a concrete feature (e.g., “in-app search”) and outline its boundaries.",
               "type": "learn",
               "minutes": 25
             },
             {
               "title": "Conduct quick user survey",
-              "description": "Create a 3‑question survey on Google Forms and collect 10 responses.",
+              "description": "Create a 3-question survey on Google Forms and collect 10 responses.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Write full PRD",
-              "description": "Produce a complete product requirement document using the Aha! template.",
+              "description": "Produce a complete Product requirement document using The Aha! template.",
               "type": "build",
               "minutes": 120
             },
@@ -315,7 +315,7 @@
           ]
         },
         {
-          "title": "Metrics Plan for Launch",
+          "title": "Metrics plan for launch",
           "outcome": "Illustrates capability to design measurement frameworks for product releases.",
           "skill": null,
           "tasks": [
@@ -333,7 +333,7 @@
             },
             {
               "title": "Design measurement plan",
-              "description": "Create a one‑page plan outlining data sources, collection methods, and reporting cadence.",
+              "description": "Create a one-page plan outlining data sources, collection methods, and reporting cadence.",
               "type": "build",
               "minutes": 70
             },
@@ -345,7 +345,7 @@
             },
             {
               "title": "Present plan to mentor",
-              "description": "Give a 5‑minute walkthrough to a senior PM and capture feedback.",
+              "description": "Give a 5-minute walkthrough to a senior PM and capture feedback.",
               "type": "reflect",
               "minutes": 30
             }
@@ -354,11 +354,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance to senior concepts and prepare for job or freelance opportunities.",
       "milestones": [
         {
-          "title": "Advanced Prioritisation & Trade‑offs",
+          "title": "Advanced Prioritisation & trade-offs",
           "outcome": "Can lead prioritisation workshops and justify decisions with data.",
           "skill": "Prioritisation",
           "tasks": [
@@ -370,7 +370,7 @@
             },
             {
               "title": "Facilitate mock workshop",
-              "description": "Run a 30‑minute prioritisation session with peers using RICE on a real backlog.",
+              "description": "Run a 30-minute prioritisation session with peers using RICE on a real backlog.",
               "type": "practice",
               "minutes": 90
             },
@@ -395,24 +395,24 @@
           ]
         },
         {
-          "title": "Strategic Roadmapping & Vision",
-          "outcome": "Can craft multi‑year product visions and translate them into actionable roadmaps.",
+          "title": "Strategic roadmapping & Vision",
+          "outcome": "Can craft multi-year product visions and translate them into actionable roadmaps.",
           "skill": "Roadmapping",
           "tasks": [
             {
-              "title": "Read vision‑setting article",
+              "title": "Read vision-setting article",
               "description": "Read the “Product Vision vs. Strategy” article on ProductPlan blog.",
               "type": "learn",
               "minutes": 35
             },
             {
               "title": "Write a product vision statement",
-              "description": "Draft a 2‑sentence vision for a hypothetical SaaS tool.",
+              "description": "Draft a 2-sentence vision for a hypothetical SaaS tool.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Map 2‑year roadmap",
+              "title": "Map 2-year roadmap",
               "description": "Use a free Miro template to plot quarterly themes and key initiatives.",
               "type": "build",
               "minutes": 80
@@ -432,7 +432,7 @@
           ]
         },
         {
-          "title": "Job‑Ready Portfolio & Interview Prep",
+          "title": "Job-ready portfolio & interview prep",
           "outcome": "Possesses a polished portfolio and can articulate product decisions in interviews.",
           "skill": "Stakeholder communication",
           "tasks": [
@@ -443,8 +443,8 @@
               "minutes": 90
             },
             {
-              "title": "Write case‑study narratives",
-              "description": "For each project, write a 300‑word story highlighting problem, process, and impact.",
+              "title": "Write case-study narratives",
+              "description": "For each project, write a 300-word story highlighting problem, process, and impact.",
               "type": "build",
               "minutes": 80
             },
@@ -456,7 +456,7 @@
             },
             {
               "title": "Mock interview with peer",
-              "description": "Conduct a 30‑minute product interview simulation and receive feedback.",
+              "description": "Conduct a 30-minute product interview simulation and receive feedback.",
               "type": "reflect",
               "minutes": 45
             },

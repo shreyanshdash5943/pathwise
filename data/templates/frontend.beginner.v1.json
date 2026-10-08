@@ -1,13 +1,13 @@
 {
-  "title": "Frontend Engineering Roadmap: Zero to Job-Ready",
+  "title": "Frontend engineering roadmap: Zero to job-ready",
   "summary": "This roadmap guides you from absolute beginner to a hireable frontend engineer. It focuses on building a strong foundation in web standards, modern JavaScript, and React while creating a portfolio that proves your skills.",
   "phases": [
     {
-      "title": "Web Foundations",
-      "summary": "Master the core building blocks of the web: semantic HTML, CSS layout, and basic JavaScript logic.",
+      "title": "Web foundations",
+      "summary": "Learn The Core Web building blocks: semantic HTML, CSS layout, basic JavaScript.",
       "milestones": [
         {
-          "title": "Semantic HTML Structure",
+          "title": "Semantic HTML structure",
           "outcome": "You can write valid, semantic HTML for any page structure.",
           "skill": "HTML and CSS",
           "tasks": [
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "CSS Layout Mastery",
+          "title": "CSS layout fundamentals",
           "outcome": "You can create responsive layouts using Flexbox and Grid.",
           "skill": "HTML and CSS",
           "tasks": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "JavaScript Fundamentals",
+          "title": "JavaScript fundamentals",
           "outcome": "You can write basic scripts to manipulate the DOM and handle events.",
           "skill": "JavaScript",
           "tasks": [
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "title": "Core Engineering Skills",
+      "title": "Core engineering skills",
       "summary": "Deepen your JavaScript knowledge, introduce TypeScript, and learn professional development workflows.",
       "milestones": [
         {
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "title": "TypeScript Introduction",
+          "title": "TypeScript introduction",
           "outcome": "You can add static typing to JavaScript projects to catch errors early.",
           "skill": "TypeScript",
           "tasks": [
@@ -174,7 +174,7 @@
           ]
         },
         {
-          "title": "Development Workflow",
+          "title": "Development workflow",
           "outcome": "You can use Git for version control and npm for package management.",
           "skill": null,
           "tasks": [
@@ -207,11 +207,11 @@
       ]
     },
     {
-      "title": "Portfolio Projects",
+      "title": "Portfolio projects",
       "summary": "Build three substantial projects that demonstrate your ability to create responsive, interactive, and accessible web applications.",
       "milestones": [
         {
-          "title": "Responsive Portfolio Site",
+          "title": "Responsive portfolio site",
           "outcome": "You have a professional portfolio site that showcases your skills and projects.",
           "skill": null,
           "tasks": [
@@ -248,7 +248,7 @@
           ]
         },
         {
-          "title": "API Dashboard",
+          "title": "API dashboard",
           "outcome": "You have a dashboard that fetches and displays data from a public API.",
           "skill": null,
           "tasks": [
@@ -285,7 +285,7 @@
           ]
         },
         {
-          "title": "Component Library",
+          "title": "Component library",
           "outcome": "You have a reusable component library with documentation.",
           "skill": null,
           "tasks": [
@@ -324,11 +324,11 @@
       ]
     },
     {
-      "title": "Job Readiness",
-      "summary": "Master React, accessibility, and performance while preparing for interviews and client work.",
+      "title": "Job readiness",
+      "summary": "Learn React, accessibility, and Performance while preparing for interviews and client work",
       "milestones": [
         {
-          "title": "React Fundamentals",
+          "title": "React fundamentals",
           "outcome": "You can build interactive UIs with React components and state management.",
           "skill": "React",
           "tasks": [
@@ -396,7 +396,7 @@
           ]
         },
         {
-          "title": "Performance Optimization",
+          "title": "Performance optimization",
           "outcome": "You can identify and fix performance bottlenecks in web applications.",
           "skill": "Web performance",
           "tasks": [
@@ -433,7 +433,7 @@
           ]
         },
         {
-          "title": "Interview Preparation",
+          "title": "Interview preparation",
           "outcome": "You are ready to apply for jobs and handle technical interviews.",
           "skill": null,
           "tasks": [

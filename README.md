@@ -82,6 +82,11 @@ npm run typecheck  # TypeScript only
 | Optional resume AI tagger | `lib/ai.ts` |
 | Proof of work | `lib/proofs.ts`, `app/api/proofs/`, `components/proof-dialog.tsx` |
 | Public profiles (`/u/<username>`) | `lib/public-profile.ts`, `app/u/[username]/` |
+| Daily habits with notes (`/habits`) | `lib/habits.ts`, `app/api/habits/`, `components/habits-panel.tsx`, `components/habits-view.tsx` |
+| PDF profile card, public resume | `lib/profile-card.ts`, `app/u/[username]/card/`, `app/u/[username]/resume/` |
+| Pro status and gating | `lib/pro.ts`, `app/(app)/pro/`, `supabase/migrations/007_pro.sql` |
+| Profile analytics | `lib/analytics.ts`, `components/profile-analytics.tsx`, `app/u/[username]/go/` |
+| Roadmap editing | `lib/plan-edits.ts`, `lib/plan-edit-api.ts`, `app/api/plan/` |
 | Reminders (web push) | `lib/push.ts`, `lib/reminders.ts`, `app/api/cron/reminders/`, `public/sw.js`, `components/reminders-panel.tsx` |
 | News sources (DEV + Hacker News, no keys) | `lib/news.ts` |
 | Database schema and RLS | `supabase/schema.sql` |
@@ -93,6 +98,12 @@ npm run typecheck  # TypeScript only
 **Proof of work and public profiles.** Finishing a build task prompts for a link to what was made; proofs belong to the person, so they survive starting a new plan. Making a profile public gives it a page at `/u/<username>`. Visitors read it through `get_public_profile()`, which returns only safe fields (never email, resume or answers), and the page is cached for 5 minutes and refreshed straight away when its owner edits anything.
 
 **Reminders.** Web push only, so it's free at any scale. People turn it on per device in Settings and pick an hour (in their time zone); they get a daily nudge only on days they haven't started, and a Sunday summary instead of the nudge that day. An hourly job (`.github/workflows/reminders.yml`, or Vercel Cron) calls `/api/cron/reminders`, which claims due rows through an index, so each run's cost tracks how many are due, not total users. The job authenticates to the database with `CRON_SECRET` (its hash is stored in `private.app_config`), so the service-role key is still never used. Dead browser subscriptions are removed automatically. On iPhone, notifications need Pathwise added to the Home Screen first.
+
+**Habits.** People add their own daily items (for example "LeetCode daily") under the plan's checklist, tick them off, and keep a note per day: what they worked on, a link, their approach and their code. `/habits` shows each habit's history and streak.
+
+**Contact card.** On the public profile, email, phone and a resume download are each off until the owner switches them on. `/u/<username>/card` returns a one-page PDF with clickable links (built with pdf-lib, no external service). Public resume downloads go through a storage policy that checks the profile is public and the resume is shared, so the service-role key is still never used.
+
+**Pro.** `entitlements` says who has Pro; only the database owner can write it (SQL Editor now, a payment webhook later). Every Pro-only write is checked by a database trigger calling `is_pro()`, so the API can't be bypassed. Pro includes profile analytics (each visitor counted once a day, bots and the owner ignored, no IPs stored), roadmap editing (your own tasks, removed tasks and order, layered over the shared template), streak freezes (3 a month, applied automatically) and a premium profile (short usernames, two more PDF card designs, no Pathwise footer). If Pro lapses, nothing is deleted; the public page just falls back to the free look.
 
 **Daily checklist logic.** Each day, unfinished tasks from earlier days roll forward, then the list is topped up with the next roadmap tasks until it fills the user's daily time. Every step is idempotent, so double requests don't double-schedule. "Today" is computed in the user's own time zone, captured at onboarding.
 

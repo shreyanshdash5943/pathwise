@@ -1,13 +1,13 @@
 {
-  "title": "Technical Product Manager Learning Roadmap",
-  "summary": "A step‑by‑step guide to move from zero to a job‑ready Technical Product Manager, covering fundamentals, core product skills, portfolio projects, and job readiness. Each phase builds concrete abilities and a showcase of work.",
+  "title": "Technical Product Manager learning roadmap",
+  "summary": "A step-by-step guide to move from zero to a job-ready Technical Product Manager, covering fundamentals, core product skills, portfolio projects, and job readiness. Each phase builds concrete abilities and a showcase of work.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Lay the groundwork in technology basics, business context, and product thinking.",
       "milestones": [
         {
-          "title": "Understand APIs and System Basics",
+          "title": "Understand APIs and system basics",
           "outcome": "Can explain how web APIs work and diagram simple system architectures.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -31,14 +31,14 @@
             },
             {
               "title": "Write a short API explanation",
-              "description": "Draft a one‑page summary describing what an API is for a non‑technical audience.",
+              "description": "Draft a one-page summary describing what an API is for a non-technical audience.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Intro to SQL and Data Literacy",
+          "title": "Intro to SQL and data literacy",
           "outcome": "Can query a database to retrieve and filter data for product decisions.",
           "skill": "SQL",
           "tasks": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Product Management Foundations",
+          "title": "Product management foundations",
           "outcome": "Can articulate product vision, user needs, and basic prioritisation concepts.",
           "skill": "Prioritisation",
           "tasks": [
@@ -81,7 +81,7 @@
             },
             {
               "title": "Create a simple user persona",
-              "description": "Develop a one‑page persona for a hypothetical API consumer.",
+              "description": "Develop a one-page persona for a hypothetical API consumer.",
               "type": "build",
               "minutes": 45
             },
@@ -102,11 +102,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop the practical product tools needed to design, plan, and communicate technical solutions.",
       "milestones": [
         {
-          "title": "Write Technical Specs",
+          "title": "Write Technical specs",
           "outcome": "Can produce clear, actionable technical specifications for engineering teams.",
           "skill": "Technical specs",
           "tasks": [
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "title": "Delivery Planning and Roadmapping",
+          "title": "Delivery planning and roadmapping",
           "outcome": "Can create realistic delivery timelines and roadmap visuals for platform products.",
           "skill": "Delivery planning",
           "tasks": [
@@ -148,7 +148,7 @@
               "minutes": 40
             },
             {
-              "title": "Map a 6‑month roadmap in a spreadsheet",
+              "title": "Map a 6-month roadmap in a spreadsheet",
               "description": "Outline major milestones, dependencies, and release windows for a sample API platform.",
               "type": "build",
               "minutes": 55
@@ -168,12 +168,12 @@
           ]
         },
         {
-          "title": "Develop Developer Empathy",
+          "title": "Develop developer empathy",
           "outcome": "Can anticipate developer needs, speak their language, and foster collaboration.",
           "skill": "Developer empathy",
           "tasks": [
             {
-              "title": "Read \"The Pragmatic Engineer\" article on developer experience",
+              "title": "Read \"The Pragmatic engineer\" article on developer experience",
               "description": "Understand common pain points and motivations of software engineers.",
               "type": "learn",
               "minutes": 30
@@ -186,7 +186,7 @@
             },
             {
               "title": "Summarise interview insights",
-              "description": "Create a bullet‑point list of key empathy takeaways for product decisions.",
+              "description": "Create a bullet-point list of key empathy takeaways for product decisions.",
               "type": "reflect",
               "minutes": 20
             },
@@ -201,16 +201,16 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio pieces that demonstrate your ability to define, plan, and communicate technical products.",
       "milestones": [
         {
-          "title": "API Product Specification Project",
+          "title": "API Product specification project",
           "outcome": "A polished API spec ready to show recruiters or clients.",
           "skill": null,
           "tasks": [
             {
-              "title": "Choose a real‑world API idea",
+              "title": "Choose a real-world API idea",
               "description": "Select a useful API (e.g., weather data) to design a spec for.",
               "type": "learn",
               "minutes": 20
@@ -229,7 +229,7 @@
             },
             {
               "title": "Create a spec summary slide",
-              "description": "Design a one‑page visual that highlights the spec’s key points.",
+              "description": "Design a one-page visual that highlights the spec’s key points.",
               "type": "build",
               "minutes": 45
             },
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "title": "Technical Roadmap Project",
+          "title": "Technical roadmap project",
           "outcome": "A visual roadmap illustrating strategic evolution of a platform product.",
           "skill": null,
           "tasks": [
@@ -259,7 +259,7 @@
               "minutes": 35
             },
             {
-              "title": "Create a Gantt‑style roadmap",
+              "title": "Create a Gantt-style roadmap",
               "description": "Use a free tool like Google Sheets to plot timelines, dependencies, and milestones.",
               "type": "build",
               "minutes": 70
@@ -279,8 +279,8 @@
           ]
         },
         {
-          "title": "Data‑Backed Feature Proposal",
-          "outcome": "A concise proposal that uses SQL‑derived data to justify a new feature.",
+          "title": "Data-backed feature proposal",
+          "outcome": "A concise proposal that uses SQL-derived data to justify a new feature.",
           "skill": null,
           "tasks": [
             {
@@ -302,7 +302,7 @@
               "minutes": 70
             },
             {
-              "title": "Create a one‑page KPI chart",
+              "title": "Create a one-page KPI chart",
               "description": "Visualise baseline vs projected improvement using a free chart tool.",
               "type": "build",
               "minutes": 40
@@ -318,11 +318,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced competencies, interview readiness, and networking for a Technical Product Manager role.",
       "milestones": [
         {
-          "title": "Advanced API Governance",
+          "title": "Advanced API governance",
           "outcome": "Can design policies for versioning, deprecation, and security across APIs.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -353,25 +353,25 @@
           ]
         },
         {
-          "title": "Interview Preparation and Storytelling",
+          "title": "Interview preparation and storytelling",
           "outcome": "Can confidently discuss experiences, solve case questions, and showcase portfolio work.",
           "skill": "Prioritisation",
           "tasks": [
             {
               "title": "Study common TPM interview questions on Glassdoor",
-              "description": "Read top‑rated questions and recommended answer structures.",
+              "description": "Read top-rated questions and recommended answer structures.",
               "type": "learn",
               "minutes": 35
             },
             {
               "title": "Write STAR stories for three projects",
-              "description": "Craft Situation‑Task‑Action‑Result narratives for each portfolio piece.",
+              "description": "Craft Situation-Task-Action-Result narratives for each portfolio piece.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Practice mock interview with a peer",
-              "description": "Run a 30‑minute interview simulation focusing on technical and prioritisation topics.",
+              "description": "Run a 30-minute interview simulation focusing on technical and prioritisation topics.",
               "type": "practice",
               "minutes": 45
             },
@@ -384,7 +384,7 @@
           ]
         },
         {
-          "title": "Networking and Job Search Strategy",
+          "title": "Networking and job search strategy",
           "outcome": "Has a targeted plan to connect with hiring managers and land interviews.",
           "skill": "Developer empathy",
           "tasks": [

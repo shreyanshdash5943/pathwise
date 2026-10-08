@@ -1,36 +1,36 @@
 {
-  "title": "Advanced Cloud Engineer Roadmap",
-  "summary": "A focused plan to deepen expertise, build a senior‑level portfolio, and prepare for leadership roles and interviews. It blends advanced cloud concepts, real‑world projects, and job‑ready polish.",
+  "title": "Advanced Cloud Engineer roadmap",
+  "summary": "A focused plan to deepen expertise, build a senior-level portfolio, and prepare for leadership roles and interviews. It blends advanced cloud concepts, real-world projects, and job-ready polish.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core cloud concepts and security fundamentals.",
       "milestones": [
         {
-          "title": "Cloud Fundamentals Review",
+          "title": "Cloud fundamentals review",
           "outcome": "Explain core services and deployment models across AWS, GCP, and Azure.",
           "skill": "Cloud fundamentals",
           "tasks": [
             {
-              "title": "Read AWS Global Infrastructure Overview",
+              "title": "Read AWS global infrastructure overview",
               "description": "Study the official AWS documentation on regions, availability zones, and edge locations.",
               "type": "learn",
               "minutes": 45
             },
             {
-              "title": "Watch GCP Architecture Overview video",
+              "title": "Watch GCP architecture overview video",
               "description": "View the free YouTube series from Google Cloud that outlines core services.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Compare Azure Service Categories chart",
-              "description": "Create a side‑by‑side table of compute, storage, networking, and security services for Azure.",
+              "title": "Compare Azure Service categories chart",
+              "description": "Create a side-by-side table of compute, storage, networking, and security services for Azure.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Summarize key differences in a one‑page doc",
+              "title": "Summarize key differences in a one-page doc",
               "description": "Write a concise comparison that you can reference in interviews.",
               "type": "reflect",
               "minutes": 30
@@ -38,8 +38,8 @@
           ]
         },
         {
-          "title": "IAM & Security Foundations",
-          "outcome": "Design secure identity and access controls for multi‑cloud environments.",
+          "title": "IAM & security foundations",
+          "outcome": "Design secure identity and access controls for multi-cloud environments.",
           "skill": "IAM and security",
           "tasks": [
             {
@@ -49,19 +49,19 @@
               "minutes": 60
             },
             {
-              "title": "Build a cross‑account role in AWS",
-              "description": "Create a role that allows read‑only access from a second AWS account.",
+              "title": "Build a cross-account role in AWS",
+              "description": "Create a role that allows read-only access from a second AWS account.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Configure GCP Service Account least‑privilege",
+              "title": "Configure GCP Service account least-privilege",
               "description": "Set up a service account with only the permissions needed for a Cloud Function.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Document security best‑practice checklist",
+              "title": "Document security best-practice checklist",
               "description": "Write a checklist you can use for future projects and client reviews.",
               "type": "reflect",
               "minutes": 30
@@ -71,29 +71,29 @@
       ]
     },
     {
-      "title": "Core Skills Expansion",
-      "summary": "Develop deeper networking, compute, storage, and cost‑management abilities.",
+      "title": "Core skills expansion",
+      "summary": "Develop deeper networking, compute, storage, and cost-management abilities.",
       "milestones": [
         {
-          "title": "Advanced Networking",
+          "title": "Advanced networking",
           "outcome": "Architect VPCs, subnets, and hybrid connectivity with optimal performance.",
           "skill": "Networking",
           "tasks": [
             {
-              "title": "Read AWS VPC Design Guide",
+              "title": "Read AWS VPC design guide",
               "description": "Study the official guide focusing on CIDR planning and peering.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Build a multi‑zone VPC with NAT",
+              "title": "Build a multi-zone VPC with NAT",
               "description": "Create a VPC spanning two AZs, add public/private subnets, and configure a NAT gateway.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Set up GCP Cloud VPN tunnel",
-              "description": "Connect a GCP VPC to an on‑prem network using the free Cloud VPN tutorial.",
+              "description": "Connect a GCP VPC to an on-prem network using the free Cloud VPN tutorial.",
               "type": "practice",
               "minutes": 55
             },
@@ -106,12 +106,12 @@
           ]
         },
         {
-          "title": "Compute & Storage Mastery",
+          "title": "Compute and storage",
           "outcome": "Select and configure optimal compute and storage services for varied workloads.",
           "skill": "Compute and storage",
           "tasks": [
             {
-              "title": "Watch Azure Compute Services deep‑dive",
+              "title": "Watch Azure compute services overview",
               "description": "View the Microsoft Learn module covering VMs, App Service, and Functions.",
               "type": "learn",
               "minutes": 45
@@ -123,7 +123,7 @@
               "minutes": 80
             },
             {
-              "title": "Configure Azure Blob lifecycle policy",
+              "title": "Configure Azure blob lifecycle policy",
               "description": "Set up rules that move old data to cool storage automatically.",
               "type": "practice",
               "minutes": 40
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "title": "Cost Management Techniques",
+          "title": "Cost management techniques",
           "outcome": "Implement monitoring and optimization strategies to reduce cloud spend.",
           "skill": "Cost management",
           "tasks": [
@@ -148,20 +148,20 @@
               "minutes": 40
             },
             {
-              "title": "Create a cost‑allocation tag strategy",
+              "title": "Create a cost-allocation tag strategy",
               "description": "Define a tagging scheme and apply it to resources in a sandbox account.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Run a cost‑optimization simulation on GCP",
+              "title": "Run a cost-optimization simulation on GCP",
               "description": "Use the free GCP Pricing Calculator to model different instance types.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Summarize findings in a cost‑savings report",
-              "description": "Draft a one‑page report with actionable recommendations.",
+              "title": "Summarize findings in a cost-savings report",
+              "description": "Draft a one-page report with actionable recommendations.",
               "type": "reflect",
               "minutes": 30
             }
@@ -170,17 +170,17 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Build portfolio projects that showcase senior‑level cloud design.",
+      "title": "Proof of work",
+      "summary": "Build portfolio projects that showcase senior-level cloud design.",
       "milestones": [
         {
-          "title": "3‑Tier Scalable Application",
-          "outcome": "Demonstrate end‑to‑end design, CI/CD, and monitoring for a production‑grade app.",
+          "title": "3-Tier scalable application",
+          "outcome": "Demonstrate end-to-end design, CI/CD, and monitoring for a production-grade app.",
           "skill": null,
           "tasks": [
             {
               "title": "Design architecture diagram",
-              "description": "Sketch a 3‑tier web, app, and database layout using any cloud provider.",
+              "description": "Sketch a 3-tier web, app, and database layout using any cloud provider.",
               "type": "learn",
               "minutes": 45
             },
@@ -211,13 +211,13 @@
           ]
         },
         {
-          "title": "Cost‑Optimised Architecture Write‑up",
-          "outcome": "Show ability to audit, redesign, and document cost‑saving measures.",
+          "title": "Cost-Optimised architecture write-up",
+          "outcome": "Show ability to audit, redesign, and document cost-saving measures.",
           "skill": null,
           "tasks": [
             {
               "title": "Select an existing cloud workload",
-              "description": "Choose a personal or open‑source project with measurable spend.",
+              "description": "Choose a personal or open-source project with measurable spend.",
               "type": "learn",
               "minutes": 30
             },
@@ -229,7 +229,7 @@
             },
             {
               "title": "Redesign using spot/preemptible instances",
-              "description": "Modify the architecture to replace on‑demand VMs with cheaper alternatives.",
+              "description": "Modify the architecture to replace on-demand VMs with cheaper alternatives.",
               "type": "build",
               "minutes": 70
             },
@@ -240,7 +240,7 @@
               "minutes": 40
             },
             {
-              "title": "Publish the write‑up on LinkedIn",
+              "title": "Publish the write-up on LinkedIn",
               "description": "Share the findings as a professional article to attract recruiters.",
               "type": "connect",
               "minutes": 30
@@ -250,17 +250,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish certifications, leadership skills, and interview readiness for senior roles.",
       "milestones": [
         {
-          "title": "Associate‑Level Certification Prep",
+          "title": "Associate-level certification prep",
           "outcome": "Pass an AWS, GCP, or Azure associate exam with confidence.",
           "skill": "Certifications",
           "tasks": [
             {
-              "title": "Enroll in free exam prep on AWS Training",
-              "description": "Complete the free associate‑level learning path on the AWS website.",
+              "title": "Enroll in free exam prep on AWS training",
+              "description": "Complete the free associate-level learning path on the AWS website.",
               "type": "learn",
               "minutes": 60
             },
@@ -278,7 +278,7 @@
             },
             {
               "title": "Schedule a mock interview with a peer",
-              "description": "Run through scenario questions focusing on design and trade‑offs.",
+              "description": "Run through scenario questions focusing on design and trade-offs.",
               "type": "connect",
               "minutes": 60
             },
@@ -291,12 +291,12 @@
           ]
         },
         {
-          "title": "Leadership & Architecture Vision",
+          "title": "Leadership & architecture vision",
           "outcome": "Lead technical discussions and produce strategic cloud roadmaps.",
           "skill": "Cloud fundamentals",
           "tasks": [
             {
-              "title": "Read \"The Phoenix Project\" summary",
+              "title": "Read \"The Phoenix project\" summary",
               "description": "Absorb key DevOps and leadership principles from the free summary article.",
               "type": "learn",
               "minutes": 45
@@ -308,14 +308,14 @@
               "minutes": 80
             },
             {
-              "title": "Create a 3‑year cloud strategy document",
-              "description": "Outline migration, modernization, and cost‑optimization goals for a fictional enterprise.",
+              "title": "Create a 3-year cloud strategy document",
+              "description": "Outline migration, modernization, and cost-optimization goals for a fictional enterprise.",
               "type": "build",
               "minutes": 100
             },
             {
               "title": "Present strategy to a mentor",
-              "description": "Deliver a 15‑minute presentation and gather constructive feedback.",
+              "description": "Deliver a 15-minute presentation and gather constructive feedback.",
               "type": "connect",
               "minutes": 60
             },
@@ -328,25 +328,25 @@
           ]
         },
         {
-          "title": "Senior Interview Preparation",
-          "outcome": "Confidently answer system‑design, troubleshooting, and behavioral questions.",
+          "title": "Senior interview preparation",
+          "outcome": "Confidently answer system-design, troubleshooting, and behavioral questions.",
           "skill": "Networking",
           "tasks": [
             {
-              "title": "Study System Design Primer on GitHub",
+              "title": "Study system design primer on GitHub",
               "description": "Read the free repository covering scalability, caching, and data partitioning.",
               "type": "learn",
               "minutes": 70
             },
             {
               "title": "Practice whiteboard design for a CDN",
-              "description": "Sketch a content‑delivery network architecture and explain choices aloud.",
+              "description": "Sketch a content-delivery network architecture and explain choices aloud.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Solve 5 troubleshooting scenarios on LeetCode (cloud tag)",
-              "description": "Work through real‑world incident cases to sharpen diagnostic skills.",
+              "description": "Work through real-world incident cases to sharpen diagnostic skills.",
               "type": "practice",
               "minutes": 80
             },

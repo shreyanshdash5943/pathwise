@@ -1,6 +1,6 @@
 {
-  "title": "Security Analyst Learning Roadmap",
-  "summary": "A step‑by‑step plan to move from zero knowledge to a job‑ready security analyst. It covers fundamentals, core security skills, portfolio projects, and job preparation.",
+  "title": "Security Analyst learning roadmap",
+  "summary": "A step-by-step plan to move from zero knowledge to a job-ready security analyst. It covers fundamentals, core security skills, portfolio projects, and job preparation.",
   "phases": [
     {
       "title": "Foundations",
@@ -31,7 +31,7 @@
             },
             {
               "title": "Summarize protocol roles",
-              "description": "Write a one‑page summary of HTTP, DNS, and DHCP functions.",
+              "description": "Write a one-page summary of HTTP, DNS, and DHCP functions.",
               "type": "reflect",
               "minutes": 20
             }
@@ -77,11 +77,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop practical security abilities in log analysis, SIEM, incident response, and threat intel.",
       "milestones": [
         {
-          "title": "Log Analysis Foundations",
+          "title": "Log analysis foundations",
           "outcome": "Parse common log formats and extract useful security events.",
           "skill": "Log analysis",
           "tasks": [
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "title": "SIEM Tool Basics",
+          "title": "SIEM tool Basics",
           "outcome": "Ingest logs into a free SIEM and build simple queries.",
           "skill": "SIEM tools",
           "tasks": [
@@ -149,19 +149,19 @@
           ]
         },
         {
-          "title": "Incident Response Essentials",
+          "title": "Incident response Essentials",
           "outcome": "Follow a structured process to triage and contain a simulated incident.",
           "skill": "Incident response",
           "tasks": [
             {
               "title": "Read NIST IR Playbook",
-              "description": "Study the NIST 800‑61 Rev.2 incident response lifecycle on NIST.gov.",
+              "description": "Study the NIST 800-61 Rev.2 incident response lifecycle on NIST.gov.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Create an IR checklist",
-              "description": "Draft a one‑page checklist covering identification, containment, eradication, recovery.",
+              "description": "Draft a one-page checklist covering identification, containment, eradication, recovery.",
               "type": "build",
               "minutes": 40
             },
@@ -178,7 +178,7 @@
               "minutes": 60
             },
             {
-              "title": "Write a post‑mortem",
+              "title": "Write a post-mortem",
               "description": "Summarize actions taken, lessons learned, and next steps in a report.",
               "type": "reflect",
               "minutes": 30
@@ -186,8 +186,8 @@
           ]
         },
         {
-          "title": "Threat Intelligence Basics",
-          "outcome": "Gather, analyze, and apply open‑source threat data to detections.",
+          "title": "Threat intelligence Basics",
+          "outcome": "Gather, analyze, and apply open-source threat data to detections.",
           "skill": "Threat intelligence",
           "tasks": [
             {
@@ -210,7 +210,7 @@
             },
             {
               "title": "Summarize intel sources",
-              "description": "Create a one‑page cheat sheet of top free intel feeds and their use cases.",
+              "description": "Create a one-page cheat sheet of top free intel feeds and their use cases.",
               "type": "reflect",
               "minutes": 30
             }
@@ -219,11 +219,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio projects that demonstrate the skills you’ve acquired.",
       "milestones": [
         {
-          "title": "Home Lab Logging Setup",
+          "title": "Home lab logging setup",
           "outcome": "Deploy a fully functional logging pipeline and document its architecture.",
           "skill": null,
           "tasks": [
@@ -241,7 +241,7 @@
             },
             {
               "title": "Write 5 detection rules",
-              "description": "Create Kibana alerts for brute‑force SSH, privilege escalation, and suspicious ports.",
+              "description": "Create Kibana alerts for brute-force SSH, privilege escalation, and suspicious ports.",
               "type": "practice",
               "minutes": 60
             },
@@ -260,8 +260,8 @@
           ]
         },
         {
-          "title": "CTF Incident Report",
-          "outcome": "Produce a professional incident report based on a capture‑the‑flag challenge.",
+          "title": "CTF incident report",
+          "outcome": "Produce a professional incident report based on a capture-the-flag challenge.",
           "skill": null,
           "tasks": [
             {
@@ -297,13 +297,13 @@
           ]
         },
         {
-          "title": "Detection Rule Set",
+          "title": "Detection rule set",
           "outcome": "Develop a reusable set of SIEM detection rules for common attacks.",
           "skill": null,
           "tasks": [
             {
               "title": "Identify top 10 attack techniques",
-              "description": "Use MITRE ATT&CK to pick ten high‑impact techniques for a SOC.",
+              "description": "Use MITRE ATT&CK to pick ten high-impact techniques for a SOC.",
               "type": "learn",
               "minutes": 45
             },
@@ -336,12 +336,12 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced topics, interview prep, and job‑search strategy.",
+      "title": "Getting ready",
+      "summary": "Polish advanced topics, interview prep, and job-search strategy.",
       "milestones": [
         {
           "title": "Advanced Threat Hunting",
-          "outcome": "Conduct a hypothesis‑driven hunt using your SIEM and threat intel.",
+          "outcome": "Conduct a hypothesis-driven hunt using your SIEM and threat intel.",
           "skill": "Threat intelligence",
           "tasks": [
             {
@@ -377,7 +377,7 @@
           ]
         },
         {
-          "title": "Interview & Resume Prep",
+          "title": "Interview & resume prep",
           "outcome": "Present yourself confidently and land a security analyst role.",
           "skill": "Incident response",
           "tasks": [
@@ -401,7 +401,7 @@
             },
             {
               "title": "Mock interview with peer",
-              "description": "Schedule a 30‑minute practice interview and receive feedback.",
+              "description": "Schedule a 30-minute practice interview and receive feedback.",
               "type": "connect",
               "minutes": 30
             },
@@ -414,12 +414,12 @@
           ]
         },
         {
-          "title": "Certifications & Continuous Learning",
+          "title": "Certifications & continuous learning",
           "outcome": "Plan next credentials and a habit for staying current.",
           "skill": "Networking fundamentals",
           "tasks": [
             {
-              "title": "Research entry‑level certs",
+              "title": "Research entry-level certs",
               "description": "Compare CompTIA Security+, Cisco CCNA Security, and Splunk Fundamentals 1 on their official sites.",
               "type": "learn",
               "minutes": 30

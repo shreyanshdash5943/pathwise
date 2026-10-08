@@ -1,13 +1,13 @@
 {
-  "title": "Full-Stack Engineer Deep‑Dive Roadmap",
-  "summary": "Advance from solid fundamentals to professional‑grade full‑stack projects and job readiness. Emphasize best practices, scalability, and real‑world deployment.",
+  "title": "Full-Stack Engineer roadmap",
+  "summary": "Advance from solid fundamentals to professional-grade full-stack projects and job readiness. Emphasize best practices, scalability, and real-world deployment.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Strengthen core web fundamentals and version control.",
       "milestones": [
         {
-          "title": "JavaScript & TypeScript Basics",
+          "title": "JavaScript & TypeScript basics",
           "outcome": "Write clean, typed JavaScript for both client and server code.",
           "skill": "JavaScript and TypeScript",
           "tasks": [
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "title": "HTML, CSS, and Accessibility",
+          "title": "HTML, CSS, and accessibility",
           "outcome": "Create semantic, responsive pages that meet basic WCAG criteria.",
           "skill": null,
           "tasks": [
@@ -55,7 +55,7 @@
               "minutes": 45
             },
             {
-              "title": "Complete freeCodeCamp Responsive Web Design module",
+              "title": "Complete freeCodeCamp responsive web design module",
               "description": "Build a landing page using flexbox and grid.",
               "type": "build",
               "minutes": 80
@@ -68,7 +68,7 @@
             },
             {
               "title": "Add ARIA attributes to interactive elements",
-              "description": "Implement role, aria‑label, and live region where needed.",
+              "description": "Implement role, aria-label, and live region where needed.",
               "type": "build",
               "minutes": 35
             },
@@ -81,12 +81,12 @@
           ]
         },
         {
-          "title": "Git & Collaboration Basics",
+          "title": "Git & collaboration basics",
           "outcome": "Use Git confidently for branching, pull requests, and code reviews.",
           "skill": null,
           "tasks": [
             {
-              "title": "Read Git Handbook chapter on branching",
+              "title": "Read Git handbook chapter on branching",
               "description": "Understand feature branches, main protection, and merge strategies.",
               "type": "learn",
               "minutes": 40
@@ -120,17 +120,17 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Master the primary frameworks, back‑end language, and data layer.",
+      "title": "Core skills",
+      "summary": "Learn The primary frameworks, back-end language, and data layer.",
       "milestones": [
         {
-          "title": "React (or Next.js) Mastery",
+          "title": "React (or Next.js) fundamentals",
           "outcome": "Build scalable component hierarchies with hooks, context, and routing.",
           "skill": "React or Next.js",
           "tasks": [
             {
               "title": "Follow official React tutorial",
-              "description": "Complete the Tic‑Tac‑Toe app, focusing on state and effects.",
+              "description": "Complete the Tic-Tac-Toe app, focusing on state and effects.",
               "type": "learn",
               "minutes": 60
             },
@@ -141,8 +141,8 @@
               "minutes": 45
             },
             {
-              "title": "Implement React Router for multi‑page navigation",
-              "description": "Create three pages with lazy‑loaded routes.",
+              "title": "Implement React router for multi-page navigation",
+              "description": "Create three pages with lazy-loaded routes.",
               "type": "practice",
               "minutes": 50
             },
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "title": "Node.js (or Django) Back‑End",
+          "title": "Node.js (or Django) back-end",
           "outcome": "Create RESTful APIs with authentication, validation, and error handling.",
           "skill": "Node or Django",
           "tasks": [
@@ -198,7 +198,7 @@
           ]
         },
         {
-          "title": "SQL Fundamentals",
+          "title": "SQL fundamentals",
           "outcome": "Design relational schemas, write queries, and optimize performance.",
           "skill": "SQL",
           "tasks": [
@@ -209,7 +209,7 @@
               "minutes": 45
             },
             {
-              "title": "Model a simple e‑commerce schema in pgAdmin",
+              "title": "Model a simple e-commerce schema in pgAdmin",
               "description": "Create tables for users, products, orders, and relations.",
               "type": "build",
               "minutes": 60
@@ -227,7 +227,7 @@
               "minutes": 45
             },
             {
-              "title": "Summarize three common SQL anti‑patterns",
+              "title": "Summarize three common SQL anti-patterns",
               "description": "Write a brief note for future reference.",
               "type": "reflect",
               "minutes": 20
@@ -237,12 +237,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Build portfolio‑grade full‑stack applications.",
+      "title": "Proof of work",
+      "summary": "Build portfolio-grade full-stack applications.",
       "milestones": [
         {
-          "title": "SaaS Billing App",
-          "outcome": "Demonstrate end‑to‑end feature delivery with payments and role‑based UI.",
+          "title": "SaaS billing app",
+          "outcome": "Demonstrate end-to-end feature delivery with payments and role-based UI.",
           "skill": null,
           "tasks": [
             {
@@ -264,7 +264,7 @@
               "minutes": 80
             },
             {
-              "title": "Add role‑based routing in React",
+              "title": "Add role-based routing in React",
               "description": "Show admin dashboard only to privileged users.",
               "type": "build",
               "minutes": 60
@@ -276,7 +276,7 @@
               "minutes": 45
             },
             {
-              "title": "Write a 2‑page case study for your portfolio",
+              "title": "Write a 2-page case study for your portfolio",
               "description": "Explain challenges, solutions, and tech stack.",
               "type": "reflect",
               "minutes": 30
@@ -284,13 +284,13 @@
           ]
         },
         {
-          "title": "Real‑Time Chat Application",
+          "title": "Real-time chat application",
           "outcome": "Show competence with websockets, scaling, and UI responsiveness.",
           "skill": null,
           "tasks": [
             {
               "title": "Design message schema and API contract",
-              "description": "Define fields, validation rules, and real‑time events.",
+              "description": "Define fields, validation rules, and real-time events.",
               "type": "learn",
               "minutes": 35
             },
@@ -313,7 +313,7 @@
               "minutes": 65
             },
             {
-              "title": "Deploy backend on Render and front‑end on Netlify",
+              "title": "Deploy backend on render and front-end on Netlify",
               "description": "Configure CORS and secure websockets.",
               "type": "practice",
               "minutes": 55
@@ -350,13 +350,13 @@
               "minutes": 80
             },
             {
-              "title": "Create a responsive React UI with drag‑and‑drop",
+              "title": "Create a responsive React UI with drag-and-drop",
               "description": "Use react-beautiful-dnd for task ordering.",
               "type": "build",
               "minutes": 85
             },
             {
-              "title": "Add offline support with Service Workers",
+              "title": "Add offline support with service workers",
               "description": "Cache assets and sync changes when back online.",
               "type": "practice",
               "minutes": 70
@@ -372,23 +372,23 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced topics, professional habits, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish advanced topics, professional habits, and job-search readiness.",
       "milestones": [
         {
-          "title": "Deployment & DevOps Basics",
+          "title": "Deployment & DevOps basics",
           "outcome": "Automate builds, monitor health, and roll back safely.",
           "skill": "Deployment",
           "tasks": [
             {
-              "title": "Read Docker getting‑started guide",
+              "title": "Read Docker getting-started guide",
               "description": "Learn to containerize a Node app.",
               "type": "learn",
               "minutes": 50
             },
             {
-              "title": "Write a Dockerfile and docker‑compose for the SaaS app",
-              "description": "Include DB, backend, and front‑end services.",
+              "title": "Write a Dockerfile and docker-compose for the SaaS app",
+              "description": "Include DB, backend, and front-end services.",
               "type": "build",
               "minutes": 70
             },
@@ -399,32 +399,32 @@
               "minutes": 60
             },
             {
-              "title": "Configure health checks and basic logging on Render",
+              "title": "Configure health checks and basic logging on render",
               "description": "Enable alerts for downtime.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Document the deployment process in the repo wiki",
-              "description": "Create step‑by‑step instructions for future developers.",
+              "description": "Create step-by-step instructions for future developers.",
               "type": "reflect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "System Design Basics",
-          "outcome": "Explain trade‑offs of common architectures and scalability patterns.",
+          "title": "System design basics",
+          "outcome": "Explain trade-offs of common architectures and scalability patterns.",
           "skill": "System design basics",
           "tasks": [
             {
-              "title": "Read System Design Primer on GitHub",
+              "title": "Read system design primer on GitHub",
               "description": "Cover load balancing, caching, and database sharding.",
               "type": "learn",
               "minutes": 55
             },
             {
-              "title": "Sketch a high‑level diagram for the real‑time chat app",
+              "title": "Sketch a high-level diagram for the real-time chat app",
               "description": "Identify components, data flow, and bottlenecks.",
               "type": "practice",
               "minutes": 45
@@ -442,15 +442,15 @@
               "minutes": 30
             },
             {
-              "title": "Write a 1‑page design summary for your portfolio",
-              "description": "Highlight decisions, trade‑offs, and future improvements.",
+              "title": "Write a 1-page design summary for your portfolio",
+              "description": "Highlight decisions, trade-offs, and future improvements.",
               "type": "reflect",
               "minutes": 25
             }
           ]
         },
         {
-          "title": "Job‑Ready Portfolio & Interview Prep",
+          "title": "Job-ready portfolio & interview prep",
           "outcome": "Present a compelling portfolio and answer technical questions confidently.",
           "skill": null,
           "tasks": [
@@ -467,14 +467,14 @@
               "minutes": 40
             },
             {
-              "title": "Practice whiteboard algorithms on LeetCode Easy/Medium",
+              "title": "Practice whiteboard algorithms on LeetCode easy/Medium",
               "description": "Complete 5 problems daily for two weeks.",
               "type": "practice",
               "minutes": 60
             },
             {
               "title": "Mock interview with a peer using Pramp",
-              "description": "Get real‑time feedback on communication and coding.",
+              "description": "Get real-time feedback on communication and coding.",
               "type": "connect",
               "minutes": 50
             },

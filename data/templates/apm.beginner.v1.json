@@ -1,44 +1,44 @@
 {
-  "title": "Associate Product Manager Learning Roadmap",
-  "summary": "A step‑by‑step guide to build product sense, core PM tools, and a showcase portfolio from scratch. By the end you’ll be ready to join a product team or pitch yourself to hiring managers.",
+  "title": "Associate Product Manager learning roadmap",
+  "summary": "A step-by-step guide to build product sense, core PM tools, and a showcase portfolio from scratch. By the end you’ll be ready to join a product team or pitch yourself to hiring managers.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Learn the product mindset, basic discovery, and communication basics.",
       "milestones": [
         {
-          "title": "Product Thinking Basics",
+          "title": "Product thinking Basics",
           "outcome": "You can explain what product management is and how it adds value to a business.",
           "skill": "Customer discovery",
           "tasks": [
             {
-              "title": "Read Intro to Product Management",
+              "title": "Read intro to Product Management",
               "description": "Read the first two chapters of the free “Product Management 101” guide on Mind the Product.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Watch Customer Discovery Video",
-              "description": "Watch the 15‑minute “Customer Discovery Basics” video on the Product School YouTube channel.",
+              "title": "Watch Customer Discovery video",
+              "description": "Watch the 15-minute “Customer Discovery Basics” video on the Product School YouTube channel.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Summarize Key Concepts",
-              "description": "Write a 200‑word summary of the three main questions every PM asks during discovery.",
+              "title": "Summarize key concepts",
+              "description": "Write a 200-word summary of the three main questions every PM asks during discovery.",
               "type": "reflect",
               "minutes": 15
             },
             {
-              "title": "Discuss with Peer",
-              "description": "Join a free product‑management Slack community and share your summary, asking for feedback.",
+              "title": "Discuss with peer",
+              "description": "Join a free product-management Slack community and share your summary, asking for feedback.",
               "type": "connect",
               "minutes": 25
             }
           ]
         },
         {
-          "title": "User Research Fundamentals",
+          "title": "User research fundamentals",
           "outcome": "You can conduct a simple interview and synthesize findings into insights.",
           "skill": "Customer discovery",
           "tasks": [
@@ -49,19 +49,19 @@
               "minutes": 20
             },
             {
-              "title": "Create Interview Script",
-              "description": "Draft a 5‑question script for a target user segment of a hypothetical app.",
+              "title": "Create Interview script",
+              "description": "Draft a 5-question script for a target user segment of a hypothetical app.",
               "type": "build",
               "minutes": 30
             },
             {
-              "title": "Conduct Mock Interview",
+              "title": "Conduct mock Interview",
               "description": "Pair with a friend and run the interview, recording notes.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Extract Insights Sheet",
+              "title": "Extract insights Sheet",
               "description": "Summarize the interview notes into three actionable insights in a Google Sheet.",
               "type": "reflect",
               "minutes": 25
@@ -69,30 +69,30 @@
           ]
         },
         {
-          "title": "Communication Foundations",
+          "title": "Communication foundations",
           "outcome": "You can craft clear, concise written updates for stakeholders.",
           "skill": "Stakeholder communication",
           "tasks": [
             {
-              "title": "Read Writing for PMs Article",
+              "title": "Read Writing for PMs article",
               "description": "Read the free article “Writing Clear Product Updates” on ProductPlan blog.",
               "type": "learn",
               "minutes": 15
             },
             {
-              "title": "Draft a Status Update",
-              "description": "Write a one‑page status update for a fictional sprint, using the template from the article.",
+              "title": "Draft a status update",
+              "description": "Write a one-page status update for a fictional sprint, using the template from the article.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Peer Review Update",
-              "description": "Share the draft in a product‑management forum and incorporate feedback.",
+              "title": "Peer review update",
+              "description": "Share the draft in a product-management forum and incorporate feedback.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Revise and Finalize",
+              "title": "Revise and finalize",
               "description": "Polish the update for clarity and brevity, aiming for under 300 words.",
               "type": "practice",
               "minutes": 20
@@ -102,34 +102,34 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop the core PM toolbox: specs, roadmaps, prioritisation, and metrics.",
       "milestones": [
         {
-          "title": "Writing Effective Specs",
+          "title": "Writing Effective specs",
           "outcome": "You can produce a concise product requirement document (PRD).",
           "skill": "Writing specs",
           "tasks": [
             {
-              "title": "Read PRD Template",
-              "description": "Study the free PRD template on Aha! blog.",
+              "title": "Read PRD template",
+              "description": "Study The free PRD template on Aha! Blog.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Outline Feature PRD",
+              "title": "Outline feature PRD",
               "description": "Choose a simple feature (e.g., “bookmark articles”) and outline its PRD sections.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Fill Feature Details",
+              "title": "Fill feature details",
               "description": "Write the problem statement, user personas, and acceptance criteria for the feature.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Get Feedback",
+              "title": "Get feedback",
               "description": "Post the draft in a product community and request two specific critiques.",
               "type": "connect",
               "minutes": 30
@@ -143,37 +143,37 @@
           ]
         },
         {
-          "title": "Prioritisation & Roadmapping",
+          "title": "Prioritisation & roadmapping",
           "outcome": "You can create a simple roadmap and apply a prioritisation framework.",
           "skill": "Prioritisation",
           "tasks": [
             {
-              "title": "Learn RICE Framework",
+              "title": "Learn RICE framework",
               "description": "Read the free “RICE Scoring Model” article on Intercom blog.",
               "type": "learn",
               "minutes": 15
             },
             {
-              "title": "Score Sample Ideas",
+              "title": "Score sample ideas",
               "description": "Apply RICE to five hypothetical feature ideas in a spreadsheet.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Build a Quarterly Roadmap",
+              "title": "Build a quarterly roadmap",
               "description": "Use a free roadmap template from ProductPlan to plot the top three ideas over 12 weeks.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Present Roadmap Mock",
-              "description": "Record a 3‑minute video explaining the roadmap rationale and share for feedback.",
+              "title": "Present roadmap mock",
+              "description": "Record a 3-minute video explaining the roadmap rationale and share for feedback.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Trade‑offs",
-              "description": "Write a short note on the biggest trade‑off you faced and how you resolved it.",
+              "title": "Reflect on trade-offs",
+              "description": "Write a short note on the biggest trade-off you faced and how you resolved it.",
               "type": "reflect",
               "minutes": 20
             }
@@ -185,31 +185,31 @@
           "skill": "Metrics and analytics",
           "tasks": [
             {
-              "title": "Read Metrics Fundamentals",
+              "title": "Read Metrics fundamentals",
               "description": "Read the free “Metrics for Product Managers” guide on Mixpanel blog.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Define Success Metrics",
+              "title": "Define success Metrics",
               "description": "For the bookmark feature, list three quantitative metrics and one qualitative metric.",
               "type": "build",
               "minutes": 30
             },
             {
-              "title": "Create Analytics Plan",
+              "title": "Create Analytics plan",
               "description": "Sketch a basic event tracking plan using a free Google Analytics template.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Validate with Peer",
+              "title": "Validate with peer",
               "description": "Share the plan in a product forum and ask for validation of metric relevance.",
               "type": "connect",
               "minutes": 25
             },
             {
-              "title": "Reflect on Measurement",
+              "title": "Reflect on measurement",
               "description": "Write a brief reflection on how metrics will guide future decisions for the feature.",
               "type": "reflect",
               "minutes": 15
@@ -219,8 +219,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply the toolbox to real‑world portfolio pieces.",
+      "title": "Proof of work",
+      "summary": "Apply the toolbox to real-world portfolio pieces.",
       "milestones": [
         {
           "title": "Product Teardown",
@@ -234,25 +234,25 @@
               "minutes": 15
             },
             {
-              "title": "Analyze Core Flows",
+              "title": "Analyze core flows",
               "description": "Map the main user flow and note friction points in the worksheet.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Identify 3 Opportunities",
+              "title": "Identify 3 opportunities",
               "description": "Write three concrete improvement suggestions with supporting user evidence.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Create Teardown Report",
-              "description": "Compile findings into a 2‑page PDF using the provided template.",
+              "title": "Create Teardown report",
+              "description": "Compile findings into a 2-page PDF using the provided template.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Publish on Portfolio",
+              "title": "Publish on portfolio",
               "description": "Upload the PDF to a personal website or LinkedIn and add a brief description.",
               "type": "connect",
               "minutes": 30
@@ -260,42 +260,42 @@
           ]
         },
         {
-          "title": "Feature PRD Portfolio Piece",
+          "title": "Feature PRD portfolio piece",
           "outcome": "You can deliver a polished PRD ready for stakeholder review.",
           "skill": null,
           "tasks": [
             {
-              "title": "Choose Feature Idea",
-              "description": "Select a realistic feature for a well‑known product (e.g., “dark mode” for a news app).",
+              "title": "Choose feature idea",
+              "description": "Select a realistic feature for a well-known product (e.g., “dark mode” for a news app).",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Research User Need",
+              "title": "Research User need",
               "description": "Gather three user quotes from reviews or forums supporting the need.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Write Full PRD",
+              "title": "Write full PRD",
               "description": "Complete the PRD template with problem, goals, specs, and acceptance criteria.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Design Mock Screens",
-              "description": "Create low‑fidelity wireframes using Figma’s free starter plan.",
+              "title": "Design mock screens",
+              "description": "Create low-fidelity wireframes using Figma’s free starter plan.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Seek Mentor Review",
+              "title": "Seek mentor review",
               "description": "Send the PRD and mocks to a senior PM on LinkedIn for feedback.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Finalize Portfolio Entry",
+              "title": "Finalize portfolio entry",
               "description": "Add the PRD, mocks, and feedback summary to your portfolio site.",
               "type": "practice",
               "minutes": 35
@@ -303,43 +303,43 @@
           ]
         },
         {
-          "title": "Metrics Plan for Launch",
+          "title": "Metrics plan for launch",
           "outcome": "You can craft a launch analytics plan linking metrics to business goals.",
           "skill": null,
           "tasks": [
             {
-              "title": "Pick a Launch Scenario",
+              "title": "Pick a launch scenario",
               "description": "Imagine launching the dark mode feature and define the launch timeline.",
               "type": "learn",
               "minutes": 15
             },
             {
-              "title": "Select Success KPIs",
+              "title": "Select success KPIs",
               "description": "Choose three primary KPIs (e.g., activation rate, retention, NPS).",
               "type": "build",
               "minutes": 25
             },
             {
-              "title": "Design Tracking Events",
+              "title": "Design tracking events",
               "description": "Map required events in a free Amplitude event schema template.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Create Dashboard Mock",
+              "title": "Create dashboard mock",
               "description": "Build a simple dashboard in Google Data Studio using sample data.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Present Plan Mock",
-              "description": "Record a 2‑minute walkthrough of the plan and share for critique.",
+              "title": "Present plan mock",
+              "description": "Record a 2-minute walkthrough of the plan and share for critique.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Learnings",
-              "description": "Write a short note on how the metrics will inform post‑launch decisions.",
+              "title": "Reflect on learnings",
+              "description": "Write a short note on how the metrics will inform post-launch decisions.",
               "type": "reflect",
               "minutes": 20
             }
@@ -348,40 +348,40 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance your expertise, build a network, and prepare for interviews or client pitches.",
       "milestones": [
         {
-          "title": "Advanced Roadmapping & Strategy",
+          "title": "Advanced roadmapping & strategy",
           "outcome": "You can align product roadmaps with company OKRs and articulate strategy.",
           "skill": "Roadmapping",
           "tasks": [
             {
-              "title": "Read OKR Alignment Article",
+              "title": "Read OKR alignment article",
               "description": "Read the free “Aligning Roadmaps with OKRs” guide on Atlassian blog.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Map Feature to OKR",
+              "title": "Map feature to OKR",
               "description": "Take the bookmark feature and link its outcomes to a sample company OKR.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Update Quarterly Roadmap",
+              "title": "Update quarterly roadmap",
               "description": "Revise the earlier roadmap to reflect OKR alignment and dependencies.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Explain Strategy Video",
-              "description": "Record a 3‑minute video explaining the strategic fit and share for feedback.",
+              "title": "Explain strategy video",
+              "description": "Record a 3-minute video explaining the strategic fit and share for feedback.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Alignment",
+              "title": "Reflect on alignment",
               "description": "Write a brief reflection on challenges of aligning multiple stakeholders.",
               "type": "reflect",
               "minutes": 15
@@ -389,42 +389,42 @@
           ]
         },
         {
-          "title": "Stakeholder Communication Mastery",
+          "title": "Improve stakeholder communication",
           "outcome": "You can run effective meetings, write persuasive briefs, and handle objections.",
           "skill": "Stakeholder communication",
           "tasks": [
             {
-              "title": "Study Meeting Framework",
+              "title": "Study meeting framework",
               "description": "Read the free “Running Effective Product Meetings” article on ProductTalk.",
               "type": "learn",
               "minutes": 15
             },
             {
-              "title": "Create Meeting Agenda",
-              "description": "Draft a 20‑minute agenda for a stakeholder kickoff on the dark mode feature.",
+              "title": "Create meeting agenda",
+              "description": "Draft a 20-minute agenda for a stakeholder kickoff on the dark mode feature.",
               "type": "build",
               "minutes": 20
             },
             {
-              "title": "Facilitate Role‑Play Meeting",
+              "title": "Facilitate role-play meeting",
               "description": "With a peer, simulate the kickoff meeting and record key moments.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Write Persuasive Brief",
-              "description": "Compose a one‑page brief arguing for the feature’s priority using data.",
+              "title": "Write persuasive brief",
+              "description": "Compose a one-page brief arguing for the feature’s priority using data.",
               "type": "build",
               "minutes": 35
             },
             {
-              "title": "Get Feedback from Mentor",
+              "title": "Get feedback from mentor",
               "description": "Send the brief to a senior PM for critique and incorporate suggestions.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Communication",
+              "title": "Reflect on communication",
               "description": "Note two communication habits you will keep and two to improve.",
               "type": "reflect",
               "minutes": 15
@@ -432,42 +432,42 @@
           ]
         },
         {
-          "title": "Interview & Job‑Ready Prep",
+          "title": "Interview & job-ready prep",
           "outcome": "You can confidently answer PM interview questions and present your portfolio.",
           "skill": "Prioritisation",
           "tasks": [
             {
-              "title": "Review Common PM Questions",
+              "title": "Review common PM Questions",
               "description": "Read the free “Top 20 Product Manager Interview Questions” on Glassdoor Blog.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Craft STAR Stories",
-              "description": "Write three STAR‑formatted stories highlighting discovery, prioritisation, and metrics work.",
+              "title": "Craft STAR stories",
+              "description": "Write three STAR-formatted stories highlighting discovery, prioritisation, and metrics work.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Mock Interview Session",
-              "description": "Schedule a 30‑minute mock interview with a peer and record feedback.",
+              "title": "Mock Interview session",
+              "description": "Schedule a 30-minute mock interview with a peer and record feedback.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Portfolio Walkthrough Deck",
-              "description": "Create a 5‑slide deck summarizing your three portfolio projects.",
+              "title": "Portfolio walkthrough deck",
+              "description": "Create a 5-slide deck summarizing your three portfolio projects.",
               "type": "build",
               "minutes": 50
             },
             {
-              "title": "Network Outreach",
+              "title": "Network outreach",
               "description": "Send personalized LinkedIn messages to five product managers requesting informational chats.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Gaps",
+              "title": "Reflect on gaps",
               "description": "Write a short note on any skill gaps and plan next steps for continuous learning.",
               "type": "reflect",
               "minutes": 20

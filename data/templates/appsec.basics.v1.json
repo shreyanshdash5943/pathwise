@@ -1,6 +1,6 @@
 {
-  "title": "Application Security Engineer Roadmap",
-  "summary": "A concise, hands‑on plan to solidify security fundamentals, master core engineering skills, build a showcase portfolio, and prepare for job or client work. Each phase balances learning, practice, and real‑world output.",
+  "title": "Application Security Engineer roadmap",
+  "summary": "A concise, hands-on plan to solidify Security fundamentals, develop core engineering skills, build a showcase portfolio, and prepare for job or client work. Each phase balances learning, practice, and real-world output.",
   "phases": [
     {
       "title": "Foundations",
@@ -18,20 +18,20 @@
               "minutes": 45
             },
             {
-              "title": "Complete secure‑coding module on freeCodeCamp",
+              "title": "Complete secure-coding module on freeCodeCamp",
               "description": "Finish the 'Secure Coding Practices' section, answering the embedded quizzes.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Refactor a sample script to fix XSS",
-              "description": "Take a vulnerable JavaScript snippet and apply output‑encoding to eliminate cross‑site scripting.",
+              "description": "Take a vulnerable JavaScript snippet and apply output-encoding to eliminate cross-site scripting.",
               "type": "practice",
               "minutes": 50
             },
             {
               "title": "Document lessons learned",
-              "description": "Write a one‑page summary of the fixes you made and why they matter.",
+              "description": "Write a one-page summary of the fixes you made and why they matter.",
               "type": "reflect",
               "minutes": 30
             }
@@ -43,13 +43,13 @@
           "skill": "Auth and crypto basics",
           "tasks": [
             {
-              "title": "Watch Crypto 101 on YouTube (Khan Academy)",
+              "title": "Watch crypto 101 on YouTube (Khan Academy)",
               "description": "Focus on symmetric vs asymmetric encryption, hashing, and digital signatures.",
               "type": "learn",
               "minutes": 60
             },
             {
-              "title": "Read MDN guide on Web Crypto API",
+              "title": "Read MDN guide on web crypto API",
               "description": "Understand how browsers expose cryptographic primitives and how to use them safely.",
               "type": "learn",
               "minutes": 45
@@ -74,7 +74,7 @@
           "skill": "Developer communication",
           "tasks": [
             {
-              "title": "Read Google’s Security Incident Response guide",
+              "title": "Read Google’s Security incident response guide",
               "description": "Identify best practices for reporting and collaborating on security issues.",
               "type": "learn",
               "minutes": 40
@@ -86,7 +86,7 @@
               "minutes": 55
             },
             {
-              "title": "Practice a 5‑minute security walkthrough with a peer",
+              "title": "Practice a 5-minute security walkthrough with a peer",
               "description": "Present the advisory and field questions, focusing on clarity and actionable advice.",
               "type": "practice",
               "minutes": 30
@@ -102,34 +102,34 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop threat modelling, code review, and CI security tooling expertise.",
       "milestones": [
         {
           "title": "Threat modelling practice",
-          "outcome": "Can create STRIDE‑based threat models for small applications.",
+          "outcome": "Can create STRIDE-based threat models for small applications.",
           "skill": "Threat modelling",
           "tasks": [
             {
-              "title": "Read Microsoft Threat Modeling Tool overview",
+              "title": "Read Microsoft threat modeling tool overview",
               "description": "Understand the STRIDE methodology and asset identification process.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Model an open‑source note‑taking app on paper",
+              "title": "Model an open-source note-taking app on paper",
               "description": "Identify data flows, trust boundaries, and threats using STRIDE.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Validate model with OWASP Threat Modeling Cheat Sheet",
-              "description": "Cross‑check each identified threat against the cheat sheet for completeness.",
+              "title": "Validate model with OWASP threat modeling cheat sheet",
+              "description": "Cross-check each identified threat against the cheat sheet for completeness.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Summarize findings in a one‑page report",
+              "title": "Summarize findings in a one-page report",
               "description": "Document the top three risks and suggested mitigations.",
               "type": "reflect",
               "minutes": 30
@@ -138,11 +138,11 @@
         },
         {
           "title": "Secure code review techniques",
-          "outcome": "Can conduct effective security‑focused code reviews.",
+          "outcome": "Can conduct effective security-focused code reviews.",
           "skill": "Code review",
           "tasks": [
             {
-              "title": "Read GitHub’s Secure Code Review guide",
+              "title": "Read GitHub’s Secure code review guide",
               "description": "Learn checklist items and reviewer responsibilities.",
               "type": "learn",
               "minutes": 40
@@ -174,13 +174,13 @@
           "tasks": [
             {
               "title": "Watch Snyk CI integration tutorial on YouTube",
-              "description": "Follow the step‑by‑step video to add Snyk to a GitHub Actions workflow.",
+              "description": "Follow the step-by-step video to add Snyk to a GitHub Actions workflow.",
               "type": "learn",
               "minutes": 50
             },
             {
               "title": "Add Trivy scan to a sample Docker build",
-              "description": "Configure Trivy in a GitHub Actions file to fail on high‑severity findings.",
+              "description": "Configure Trivy in a GitHub Actions file to fail on high-severity findings.",
               "type": "build",
               "minutes": 70
             },
@@ -201,17 +201,17 @@
       ]
     },
     {
-      "title": "Proof of Work",
+      "title": "Proof of work",
       "summary": "Create portfolio projects that demonstrate the core skills.",
       "milestones": [
         {
-          "title": "Threat model of an open‑source app",
+          "title": "Threat model of an open-source app",
           "outcome": "Portfolio includes a complete, documented threat model.",
           "skill": null,
           "tasks": [
             {
-              "title": "Select a popular open‑source web app",
-              "description": "Choose a repo with clear architecture, such as an issue‑tracker demo.",
+              "title": "Select a popular open-source web app",
+              "description": "Choose a repo with clear architecture, such as an issue-tracker demo.",
               "type": "learn",
               "minutes": 30
             },
@@ -228,7 +228,7 @@
               "minutes": 45
             },
             {
-              "title": "Write a 200‑word project summary",
+              "title": "Write a 200-word project summary",
               "description": "Explain the app, scope, and key security insights for recruiters.",
               "type": "reflect",
               "minutes": 25
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "title": "Secure‑coding guide for a language",
+          "title": "Secure-coding guide for a language",
           "outcome": "Portfolio contains a concise guide with code examples and best practices.",
           "skill": null,
           "tasks": [
@@ -300,7 +300,7 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance knowledge, polish interview readiness, and start job hunting or client outreach.",
       "milestones": [
         {
@@ -309,14 +309,14 @@
           "skill": "Auth and crypto basics",
           "tasks": [
             {
-              "title": "Read OWASP Authentication Cheat Sheet",
+              "title": "Read OWASP authentication cheat sheet",
               "description": "Identify recommended practices for password storage, MFA, and session management.",
               "type": "learn",
               "minutes": 40
             },
             {
               "title": "Implement JWT with rotating signing keys",
-              "description": "Create a demo service that issues and validates JWTs using a key‑rotation schedule.",
+              "description": "Create a demo service that issues and validates JWTs using a key-rotation schedule.",
               "type": "build",
               "minutes": 80
             },
@@ -327,7 +327,7 @@
               "minutes": 60
             },
             {
-              "title": "Summarize trade‑offs of symmetric vs asymmetric tokens",
+              "title": "Summarize trade-offs of symmetric vs asymmetric tokens",
               "description": "Write a brief note comparing performance, security, and use cases.",
               "type": "reflect",
               "minutes": 25
@@ -353,13 +353,13 @@
             },
             {
               "title": "Refine answers based on feedback",
-              "description": "Edit your written answers to be tighter and more impact‑driven.",
+              "description": "Edit your written answers to be tighter and more impact-driven.",
               "type": "build",
               "minutes": 30
             },
             {
               "title": "Record a short video explaining a recent threat model",
-              "description": "Demonstrate your ability to present findings to non‑technical stakeholders.",
+              "description": "Demonstrate your ability to present findings to non-technical stakeholders.",
               "type": "practice",
               "minutes": 50
             }
@@ -377,14 +377,14 @@
               "minutes": 30
             },
             {
-              "title": "Apply to five Application Security Engineer jobs",
+              "title": "Apply to five application Security Engineer jobs",
               "description": "Tailor each resume to emphasize the roadmap milestones and achievements.",
               "type": "connect",
               "minutes": 90
             },
             {
               "title": "Join OWASP local chapter and attend a meetup",
-              "description": "Introduce yourself, share your threat‑model project, and collect contacts.",
+              "description": "Introduce yourself, share your threat-model project, and collect contacts.",
               "type": "connect",
               "minutes": 120
             },

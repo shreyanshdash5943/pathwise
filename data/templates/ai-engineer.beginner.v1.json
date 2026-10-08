@@ -1,13 +1,13 @@
 {
-  "title": "Applied AI Engineer Roadmap",
-  "summary": "A step‑by‑step guide to go from no experience to building LLM‑powered products and landing a role. It covers fundamentals, core AI engineering skills, portfolio projects, and job‑ready preparation.",
+  "title": "Applied AI Engineer roadmap",
+  "summary": "A step-by-step guide to go from no experience to building LLM-powered products and landing a role. It covers fundamentals, core AI engineering skills, portfolio projects, and job-ready preparation.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Learn programming basics and core AI concepts.",
       "milestones": [
         {
-          "title": "Python Basics",
+          "title": "Python basics",
           "outcome": "Write scripts, functions, and simple data pipelines in Python.",
           "skill": "Python or TypeScript",
           "tasks": [
@@ -19,7 +19,7 @@
             },
             {
               "title": "Write a script to read and summarize a text file",
-              "description": "Use built‑in file I/O to load a .txt file and print a short summary using basic string methods.",
+              "description": "Use built-in file I/O to load a .txt file and print a short summary using basic string methods.",
               "type": "build",
               "minutes": 45
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Intro to Machine Learning",
+          "title": "Intro to machine learning",
           "outcome": "Explain supervised learning, model evaluation, and basic neural network ideas.",
           "skill": "Evaluation",
           "tasks": [
@@ -49,7 +49,7 @@
               "minutes": 90
             },
             {
-              "title": "Implement linear regression with scikit‑learn",
+              "title": "Implement linear regression with scikit-learn",
               "description": "Load the Boston housing dataset, fit a LinearRegression model, and print RMSE.",
               "type": "build",
               "minutes": 60
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "title": "Web Fundamentals",
+          "title": "Web fundamentals",
           "outcome": "Create a simple static web page and serve it locally.",
           "skill": "Shipping web apps",
           "tasks": [
@@ -102,11 +102,11 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Master LLM APIs, prompt design, and retrieval‑augmented generation.",
+      "title": "Core skills",
+      "summary": "Learn LLM APIs, prompt design, and retrieval-augmented generation.",
       "milestones": [
         {
-          "title": "LLM API Basics",
+          "title": "LLM API basics",
           "outcome": "Call OpenAI or Anthropic APIs to generate text from prompts.",
           "skill": "LLM APIs",
           "tasks": [
@@ -124,7 +124,7 @@
             },
             {
               "title": "Practice handling API errors",
-              "description": "Add try/except blocks to catch rate‑limit and authentication errors.",
+              "description": "Add try/except blocks to catch rate-limit and authentication errors.",
               "type": "practice",
               "minutes": 30
             },
@@ -137,8 +137,8 @@
           ]
         },
         {
-          "title": "Prompt Design",
-          "outcome": "Craft effective prompts and use techniques like few‑shot, chain‑of‑thought, and role prompting.",
+          "title": "Prompt design",
+          "outcome": "Craft effective prompts and use techniques like few-shot, chain-of-thought, and role prompting.",
           "skill": "Prompt design",
           "tasks": [
             {
@@ -148,8 +148,8 @@
               "minutes": 40
             },
             {
-              "title": "Create three variants of a math‑question prompt",
-              "description": "Write prompts using zero‑shot, few‑shot, and chain‑of‑thought styles and compare outputs.",
+              "title": "Create three variants of a math-question prompt",
+              "description": "Write prompts using zero-shot, few-shot, and chain-of-thought styles and compare outputs.",
               "type": "build",
               "minutes": 45
             },
@@ -168,13 +168,13 @@
           ]
         },
         {
-          "title": "Retrieval‑Augmented Generation (RAG)",
+          "title": "Retrieval-augmented generation (RAG)",
           "outcome": "Integrate vector stores and retrieval steps into LLM pipelines.",
           "skill": "Retrieval (RAG)",
           "tasks": [
             {
               "title": "Read LangChain RAG tutorial on docs.langchain.com",
-              "description": "Follow the step‑by‑step guide that builds a simple document retriever.",
+              "description": "Follow the step-by-step guide that builds a simple document retriever.",
               "type": "learn",
               "minutes": 45
             },
@@ -186,7 +186,7 @@
             },
             {
               "title": "Practice querying the index with a prompt",
-              "description": "Write code that retrieves top‑k chunks and feeds them to the LLM for answer generation.",
+              "description": "Write code that retrieves top-k chunks and feeds them to the LLM for answer generation.",
               "type": "practice",
               "minutes": 40
             },
@@ -201,11 +201,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that showcase end‑to‑end AI products.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that showcase end-to-end AI products.",
       "milestones": [
         {
-          "title": "Document Q&A App with Citations",
+          "title": "Document Q&A app with citations",
           "outcome": "Deploy a web app that answers questions from uploaded documents and shows source snippets.",
           "skill": null,
           "tasks": [
@@ -242,19 +242,19 @@
           ]
         },
         {
-          "title": "Tool‑Using AI Agent",
+          "title": "Tool-using AI agent",
           "outcome": "Build an autonomous agent that can browse the web or run code to accomplish tasks.",
           "skill": null,
           "tasks": [
             {
               "title": "Read LangChain agent tutorial",
-              "description": "Follow the official guide that creates a web‑search agent.",
+              "description": "Follow the official guide that creates a web-search agent.",
               "type": "learn",
               "minutes": 45
             },
             {
               "title": "Implement an agent that fetches weather data",
-              "description": "Use the OpenAI function‑calling feature to call a weather API and return results.",
+              "description": "Use the OpenAI function-calling feature to call a weather API and return results.",
               "type": "build",
               "minutes": 90
             },
@@ -279,12 +279,12 @@
           ]
         },
         {
-          "title": "Prompt Evaluation Harness",
+          "title": "Prompt evaluation harness",
           "outcome": "Run systematic experiments to compare prompt variants on accuracy and cost.",
           "skill": null,
           "tasks": [
             {
-              "title": "Study evaluation metrics on the LLM Evaluation paper",
+              "title": "Study evaluation metrics on the LLM evaluation paper",
               "description": "Read the relevant section of the paper and note precision, recall, and cost metrics.",
               "type": "learn",
               "minutes": 45
@@ -318,11 +318,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Advance topics, polish portfolio, and prepare for job or freelance work.",
       "milestones": [
         {
-          "title": "Advanced Prompting & Guardrails",
+          "title": "Advanced prompting & Guardrails",
           "outcome": "Design safe prompts and implement content filters for production use.",
           "skill": "Prompt design",
           "tasks": [
@@ -345,7 +345,7 @@
               "minutes": 30
             },
             {
-              "title": "Reflect on trade‑offs of strict vs. lenient filters",
+              "title": "Reflect on trade-offs of strict vs. lenient filters",
               "description": "Write a brief note on user experience versus safety.",
               "type": "reflect",
               "minutes": 15
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "title": "Scalable Shipping of Web Apps",
+          "title": "Scalable shipping of web apps",
           "outcome": "Deploy AI services with CI/CD, monitoring, and cost control.",
           "skill": "Shipping web apps",
           "tasks": [
@@ -377,31 +377,31 @@
             },
             {
               "title": "Connect with a DevOps meetup group",
-              "description": "Attend a virtual session and ask about cost‑monitoring for AI APIs.",
+              "description": "Attend a virtual session and ask about cost-monitoring for AI APIs.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Job‑Ready Portfolio & Interview Prep",
+          "title": "Job-ready portfolio & interview prep",
           "outcome": "Present a polished portfolio and answer technical interview questions confidently.",
           "skill": "Python or TypeScript",
           "tasks": [
             {
-              "title": "Create a one‑page portfolio site on GitHub Pages",
+              "title": "Create a one-page portfolio site on GitHub Pages",
               "description": "Showcase the three projects with screenshots, live links, and tech stack details.",
               "type": "build",
               "minutes": 90
             },
             {
               "title": "Practice explaining a RAG pipeline aloud",
-              "description": "Record a 2‑minute video describing the flow from document ingestion to answer generation.",
+              "description": "Record a 2-minute video describing the flow from document ingestion to answer generation.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Solve 5 LLM‑focused interview questions on LeetCode discuss",
+              "title": "Solve 5 LLM-focused interview questions on LeetCode Discuss",
               "description": "Write code for prompt parsing, token counting, and API rate limiting.",
               "type": "practice",
               "minutes": 60

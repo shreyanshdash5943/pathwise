@@ -1,13 +1,13 @@
 {
-  "title": "Applied AI Engineer Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to master LLM integration, retrieval‑augmented generation, and production‑grade web deployment. By the end you’ll have polished portfolio projects and the habits needed for professional AI engineering.",
+  "title": "Applied AI Engineer roadmap",
+  "summary": "A clear plan to learn LLM integration, retrieval-augmented generation, and web deployment. By The end you will have portfolio projects and The habits required for professional AI engineering.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build a solid base in programming, web fundamentals, and AI concepts.",
       "milestones": [
         {
-          "title": "Python (or TypeScript) Fundamentals",
+          "title": "Python (or TypeScript) fundamentals",
           "outcome": "You can write clean, modular code and debug scripts confidently.",
           "skill": "Python or TypeScript",
           "tasks": [
@@ -38,12 +38,12 @@
           ]
         },
         {
-          "title": "Web Basics for AI Apps",
-          "outcome": "You can create a simple front‑end and serve it with a back‑end API.",
+          "title": "Web basics for AI apps",
+          "outcome": "You can create a simple front-end and serve it with a back-end API.",
           "skill": "Shipping web apps",
           "tasks": [
             {
-              "title": "Follow MDN’s “Learn HTTP” tutorial",
+              "title": "Follow MDN’s “learn HTTP” tutorial",
               "description": "Understand request methods, status codes, and JSON payloads.",
               "type": "learn",
               "minutes": 45
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "title": "Intro to Large Language Models",
+          "title": "Intro to large language models",
           "outcome": "You understand how LLM APIs work and can send basic prompts.",
           "skill": "LLM APIs",
           "tasks": [
@@ -92,14 +92,14 @@
               "minutes": 40
             },
             {
-              "title": "Handle rate‑limit errors gracefully",
+              "title": "Handle rate-limit errors gracefully",
               "description": "Add retry logic with exponential backoff to your script.",
               "type": "practice",
               "minutes": 35
             },
             {
               "title": "Compare responses from two models",
-              "description": "Call both gpt‑3.5‑turbo and gpt‑4, log differences, and note cost implications.",
+              "description": "Call both gpt-3.5-turbo and gpt-4, log differences, and note cost implications.",
               "type": "practice",
               "minutes": 45
             },
@@ -114,17 +114,17 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Deepen expertise in prompting, retrieval, and evaluation.",
       "milestones": [
         {
-          "title": "Advanced Prompt Design",
+          "title": "Advanced prompt design",
           "outcome": "You can craft reliable, reusable prompts for varied tasks.",
           "skill": "Prompt design",
           "tasks": [
             {
-              "title": "Study the Prompt Engineering guide on OpenAI docs",
-              "description": "Read sections on few‑shot prompting and system messages.",
+              "title": "Study the prompt engineering guide on OpenAI docs",
+              "description": "Read sections on few-shot prompting and system messages.",
               "type": "learn",
               "minutes": 40
             },
@@ -141,8 +141,8 @@
               "minutes": 60
             },
             {
-              "title": "Iterate on a failing template using chain‑of‑thought",
-              "description": "Add step‑by‑step reasoning prompts and measure improvement.",
+              "title": "Iterate on a failing template using chain-of-thought",
+              "description": "Add step-by-step reasoning prompts and measure improvement.",
               "type": "practice",
               "minutes": 50
             },
@@ -155,7 +155,7 @@
           ]
         },
         {
-          "title": "Retrieval‑Augmented Generation (RAG)",
+          "title": "Retrieval-augmented generation (RAG)",
           "outcome": "You can integrate vector stores and retrieve relevant context for LLMs.",
           "skill": "Retrieval (RAG)",
           "tasks": [
@@ -172,7 +172,7 @@
               "minutes": 55
             },
             {
-              "title": "Write a query function that returns top‑k chunks",
+              "title": "Write a query function that returns top-k chunks",
               "description": "Embed a user query, search the vector store, and return results.",
               "type": "practice",
               "minutes": 50
@@ -192,18 +192,18 @@
           ]
         },
         {
-          "title": "Systematic Evaluation",
+          "title": "Systematic evaluation",
           "outcome": "You can measure prompt quality and model performance with metrics.",
           "skill": "Evaluation",
           "tasks": [
             {
-              "title": "Read the Evaluation section of the LLM Eval Guide on GitHub",
+              "title": "Read the evaluation section of the LLM Eval guide on GitHub",
               "description": "Learn about accuracy, relevance, and hallucination metrics.",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Implement a BLEU‑style scorer for generated answers",
+              "title": "Implement a BLEU-style scorer for generated answers",
               "description": "Compare model output against a reference set and compute scores.",
               "type": "build",
               "minutes": 55
@@ -231,11 +231,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply the core skills to three portfolio‑grade projects.",
+      "title": "Proof of work",
+      "summary": "Apply the core skills to three portfolio-grade projects.",
       "milestones": [
         {
-          "title": "Document Q&A App with Citations",
+          "title": "Document Q&A app with citations",
           "outcome": "You can deliver a web app that answers user questions using RAG and shows source references.",
           "skill": null,
           "tasks": [
@@ -252,7 +252,7 @@
               "minutes": 70
             },
             {
-              "title": "Connect front‑end form to LLM via FastAPI",
+              "title": "Connect front-end form to LLM via FastAPI",
               "description": "Create an endpoint that runs the RAG pipeline and returns JSON.",
               "type": "build",
               "minutes": 80
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "title": "Tool‑Using AI Agent",
+          "title": "Tool-using AI agent",
           "outcome": "You can build an autonomous agent that calls external APIs or executes code.",
           "skill": null,
           "tasks": [
@@ -283,7 +283,7 @@
               "minutes": 30
             },
             {
-              "title": "Implement tool‑calling logic with LangChain’s StructuredOutputParser",
+              "title": "Implement tool-calling logic with LangChain’s StructuredOutputParser",
               "description": "Parse LLM responses to trigger function calls.",
               "type": "build",
               "minutes": 85
@@ -295,7 +295,7 @@
               "minutes": 70
             },
             {
-              "title": "Run end‑to‑end scenarios and log success rate",
+              "title": "Run end-to-end scenarios and log success rate",
               "description": "Execute 10 diverse user requests and record how often the agent uses the correct tool.",
               "type": "practice",
               "minutes": 60
@@ -309,7 +309,7 @@
           ]
         },
         {
-          "title": "Prompt Evaluation Harness",
+          "title": "Prompt evaluation harness",
           "outcome": "You can systematically benchmark prompts across models and datasets.",
           "skill": null,
           "tasks": [
@@ -326,14 +326,14 @@
               "minutes": 80
             },
             {
-              "title": "Integrate the BLEU scorer from Phase 2",
-              "description": "Automatically compute scores for each model‑prompt pair.",
+              "title": "Integrate the BLEU scorer from phase 2",
+              "description": "Automatically compute scores for each model-prompt pair.",
               "type": "build",
               "minutes": 55
             },
             {
-              "title": "Generate a comparative report in Markdown",
-              "description": "Summarize findings, highlight best‑performing prompts, and note failures.",
+              "title": "Generate a comparative report in markdown",
+              "description": "Summarize findings, highlight best-performing prompts, and note failures.",
               "type": "practice",
               "minutes": 45
             },
@@ -348,16 +348,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Polish advanced practices, professional habits, and job‑search readiness.",
+      "title": "Getting ready",
+      "summary": "Polish advanced practices, professional habits, and job-search readiness.",
       "milestones": [
         {
-          "title": "Production‑Ready Shipping",
+          "title": "Production-ready shipping",
           "outcome": "You can ship, monitor, and maintain AI web services at scale.",
           "skill": "Shipping web apps",
           "tasks": [
             {
-              "title": "Read the Twelve‑Factor App guide on Heroku blog",
+              "title": "Read the Twelve-Factor app guide on Heroku blog",
               "description": "Focus on config, logs, and stateless processes.",
               "type": "learn",
               "minutes": 40
@@ -369,7 +369,7 @@
               "minutes": 45
             },
             {
-              "title": "Set up health‑check endpoint in FastAPI",
+              "title": "Set up health-check endpoint in FastAPI",
               "description": "Return 200 OK when dependencies are reachable.",
               "type": "build",
               "minutes": 30
@@ -381,7 +381,7 @@
               "minutes": 80
             },
             {
-              "title": "Write a post‑mortem for a simulated outage",
+              "title": "Write a post-mortem for a simulated outage",
               "description": "Describe root cause, mitigation, and future safeguards.",
               "type": "reflect",
               "minutes": 35
@@ -389,8 +389,8 @@
           ]
         },
         {
-          "title": "Advanced Retrieval Techniques",
-          "outcome": "You can apply hybrid search and fine‑tuned embeddings for better relevance.",
+          "title": "Advanced retrieval techniques",
+          "outcome": "You can apply hybrid search and fine-tuned embeddings for better relevance.",
           "skill": "Retrieval (RAG)",
           "tasks": [
             {
@@ -400,14 +400,14 @@
               "minutes": 45
             },
             {
-              "title": "Fine‑tune a small sentence‑transformer on domain data",
+              "title": "Fine-tune a small sentence-transformer on domain data",
               "description": "Use Hugging Face’s Trainer API on a labeled dataset.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Replace base embeddings in your RAG app with the fine‑tuned model",
-              "description": "Re‑index documents and compare relevance scores.",
+              "title": "Replace base embeddings in your RAG app with the fine-tuned model",
+              "description": "Re-index documents and compare relevance scores.",
               "type": "practice",
               "minutes": 70
             },
@@ -419,14 +419,14 @@
             },
             {
               "title": "Document lessons learned in a technical blog post",
-              "description": "Explain why fine‑tuning helped and trade‑offs involved.",
+              "description": "Explain why fine-tuning helped and trade-offs involved.",
               "type": "reflect",
               "minutes": 40
             }
           ]
         },
         {
-          "title": "Career Launch",
+          "title": "Career launch",
           "outcome": "You are prepared to interview and present your AI engineering portfolio.",
           "skill": "Python or TypeScript",
           "tasks": [
@@ -437,13 +437,13 @@
               "minutes": 30
             },
             {
-              "title": "Create a 5‑minute demo video for each portfolio project",
+              "title": "Create a 5-minute demo video for each portfolio project",
               "description": "Record screen, narrate architecture, and upload to YouTube (unlisted).",
               "type": "build",
               "minutes": 80
             },
             {
-              "title": "Practice system‑design interview questions on Pramp (free)",
+              "title": "Practice system-design interview questions on Pramp (free)",
               "description": "Focus on scaling LLM services and data pipelines.",
               "type": "practice",
               "minutes": 90

@@ -1,13 +1,13 @@
 {
-  "title": "Security Analyst Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to deepen your security analyst expertise, build professional habits, and create a showcase portfolio. Focuses on best practices, advanced tooling, and job‑ready deliverables.",
+  "title": "Security Analyst roadmap",
+  "summary": "A step-by-step plan to deepen your security analyst expertise, build professional habits, and create a showcase portfolio. Focuses on best practices, advanced tooling, and job-ready deliverables.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Solidify core networking and Linux knowledge essential for security work.",
       "milestones": [
         {
-          "title": "Networking Fundamentals",
+          "title": "Networking fundamentals",
           "outcome": "You can explain TCP/IP, subnets, and common protocols and capture traffic with Wireshark.",
           "skill": "Networking fundamentals",
           "tasks": [
@@ -31,7 +31,7 @@
             },
             {
               "title": "Summarize common ports",
-              "description": "Write a one‑page cheat sheet of top 20 ports and their services.",
+              "description": "Write a one-page cheat sheet of top 20 ports and their services.",
               "type": "reflect",
               "minutes": 30
             }
@@ -43,7 +43,7 @@
           "skill": "Linux",
           "tasks": [
             {
-              "title": "Complete Linux Basics on freeCodeCamp",
+              "title": "Complete Linux basics on freeCodeCamp",
               "description": "Finish the introductory Linux module covering file permissions and navigation.",
               "type": "learn",
               "minutes": 60
@@ -62,7 +62,7 @@
             },
             {
               "title": "Configure sudo for a new user",
-              "description": "Create a non‑root user and grant limited sudo rights, then test with a command.",
+              "description": "Create a non-root user and grant limited sudo rights, then test with a command.",
               "type": "practice",
               "minutes": 40
             },
@@ -77,23 +77,23 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop expertise in log analysis, SIEM usage, and incident response processes.",
       "milestones": [
         {
-          "title": "Log Analysis",
+          "title": "Log analysis",
           "outcome": "You can parse system and application logs to identify suspicious activity.",
           "skill": "Log analysis",
           "tasks": [
             {
-              "title": "Read Elastic Common Schema docs",
+              "title": "Read Elastic common schema docs",
               "description": "Study the ECS fields on Elastic documentation to understand standard log structure.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Ingest syslog into Elastic Stack",
-              "description": "Follow the Elastic quick‑start guide to ship syslog from your Linux VM into Elasticsearch.",
+              "title": "Ingest syslog into Elastic stack",
+              "description": "Follow the Elastic quick-start guide to ship syslog from your Linux VM into Elasticsearch.",
               "type": "build",
               "minutes": 70
             },
@@ -104,7 +104,7 @@
               "minutes": 60
             },
             {
-              "title": "Write a log‑parsing script",
+              "title": "Write a log-parsing script",
               "description": "Use Python to extract IP addresses from auth.log and output a CSV.",
               "type": "practice",
               "minutes": 55
@@ -118,13 +118,13 @@
           ]
         },
         {
-          "title": "SIEM Tools",
+          "title": "SIEM tools",
           "outcome": "You can configure alerts and queries in a SIEM platform to detect threats.",
           "skill": "SIEM tools",
           "tasks": [
             {
-              "title": "Watch Splunk Fundamentals 1",
-              "description": "Complete the first free Splunk e‑learning module on Splunk.com.",
+              "title": "Watch Splunk fundamentals 1",
+              "description": "Complete the first free Splunk e-learning module on Splunk.com.",
               "type": "learn",
               "minutes": 60
             },
@@ -148,32 +148,32 @@
             },
             {
               "title": "Connect with Splunk community",
-              "description": "Join the Splunk Answers forum and read three recent incident‑response threads.",
+              "description": "Join the Splunk Answers forum and read three recent incident-response threads.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "Incident Response Basics",
+          "title": "Incident response basics",
           "outcome": "You can follow a structured response workflow from detection to remediation.",
           "skill": "Incident response",
           "tasks": [
             {
               "title": "Read NIST IR Playbook overview",
-              "description": "Study the NIST 800‑61 Rev.2 incident response lifecycle on NIST.gov.",
+              "description": "Study the NIST 800-61 Rev.2 incident response lifecycle on NIST.gov.",
               "type": "learn",
               "minutes": 45
             },
             {
-              "title": "Draft a simple IR run‑book",
-              "description": "Create a one‑page run‑book for handling a phishing email incident.",
+              "title": "Draft a simple IR run-book",
+              "description": "Create a one-page run-book for handling a phishing email incident.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Simulate a phishing alert",
-              "description": "Generate a mock phishing email in your lab and apply the run‑book steps.",
+              "description": "Generate a mock phishing email in your lab and apply the run-book steps.",
               "type": "practice",
               "minutes": 60
             },
@@ -194,11 +194,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate real‑world security analyst capabilities.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate real-world security analyst capabilities.",
       "milestones": [
         {
-          "title": "Home Lab Logging Setup",
+          "title": "Home lab logging setup",
           "outcome": "You can showcase a fully instrumented lab with centralized log collection and visualizations.",
           "skill": null,
           "tasks": [
@@ -235,7 +235,7 @@
           ]
         },
         {
-          "title": "CTF Incident Report",
+          "title": "CTF incident report",
           "outcome": "You can produce a professional incident report that narrates detection, analysis, and remediation.",
           "skill": null,
           "tasks": [
@@ -247,7 +247,7 @@
             },
             {
               "title": "Analyze provided logs",
-              "description": "Use your log‑analysis scripts to identify the breach timeline.",
+              "description": "Use your log-analysis scripts to identify the breach timeline.",
               "type": "practice",
               "minutes": 80
             },
@@ -272,13 +272,13 @@
           ]
         },
         {
-          "title": "Detection Rule Set",
+          "title": "Detection rule set",
           "outcome": "You can deliver a curated set of SIEM detection rules for common threats.",
           "skill": null,
           "tasks": [
             {
               "title": "Research MITRE ATT&CK techniques",
-              "description": "Identify five high‑impact techniques relevant to enterprise environments.",
+              "description": "Identify five high-impact techniques relevant to enterprise environments.",
               "type": "learn",
               "minutes": 50
             },
@@ -290,7 +290,7 @@
             },
             {
               "title": "Test rules against lab data",
-              "description": "Run each query on your home lab logs and note false‑positive rates.",
+              "description": "Run each query on your home lab logs and note false-positive rates.",
               "type": "practice",
               "minutes": 70
             },
@@ -311,17 +311,17 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Master advanced topics, refine professional habits, and prepare for job or client engagements.",
+      "title": "Getting ready",
+      "summary": "Learn advanced topics, refine habits, and prepare for job or client work.",
       "milestones": [
         {
-          "title": "Threat Intelligence Integration",
+          "title": "Threat intelligence integration",
           "outcome": "You can enrich alerts with external threat feeds and produce actionable intel briefs.",
           "skill": "Threat intelligence",
           "tasks": [
             {
-              "title": "Read MISP quick‑start guide",
-              "description": "Study the open‑source MISP documentation on threat‑share platforms.",
+              "title": "Read MISP quick-start guide",
+              "description": "Study the open-source MISP documentation on threat-share platforms.",
               "type": "learn",
               "minutes": 45
             },
@@ -352,8 +352,8 @@
           ]
         },
         {
-          "title": "Advanced Incident Response",
-          "outcome": "You can lead a full‑scale incident handling process, including containment and post‑mortem.",
+          "title": "Advanced incident response",
+          "outcome": "You can lead a full-scale incident handling process, including containment and post-mortem.",
           "skill": "Incident response",
           "tasks": [
             {
@@ -369,14 +369,14 @@
               "minutes": 90
             },
             {
-              "title": "Update run‑book with memory steps",
-              "description": "Add memory‑analysis procedures to your existing IR run‑book.",
+              "title": "Update run-book with memory steps",
+              "description": "Add memory-analysis procedures to your existing IR run-book.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Conduct a tabletop exercise",
-              "description": "Simulate a ransomware incident with a colleague and walk through the updated run‑book.",
+              "description": "Simulate a ransomware incident with a colleague and walk through the updated run-book.",
               "type": "practice",
               "minutes": 80
             },
@@ -389,7 +389,7 @@
           ]
         },
         {
-          "title": "Job/Client Readiness",
+          "title": "Job/client readiness",
           "outcome": "You can present your portfolio, articulate your process, and interview confidently for analyst roles.",
           "skill": "Networking fundamentals",
           "tasks": [
@@ -400,7 +400,7 @@
               "minutes": 40
             },
             {
-              "title": "Prepare a 5‑minute pitch",
+              "title": "Prepare a 5-minute pitch",
               "description": "Craft a short narrative that explains your background, projects, and value proposition.",
               "type": "practice",
               "minutes": 30

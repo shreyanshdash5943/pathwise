@@ -7,8 +7,17 @@ import { PageHeader } from "./page-header";
 import { CheckCircle } from "./task-row";
 import { Toast, useToast } from "./toast";
 import { ProofDialog, type ProofLite } from "./proof-dialog";
+import { ProfileAnalytics } from "./profile-analytics";
+import { ProBadge } from "./pro-badge";
 
 type Links = { github?: string; linkedin?: string; portfolio?: string };
+type CardTheme = "classic" | "midnight" | "minimal";
+const THEMES: { id: CardTheme; label: string; pro: boolean }[] = [
+  { id: "classic", label: "Classic", pro: false },
+  { id: "midnight", label: "Midnight", pro: true },
+  { id: "minimal", label: "Minimal", pro: true },
+];
+type Contact = { email: string; phone: string; showEmail: boolean; showPhone: boolean; showResume: boolean };
 type Resume = { name: string; size: number; uploadedAt: string | null; skills: string[] };
 
 type Props = {
@@ -24,7 +33,11 @@ type Props = {
     username: string;
     isPublic: boolean;
     proofs: ProofLite[];
+    contact: Contact;
+    premium: { hideBranding: boolean; cardTheme: CardTheme };
   };
+  pro: boolean;
+  stats: Parameters<typeof ProfileAnalytics>[0]["stats"];
 };
 
 const MAX_BYTES = 5 * 1024 * 1024;
@@ -53,7 +66,7 @@ async function send(url: string, init: RequestInit) {
   return data;
 }
 
-export function ProfileView({ identity, roleTitle, roleSkills, initial }: Props) {
+export function ProfileView({ identity, roleTitle, roleSkills, initial, pro, stats }: Props) {
   const router = useRouter();
   const { toast, show } = useToast();
 
@@ -78,6 +91,51 @@ export function ProfileView({ identity, roleTitle, roleSkills, initial }: Props)
   const [savedUsername, setSavedUsername] = useState(initial.isPublic ? initial.username : "");
   const [publishing, setPublishing] = useState(false);
   const publicPath = savedUsername ? `/u/${savedUsername}` : null;
+
+  const [premium, setPremium] = useState(initial.premium);
+
+  async function savePremium(patch: Partial<typeof premium>) {
+    const prev = premium;
+    setPremium({ ...premium, ...patch });
+    try {
+      await send("/api/details", {
+        method: "PATCH",
+        body: JSON.stringify({ hideBranding: patch.hideBranding, cardTheme: patch.cardTheme }),
+      });
+      show("Saved.");
+    } catch (err) {
+      setPremium(prev);
+      show(err instanceof Error ? err.message : "Couldn't save that.");
+    }
+  }
+
+  const [contact, setContact] = useState<Contact>(initial.contact);
+  const [savedContact, setSavedContact] = useState<Contact>(initial.contact);
+  const [savingContact, setSavingContact] = useState(false);
+  const contactDirty = JSON.stringify(contact) !== JSON.stringify(savedContact);
+
+  async function saveContact(e: React.FormEvent) {
+    e.preventDefault();
+    setSavingContact(true);
+    try {
+      await send("/api/details", {
+        method: "PATCH",
+        body: JSON.stringify({
+          contactEmail: contact.email.trim(),
+          phone: contact.phone.trim(),
+          showEmail: contact.showEmail && !!contact.email.trim(),
+          showPhone: contact.showPhone && !!contact.phone.trim(),
+          showResume: contact.showResume && !!resume,
+        }),
+      });
+      setSavedContact(contact);
+      show("Contact details saved.");
+    } catch (err) {
+      show(err instanceof Error ? err.message : "Couldn't save your contact details.");
+    } finally {
+      setSavingContact(false);
+    }
+  }
 
   const [proofs, setProofs] = useState(initial.proofs);
   const [editing, setEditing] = useState<{ taskKey: string | null; title: string; proof: ProofLite | null } | null>(null);
@@ -370,7 +428,94 @@ export function ProfileView({ identity, roleTitle, roleSkills, initial }: Props)
               </button>
             </p>
           )}
+
+          <form onSubmit={saveContact} className="mt-6 border-t border-line pt-5">
+            <h3 className="text-[15px] font-semibold">Contact details</h3>
+            <p className="mt-1 max-w-xl text-[14px] text-muted">
+              Shown on your public page and in the downloadable PDF card only if you switch them on. Anyone with your link can see them.
+            </p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div>
+                <label className="block">
+                  <span className="text-[14px] font-medium">Email</span>
+                  <input
+                    className={clsx(field, "mt-1.5")}
+                    type="email"
+                    value={contact.email}
+                    maxLength={254}
+                    placeholder="you@example.com"
+                    onChange={(e) => setContact({ ...contact, email: e.target.value })}
+                  />
+                </label>
+                <Switch label="Show email" on={contact.showEmail} disabled={!contact.email.trim()} onChange={(v) => setContact({ ...contact, showEmail: v })} />
+              </div>
+              <div>
+                <label className="block">
+                  <span className="text-[14px] font-medium">Phone</span>
+                  <input
+                    className={clsx(field, "mt-1.5")}
+                    type="tel"
+                    value={contact.phone}
+                    maxLength={24}
+                    placeholder="+91 98765 43210"
+                    onChange={(e) => setContact({ ...contact, phone: e.target.value })}
+                  />
+                </label>
+                <Switch label="Show phone" on={contact.showPhone} disabled={!contact.phone.trim()} onChange={(v) => setContact({ ...contact, showPhone: v })} />
+              </div>
+            </div>
+            <Switch
+              label={resume ? "Let visitors download my resume" : "Let visitors download my resume (upload one below first)"}
+              on={contact.showResume && !!resume}
+              disabled={!resume}
+              onChange={(v) => setContact({ ...contact, showResume: v })}
+            />
+            <button type="submit" className="btn-primary mt-5 h-10 text-[14px]" disabled={savingContact || !contactDirty}>
+              {savingContact ? "Saving" : "Save contact details"}
+            </button>
+          </form>
+
+          <div className="mt-6 border-t border-line pt-5">
+            <h3 className="flex items-center gap-2 text-[15px] font-semibold">
+              PDF card design {!pro && <ProBadge />}
+            </h3>
+            <div role="radiogroup" aria-label="PDF card design" className="mt-3 grid grid-cols-3 gap-2 sm:max-w-md">
+              {THEMES.map((t) => {
+                const active = premium.cardTheme === t.id;
+                const locked = t.pro && !pro;
+                return (
+                  <button
+                    key={t.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={active}
+                    disabled={locked}
+                    onClick={() => !active && savePremium({ cardTheme: t.id })}
+                    className={clsx(
+                      "overflow-hidden rounded-xl border text-left transition-colors disabled:cursor-not-allowed disabled:opacity-50",
+                      active ? "border-accent ring-2 ring-accent-soft" : "border-line hover:border-line-strong"
+                    )}
+                  >
+                    <ThemePreview theme={t.id} />
+                    <span className="block px-2.5 py-1.5 text-[13px] font-medium">{t.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <Switch
+                label="Hide “Made with Pathwise” on my page and card"
+                on={premium.hideBranding}
+                disabled={!pro}
+                onChange={(v) => savePremium({ hideBranding: v })}
+              />
+              {!pro && <ProBadge className="mt-3" />}
+            </div>
+            {!pro && <p className="mt-3 text-[13px] text-faint">Short usernames (3 to 5 characters) are also part of Pro.</p>}
+          </div>
         </section>
+
+        <ProfileAnalytics stats={stats} pro={pro} isPublic={isPublic} proofTitles={Object.fromEntries(proofs.map((x) => [x.id, x.title]))} />
 
         <section className="panel p-5 sm:p-6">
           <h2 className="text-[17px] font-semibold">What you already know</h2>
@@ -472,5 +617,40 @@ export function ProfileView({ identity, roleTitle, roleSkills, initial }: Props)
       />
       <Toast message={toast} />
     </>
+  );
+}
+
+function Switch({ label, on, disabled, onChange }: { label: string; on: boolean; disabled?: boolean; onChange: (v: boolean) => void }) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={on}
+      disabled={disabled}
+      onClick={() => onChange(!on)}
+      className="mt-3 flex items-center gap-2.5 text-left text-[14px] disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      <span className={clsx("relative h-5 w-9 shrink-0 rounded-full transition-colors", on ? "bg-accent" : "bg-surface-sunk")}>
+        <span className={clsx("absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-[left]", on ? "left-[18px]" : "left-0.5")} />
+      </span>
+      {label}
+    </button>
+  );
+}
+
+/** A tiny sketch of each PDF card design. */
+function ThemePreview({ theme }: { theme: CardTheme }) {
+  const dark = theme === "midnight";
+  const serif = theme === "minimal";
+  return (
+    <span className="block h-16 bg-white p-2" aria-hidden="true">
+      <span className={clsx("-mx-2 -mt-2 mb-1.5 block", dark ? "h-6 bg-ink px-2 pt-1.5" : theme === "classic" ? "h-1 bg-accent" : "h-0")}>
+        {dark && <span className="block h-1.5 w-10 rounded-full bg-white" />}
+      </span>
+      {!dark && <span className={clsx("block h-1.5 w-10 rounded-full", serif ? "bg-ink" : "bg-ink")} />}
+      <span className="mt-1.5 block h-1 w-14 rounded-full bg-line-strong" />
+      <span className={clsx("mt-1 block h-1 w-8 rounded-full", serif ? "bg-ink/60" : "bg-accent/70")} />
+      <span className="mt-1 block h-1 w-12 rounded-full bg-line" />
+    </span>
   );
 }

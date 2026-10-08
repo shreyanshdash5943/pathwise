@@ -1,13 +1,13 @@
 {
-  "title": "Frontend Engineer Mastery Roadmap",
-  "summary": "Deepen your expertise in modern frontend development, from solid fundamentals to professional‑grade projects and job readiness. Follow the four phases to build best‑practice skills, a showcase portfolio, and a confident transition into the industry.",
+  "title": "Frontend Engineer roadmap",
+  "summary": "Deepen your expertise in modern frontend development, from solid fundamentals to professional-grade projects and job readiness. Follow the four phases to build best-practice skills, a showcase portfolio, and a confident transition into the industry.",
   "phases": [
     {
       "title": "Foundations",
-      "summary": "Establish rock‑solid core web fundamentals and tooling.",
+      "summary": "Establish rock-solid core web fundamentals and tooling.",
       "milestones": [
         {
-          "title": "HTML & CSS Fundamentals",
+          "title": "HTML & CSS fundamentals",
           "outcome": "Create semantic, responsive pages that work across browsers.",
           "skill": "HTML and CSS",
           "tasks": [
@@ -19,7 +19,7 @@
             },
             {
               "title": "Build a static landing page",
-              "description": "Implement a multi‑section page using Flexbox and Grid, ensuring mobile responsiveness.",
+              "description": "Implement a multi-section page using Flexbox and Grid, ensuring mobile responsiveness.",
               "type": "build",
               "minutes": 60
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "JavaScript Core Concepts",
+          "title": "JavaScript Core concepts",
           "outcome": "Write clean, functional JavaScript for interactive web features.",
           "skill": "JavaScript",
           "tasks": [
@@ -69,12 +69,12 @@
           ]
         },
         {
-          "title": "Version Control Basics",
+          "title": "Version control basics",
           "outcome": "Manage code history and collaborate using Git.",
           "skill": null,
           "tasks": [
             {
-              "title": "Read Git basics on Git‑SCM site",
+              "title": "Read Git basics on Git-SCM site",
               "description": "Study the official Git documentation on init, commit, branch, and merge.",
               "type": "learn",
               "minutes": 35
@@ -102,11 +102,11 @@
       ]
     },
     {
-      "title": "Core Skills",
-      "summary": "Gain proficiency in TypeScript, React, and performance‑focused development.",
+      "title": "Core skills",
+      "summary": "Gain proficiency in TypeScript, React, and performance-focused development.",
       "milestones": [
         {
-          "title": "TypeScript Foundations",
+          "title": "TypeScript foundations",
           "outcome": "Add static typing to JavaScript projects for safer code.",
           "skill": "TypeScript",
           "tasks": [
@@ -138,7 +138,7 @@
         },
         {
           "title": "React Essentials",
-          "outcome": "Build component‑based UIs with modern React patterns.",
+          "outcome": "Build component-based UIs with modern React patterns.",
           "skill": "React",
           "tasks": [
             {
@@ -168,7 +168,7 @@
           ]
         },
         {
-          "title": "Accessibility & Performance",
+          "title": "Accessibility & performance",
           "outcome": "Deliver fast, inclusive experiences meeting WCAG and Core Web Vitals.",
           "skill": "Accessibility",
           "tasks": [
@@ -192,7 +192,7 @@
             },
             {
               "title": "Reflect on performance fixes",
-              "description": "Document how lazy‑loading images and reducing CSS size improved LCP.",
+              "description": "Document how lazy-loading images and reducing CSS size improved LCP.",
               "type": "reflect",
               "minutes": 20
             }
@@ -201,11 +201,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready projects that showcase depth and best practices.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready projects that showcase depth and best practices.",
       "milestones": [
         {
-          "title": "Responsive Portfolio Site",
+          "title": "Responsive portfolio site",
           "outcome": "A personal site demonstrating layout, animation, and SEO best practices.",
           "skill": null,
           "tasks": [
@@ -235,15 +235,15 @@
             },
             {
               "title": "Reflect on project workflow",
-              "description": "Write a short post‑mortem covering challenges, tools, and next steps.",
+              "description": "Write a short post-mortem covering challenges, tools, and next steps.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "API Dashboard Project",
-          "outcome": "A data‑driven dashboard that consumes a public API with robust error handling.",
+          "title": "API dashboard project",
+          "outcome": "Build a dashboard that consumes a public API with error handling.",
           "skill": null,
           "tasks": [
             {
@@ -279,7 +279,7 @@
           ]
         },
         {
-          "title": "Component Library",
+          "title": "Component library",
           "outcome": "A reusable UI component set with documentation and storybook.",
           "skill": null,
           "tasks": [
@@ -318,23 +318,23 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Polish advanced topics, interview prep, and professional positioning.",
       "milestones": [
         {
-          "title": "Advanced Web Performance",
+          "title": "Advanced Web performance",
           "outcome": "Optimize apps to meet Core Web Vitals consistently.",
           "skill": "Web performance",
           "tasks": [
             {
               "title": "Read Web.dev performance guide",
-              "description": "Study the free Web.dev article on optimizing render‑blocking resources.",
+              "description": "Study the free Web.dev article on optimizing render-blocking resources.",
               "type": "learn",
               "minutes": 40
             },
             {
-              "title": "Implement code‑splitting with React.lazy",
-              "description": "Refactor the dashboard to lazy‑load heavy components and routes.",
+              "title": "Implement code-splitting with React.lazy",
+              "description": "Refactor the dashboard to lazy-load heavy components and routes.",
               "type": "build",
               "minutes": 55
             },
@@ -346,12 +346,12 @@
             },
             {
               "title": "Connect with a performance expert on Twitter",
-              "description": "Tweet a question about third‑party script impact and note the response.",
+              "description": "Tweet a question about third-party script impact and note the response.",
               "type": "connect",
               "minutes": 20
             },
             {
-              "title": "Reflect on performance trade‑offs",
+              "title": "Reflect on performance trade-offs",
               "description": "Write a brief comparison of bundle size vs. runtime speed after optimizations.",
               "type": "reflect",
               "minutes": 15
@@ -359,12 +359,12 @@
           ]
         },
         {
-          "title": "Interview & Job Search Skills",
+          "title": "Interview & job search skills",
           "outcome": "Confidently tackle technical interviews and present your portfolio.",
           "skill": "JavaScript",
           "tasks": [
             {
-              "title": "Read Cracking the Coding Interview front‑end chapter",
+              "title": "Read Cracking the coding interview front-end chapter",
               "description": "Study the recommended patterns for DOM manipulation and algorithm questions.",
               "type": "learn",
               "minutes": 45
@@ -377,7 +377,7 @@
             },
             {
               "title": "Build a mock interview with a peer",
-              "description": "Conduct a 45‑minute pair‑programming session covering React hooks and state.",
+              "description": "Conduct a 45-minute pair-programming session covering React hooks and state.",
               "type": "practice",
               "minutes": 60
             },
@@ -396,7 +396,7 @@
           ]
         },
         {
-          "title": "Professional Habits & Continuous Learning",
+          "title": "Professional habits & continuous learning",
           "outcome": "Adopt workflows and resources for ongoing growth as a frontend engineer.",
           "skill": "TypeScript",
           "tasks": [
@@ -414,7 +414,7 @@
             },
             {
               "title": "Practice writing technical blog post",
-              "description": "Draft a 800‑word post on a recent performance optimization you implemented.",
+              "description": "Draft a 800-word post on a recent performance optimization you implemented.",
               "type": "practice",
               "minutes": 60
             },

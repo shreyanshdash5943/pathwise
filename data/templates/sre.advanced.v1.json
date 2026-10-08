@@ -1,36 +1,36 @@
 {
-  "title": "Site Reliability Engineer Advanced Roadmap",
-  "summary": "A step‑by‑step plan to deepen SRE expertise, build a showcase portfolio, and prepare for senior‑level roles. Focuses on leadership, advanced observability, and interview readiness.",
+  "title": "Site Reliability Engineer advanced roadmap",
+  "summary": "A step-by-step plan to deepen SRE expertise, build a showcase portfolio, and prepare for senior-level roles. Focuses on leadership, advanced observability, and interview readiness.",
   "phases": [
     {
-      "title": "Foundations Refresh",
+      "title": "Foundations refresh",
       "summary": "Reinforce core Linux, networking, and programming fundamentals.",
       "milestones": [
         {
-          "title": "Linux System Mastery",
+          "title": "Linux system fundamentals",
           "outcome": "Can configure, troubleshoot, and secure Linux servers autonomously.",
           "skill": "Linux and networking",
           "tasks": [
             {
-              "title": "Read Linux Filesystem Hierarchy",
+              "title": "Read Linux filesystem hierarchy",
               "description": "Study the FHS section of the official Linux Documentation Project.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Configure SELinux in Enforcing Mode",
+              "title": "Configure SELinux in enforcing mode",
               "description": "Enable SELinux on a VM, set policies, and verify with audit logs.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Create a Bash Script for Log Rotation",
+              "title": "Create a bash script for log rotation",
               "description": "Write and test a script that rotates and compresses logs daily.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Reflect on Common Pitfalls",
+              "title": "Reflect on common pitfalls",
               "description": "Write a short note on three frequent Linux admin mistakes you’ve seen.",
               "type": "reflect",
               "minutes": 20
@@ -43,25 +43,25 @@
           "skill": "Linux and networking",
           "tasks": [
             {
-              "title": "Watch TCP/IP Basics on freeCodeCamp",
-              "description": "Complete the 30‑minute video covering IP, TCP, and UDP fundamentals.",
+              "title": "Watch TCP/IP basics on freeCodeCamp",
+              "description": "Complete the 30-minute video covering IP, TCP, and UDP fundamentals.",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Set Up iptables Firewall Rules",
+              "title": "Set up iptables firewall rules",
               "description": "Create inbound/outbound rules for a test service and verify with nmap.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Trace Packet Flow with traceroute",
+              "title": "Trace Packet flow with traceroute",
               "description": "Run traceroute between two VMs and document each hop.",
               "type": "practice",
               "minutes": 20
             },
             {
-              "title": "Connect with a SRE Community",
+              "title": "Connect with a SRE community",
               "description": "Join the #sre channel on the CNCF Slack and introduce yourself.",
               "type": "connect",
               "minutes": 15
@@ -69,30 +69,30 @@
           ]
         },
         {
-          "title": "Programming for Automation",
+          "title": "Programming for automation",
           "outcome": "Can write reliable scripts and small services in Go or Python.",
           "skill": "Programming",
           "tasks": [
             {
-              "title": "Read Go Concurrency Patterns on Go Blog",
+              "title": "Read Go concurrency patterns on Go blog",
               "description": "Study the official blog post on goroutine patterns (30 min).",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Implement a Health‑Check Endpoint in Go",
-              "description": "Write a simple HTTP server that returns 200 OK and unit‑test it.",
+              "title": "Implement a health-check endpoint in Go",
+              "description": "Write a simple HTTP server that returns 200 OK and unit-test it.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Refactor a Python Script to Use argparse",
-              "description": "Add command‑line parsing to an existing automation script.",
+              "title": "Refactor a Python script to use argparse",
+              "description": "Add command-line parsing to an existing automation script.",
               "type": "practice",
               "minutes": 40
             },
             {
-              "title": "Reflect on Code Readability",
+              "title": "Reflect on code readability",
               "description": "List three improvements you made and why they matter for reliability.",
               "type": "reflect",
               "minutes": 15
@@ -102,16 +102,16 @@
       ]
     },
     {
-      "title": "Core SRE Skills",
+      "title": "Core SRE skills",
       "summary": "Develop expertise in observability, incident response, and service level objectives.",
       "milestones": [
         {
-          "title": "Observability Stack",
+          "title": "Observability stack",
           "outcome": "Can deploy, query, and alert on metrics, logs, and traces.",
           "skill": "Observability",
           "tasks": [
             {
-              "title": "Read Prometheus Architecture on docs.prometheus.io",
+              "title": "Read Prometheus architecture on docs.prometheus.io",
               "description": "Skim the architecture overview (20 min).",
               "type": "learn",
               "minutes": 20
@@ -123,19 +123,19 @@
               "minutes": 80
             },
             {
-              "title": "Create a Log Pipeline with Loki",
+              "title": "Create a log pipeline with Loki",
               "description": "Configure Loki to ingest Docker logs and visualize in Grafana.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Write an Alert Rule for CPU Saturation",
+              "title": "Write an alert rule for CPU saturation",
               "description": "Define a Prometheus alert and test its firing condition.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Connect with Observability Experts",
+              "title": "Connect with observability experts",
               "description": "Attend a free webinar on OpenTelemetry hosted by CNCF.",
               "type": "connect",
               "minutes": 60
@@ -143,36 +143,36 @@
           ]
         },
         {
-          "title": "Incident Management Process",
-          "outcome": "Can lead an incident from detection through post‑mortem.",
+          "title": "Incident Management process",
+          "outcome": "Can lead an incident from detection through post-mortem.",
           "skill": "Incident management",
           "tasks": [
             {
-              "title": "Read Google SRE Incident Guide (PDF)",
+              "title": "Read Google SRE Incident guide (PDF)",
               "description": "Read the incident response chapter (30 min).",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Simulate an Outage in a Test Cluster",
+              "title": "Simulate an outage in a test cluster",
               "description": "Kill a service, trigger alerts, and run a mock incident call.",
               "type": "practice",
               "minutes": 70
             },
             {
-              "title": "Draft an Incident Timeline Template",
+              "title": "Draft an Incident timeline template",
               "description": "Create a markdown template for timestamps, actions, and owners.",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Conduct a 15‑minute Post‑mortem Review",
-              "description": "Write a brief post‑mortem for the simulated outage and share with a peer.",
+              "title": "Conduct a 15-minute post-mortem review",
+              "description": "Write a brief post-mortem for the simulated outage and share with a peer.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Reflect on Communication Gaps",
+              "title": "Reflect on communication gaps",
               "description": "Note two communication improvements for future incidents.",
               "type": "reflect",
               "minutes": 15
@@ -180,36 +180,36 @@
           ]
         },
         {
-          "title": "Service Level Objectives",
+          "title": "Service level objectives",
           "outcome": "Can define, measure, and report SLOs and error budgets.",
           "skill": "SLOs",
           "tasks": [
             {
-              "title": "Read SLO Chapter in Google SRE Book",
-              "description": "Focus on error‑budget policies (25 min).",
+              "title": "Read SLO chapter in Google SRE book",
+              "description": "Focus on error-budget policies (25 min).",
               "type": "learn",
               "minutes": 25
             },
             {
-              "title": "Define an SLO for Latency on Sample Service",
-              "description": "Set a 99.9 % 95th‑percentile latency target and calculate error budget.",
+              "title": "Define an SLO for latency on sample service",
+              "description": "Set a 99.9 % 95th-percentile latency target and calculate error budget.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Build a Dashboard Showing Error‑Budget Burn",
+              "title": "Build a dashboard showing error-budget burn",
               "description": "Use Grafana to visualize remaining budget over time.",
               "type": "build",
               "minutes": 70
             },
             {
               "title": "Connect with SLO Practitioners",
-              "description": "Post a question about SLO trade‑offs on the SRE subreddit.",
+              "description": "Post a question about SLO trade-offs on the SRE subreddit.",
               "type": "connect",
               "minutes": 20
             },
             {
-              "title": "Reflect on SLO Choice Rationale",
+              "title": "Reflect on SLO Choice rationale",
               "description": "Write a short note why the chosen latency target fits business goals.",
               "type": "reflect",
               "minutes": 15
@@ -219,40 +219,40 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio projects that demonstrate end‑to‑end reliability engineering.",
+      "title": "Proof of work",
+      "summary": "Create portfolio projects that demonstrate end-to-end reliability engineering.",
       "milestones": [
         {
-          "title": "Monitoring Stack with Alerts",
+          "title": "Monitoring stack with alerts",
           "outcome": "A reproducible repo showing metrics collection, dashboards, and alerting for a microservice.",
           "skill": null,
           "tasks": [
             {
-              "title": "Clone the Starter Repo from GitHub",
+              "title": "Clone the starter repo from GitHub",
               "description": "Fork a minimal microservice repo to your account.",
               "type": "build",
               "minutes": 20
             },
             {
-              "title": "Add Prometheus Exporters",
+              "title": "Add Prometheus exporters",
               "description": "Instrument the service with CPU, memory, and request metrics.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Configure Alert Rules for 5‑minute Downtime",
+              "title": "Configure alert rules for 5-minute downtime",
               "description": "Create alerts for service unavailability and test them.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Write a README with Setup Steps",
+              "title": "Write a README with setup steps",
               "description": "Document installation, configuration, and alert verification.",
               "type": "build",
               "minutes": 30
             },
             {
-              "title": "Reflect on What Could Fail",
+              "title": "Reflect on what could fail",
               "description": "List three failure modes not covered by current alerts.",
               "type": "reflect",
               "minutes": 15
@@ -260,36 +260,36 @@
           ]
         },
         {
-          "title": "Load Test and Capacity Report",
+          "title": "Load test and capacity report",
           "outcome": "A report and scripts that show how to size resources for traffic spikes.",
           "skill": null,
           "tasks": [
             {
-              "title": "Read k6 Getting Started Guide",
+              "title": "Read k6 getting started guide",
               "description": "Follow the official k6 tutorial to install and run a basic test (30 min).",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Write a k6 Script for Peak Load",
+              "title": "Write a k6 script for peak load",
               "description": "Simulate 10 k requests per second for 5 minutes against the service.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Collect CPU/Memory Metrics During Test",
+              "title": "Collect CPU/memory metrics during test",
               "description": "Use Prometheus to capture resource usage while the load runs.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Generate a Capacity Planning Document",
+              "title": "Generate a capacity planning document",
               "description": "Summarize findings, recommend instance sizes, and include graphs.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Connect with Capacity Engineers",
+              "title": "Connect with capacity engineers",
               "description": "Message a senior SRE on LinkedIn for feedback on your report.",
               "type": "connect",
               "minutes": 20
@@ -297,36 +297,36 @@
           ]
         },
         {
-          "title": "Simulated Outage Postmortem",
+          "title": "Simulated outage postmortem",
           "outcome": "A polished postmortem that follows industry best practices and includes actionable improvements.",
           "skill": null,
           "tasks": [
             {
-              "title": "Design a Failure Scenario Script",
+              "title": "Design a failure scenario script",
               "description": "Create a bash script that randomly kills a pod and logs timestamps (40 min).",
               "type": "build",
               "minutes": 40
             },
             {
-              "title": "Run the Scenario and Capture Alerts",
+              "title": "Run the scenario and capture alerts",
               "description": "Execute the script, record alert timings, and collect logs.",
               "type": "practice",
               "minutes": 50
             },
             {
-              "title": "Write a Structured Postmortem",
+              "title": "Write a structured postmortem",
               "description": "Use the template from the Incident Management milestone to document root cause and remediation.",
               "type": "build",
               "minutes": 60
             },
             {
-              "title": "Peer Review the Postmortem",
+              "title": "Peer review the postmortem",
               "description": "Share with a colleague and incorporate their suggestions.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Reflect on Learning Outcomes",
+              "title": "Reflect on learning outcomes",
               "description": "Note two personal takeaways that will change your future incident response.",
               "type": "reflect",
               "minutes": 15
@@ -336,40 +336,40 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Advance leadership, deep dive into distributed systems, and prepare for senior interviews.",
+      "title": "Getting ready",
+      "summary": "Develop leadership and interview readiness",
       "milestones": [
         {
-          "title": "Distributed Systems Deep Dive",
-          "outcome": "Can explain consensus, replication, and failure handling in large‑scale services.",
+          "title": "Distributed systems basics",
+          "outcome": "Can explain consensus, replication, and failure handling in large-scale services.",
           "skill": "Distributed systems",
           "tasks": [
             {
-              "title": "Read CAP Theorem Article on ACM",
-              "description": "Summarize the three guarantees and trade‑offs (25 min).",
+              "title": "Read CAP theorem article on ACM",
+              "description": "Summarize the three guarantees and trade-offs (25 min).",
               "type": "learn",
               "minutes": 25
             },
             {
-              "title": "Implement a Simple Raft Leader Election in Go",
+              "title": "Implement a simple Raft leader election in Go",
               "description": "Code a minimal Raft node that elects a leader among three instances.",
               "type": "build",
               "minutes": 80
             },
             {
-              "title": "Run a Fault Injection Test",
-              "description": "Kill the leader node and observe re‑election, noting logs.",
+              "title": "Run a fault injection test",
+              "description": "Kill the leader node and observe re-election, noting logs.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Connect with Distributed Systems Researchers",
+              "title": "Connect with distributed systems researchers",
               "description": "Attend a free virtual talk from the MIT CSAIL SRE series.",
               "type": "connect",
               "minutes": 60
             },
             {
-              "title": "Reflect on Consistency Choices",
+              "title": "Reflect on consistency choices",
               "description": "Write a brief note on when you’d favor strong vs eventual consistency.",
               "type": "reflect",
               "minutes": 15
@@ -377,36 +377,36 @@
           ]
         },
         {
-          "title": "Leadership & Mentoring",
+          "title": "Leadership & mentoring",
           "outcome": "Can coach junior engineers and drive reliability initiatives.",
           "skill": "Incident management",
           "tasks": [
             {
-              "title": "Read “Team Topologies” Chapter on Enabling Teams",
+              "title": "Read “team topologies” chapter on enabling teams",
               "description": "Focus on the enabling team pattern (30 min).",
               "type": "learn",
               "minutes": 30
             },
             {
-              "title": "Create a 30‑Minute Workshop Outline",
-              "description": "Design a hands‑on session on writing effective runbooks.",
+              "title": "Create a 30-minute workshop outline",
+              "description": "Design a hands-on session on writing effective runbooks.",
               "type": "build",
               "minutes": 45
             },
             {
-              "title": "Facilitate the Workshop with a Peer",
+              "title": "Facilitate the workshop with a peer",
               "description": "Run the session, gather feedback, and iterate.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Connect with a Senior SRE Mentor",
-              "description": "Schedule a 30‑minute coffee chat via a professional network.",
+              "title": "Connect with a senior SRE mentor",
+              "description": "Schedule a 30-minute coffee chat via a professional network.",
               "type": "connect",
               "minutes": 30
             },
             {
-              "title": "Reflect on Coaching Style",
+              "title": "Reflect on coaching style",
               "description": "Write three strengths and two areas to improve as a mentor.",
               "type": "reflect",
               "minutes": 20
@@ -414,36 +414,36 @@
           ]
         },
         {
-          "title": "Senior Interview Prep",
+          "title": "Senior interview prep",
           "outcome": "Can confidently answer system design, troubleshooting, and behavioral questions for SRE roles.",
           "skill": "Programming",
           "tasks": [
             {
-              "title": "Study System Design Primer on educative.io (free preview)",
+              "title": "Study system design primer on educative.io (free preview)",
               "description": "Review scalability, sharding, and caching concepts (35 min).",
               "type": "learn",
               "minutes": 35
             },
             {
-              "title": "Solve Three SRE Coding Challenges on LeetCode",
+              "title": "Solve three SRE coding challenges on LeetCode",
               "description": "Focus on algorithms relevant to log parsing and metric aggregation.",
               "type": "practice",
               "minutes": 90
             },
             {
-              "title": "Mock Incident Response Interview",
+              "title": "Mock Incident response interview",
               "description": "Pair with a peer to run a timed incident scenario and debrief.",
               "type": "practice",
               "minutes": 60
             },
             {
-              "title": "Update Portfolio README with Impact Metrics",
+              "title": "Update portfolio README with impact metrics",
               "description": "Add bullet points showing latency reduction, cost savings, and uptime improvements.",
               "type": "build",
               "minutes": 30
             },
             {
-              "title": "Reflect on Interview Performance",
+              "title": "Reflect on interview performance",
               "description": "Note three answers that felt strong and two that need polishing.",
               "type": "reflect",
               "minutes": 20

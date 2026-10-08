@@ -1,13 +1,13 @@
 {
-  "title": "Data Analyst Learning Roadmap",
-  "summary": "A step‑by‑step guide to become a data analyst from scratch, covering essential tools, analytical techniques, and a portfolio to showcase your work. Follow the phases to build competence, create real projects, and prepare for job opportunities.",
+  "title": "Data Analyst learning roadmap",
+  "summary": "A step-by-step guide to become a data analyst from scratch, covering essential tools, analytical techniques, and a portfolio to showcase your work. Follow the phases to build competence, create real projects, and prepare for job opportunities.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build the basic literacy needed to work with data in everyday tools.",
       "milestones": [
         {
-          "title": "Spreadsheet Fundamentals",
+          "title": "Spreadsheet fundamentals",
           "outcome": "You can clean, transform, and visualize data using Excel or Google Sheets.",
           "skill": "Spreadsheets",
           "tasks": [
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "title": "Introductory Statistics",
+          "title": "Introductory statistics",
           "outcome": "You can describe data distributions and perform simple hypothesis tests.",
           "skill": "Statistics",
           "tasks": [
@@ -87,25 +87,25 @@
             },
             {
               "title": "Calculate descriptive stats in Sheets",
-              "description": "Use built‑in functions to compute mean, median, standard deviation on a sample dataset.",
+              "description": "Use built-in functions to compute mean, median, standard deviation on a sample dataset.",
               "type": "practice",
               "minutes": 30
             },
             {
-              "title": "Perform a t‑test in Google Sheets",
+              "title": "Perform a t-test in Google Sheets",
               "description": "Apply the TTEST function to compare two groups in the provided experiment data.",
               "type": "practice",
               "minutes": 40
             },
             {
               "title": "Summarize findings in a brief report",
-              "description": "Write a one‑page summary interpreting the statistical results for a non‑technical audience.",
+              "description": "Write a one-page summary interpreting the statistical results for a non-technical audience.",
               "type": "build",
               "minutes": 50
             },
             {
               "title": "Reflect on statistical assumptions",
-              "description": "Note any assumptions you made during the t‑test and how they affect conclusions.",
+              "description": "Note any assumptions you made during the t-test and how they affect conclusions.",
               "type": "reflect",
               "minutes": 20
             }
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Develop programming and visualization abilities to analyze data efficiently.",
       "milestones": [
         {
@@ -155,12 +155,12 @@
           ]
         },
         {
-          "title": "Data Visualisation Techniques",
+          "title": "Data visualisation techniques",
           "outcome": "You can create clear, interactive charts to communicate insights.",
           "skill": "Data visualisation",
           "tasks": [
             {
-              "title": "Study chart best‑practice guide",
+              "title": "Study chart best-practice guide",
               "description": "Read the Data Visualization Handbook chapter on choosing appropriate chart types (free PDF).",
               "type": "learn",
               "minutes": 35
@@ -197,7 +197,7 @@
           "skill": "Storytelling with data",
           "tasks": [
             {
-              "title": "Read storytelling article on Storytelling with Data",
+              "title": "Read storytelling article on storytelling with Data",
               "description": "Study Cole Nussbaumer Knaflic’s free blog post on the principles of data storytelling.",
               "type": "learn",
               "minutes": 30
@@ -209,14 +209,14 @@
               "minutes": 40
             },
             {
-              "title": "Create a slide deck in Google Slides",
-              "description": "Translate the outline into a 5‑slide presentation with charts and concise text.",
+              "title": "Create a slide deck in Google slides",
+              "description": "Translate the outline into a 5-slide presentation with charts and concise text.",
               "type": "build",
               "minutes": 55
             },
             {
               "title": "Practice presenting to a peer",
-              "description": "Record a 3‑minute pitch of your deck and get feedback from a friend or online community.",
+              "description": "Record a 3-minute pitch of your deck and get feedback from a friend or online community.",
               "type": "practice",
               "minutes": 45
             },
@@ -231,12 +231,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Apply your skills to real‑world projects that demonstrate your capabilities.",
+      "title": "Proof of work",
+      "summary": "Apply your skills to real-world projects that demonstrate your capabilities.",
       "milestones": [
         {
-          "title": "Sales Dashboard Project",
-          "outcome": "You can deliver an end‑to‑end sales dashboard with insights and visualizations.",
+          "title": "Sales dashboard project",
+          "outcome": "You can deliver an end-to-end sales dashboard with insights and visualizations.",
           "skill": null,
           "tasks": [
             {
@@ -265,20 +265,20 @@
             },
             {
               "title": "Write a project summary",
-              "description": "Compose a one‑page write‑up describing methodology, findings, and business impact.",
+              "description": "Compose a one-page write-up describing methodology, findings, and business impact.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Publish and share portfolio link",
-              "description": "Upload the dashboard and write‑up to your online portfolio and share on LinkedIn.",
+              "description": "Upload the dashboard and write-up to your online portfolio and share on LinkedIn.",
               "type": "connect",
               "minutes": 30
             }
           ]
         },
         {
-          "title": "A/B Test Analysis Write‑up",
+          "title": "A/B test analysis write-up",
           "outcome": "You can evaluate experiment results and communicate conclusions effectively.",
           "skill": null,
           "tasks": [
@@ -290,25 +290,25 @@
             },
             {
               "title": "Perform statistical analysis in Sheets",
-              "description": "Calculate conversion rates, confidence intervals, and perform a chi‑square test.",
+              "description": "Calculate conversion rates, confidence intervals, and perform a chi-square test.",
               "type": "practice",
               "minutes": 55
             },
             {
               "title": "Visualize test results with charts",
-              "description": "Create side‑by‑side bar charts and a funnel diagram to illustrate outcomes.",
+              "description": "Create side-by-side bar charts and a funnel diagram to illustrate outcomes.",
               "type": "build",
               "minutes": 45
             },
             {
               "title": "Draft a concise report",
-              "description": "Write a 2‑page report summarizing hypothesis, methodology, results, and recommendation.",
+              "description": "Write a 2-page report summarizing hypothesis, methodology, results, and recommendation.",
               "type": "build",
               "minutes": 60
             },
             {
               "title": "Get feedback from a mentor",
-              "description": "Share the report with a data‑analysis mentor on a forum and incorporate suggestions.",
+              "description": "Share the report with a data-analysis mentor on a forum and incorporate suggestions.",
               "type": "connect",
               "minutes": 30
             },
@@ -323,11 +323,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Deepen expertise, learn advanced topics, and prepare for job or freelance opportunities.",
       "milestones": [
         {
-          "title": "Advanced SQL & Data Modeling",
+          "title": "Advanced SQL & Data modeling",
           "outcome": "You can design efficient schemas and write complex queries for large datasets.",
           "skill": "SQL",
           "tasks": [
@@ -370,7 +370,7 @@
           ]
         },
         {
-          "title": "Statistical Modeling & Machine Learning Basics",
+          "title": "Statistical modeling & machine learning Basics",
           "outcome": "You can apply regression and classification models to business problems.",
           "skill": "Statistics",
           "tasks": [
@@ -382,18 +382,18 @@
             },
             {
               "title": "Implement linear regression in Python",
-              "description": "Use scikit‑learn to fit a model on the sales dataset and evaluate R².",
+              "description": "Use scikit-learn to fit a model on the sales dataset and evaluate R².",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Validate model with cross‑validation",
-              "description": "Apply K‑fold cross‑validation and interpret results.",
+              "title": "Validate model with cross-validation",
+              "description": "Apply K-fold cross-validation and interpret results.",
               "type": "practice",
               "minutes": 55
             },
             {
-              "title": "Explain model to a non‑technical friend",
+              "title": "Explain model to a non-technical friend",
               "description": "Prepare a short explanation of the regression findings in plain language.",
               "type": "practice",
               "minutes": 30
@@ -413,7 +413,7 @@
           ]
         },
         {
-          "title": "Job & Freelance Readiness",
+          "title": "Job & freelance readiness",
           "outcome": "You can market yourself, interview confidently, and land data analyst roles.",
           "skill": "Storytelling with data",
           "tasks": [
@@ -436,7 +436,7 @@
               "minutes": 60
             },
             {
-              "title": "Prepare a 10‑minute case study presentation",
+              "title": "Prepare a 10-minute case study presentation",
               "description": "Summarize one portfolio project as a live case study for interviews.",
               "type": "practice",
               "minutes": 70

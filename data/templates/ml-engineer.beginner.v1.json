@@ -1,6 +1,6 @@
 {
-  "title": "Machine Learning Engineer Roadmap",
-  "summary": "A step‑by‑step guide to go from zero to a job‑ready ML engineer. It builds solid foundations, core ML skills, a showcase portfolio, and job‑ready readiness.",
+  "title": "Machine Learning Engineer roadmap",
+  "summary": "A step-by-step guide to go from zero to a job-ready ML engineer. It builds solid foundations, core ML skills, a showcase portfolio, and job-ready readiness.",
   "phases": [
     {
       "title": "Foundations",
@@ -12,7 +12,7 @@
           "skill": null,
           "tasks": [
             {
-              "title": "Read Git Handbook on Git‑SCM.com",
+              "title": "Read Git handbook on Git-SCM.com",
               "description": "Learn core concepts like commit, branch, and merge.",
               "type": "learn",
               "minutes": 30
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Learn essential ML libraries and evaluation methods.",
       "milestones": [
         {
@@ -49,20 +49,20 @@
           "skill": "Model evaluation",
           "tasks": [
             {
-              "title": "Read Model Evaluation chapter on Coursera ML course",
+              "title": "Read model evaluation chapter on Coursera ML course",
               "description": "Focus on precision, recall, ROC, and confusion matrix.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Compute classification metrics on a Kaggle dataset",
-              "description": "Use scikit‑learn functions to generate reports.",
+              "description": "Use scikit-learn functions to generate reports.",
               "type": "practice",
               "minutes": 45
             },
             {
-              "title": "Create a visual ROC curve plot with Matplotlib",
-              "description": "Display trade‑offs and annotate AUC.",
+              "title": "Create a visual ROC curve plot with matplotlib",
+              "description": "Display trade-offs and annotate AUC.",
               "type": "build",
               "minutes": 40
             },
@@ -77,8 +77,8 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Build portfolio projects that showcase end‑to‑end ML pipelines.",
+      "title": "Proof of work",
+      "summary": "Build portfolio projects that showcase end-to-end ML pipelines.",
       "milestones": [
         {
           "title": "Model monitoring dashboard",
@@ -120,8 +120,8 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Advance your expertise, master MLOps, and prepare for job search.",
+      "title": "Getting ready",
+      "summary": "Develop MLOps skills and plan your job search.",
       "milestones": [
         {
           "title": "Job and client readiness",
@@ -135,7 +135,7 @@
               "minutes": 30
             },
             {
-              "title": "Prepare a 5‑minute elevator pitch for each portfolio project",
+              "title": "Prepare a 5-minute elevator pitch for each portfolio project",
               "description": "Focus on problem, solution, impact, and metrics.",
               "type": "practice",
               "minutes": 45

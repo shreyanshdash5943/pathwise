@@ -1,19 +1,19 @@
 {
-  "title": "Machine Learning Engineer Roadmap",
-  "summary": "A concise pathway from solid fundamentals to a job‑ready portfolio, focusing on core ML concepts, hands‑on projects, and deployment basics. Follow each phase to build confidence, showcase work, and prepare for hiring or freelancing.",
+  "title": "Machine Learning Engineer roadmap",
+  "summary": "A concise pathway from solid fundamentals to a job-ready portfolio, focusing on core ML concepts, hands-on projects, and deployment basics. Follow each phase to build confidence, showcase work, and prepare for hiring or freelancing.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Establish the mathematical and programming base needed for modern ML.",
       "milestones": [
         {
-          "title": "Python for Data Science",
+          "title": "Python for data science",
           "outcome": "Write clean Python scripts for data loading, cleaning, and visualization.",
           "skill": "Python",
           "tasks": [
             {
               "title": "Complete Python basics on freeCodeCamp",
-              "description": "Work through the JavaScript‑free Python curriculum, focusing on functions and data structures.",
+              "description": "Work through the JavaScript-free Python curriculum, focusing on functions and data structures.",
               "type": "learn",
               "minutes": 60
             },
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "Linear Algebra & Probability Refresher",
+          "title": "Linear algebra & probability refresher",
           "outcome": "Apply vector, matrix, and probability concepts to simple ML formulas.",
           "skill": "Linear algebra and probability",
           "tasks": [
@@ -62,7 +62,7 @@
             },
             {
               "title": "Summarize key formulas",
-              "description": "Create a one‑page cheat sheet of formulas you’ll reuse.",
+              "description": "Create a one-page cheat sheet of formulas you’ll reuse.",
               "type": "reflect",
               "minutes": 20
             }
@@ -71,11 +71,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Gain practical expertise with essential ML libraries and evaluation techniques.",
       "milestones": [
         {
-          "title": "scikit-learn Mastery",
+          "title": "Scikit-learn basics",
           "outcome": "Build, tune, and evaluate classic models using scikit-learn.",
           "skill": "scikit-learn",
           "tasks": [
@@ -87,12 +87,12 @@
             },
             {
               "title": "Implement a churn predictor",
-              "description": "Use a public dataset to train a logistic regression, evaluate with ROC‑AUC.",
+              "description": "Use a public dataset to train a logistic regression, evaluate with ROC-AUC.",
               "type": "build",
               "minutes": 70
             },
             {
-              "title": "Practice cross‑validation",
+              "title": "Practice cross-validation",
               "description": "Apply KFold to the churn model and record variance in scores.",
               "type": "practice",
               "minutes": 45
@@ -111,14 +111,14 @@
           "skill": "PyTorch",
           "tasks": [
             {
-              "title": "Follow PyTorch official tutorial 60‑minute blitz",
+              "title": "Follow PyTorch official tutorial 60-minute blitz",
               "description": "Run each code cell, modify the loss function, and note changes.",
               "type": "learn",
               "minutes": 60
             },
             {
               "title": "Build a simple MLP for MNIST",
-              "description": "Create a two‑layer network, train for 5 epochs, and log accuracy.",
+              "description": "Create a two-layer network, train for 5 epochs, and log accuracy.",
               "type": "build",
               "minutes": 80
             },
@@ -139,12 +139,12 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio‑ready projects that demonstrate end‑to‑end ML pipelines.",
+      "title": "Proof of work",
+      "summary": "Create portfolio-ready projects that demonstrate end-to-end ML pipelines.",
       "milestones": [
         {
-          "title": "Churn Prediction Project",
-          "outcome": "Publish a write‑up and GitHub repo showing data prep, modeling, and evaluation.",
+          "title": "Churn prediction project",
+          "outcome": "Publish a write-up and GitHub repo showing data prep, modeling, and evaluation.",
           "skill": null,
           "tasks": [
             {
@@ -180,13 +180,13 @@
           ]
         },
         {
-          "title": "Image Classifier API",
+          "title": "Image classifier API",
           "outcome": "Deploy a PyTorch image classifier behind a REST API and document the process.",
           "skill": null,
           "tasks": [
             {
               "title": "Choose a small image dataset",
-              "description": "Use CIFAR‑10 subset and store images locally.",
+              "description": "Use CIFAR-10 subset and store images locally.",
               "type": "build",
               "minutes": 30
             },
@@ -219,16 +219,16 @@
       ]
     },
     {
-      "title": "Getting Ready",
-      "summary": "Round out expertise with MLOps basics, model evaluation depth, and job‑search preparation.",
+      "title": "Getting ready",
+      "summary": "Round out expertise with MLOps basics, model evaluation depth, and job-search preparation.",
       "milestones": [
         {
-          "title": "Model Evaluation Deep Dive",
+          "title": "Model evaluation overview",
           "outcome": "Select, compute, and interpret advanced metrics for classification and regression.",
           "skill": "Model evaluation",
           "tasks": [
             {
-              "title": "Read Model Evaluation chapter on MDN",
+              "title": "Read model evaluation chapter on MDN",
               "description": "Focus on precision, recall, F1, and calibration curves.",
               "type": "learn",
               "minutes": 40
@@ -241,12 +241,12 @@
             },
             {
               "title": "Practice error analysis",
-              "description": "Identify top mis‑classified examples and hypothesize reasons.",
+              "description": "Identify top mis-classified examples and hypothesize reasons.",
               "type": "practice",
               "minutes": 35
             },
             {
-              "title": "Reflect on metric trade‑offs",
+              "title": "Reflect on metric trade-offs",
               "description": "Summarize when to prioritize recall over precision in a short note.",
               "type": "reflect",
               "minutes": 20
@@ -254,7 +254,7 @@
           ]
         },
         {
-          "title": "MLOps Basics",
+          "title": "MLOps basics",
           "outcome": "Set up a reproducible training pipeline with version control and simple CI.",
           "skill": "MLOps basics",
           "tasks": [
@@ -285,7 +285,7 @@
           ]
         },
         {
-          "title": "Job & Client Readiness",
+          "title": "Job & client readiness",
           "outcome": "Craft targeted application materials and interview confidence.",
           "skill": "Python",
           "tasks": [

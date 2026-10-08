@@ -1,13 +1,13 @@
 {
-  "title": "Technical Product Manager Deep‑Dive Roadmap",
-  "summary": "A step‑by‑step plan to master the technical and product skills needed for platform and API product leadership. Focuses on depth, best practices, and building a showcase portfolio.",
+  "title": "Technical Product Manager roadmap",
+  "summary": "A step-by-step plan to develop The technical and Product skills needed for platform and API Product leadership. It emphasizes solid techniques and creating a portfolio.",
   "phases": [
     {
       "title": "Foundations",
       "summary": "Build core technical literacy and empathy for engineering teams.",
       "milestones": [
         {
-          "title": "API and System Basics",
+          "title": "API and system basics",
           "outcome": "Can explain how APIs, microservices, and data flows work in a platform.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -19,18 +19,18 @@
             },
             {
               "title": "Sketch a simple system diagram",
-              "description": "Draw a diagram of a three‑service architecture using pen and paper.",
+              "description": "Draw a diagram of a three-service architecture using pen and paper.",
               "type": "practice",
               "minutes": 30
             },
             {
               "title": "Watch freeCodeCamp API video",
-              "description": "Complete the 20‑minute video on building a basic API with Node.js.",
+              "description": "Complete the 20-minute video on building a basic API with Node.js.",
               "type": "learn",
               "minutes": 20
             },
             {
-              "title": "Write a 200‑word API overview",
+              "title": "Write a 200-word API overview",
               "description": "Summarize the purpose and key components of the API you sketched.",
               "type": "reflect",
               "minutes": 15
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "title": "SQL Fundamentals",
+          "title": "SQL fundamentals",
           "outcome": "Can query a relational database to extract product usage metrics.",
           "skill": "SQL",
           "tasks": [
@@ -69,25 +69,25 @@
           ]
         },
         {
-          "title": "Developer Empathy",
+          "title": "Developer empathy",
           "outcome": "Can anticipate engineering concerns and communicate effectively with dev teams.",
           "skill": "Developer empathy",
           "tasks": [
             {
-              "title": "Read \"The Pragmatic Engineer\" blog post",
+              "title": "Read \"The Pragmatic engineer\" blog post",
               "description": "Read the article on developer motivations and pain points.",
               "type": "learn",
               "minutes": 30
             },
             {
               "title": "Interview a developer (mock)",
-              "description": "Prepare three questions and conduct a 15‑minute interview with a colleague about their workflow.",
+              "description": "Prepare three questions and conduct a 15-minute interview with a colleague about their workflow.",
               "type": "practice",
               "minutes": 45
             },
             {
               "title": "Document empathy notes",
-              "description": "Write a one‑page summary of insights and how they affect product decisions.",
+              "description": "Write a one-page summary of insights and how they affect product decisions.",
               "type": "reflect",
               "minutes": 25
             },
@@ -102,11 +102,11 @@
       ]
     },
     {
-      "title": "Core Skills",
+      "title": "Core skills",
       "summary": "Apply technical knowledge to product specifications and prioritisation frameworks.",
       "milestones": [
         {
-          "title": "Technical Specification Writing",
+          "title": "Technical specification writing",
           "outcome": "Can produce clear, actionable specs for API features.",
           "skill": "Technical specs",
           "tasks": [
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "title": "Prioritisation Frameworks",
+          "title": "Prioritisation frameworks",
           "outcome": "Can rank features using data, impact, and effort criteria.",
           "skill": "Prioritisation",
           "tasks": [
@@ -173,14 +173,14 @@
             },
             {
               "title": "Write a short prioritisation rationale",
-              "description": "Summarize why the top‑ranked feature should be built first.",
+              "description": "Summarize why the top-ranked feature should be built first.",
               "type": "reflect",
               "minutes": 20
             }
           ]
         },
         {
-          "title": "Delivery Planning Essentials",
+          "title": "Delivery planning Essentials",
           "outcome": "Can design realistic release plans and track delivery milestones.",
           "skill": "Delivery planning",
           "tasks": [
@@ -192,7 +192,7 @@
             },
             {
               "title": "Map a release timeline",
-              "description": "Create a visual timeline for a 3‑month product launch using a whiteboard.",
+              "description": "Create a visual timeline for a 3-month product launch using a whiteboard.",
               "type": "build",
               "minutes": 45
             },
@@ -219,11 +219,11 @@
       ]
     },
     {
-      "title": "Proof of Work",
-      "summary": "Create portfolio pieces that demonstrate end‑to‑end product ownership.",
+      "title": "Proof of work",
+      "summary": "Create portfolio pieces that demonstrate end-to-end product ownership.",
       "milestones": [
         {
-          "title": "API Product Spec Portfolio",
+          "title": "API Product spec portfolio",
           "outcome": "A polished API spec ready to showcase to recruiters.",
           "skill": null,
           "tasks": [
@@ -260,7 +260,7 @@
           ]
         },
         {
-          "title": "Technical Roadmap Project",
+          "title": "Technical roadmap project",
           "outcome": "A strategic roadmap outlining platform evolution over 12 months.",
           "skill": null,
           "tasks": [
@@ -290,14 +290,14 @@
             },
             {
               "title": "Present roadmap to a peer group",
-              "description": "Run a 15‑minute walkthrough and collect critique.",
+              "description": "Run a 15-minute walkthrough and collect critique.",
               "type": "connect",
               "minutes": 40
             }
           ]
         },
         {
-          "title": "Data‑Backed Feature Proposal",
+          "title": "Data-backed feature proposal",
           "outcome": "A proposal that uses SQL analysis to justify a new feature.",
           "skill": null,
           "tasks": [
@@ -336,11 +336,11 @@
       ]
     },
     {
-      "title": "Getting Ready",
+      "title": "Getting ready",
       "summary": "Refine advanced practices and prepare for job or client engagements.",
       "milestones": [
         {
-          "title": "Advanced API Strategy",
+          "title": "Advanced API strategy",
           "outcome": "Can design scalable API products with versioning and governance.",
           "skill": "APIs and system basics",
           "tasks": [
@@ -358,19 +358,19 @@
             },
             {
               "title": "Simulate a deprecation workflow",
-              "description": "Write a step‑by‑step plan to retire an old endpoint safely.",
+              "description": "Write a step-by-step plan to retire an old endpoint safely.",
               "type": "practice",
               "minutes": 35
             },
             {
               "title": "Discuss strategy with a mentor",
-              "description": "Schedule a 30‑minute call to review your plan and get advice.",
+              "description": "Schedule a 30-minute call to review your plan and get advice.",
               "type": "connect",
               "minutes": 30
             },
             {
               "title": "Document lessons learned",
-              "description": "Summarize key takeaways in a one‑page cheat sheet.",
+              "description": "Summarize key takeaways in a one-page cheat sheet.",
               "type": "reflect",
               "minutes": 20
             }
