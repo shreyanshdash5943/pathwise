@@ -245,11 +245,11 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
               </div>
 
               <div className="mt-10 flex items-center justify-between gap-3">
-                <button type="button" onClick={goBack} disabled={index === 0} className="btn-quiet -ml-3 px-3 disabled:invisible">
+                <button type="button" onClick={goBack} disabled={index === 0} className="btn-quiet -ml-3 shrink-0 whitespace-nowrap px-3 disabled:invisible">
                   <ArrowLeft className="h-4 w-4" /> Back
                 </button>
 
-                <nav aria-label="Questions" className="flex items-center gap-1.5">
+                <nav aria-label="Questions" className="hidden min-w-0 items-center gap-1.5 sm:flex">
                   {QUESTIONS.map((x, i) => {
                     const done = (answers[x.id]?.length ?? 0) > 0;
                     const current = i === index;
@@ -279,7 +279,7 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
                   onClick={goNext}
                   disabled={!answered}
                   title={answered ? undefined : "Pick an answer first"}
-                  className="btn-primary"
+                  className="btn-primary shrink-0 whitespace-nowrap"
                 >
                   {isLast ? "See my routes" : "Next"}
                   {!isLast && <ArrowRight className="h-4 w-4" />}

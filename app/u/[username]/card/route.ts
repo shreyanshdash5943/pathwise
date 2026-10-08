@@ -20,9 +20,11 @@ export async function GET(req: Request, ctx: { params: Promise<{ username: strin
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition": `attachment; filename="${file}"`,
-      // Not cached by the CDN, so every download is counted. Building it takes milliseconds,
-      // and the profile data behind it is still cached for 5 minutes.
-      "Cache-Control": "private, no-store",
+      // Cached at the CDN for 5 min so a burst of downloads is served from the edge
+      // instead of rebuilding the PDF each time (a flood becomes cache hits, not cost).
+      // The download count only ticks on cache misses, i.e. it slightly undercounts; that
+      // is the right trade against letting anyone force unbounded PDF builds.
+      "Cache-Control": "public, max-age=0, s-maxage=300, stale-while-revalidate=60",
     },
   });
 }
