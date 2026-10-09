@@ -87,6 +87,7 @@ npm run typecheck  # TypeScript only
 | Pro status and gating | `lib/pro.ts`, `app/(app)/pro/`, `supabase/migrations/007_pro.sql` |
 | Profile analytics | `lib/analytics.ts`, `components/profile-analytics.tsx`, `app/u/[username]/go/` |
 | Roadmap editing | `lib/plan-edits.ts`, `lib/plan-edit-api.ts`, `app/api/plan/` |
+| Accountability pods | `lib/pods.ts`, `app/api/pods/`, `app/(app)/pods/`, `components/pod-room.tsx` |
 | Reminders (web push) | `lib/push.ts`, `lib/reminders.ts`, `app/api/cron/reminders/`, `public/sw.js`, `components/reminders-panel.tsx` |
 | News sources (DEV + Hacker News, no keys) | `lib/news.ts` |
 | Database schema and RLS | `supabase/schema.sql` |
@@ -102,6 +103,8 @@ npm run typecheck  # TypeScript only
 **Habits.** People add their own daily items (for example "LeetCode daily") under the plan's checklist, tick them off, and keep a note per day: what they worked on, a link, their approach and their code. `/habits` shows each habit's history and streak.
 
 **Contact card.** On the public profile, email, phone and a resume download are each off until the owner switches them on. `/u/<username>/card` returns a one-page PDF with clickable links (built with pdf-lib, no external service). Public resume downloads go through a storage policy that checks the profile is public and the resume is shared, so the service-role key is still never used.
+
+**Accountability pods.** Small invite-only groups (friends, classmates) who see each other's streak and weekly activity and send cheers, with a check-in feed. The research is clear that external accountability is what makes people finish, so this is free, not Pro. The tables are locked down; every read and write goes through a membership-checked `SECURITY DEFINER` function (`supabase/migrations/008_pods.sql`), and a pod view exposes only name, role, streak and weekly activity — never email, phone, resume, answers, or habit-note contents. Pods: up to 6 people; a person is in at most 3.
 
 **Pro.** `entitlements` says who has Pro; only the database owner can write it (SQL Editor now, a payment webhook later). Every Pro-only write is checked by a database trigger calling `is_pro()`, so the API can't be bypassed. Pro includes profile analytics (each visitor counted once a day, bots and the owner ignored, no IPs stored), roadmap editing (your own tasks, removed tasks and order, layered over the shared template), streak freezes (3 a month, applied automatically) and a premium profile (short usernames, two more PDF card designs, no Pathwise footer). If Pro lapses, nothing is deleted; the public page just falls back to the free look.
 

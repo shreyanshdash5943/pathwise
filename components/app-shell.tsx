@@ -3,13 +3,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import { motion } from "framer-motion";
-import { CalendarCheck2, Map, Newspaper, Settings2, Sparkles, UserRound } from "lucide-react";
+import { CalendarCheck2, Map, Newspaper, Settings2, Sparkles, Users, UserRound } from "lucide-react";
 import clsx from "clsx";
 import { Logo } from "./logo";
 
 const NAV = [
   { href: "/dashboard", label: "Today", icon: CalendarCheck2 },
   { href: "/roadmap", label: "Roadmap", icon: Map },
+  { href: "/pods", label: "Pods", icon: Users },
   { href: "/news", label: "News", icon: Newspaper },
   { href: "/profile", label: "Profile", icon: UserRound },
   { href: "/settings", label: "Settings", icon: Settings2 },
@@ -82,7 +83,7 @@ export function AppShell({ children, roleTitle }: { children: React.ReactNode; r
       {/* Mobile tab bar */}
       <nav
         aria-label="Main"
-        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-line bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-6 border-t border-line bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
       >
         {NAV.map(({ href, label, icon: Icon }) => {
           const active = isActive(href);
@@ -93,7 +94,7 @@ export function AppShell({ children, roleTitle }: { children: React.ReactNode; r
               aria-current={active ? "page" : undefined}
               className={clsx("flex flex-col items-center gap-1 py-2.5 text-[11.5px] font-medium", active ? "text-accent" : "text-muted")}
             >
-              <span className="relative grid h-7 w-12 place-items-center">
+              <span className="relative grid h-7 w-10 place-items-center">
                 {active && (
                   <motion.span
                     layoutId="tab-pill"
