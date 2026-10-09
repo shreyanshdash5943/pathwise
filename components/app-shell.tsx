@@ -3,18 +3,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import { motion } from "framer-motion";
-import { CalendarCheck2, Map, Newspaper, Settings2, Sparkles, Users, UserRound } from "lucide-react";
+import { Briefcase, CalendarCheck2, Map, Newspaper, Settings2, Sparkles, Users, UserRound } from "lucide-react";
 import clsx from "clsx";
 import { Logo } from "./logo";
 
 const NAV = [
-  { href: "/dashboard", label: "Today", icon: CalendarCheck2 },
-  { href: "/roadmap", label: "Roadmap", icon: Map },
-  { href: "/pods", label: "Pods", icon: Users },
-  { href: "/news", label: "News", icon: Newspaper },
-  { href: "/profile", label: "Profile", icon: UserRound },
-  { href: "/settings", label: "Settings", icon: Settings2 },
+  { href: "/dashboard", label: "Today", icon: CalendarCheck2, mobile: true },
+  { href: "/roadmap", label: "Roadmap", icon: Map, mobile: true },
+  { href: "/pods", label: "Pods", icon: Users, mobile: true },
+  { href: "/jobs", label: "Jobs", icon: Briefcase, mobile: true },
+  { href: "/news", label: "News", icon: Newspaper, mobile: false },
+  { href: "/profile", label: "Profile", icon: UserRound, mobile: true },
+  { href: "/settings", label: "Settings", icon: Settings2, mobile: true },
 ];
+const MOBILE_NAV = NAV.filter((n) => n.mobile);
 
 export function AppShell({ children, roleTitle }: { children: React.ReactNode; roleTitle: string }) {
   const pathname = usePathname();
@@ -85,7 +87,7 @@ export function AppShell({ children, roleTitle }: { children: React.ReactNode; r
         aria-label="Main"
         className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-6 border-t border-line bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
       >
-        {NAV.map(({ href, label, icon: Icon }) => {
+        {MOBILE_NAV.map(({ href, label, icon: Icon }) => {
           const active = isActive(href);
           return (
             <Link

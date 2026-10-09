@@ -88,6 +88,7 @@ npm run typecheck  # TypeScript only
 | Profile analytics | `lib/analytics.ts`, `components/profile-analytics.tsx`, `app/u/[username]/go/` |
 | Roadmap editing | `lib/plan-edits.ts`, `lib/plan-edit-api.ts`, `app/api/plan/` |
 | Accountability pods | `lib/pods.ts`, `app/api/pods/`, `app/(app)/pods/`, `components/pod-room.tsx` |
+| Getting hired (tracker + interview prep) | `lib/prep.ts`, `lib/interview-questions.ts`, `app/api/applications/`, `app/api/interview/`, `app/(app)/jobs/` |
 | Reminders (web push) | `lib/push.ts`, `lib/reminders.ts`, `app/api/cron/reminders/`, `public/sw.js`, `components/reminders-panel.tsx` |
 | News sources (DEV + Hacker News, no keys) | `lib/news.ts` |
 | Database schema and RLS | `supabase/schema.sql` |
@@ -103,6 +104,8 @@ npm run typecheck  # TypeScript only
 **Habits.** People add their own daily items (for example "LeetCode daily") under the plan's checklist, tick them off, and keep a note per day: what they worked on, a link, their approach and their code. `/habits` shows each habit's history and streak.
 
 **Contact card.** On the public profile, email, phone and a resume download are each off until the owner switches them on. `/u/<username>/card` returns a one-page PDF with clickable links (built with pdf-lib, no external service). Public resume downloads go through a storage policy that checks the profile is public and the resume is shared, so the service-role key is still never used.
+
+**Getting hired.** An application tracker (company, stage, next step, notes) with a supportive reframe when a role closes, plus an interview-prep bank. The standout: behavioural answers are built in STAR form from the user's own proof-of-work projects — linked by `proof_id`, so the prep is grounded in real work, not generic advice. The question bank is hand-written (`lib/interview-questions.ts`), 8 behavioural + 6 technical per field; no AI. Both tables are private per user; a saved answer survives its linked project being deleted (the link just clears).
 
 **Accountability pods.** Small invite-only groups (friends, classmates) who see each other's streak and weekly activity and send cheers, with a check-in feed. The research is clear that external accountability is what makes people finish, so this is free, not Pro. The tables are locked down; every read and write goes through a membership-checked `SECURITY DEFINER` function (`supabase/migrations/008_pods.sql`), and a pod view exposes only name, role, streak and weekly activity — never email, phone, resume, answers, or habit-note contents. Pods: up to 6 people; a person is in at most 3.
 
