@@ -141,7 +141,7 @@ export function HabitsPanel({
   }
 
   return (
-    <section className="panel overflow-hidden" aria-labelledby="habits-heading">
+    <section className="panel" aria-labelledby="habits-heading">
       <div className="flex items-baseline justify-between gap-4 px-5 pt-5 sm:px-6">
         <h2
           id="habits-heading"
@@ -217,9 +217,9 @@ export function HabitsPanel({
                 <Trash2 className="h-4 w-4" />
               </button>
 
-              {/* Confirmation popover above the delete button */}
+              {/* Confirmation popover below the delete button */}
               {deleteTarget === h.id && (
-                <div className="absolute bottom-full right-0 z-50 mb-2 w-64 rounded-xl border border-line bg-white p-3 shadow-lg">
+                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-xl border border-line bg-white p-3 shadow-lg">
                   <p className="text-sm font-medium text-ink">
                     Delete this habit?
                   </p>
@@ -260,7 +260,7 @@ export function HabitsPanel({
               className={`${field} h-10`}
               value={draft}
               maxLength={80}
-              placeholder="LeetCode daily"
+              placeholder="Add habbit"
               onChange={(e) => setDraft(e.target.value)}
               onKeyDown={(e) => e.key === "Escape" && setAdding(false)}
             />
