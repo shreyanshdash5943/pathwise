@@ -36,8 +36,8 @@ export async function createPlan(supabase: SupabaseClient, role: Role, answers: 
 export async function getOrMigratePlan(supabase: SupabaseClient, profile: Profile | null): Promise<Plan | null> {
   const plan = await getPlan(supabase);
   if (plan || !profile) return plan;
-  const role = getRole(profile.role_id);
-  if (!role) return null;
+  const role = profile.role_id ? getRole(profile.role_id) : undefined;
+  if (!role || !profile.answers) return null;
 
   const legacy = await supabase.from("roadmaps").select("id").eq("is_active", true).limit(1).maybeSingle();
   if (legacy.error) throw legacy.error;

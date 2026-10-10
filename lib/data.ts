@@ -10,10 +10,11 @@ import { applyEdits, type CustomTask, type EditedTask, type Override } from "./p
 
 export type Profile = {
   user_id: string;
-  answers: Answers;
-  role_id: string;
-  role_title: string;
-  field: string;
+  /** Plan-specific fields are null for a habits-only user who hasn't built a plan yet. */
+  answers: Answers | null;
+  role_id: string | null;
+  role_title: string | null;
+  field: string | null;
   daily_minutes: number;
   timezone: string;
   created_at: string;

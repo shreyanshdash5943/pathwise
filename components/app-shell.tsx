@@ -18,7 +18,7 @@ const NAV = [
 ];
 const MOBILE_NAV = NAV.filter((n) => n.mobile);
 
-export function AppShell({ children, roleTitle }: { children: React.ReactNode; roleTitle: string }) {
+export function AppShell({ children, roleTitle, hasPlan }: { children: React.ReactNode; roleTitle: string | null; hasPlan: boolean }) {
   const pathname = usePathname();
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
@@ -27,10 +27,17 @@ export function AppShell({ children, roleTitle }: { children: React.ReactNode; r
       {/* Desktop sidebar */}
       <aside className="fixed inset-y-0 left-0 z-20 hidden w-[248px] flex-col border-r border-line bg-white px-4 py-5 lg:flex">
         <Logo href="/dashboard" className="px-2" />
-        <div className="mt-6 rounded-xl bg-surface px-3 py-2.5">
-          <p className="text-[12.5px] text-muted">Working towards</p>
-          <p className="mt-0.5 truncate text-[14.5px] font-semibold">{roleTitle}</p>
-        </div>
+        {hasPlan && roleTitle ? (
+          <div className="mt-6 rounded-xl bg-surface px-3 py-2.5">
+            <p className="text-[12.5px] text-muted">Working towards</p>
+            <p className="mt-0.5 truncate text-[14.5px] font-semibold">{roleTitle}</p>
+          </div>
+        ) : (
+          <Link href="/onboarding?build=1" className="mt-6 block rounded-xl bg-accent-soft px-3 py-2.5 transition-colors hover:bg-accent-line/50">
+            <p className="text-[12.5px] text-accent">Tracking habits</p>
+            <p className="mt-0.5 text-[14px] font-semibold text-accent">Build a career plan →</p>
+          </Link>
+        )}
         <nav className="mt-6 flex flex-col gap-0.5" aria-label="Main">
           {NAV.map(({ href, label, icon: Icon }) => {
             const active = isActive(href);

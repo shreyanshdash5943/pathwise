@@ -24,8 +24,10 @@ export async function PATCH(req: Request) {
 }
 
 /**
- * Starts over: removes the plan, its progress and the onboarding answers.
- * Profile details and the resume are kept; they have their own delete controls.
+ * Removes the plan and switches to habits-only: deletes the plan (its tasks and edits
+ * cascade), clears the onboarding answers and role, but keeps the profile row so the
+ * account stays set up. Habits, proof of work, applications, profile details and the
+ * resume are all kept; the user can build a new plan any time.
  */
 export async function DELETE() {
   try {
@@ -34,7 +36,11 @@ export async function DELETE() {
     if (plan.error) throw plan.error;
     const r = await supabase.from("roadmaps").delete().not("id", "is", null);
     if (r.error) throw r.error;
-    const p = await supabase.from("profiles").delete().not("user_id", "is", null);
+    // Keep the profile row (timezone, daily_minutes), just drop the plan-specific parts.
+    const p = await supabase
+      .from("profiles")
+      .update({ answers: null, role_id: null, role_title: null, field: null })
+      .not("user_id", "is", null);
     if (p.error) throw p.error;
     return NextResponse.json({ ok: true });
   } catch (err) {

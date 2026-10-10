@@ -1,9 +1,10 @@
 import { currentUser } from "@clerk/nextjs/server";
-import { requirePlan } from "@/lib/session";
+import { requireProfile } from "@/lib/session";
 import { computeStats, profileToday, scheduleDay } from "@/lib/data";
 import { getNews } from "@/lib/news";
 import { addDays, longDate } from "@/lib/dates";
 import { Dashboard } from "@/components/dashboard";
+import { HabitsDashboard } from "@/components/habits-dashboard";
 import { proofsByTask } from "@/lib/proofs";
 import { habitsOverview } from "@/lib/habits";
 import { FREEZES_PER_MONTH, getEntitlement } from "@/lib/pro";
@@ -42,13 +43,34 @@ function greeting(timeZone: string) {
 }
 
 export default async function DashboardPage() {
-  const { supabase, profile, plan } = await requirePlan();
+  const { supabase, profile, plan } = await requireProfile();
   const today = profileToday(profile);
-  const ent = await getEntitlement(supabase);
-  const [day, user, news, proofs, habits, freeze] = await Promise.all([
+  const [ent, user] = await Promise.all([getEntitlement(supabase), currentUser()]);
+  const greet = `${greeting(profile.timezone)}${firstName(user?.firstName) ? `, ${firstName(user?.firstName)}` : ""}`;
+
+  // Habits-only: no plan yet. Show the habit-focused dashboard.
+  if (!plan) {
+    const [habitsOnly, freeze] = await Promise.all([
+      habitsOverview(supabase, today).catch(() => ({ habits: [], doneByDay: {} as Record<string, number> })),
+      freezes(supabase, today, ent.pro).catch(() => ({ frozen: [] as string[], justFrozen: [] as string[], left: null })),
+    ]);
+    return (
+      <HabitsDashboard
+        greeting={greet}
+        dateLabel={longDate(today)}
+        habits={habitsOnly.habits}
+        today={today}
+        activity={habitsOnly.doneByDay}
+        frozen={freeze.frozen}
+        justFrozen={freeze.justFrozen}
+        freezesLeft={freeze.left}
+      />
+    );
+  }
+
+  const [day, news, proofs, habits, freeze] = await Promise.all([
     scheduleDay(supabase, plan, today, profile.daily_minutes),
-    currentUser(),
-    getNews("for-you", profile.field).catch(() => []),
+    getNews("for-you", profile.field ?? "software").catch(() => []),
     proofsByTask(supabase, plan.id),
     habitsOverview(supabase, today).catch(() => ({ habits: [], doneByDay: {} as Record<string, number> })),
     freezes(supabase, today, ent.pro).catch(() => ({ frozen: [] as string[], justFrozen: [] as string[], left: null })),
@@ -79,7 +101,7 @@ export default async function DashboardPage() {
 
   return (
     <Dashboard
-      greeting={`${greeting(profile.timezone)}${firstName(user?.firstName) ? `, ${firstName(user?.firstName)}` : ""}`}
+      greeting={greet}
       dateLabel={longDate(today)}
       initialTasks={day.today}
       initialStats={computeStats(day.all, today)}

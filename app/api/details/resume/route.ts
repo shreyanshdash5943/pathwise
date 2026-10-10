@@ -47,8 +47,8 @@ export async function POST(req: Request) {
 
     const { supabase, userId } = await getSupabase();
     const [profile, details] = await Promise.all([getProfile(supabase), getDetails(supabase)]);
-    const role = profile ? getRole(profile.role_id) : undefined;
-    if (!role) return jsonError("Finish onboarding to get your plan.", 404);
+    const role = profile?.role_id ? getRole(profile.role_id) : undefined;
+    if (!role) return jsonError("Build a plan to use your resume for it.", 404);
 
     const path = resumePath(userId);
     const file = await supabase.storage.from(RESUME_BUCKET).download(path);

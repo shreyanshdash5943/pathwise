@@ -506,7 +506,7 @@ function PathStrip({ phases, current }: { phases: Phase[]; current: number | nul
 const WEEKS = 12;
 
 /** Streak plus a 12-week grid of active days (plan tasks and habits together). */
-function ActivityCard({ activity, today, frozen, freezesLeft }: { activity: Record<string, number>; today: string; frozen: string[]; freezesLeft: number | null }) {
+export function ActivityCard({ activity, today, frozen, freezesLeft }: { activity: Record<string, number>; today: string; frozen: string[]; freezesLeft: number | null }) {
   const frozenSet = useMemo(() => new Set(frozen), [frozen]);
   const streak = streakFrom(activity, today, frozenSet);
   const longest = Math.max(streak, longestFrom(activity, frozenSet));

@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ListChecks, Map } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
@@ -8,7 +8,7 @@ import { QUESTIONS, type Answers } from "@/lib/questions";
 import { matchRoles } from "@/lib/roles";
 import { LogoMark } from "./logo";
 
-type Stage = "questions" | "paths" | "building";
+type Stage = "intro" | "questions" | "paths" | "building";
 const STORAGE_KEY = "pathwise:onboarding:v1";
 const BUILD_STEPS = ["Reading your answers", "Choosing your milestones", "Sizing your daily tasks", "Putting it all together"];
 
@@ -22,9 +22,10 @@ function loadSaved(): { answers: Answers; index: number } | null {
   return null;
 }
 
-export function Onboarding({ firstName }: { firstName: string | null }) {
+export function Onboarding({ firstName, showIntro }: { firstName: string | null; showIntro: boolean }) {
   const router = useRouter();
-  const [stage, setStage] = useState<Stage>("questions");
+  const [stage, setStage] = useState<Stage>(showIntro ? "intro" : "questions");
+  const [choosing, setChoosing] = useState(false);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [answers, setAnswers] = useState<Answers>({});
@@ -158,7 +159,22 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
     }
   }
 
-  const progress = stage === "questions" ? index / QUESTIONS.length : 1;
+  const progress = stage === "intro" ? 0 : stage === "questions" ? index / QUESTIONS.length : 1;
+
+  async function startHabitsOnly() {
+    setChoosing(true);
+    try {
+      await fetch("/api/profile/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ timezone: Intl.DateTimeFormat().resolvedOptions().timeZone }),
+      });
+      router.replace("/dashboard");
+      router.refresh();
+    } catch {
+      setChoosing(false);
+    }
+  }
 
   return (
     <div className="flex min-h-dvh flex-col bg-white">
@@ -181,6 +197,49 @@ export function Onboarding({ firstName }: { firstName: string | null }) {
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-5 pb-16 pt-10 sm:pt-16">
         <AnimatePresence mode="wait" custom={direction} initial={false}>
+          {stage === "intro" && (
+            <motion.section key="intro" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
+              <h1 className="text-[30px] font-semibold leading-tight tracking-[-0.025em] sm:text-[36px]">
+                {firstName ? `Welcome, ${firstName}.` : "Welcome to Pathwise."}
+              </h1>
+              <p className="mt-3 text-[16.5px] leading-relaxed text-muted">How do you want to start? You can change this any time.</p>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <button
+                  type="button"
+                  onClick={() => setStage("questions")}
+                  className="group rounded-2xl border border-line bg-white p-6 text-left transition-colors hover:border-accent"
+                >
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-accent-soft text-accent">
+                    <Map className="h-5 w-5" />
+                  </span>
+                  <span className="mt-4 block text-[18px] font-semibold">Build a career plan</span>
+                  <span className="mt-1.5 block text-[14.5px] leading-relaxed text-muted">
+                    Answer 10 quick questions and get a step-by-step roadmap with a daily checklist for your goal.
+                  </span>
+                  <span className="mt-4 inline-flex items-center gap-1 text-[14px] font-medium text-accent">
+                    Start <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  onClick={startHabitsOnly}
+                  disabled={choosing}
+                  className="group rounded-2xl border border-line bg-white p-6 text-left transition-colors hover:border-accent disabled:opacity-60"
+                >
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-surface text-ink-soft">
+                    <ListChecks className="h-5 w-5" />
+                  </span>
+                  <span className="mt-4 block text-[18px] font-semibold">Just track habits</span>
+                  <span className="mt-1.5 block text-[14.5px] leading-relaxed text-muted">
+                    Jump straight in. Add daily habits like &ldquo;LeetCode daily&rdquo;, keep a note for each day, and build streaks. Add a plan whenever you want.
+                  </span>
+                  <span className="mt-4 inline-flex items-center gap-1 text-[14px] font-medium text-accent">
+                    {choosing ? "Setting up…" : "Start tracking"} {!choosing && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />}
+                  </span>
+                </button>
+              </div>
+            </motion.section>
+          )}
           {stage === "questions" && (
             <motion.section
               key={q.id}

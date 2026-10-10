@@ -1420,9 +1420,9 @@ begin
         'is_owner', m.user_id = pod.created_by,
         'role', pf.role_title,
         'has_plan', pl.id is not null,
-        'streak', case when pl.id is null then 0 else public.activity_streak(m.user_id, pl.id, lt.d) end,
-        'active_today', case when pl.id is null then false else public.active_on(m.user_id, pl.id, lt.d) end,
-        'active_week', case when pl.id is null then 0 else (select count(*)::int from public.active_days(m.user_id, pl.id, lt.d - 6, lt.d)) end,
+        'streak', public.activity_streak(m.user_id, pl.id, lt.d),
+        'active_today', public.active_on(m.user_id, pl.id, lt.d),
+        'active_week', (select count(*)::int from public.active_days(m.user_id, pl.id, lt.d - 6, lt.d)),
         'cheers', (select count(*)::int from public.pod_cheers c where c.pod_id = pod.id and c.to_user = m.user_id and c.day = (now() at time zone 'utc')::date),
         'cheered_by_me', exists (select 1 from public.pod_cheers c where c.pod_id = pod.id and c.from_user = uid and c.to_user = m.user_id and c.day = (now() at time zone 'utc')::date),
         'username', case when d.is_public then d.username end

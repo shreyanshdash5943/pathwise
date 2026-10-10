@@ -1,5 +1,5 @@
 import { currentUser } from "@clerk/nextjs/server";
-import { requirePlan } from "@/lib/session";
+import { requireProfile } from "@/lib/session";
 import { getDetails } from "@/lib/details";
 import { listProofs } from "@/lib/proofs";
 import { getEntitlement } from "@/lib/pro";
@@ -10,7 +10,7 @@ import { ProfileView } from "@/components/profile-view";
 export const metadata = { title: "Profile" };
 
 export default async function ProfilePage() {
-  const { supabase, plan, profile } = await requirePlan();
+  const { supabase, plan, profile } = await requireProfile();
   const [details, user, proofs, ent, stats] = await Promise.all([
     getDetails(supabase),
     currentUser(),
@@ -28,13 +28,13 @@ export default async function ProfilePage() {
   return (
     <ProfileView
       identity={{ name: name || null, email: user?.primaryEmailAddress?.emailAddress ?? null, imageUrl: user?.imageUrl ?? null }}
-      roleTitle={profile.role_title}
-      roleSkills={plan.role.skills}
+      roleTitle={profile.role_title ?? ""}
+      roleSkills={plan?.role.skills ?? []}
       initial={{
         headline: details?.headline ?? "",
         links: details?.links ?? {},
         skills: details?.skills ?? [],
-        knownSkills: (details?.known_skills ?? []).filter((s) => plan.role.skills.includes(s)),
+        knownSkills: (details?.known_skills ?? []).filter((s) => (plan?.role.skills ?? []).includes(s)),
         resume: details?.resume_hash
           ? { name: details.resume_name ?? "resume.pdf", size: details.resume_size ?? 0, uploadedAt: details.resume_uploaded_at, skills: details.resume_skills }
           : null,

@@ -517,6 +517,7 @@ export function ProfileView({ identity, roleTitle, roleSkills, initial, pro, sta
 
         <ProfileAnalytics stats={stats} pro={pro} isPublic={isPublic} proofTitles={Object.fromEntries(proofs.map((x) => [x.id, x.title]))} />
 
+        {roleSkills.length > 0 && (
         <section className="panel p-5 sm:p-6">
           <h2 className="text-[17px] font-semibold">What you already know</h2>
           <p className="mt-1 max-w-xl text-[14.5px] text-muted">
@@ -546,6 +547,7 @@ export function ProfileView({ identity, roleTitle, roleSkills, initial, pro, sta
             {savingKnown ? "Updating" : "Update my plan"}
           </button>
         </section>
+        )}
 
         <section className="panel p-5 sm:p-6">
           <h2 className="text-[17px] font-semibold">Resume</h2>

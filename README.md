@@ -93,6 +93,8 @@ npm run typecheck  # TypeScript only
 | News sources (DEV + Hacker News, no keys) | `lib/news.ts` |
 | Database schema and RLS | `supabase/schema.sql` |
 
+**A plan is optional.** Onboarding opens with a choice: build a career plan, or just track habits. A habits-only user has a `profiles` row with only a timezone (the plan columns are nullable) and no `plans` row; the dashboard, reminders and pods all work from their habits alone, and every plan-only page offers a "Build my plan" button. They can build a plan any time from `/onboarding?build=1`.
+
 **Plans.** A plan row stores only the template id, version and the answers that personalise it. The task list is rebuilt in memory from the template on each request (cached per server). `task_progress` holds a row only for tasks the user has scheduled, finished or skipped, so storage per user stays small at any scale.
 
 **Profile.** Name, email and photo come from Clerk. `user_details` holds the headline, links, skills, and which of the role's skills the user already knows; ticking those skips their learn and practice tasks. Resumes go straight from the browser to a private Storage bucket via a signed URL. Only the matched skill names and a file hash are stored, not the text.

@@ -11,7 +11,17 @@ export const loadSession = cache(async () => {
   return { supabase, userId, profile, plan };
 });
 
-/** Same as loadSession, but sends people without a plan to onboarding. */
+/**
+ * Requires a profile (so the account is set up), but the plan may be null — a user can
+ * track habits without ever building a career plan. Pages branch on `plan`.
+ */
+export const requireProfile = cache(async () => {
+  const s = await loadSession();
+  if (!s.profile) redirect("/onboarding");
+  return { ...s, profile: s.profile };
+});
+
+/** Stricter: requires both a profile and a plan. Only for pages that are meaningless without one. */
 export const requirePlan = cache(async () => {
   const s = await loadSession();
   if (!s.profile || !s.plan) redirect("/onboarding");

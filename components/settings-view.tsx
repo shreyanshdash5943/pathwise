@@ -12,11 +12,13 @@ const OPTIONS = [30, 60, 90, 120, 180];
 const label = (m: number) => (m < 60 ? `${m} min` : `${m / 60} hr`);
 
 export function SettingsView({
+  hasPlan,
   dailyMinutes,
   roleTitle,
   summary,
   reminders,
 }: {
+  hasPlan: boolean;
   dailyMinutes: number;
   roleTitle: string;
   summary: { question: string; answer: string }[];
@@ -55,7 +57,7 @@ export function SettingsView({
     try {
       const res = await fetch("/api/profile", { method: "DELETE" });
       if (!res.ok) throw new Error();
-      router.replace("/onboarding");
+      router.replace("/dashboard");
       router.refresh();
     } catch {
       setDeleting(false);
@@ -69,6 +71,7 @@ export function SettingsView({
       <PageHeader title="Settings" description="Adjust your plan or start a new one." />
 
       <div className="space-y-5">
+        {hasPlan && (
         <section className="panel p-5 sm:p-6">
           <h2 className="text-[17px] font-semibold">Daily time</h2>
           <p className="mt-1 text-[14.5px] text-muted">How much time your checklist should fill on a normal day.</p>
@@ -92,6 +95,17 @@ export function SettingsView({
             })}
           </div>
         </section>
+        )}
+
+        {!hasPlan && (
+          <Link href="/onboarding?build=1" className="panel flex items-center justify-between gap-4 p-5 transition-colors hover:border-accent-line sm:p-6">
+            <span>
+              <span className="block text-[17px] font-semibold">Build a career plan</span>
+              <span className="mt-1 block text-[14.5px] text-muted">You're tracking habits. Add a roadmap and daily checklist whenever you're ready.</span>
+            </span>
+            <span className="shrink-0 text-[14px] font-medium text-accent">Build it</span>
+          </Link>
+        )}
 
         <RemindersPanel initial={reminders} show={show} />
 
@@ -103,6 +117,7 @@ export function SettingsView({
           <span className="shrink-0 text-[14px] font-medium text-accent">See Pro</span>
         </Link>
 
+        {hasPlan && (<>
         <section className="panel p-5 sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
@@ -126,14 +141,15 @@ export function SettingsView({
         </section>
 
         <section className="panel p-5 sm:p-6">
-          <h2 className="text-[17px] font-semibold">Delete plan and answers</h2>
+          <h2 className="text-[17px] font-semibold">Delete my plan</h2>
           <p className="mt-1 max-w-xl text-[14.5px] text-muted">
-            Removes your roadmap, your progress and your onboarding answers. Your account stays. This can't be undone.
+            Removes your roadmap, its progress and your onboarding answers, and switches you to tracking habits only. You keep your habits, proof of work and profile, and can build a new plan any time. This can't be undone.
           </p>
           <button type="button" onClick={() => setConfirming(true)} className="btn mt-5 h-10 border border-line bg-white text-[14px] text-red-600 hover:border-red-200 hover:bg-red-50">
             Delete my plan
           </button>
         </section>
+        </>)}
       </div>
 
       <ConfirmDialog open={confirming} busy={deleting} onCancel={() => setConfirming(false)} onConfirm={deletePlan} />
@@ -170,7 +186,7 @@ function ConfirmDialog({ open, busy, onCancel, onConfirm }: { open: boolean; bus
             <h2 id="confirm-title" className="text-[18px] font-semibold">
               Delete your plan?
             </h2>
-            <p className="mt-2 text-[14.5px] leading-relaxed text-muted">Your roadmap, streak and answers will be removed. You'll go through onboarding again.</p>
+            <p className="mt-2 text-[14.5px] leading-relaxed text-muted">Your roadmap, its progress and your answers will be removed, and you'll switch to tracking habits only. Your habits, proof of work and profile stay. You can build a new plan whenever you like.</p>
             <div className="mt-6 flex justify-end gap-2">
               <button ref={cancelRef} type="button" className="btn-quiet h-10 text-[14px]" onClick={onCancel} disabled={busy}>
                 Keep my plan

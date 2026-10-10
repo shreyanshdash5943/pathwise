@@ -1,4 +1,4 @@
-import { requirePlan } from "@/lib/session";
+import { requireProfile } from "@/lib/session";
 import { profileToday } from "@/lib/data";
 import { habitHistory, listHabits, streakOf } from "@/lib/habits";
 import { addDays } from "@/lib/dates";
@@ -11,7 +11,7 @@ const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 export default async function HabitsPage({ searchParams }: { searchParams: Promise<{ h?: string; before?: string }> }) {
   const { h, before } = await searchParams;
-  const { supabase, profile } = await requirePlan();
+  const { supabase, profile } = await requireProfile();
   const today = profileToday(profile);
   const habits = await listHabits(supabase, true).catch(() => []);
   const selected = habits.find((x) => x.id === h && UUID.test(h ?? "")) ?? habits.find((x) => !x.archived) ?? habits[0] ?? null;

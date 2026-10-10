@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Check, Link2, Sparkles } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -43,7 +44,7 @@ export function InterviewPrep({
 
   const groups: { title: string; note: string; items: Question[] }[] = [
     { title: "Behavioural", note: "Asked in almost every interview. Build these from the projects you've shipped.", items: behavioural },
-    { title: `Technical · ${roleTitle}`, note: "The kind of questions you'll get for this role.", items: technical },
+    ...(technical.length ? [{ title: `Technical · ${roleTitle}`, note: "The kind of questions you'll get for this role.", items: technical }] : []),
   ];
 
   return (
@@ -62,6 +63,15 @@ export function InterviewPrep({
           <motion.div className="h-full rounded-full bg-accent" initial={false} animate={{ width: `${pct}%` }} transition={{ type: "spring", stiffness: 160, damping: 26 }} />
         </div>
       </div>
+
+      {technical.length === 0 && (
+        <div className="panel mb-6 flex items-center justify-between gap-4 p-5">
+          <p className="text-[14.5px] text-muted">Build a career plan to unlock role-specific technical questions.</p>
+          <Link href="/onboarding?build=1" className="btn-outline h-9 shrink-0 text-[14px]">
+            Build a plan
+          </Link>
+        </div>
+      )}
 
       {groups.map((g) => (
         <section key={g.title} className="mb-6">

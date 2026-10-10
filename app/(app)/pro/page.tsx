@@ -1,5 +1,5 @@
 import { BarChart3, Check, Palette, Snowflake, SquarePen } from "lucide-react";
-import { requirePlan } from "@/lib/session";
+import { requireProfile } from "@/lib/session";
 import { FREEZES_PER_MONTH, PRO_PRICE, getEntitlement } from "@/lib/pro";
 import { PageHeader } from "@/components/page-header";
 
@@ -29,7 +29,7 @@ const FEATURES = [
 ];
 
 export default async function ProPage() {
-  const { supabase } = await requirePlan();
+  const { supabase } = await requireProfile();
   const ent = await getEntitlement(supabase);
   const until = ent.until ? new Date(ent.until).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : null;
 
