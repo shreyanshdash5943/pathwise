@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 
-const isPublic = createRouteMatcher(["/", "/sign-in(.*)", "/sign-up(.*)", "/u/(.*)", "/api/cron/(.*)", "/manifest.webmanifest"]);
+const isPublic = createRouteMatcher(["/", "/sign-in(.*)", "/sign-up(.*)", "/u/(.*)", "/api/cron/(.*)", "/manifest.webmanifest", "/privacy", "/terms"]);
 
 // Expensive or abusable public routes: a PDF build, a signed-URL mint, a counted redirect.
 const isHeavy = createRouteMatcher(["/u/(.*)/card", "/u/(.*)/resume", "/u/(.*)/go"]);
