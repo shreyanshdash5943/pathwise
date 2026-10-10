@@ -57,7 +57,7 @@ export function HabitsPanel({
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState<Set<string>>(new Set());
   const [editing, setEditing] = useState<HabitLite | null>(null);
-  const [deleteTarget, setDeleteTarget] = useState<HabitLite | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<string | null>(null);
 
   async function deleteHabit(h: HabitLite) {
     if (busy.has(h.id)) return;
