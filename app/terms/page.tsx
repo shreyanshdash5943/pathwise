@@ -1,6 +1,6 @@
 import { LegalPage } from "@/components/legal-page";
 
-export const metadata = { title: "Terms" };
+export const metadata = { title: "Terms", description: "Plain-language terms for using Pathwise." };
 
 export default function Terms() {
   return (

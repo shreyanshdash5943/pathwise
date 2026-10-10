@@ -1,14 +1,29 @@
 import type { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/next";
 import "@fontsource-variable/instrument-sans";
 import "./globals.css";
 import { MotionProvider } from "@/components/motion-provider";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { default: "Pathwise: your career plan, one day at a time", template: "%s | Pathwise" },
-  description:
-    "Answer ten quick questions and get a personal career roadmap, a daily checklist and a news feed for your field.",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   icons: { icon: "/favicon.svg" },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: "Pathwise: your career plan, one day at a time",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pathwise: your career plan, one day at a time",
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export const viewport: Viewport = {
@@ -39,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html lang="en">
         <body>
           <MotionProvider>{children}</MotionProvider>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>

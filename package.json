@@ -17,6 +17,7 @@
     "@clerk/nextjs": "6.39.7",
     "@fontsource-variable/instrument-sans": "^5.2.0",
     "@supabase/supabase-js": "^2.49.0",
+    "@vercel/analytics": "1.4.1",
     "clsx": "^2.1.1",
     "framer-motion": "11.18.2",
     "lucide-react": "^0.460.0",

@@ -68,7 +68,7 @@ export default async function PublicProfilePage({ params }: Params) {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
             {p.avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={p.avatarUrl} alt="" className="h-20 w-20 shrink-0 rounded-full bg-surface object-cover" />
+              <img src={p.avatarUrl} alt={name} className="h-20 w-20 shrink-0 rounded-full bg-surface object-cover" />
             ) : (
               <div className="grid h-20 w-20 shrink-0 place-items-center rounded-full bg-accent-soft text-[28px] font-semibold text-accent">
                 {name.replace("@", "").charAt(0).toUpperCase()}

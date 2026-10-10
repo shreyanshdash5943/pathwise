@@ -1,6 +1,6 @@
 import { LegalPage } from "@/components/legal-page";
 
-export const metadata = { title: "Privacy" };
+export const metadata = { title: "Privacy", description: "How Pathwise handles your data: private by default, no selling, no tracking across days." };
 
 export default function Privacy() {
   return (
